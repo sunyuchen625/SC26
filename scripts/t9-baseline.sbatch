@@ -6,7 +6,7 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=96
 #SBATCH --mem=95000M
-#SBATCH --time=00:40:00
+#SBATCH --time=01:20:00
 #SBATCH --chdir=/data/home/sunyc/solverchallenge26
 #SBATCH --output=logs/%x-%j.out
 #SBATCH --error=logs/%x-%j.err
@@ -20,9 +20,11 @@ root=/data/home/sunyc/solverchallenge26
 data=/data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_09
 module list
 lscpu
-sha256sum "$root/build-t09/bin/MPI_direct_solver" "$data"/*.dat
+sha256sum "$root/build-t09/bin/MPI_direct_solver" "$data/solverchallenge26_09_A.dat"
+if [ "$#" -eq 0 ]; then set -- 01 02 03 04 05 06 07 08 09 10; fi
 failed=0
-for rhs in 01 02 03 04 05 06 07 08 09 10; do
+for rhs in "$@"; do
+    sha256sum "$data/solverchallenge26_09_b_$rhs.dat"
     run_dir="$root/runs/t09-direct-$SLURM_JOB_ID/rhs-$rhs"
     mkdir -p "$run_dir"
     cd "$run_dir"

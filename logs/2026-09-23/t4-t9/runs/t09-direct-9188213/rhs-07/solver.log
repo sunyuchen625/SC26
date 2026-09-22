@@ -1,0 +1,36 @@
+matrix name :      /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_09/solverchallenge26_09_A.dat
+vectorb name :     /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_09/solverchallenge26_09_b_07.dat
+read function :    PETSc binary (0-base)
+sys_type :         0
+T9_PARDISO_ANALYSE seconds=63.945013 estimated_peak_kib=61877578 factor_nnz=1870948576
+T9_PARDISO_FACTOR seconds=7.620844 perturbed_pivots=0
+T9_PARDISO_DONE refinements=4
+T9_PHASE_SECONDS analyse=63.945013 factor=7.620844 solve_cleanup=2.466300
+T9_PARDISO_ANALYSE seconds=64.368967 estimated_peak_kib=61877578 factor_nnz=1870948576
+T9_PARDISO_FACTOR seconds=7.735139 perturbed_pivots=0
+T9_PARDISO_DONE refinements=4
+T9_PHASE_SECONDS analyse=64.368967 factor=7.735139 solve_cleanup=1.973726
+T9_PARDISO_ANALYSE seconds=64.030642 estimated_peak_kib=61877578 factor_nnz=1870948576
+T9_PARDISO_FACTOR seconds=7.826256 perturbed_pivots=0
+T9_PARDISO_DONE refinements=4
+T9_PHASE_SECONDS analyse=64.030642 factor=7.826256 solve_cleanup=2.220427
+T9_PARDISO_ANALYSE seconds=64.353909 estimated_peak_kib=61877578 factor_nnz=1870948576
+T9_PARDISO_FACTOR seconds=7.656963 perturbed_pivots=0
+T9_PARDISO_DONE refinements=4
+T9_PHASE_SECONDS analyse=64.353909 factor=7.656963 solve_cleanup=1.933111
+T9_PARDISO_ANALYSE seconds=63.935722 estimated_peak_kib=61877578 factor_nnz=1870948576
+T9_PARDISO_FACTOR seconds=7.447902 perturbed_pivots=0
+T9_PARDISO_DONE refinements=4
+T9_PHASE_SECONDS analyse=63.935722 factor=7.447902 solve_cleanup=1.865289
+Total memory usage:                 36227.8945 MB
+------------------------------------------
+CHECK end to end time :            74.006863 s
+Check || b - Ax || 2             =  2.796283e-16
+Check || b - Ax || MAX           =  2.220446e-16
+Check || b - Ax || 2 / || b || 2 =  2.435483e-16
+LD-Check || b - Ax || 2             =  1.988431e-16
+LD-Check || b - Ax || MAX           =  1.553221e-16
+LD-Check || b - Ax || 2 / || b || 2 =  1.731867e-16
+Q-Check || b - Ax || 2             =  1.987718e-16
+Q-Check || b - Ax || MAX           =  1.553152e-16
+Q-Check || b - Ax || 2 / || b || 2 =  1.731246e-16

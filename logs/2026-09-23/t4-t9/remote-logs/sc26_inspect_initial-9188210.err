@@ -1,0 +1,2 @@
+/var/spool/slurm/d/job9188210/slurm_script: line 16: 70682 Killed                  python3 scripts/inspect-t2.py "$data/solverchallenge26_${problem}_A.dat" "$data/solverchallenge26_${problem}_b.dat" > "logs/inspect-t$problem.json"
+slurmstepd: error: Detected 1 oom_kill event in StepId=9188210.batch. Some of the step tasks have been OOM Killed.

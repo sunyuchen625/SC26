@@ -1,0 +1,36 @@
+matrix name :      /data/home/sunyc/solverchallenge26/tests/small_systems/nonsymmetric_A.dat
+vectorb name :     /data/home/sunyc/solverchallenge26/tests/small_systems/nonsymmetric_b.dat
+read function :    PETSc binary (0-base)
+sys_type :         0
+T9_PARDISO_ANALYSE seconds=0.003887 estimated_peak_kib=579 factor_nnz=14837
+T9_PARDISO_FACTOR seconds=0.011141 perturbed_pivots=0
+T9_PARDISO_DONE refinements=4
+T9_PHASE_SECONDS analyse=0.003887 factor=0.011141 solve_cleanup=0.001761
+T9_PARDISO_ANALYSE seconds=0.001168 estimated_peak_kib=579 factor_nnz=14837
+T9_PARDISO_FACTOR seconds=0.001444 perturbed_pivots=0
+T9_PARDISO_DONE refinements=4
+T9_PHASE_SECONDS analyse=0.001168 factor=0.001444 solve_cleanup=0.000192
+T9_PARDISO_ANALYSE seconds=0.001071 estimated_peak_kib=579 factor_nnz=14837
+T9_PARDISO_FACTOR seconds=0.000641 perturbed_pivots=0
+T9_PARDISO_DONE refinements=4
+T9_PHASE_SECONDS analyse=0.001071 factor=0.000641 solve_cleanup=0.000179
+T9_PARDISO_ANALYSE seconds=0.001039 estimated_peak_kib=579 factor_nnz=14837
+T9_PARDISO_FACTOR seconds=0.000429 perturbed_pivots=0
+T9_PARDISO_DONE refinements=4
+T9_PHASE_SECONDS analyse=0.001039 factor=0.000429 solve_cleanup=0.000168
+T9_PARDISO_ANALYSE seconds=0.001039 estimated_peak_kib=579 factor_nnz=14837
+T9_PARDISO_FACTOR seconds=0.000617 perturbed_pivots=0
+T9_PARDISO_DONE refinements=4
+T9_PHASE_SECONDS analyse=0.001039 factor=0.000617 solve_cleanup=0.000186
+Total memory usage:                 65.7148 MB
+------------------------------------------
+CHECK end to end time :             0.101113 s
+Check || b - Ax || 2             =  3.398280e-14
+Check || b - Ax || MAX           =  7.105427e-15
+Check || b - Ax || 2 / || b || 2 =  1.740739e-16
+LD-Check || b - Ax || 2             =  2.432216e-14
+LD-Check || b - Ax || MAX           =  4.366299e-15
+LD-Check || b - Ax || 2 / || b || 2 =  1.245882e-16
+Q-Check || b - Ax || 2             =  2.432162e-14
+Q-Check || b - Ax || MAX           =  4.366413e-15
+Q-Check || b - Ax || 2 / || b || 2 =  1.245854e-16

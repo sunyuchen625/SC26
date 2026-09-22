@@ -1,0 +1,145 @@
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                96
+On-line CPU(s) list:   0-95
+Thread(s) per core:    1
+Core(s) per socket:    48
+Socket(s):             2
+NUMA node(s):          2
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 143
+Model name:            Intel(R) Xeon(R) Platinum 8488C
+Stepping:              8
+CPU MHz:               3199.951
+CPU max MHz:           3800.0000
+CPU min MHz:           800.0000
+BogoMIPS:              4800.00
+Virtualization:        VT-x
+L1d cache:             48K
+L1i cache:             32K
+L2 cache:              2048K
+L3 cache:              107520K
+NUMA node0 CPU(s):     0-47
+NUMA node1 CPU(s):     48-95
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cat_l2 cdp_l3 invpcid_single intel_pt cdp_l2 ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq cldemote movdiri movdir64b md_clear pconfig spec_ctrl intel_stibp flush_l1d arch_capabilities
+c28153cd17b25071bf160a491716faafb87fff8a9d5801ea6ffb63c366f85cd0  /data/home/sunyc/solverchallenge26/build-t09/bin/MPI_direct_solver
+d58f58851fe111194bb41662f91c3e6d34eb56dc5690c4abf4c26fdf63083340  /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_09/solverchallenge26_09_A.dat
+20f7bbc0ae99954a830459c1497259e8c1f7334c34ee7243cc881d7336a85746  /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_09/solverchallenge26_09_b_08.dat
+matrix name :      /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_09/solverchallenge26_09_A.dat
+vectorb name :     /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_09/solverchallenge26_09_b_08.dat
+read function :    PETSc binary (0-base)
+sys_type :         0
+T9_PARDISO_ANALYSE seconds=63.822139 estimated_peak_kib=61877578 factor_nnz=1870948576
+T9_PARDISO_FACTOR seconds=9.300663 perturbed_pivots=0
+T9_PARDISO_DONE refinements=4
+T9_PHASE_SECONDS analyse=63.822139 factor=9.300663 solve_cleanup=1.846763
+T9_PARDISO_ANALYSE seconds=64.424878 estimated_peak_kib=61877578 factor_nnz=1870948576
+T9_PARDISO_FACTOR seconds=8.633980 perturbed_pivots=0
+T9_PARDISO_DONE refinements=4
+T9_PHASE_SECONDS analyse=64.424878 factor=8.633980 solve_cleanup=1.950331
+T9_PARDISO_ANALYSE seconds=64.317825 estimated_peak_kib=61877578 factor_nnz=1870948576
+T9_PARDISO_FACTOR seconds=8.346320 perturbed_pivots=0
+T9_PARDISO_DONE refinements=4
+T9_PHASE_SECONDS analyse=64.317825 factor=8.346320 solve_cleanup=1.918838
+T9_PARDISO_ANALYSE seconds=64.274550 estimated_peak_kib=61877578 factor_nnz=1870948576
+T9_PARDISO_FACTOR seconds=8.804464 perturbed_pivots=0
+T9_PARDISO_DONE refinements=4
+T9_PHASE_SECONDS analyse=64.274550 factor=8.804464 solve_cleanup=1.917155
+T9_PARDISO_ANALYSE seconds=64.449532 estimated_peak_kib=61877578 factor_nnz=1870948576
+T9_PARDISO_FACTOR seconds=8.166271 perturbed_pivots=0
+T9_PARDISO_DONE refinements=4
+T9_PHASE_SECONDS analyse=64.449532 factor=8.166271 solve_cleanup=1.914522
+Total memory usage:                 36222.5391 MB
+------------------------------------------
+CHECK end to end time :            75.026316 s
+Check || b - Ax || 2             =  2.525560e-16
+Check || b - Ax || MAX           =  3.469447e-17
+Check || b - Ax || 2 / || b || 2 =  1.156829e-16
+LD-Check || b - Ax || 2             =  2.244968e-16
+LD-Check || b - Ax || MAX           =  1.028908e-16
+LD-Check || b - Ax || 2 / || b || 2 =  1.028305e-16
+Q-Check || b - Ax || 2             =  2.244825e-16
+Q-Check || b - Ax || MAX           =  1.028580e-16
+Q-Check || b - Ax || 2 / || b || 2 =  1.028239e-16
+OFFICIAL_RESIDUAL_PASS relative_residual=1.028239000000e-16 threshold=1.0e-08
+T9_MEMORY_PASS peak_bytes=37982085120
+0e514be7f3720858bcdcb065c8dd04f2d6061d7e28685acdeaab43279e6e2dec  /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_09/solverchallenge26_09_b_09.dat
+matrix name :      /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_09/solverchallenge26_09_A.dat
+vectorb name :     /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_09/solverchallenge26_09_b_09.dat
+read function :    PETSc binary (0-base)
+sys_type :         0
+T9_PARDISO_ANALYSE seconds=64.121817 estimated_peak_kib=61877578 factor_nnz=1870948576
+T9_PARDISO_FACTOR seconds=7.980092 perturbed_pivots=0
+T9_PARDISO_DONE refinements=4
+T9_PHASE_SECONDS analyse=64.121817 factor=7.980092 solve_cleanup=1.917197
+T9_PARDISO_ANALYSE seconds=64.730200 estimated_peak_kib=61877578 factor_nnz=1870948576
+T9_PARDISO_FACTOR seconds=8.364846 perturbed_pivots=0
+T9_PARDISO_DONE refinements=4
+T9_PHASE_SECONDS analyse=64.730200 factor=8.364846 solve_cleanup=1.889622
+T9_PARDISO_ANALYSE seconds=64.694215 estimated_peak_kib=61877578 factor_nnz=1870948576
+T9_PARDISO_FACTOR seconds=8.349200 perturbed_pivots=0
+T9_PARDISO_DONE refinements=4
+T9_PHASE_SECONDS analyse=64.694215 factor=8.349200 solve_cleanup=1.934300
+T9_PARDISO_ANALYSE seconds=64.071310 estimated_peak_kib=61877578 factor_nnz=1870948576
+T9_PARDISO_FACTOR seconds=8.308083 perturbed_pivots=0
+T9_PARDISO_DONE refinements=4
+T9_PHASE_SECONDS analyse=64.071310 factor=8.308083 solve_cleanup=1.857658
+T9_PARDISO_ANALYSE seconds=64.094701 estimated_peak_kib=61877578 factor_nnz=1870948576
+T9_PARDISO_FACTOR seconds=9.136847 perturbed_pivots=0
+T9_PARDISO_DONE refinements=4
+T9_PHASE_SECONDS analyse=64.094701 factor=9.136847 solve_cleanup=1.894508
+Total memory usage:                 36219.7266 MB
+------------------------------------------
+CHECK end to end time :            74.847503 s
+Check || b - Ax || 2             =  5.688415e-16
+Check || b - Ax || MAX           =  5.551115e-16
+Check || b - Ax || 2 / || b || 2 =  4.748264e-16
+LD-Check || b - Ax || 2             =  5.240389e-16
+LD-Check || b - Ax || MAX           =  5.149960e-16
+LD-Check || b - Ax || 2 / || b || 2 =  4.374286e-16
+Q-Check || b - Ax || 2             =  5.240158e-16
+Q-Check || b - Ax || MAX           =  5.149743e-16
+Q-Check || b - Ax || 2 / || b || 2 =  4.374093e-16
+OFFICIAL_RESIDUAL_PASS relative_residual=4.374093000000e-16 threshold=1.0e-08
+T9_MEMORY_PASS peak_bytes=37979136000
+7a97d0fc29cba037e9f1cd17a578234ee97d017eca4391261cc4590915c7cf04  /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_09/solverchallenge26_09_b_10.dat
+matrix name :      /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_09/solverchallenge26_09_A.dat
+vectorb name :     /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_09/solverchallenge26_09_b_10.dat
+read function :    PETSc binary (0-base)
+sys_type :         0
+T9_PARDISO_ANALYSE seconds=64.178227 estimated_peak_kib=61877578 factor_nnz=1870948576
+T9_PARDISO_FACTOR seconds=7.386022 perturbed_pivots=0
+T9_PARDISO_DONE refinements=4
+T9_PHASE_SECONDS analyse=64.178227 factor=7.386022 solve_cleanup=1.902594
+T9_PARDISO_ANALYSE seconds=64.702639 estimated_peak_kib=61877578 factor_nnz=1870948576
+T9_PARDISO_FACTOR seconds=6.754961 perturbed_pivots=0
+T9_PARDISO_DONE refinements=4
+T9_PHASE_SECONDS analyse=64.702639 factor=6.754961 solve_cleanup=1.921943
+T9_PARDISO_ANALYSE seconds=64.485254 estimated_peak_kib=61877578 factor_nnz=1870948576
+T9_PARDISO_FACTOR seconds=6.988503 perturbed_pivots=0
+T9_PARDISO_DONE refinements=4
+T9_PHASE_SECONDS analyse=64.485254 factor=6.988503 solve_cleanup=1.944338
+T9_PARDISO_ANALYSE seconds=64.747433 estimated_peak_kib=61877578 factor_nnz=1870948576
+T9_PARDISO_FACTOR seconds=6.749356 perturbed_pivots=0
+T9_PARDISO_DONE refinements=4
+T9_PHASE_SECONDS analyse=64.747433 factor=6.749356 solve_cleanup=1.941304
+T9_PARDISO_ANALYSE seconds=64.129962 estimated_peak_kib=61877578 factor_nnz=1870948576
+T9_PARDISO_FACTOR seconds=6.699801 perturbed_pivots=0
+T9_PARDISO_DONE refinements=4
+T9_PHASE_SECONDS analyse=64.129962 factor=6.699801 solve_cleanup=1.901794
+Total memory usage:                 36254.2383 MB
+------------------------------------------
+CHECK end to end time :            73.410935 s
+Check || b - Ax || 2             =  8.747337e-16
+Check || b - Ax || MAX           =  6.661338e-16
+Check || b - Ax || 2 / || b || 2 =  5.804807e-16
+LD-Check || b - Ax || 2             =  9.414145e-16
+LD-Check || b - Ax || MAX           =  6.831558e-16
+LD-Check || b - Ax || 2 / || b || 2 =  6.247307e-16
+Q-Check || b - Ax || 2             =  9.414682e-16
+Q-Check || b - Ax || MAX           =  6.832273e-16
+Q-Check || b - Ax || 2 / || b || 2 =  6.247663e-16
+OFFICIAL_RESIDUAL_PASS relative_residual=6.247663000000e-16 threshold=1.0e-08
+T9_MEMORY_PASS peak_bytes=38015324160

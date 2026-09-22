@@ -1,0 +1,23 @@
+	Command being timed: "/data/home/sunyc/solverchallenge26/build-t09/bin/MPI_direct_solver /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_09/solverchallenge26_09_A.dat /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_09/solverchallenge26_09_b_08.dat 0 0"
+	User time (seconds): 3863.34
+	System time (seconds): 365.37
+	Percent of CPU this job got: 1079%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 6:31.84
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 37091880
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 22
+	Minor (reclaiming a frame) page faults: 1477598
+	Voluntary context switches: 46825
+	Involuntary context switches: 1706297
+	Swaps: 0
+	File system inputs: 313648
+	File system outputs: 179664
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,222 @@
+[
+  {
+    "problem": "T4",
+    "rhs": null,
+    "job_id": "9188218",
+    "node": "c3n137",
+    "log": "logs/2026-09-23/t4-t9/runs/t04-9188218/1e-12/solver.log",
+    "relative_residual": 0.1150246,
+    "threshold": 1e-08,
+    "passed": false,
+    "repetitions": 5,
+    "mean_seconds": 159.440061,
+    "sum_process_peak_rss_bytes": 83217100800,
+    "memory_gib": 77.5019645690918,
+    "time_files": 96,
+    "phase_mean_seconds": {
+      "analyse": 0.0012016,
+      "preprocess": 43.4326528,
+      "solve_cleanup": 116.0061328
+    }
+  },
+  {
+    "problem": "T9",
+    "rhs": "01",
+    "job_id": "9188209",
+    "node": "c3n86",
+    "log": "logs/2026-09-23/t4-t9/runs/t09-direct-9188209/rhs-01/solver.log",
+    "relative_residual": 1.388939e-16,
+    "threshold": 1e-08,
+    "passed": true,
+    "repetitions": 5,
+    "mean_seconds": 74.410747,
+    "sum_process_peak_rss_bytes": 37986611200,
+    "memory_gib": 35.37778854370117,
+    "time_files": 1,
+    "phase_mean_seconds": {
+      "analyse": 64.7158278,
+      "factor": 7.5245208,
+      "solve_cleanup": 1.9471158
+    }
+  },
+  {
+    "problem": "T9",
+    "rhs": "02",
+    "job_id": "9188212",
+    "node": "c3n21",
+    "log": "logs/2026-09-23/t4-t9/runs/t09-direct-9188212/rhs-02/solver.log",
+    "relative_residual": 1.045516e-15,
+    "threshold": 1e-08,
+    "passed": true,
+    "repetitions": 5,
+    "mean_seconds": 74.501044,
+    "sum_process_peak_rss_bytes": 37990494208,
+    "memory_gib": 35.381404876708984,
+    "time_files": 1,
+    "phase_mean_seconds": {
+      "analyse": 64.7934232,
+      "factor": 7.5589096,
+      "solve_cleanup": 2.0027293999999998
+    }
+  },
+  {
+    "problem": "T9",
+    "rhs": "03",
+    "job_id": "9188212",
+    "node": "c3n21",
+    "log": "logs/2026-09-23/t4-t9/runs/t09-direct-9188212/rhs-03/solver.log",
+    "relative_residual": 4.702208e-16,
+    "threshold": 1e-08,
+    "passed": true,
+    "repetitions": 5,
+    "mean_seconds": 74.941388,
+    "sum_process_peak_rss_bytes": 37979357184,
+    "memory_gib": 35.37103271484375,
+    "time_files": 1,
+    "phase_mean_seconds": {
+      "analyse": 65.0399404,
+      "factor": 7.6860588000000005,
+      "solve_cleanup": 2.0166216
+    }
+  },
+  {
+    "problem": "T9",
+    "rhs": "04",
+    "job_id": "9188212",
+    "node": "c3n21",
+    "log": "logs/2026-09-23/t4-t9/runs/t09-direct-9188212/rhs-04/solver.log",
+    "relative_residual": 1.880471e-16,
+    "threshold": 1e-08,
+    "passed": true,
+    "repetitions": 5,
+    "mean_seconds": 74.638959,
+    "sum_process_peak_rss_bytes": 37975982080,
+    "memory_gib": 35.367889404296875,
+    "time_files": 1,
+    "phase_mean_seconds": {
+      "analyse": 64.9937906,
+      "factor": 7.5279284,
+      "solve_cleanup": 2.0449196
+    }
+  },
+  {
+    "problem": "T9",
+    "rhs": "05",
+    "job_id": "9188213",
+    "node": "c3n124",
+    "log": "logs/2026-09-23/t4-t9/runs/t09-direct-9188213/rhs-05/solver.log",
+    "relative_residual": 7.545714e-16,
+    "threshold": 1e-08,
+    "passed": true,
+    "repetitions": 5,
+    "mean_seconds": 74.150167,
+    "sum_process_peak_rss_bytes": 37981921280,
+    "memory_gib": 35.37342071533203,
+    "time_files": 1,
+    "phase_mean_seconds": {
+      "analyse": 64.128749,
+      "factor": 7.5732322000000005,
+      "solve_cleanup": 2.2428766
+    }
+  },
+  {
+    "problem": "T9",
+    "rhs": "06",
+    "job_id": "9188213",
+    "node": "c3n124",
+    "log": "logs/2026-09-23/t4-t9/runs/t09-direct-9188213/rhs-06/solver.log",
+    "relative_residual": 5.405732e-16,
+    "threshold": 1e-08,
+    "passed": true,
+    "repetitions": 5,
+    "mean_seconds": 73.957491,
+    "sum_process_peak_rss_bytes": 37985624064,
+    "memory_gib": 35.376869201660156,
+    "time_files": 1,
+    "phase_mean_seconds": {
+      "analyse": 64.1725434,
+      "factor": 7.482850200000001,
+      "solve_cleanup": 2.2509456
+    }
+  },
+  {
+    "problem": "T9",
+    "rhs": "07",
+    "job_id": "9188213",
+    "node": "c3n124",
+    "log": "logs/2026-09-23/t4-t9/runs/t09-direct-9188213/rhs-07/solver.log",
+    "relative_residual": 1.731246e-16,
+    "threshold": 1e-08,
+    "passed": true,
+    "repetitions": 5,
+    "mean_seconds": 74.006863,
+    "sum_process_peak_rss_bytes": 37987700736,
+    "memory_gib": 35.37880325317383,
+    "time_files": 1,
+    "phase_mean_seconds": {
+      "analyse": 64.1268506,
+      "factor": 7.6574208,
+      "solve_cleanup": 2.0917706
+    }
+  },
+  {
+    "problem": "T9",
+    "rhs": "08",
+    "job_id": "9188219",
+    "node": "c3n152",
+    "log": "logs/2026-09-23/t4-t9/runs/t09-direct-9188219/rhs-08/solver.log",
+    "relative_residual": 1.028239e-16,
+    "threshold": 1e-08,
+    "passed": true,
+    "repetitions": 5,
+    "mean_seconds": 75.026316,
+    "sum_process_peak_rss_bytes": 37982085120,
+    "memory_gib": 35.373573303222656,
+    "time_files": 1,
+    "phase_mean_seconds": {
+      "analyse": 64.2577848,
+      "factor": 8.6503396,
+      "solve_cleanup": 1.9095218
+    }
+  },
+  {
+    "problem": "T9",
+    "rhs": "09",
+    "job_id": "9188219",
+    "node": "c3n152",
+    "log": "logs/2026-09-23/t4-t9/runs/t09-direct-9188219/rhs-09/solver.log",
+    "relative_residual": 4.374093e-16,
+    "threshold": 1e-08,
+    "passed": true,
+    "repetitions": 5,
+    "mean_seconds": 74.847503,
+    "sum_process_peak_rss_bytes": 37979136000,
+    "memory_gib": 35.370826721191406,
+    "time_files": 1,
+    "phase_mean_seconds": {
+      "analyse": 64.3424486,
+      "factor": 8.4278136,
+      "solve_cleanup": 1.898657
+    }
+  },
+  {
+    "problem": "T9",
+    "rhs": "10",
+    "job_id": "9188219",
+    "node": "c3n152",
+    "log": "logs/2026-09-23/t4-t9/runs/t09-direct-9188219/rhs-10/solver.log",
+    "relative_residual": 6.247663e-16,
+    "threshold": 1e-08,
+    "passed": true,
+    "repetitions": 5,
+    "mean_seconds": 73.410935,
+    "sum_process_peak_rss_bytes": 38015324160,
+    "memory_gib": 35.4045295715332,
+    "time_files": 1,
+    "phase_mean_seconds": {
+      "analyse": 64.44870300000001,
+      "factor": 6.9157286,
+      "solve_cleanup": 1.9223945999999998
+    }
+  }
+]
