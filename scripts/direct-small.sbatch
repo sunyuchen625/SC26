@@ -17,8 +17,9 @@ set -uo pipefail
 export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK MKL_NUM_THREADS=$SLURM_CPUS_PER_TASK
 export MKL_DYNAMIC=FALSE MKL_THREADING_LAYER=GNU
 root=/data/home/sunyc/solverchallenge26
+real_problem=${1:-03}
 for sample in poisson nonsymmetric scaled complex; do
-    problem=03; sys_type=0
+    problem=$real_problem; sys_type=0
     if [ "$sample" = complex ]; then problem=06; sys_type=1; fi
     run_dir="$root/runs/direct-small-$SLURM_JOB_ID/$sample"
     mkdir -p "$run_dir"

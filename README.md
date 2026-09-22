@@ -16,10 +16,11 @@ T1、T3 和 T2 高精度档尚未达标；所有结果均以原始矩阵、原�
 - [T2 基线、依赖构建与复现](T2数值基线_2026-09-22.md)
 - [T1/T3/T6 扩展实验、编译与复现](初步阶段扩展基线_2026-09-23.md)
 - [官方框架接入说明](资料/官方框架接入说明.md)
+- [Grok 4.7 xhigh 独立校验](校验记录_2026-09-23.md)
 
 ## 代码与实验
 
-`资料/solverchallenge26_sample_code/` 基于[官方参考框架](https://gitee.com/godjs/solverchallenge26_sample_code)提交 `b66421483501021dd84aa10fc494f1dbf8e65958`，保留其 MIT 许可证。T2 实现位于 `problems/problem02/`，T1/T3/T6 的 CPU 实现位于 `problems/cpu_baseline/`。
+`资料/solverchallenge26_sample_code/` 基于[官方参考框架](https://gitee.com/godjs/solverchallenge26_sample_code)提交 `b66421483501021dd84aa10fc494f1dbf8e65958`，保留其 MIT 许可证。T2 实现位于 `problems/problem02/`，T1/T3/T4/T6/T9 的 CPU 实现位于 `problems/cpu_baseline/`。
 
 `scripts/` 包含 Slurm 实验脚本，`tests/` 生成已知解系统并核对结果。`logs/` 保存原始日志、资源消耗、代码快照和结果汇总。实际全量输入使用官方计算平台的数据目录，运行环境和命令见各基线报告。
 

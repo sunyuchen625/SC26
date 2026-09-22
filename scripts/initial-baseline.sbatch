@@ -19,7 +19,7 @@ root=/data/home/sunyc/solverchallenge26
 problem=$1
 case "$problem" in
     01) rtols='1e-8 1e-12'; sys_type=0 ;;
-    03) rtols=1e-12; sys_type=0 ;;
+    03|04) rtols=1e-12; sys_type=0 ;;
     06) rtols=1e-12; sys_type=1 ;;
     *) exit 2 ;;
 esac

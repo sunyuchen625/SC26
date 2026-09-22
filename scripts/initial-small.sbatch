@@ -18,7 +18,7 @@ export OMP_NUM_THREADS=1 SC26_RTOL=1e-11
 root=/data/home/sunyc/solverchallenge26
 python3 tests/make_small_systems.py
 python3 tests/make_complex_system.py
-for problem in 01 03 06; do
+for problem in ${SC26_PROBLEMS:-01 03 06}; do
     samples='poisson nonsymmetric scaled'; sys_type=0
     if [ "$problem" = 06 ]; then samples=complex; sys_type=1; fi
     for sample in $samples; do

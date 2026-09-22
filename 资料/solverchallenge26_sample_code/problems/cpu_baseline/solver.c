@@ -58,8 +58,9 @@ static void prepare_direct(struct PardisoState *state, const struct SC26_SolverI
     printf("T%d_PARDISO_ANALYSE seconds=%.6f estimated_peak_kib=%lld factor_nnz=%d\n",
            SC26_PROBLEM_NUMBER, state->analyse_seconds, memory_kib, (int)state->parameters[17]);
     fflush(stdout);
-    if (memory_kib > 400LL*1024*1024) {
-        fprintf(stderr, "PARDISO memory estimate exceeds the 400 GiB experiment budget\n");
+    long long budget_gib = SC26_PROBLEM_NUMBER == 9 ? 85 : 400;
+    if (memory_kib > budget_gib*1024*1024) {
+        fprintf(stderr, "PARDISO memory estimate exceeds the %lld GiB experiment budget\n", budget_gib);
         pardiso_phase(state, input, -1);
         exit(EXIT_FAILURE);
     }
@@ -219,12 +220,12 @@ void preprocess(struct MySolver* solver, const struct SC26_SolverInput* input)
     HYPRE_CALL(HYPRE_BoomerAMGSetInterpType(solver->amg, 6));
     HYPRE_CALL(HYPRE_BoomerAMGSetPMaxElmts(solver->amg, 4));
     HYPRE_CALL(HYPRE_BoomerAMGSetStrongThreshold(solver->amg,
-        SC26_PROBLEM_NUMBER == 3 ? 0.5 : 0.25));
+        (SC26_PROBLEM_NUMBER == 3 || SC26_PROBLEM_NUMBER == 4) ? 0.5 : 0.25));
     HYPRE_CALL(HYPRE_BoomerAMGSetRelaxType(solver->amg, 6));
     HYPRE_CALL(HYPRE_BoomerAMGSetNumSweeps(solver->amg, 1));
     HYPRE_CALL(HYPRE_BoomerAMGSetTol(solver->amg, 0));
     HYPRE_CALL(HYPRE_BoomerAMGSetMaxIter(solver->amg, 1));
-#if SC26_PROBLEM_NUMBER == 3
+#if SC26_PROBLEM_NUMBER == 3 || SC26_PROBLEM_NUMBER == 4
     HYPRE_CALL(HYPRE_BoomerAMGSetNumFunctions(solver->amg, 3));
 #endif
 #endif
