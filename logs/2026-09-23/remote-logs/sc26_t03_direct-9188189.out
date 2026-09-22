@@ -1,0 +1,65 @@
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                96
+On-line CPU(s) list:   0-95
+Thread(s) per core:    1
+Core(s) per socket:    48
+Socket(s):             2
+NUMA node(s):          2
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 143
+Model name:            Intel(R) Xeon(R) Platinum 8488C
+Stepping:              8
+CPU MHz:               3199.951
+CPU max MHz:           3800.0000
+CPU min MHz:           800.0000
+BogoMIPS:              4800.00
+Virtualization:        VT-x
+L1d cache:             48K
+L1i cache:             32K
+L2 cache:              2048K
+L3 cache:              107520K
+NUMA node0 CPU(s):     0-47
+NUMA node1 CPU(s):     48-95
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cat_l2 cdp_l3 invpcid_single intel_pt cdp_l2 ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq cldemote movdiri movdir64b md_clear pconfig spec_ctrl intel_stibp flush_l1d arch_capabilities
+65d1748adb4c33b8669a88304b70142715f52abfa85fd2414646df6942d468c7  /data/home/sunyc/solverchallenge26/build-t03/bin/MPI_direct_solver
+af81eb02884ee6734fd0a4366f7573952be3f685d9a2c086b5b7f137faf6f274  /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_03/solverchallenge26_03_A.dat
+0aeb2b4bcc56cea8cc30127abdfdcacbab1f68c03a4d285cf3139b9d8aec6c71  /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_03/solverchallenge26_03_b.dat
+matrix name :      /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_03/solverchallenge26_03_A.dat
+vectorb name :     /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_03/solverchallenge26_03_b.dat
+read function :    PETSc binary (0-base)
+sys_type :         0
+T3_PARDISO_ANALYSE seconds=14.906789 estimated_peak_kib=17658857 factor_nnz=1024736535
+T3_PARDISO_FACTOR seconds=1.783525 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=14.906789 factor=1.783525 solve_cleanup=1.033742
+T3_PARDISO_ANALYSE seconds=15.113528 estimated_peak_kib=17658857 factor_nnz=1024736535
+T3_PARDISO_FACTOR seconds=1.659460 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=15.113528 factor=1.659460 solve_cleanup=1.014713
+T3_PARDISO_ANALYSE seconds=14.920600 estimated_peak_kib=17658857 factor_nnz=1024736535
+T3_PARDISO_FACTOR seconds=1.772071 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=14.920600 factor=1.772071 solve_cleanup=0.969078
+T3_PARDISO_ANALYSE seconds=14.925990 estimated_peak_kib=17658857 factor_nnz=1024736535
+T3_PARDISO_FACTOR seconds=1.816589 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=14.925990 factor=1.816589 solve_cleanup=1.000084
+T3_PARDISO_ANALYSE seconds=14.927949 estimated_peak_kib=17658857 factor_nnz=1024736535
+T3_PARDISO_FACTOR seconds=1.755422 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=14.927949 factor=1.755422 solve_cleanup=1.069215
+Total memory usage:                 16750.3281 MB
+------------------------------------------
+CHECK end to end time :            17.847847 s
+Check || b - Ax || 2             =  2.261951e-06
+Check || b - Ax || MAX           =  1.711975e-07
+Check || b - Ax || 2 / || b || 2 =  7.050375e-05
+LD-Check || b - Ax || 2             =  1.899171e-06
+LD-Check || b - Ax || MAX           =  1.501255e-07
+LD-Check || b - Ax || 2 / || b || 2 =  5.919609e-05
+Q-Check || b - Ax || 2             =  1.899179e-06
+Q-Check || b - Ax || MAX           =  1.501387e-07
+Q-Check || b - Ax || 2 / || b || 2 =  5.919636e-05

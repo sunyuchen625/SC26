@@ -1,0 +1,49 @@
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /data/home/sunyc/solverchallenge26/build-t01
+Consolidate compiler generated dependencies of target sc26_io
+[  4%] Building C object CMakeFiles/sc26_diagnostics.dir/src/diagnostics.c.o
+[ 26%] Built target sc26_io
+Consolidate compiler generated dependencies of target sc26_mpi_diagnostics
+[ 34%] Built target sc26_mpi_diagnostics
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c: In function 'load_vector':
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c:323:10: warning: variable 'r' set but not used [-Wunused-but-set-variable]
+  323 |     int  r = 0;
+      |          ^
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c: In function 'load_b_complex':
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c:349:10: warning: variable 'r' set but not used [-Wunused-but-set-variable]
+  349 |     int  r = 0;
+      |          ^
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c: In function 'load_vector_ld':
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c:771:9: warning: variable 'r' set but not used [-Wunused-but-set-variable]
+  771 |     int r = 0;
+      |         ^
+Consolidate compiler generated dependencies of target sc26_mpi_io
+[ 43%] Built target sc26_mpi_io
+gmake[2]: Warning: File `/data/home/sunyc/solverchallenge26/src/apps/MPI_direct_solver.c' has modification time 241 s in the future
+[ 47%] Building C object CMakeFiles/MPI_direct_solver.dir/apps/MPI_direct_solver.c.o
+[ 52%] Linking C static library libsc26_diagnostics.a
+[ 52%] Built target sc26_diagnostics
+[ 56%] Building C object CMakeFiles/MPI_direct_solver.dir/problems/cpu_baseline/solver.c.o
+Consolidate compiler generated dependencies of target MPI_iterative_solver
+gmake[2]: Warning: File `/data/home/sunyc/solverchallenge26/src/problems/cpu_baseline/solver.h' has modification time 240 s in the future
+[ 60%] Building C object CMakeFiles/MPI_iterative_solver.dir/apps/MPI_iterative_solver.c.o
+[ 65%] Building C object CMakeFiles/MPI_iterative_solver.dir/problems/cpu_baseline/solver.c.o
+[ 69%] Linking C executable bin/MPI_direct_solver
+[ 73%] Linking C executable bin/MPI_iterative_solver
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[ 73%] Built target MPI_direct_solver
+gmake[2]: Warning: File `/data/home/sunyc/solverchallenge26/src/problems/cpu_baseline/solver.c' has modification time 302 s in the future
+[ 78%] Building C object CMakeFiles/direct_solver.dir/apps/direct_solver.c.o
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[ 78%] Built target MPI_iterative_solver
+[ 82%] Building C object CMakeFiles/direct_solver.dir/problems/cpu_baseline/solver.c.o
+gmake[2]: Warning: File `/data/home/sunyc/solverchallenge26/src/problems/cpu_baseline/solver.c' has modification time 302 s in the future
+[ 86%] Building C object CMakeFiles/iterative_solver.dir/apps/iterative_solver.c.o
+[ 91%] Linking C executable bin/direct_solver
+[ 95%] Building C object CMakeFiles/iterative_solver.dir/problems/cpu_baseline/solver.c.o
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[ 95%] Built target direct_solver
+[100%] Linking C executable bin/iterative_solver
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[100%] Built target iterative_solver

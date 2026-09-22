@@ -1,0 +1,4 @@
+c3n12
+rank=0 size=2 host=c3n12 sum=3
+MPI_SMOKE_PASS
+rank=1 size=2 host=c3n12 sum=3

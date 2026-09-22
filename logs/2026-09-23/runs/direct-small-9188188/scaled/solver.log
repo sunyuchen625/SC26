@@ -1,0 +1,36 @@
+matrix name :      /data/home/sunyc/solverchallenge26/tests/small_systems/scaled_A.dat
+vectorb name :     /data/home/sunyc/solverchallenge26/tests/small_systems/scaled_b.dat
+read function :    PETSc binary (0-base)
+sys_type :         0
+T3_PARDISO_ANALYSE seconds=0.005470 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.009663 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.005470 factor=0.009663 solve_cleanup=0.001684
+T3_PARDISO_ANALYSE seconds=0.001149 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.000692 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.001149 factor=0.000692 solve_cleanup=0.000184
+T3_PARDISO_ANALYSE seconds=0.001082 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.000618 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.001082 factor=0.000618 solve_cleanup=0.000181
+T3_PARDISO_ANALYSE seconds=0.001041 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.001170 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.001041 factor=0.001170 solve_cleanup=0.000177
+T3_PARDISO_ANALYSE seconds=0.001047 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.000393 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.001047 factor=0.000393 solve_cleanup=0.000162
+Total memory usage:                 65.7344 MB
+------------------------------------------
+CHECK end to end time :             0.127272 s
+Check || b - Ax || 2             =  2.643832e-12
+Check || b - Ax || MAX           =  9.094947e-13
+Check || b - Ax || 2 / || b || 2 =  1.295697e-16
+LD-Check || b - Ax || 2             =  1.936689e-12
+LD-Check || b - Ax || MAX           =  9.343637e-13
+LD-Check || b - Ax || 2 / || b || 2 =  9.491384e-17
+Q-Check || b - Ax || 2             =  1.936420e-12
+Q-Check || b - Ax || MAX           =  9.341991e-13
+Q-Check || b - Ax || 2 / || b || 2 =  9.490069e-17

@@ -1,0 +1,36 @@
+matrix name :      /data/home/sunyc/solverchallenge26/tests/small_systems/nonsymmetric_A.dat
+vectorb name :     /data/home/sunyc/solverchallenge26/tests/small_systems/nonsymmetric_b.dat
+read function :    PETSc binary (0-base)
+sys_type :         0
+T3_PARDISO_ANALYSE seconds=0.003912 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.011776 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.003912 factor=0.011776 solve_cleanup=0.001608
+T3_PARDISO_ANALYSE seconds=0.001169 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.001304 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.001169 factor=0.001304 solve_cleanup=0.000737
+T3_PARDISO_ANALYSE seconds=0.001065 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.000422 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.001065 factor=0.000422 solve_cleanup=0.000737
+T3_PARDISO_ANALYSE seconds=0.001039 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.000549 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.001039 factor=0.000549 solve_cleanup=0.000748
+T3_PARDISO_ANALYSE seconds=0.001038 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.000517 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.001038 factor=0.000517 solve_cleanup=0.000754
+Total memory usage:                 61.4531 MB
+------------------------------------------
+CHECK end to end time :             0.082974 s
+Check || b - Ax || 2             =  2.539112e-14
+Check || b - Ax || MAX           =  5.329071e-15
+Check || b - Ax || 2 / || b || 2 =  1.300638e-16
+LD-Check || b - Ax || 2             =  1.146992e-14
+LD-Check || b - Ax || MAX           =  1.716509e-15
+LD-Check || b - Ax || 2 / || b || 2 =  5.875369e-17
+Q-Check || b - Ax || 2             =  1.146951e-14
+Q-Check || b - Ax || MAX           =  1.716246e-15
+Q-Check || b - Ax || 2 / || b || 2 =  5.875159e-17

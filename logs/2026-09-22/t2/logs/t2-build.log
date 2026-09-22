@@ -1,0 +1,21 @@
+[ 16%] Built target sc26_mpi_diagnostics
+[ 58%] Built target sc26_io
+[ 75%] Built target sc26_mpi_io
+Consolidate compiler generated dependencies of target MPI_iterative_solver
+[ 83%] Building C object CMakeFiles/MPI_iterative_solver.dir/problems/problem02/solver.c.o
+/data/home/sunyc/solverchallenge26/src/problems/problem02/solver.c: In function 'preprocess_complex':
+/data/home/sunyc/solverchallenge26/src/problems/problem02/solver.c:203:50: warning: unused parameter 'solver' [-Wunused-parameter]
+  203 | void preprocess_complex(struct MySolver_complex* solver, const struct SC26_SolverInput* input)
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/data/home/sunyc/solverchallenge26/src/problems/problem02/solver.c:203:89: warning: unused parameter 'input' [-Wunused-parameter]
+  203 | void preprocess_complex(struct MySolver_complex* solver, const struct SC26_SolverInput* input)
+      |                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+/data/home/sunyc/solverchallenge26/src/problems/problem02/solver.c: In function 'iterative_solver_complex':
+/data/home/sunyc/solverchallenge26/src/problems/problem02/solver.c:208:56: warning: unused parameter 'solver' [-Wunused-parameter]
+  208 | void iterative_solver_complex(struct MySolver_complex* solver, const struct SC26_SolverInput* input)
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/data/home/sunyc/solverchallenge26/src/problems/problem02/solver.c:208:95: warning: unused parameter 'input' [-Wunused-parameter]
+  208 | void iterative_solver_complex(struct MySolver_complex* solver, const struct SC26_SolverInput* input)
+      |                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+[ 91%] Linking C executable bin/MPI_iterative_solver
+[100%] Built target MPI_iterative_solver

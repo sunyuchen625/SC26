@@ -1,0 +1,152 @@
+matrix name :      /data/home/sunyc/solverchallenge26/tests/small_systems/poisson_A.dat
+vectorb name :     /data/home/sunyc/solverchallenge26/tests/small_systems/poisson_b.dat
+read function :    PETSc binary (0-base)
+sys_type :         0
+T3_PARDISO_ANALYSE seconds=0.008222 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.084230 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.008222 factor=0.084230 solve_cleanup=0.004579
+T3_PARDISO_ANALYSE seconds=0.002813 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.000407 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.002813 factor=0.000407 solve_cleanup=0.000402
+T3_PARDISO_ANALYSE seconds=0.002615 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.001017 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.002615 factor=0.001017 solve_cleanup=0.000322
+T3_PARDISO_ANALYSE seconds=0.002149 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.000415 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.002149 factor=0.000415 solve_cleanup=0.000326
+T3_PARDISO_ANALYSE seconds=0.002120 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.000351 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.002120 factor=0.000351 solve_cleanup=0.000327
+Total memory usage:                 63.8945 MB
+------------------------------------------
+CHECK end to end time :             0.282909 s
+Check || b - Ax || 2             =  3.954114e-14
+Check || b - Ax || MAX           =  7.105427e-15
+Check || b - Ax || 2 / || b || 2 =  2.030770e-16
+LD-Check || b - Ax || 2             =  2.519466e-14
+LD-Check || b - Ax || MAX           =  4.387116e-15
+LD-Check || b - Ax || 2 / || b || 2 =  1.293958e-16
+Q-Check || b - Ax || 2             =  2.519465e-14
+Q-Check || b - Ax || MAX           =  4.387241e-15
+Q-Check || b - Ax || 2 / || b || 2 =  1.293958e-16
+KNOWN_SOLUTION_PASS max_abs_error=0.000000000000e+00
+OFFICIAL_RESIDUAL_PASS relative_residual=1.293958000000e-16 threshold=1.0e-10
+matrix name :      /data/home/sunyc/solverchallenge26/tests/small_systems/nonsymmetric_A.dat
+vectorb name :     /data/home/sunyc/solverchallenge26/tests/small_systems/nonsymmetric_b.dat
+read function :    PETSc binary (0-base)
+sys_type :         0
+T3_PARDISO_ANALYSE seconds=0.003597 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.009649 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.003597 factor=0.009649 solve_cleanup=0.001624
+T3_PARDISO_ANALYSE seconds=0.001097 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.000465 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.001097 factor=0.000465 solve_cleanup=0.000167
+T3_PARDISO_ANALYSE seconds=0.001048 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.001249 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.001048 factor=0.001249 solve_cleanup=0.000178
+T3_PARDISO_ANALYSE seconds=0.001041 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.000614 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.001041 factor=0.000614 solve_cleanup=0.000172
+T3_PARDISO_ANALYSE seconds=0.001029 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.000427 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.001029 factor=0.000427 solve_cleanup=0.000169
+Total memory usage:                 63.7109 MB
+------------------------------------------
+CHECK end to end time :             0.037691 s
+Check || b - Ax || 2             =  3.398280e-14
+Check || b - Ax || MAX           =  7.105427e-15
+Check || b - Ax || 2 / || b || 2 =  1.740739e-16
+LD-Check || b - Ax || 2             =  2.432216e-14
+LD-Check || b - Ax || MAX           =  4.366299e-15
+LD-Check || b - Ax || 2 / || b || 2 =  1.245882e-16
+Q-Check || b - Ax || 2             =  2.432162e-14
+Q-Check || b - Ax || MAX           =  4.366413e-15
+Q-Check || b - Ax || 2 / || b || 2 =  1.245854e-16
+KNOWN_SOLUTION_PASS max_abs_error=0.000000000000e+00
+OFFICIAL_RESIDUAL_PASS relative_residual=1.245854000000e-16 threshold=1.0e-10
+matrix name :      /data/home/sunyc/solverchallenge26/tests/small_systems/scaled_A.dat
+vectorb name :     /data/home/sunyc/solverchallenge26/tests/small_systems/scaled_b.dat
+read function :    PETSc binary (0-base)
+sys_type :         0
+T3_PARDISO_ANALYSE seconds=0.005470 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.009663 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.005470 factor=0.009663 solve_cleanup=0.001684
+T3_PARDISO_ANALYSE seconds=0.001149 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.000692 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.001149 factor=0.000692 solve_cleanup=0.000184
+T3_PARDISO_ANALYSE seconds=0.001082 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.000618 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.001082 factor=0.000618 solve_cleanup=0.000181
+T3_PARDISO_ANALYSE seconds=0.001041 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.001170 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.001041 factor=0.001170 solve_cleanup=0.000177
+T3_PARDISO_ANALYSE seconds=0.001047 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.000393 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.001047 factor=0.000393 solve_cleanup=0.000162
+Total memory usage:                 65.7344 MB
+------------------------------------------
+CHECK end to end time :             0.127272 s
+Check || b - Ax || 2             =  2.643832e-12
+Check || b - Ax || MAX           =  9.094947e-13
+Check || b - Ax || 2 / || b || 2 =  1.295697e-16
+LD-Check || b - Ax || 2             =  1.936689e-12
+LD-Check || b - Ax || MAX           =  9.343637e-13
+LD-Check || b - Ax || 2 / || b || 2 =  9.491384e-17
+Q-Check || b - Ax || 2             =  1.936420e-12
+Q-Check || b - Ax || MAX           =  9.341991e-13
+Q-Check || b - Ax || 2 / || b || 2 =  9.490069e-17
+KNOWN_SOLUTION_PASS max_abs_error=0.000000000000e+00
+OFFICIAL_RESIDUAL_PASS relative_residual=9.490069000000e-17 threshold=1.0e-10
+matrix name :      /data/home/sunyc/solverchallenge26/tests/small_systems/complex_A.dat
+vectorb name :     /data/home/sunyc/solverchallenge26/tests/small_systems/complex_b.dat
+read function :    PETSc binary (0-base)
+sys_type :         1
+T6_PARDISO_ANALYSE seconds=0.005042 estimated_peak_kib=793 factor_nnz=14837
+T6_PARDISO_FACTOR seconds=0.017060 perturbed_pivots=0
+T6_PARDISO_DONE refinements=4
+T6_PHASE_SECONDS analyse=0.005042 factor=0.017060 solve_cleanup=0.021632
+T6_PARDISO_ANALYSE seconds=0.001455 estimated_peak_kib=793 factor_nnz=14837
+T6_PARDISO_FACTOR seconds=0.001137 perturbed_pivots=0
+T6_PARDISO_DONE refinements=4
+T6_PHASE_SECONDS analyse=0.001455 factor=0.001137 solve_cleanup=0.000829
+T6_PARDISO_ANALYSE seconds=0.001374 estimated_peak_kib=793 factor_nnz=14837
+T6_PARDISO_FACTOR seconds=0.001411 perturbed_pivots=0
+T6_PARDISO_DONE refinements=4
+T6_PHASE_SECONDS analyse=0.001374 factor=0.001411 solve_cleanup=0.000827
+T6_PARDISO_ANALYSE seconds=0.001377 estimated_peak_kib=793 factor_nnz=14837
+T6_PARDISO_FACTOR seconds=0.001228 perturbed_pivots=0
+T6_PARDISO_DONE refinements=4
+T6_PHASE_SECONDS analyse=0.001377 factor=0.001228 solve_cleanup=0.000713
+T6_PARDISO_ANALYSE seconds=0.001039 estimated_peak_kib=793 factor_nnz=14837
+T6_PARDISO_FACTOR seconds=0.000689 perturbed_pivots=0
+T6_PARDISO_DONE refinements=4
+T6_PHASE_SECONDS analyse=0.001039 factor=0.000689 solve_cleanup=0.000634
+Total memory usage:                 93.9336 MB
+------------------------------------------
+CHECK end to end time :             0.134337 s
+Check complex || b - Ax || 2             =  3.504983e-12 
+Check complex || b - Ax || MAX           =  1.016846e-12 
+Check complex || b - Ax || 2 / || b || 2 =  1.194003e-16 
+LD-Check complex || b - Ax || 2             =  2.604984e-12 
+LD-Check complex || b - Ax || MAX           =  1.021937e-12 
+LD-Check complex || b - Ax || 2 / || b || 2 =  8.874109e-17 
+Q-Check complex || b - Ax || 2             =  2.605040e-12
+Q-Check complex || b - Ax || MAX           =  1.021671e-12
+Q-Check complex || b - Ax || 2 / || b || 2 =  8.874297e-17
+KNOWN_SOLUTION_PASS max_abs_error=0.000000000000e+00
+OFFICIAL_RESIDUAL_PASS relative_residual=8.874297000000e-17 threshold=1.0e-10

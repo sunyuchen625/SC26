@@ -1,0 +1,27 @@
+{
+  "n": 6291456,
+  "nnz": 52133888,
+  "matrix_bytes": 650772496,
+  "row_nnz_histogram": {
+    "5": 16,
+    "6": 3032,
+    "7": 192024,
+    "8": 4096008,
+    "9": 2000376
+  },
+  "sample_rows": 4096,
+  "sample_diagonal_range": [
+    48.04721773846472,
+    1.8448586422266746e+17
+  ],
+  "sample_row_sum_range": [
+    5.528662017546594,
+    5755118.132002088
+  ],
+  "sample_positive_offdiagonals": 0,
+  "sample_offdiagonals": 29847,
+  "sample_max_abs_Aij_minus_Aji": 1806806.4373441618,
+  "rhs_sum": 160218.72869808305,
+  "rhs_norm2": 95.92666601410772,
+  "constant_rhs_projection_relative": 0.6658836462285395
+}

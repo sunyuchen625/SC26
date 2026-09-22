@@ -1,0 +1,36 @@
+matrix name :      /data/home/sunyc/solverchallenge26/tests/small_systems/poisson_A.dat
+vectorb name :     /data/home/sunyc/solverchallenge26/tests/small_systems/poisson_b.dat
+read function :    PETSc binary (0-base)
+sys_type :         0
+T3_PARDISO_ANALYSE seconds=0.008222 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.084230 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.008222 factor=0.084230 solve_cleanup=0.004579
+T3_PARDISO_ANALYSE seconds=0.002813 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.000407 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.002813 factor=0.000407 solve_cleanup=0.000402
+T3_PARDISO_ANALYSE seconds=0.002615 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.001017 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.002615 factor=0.001017 solve_cleanup=0.000322
+T3_PARDISO_ANALYSE seconds=0.002149 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.000415 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.002149 factor=0.000415 solve_cleanup=0.000326
+T3_PARDISO_ANALYSE seconds=0.002120 estimated_peak_kib=579 factor_nnz=14837
+T3_PARDISO_FACTOR seconds=0.000351 perturbed_pivots=0
+T3_PARDISO_DONE refinements=4
+T3_PHASE_SECONDS analyse=0.002120 factor=0.000351 solve_cleanup=0.000327
+Total memory usage:                 63.8945 MB
+------------------------------------------
+CHECK end to end time :             0.282909 s
+Check || b - Ax || 2             =  3.954114e-14
+Check || b - Ax || MAX           =  7.105427e-15
+Check || b - Ax || 2 / || b || 2 =  2.030770e-16
+LD-Check || b - Ax || 2             =  2.519466e-14
+LD-Check || b - Ax || MAX           =  4.387116e-15
+LD-Check || b - Ax || 2 / || b || 2 =  1.293958e-16
+Q-Check || b - Ax || 2             =  2.519465e-14
+Q-Check || b - Ax || MAX           =  4.387241e-15
+Q-Check || b - Ax || 2 / || b || 2 =  1.293958e-16

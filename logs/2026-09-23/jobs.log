@@ -1,0 +1,54 @@
+JobID                         JobName      State ExitCode    Elapsed  AllocCPUS        NodeList     MaxRSS 
+------------ ------------------------ ---------- -------- ---------- ---------- --------------- ---------- 
+9188175            sc26_initial_small  COMPLETED      0:0   00:00:05          4           c3n52            
+9188175.bat+                    batch  COMPLETED      0:0   00:00:05          4           c3n52          0 
+9188175.ext+                   extern  COMPLETED      0:0   00:00:05          4           c3n52          0 
+9188176                      sc26_t01     FAILED      1:0   00:01:07          8           c3n52            
+9188176.bat+                    batch     FAILED      1:0   00:01:07          8           c3n52   4715776K 
+9188176.ext+                   extern  COMPLETED      0:0   00:01:08          8           c3n52          0 
+9188177                      sc26_t03     FAILED      1:0   00:00:34         32           c3n12            
+9188177.bat+                    batch     FAILED      1:0   00:00:34         32           c3n12   4314396K 
+9188177.ext+                   extern  COMPLETED      0:0   00:00:35         32           c3n12          0 
+9188178                      sc26_t06     FAILED      1:0   00:00:25         16           c3n23            
+9188178.bat+                    batch     FAILED      1:0   00:00:25         16           c3n23          0 
+9188178.ext+                   extern  COMPLETED      0:0   00:00:25         16           c3n23          0 
+9188180          sc26_inspect_initial  COMPLETED      0:0   00:00:04          4           c3n01            
+9188180.bat+                    batch  COMPLETED      0:0   00:00:04          4           c3n01          0 
+9188180.ext+                   extern  COMPLETED      0:0   00:00:04          4           c3n01          0 
+9188181            sc26_initial_small  COMPLETED      0:0   00:00:04          4           c3n52            
+9188181.bat+                    batch  COMPLETED      0:0   00:00:04          4           c3n52          0 
+9188181.ext+                   extern  COMPLETED      0:0   00:00:04          4           c3n52          0 
+9188182               sc26_t01_scaled     FAILED      1:0   00:08:13          8           c3n52            
+9188182.bat+                    batch     FAILED      1:0   00:08:13          8           c3n52   5285968K 
+9188182.ext+                   extern  COMPLETED      0:0   00:08:13          8           c3n52          0 
+9188183               sc26_t03_scaled     FAILED      1:0   00:02:29         32           c3n12            
+9188183.bat+                    batch     FAILED      1:0   00:02:29         32           c3n12   5160432K 
+9188183.ext+                   extern  COMPLETED      0:0   00:02:29         32           c3n12          0 
+9188184               sc26_t06_scaled     FAILED      1:0   00:01:42         16           c3n23            
+9188184.bat+                    batch     FAILED      1:0   00:01:42         16           c3n23   7075816K 
+9188184.ext+                   extern  COMPLETED      0:0   00:01:42         16           c3n23          0 
+9188185            sc26_initial_small  COMPLETED      0:0   00:00:07          4           c3n12            
+9188185.bat+                    batch  COMPLETED      0:0   00:00:07          4           c3n12          0 
+9188185.ext+                   extern  COMPLETED      0:0   00:00:07          4           c3n12          0 
+9188186             sc26_direct_small     FAILED     11:0   00:00:00          4           c3n01            
+9188186.bat+                    batch     FAILED     11:0   00:00:00          4           c3n01          0 
+9188186.ext+                   extern  COMPLETED      0:0   00:00:01          4           c3n01          0 
+9188188             sc26_direct_small  COMPLETED      0:0   00:00:05          4           c3n01            
+9188188.bat+                    batch  COMPLETED      0:0   00:00:05          4           c3n01          0 
+9188188.ext+                   extern  COMPLETED      0:0   00:00:05          4           c3n01          0 
+9188189               sc26_t03_direct     FAILED      1:0   00:01:43         96          c3n124            
+9188189.bat+                    batch     FAILED      1:0   00:01:43         96          c3n124  13275320K 
+9188189.ext+                   extern  COMPLETED      0:0   00:01:43         96          c3n124          0 
+9188190               sc26_t06_direct  COMPLETED      0:0   00:03:09         96          c3n137            
+9188190.bat+                    batch  COMPLETED      0:0   00:03:09         96          c3n137  36020708K 
+9188190.ext+                   extern  COMPLETED      0:0   00:03:09         96          c3n137          0 
+9188191               sc26_t01_blocks  COMPLETED      0:0   00:00:01          4           c3n01            
+9188191.bat+                    batch  COMPLETED      0:0   00:00:01          4           c3n01          0 
+9188191.ext+                   extern  COMPLETED      0:0   00:00:02          4           c3n01          0 
+9188193             sc26_direct_small  COMPLETED      0:0   00:00:04          4           c3n52            
+9188193.bat+                    batch  COMPLETED      0:0   00:00:04          4           c3n52          0 
+9188193.ext+                   extern  COMPLETED      0:0   00:00:04          4           c3n52          0 
+9188194               sc26_t03_refine     FAILED      1:0   00:03:54         96          c3n124            
+9188194.bat+                    batch     FAILED      1:0   00:03:54         96          c3n124  17167004K 
+9188194.ext+                   extern  COMPLETED      0:0   00:03:54         96          c3n124          0 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)

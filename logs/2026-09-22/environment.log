@@ -1,0 +1,15 @@
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+2026-09-22T19:20:17+0800
+c3ln01
+Currently Loaded Modulefiles:
+ 1) gcc/11.3.0   2) openmpi/4.1.8/gcc11.3.0   3) cmake/3.24.2  
+gcc (GCC) 11.3.0
+mpirun (Open MPI) 4.1.8
+cmake version 3.24.2
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+PARTITION AVAIL NODES STATE TIMELIMIT
+qhn* up 3 drain infinite
+qhn* up 22 mix infinite
+qhn* up 171 alloc infinite
+qhn* up 4 idle infinite

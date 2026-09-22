@@ -1,0 +1,5 @@
+find_package(HYPRE 2.33 CONFIG REQUIRED)
+add_library(sc26_problem_dependencies INTERFACE)
+target_link_libraries(sc26_problem_dependencies INTERFACE HYPRE::HYPRE)
+math(EXPR SC26_PROBLEM_NUMBER "${SC26_PROBLEM}")
+target_compile_definitions(sc26_problem_dependencies INTERFACE SC26_PROBLEM_NUMBER=${SC26_PROBLEM_NUMBER})

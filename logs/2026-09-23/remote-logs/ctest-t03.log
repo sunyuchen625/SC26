@@ -1,0 +1,10 @@
+Internal ctest changing into directory: /data/home/sunyc/solverchallenge26/build-t03
+Test project /data/home/sunyc/solverchallenge26/build-t03
+    Start 1: header_include_order_mpi_first
+1/2 Test #1: header_include_order_mpi_first ......   Passed    0.06 sec
+    Start 2: header_include_order_reader_first
+2/2 Test #2: header_include_order_reader_first ...   Passed    0.06 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.12 sec

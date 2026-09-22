@@ -1,0 +1,29 @@
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              c3n01
+  Local adapter:           mlx5_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   c3n01
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+[c3n01:78082] *** Process received signal ***
+[c3n01:78082] Signal: Segmentation fault (11)
+[c3n01:78082] Signal code: Address not mapped (1)
+[c3n01:78082] Failing at address: 0x440000e8
+[c3n01:78082] [ 0] /lib64/libpthread.so.0(+0xf630)[0x2b3b24a58630]
+[c3n01:78082] [ 1] /data/public/software/openmpi/4.18-gcc11.3/lib/libmpi.so.40(MPI_Comm_rank+0x37)[0x2b3b23f46937]
+[c3n01:78082] [ 2] /data/home/sunyc/solverchallenge26/build-t03/bin/MPI_direct_solver[0x4017e5]
+[c3n01:78082] [ 3] /lib64/libc.so.6(__libc_start_main+0xf5)[0x2b3b2518d555]
+[c3n01:78082] [ 4] /data/home/sunyc/solverchallenge26/build-t03/bin/MPI_direct_solver[0x40235b]
+[c3n01:78082] *** End of error message ***
+/var/spool/slurm/d/job9188186/slurm_script: line 20: 78082 Segmentation fault      "$root/build-t$problem/bin/MPI_direct_solver" "$root/tests/small_systems/${sample}_A.dat" "$root/tests/small_systems/${sample}_b.dat" 0 "$sys_type"
+     78083 Done                    | tee solver.log

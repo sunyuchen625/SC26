@@ -18,3 +18,7 @@ node_modules/
 .grok
 AGENTS.md
 opencode.json
+/tmp/
+/资料/dependencies/
+!/logs/**/*.log
+!/logs/**/*.out

@@ -1,0 +1,126 @@
+matrix name :      /data/home/sunyc/solverchallenge26/tests/small_systems/nonsymmetric_A.dat
+vectorb name :     /data/home/sunyc/solverchallenge26/tests/small_systems/nonsymmetric_b.dat
+read function :    PETSc binary (0-base)
+sys_type :         0
+L2 norm of b: 7.969843e+01
+Initial L2 norm of residual: 7.969843e+01
+=============================================
+
+Iters     resid.norm     conv.rate  rel.res.norm
+-----    ------------    ---------- ------------
+    1    2.744216e+00    0.034432   3.443249e-02
+    2    8.497683e-02    0.030966   1.066230e-03
+    3    2.805337e-03    0.033013   3.519940e-05
+    4    9.782503e-05    0.034871   1.227440e-06
+    5    4.363879e-06    0.044609   5.475490e-08
+    6    1.694520e-07    0.038831   2.126165e-09
+    7    6.421670e-09    0.037897   8.057461e-11
+    8    2.808296e-10    0.043732   3.523652e-12
+
+
+Final L2 norm of residual: 2.808278e-10
+
+
+
+T1_GMRES iterations=8 scaled_relative_residual=3.523630680446e-12 rtol=1.0e-11 converged=1
+T1_PHASE_SECONDS analyse=0.000093 preprocess=0.005489 solve_cleanup=0.001700
+L2 norm of b: 7.969843e+01
+Initial L2 norm of residual: 7.969843e+01
+=============================================
+
+Iters     resid.norm     conv.rate  rel.res.norm
+-----    ------------    ---------- ------------
+    1    2.744216e+00    0.034432   3.443249e-02
+    2    8.497683e-02    0.030966   1.066230e-03
+    3    2.805337e-03    0.033013   3.519940e-05
+    4    9.782503e-05    0.034871   1.227440e-06
+    5    4.363879e-06    0.044609   5.475490e-08
+    6    1.694520e-07    0.038831   2.126165e-09
+    7    6.421670e-09    0.037897   8.057461e-11
+    8    2.808296e-10    0.043732   3.523652e-12
+
+
+Final L2 norm of residual: 2.808278e-10
+
+
+
+T1_GMRES iterations=8 scaled_relative_residual=3.523630680446e-12 rtol=1.0e-11 converged=1
+T1_PHASE_SECONDS analyse=0.000038 preprocess=0.003552 solve_cleanup=0.001219
+L2 norm of b: 7.969843e+01
+Initial L2 norm of residual: 7.969843e+01
+=============================================
+
+Iters     resid.norm     conv.rate  rel.res.norm
+-----    ------------    ---------- ------------
+    1    2.744216e+00    0.034432   3.443249e-02
+    2    8.497683e-02    0.030966   1.066230e-03
+    3    2.805337e-03    0.033013   3.519940e-05
+    4    9.782503e-05    0.034871   1.227440e-06
+    5    4.363879e-06    0.044609   5.475490e-08
+    6    1.694520e-07    0.038831   2.126165e-09
+    7    6.421670e-09    0.037897   8.057461e-11
+    8    2.808296e-10    0.043732   3.523652e-12
+
+
+Final L2 norm of residual: 2.808278e-10
+
+
+
+T1_GMRES iterations=8 scaled_relative_residual=3.523630680446e-12 rtol=1.0e-11 converged=1
+T1_PHASE_SECONDS analyse=0.000053 preprocess=0.002876 solve_cleanup=0.001240
+L2 norm of b: 7.969843e+01
+Initial L2 norm of residual: 7.969843e+01
+=============================================
+
+Iters     resid.norm     conv.rate  rel.res.norm
+-----    ------------    ---------- ------------
+    1    2.744216e+00    0.034432   3.443249e-02
+    2    8.497683e-02    0.030966   1.066230e-03
+    3    2.805337e-03    0.033013   3.519940e-05
+    4    9.782503e-05    0.034871   1.227440e-06
+    5    4.363879e-06    0.044609   5.475490e-08
+    6    1.694520e-07    0.038831   2.126165e-09
+    7    6.421670e-09    0.037897   8.057461e-11
+    8    2.808296e-10    0.043732   3.523652e-12
+
+
+Final L2 norm of residual: 2.808278e-10
+
+
+
+T1_GMRES iterations=8 scaled_relative_residual=3.523630680446e-12 rtol=1.0e-11 converged=1
+T1_PHASE_SECONDS analyse=0.000027 preprocess=0.002846 solve_cleanup=0.001204
+L2 norm of b: 7.969843e+01
+Initial L2 norm of residual: 7.969843e+01
+=============================================
+
+Iters     resid.norm     conv.rate  rel.res.norm
+-----    ------------    ---------- ------------
+    1    2.744216e+00    0.034432   3.443249e-02
+    2    8.497683e-02    0.030966   1.066230e-03
+    3    2.805337e-03    0.033013   3.519940e-05
+    4    9.782503e-05    0.034871   1.227440e-06
+    5    4.363879e-06    0.044609   5.475490e-08
+    6    1.694520e-07    0.038831   2.126165e-09
+    7    6.421670e-09    0.037897   8.057461e-11
+    8    2.808296e-10    0.043732   3.523652e-12
+
+
+Final L2 norm of residual: 2.808278e-10
+
+
+
+T1_GMRES iterations=8 scaled_relative_residual=3.523630680446e-12 rtol=1.0e-11 converged=1
+T1_PHASE_SECONDS analyse=0.000029 preprocess=0.001999 solve_cleanup=0.001012
+Total memory usage:                 31.3711 MB
+------------------------------------------
+CHECK end to end time :             0.004707 s
+Check || b - Ax || 2             =  6.878845e-10
+Check || b - Ax || MAX           =  1.785949e-10
+Check || b - Ax || 2 / || b || 2 =  3.523629e-12
+LD-Check || b - Ax || 2             =  6.878849e-10
+LD-Check || b - Ax || MAX           =  1.785947e-10
+LD-Check || b - Ax || 2 / || b || 2 =  3.523631e-12
+Q-Check || b - Ax || 2             =  6.878849e-10
+Q-Check || b - Ax || MAX           =  1.785947e-10
+Q-Check || b - Ax || 2 / || b || 2 =  3.523631e-12

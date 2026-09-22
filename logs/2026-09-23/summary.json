@@ -1,0 +1,104 @@
+[
+  {
+    "problem": "T1",
+    "method": "equilibrated_gmres_amg",
+    "log": "logs/2026-09-23/runs/t01-9188182/1e-8/solver.log",
+    "threshold": 0.0001,
+    "official_relative_residual": 1104.663,
+    "mean_seconds": 96.003442,
+    "repetitions": 5,
+    "sum_process_peak_rss_bytes": 6902075392,
+    "memory_gib": 6.428058624267578,
+    "official_residual_pass": false,
+    "phase_mean_seconds": {
+      "analyse": 0.0042448,
+      "preprocess": 8.3140658,
+      "solve_cleanup": 87.6842052
+    }
+  },
+  {
+    "problem": "T3",
+    "method": "equilibrated_gmres_amg",
+    "log": "logs/2026-09-23/runs/t03-9188183/1e-12/solver.log",
+    "threshold": 1e-08,
+    "official_relative_residual": 34.88719,
+    "mean_seconds": 26.817043,
+    "repetitions": 5,
+    "sum_process_peak_rss_bytes": 7802200064,
+    "memory_gib": 7.266365051269531,
+    "official_residual_pass": false,
+    "phase_mean_seconds": {
+      "analyse": 0.000442,
+      "preprocess": 3.2530107999999998,
+      "solve_cleanup": 23.5635682
+    }
+  },
+  {
+    "problem": "T3",
+    "method": "pardiso_double_refinement",
+    "log": "logs/2026-09-23/runs/t03-direct-9188189/solver.log",
+    "threshold": 1e-08,
+    "official_relative_residual": 5.919636e-05,
+    "mean_seconds": 17.847847,
+    "repetitions": 5,
+    "sum_process_peak_rss_bytes": 17563992064,
+    "memory_gib": 16.357742309570312,
+    "official_residual_pass": false,
+    "phase_mean_seconds": {
+      "analyse": 14.958971199999999,
+      "factor": 1.7574134000000001,
+      "solve_cleanup": 1.0173664
+    }
+  },
+  {
+    "problem": "T3",
+    "method": "pardiso_extended_refinement",
+    "log": "logs/2026-09-23/runs/t03-direct-9188194/solver.log",
+    "threshold": 1e-08,
+    "official_relative_residual": 2.744395e-05,
+    "mean_seconds": 44.038319,
+    "repetitions": 5,
+    "sum_process_peak_rss_bytes": 17586225152,
+    "memory_gib": 16.378448486328125,
+    "official_residual_pass": false,
+    "phase_mean_seconds": {
+      "analyse": 15.006964399999998,
+      "factor": 1.7371368,
+      "solve_cleanup": 27.130798399999996
+    }
+  },
+  {
+    "problem": "T6",
+    "method": "equilibrated_gmres_ilu",
+    "log": "logs/2026-09-23/runs/t06-9188184/1e-12/solver.log",
+    "threshold": 1e-08,
+    "official_relative_residual": 1.098295,
+    "mean_seconds": 17.607072,
+    "repetitions": 5,
+    "sum_process_peak_rss_bytes": 8682860544,
+    "memory_gib": 8.086544036865234,
+    "official_residual_pass": false,
+    "phase_mean_seconds": {
+      "analyse": 0.0119718,
+      "preprocess": 0.8844452,
+      "solve_cleanup": 16.7052622
+    }
+  },
+  {
+    "problem": "T6",
+    "method": "pardiso_complex",
+    "log": "logs/2026-09-23/runs/t06-direct-9188190/solver.log",
+    "threshold": 1e-08,
+    "official_relative_residual": 1.80188e-12,
+    "mean_seconds": 35.216142,
+    "repetitions": 5,
+    "sum_process_peak_rss_bytes": 40672354304,
+    "memory_gib": 37.87908172607422,
+    "official_residual_pass": true,
+    "phase_mean_seconds": {
+      "analyse": 18.895841400000002,
+      "factor": 13.881622400000001,
+      "solve_cleanup": 2.3294806
+    }
+  }
+]

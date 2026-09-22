@@ -1,0 +1,81 @@
+-- CMake Executable: /data/public/software/cmake/3.24.2/bin/cmake
+-- CMake Version: 3.24.2
+-- NOTE: Could not find .git directory
+-- Hypre Version: 2.33.0
+-- The C compiler identification is GNU 11.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /data/public/software/openmpi/4.18-gcc11.3/bin/mpicc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Build type: Release
+-- Shared library: OFF
+-- Installation directory: /data/home/sunyc/solverchallenge26/deps/hypre
+-- Using C standard: 99
+-- Found MPI_C: /data/public/software/openmpi/4.18-gcc11.3/bin/mpicc (found version "3.1") 
+-- Found MPI: TRUE (found version "3.1")  
+CMake Warning at config/cmake/HYPRE_CMakeUtilities.cmake:163 (message):
+  MPI include directory not found.  Please specify -DMPI_INCLUDE_DIR or the
+  compilation may fail.
+Call Stack (most recent call first):
+  CMakeLists.txt:363 (configure_mpi_target)
+
+
+-- MPI execution command: /data/public/software/openmpi/4.18-gcc11.3/bin/mpiexec
+-- Performing Test HYPRE_HAVE_MPI_COMM_F2C
+-- Performing Test HYPRE_HAVE_MPI_COMM_F2C - Success
+-- Link-Time Optimization (LTO) disabled
+-- GPU support not enabled
+-- Using internal BLAS
+-- Using internal LAPACK
+-- 
+-- HYPRE Configuration Summary:
+-- 
+--  Base Options:
+--  +-------------------------------------+---------+
+--  | Option                              | Status  |
+--  +-------------------------------------+---------+
+--  | HYPRE_ENABLE_BIGINT                 | OFF     |
+--  | HYPRE_ENABLE_MIXEDINT               | OFF     |
+--  | HYPRE_ENABLE_SINGLE                 | OFF     |
+--  | HYPRE_ENABLE_LONG_DOUBLE            | OFF     |
+--  | HYPRE_ENABLE_COMPLEX                | OFF     |
+--  | HYPRE_ENABLE_HYPRE_BLAS             | ON      |
+--  | HYPRE_ENABLE_HYPRE_LAPACK           | ON      |
+--  | HYPRE_ENABLE_PERSISTENT_COMM        | OFF     |
+--  | HYPRE_ENABLE_FEI                    | OFF     |
+--  | HYPRE_ENABLE_HOPSCOTCH              | OFF     |
+--  | HYPRE_ENABLE_OPENMP                 | OFF     |
+--  | HYPRE_ENABLE_MPI                    | ON      |
+--  | HYPRE_ENABLE_LTO                    | OFF     |
+--  | HYPRE_ENABLE_PRINT_ERRORS           | ON      |
+--  | HYPRE_ENABLE_TEST_USING_HOST        | OFF     |
+--  | HYPRE_ENABLE_HOST_MEMORY            | ON      |
+--  | HYPRE_BUILD_EXAMPLES                | OFF     |
+--  | HYPRE_BUILD_TESTS                   | OFF     |
+--  +-------------------------------------+---------+
+-- 
+--  Third-Party Library Options:
+--  +-------------------------------------+---------+
+--  | Option                              | Status  |
+--  +-------------------------------------+---------+
+--  | HYPRE_ENABLE_UMPIRE                 | OFF     |
+--  | HYPRE_ENABLE_UMPIRE_HOST            | OFF     |
+--  | HYPRE_ENABLE_UMPIRE_PINNED          | OFF     |
+--  | HYPRE_ENABLE_UMPIRE_DEVICE          | OFF     |
+--  | HYPRE_ENABLE_UMPIRE_UM              | OFF     |
+--  | HYPRE_ENABLE_SUPERLU                | OFF     |
+--  | HYPRE_ENABLE_DSUPERLU               | OFF     |
+--  | HYPRE_ENABLE_MAGMA                  | OFF     |
+--  | HYPRE_ENABLE_CALIPER                | OFF     |
+--  +-------------------------------------+---------+
+-- 
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_CXX_COMPILER
+
+
+-- Build files have been written to: /data/home/sunyc/solverchallenge26/deps/hypre-build

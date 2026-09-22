@@ -1,0 +1,35 @@
+JobId=9187725 JobName=sc26_mpi_smoke
+   UserId=sunyc(11599) GroupId=sunyc(11599) MCS_label=N/A
+   Priority=1 Nice=0 Account=sunyc QOS=normal
+   JobState=COMPLETED Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:02 TimeLimit=00:02:00 TimeMin=N/A
+   SubmitTime=2026-09-22T19:48:39 EligibleTime=2026-09-22T19:48:39
+   AccrueTime=2026-09-22T19:48:39
+   StartTime=2026-09-22T19:48:40 EndTime=2026-09-22T19:48:42 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-22T19:48:40 Scheduler=Main
+   Partition=qhn AllocNode:Sid=c3ln01:10255
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=c3n12
+   BatchHost=c3n12
+   NumNodes=1 NumCPUs=2 NumTasks=2 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=2,mem=2G,node=1,billing=2
+   AllocTRES=cpu=2,mem=2G,node=1,billing=2
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=1 MinMemoryNode=2G MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/data/home/sunyc/solverchallenge26/scripts/smoke.sbatch
+   WorkDir=/data/home/sunyc/solverchallenge26
+   StdErr=/data/home/sunyc/solverchallenge26/logs/sc26_mpi_smoke-9187725.err
+   StdIn=/dev/null
+   StdOut=/data/home/sunyc/solverchallenge26/logs/sc26_mpi_smoke-9187725.out
+   Power=
+   TresPerTask=cpu:1
+   
+
+JobID           JobName      State ExitCode    Elapsed  AllocCPUS     MaxRSS 
+------------ ---------- ---------- -------- ---------- ---------- ---------- 
+9187725      sc26_mpi_+  COMPLETED      0:0   00:00:02          2            
+9187725.bat+      batch  COMPLETED      0:0   00:00:02          2          0 
+9187725.ext+     extern  COMPLETED      0:0   00:00:02          2          0 

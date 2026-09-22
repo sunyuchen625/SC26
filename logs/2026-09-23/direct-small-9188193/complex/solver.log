@@ -1,0 +1,36 @@
+matrix name :      /data/home/sunyc/solverchallenge26/tests/small_systems/complex_A.dat
+vectorb name :     /data/home/sunyc/solverchallenge26/tests/small_systems/complex_b.dat
+read function :    PETSc binary (0-base)
+sys_type :         1
+T6_PARDISO_ANALYSE seconds=0.003881 estimated_peak_kib=793 factor_nnz=14837
+T6_PARDISO_FACTOR seconds=0.040591 perturbed_pivots=0
+T6_PARDISO_DONE refinements=4
+T6_PHASE_SECONDS analyse=0.003881 factor=0.040591 solve_cleanup=0.005064
+T6_PARDISO_ANALYSE seconds=0.002219 estimated_peak_kib=793 factor_nnz=14837
+T6_PARDISO_FACTOR seconds=0.001726 perturbed_pivots=0
+T6_PARDISO_DONE refinements=4
+T6_PHASE_SECONDS analyse=0.002219 factor=0.001726 solve_cleanup=0.001633
+T6_PARDISO_ANALYSE seconds=0.001853 estimated_peak_kib=793 factor_nnz=14837
+T6_PARDISO_FACTOR seconds=0.001235 perturbed_pivots=0
+T6_PARDISO_DONE refinements=4
+T6_PHASE_SECONDS analyse=0.001853 factor=0.001235 solve_cleanup=0.001273
+T6_PARDISO_ANALYSE seconds=0.001570 estimated_peak_kib=793 factor_nnz=14837
+T6_PARDISO_FACTOR seconds=0.001783 perturbed_pivots=0
+T6_PARDISO_DONE refinements=4
+T6_PHASE_SECONDS analyse=0.001570 factor=0.001783 solve_cleanup=0.001247
+T6_PARDISO_ANALYSE seconds=0.001562 estimated_peak_kib=793 factor_nnz=14837
+T6_PARDISO_FACTOR seconds=0.000830 perturbed_pivots=0
+T6_PARDISO_DONE refinements=4
+T6_PHASE_SECONDS analyse=0.001562 factor=0.000830 solve_cleanup=0.000904
+Total memory usage:                 92.6055 MB
+------------------------------------------
+CHECK end to end time :             0.133634 s
+Check complex || b - Ax || 2             =  2.599220e-12 
+Check complex || b - Ax || MAX           =  9.094947e-13 
+Check complex || b - Ax || 2 / || b || 2 =  8.854472e-17 
+LD-Check complex || b - Ax || 2             =  1.244115e-12 
+LD-Check complex || b - Ax || MAX           =  4.129687e-13 
+LD-Check complex || b - Ax || 2 / || b || 2 =  4.238186e-17 
+Q-Check complex || b - Ax || 2             =  1.243911e-12
+Q-Check complex || b - Ax || MAX           =  4.128494e-13
+Q-Check complex || b - Ax || 2 / || b || 2 =  4.237492e-17

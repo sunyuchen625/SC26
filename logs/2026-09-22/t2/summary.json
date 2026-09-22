@@ -1,0 +1,50 @@
+[
+  {
+    "job_id": "9187890",
+    "internal_rtol": "1e-7",
+    "original_system_threshold": 1e-06,
+    "original_system_relative_residual": 5.89425e-07,
+    "passed": true,
+    "repeat_count": 5,
+    "iterations": [
+      15,
+      15,
+      15,
+      15,
+      15
+    ],
+    "official_mean_seconds": 20.884207,
+    "rank_files": 32,
+    "sum_process_peak_rss_gib": 15.601978302001953,
+    "rank0_peak_rss_gib": 4.231315612792969,
+    "phase_mean_seconds": [
+      0.0042182,
+      17.687061399999997,
+      3.1925128000000003
+    ]
+  },
+  {
+    "job_id": "9187935",
+    "internal_rtol": "5e-11",
+    "original_system_threshold": 1e-10,
+    "original_system_relative_residual": 5.867434e-07,
+    "passed": false,
+    "repeat_count": 5,
+    "iterations": [
+      21,
+      21,
+      21,
+      21,
+      21
+    ],
+    "official_mean_seconds": 21.926099,
+    "rank_files": 32,
+    "sum_process_peak_rss_gib": 16.50296401977539,
+    "rank0_peak_rss_gib": 4.274555206298828,
+    "phase_mean_seconds": [
+      0.0045142,
+      17.5299994,
+      4.3915144
+    ]
+  }
+]

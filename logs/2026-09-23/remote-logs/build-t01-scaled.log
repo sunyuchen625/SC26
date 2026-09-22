@@ -1,0 +1,19 @@
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /data/home/sunyc/solverchallenge26/build-t01
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /data/home/sunyc/solverchallenge26/build-t01
+Consolidate compiler generated dependencies of target sc26_io
+Consolidate compiler generated dependencies of target sc26_mpi_diagnostics
+[ 50%] Built target sc26_mpi_diagnostics
+[ 58%] Built target sc26_io
+Consolidate compiler generated dependencies of target sc26_mpi_io
+[ 75%] Built target sc26_mpi_io
+Consolidate compiler generated dependencies of target MPI_iterative_solver
+gmake[3]: Warning: File `/data/home/sunyc/solverchallenge26/src/problems/cpu_baseline/solver.h' has modification time 573 s in the future
+[ 83%] Building C object CMakeFiles/MPI_iterative_solver.dir/apps/MPI_iterative_solver.c.o
+[ 91%] Building C object CMakeFiles/MPI_iterative_solver.dir/problems/cpu_baseline/solver.c.o
+[100%] Linking C executable bin/MPI_iterative_solver
+gmake[3]: warning:  Clock skew detected.  Your build may be incomplete.
+[100%] Built target MPI_iterative_solver
