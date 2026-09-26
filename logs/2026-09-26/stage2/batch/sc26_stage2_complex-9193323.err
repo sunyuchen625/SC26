@@ -1,0 +1,4 @@
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+Currently Loaded Modulefiles:
+ 1) gcc/11.3.0   2) openmpi/4.1.8/gcc11.3.0   3) miniforge3/24.3.0  
+/var/spool/slurm/d/job9193323/slurm_script: line 38: /usr/bin/time: No such file or directory

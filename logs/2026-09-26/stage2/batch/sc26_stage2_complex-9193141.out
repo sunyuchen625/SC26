@@ -103,3 +103,40 @@ Q-Check complex || b - Ax || MAX           =  1.810257e-16
 Q-Check complex || b - Ax || 2 / || b || 2 =  1.197968e-16
 OFFICIAL_RESIDUAL_PASS max_residual=1.810257000000e-16 threshold=1.0e-08
 1a0244bedfe69ad01ad15f9abaa96cc1dc96376377eedf4616077aaafd209693  /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_08/solverchallenge26_08_b_04.dat
+matrix name :      /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_08/solverchallenge26_08_A.dat
+vectorb name :     /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_08/solverchallenge26_08_b_04.dat
+read function :    PETSc binary (0-base)
+sys_type :         1
+T8_PARDISO_ANALYSE seconds=69.021987 estimated_peak_kib=46889672 factor_nnz=1174217414
+T8_PARDISO_FACTOR seconds=5.557209 perturbed_pivots=0
+T8_PARDISO_DONE refinements=4
+T8_PHASE_SECONDS analyse=69.021987 factor=5.557209 solve_cleanup=2.579418
+T8_PARDISO_ANALYSE seconds=67.930910 estimated_peak_kib=46889672 factor_nnz=1174217414
+T8_PARDISO_FACTOR seconds=5.210508 perturbed_pivots=0
+T8_PARDISO_DONE refinements=4
+T8_PHASE_SECONDS analyse=67.930910 factor=5.210508 solve_cleanup=2.563963
+T8_PARDISO_ANALYSE seconds=68.823212 estimated_peak_kib=46889672 factor_nnz=1174217414
+T8_PARDISO_FACTOR seconds=4.748584 perturbed_pivots=0
+T8_PARDISO_DONE refinements=4
+T8_PHASE_SECONDS analyse=68.823212 factor=4.748584 solve_cleanup=2.662397
+T8_PARDISO_ANALYSE seconds=67.784560 estimated_peak_kib=46889672 factor_nnz=1174217414
+T8_PARDISO_FACTOR seconds=4.980665 perturbed_pivots=0
+T8_PARDISO_DONE refinements=4
+T8_PHASE_SECONDS analyse=67.784560 factor=4.980665 solve_cleanup=2.560596
+T8_PARDISO_ANALYSE seconds=68.153873 estimated_peak_kib=46889672 factor_nnz=1174217414
+T8_PARDISO_FACTOR seconds=5.295147 perturbed_pivots=0
+T8_PARDISO_DONE refinements=4
+T8_PHASE_SECONDS analyse=68.153873 factor=5.295147 solve_cleanup=2.533108
+Total memory usage:                 45951.3945 MB
+------------------------------------------
+CHECK end to end time :            76.175781 s
+Check complex || b - Ax || 2             =  6.585285e-16 
+Check complex || b - Ax || MAX           =  3.376612e-16 
+Check complex || b - Ax || 2 / || b || 2 =  2.226435e-16 
+LD-Check complex || b - Ax || 2             =  5.145263e-16 
+LD-Check complex || b - Ax || MAX           =  2.253217e-16 
+LD-Check complex || b - Ax || 2 / || b || 2 =  1.739574e-16 
+Q-Check complex || b - Ax || 2             =  5.145198e-16
+Q-Check complex || b - Ax || MAX           =  2.253287e-16
+Q-Check complex || b - Ax || 2 / || b || 2 =  1.739552e-16
+OFFICIAL_RESIDUAL_PASS max_residual=2.253287000000e-16 threshold=1.0e-08

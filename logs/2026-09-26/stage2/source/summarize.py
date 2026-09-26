@@ -15,7 +15,11 @@ cases = [(9193128, '05', 'ILU', ['']), (9193138, '05', 'MGR', ['']),
          (9193143, '08', 'PARDISO', ['08', '09', '10']),
          (9193127, '10', 'PARDISO32', ['01']),
          (9193140, '10', 'PARDISO64', ['01']),
-         (9193147, '10', 'PARDISO64_sorted', ['01'])]
+         (9193147, '10', 'PARDISO64_sorted', ['01']),
+         (9193323, '10', 'PARDISO64_sorted', ['02', '03', '04']),
+         (9193324, '10', 'PARDISO64_sorted', ['05', '06', '07']),
+         (9193325, '10', 'PARDISO64_sorted', ['08', '09', '10']),
+         (9193327, '10', 'PARDISO64_sorted', ['02', '03', '04'])]
 job_ids = [9193122, 9193123, 9193124, 9193132, 9193137, 9193145, 9193146] + [c[0] for c in cases]
 sacct = subprocess.check_output(['sacct', '-X', '-n', '-P', '-j', ','.join(map(str, job_ids)),
     '--format=JobID,State,ExitCode,Elapsed,NodeList'], text=True)

@@ -4,25 +4,32 @@
 
 当前通过官方原始系统残差验收的结果：
 
-| 题目 | 方法 | 相对残差 | 五轮平均时间 |
+| 题目 | 方法 | 验收残差 | 五轮平均时间 |
 | --- | --- | ---: | ---: |
-| T2 低精度档 | HYPRE GMRES + BoomerAMG | 5.894250e-7 | 20.884207 s |
-| T6 | oneMKL PARDISO 复数直接法 | 1.801880e-12 | 35.216142 s |
-| T9（10 个右端） | oneMKL PARDISO 实数直接法 | 最大 1.045516e-15 | 每右端 73.41～75.03 s |
+| T2 低精度档 | HYPRE GMRES + BoomerAMG | 相对 5.894250e-7 | 20.884207 s |
+| T5 | HYPRE GMRES + 压力 MGR | 相对 9.732279e-9 | 167.237252 s |
+| T6 | oneMKL PARDISO 复数直接法 | 相对 1.801880e-12 | 35.216142 s |
+| T7 | HYPRE GMRES + ILU(0) | 相对 1.777361e-9 | 6.190578 s |
+| T8（10 个右端） | oneMKL PARDISO 复数直接法 | 最大绝对残差最高 3.657010e-16 | 每右端 75.24～76.55 s |
+| T9（10 个右端） | oneMKL PARDISO 实数直接法 | 相对残差最高 1.045516e-15 | 每右端 73.41～75.03 s |
+| T10（rhs01） | oneMKL PARDISO 64 位复数直接法 | 相对 7.261475e-15 | 198.699109 s |
 
 T1、T3、T4 和 T2 高精度档尚未达标；所有结果均以原始矩阵、原始右端的官方 float128 验证为准。
+
+T5 当前残差距离阈值约 2.7%，后续增加收敛余量；T10 剩余九个右端已提交计算。
 
 - [项目计划](项目背景与下一步工作方案.md)
 - [全部赛题与推进顺序](全部赛题与选题方案.md)
 - [T2 基线、依赖构建与复现](T2数值基线_2026-09-22.md)
 - [T1/T3/T6 扩展实验、编译与复现](初步阶段扩展基线_2026-09-23.md)
 - [T4/T9 数值基线与十右端验证](T4_T9数值基线_2026-09-23.md)
+- [T5/T7/T8/T10 数值基线与作业记录](T5_T7_T8_T10数值基线_2026-09-26.md)
 - [官方框架接入说明](资料/官方框架接入说明.md)
 - [Grok 4.7 xhigh 独立校验](校验记录_2026-09-23.md)
 
 ## 代码与实验
 
-`资料/solverchallenge26_sample_code/` 基于[官方参考框架](https://gitee.com/godjs/solverchallenge26_sample_code)提交 `b66421483501021dd84aa10fc494f1dbf8e65958`，保留其 MIT 许可证。T2 实现位于 `problems/problem02/`，T1/T3/T4/T6/T9 的 CPU 实现位于 `problems/cpu_baseline/`。
+`资料/solverchallenge26_sample_code/` 基于[官方参考框架](https://gitee.com/godjs/solverchallenge26_sample_code)提交 `b66421483501021dd84aa10fc494f1dbf8e65958`，保留其 MIT 许可证。T2 实现位于 `problems/problem02/`，其余九题的 CPU 实现位于 `problems/cpu_baseline/`。
 
 `scripts/` 包含 Slurm 实验脚本，`tests/` 生成已知解系统并核对结果。`logs/` 保存原始日志、资源消耗、代码快照和结果汇总。实际全量输入使用官方计算平台的数据目录，运行环境和命令见各基线报告。
 
