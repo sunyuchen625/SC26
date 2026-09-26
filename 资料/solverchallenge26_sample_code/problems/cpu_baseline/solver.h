@@ -11,9 +11,17 @@
 
 #ifdef DIRECT_SOLVER
 #include <mkl.h>
+#if SC26_PROBLEM_NUMBER == 10
+typedef long long SC26_DirectInt;
+#else
+typedef MKL_INT SC26_DirectInt;
+#endif
 struct PardisoState {
     void *handle[64];
-    MKL_INT parameters[64], matrix_type;
+    SC26_DirectInt parameters[64], matrix_type;
+#if SC26_PROBLEM_NUMBER == 10
+    SC26_DirectInt *row_ptr, *col_idx;
+#endif
     void *values, *rhs, *solution;
     double analyse_seconds, factor_seconds;
 };
@@ -29,6 +37,10 @@ struct MySolver {
     HYPRE_ParCSRMatrix par_matrix;
     HYPRE_ParVector par_rhs, par_solution;
     HYPRE_Solver gmres, amg;
+#ifdef SC26_FIELD_SPLIT
+    HYPRE_Solver coarse;
+    HYPRE_Int *fields;
+#endif
     HYPRE_BigInt *rows;
     HYPRE_Int *row_sizes;
     double *scale;

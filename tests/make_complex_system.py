@@ -20,11 +20,15 @@ for i in range(n):
     columns.extend(j for j, _ in entries)
     values.extend(v for _, v in entries)
     rhs.append(sum(v*solution[j] for j, v in entries))
-with (root/'complex_A.dat').open('wb') as f:
-    f.write(struct.pack('>4i', 1211216, n, n, len(values)))
-    f.write(struct.pack('>%di' % n, *counts))
-    f.write(struct.pack('>%di' % len(columns), *columns))
-    f.write(struct.pack('>%dd' % (2*len(values)), *(part for v in values for part in (v.real, v.imag))))
+for name in ('complex', 'complex_unsorted'):
+    if name == 'complex_unsorted':
+        columns[-counts[-1]:] = reversed(columns[-counts[-1]:])
+        values[-counts[-1]:] = reversed(values[-counts[-1]:])
+    with (root/f'{name}_A.dat').open('wb') as f:
+        f.write(struct.pack('>4i', 1211216, n, n, len(values)))
+        f.write(struct.pack('>%di' % n, *counts))
+        f.write(struct.pack('>%di' % len(columns), *columns))
+        f.write(struct.pack('>%dd' % (2*len(values)), *(part for v in values for part in (v.real, v.imag))))
 with (root/'complex_b.dat').open('wb') as f:
     f.write(struct.pack('>2i', 1211214, n))
     f.write(struct.pack('>%dd' % (2*n), *(part for v in rhs for part in (v.real, v.imag))))

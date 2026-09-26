@@ -17,26 +17,28 @@ set -uo pipefail
 export OMP_NUM_THREADS=1
 root=/data/home/sunyc/solverchallenge26
 problem=$1
+build="$root/build-t$problem${SC26_BUILD_SUFFIX:-}"
 case "$problem" in
     01) rtols='1e-8 1e-12'; sys_type=0 ;;
-    03|04) rtols=1e-12; sys_type=0 ;;
+    03|04|05|07) rtols=1e-12; sys_type=0 ;;
     06) rtols=1e-12; sys_type=1 ;;
     *) exit 2 ;;
 esac
 data=/data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_$problem
 module list
 lscpu
-sha256sum "$root/build-t$problem/bin/MPI_iterative_solver" "$data/solverchallenge26_${problem}_A.dat" "$data/solverchallenge26_${problem}_b.dat"
+sha256sum "$build/bin/MPI_iterative_solver" "$data/solverchallenge26_${problem}_A.dat" "$data/solverchallenge26_${problem}_b.dat"
 for rtol in $rtols; do
     export SC26_RTOL="$rtol"
     threshold=1e-8
+    if [ "$problem" = 07 ]; then threshold=1e-6; fi
     if [ "$rtol" = 1e-8 ]; then threshold=1e-4; fi
     run_dir="$root/runs/t$problem-$SLURM_JOB_ID/$rtol"
     mkdir -p "$run_dir"
     cd "$run_dir"
     mpirun -np "$SLURM_NTASKS" sh -c \
         'exec /usr/bin/time -v -o "rank-${OMPI_COMM_WORLD_RANK}.time" "$@"' sh \
-        "$root/build-t$problem/bin/MPI_iterative_solver" \
+        "$build/bin/MPI_iterative_solver" \
         "$data/solverchallenge26_${problem}_A.dat" "$data/solverchallenge26_${problem}_b.dat" 0 "$sys_type" | tee solver.log
     python3 "$root/tests/check_result.py" solver.log "$threshold"
     if [ "$problem" = 01 ]; then

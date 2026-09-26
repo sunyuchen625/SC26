@@ -1,20 +1,36 @@
 /* SolverChallenge26 CPU baseline solver implementation. */
 #include "solver.h"
+#include <limits.h>
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
 #ifdef DIRECT_SOLVER
-static void pardiso_phase(struct PardisoState *state, const struct SC26_SolverInput *input,
-                          MKL_INT phase)
+#if SC26_PROBLEM_NUMBER == 10
+struct ComplexEntry { SC26_DirectInt column; MKL_Complex16 value; };
+static int compare_entry(const void *left, const void *right)
 {
-    MKL_INT one = 1, zero = 0, error, n = input->global_n;
+    const struct ComplexEntry *a = left, *b = right;
+    return (a->column > b->column)-(a->column < b->column);
+}
+#endif
+
+static void pardiso_phase(struct PardisoState *state, const struct SC26_SolverInput *input,
+                          SC26_DirectInt phase)
+{
+    SC26_DirectInt one = 1, zero = 0, error, n = input->global_n;
+#if SC26_PROBLEM_NUMBER == 10
+    pardiso_64(state->handle, &one, &one, &state->matrix_type, &phase, &n,
+            state->values, state->row_ptr, state->col_idx, &zero, &one,
+            state->parameters, &one, state->rhs, state->solution, &error);
+#else
     pardiso(state->handle, &one, &one, &state->matrix_type, &phase, &n,
             state->values, input->row_ptr, input->col_idx, &zero, &one,
             state->parameters, &zero, state->rhs, state->solution, &error);
+#endif
     if (error) {
-        fprintf(stderr, "PARDISO phase=%d error=%d\n", (int)phase, (int)error);
+        fprintf(stderr, "PARDISO phase=%lld error=%lld\n", (long long)phase, (long long)error);
         exit(EXIT_FAILURE);
     }
 }
@@ -33,7 +49,23 @@ static void prepare_direct(struct PardisoState *state, const struct SC26_SolverI
     #endif
     memset(state, 0, sizeof(*state));
     state->matrix_type = matrix_type;
+#if SC26_PROBLEM_NUMBER == 10
+    /* pardiso_64 requires explicit initialization of its 64-bit parameters. */
+    state->parameters[0] = 1;
+    state->parameters[9] = 13;
+    state->parameters[10] = 1;
+    state->parameters[12] = 1;
+    state->parameters[17] = -1;
+    state->parameters[18] = -1;
+    int rows = input->global_n, nonzeros = input->row_ptr[rows];
+    state->row_ptr = malloc(((size_t)rows+1)*sizeof(*state->row_ptr));
+    state->col_idx = malloc((size_t)nonzeros*sizeof(*state->col_idx));
+    if (!state->row_ptr || !state->col_idx) exit(EXIT_FAILURE);
+    for (int i = 0; i <= rows; ++i) state->row_ptr[i] = input->row_ptr[i];
+    for (int k = 0; k < nonzeros; ++k) state->col_idx[k] = input->col_idx[k];
+#else
     pardisoinit(state->handle, &state->matrix_type, state->parameters);
+#endif
     state->parameters[1] = 2;
     state->parameters[7] = SC26_PROBLEM_NUMBER == 3 ? -8 : 4;
     state->parameters[26] = 1;
@@ -50,13 +82,36 @@ static void prepare_direct(struct PardisoState *state, const struct SC26_SolverI
         for (int k = 0; k < nnz; ++k) a[k] = (MKL_Complex16){input->val[k], input->val_im[k]};
         for (int i = 0; i < n; ++i) b[i] = (MKL_Complex16){input->b[i], input->b_im[i]};
         state->values = a; state->rhs = b; state->solution = x;
+#if SC26_PROBLEM_NUMBER == 10
+        /* The supplied T10 CSR contains an unsorted final row. */
+        int sorted_rows = 0;
+        for (int i = 0; i < n; ++i) {
+            int begin = input->row_ptr[i], end = input->row_ptr[i+1], unsorted = 0;
+            for (int k = begin+1; k < end; ++k)
+                if (state->col_idx[k] < state->col_idx[k-1]) { unsorted = 1; break; }
+            if (!unsorted) continue;
+            struct ComplexEntry *entries = malloc((size_t)(end-begin)*sizeof(*entries));
+            if (!entries) exit(EXIT_FAILURE);
+            for (int k = begin; k < end; ++k)
+                entries[k-begin] = (struct ComplexEntry){state->col_idx[k], a[k]};
+            qsort(entries, (size_t)(end-begin), sizeof(*entries), compare_entry);
+            for (int k = begin; k < end; ++k) {
+                state->col_idx[k] = entries[k-begin].column;
+                a[k] = entries[k-begin].value;
+            }
+            free(entries);
+            ++sorted_rows;
+        }
+        printf("T10_PARDISO_SORT rows=%d\n", sorted_rows);
+        fflush(stdout);
+#endif
     }
     pardiso_phase(state, input, 11);
     state->analyse_seconds = dsecnd()-started;
     long long memory_kib = (long long)state->parameters[15]+state->parameters[16];
     if (memory_kib < state->parameters[14]) memory_kib = state->parameters[14];
-    printf("T%d_PARDISO_ANALYSE seconds=%.6f estimated_peak_kib=%lld factor_nnz=%d\n",
-           SC26_PROBLEM_NUMBER, state->analyse_seconds, memory_kib, (int)state->parameters[17]);
+    printf("T%d_PARDISO_ANALYSE seconds=%.6f estimated_peak_kib=%lld factor_nnz=%lld\n",
+           SC26_PROBLEM_NUMBER, state->analyse_seconds, memory_kib, (long long)state->parameters[17]);
     fflush(stdout);
     long long budget_gib = SC26_PROBLEM_NUMBER == 9 ? 85 : 400;
     if (memory_kib > budget_gib*1024*1024) {
@@ -71,8 +126,8 @@ static void factor_direct(struct PardisoState *state, const struct SC26_SolverIn
     double started = dsecnd();
     pardiso_phase(state, input, 22);
     state->factor_seconds = dsecnd()-started;
-    printf("T%d_PARDISO_FACTOR seconds=%.6f perturbed_pivots=%d\n", SC26_PROBLEM_NUMBER,
-           state->factor_seconds, (int)state->parameters[13]);
+    printf("T%d_PARDISO_FACTOR seconds=%.6f perturbed_pivots=%lld\n", SC26_PROBLEM_NUMBER,
+           state->factor_seconds, (long long)state->parameters[13]);
     fflush(stdout);
 }
 
@@ -82,6 +137,9 @@ static void finish_direct(struct PardisoState *state, const struct SC26_SolverIn
     pardiso_phase(state, input, 33);
     int refinements = state->parameters[6];
     pardiso_phase(state, input, -1);
+#if SC26_PROBLEM_NUMBER == 10
+    free(state->row_ptr); free(state->col_idx);
+#endif
     if (state->matrix_type == 13) {
         MKL_Complex16 *x = state->solution;
         for (int i = 0; i < input->global_n; ++i) {
@@ -208,7 +266,36 @@ void preprocess(struct MySolver* solver, const struct SC26_SolverInput* input)
     HYPRE_CALL(HYPRE_IJVectorAssemble(solver->solution));
     HYPRE_CALL(HYPRE_IJVectorGetObject(solver->solution, (void **)&solver->par_solution));
 
-#if SC26_PROBLEM_NUMBER == 6
+#ifdef SC26_FIELD_SPLIT
+    HYPRE_Int block = SC26_PROBLEM_NUMBER == 5 ? 4 : 3;
+    HYPRE_Int pressure = SC26_PROBLEM_NUMBER == 5 ? 3 : 0;
+    HYPRE_Int coarse_count = 1, *coarse_indices = &pressure;
+    solver->fields = malloc((size_t)input->local_n*sizeof(*solver->fields));
+    if (input->local_n && !solver->fields) MPI_Abort(input->comm, 1);
+    for (int i = 0; i < input->local_n; ++i)
+        solver->fields[i] = (input->row_begin+i)%block;
+    HYPRE_CALL(HYPRE_MGRCreate(&solver->amg));
+    HYPRE_CALL(HYPRE_MGRSetCpointsByPointMarkerArray(solver->amg, block, 1,
+        &coarse_count, &coarse_indices, solver->fields));
+    HYPRE_CALL(HYPRE_MGRSetNonCpointsToFpoints(solver->amg, 1));
+    HYPRE_CALL(HYPRE_MGRSetInterpType(solver->amg, 2));
+    HYPRE_CALL(HYPRE_MGRSetRestrictType(solver->amg, 0));
+    HYPRE_CALL(HYPRE_MGRSetRelaxType(solver->amg, 6));
+    HYPRE_CALL(HYPRE_MGRSetNumRelaxSweeps(solver->amg, 1));
+    HYPRE_CALL(HYPRE_MGRSetGlobalSmoothType(solver->amg, 16));
+    HYPRE_CALL(HYPRE_MGRSetMaxGlobalSmoothIters(solver->amg, 1));
+    HYPRE_CALL(HYPRE_MGRSetMaxIter(solver->amg, 1));
+    HYPRE_CALL(HYPRE_MGRSetTol(solver->amg, 0));
+    HYPRE_CALL(HYPRE_BoomerAMGCreate(&solver->coarse));
+    HYPRE_CALL(HYPRE_BoomerAMGSetCoarsenType(solver->coarse, 10));
+    HYPRE_CALL(HYPRE_BoomerAMGSetInterpType(solver->coarse, 6));
+    HYPRE_CALL(HYPRE_BoomerAMGSetPMaxElmts(solver->coarse, 4));
+    HYPRE_CALL(HYPRE_BoomerAMGSetRelaxType(solver->coarse, 6));
+    HYPRE_CALL(HYPRE_BoomerAMGSetMaxIter(solver->coarse, 1));
+    HYPRE_CALL(HYPRE_BoomerAMGSetTol(solver->coarse, 0));
+    HYPRE_CALL(HYPRE_MGRSetCoarseSolver(solver->amg,
+        HYPRE_BoomerAMGSolve, HYPRE_BoomerAMGSetup, solver->coarse));
+#elif SC26_PROBLEM_NUMBER == 5 || SC26_PROBLEM_NUMBER == 6 || SC26_PROBLEM_NUMBER == 7 || SC26_PROBLEM_NUMBER == 8 || SC26_PROBLEM_NUMBER == 10
     HYPRE_CALL(HYPRE_ILUCreate(&solver->amg));
     HYPRE_CALL(HYPRE_ILUSetType(solver->amg, 0));
     HYPRE_CALL(HYPRE_ILUSetLevelOfFill(solver->amg, 0));
@@ -237,7 +324,9 @@ void preprocess(struct MySolver* solver, const struct SC26_SolverInput* input)
     HYPRE_CALL(HYPRE_ParCSRGMRESSetLogging(solver->gmres, 1));
     HYPRE_CALL(HYPRE_ParCSRGMRESSetPrintLevel(solver->gmres, 2));
     HYPRE_CALL(HYPRE_ParCSRGMRESSetPrecond(solver->gmres,
-#if SC26_PROBLEM_NUMBER == 6
+#ifdef SC26_FIELD_SPLIT
+        HYPRE_MGRSolve, HYPRE_MGRSetup, solver->amg));
+#elif SC26_PROBLEM_NUMBER == 5 || SC26_PROBLEM_NUMBER == 6 || SC26_PROBLEM_NUMBER == 7 || SC26_PROBLEM_NUMBER == 8 || SC26_PROBLEM_NUMBER == 10
         HYPRE_ILUSolve, HYPRE_ILUSetup, solver->amg));
 #else
         HYPRE_BoomerAMGSolve, HYPRE_BoomerAMGSetup, solver->amg));
@@ -271,7 +360,11 @@ void iterative_solver(struct MySolver* solver, const struct SC26_SolverInput* in
         MPI_Abort(input->comm, 1);
     }
     HYPRE_CALL(HYPRE_ParCSRGMRESDestroy(solver->gmres));
-#if SC26_PROBLEM_NUMBER == 6
+#ifdef SC26_FIELD_SPLIT
+    HYPRE_CALL(HYPRE_MGRDestroy(solver->amg));
+    HYPRE_CALL(HYPRE_BoomerAMGDestroy(solver->coarse));
+    free(solver->fields);
+#elif SC26_PROBLEM_NUMBER == 5 || SC26_PROBLEM_NUMBER == 6 || SC26_PROBLEM_NUMBER == 7 || SC26_PROBLEM_NUMBER == 8 || SC26_PROBLEM_NUMBER == 10
     HYPRE_CALL(HYPRE_ILUDestroy(solver->amg));
 #else
     HYPRE_CALL(HYPRE_BoomerAMGDestroy(solver->amg));
@@ -318,6 +411,10 @@ void analyse_complex(struct MySolver_complex* solver, const struct SC26_SolverIn
 {
     double started = MPI_Wtime();
     int n = input->local_n, nnz = input->row_ptr[n];
+    if (nnz > INT_MAX/4) {
+        fprintf(stderr, "Complex realification exceeds 32-bit local CSR; use more MPI ranks\n");
+        MPI_Abort(input->comm, 1);
+    }
     solver->row_ptr = malloc((size_t)(2*n+1) * sizeof(int));
     solver->col_idx = malloc((size_t)4*nnz * sizeof(int));
     solver->values = malloc((size_t)4*nnz * sizeof(double));
