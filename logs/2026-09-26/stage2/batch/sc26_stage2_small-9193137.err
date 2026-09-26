@@ -1,0 +1,20 @@
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+gmake[3]: Warning: File `/data/home/sunyc/solverchallenge26/src/problems/cpu_baseline/solver.h' has modification time 590 s in the future
+gmake[3]: warning:  Clock skew detected.  Your build may be incomplete.
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              c3n193
+  Local adapter:           mlx5_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   c3n193
+  Local device: mlx5_0
+--------------------------------------------------------------------------

@@ -1,0 +1,36 @@
+matrix name :      /data/home/sunyc/solverchallenge26/tests/small_systems/complex_A.dat
+vectorb name :     /data/home/sunyc/solverchallenge26/tests/small_systems/complex_b.dat
+read function :    PETSc binary (0-base)
+sys_type :         1
+T10_PARDISO_ANALYSE seconds=0.002450 estimated_peak_kib=793 factor_nnz=14837
+T10_PARDISO_FACTOR seconds=0.009895 perturbed_pivots=0
+T10_PARDISO_DONE refinements=4
+T10_PHASE_SECONDS analyse=0.002450 factor=0.009895 solve_cleanup=0.001176
+T10_PARDISO_ANALYSE seconds=0.000825 estimated_peak_kib=793 factor_nnz=14837
+T10_PARDISO_FACTOR seconds=0.001185 perturbed_pivots=0
+T10_PARDISO_DONE refinements=4
+T10_PHASE_SECONDS analyse=0.000825 factor=0.001185 solve_cleanup=0.000545
+T10_PARDISO_ANALYSE seconds=0.000777 estimated_peak_kib=793 factor_nnz=14837
+T10_PARDISO_FACTOR seconds=0.000525 perturbed_pivots=0
+T10_PARDISO_DONE refinements=4
+T10_PHASE_SECONDS analyse=0.000777 factor=0.000525 solve_cleanup=0.000506
+T10_PARDISO_ANALYSE seconds=0.000767 estimated_peak_kib=793 factor_nnz=14837
+T10_PARDISO_FACTOR seconds=0.000520 perturbed_pivots=0
+T10_PARDISO_DONE refinements=4
+T10_PHASE_SECONDS analyse=0.000767 factor=0.000520 solve_cleanup=0.000503
+T10_PARDISO_ANALYSE seconds=0.000770 estimated_peak_kib=793 factor_nnz=14837
+T10_PARDISO_FACTOR seconds=0.000857 perturbed_pivots=0
+T10_PARDISO_DONE refinements=4
+T10_PHASE_SECONDS analyse=0.000770 factor=0.000857 solve_cleanup=0.000522
+Total memory usage:                 91.9336 MB
+------------------------------------------
+CHECK end to end time :             0.147854 s
+Check complex || b - Ax || 2             =  3.504983e-12 
+Check complex || b - Ax || MAX           =  1.016846e-12 
+Check complex || b - Ax || 2 / || b || 2 =  1.194003e-16 
+LD-Check complex || b - Ax || 2             =  2.604984e-12 
+LD-Check complex || b - Ax || MAX           =  1.021937e-12 
+LD-Check complex || b - Ax || 2 / || b || 2 =  8.874109e-17 
+Q-Check complex || b - Ax || 2             =  2.605040e-12
+Q-Check complex || b - Ax || MAX           =  1.021671e-12
+Q-Check complex || b - Ax || 2 / || b || 2 =  8.874297e-17

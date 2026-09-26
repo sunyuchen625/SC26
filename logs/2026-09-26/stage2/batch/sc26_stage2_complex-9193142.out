@@ -1,0 +1,105 @@
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                96
+On-line CPU(s) list:   0-95
+Thread(s) per core:    1
+Core(s) per socket:    48
+Socket(s):             2
+NUMA node(s):          2
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 143
+Model name:            Intel(R) Xeon(R) Platinum 8488C
+Stepping:              8
+CPU MHz:               799.951
+CPU max MHz:           3800.0000
+CPU min MHz:           800.0000
+BogoMIPS:              4800.00
+Virtualization:        VT-x
+L1d cache:             48K
+L1i cache:             32K
+L2 cache:              2048K
+L3 cache:              107520K
+NUMA node0 CPU(s):     0-47
+NUMA node1 CPU(s):     48-95
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cat_l2 cdp_l3 invpcid_single intel_pt cdp_l2 ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq cldemote movdiri movdir64b md_clear pconfig spec_ctrl intel_stibp flush_l1d arch_capabilities
+7bfe704b33ef065a8217e8c50c8a7a93dd7fbbdc75b09a05147042afb015dae6  /data/home/sunyc/solverchallenge26/build-t08/bin/MPI_direct_solver
+204f5326adb7ea0cad5982cccd34a82fc23f422b489a96d53a219168a1285c9d  /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_08/solverchallenge26_08_A.dat
+5e4c74831a1d06bf02422cc2e5c4a1d4b7bacd3adba0f3252504e456651ce92a  /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_08/solverchallenge26_08_b_05.dat
+matrix name :      /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_08/solverchallenge26_08_A.dat
+vectorb name :     /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_08/solverchallenge26_08_b_05.dat
+read function :    PETSc binary (0-base)
+sys_type :         1
+T8_PARDISO_ANALYSE seconds=68.327528 estimated_peak_kib=46889672 factor_nnz=1174217414
+T8_PARDISO_FACTOR seconds=5.136772 perturbed_pivots=0
+T8_PARDISO_DONE refinements=4
+T8_PHASE_SECONDS analyse=68.327528 factor=5.136772 solve_cleanup=2.775578
+T8_PARDISO_ANALYSE seconds=68.481087 estimated_peak_kib=46889672 factor_nnz=1174217414
+T8_PARDISO_FACTOR seconds=5.229678 perturbed_pivots=0
+T8_PARDISO_DONE refinements=4
+T8_PHASE_SECONDS analyse=68.481087 factor=5.229678 solve_cleanup=2.584640
+T8_PARDISO_ANALYSE seconds=67.830812 estimated_peak_kib=46889672 factor_nnz=1174217414
+T8_PARDISO_FACTOR seconds=4.969449 perturbed_pivots=0
+T8_PARDISO_DONE refinements=4
+T8_PHASE_SECONDS analyse=67.830812 factor=4.969449 solve_cleanup=2.613602
+T8_PARDISO_ANALYSE seconds=68.602981 estimated_peak_kib=46889672 factor_nnz=1174217414
+T8_PARDISO_FACTOR seconds=4.696380 perturbed_pivots=0
+T8_PARDISO_DONE refinements=4
+T8_PHASE_SECONDS analyse=68.602981 factor=4.696380 solve_cleanup=2.709484
+T8_PARDISO_ANALYSE seconds=68.853426 estimated_peak_kib=46889672 factor_nnz=1174217414
+T8_PARDISO_FACTOR seconds=5.108493 perturbed_pivots=0
+T8_PARDISO_DONE refinements=4
+T8_PHASE_SECONDS analyse=68.853426 factor=5.108493 solve_cleanup=2.575191
+Total memory usage:                 45953.6719 MB
+------------------------------------------
+CHECK end to end time :            76.171821 s
+Check complex || b - Ax || 2             =  5.895298e-16 
+Check complex || b - Ax || MAX           =  2.237726e-16 
+Check complex || b - Ax || 2 / || b || 2 =  1.906713e-16 
+LD-Check complex || b - Ax || 2             =  5.281655e-16 
+LD-Check complex || b - Ax || MAX           =  2.012845e-16 
+LD-Check complex || b - Ax || 2 / || b || 2 =  1.708243e-16 
+Q-Check complex || b - Ax || 2             =  5.281415e-16
+Q-Check complex || b - Ax || MAX           =  2.012852e-16
+Q-Check complex || b - Ax || 2 / || b || 2 =  1.708165e-16
+OFFICIAL_RESIDUAL_PASS max_residual=2.012852000000e-16 threshold=1.0e-08
+98c3d9cc6653e7e0d959cf019fe94f92307782ab9d1c49debb88deaa359dce39  /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_08/solverchallenge26_08_b_06.dat
+matrix name :      /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_08/solverchallenge26_08_A.dat
+vectorb name :     /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_08/solverchallenge26_08_b_06.dat
+read function :    PETSc binary (0-base)
+sys_type :         1
+T8_PARDISO_ANALYSE seconds=68.554248 estimated_peak_kib=46889672 factor_nnz=1174217414
+T8_PARDISO_FACTOR seconds=5.103687 perturbed_pivots=0
+T8_PARDISO_DONE refinements=4
+T8_PHASE_SECONDS analyse=68.554248 factor=5.103687 solve_cleanup=2.653263
+T8_PARDISO_ANALYSE seconds=68.977725 estimated_peak_kib=46889672 factor_nnz=1174217414
+T8_PARDISO_FACTOR seconds=4.848951 perturbed_pivots=0
+T8_PARDISO_DONE refinements=4
+T8_PHASE_SECONDS analyse=68.977725 factor=4.848951 solve_cleanup=2.611541
+T8_PARDISO_ANALYSE seconds=67.947282 estimated_peak_kib=46889672 factor_nnz=1174217414
+T8_PARDISO_FACTOR seconds=4.651541 perturbed_pivots=0
+T8_PARDISO_DONE refinements=4
+T8_PHASE_SECONDS analyse=67.947282 factor=4.651541 solve_cleanup=2.528689
+T8_PARDISO_ANALYSE seconds=67.444231 estimated_peak_kib=46889672 factor_nnz=1174217414
+T8_PARDISO_FACTOR seconds=5.016289 perturbed_pivots=0
+T8_PARDISO_DONE refinements=4
+T8_PHASE_SECONDS analyse=67.444231 factor=5.016289 solve_cleanup=2.540590
+T8_PARDISO_ANALYSE seconds=67.928264 estimated_peak_kib=46889672 factor_nnz=1174217414
+T8_PARDISO_FACTOR seconds=5.053163 perturbed_pivots=0
+T8_PARDISO_DONE refinements=4
+T8_PHASE_SECONDS analyse=67.928264 factor=5.053163 solve_cleanup=2.512850
+Total memory usage:                 45948.2734 MB
+------------------------------------------
+CHECK end to end time :            75.814699 s
+Check complex || b - Ax || 2             =  5.518508e-16 
+Check complex || b - Ax || MAX           =  2.482534e-16 
+Check complex || b - Ax || 2 / || b || 2 =  1.691360e-16 
+LD-Check complex || b - Ax || 2             =  4.395311e-16 
+LD-Check complex || b - Ax || MAX           =  1.944088e-16 
+LD-Check complex || b - Ax || 2 / || b || 2 =  1.347113e-16 
+Q-Check complex || b - Ax || 2             =  4.395006e-16
+Q-Check complex || b - Ax || MAX           =  1.943948e-16
+Q-Check complex || b - Ax || 2 / || b || 2 =  1.347019e-16
+OFFICIAL_RESIDUAL_PASS max_residual=1.943948000000e-16 threshold=1.0e-08
+ff342d37aff9b0321cf0a871812ab41a00f4cdb8b9563eb0ae7793cc07157e77  /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_08/solverchallenge26_08_b_07.dat

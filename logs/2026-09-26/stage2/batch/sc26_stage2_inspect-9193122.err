@@ -1,0 +1,5 @@
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+Traceback (most recent call last):
+  File "/data/home/sunyc/solverchallenge26/scripts/inspect-stage2.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'

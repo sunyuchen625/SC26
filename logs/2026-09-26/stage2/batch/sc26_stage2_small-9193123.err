@@ -1,0 +1,685 @@
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c: In function 'read_mtx_header':
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:22:59: warning: unused variable 'isSymmetric_tmp' [-Wunused-variable]
+     int         isInteger = 0, isReal = 0, isPattern = 0, isSymmetric_tmp = 0;
+                                                           ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:22:44: warning: variable 'isPattern' set but not used [-Wunused-but-set-variable]
+     int         isInteger = 0, isReal = 0, isPattern = 0, isSymmetric_tmp = 0;
+                                            ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:22:32: warning: variable 'isReal' set but not used [-Wunused-but-set-variable]
+     int         isInteger = 0, isReal = 0, isPattern = 0, isSymmetric_tmp = 0;
+                                ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:22:17: warning: variable 'isInteger' set but not used [-Wunused-but-set-variable]
+     int         isInteger = 0, isReal = 0, isPattern = 0, isSymmetric_tmp = 0;
+                 ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c: In function 'mmio_allinone':
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:95:5: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+     MAT_PTR_TYPE* csrRowPtr_counter = (MAT_PTR_TYPE*)malloc((m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+     ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:95:54: warning: incompatible implicit declaration of built-in function 'malloc' [enabled by default]
+     MAT_PTR_TYPE* csrRowPtr_counter = (MAT_PTR_TYPE*)malloc((m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+                                                      ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:96:5: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+     memset(csrRowPtr_counter, 0, (m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+     ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:96:5: warning: incompatible implicit declaration of built-in function 'memset' [enabled by default]
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:110:16: warning: variable 'returnvalue' set but not used [-Wunused-but-set-variable]
+         int    returnvalue;
+                ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:150:5: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+     memcpy(csrRowPtr_alias, csrRowPtr_counter, (m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+     ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:150:5: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:191:5: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+     free(csrColIdx_tmp);
+     ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:191:5: warning: incompatible implicit declaration of built-in function 'free' [enabled by default]
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c: In function 'mmio_allinone_complex':
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:244:54: warning: incompatible implicit declaration of built-in function 'malloc' [enabled by default]
+     MAT_PTR_TYPE* csrRowPtr_counter = (MAT_PTR_TYPE*)malloc((m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+                                                      ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:245:5: warning: incompatible implicit declaration of built-in function 'memset' [enabled by default]
+     memset(csrRowPtr_counter, 0, (m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+     ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:302:5: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+     memcpy(csrRowPtr_alias, csrRowPtr_counter, (m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+     ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:391:5: warning: incompatible implicit declaration of built-in function 'free' [enabled by default]
+     free(csrColIdx_tmp);
+     ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/mmio.c: In function 'mm_read_mtx_crd_data':
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/mmio.c:293:39: warning: unused parameter 'M' [-Wunused-parameter]
+ int mm_read_mtx_crd_data(FILE* f, int M, int N, int nz, int I[], int J[], double val[], MM_typecode matcode)
+                                       ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/mmio.c:293:46: warning: unused parameter 'N' [-Wunused-parameter]
+ int mm_read_mtx_crd_data(FILE* f, int M, int N, int nz, int I[], int J[], double val[], MM_typecode matcode)
+                                              ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c: In function 'sc26_read_matrix_f64':
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:87:45: warning: 'actual.scalar_components' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            a->scalar_type == b->scalar_type &&
+                                             ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:298:22: note: 'actual.scalar_components' was declared here
+     sc26_matrix_info actual;
+                      ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:88:57: warning: 'actual.value_count' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            a->scalar_components == b->scalar_components &&
+                                                         ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:298:22: note: 'actual.value_count' was declared here
+     sc26_matrix_info actual;
+                      ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:89:45: warning: 'actual.file_bytes' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            a->value_count == b->value_count && a->file_bytes == b->file_bytes;
+                                             ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:298:22: note: 'actual.file_bytes' was declared here
+     sc26_matrix_info actual;
+                      ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c: In function 'sc26_read_matrix_f32':
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:87:45: warning: 'actual.scalar_components' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            a->scalar_type == b->scalar_type &&
+                                             ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:321:22: note: 'actual.scalar_components' was declared here
+     sc26_matrix_info actual;
+                      ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:88:57: warning: 'actual.value_count' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            a->scalar_components == b->scalar_components &&
+                                                         ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:321:22: note: 'actual.value_count' was declared here
+     sc26_matrix_info actual;
+                      ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:89:45: warning: 'actual.file_bytes' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            a->value_count == b->value_count && a->file_bytes == b->file_bytes;
+                                             ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:321:22: note: 'actual.file_bytes' was declared here
+     sc26_matrix_info actual;
+                      ^
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c: In function 'load_vector':
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c:323:10: warning: variable 'r' set but not used [-Wunused-but-set-variable]
+     int  r = 0;
+          ^
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c: In function 'load_b_complex':
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c:349:10: warning: variable 'r' set but not used [-Wunused-but-set-variable]
+     int  r = 0;
+          ^
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c: In function 'load_vector_ld':
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c:771:9: warning: variable 'r' set but not used [-Wunused-but-set-variable]
+     int r = 0;
+         ^
+gmake[3]: Warning: File `/data/home/sunyc/solverchallenge26/src/problems/cpu_baseline/solver.c' has modification time 504 s in the future
+gmake[3]: warning:  Clock skew detected.  Your build may be incomplete.
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              c3n193
+  Local adapter:           mlx5_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   c3n193
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              c3n193
+  Local adapter:           mlx5_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   c3n193
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+[c3n193:74696] 3 more processes have sent help message help-mpi-btl-openib.txt / ib port not selected
+[c3n193:74696] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[c3n193:74696] 3 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              c3n193
+  Local adapter:           mlx5_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   c3n193
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              c3n193
+  Local adapter:           mlx5_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   c3n193
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+[c3n193:74736] 3 more processes have sent help message help-mpi-btl-openib.txt / ib port not selected
+[c3n193:74736] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[c3n193:74736] 3 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              c3n193
+  Local adapter:           mlx5_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   c3n193
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              c3n193
+  Local adapter:           mlx5_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   c3n193
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+[c3n193:74775] 3 more processes have sent help message help-mpi-btl-openib.txt / ib port not selected
+[c3n193:74775] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[c3n193:74775] 3 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c: In function 'read_mtx_header':
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:22:59: warning: unused variable 'isSymmetric_tmp' [-Wunused-variable]
+     int         isInteger = 0, isReal = 0, isPattern = 0, isSymmetric_tmp = 0;
+                                                           ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:22:44: warning: variable 'isPattern' set but not used [-Wunused-but-set-variable]
+     int         isInteger = 0, isReal = 0, isPattern = 0, isSymmetric_tmp = 0;
+                                            ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:22:32: warning: variable 'isReal' set but not used [-Wunused-but-set-variable]
+     int         isInteger = 0, isReal = 0, isPattern = 0, isSymmetric_tmp = 0;
+                                ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:22:17: warning: variable 'isInteger' set but not used [-Wunused-but-set-variable]
+     int         isInteger = 0, isReal = 0, isPattern = 0, isSymmetric_tmp = 0;
+                 ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c: In function 'mmio_allinone':
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:95:5: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+     MAT_PTR_TYPE* csrRowPtr_counter = (MAT_PTR_TYPE*)malloc((m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+     ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:95:54: warning: incompatible implicit declaration of built-in function 'malloc' [enabled by default]
+     MAT_PTR_TYPE* csrRowPtr_counter = (MAT_PTR_TYPE*)malloc((m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+                                                      ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:96:5: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+     memset(csrRowPtr_counter, 0, (m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+     ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:96:5: warning: incompatible implicit declaration of built-in function 'memset' [enabled by default]
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:110:16: warning: variable 'returnvalue' set but not used [-Wunused-but-set-variable]
+         int    returnvalue;
+                ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:150:5: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+     memcpy(csrRowPtr_alias, csrRowPtr_counter, (m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+     ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:150:5: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:191:5: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+     free(csrColIdx_tmp);
+     ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:191:5: warning: incompatible implicit declaration of built-in function 'free' [enabled by default]
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c: In function 'mmio_allinone_complex':
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:244:54: warning: incompatible implicit declaration of built-in function 'malloc' [enabled by default]
+     MAT_PTR_TYPE* csrRowPtr_counter = (MAT_PTR_TYPE*)malloc((m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+                                                      ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:245:5: warning: incompatible implicit declaration of built-in function 'memset' [enabled by default]
+     memset(csrRowPtr_counter, 0, (m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+     ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:302:5: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+     memcpy(csrRowPtr_alias, csrRowPtr_counter, (m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+     ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:391:5: warning: incompatible implicit declaration of built-in function 'free' [enabled by default]
+     free(csrColIdx_tmp);
+     ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/mmio.c: In function 'mm_read_mtx_crd_data':
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/mmio.c:293:39: warning: unused parameter 'M' [-Wunused-parameter]
+ int mm_read_mtx_crd_data(FILE* f, int M, int N, int nz, int I[], int J[], double val[], MM_typecode matcode)
+                                       ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/mmio.c:293:46: warning: unused parameter 'N' [-Wunused-parameter]
+ int mm_read_mtx_crd_data(FILE* f, int M, int N, int nz, int I[], int J[], double val[], MM_typecode matcode)
+                                              ^
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c: In function 'load_vector':
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c:323:10: warning: variable 'r' set but not used [-Wunused-but-set-variable]
+     int  r = 0;
+          ^
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c: In function 'load_b_complex':
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c:349:10: warning: variable 'r' set but not used [-Wunused-but-set-variable]
+     int  r = 0;
+          ^
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c: In function 'load_vector_ld':
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c:771:9: warning: variable 'r' set but not used [-Wunused-but-set-variable]
+     int r = 0;
+         ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c: In function 'sc26_read_matrix_f64':
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:87:45: warning: 'actual.scalar_components' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            a->scalar_type == b->scalar_type &&
+                                             ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:298:22: note: 'actual.scalar_components' was declared here
+     sc26_matrix_info actual;
+                      ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:88:57: warning: 'actual.value_count' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            a->scalar_components == b->scalar_components &&
+                                                         ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:298:22: note: 'actual.value_count' was declared here
+     sc26_matrix_info actual;
+                      ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:89:45: warning: 'actual.file_bytes' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            a->value_count == b->value_count && a->file_bytes == b->file_bytes;
+                                             ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:298:22: note: 'actual.file_bytes' was declared here
+     sc26_matrix_info actual;
+                      ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c: In function 'sc26_read_matrix_f32':
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:87:45: warning: 'actual.scalar_components' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            a->scalar_type == b->scalar_type &&
+                                             ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:321:22: note: 'actual.scalar_components' was declared here
+     sc26_matrix_info actual;
+                      ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:88:57: warning: 'actual.value_count' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            a->scalar_components == b->scalar_components &&
+                                                         ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:321:22: note: 'actual.value_count' was declared here
+     sc26_matrix_info actual;
+                      ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:89:45: warning: 'actual.file_bytes' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            a->value_count == b->value_count && a->file_bytes == b->file_bytes;
+                                             ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:321:22: note: 'actual.file_bytes' was declared here
+     sc26_matrix_info actual;
+                      ^
+gmake[3]: Warning: File `/data/home/sunyc/solverchallenge26/src/problems/cpu_baseline/solver.c' has modification time 499 s in the future
+gmake[3]: warning:  Clock skew detected.  Your build may be incomplete.
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              c3n193
+  Local adapter:           mlx5_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   c3n193
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              c3n193
+  Local adapter:           mlx5_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   c3n193
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+[c3n193:75047] 3 more processes have sent help message help-mpi-btl-openib.txt / ib port not selected
+[c3n193:75047] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[c3n193:75047] 3 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              c3n193
+  Local adapter:           mlx5_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   c3n193
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              c3n193
+  Local adapter:           mlx5_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   c3n193
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+[c3n193:75092] 3 more processes have sent help message help-mpi-btl-openib.txt / ib port not selected
+[c3n193:75092] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[c3n193:75092] 3 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              c3n193
+  Local adapter:           mlx5_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   c3n193
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              c3n193
+  Local adapter:           mlx5_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   c3n193
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+[c3n193:75132] 3 more processes have sent help message help-mpi-btl-openib.txt / ib port not selected
+[c3n193:75132] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[c3n193:75132] 3 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c: In function 'read_mtx_header':
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:22:59: warning: unused variable 'isSymmetric_tmp' [-Wunused-variable]
+     int         isInteger = 0, isReal = 0, isPattern = 0, isSymmetric_tmp = 0;
+                                                           ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:22:44: warning: variable 'isPattern' set but not used [-Wunused-but-set-variable]
+     int         isInteger = 0, isReal = 0, isPattern = 0, isSymmetric_tmp = 0;
+                                            ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:22:32: warning: variable 'isReal' set but not used [-Wunused-but-set-variable]
+     int         isInteger = 0, isReal = 0, isPattern = 0, isSymmetric_tmp = 0;
+                                ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:22:17: warning: variable 'isInteger' set but not used [-Wunused-but-set-variable]
+     int         isInteger = 0, isReal = 0, isPattern = 0, isSymmetric_tmp = 0;
+                 ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c: In function 'mmio_allinone':
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:95:5: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+     MAT_PTR_TYPE* csrRowPtr_counter = (MAT_PTR_TYPE*)malloc((m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+     ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:95:54: warning: incompatible implicit declaration of built-in function 'malloc' [enabled by default]
+     MAT_PTR_TYPE* csrRowPtr_counter = (MAT_PTR_TYPE*)malloc((m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+                                                      ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:96:5: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+     memset(csrRowPtr_counter, 0, (m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+     ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:96:5: warning: incompatible implicit declaration of built-in function 'memset' [enabled by default]
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:110:16: warning: variable 'returnvalue' set but not used [-Wunused-but-set-variable]
+         int    returnvalue;
+                ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:150:5: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+     memcpy(csrRowPtr_alias, csrRowPtr_counter, (m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+     ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:150:5: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:191:5: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+     free(csrColIdx_tmp);
+     ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:191:5: warning: incompatible implicit declaration of built-in function 'free' [enabled by default]
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c: In function 'mmio_allinone_complex':
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:244:54: warning: incompatible implicit declaration of built-in function 'malloc' [enabled by default]
+     MAT_PTR_TYPE* csrRowPtr_counter = (MAT_PTR_TYPE*)malloc((m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+                                                      ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:245:5: warning: incompatible implicit declaration of built-in function 'memset' [enabled by default]
+     memset(csrRowPtr_counter, 0, (m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+     ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:302:5: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+     memcpy(csrRowPtr_alias, csrRowPtr_counter, (m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+     ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:391:5: warning: incompatible implicit declaration of built-in function 'free' [enabled by default]
+     free(csrColIdx_tmp);
+     ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/mmio.c: In function 'mm_read_mtx_crd_data':
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/mmio.c:293:39: warning: unused parameter 'M' [-Wunused-parameter]
+ int mm_read_mtx_crd_data(FILE* f, int M, int N, int nz, int I[], int J[], double val[], MM_typecode matcode)
+                                       ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/mmio.c:293:46: warning: unused parameter 'N' [-Wunused-parameter]
+ int mm_read_mtx_crd_data(FILE* f, int M, int N, int nz, int I[], int J[], double val[], MM_typecode matcode)
+                                              ^
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c: In function 'load_vector':
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c:323:10: warning: variable 'r' set but not used [-Wunused-but-set-variable]
+     int  r = 0;
+          ^
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c: In function 'load_b_complex':
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c:349:10: warning: variable 'r' set but not used [-Wunused-but-set-variable]
+     int  r = 0;
+          ^
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c: In function 'load_vector_ld':
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c:771:9: warning: variable 'r' set but not used [-Wunused-but-set-variable]
+     int r = 0;
+         ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c: In function 'sc26_read_matrix_f64':
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:87:45: warning: 'actual.scalar_components' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            a->scalar_type == b->scalar_type &&
+                                             ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:298:22: note: 'actual.scalar_components' was declared here
+     sc26_matrix_info actual;
+                      ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:88:57: warning: 'actual.value_count' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            a->scalar_components == b->scalar_components &&
+                                                         ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:298:22: note: 'actual.value_count' was declared here
+     sc26_matrix_info actual;
+                      ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:89:45: warning: 'actual.file_bytes' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            a->value_count == b->value_count && a->file_bytes == b->file_bytes;
+                                             ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:298:22: note: 'actual.file_bytes' was declared here
+     sc26_matrix_info actual;
+                      ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c: In function 'sc26_read_matrix_f32':
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:87:45: warning: 'actual.scalar_components' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            a->scalar_type == b->scalar_type &&
+                                             ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:321:22: note: 'actual.scalar_components' was declared here
+     sc26_matrix_info actual;
+                      ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:88:57: warning: 'actual.value_count' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            a->scalar_components == b->scalar_components &&
+                                                         ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:321:22: note: 'actual.value_count' was declared here
+     sc26_matrix_info actual;
+                      ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:89:45: warning: 'actual.file_bytes' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            a->value_count == b->value_count && a->file_bytes == b->file_bytes;
+                                             ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:321:22: note: 'actual.file_bytes' was declared here
+     sc26_matrix_info actual;
+                      ^
+gmake[3]: Warning: File `/data/home/sunyc/solverchallenge26/src/problems/cpu_baseline/solver.c' has modification time 495 s in the future
+gmake[3]: warning:  Clock skew detected.  Your build may be incomplete.
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              c3n193
+  Local adapter:           mlx5_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   c3n193
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c: In function 'read_mtx_header':
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:22:59: warning: unused variable 'isSymmetric_tmp' [-Wunused-variable]
+     int         isInteger = 0, isReal = 0, isPattern = 0, isSymmetric_tmp = 0;
+                                                           ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:22:44: warning: variable 'isPattern' set but not used [-Wunused-but-set-variable]
+     int         isInteger = 0, isReal = 0, isPattern = 0, isSymmetric_tmp = 0;
+                                            ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:22:32: warning: variable 'isReal' set but not used [-Wunused-but-set-variable]
+     int         isInteger = 0, isReal = 0, isPattern = 0, isSymmetric_tmp = 0;
+                                ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:22:17: warning: variable 'isInteger' set but not used [-Wunused-but-set-variable]
+     int         isInteger = 0, isReal = 0, isPattern = 0, isSymmetric_tmp = 0;
+                 ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c: In function 'mmio_allinone':
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:95:5: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+     MAT_PTR_TYPE* csrRowPtr_counter = (MAT_PTR_TYPE*)malloc((m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+     ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:95:54: warning: incompatible implicit declaration of built-in function 'malloc' [enabled by default]
+     MAT_PTR_TYPE* csrRowPtr_counter = (MAT_PTR_TYPE*)malloc((m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+                                                      ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:96:5: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+     memset(csrRowPtr_counter, 0, (m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+     ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:96:5: warning: incompatible implicit declaration of built-in function 'memset' [enabled by default]
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:110:16: warning: variable 'returnvalue' set but not used [-Wunused-but-set-variable]
+         int    returnvalue;
+                ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:150:5: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+     memcpy(csrRowPtr_alias, csrRowPtr_counter, (m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+     ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:150:5: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/mmio.c: In function 'mm_read_mtx_crd_data':
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:191:5: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+     free(csrColIdx_tmp);
+     ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:191:5: warning: incompatible implicit declaration of built-in function 'free' [enabled by default]
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c: In function 'mmio_allinone_complex':
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/mmio.c:293:39: warning: unused parameter 'M' [-Wunused-parameter]
+ int mm_read_mtx_crd_data(FILE* f, int M, int N, int nz, int I[], int J[], double val[], MM_typecode matcode)
+                                       ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:244:54: warning: incompatible implicit declaration of built-in function 'malloc' [enabled by default]
+     MAT_PTR_TYPE* csrRowPtr_counter = (MAT_PTR_TYPE*)malloc((m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+                                                      ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/mmio.c:293:46: warning: unused parameter 'N' [-Wunused-parameter]
+ int mm_read_mtx_crd_data(FILE* f, int M, int N, int nz, int I[], int J[], double val[], MM_typecode matcode)
+                                              ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:245:5: warning: incompatible implicit declaration of built-in function 'memset' [enabled by default]
+     memset(csrRowPtr_counter, 0, (m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+     ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:302:5: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+     memcpy(csrRowPtr_alias, csrRowPtr_counter, (m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+     ^
+/data/home/sunyc/solverchallenge26/src/src/matrix_market/highlevel.c:391:5: warning: incompatible implicit declaration of built-in function 'free' [enabled by default]
+     free(csrColIdx_tmp);
+     ^
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c: In function 'load_vector':
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c:323:10: warning: variable 'r' set but not used [-Wunused-but-set-variable]
+     int  r = 0;
+          ^
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c: In function 'load_b_complex':
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c:349:10: warning: variable 'r' set but not used [-Wunused-but-set-variable]
+     int  r = 0;
+          ^
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c: In function 'load_vector_ld':
+/data/home/sunyc/solverchallenge26/src/src/diagnostics.c:771:9: warning: variable 'r' set but not used [-Wunused-but-set-variable]
+     int r = 0;
+         ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c: In function 'sc26_read_matrix_f64':
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:87:45: warning: 'actual.scalar_components' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            a->scalar_type == b->scalar_type &&
+                                             ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:298:22: note: 'actual.scalar_components' was declared here
+     sc26_matrix_info actual;
+                      ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:88:57: warning: 'actual.value_count' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            a->scalar_components == b->scalar_components &&
+                                                         ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:298:22: note: 'actual.value_count' was declared here
+     sc26_matrix_info actual;
+                      ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:89:45: warning: 'actual.file_bytes' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            a->value_count == b->value_count && a->file_bytes == b->file_bytes;
+                                             ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:298:22: note: 'actual.file_bytes' was declared here
+     sc26_matrix_info actual;
+                      ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c: In function 'sc26_read_matrix_f32':
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:87:45: warning: 'actual.scalar_components' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            a->scalar_type == b->scalar_type &&
+                                             ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:321:22: note: 'actual.scalar_components' was declared here
+     sc26_matrix_info actual;
+                      ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:88:57: warning: 'actual.value_count' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            a->scalar_components == b->scalar_components &&
+                                                         ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:321:22: note: 'actual.value_count' was declared here
+     sc26_matrix_info actual;
+                      ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:89:45: warning: 'actual.file_bytes' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            a->value_count == b->value_count && a->file_bytes == b->file_bytes;
+                                             ^
+/data/home/sunyc/solverchallenge26/src/src/petsc_binary_reader.c:321:22: note: 'actual.file_bytes' was declared here
+     sc26_matrix_info actual;
+                      ^
+gmake[3]: Warning: File `/data/home/sunyc/solverchallenge26/src/problems/cpu_baseline/solver.c' has modification time 489 s in the future
+gmake[3]: warning:  Clock skew detected.  Your build may be incomplete.
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              c3n193
+  Local adapter:           mlx5_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   c3n193
+  Local device: mlx5_0
+--------------------------------------------------------------------------

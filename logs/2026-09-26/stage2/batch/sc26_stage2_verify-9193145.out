@@ -1,0 +1,61 @@
+Internal ctest changing into directory: /data/home/sunyc/solverchallenge26/build-t05
+Test project /data/home/sunyc/solverchallenge26/build-t05
+    Start 1: header_include_order_mpi_first
+1/2 Test #1: header_include_order_mpi_first ......   Passed    1.88 sec
+    Start 2: header_include_order_reader_first
+2/2 Test #2: header_include_order_reader_first ...   Passed    0.06 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   1.95 sec
+Internal ctest changing into directory: /data/home/sunyc/solverchallenge26/build-t07
+Test project /data/home/sunyc/solverchallenge26/build-t07
+    Start 1: header_include_order_mpi_first
+1/2 Test #1: header_include_order_mpi_first ......   Passed    0.03 sec
+    Start 2: header_include_order_reader_first
+2/2 Test #2: header_include_order_reader_first ...   Passed    0.03 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.06 sec
+Internal ctest changing into directory: /data/home/sunyc/solverchallenge26/build-t08
+Test project /data/home/sunyc/solverchallenge26/build-t08
+    Start 1: header_include_order_mpi_first
+1/2 Test #1: header_include_order_mpi_first ......   Passed    0.02 sec
+    Start 2: header_include_order_reader_first
+2/2 Test #2: header_include_order_reader_first ...   Passed    0.02 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.05 sec
+Internal ctest changing into directory: /data/home/sunyc/solverchallenge26/build-t10
+Test project /data/home/sunyc/solverchallenge26/build-t10
+    Start 1: header_include_order_mpi_first
+1/2 Test #1: header_include_order_mpi_first ......   Passed    0.02 sec
+    Start 2: header_include_order_reader_first
+2/2 Test #2: header_include_order_reader_first ...   Passed    0.02 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.05 sec
+Internal ctest changing into directory: /data/home/sunyc/solverchallenge26/build-t05-mgr
+Test project /data/home/sunyc/solverchallenge26/build-t05-mgr
+    Start 1: header_include_order_mpi_first
+1/2 Test #1: header_include_order_mpi_first ......   Passed    0.02 sec
+    Start 2: header_include_order_reader_first
+2/2 Test #2: header_include_order_reader_first ...   Passed    0.02 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.05 sec
+Internal ctest changing into directory: /data/home/sunyc/solverchallenge26/build-t07-mgr
+Test project /data/home/sunyc/solverchallenge26/build-t07-mgr
+    Start 1: header_include_order_mpi_first
+1/2 Test #1: header_include_order_mpi_first ......   Passed    0.02 sec
+    Start 2: header_include_order_reader_first
+2/2 Test #2: header_include_order_reader_first ...   Passed    0.02 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.05 sec
+T8_METRIC_CHECK_PASS: relative=8.874297e-17 passes 1e-14; max=1.021671e-12 fails 1e-14
