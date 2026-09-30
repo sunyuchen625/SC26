@@ -1,5 +1,5 @@
 {
-  "recorded_utc": "2026-09-26T11:49:21.444666+00:00",
+  "recorded_utc": "2026-09-30T07:49:26.185984+00:00",
   "results": [
     {
       "job": 9193128,
@@ -457,20 +457,20 @@
       "method": "PARDISO64_sorted",
       "rhs": "05",
       "job_state": [
-        "RUNNING",
+        "COMPLETED",
         "0:0",
-        "00:04:38",
+        "01:07:32",
         "c3n53"
       ],
       "remote_run": "/data/home/sunyc/solverchallenge26/runs/t10-direct-9193324/rhs-05",
       "metric": "relative_l2",
       "threshold": 1e-08,
-      "completed_solves": 1,
-      "relative_residual": null,
-      "max_absolute_residual": null,
-      "five_solve_average_seconds": null,
-      "residual_pass": null,
-      "peak_bytes_sum": null,
+      "completed_solves": 5,
+      "relative_residual": 6.532777e-15,
+      "max_absolute_residual": 1.455371e-14,
+      "five_solve_average_seconds": 200.674681,
+      "residual_pass": true,
+      "peak_bytes_sum": 133991350272,
       "iterations": []
     },
     {
@@ -479,14 +479,21 @@
       "method": "PARDISO64_sorted",
       "rhs": "06",
       "job_state": [
-        "RUNNING",
+        "COMPLETED",
         "0:0",
-        "00:04:38",
+        "01:07:32",
         "c3n53"
       ],
       "remote_run": "/data/home/sunyc/solverchallenge26/runs/t10-direct-9193324/rhs-06",
       "metric": "relative_l2",
-      "threshold": 1e-08
+      "threshold": 1e-08,
+      "completed_solves": 5,
+      "relative_residual": 6.882366e-15,
+      "max_absolute_residual": 1.298732e-14,
+      "five_solve_average_seconds": 198.607999,
+      "residual_pass": true,
+      "peak_bytes_sum": 134027653120,
+      "iterations": []
     },
     {
       "job": 9193324,
@@ -494,14 +501,21 @@
       "method": "PARDISO64_sorted",
       "rhs": "07",
       "job_state": [
-        "RUNNING",
+        "COMPLETED",
         "0:0",
-        "00:04:38",
+        "01:07:32",
         "c3n53"
       ],
       "remote_run": "/data/home/sunyc/solverchallenge26/runs/t10-direct-9193324/rhs-07",
       "metric": "relative_l2",
-      "threshold": 1e-08
+      "threshold": 1e-08,
+      "completed_solves": 5,
+      "relative_residual": 7.161163e-15,
+      "max_absolute_residual": 1.815902e-14,
+      "five_solve_average_seconds": 198.188457,
+      "residual_pass": true,
+      "peak_bytes_sum": 134051045376,
+      "iterations": []
     },
     {
       "job": 9193325,
@@ -509,20 +523,20 @@
       "method": "PARDISO64_sorted",
       "rhs": "08",
       "job_state": [
-        "RUNNING",
+        "COMPLETED",
         "0:0",
-        "00:04:38",
+        "01:07:26",
         "c3n54"
       ],
       "remote_run": "/data/home/sunyc/solverchallenge26/runs/t10-direct-9193325/rhs-08",
       "metric": "relative_l2",
       "threshold": 1e-08,
-      "completed_solves": 1,
-      "relative_residual": null,
-      "max_absolute_residual": null,
-      "five_solve_average_seconds": null,
-      "residual_pass": null,
-      "peak_bytes_sum": null,
+      "completed_solves": 5,
+      "relative_residual": 7.155695e-15,
+      "max_absolute_residual": 1.778237e-14,
+      "five_solve_average_seconds": 197.519764,
+      "residual_pass": true,
+      "peak_bytes_sum": 133944680448,
       "iterations": []
     },
     {
@@ -531,14 +545,21 @@
       "method": "PARDISO64_sorted",
       "rhs": "09",
       "job_state": [
-        "RUNNING",
+        "COMPLETED",
         "0:0",
-        "00:04:38",
+        "01:07:26",
         "c3n54"
       ],
       "remote_run": "/data/home/sunyc/solverchallenge26/runs/t10-direct-9193325/rhs-09",
       "metric": "relative_l2",
-      "threshold": 1e-08
+      "threshold": 1e-08,
+      "completed_solves": 5,
+      "relative_residual": 7.406004e-15,
+      "max_absolute_residual": 1.690528e-14,
+      "five_solve_average_seconds": 198.673882,
+      "residual_pass": true,
+      "peak_bytes_sum": 134014300160,
+      "iterations": []
     },
     {
       "job": 9193325,
@@ -546,14 +567,21 @@
       "method": "PARDISO64_sorted",
       "rhs": "10",
       "job_state": [
-        "RUNNING",
+        "COMPLETED",
         "0:0",
-        "00:04:38",
+        "01:07:26",
         "c3n54"
       ],
       "remote_run": "/data/home/sunyc/solverchallenge26/runs/t10-direct-9193325/rhs-10",
       "metric": "relative_l2",
-      "threshold": 1e-08
+      "threshold": 1e-08,
+      "completed_solves": 5,
+      "relative_residual": 6.566291e-15,
+      "max_absolute_residual": 1.853249e-14,
+      "five_solve_average_seconds": 199.795372,
+      "residual_pass": true,
+      "peak_bytes_sum": 134009942016,
+      "iterations": []
     },
     {
       "job": 9193327,
@@ -561,20 +589,20 @@
       "method": "PARDISO64_sorted",
       "rhs": "02",
       "job_state": [
-        "RUNNING",
+        "COMPLETED",
         "0:0",
-        "00:02:35",
+        "01:07:04",
         "c3n92"
       ],
       "remote_run": "/data/home/sunyc/solverchallenge26/runs/t10-direct-9193327/rhs-02",
       "metric": "relative_l2",
       "threshold": 1e-08,
-      "completed_solves": 0,
-      "relative_residual": null,
-      "max_absolute_residual": null,
-      "five_solve_average_seconds": null,
-      "residual_pass": null,
-      "peak_bytes_sum": null,
+      "completed_solves": 5,
+      "relative_residual": 6.507977e-15,
+      "max_absolute_residual": 1.590998e-14,
+      "five_solve_average_seconds": 196.740315,
+      "residual_pass": true,
+      "peak_bytes_sum": 134002798592,
       "iterations": []
     },
     {
@@ -583,14 +611,21 @@
       "method": "PARDISO64_sorted",
       "rhs": "03",
       "job_state": [
-        "RUNNING",
+        "COMPLETED",
         "0:0",
-        "00:02:35",
+        "01:07:04",
         "c3n92"
       ],
       "remote_run": "/data/home/sunyc/solverchallenge26/runs/t10-direct-9193327/rhs-03",
       "metric": "relative_l2",
-      "threshold": 1e-08
+      "threshold": 1e-08,
+      "completed_solves": 5,
+      "relative_residual": 7.28139e-15,
+      "max_absolute_residual": 1.611673e-14,
+      "five_solve_average_seconds": 197.81654,
+      "residual_pass": true,
+      "peak_bytes_sum": 134037450752,
+      "iterations": []
     },
     {
       "job": 9193327,
@@ -598,14 +633,21 @@
       "method": "PARDISO64_sorted",
       "rhs": "04",
       "job_state": [
-        "RUNNING",
+        "COMPLETED",
         "0:0",
-        "00:02:35",
+        "01:07:04",
         "c3n92"
       ],
       "remote_run": "/data/home/sunyc/solverchallenge26/runs/t10-direct-9193327/rhs-04",
       "metric": "relative_l2",
-      "threshold": 1e-08
+      "threshold": 1e-08,
+      "completed_solves": 5,
+      "relative_residual": 6.771081e-15,
+      "max_absolute_residual": 1.425513e-14,
+      "five_solve_average_seconds": 197.307199,
+      "residual_pass": true,
+      "peak_bytes_sum": 134008791040,
+      "iterations": []
     }
   ]
 }

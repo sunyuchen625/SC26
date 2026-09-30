@@ -20,5 +20,8 @@ AGENTS.md
 opencode.json
 /tmp/
 /资料/dependencies/
+/.vscode/
+/资料/资源申请/个人保密承诺书*.docx
+/资料/资源申请/国产CPU资源申请提交凭证_*.jpg
 !/logs/**/*.log
 !/logs/**/*.out

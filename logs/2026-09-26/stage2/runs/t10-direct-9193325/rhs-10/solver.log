@@ -1,0 +1,666 @@
+matrix name :      /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_10/solverchallenge26_10_A.dat
+vectorb name :     /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_10/solverchallenge26_10_b_10.dat
+read function :    PETSc binary (0-base)
+sys_type :         1
+T10_PARDISO_SORT rows=1
+
+=== PARDISO: solving a complex nonsymmetric system ===
+Matrix checker is turned ON
+0-based array is turned ON
+PARDISO double precision computation is turned ON
+METIS algorithm at reorder step is turned ON
+Scaling is turned ON
+Matching is turned ON
+
+
+Summary: ( reordering phase )
+================
+
+Times:
+======
+Time spent in calculations of symmetric matrix portrait (fulladj): 19.271864 s
+Time spent in reordering of the initial matrix (reorder)         : 80.407176 s
+Time spent in symbolic factorization (symbfct)                   : 6.148730 s
+Time spent in data preparations for factorization (parlist)      : 0.013065 s
+Time spent in allocation of internal data structures (malloc)    : 0.025814 s
+Time spent in matching/scaling                                   : 37.796369 s
+Time spent in additional calculations                            : 31.710931 s
+Total time spent                                                 : 175.373949 s
+
+Statistics:
+===========
+Parallel Direct Factorization is running on 96 OpenMP
+
+< Linear system Ax = b >
+             number of equations:           418718
+             number of non-zeros in A:      921708586
+             number of non-zeros in A (%): 0.525715
+
+             number of right-hand sides:    1
+
+< Factors L and U >
+             number of columns for each panel: 72
+             number of independent subgraphs:  0
+< Preprocessing with state of the art partitioning metis>
+             number of supernodes:                    6440
+             size of largest supernode:               5240
+             number of non-zeros in L:                811538183
+             number of non-zeros in U:                782000789
+             number of non-zeros in L+U:              1593538972
+T10_PARDISO_ANALYSE seconds=184.377332 estimated_peak_kib=106883661 factor_nnz=1593538972
+=== PARDISO is running in In-Core mode, because iparam(60)=0 ===
+
+Percentage of computed non-zeros for LL^T factorization
+ 1 %  2 %  4 %  5 %  7 %  8 %  10 %  11 %  13 %  16 %  17 %  20 %  22 %  24 %  26 %  27 %  29 %  31 %  33 %  35 %  38 %  40 %  41 %  43 %  45 %  46 %  47 %  49 %  51 %  52 %  54 %  55 %  57 %  58 %  60 %  62 %  64 %  65 %  67 %  69 %  70 %  71 %  73 %  74 %  75 %  77 %  78 %  79 %  82 %  83 %  85 %  87 %  94 %  96 %  99 %  100 % 
+
+=== PARDISO: solving a complex nonsymmetric system ===
+Single-level factorization algorithm is turned ON
+
+
+Summary: ( factorization phase )
+================
+
+Times:
+======
+Time spent in copying matrix to internal data structure (A to LU): 0.000000 s
+Time spent in factorization step (numfct)                        : 8.904695 s
+Time spent in allocation of internal data structures (malloc)    : 1.672200 s
+Time spent in additional calculations                            : 0.000009 s
+Total time spent                                                 : 10.576904 s
+
+Statistics:
+===========
+Parallel Direct Factorization is running on 96 OpenMP
+
+< Linear system Ax = b >
+             number of equations:           418718
+             number of non-zeros in A:      921708586
+             number of non-zeros in A (%): 0.525715
+
+             number of right-hand sides:    1
+
+< Factors L and U >
+             number of columns for each panel: 72
+             number of independent subgraphs:  0
+< Preprocessing with state of the art partitioning metis>
+             number of supernodes:                    6440
+             size of largest supernode:               5240
+             number of non-zeros in L:                811538183
+             number of non-zeros in U:                782000789
+             number of non-zeros in L+U:              1593538972
+             gflop   for the numerical factorization: 13655.752241
+
+             gflop/s for the numerical factorization: 1533.545190
+
+T10_PARDISO_FACTOR seconds=10.576951 perturbed_pivots=0
+
+=== PARDISO: solving a complex nonsymmetric system ===
+
+
+Summary: ( solution phase )
+================
+
+Times:
+======
+Time spent in direct solver at solve step (solve)                : 0.259947 s
+Time spent in additional calculations                            : 3.062678 s
+Total time spent                                                 : 3.322625 s
+
+Statistics:
+===========
+Parallel Direct Factorization is running on 96 OpenMP
+
+< Linear system Ax = b >
+             number of equations:           418718
+             number of non-zeros in A:      921708586
+             number of non-zeros in A (%): 0.525715
+
+             number of right-hand sides:    1
+
+< Factors L and U >
+             number of columns for each panel: 72
+             number of independent subgraphs:  0
+< Preprocessing with state of the art partitioning metis>
+             number of supernodes:                    6440
+             size of largest supernode:               5240
+             number of non-zeros in L:                811538183
+             number of non-zeros in U:                782000789
+             number of non-zeros in L+U:              1593538972
+             gflop   for the numerical factorization: 13655.752241
+
+             gflop/s for the numerical factorization: 1533.545190
+
+T10_PARDISO_DONE refinements=4
+T10_PHASE_SECONDS analyse=184.377332 factor=10.576951 solve_cleanup=3.605798
+T10_PARDISO_SORT rows=1
+
+=== PARDISO: solving a complex nonsymmetric system ===
+Matrix checker is turned ON
+0-based array is turned ON
+PARDISO double precision computation is turned ON
+METIS algorithm at reorder step is turned ON
+Scaling is turned ON
+Matching is turned ON
+
+
+Summary: ( reordering phase )
+================
+
+Times:
+======
+Time spent in calculations of symmetric matrix portrait (fulladj): 19.390733 s
+Time spent in reordering of the initial matrix (reorder)         : 82.436693 s
+Time spent in symbolic factorization (symbfct)                   : 6.808790 s
+Time spent in data preparations for factorization (parlist)      : 0.013210 s
+Time spent in allocation of internal data structures (malloc)    : 0.025299 s
+Time spent in matching/scaling                                   : 37.716776 s
+Time spent in additional calculations                            : 34.802531 s
+Total time spent                                                 : 181.194032 s
+
+Statistics:
+===========
+Parallel Direct Factorization is running on 96 OpenMP
+
+< Linear system Ax = b >
+             number of equations:           418718
+             number of non-zeros in A:      921708586
+             number of non-zeros in A (%): 0.525715
+
+             number of right-hand sides:    1
+
+< Factors L and U >
+             number of columns for each panel: 72
+             number of independent subgraphs:  0
+< Preprocessing with state of the art partitioning metis>
+             number of supernodes:                    6440
+             size of largest supernode:               5240
+             number of non-zeros in L:                811538183
+             number of non-zeros in U:                782000789
+             number of non-zeros in L+U:              1593538972
+T10_PARDISO_ANALYSE seconds=189.729808 estimated_peak_kib=106883661 factor_nnz=1593538972
+=== PARDISO is running in In-Core mode, because iparam(60)=0 ===
+
+Percentage of computed non-zeros for LL^T factorization
+ 1 %  3 %  4 %  6 %  7 %  9 %  11 %  13 %  16 %  18 %  19 %  21 %  23 %  25 %  26 %  28 %  30 %  31 %  33 %  35 %  36 %  37 %  39 %  41 %  43 %  45 %  46 %  47 %  49 %  51 %  53 %  54 %  55 %  57 %  58 %  60 %  62 %  63 %  64 %  65 %  67 %  68 %  70 %  72 %  73 %  74 %  76 %  77 %  78 %  79 %  80 %  81 %  82 %  83 %  84 %  88 %  94 %  97 %  99 %  100 % 
+
+=== PARDISO: solving a complex nonsymmetric system ===
+Single-level factorization algorithm is turned ON
+
+
+Summary: ( factorization phase )
+================
+
+Times:
+======
+Time spent in copying matrix to internal data structure (A to LU): 0.000000 s
+Time spent in factorization step (numfct)                        : 8.709227 s
+Time spent in allocation of internal data structures (malloc)    : 2.344755 s
+Time spent in additional calculations                            : 0.000001 s
+Total time spent                                                 : 11.053983 s
+
+Statistics:
+===========
+Parallel Direct Factorization is running on 96 OpenMP
+
+< Linear system Ax = b >
+             number of equations:           418718
+             number of non-zeros in A:      921708586
+             number of non-zeros in A (%): 0.525715
+
+             number of right-hand sides:    1
+
+< Factors L and U >
+             number of columns for each panel: 72
+             number of independent subgraphs:  0
+< Preprocessing with state of the art partitioning metis>
+             number of supernodes:                    6440
+             size of largest supernode:               5240
+             number of non-zeros in L:                811538183
+             number of non-zeros in U:                782000789
+             number of non-zeros in L+U:              1593538972
+             gflop   for the numerical factorization: 13655.752241
+
+             gflop/s for the numerical factorization: 1567.963779
+
+T10_PARDISO_FACTOR seconds=11.054000 perturbed_pivots=0
+
+=== PARDISO: solving a complex nonsymmetric system ===
+
+
+Summary: ( solution phase )
+================
+
+Times:
+======
+Time spent in direct solver at solve step (solve)                : 0.258318 s
+Time spent in additional calculations                            : 3.581933 s
+Total time spent                                                 : 3.840251 s
+
+Statistics:
+===========
+Parallel Direct Factorization is running on 96 OpenMP
+
+< Linear system Ax = b >
+             number of equations:           418718
+             number of non-zeros in A:      921708586
+             number of non-zeros in A (%): 0.525715
+
+             number of right-hand sides:    1
+
+< Factors L and U >
+             number of columns for each panel: 72
+             number of independent subgraphs:  0
+< Preprocessing with state of the art partitioning metis>
+             number of supernodes:                    6440
+             size of largest supernode:               5240
+             number of non-zeros in L:                811538183
+             number of non-zeros in U:                782000789
+             number of non-zeros in L+U:              1593538972
+             gflop   for the numerical factorization: 13655.752241
+
+             gflop/s for the numerical factorization: 1567.963779
+
+T10_PARDISO_DONE refinements=4
+T10_PHASE_SECONDS analyse=189.729808 factor=11.054000 solve_cleanup=4.107715
+T10_PARDISO_SORT rows=1
+
+=== PARDISO: solving a complex nonsymmetric system ===
+Matrix checker is turned ON
+0-based array is turned ON
+PARDISO double precision computation is turned ON
+METIS algorithm at reorder step is turned ON
+Scaling is turned ON
+Matching is turned ON
+
+
+Summary: ( reordering phase )
+================
+
+Times:
+======
+Time spent in calculations of symmetric matrix portrait (fulladj): 20.055403 s
+Time spent in reordering of the initial matrix (reorder)         : 80.463837 s
+Time spent in symbolic factorization (symbfct)                   : 6.157315 s
+Time spent in data preparations for factorization (parlist)      : 0.012912 s
+Time spent in allocation of internal data structures (malloc)    : 0.025740 s
+Time spent in matching/scaling                                   : 37.996676 s
+Time spent in additional calculations                            : 31.661483 s
+Total time spent                                                 : 176.373366 s
+
+Statistics:
+===========
+Parallel Direct Factorization is running on 96 OpenMP
+
+< Linear system Ax = b >
+             number of equations:           418718
+             number of non-zeros in A:      921708586
+             number of non-zeros in A (%): 0.525715
+
+             number of right-hand sides:    1
+
+< Factors L and U >
+             number of columns for each panel: 72
+             number of independent subgraphs:  0
+< Preprocessing with state of the art partitioning metis>
+             number of supernodes:                    6440
+             size of largest supernode:               5240
+             number of non-zeros in L:                811538183
+             number of non-zeros in U:                782000789
+             number of non-zeros in L+U:              1593538972
+T10_PARDISO_ANALYSE seconds=185.254518 estimated_peak_kib=106883661 factor_nnz=1593538972
+=== PARDISO is running in In-Core mode, because iparam(60)=0 ===
+
+Percentage of computed non-zeros for LL^T factorization
+ 2 %  4 %  6 %  7 %  8 %  10 %  12 %  14 %  17 %  19 %  21 %  23 %  25 %  27 %  30 %  31 %  33 %  34 %  36 %  38 %  40 %  41 %  43 %  44 %  46 %  47 %  49 %  51 %  53 %  55 %  57 %  59 %  61 %  62 %  63 %  64 %  66 %  67 %  68 %  69 %  71 %  73 %  74 %  75 %  76 %  78 %  79 %  80 %  81 %  82 %  84 %  86 %  88 %  93 %  96 %  99 %  100 % 
+
+=== PARDISO: solving a complex nonsymmetric system ===
+Single-level factorization algorithm is turned ON
+
+
+Summary: ( factorization phase )
+================
+
+Times:
+======
+Time spent in copying matrix to internal data structure (A to LU): 0.000000 s
+Time spent in factorization step (numfct)                        : 8.694635 s
+Time spent in allocation of internal data structures (malloc)    : 1.636612 s
+Time spent in additional calculations                            : 0.000002 s
+Total time spent                                                 : 10.331249 s
+
+Statistics:
+===========
+Parallel Direct Factorization is running on 96 OpenMP
+
+< Linear system Ax = b >
+             number of equations:           418718
+             number of non-zeros in A:      921708586
+             number of non-zeros in A (%): 0.525715
+
+             number of right-hand sides:    1
+
+< Factors L and U >
+             number of columns for each panel: 72
+             number of independent subgraphs:  0
+< Preprocessing with state of the art partitioning metis>
+             number of supernodes:                    6440
+             size of largest supernode:               5240
+             number of non-zeros in L:                811538183
+             number of non-zeros in U:                782000789
+             number of non-zeros in L+U:              1593538972
+             gflop   for the numerical factorization: 13655.752241
+
+             gflop/s for the numerical factorization: 1570.595201
+
+T10_PARDISO_FACTOR seconds=10.333501 perturbed_pivots=0
+
+=== PARDISO: solving a complex nonsymmetric system ===
+
+
+Summary: ( solution phase )
+================
+
+Times:
+======
+Time spent in direct solver at solve step (solve)                : 0.256413 s
+Time spent in additional calculations                            : 3.283298 s
+Total time spent                                                 : 3.539711 s
+
+Statistics:
+===========
+Parallel Direct Factorization is running on 96 OpenMP
+
+< Linear system Ax = b >
+             number of equations:           418718
+             number of non-zeros in A:      921708586
+             number of non-zeros in A (%): 0.525715
+
+             number of right-hand sides:    1
+
+< Factors L and U >
+             number of columns for each panel: 72
+             number of independent subgraphs:  0
+< Preprocessing with state of the art partitioning metis>
+             number of supernodes:                    6440
+             size of largest supernode:               5240
+             number of non-zeros in L:                811538183
+             number of non-zeros in U:                782000789
+             number of non-zeros in L+U:              1593538972
+             gflop   for the numerical factorization: 13655.752241
+
+             gflop/s for the numerical factorization: 1570.595201
+
+T10_PARDISO_DONE refinements=4
+T10_PHASE_SECONDS analyse=185.254518 factor=10.333501 solve_cleanup=3.777168
+T10_PARDISO_SORT rows=1
+
+=== PARDISO: solving a complex nonsymmetric system ===
+Matrix checker is turned ON
+0-based array is turned ON
+PARDISO double precision computation is turned ON
+METIS algorithm at reorder step is turned ON
+Scaling is turned ON
+Matching is turned ON
+
+
+Summary: ( reordering phase )
+================
+
+Times:
+======
+Time spent in calculations of symmetric matrix portrait (fulladj): 19.244078 s
+Time spent in reordering of the initial matrix (reorder)         : 79.049296 s
+Time spent in symbolic factorization (symbfct)                   : 6.025303 s
+Time spent in data preparations for factorization (parlist)      : 0.012839 s
+Time spent in allocation of internal data structures (malloc)    : 0.025397 s
+Time spent in matching/scaling                                   : 37.653813 s
+Time spent in additional calculations                            : 31.190365 s
+Total time spent                                                 : 173.201091 s
+
+Statistics:
+===========
+Parallel Direct Factorization is running on 96 OpenMP
+
+< Linear system Ax = b >
+             number of equations:           418718
+             number of non-zeros in A:      921708586
+             number of non-zeros in A (%): 0.525715
+
+             number of right-hand sides:    1
+
+< Factors L and U >
+             number of columns for each panel: 72
+             number of independent subgraphs:  0
+< Preprocessing with state of the art partitioning metis>
+             number of supernodes:                    6440
+             size of largest supernode:               5240
+             number of non-zeros in L:                811538183
+             number of non-zeros in U:                782000789
+             number of non-zeros in L+U:              1593538972
+T10_PARDISO_ANALYSE seconds=183.290541 estimated_peak_kib=106883661 factor_nnz=1593538972
+=== PARDISO is running in In-Core mode, because iparam(60)=0 ===
+
+Percentage of computed non-zeros for LL^T factorization
+ 1 %  3 %  5 %  6 %  7 %  10 %  13 %  16 %  18 %  20 %  21 %  24 %  25 %  28 %  30 %  32 %  34 %  36 %  38 %  40 %  42 %  44 %  45 %  46 %  48 %  50 %  51 %  53 %  54 %  55 %  57 %  59 %  60 %  62 %  63 %  65 %  66 %  68 %  70 %  72 %  74 %  75 %  76 %  78 %  79 %  80 %  81 %  84 %  86 %  94 %  98 %  100 % 
+
+=== PARDISO: solving a complex nonsymmetric system ===
+Single-level factorization algorithm is turned ON
+
+
+Summary: ( factorization phase )
+================
+
+Times:
+======
+Time spent in copying matrix to internal data structure (A to LU): 0.000000 s
+Time spent in factorization step (numfct)                        : 8.807698 s
+Time spent in allocation of internal data structures (malloc)    : 1.648343 s
+Time spent in additional calculations                            : 0.000002 s
+Total time spent                                                 : 10.456043 s
+
+Statistics:
+===========
+Parallel Direct Factorization is running on 96 OpenMP
+
+< Linear system Ax = b >
+             number of equations:           418718
+             number of non-zeros in A:      921708586
+             number of non-zeros in A (%): 0.525715
+
+             number of right-hand sides:    1
+
+< Factors L and U >
+             number of columns for each panel: 72
+             number of independent subgraphs:  0
+< Preprocessing with state of the art partitioning metis>
+             number of supernodes:                    6440
+             size of largest supernode:               5240
+             number of non-zeros in L:                811538183
+             number of non-zeros in U:                782000789
+             number of non-zeros in L+U:              1593538972
+             gflop   for the numerical factorization: 13655.752241
+
+             gflop/s for the numerical factorization: 1550.433748
+
+T10_PARDISO_FACTOR seconds=10.456178 perturbed_pivots=0
+
+=== PARDISO: solving a complex nonsymmetric system ===
+
+
+Summary: ( solution phase )
+================
+
+Times:
+======
+Time spent in direct solver at solve step (solve)                : 0.256432 s
+Time spent in additional calculations                            : 3.362867 s
+Total time spent                                                 : 3.619299 s
+
+Statistics:
+===========
+Parallel Direct Factorization is running on 96 OpenMP
+
+< Linear system Ax = b >
+             number of equations:           418718
+             number of non-zeros in A:      921708586
+             number of non-zeros in A (%): 0.525715
+
+             number of right-hand sides:    1
+
+< Factors L and U >
+             number of columns for each panel: 72
+             number of independent subgraphs:  0
+< Preprocessing with state of the art partitioning metis>
+             number of supernodes:                    6440
+             size of largest supernode:               5240
+             number of non-zeros in L:                811538183
+             number of non-zeros in U:                782000789
+             number of non-zeros in L+U:              1593538972
+             gflop   for the numerical factorization: 13655.752241
+
+             gflop/s for the numerical factorization: 1550.433748
+
+T10_PARDISO_DONE refinements=4
+T10_PHASE_SECONDS analyse=183.290541 factor=10.456178 solve_cleanup=3.857354
+T10_PARDISO_SORT rows=1
+
+=== PARDISO: solving a complex nonsymmetric system ===
+Matrix checker is turned ON
+0-based array is turned ON
+PARDISO double precision computation is turned ON
+METIS algorithm at reorder step is turned ON
+Scaling is turned ON
+Matching is turned ON
+
+
+Summary: ( reordering phase )
+================
+
+Times:
+======
+Time spent in calculations of symmetric matrix portrait (fulladj): 19.702418 s
+Time spent in reordering of the initial matrix (reorder)         : 79.846675 s
+Time spent in symbolic factorization (symbfct)                   : 6.095256 s
+Time spent in data preparations for factorization (parlist)      : 0.012888 s
+Time spent in allocation of internal data structures (malloc)    : 0.025856 s
+Time spent in matching/scaling                                   : 37.690246 s
+Time spent in additional calculations                            : 31.456780 s
+Total time spent                                                 : 174.830119 s
+
+Statistics:
+===========
+Parallel Direct Factorization is running on 96 OpenMP
+
+< Linear system Ax = b >
+             number of equations:           418718
+             number of non-zeros in A:      921708586
+             number of non-zeros in A (%): 0.525715
+
+             number of right-hand sides:    1
+
+< Factors L and U >
+             number of columns for each panel: 72
+             number of independent subgraphs:  0
+< Preprocessing with state of the art partitioning metis>
+             number of supernodes:                    6440
+             size of largest supernode:               5240
+             number of non-zeros in L:                811538183
+             number of non-zeros in U:                782000789
+             number of non-zeros in L+U:              1593538972
+T10_PARDISO_ANALYSE seconds=184.391378 estimated_peak_kib=106883661 factor_nnz=1593538972
+=== PARDISO is running in In-Core mode, because iparam(60)=0 ===
+
+Percentage of computed non-zeros for LL^T factorization
+ 1 %  3 %  7 %  9 %  11 %  13 %  16 %  18 %  20 %  22 %  24 %  26 %  28 %  30 %  32 %  34 %  36 %  38 %  40 %  41 %  43 %  45 %  47 %  48 %  50 %  53 %  54 %  56 %  58 %  60 %  62 %  63 %  64 %  65 %  68 %  69 %  71 %  72 %  73 %  75 %  76 %  77 %  79 %  82 %  83 %  87 %  94 %  97 %  99 %  100 % 
+
+=== PARDISO: solving a complex nonsymmetric system ===
+Single-level factorization algorithm is turned ON
+
+
+Summary: ( factorization phase )
+================
+
+Times:
+======
+Time spent in copying matrix to internal data structure (A to LU): 0.000000 s
+Time spent in factorization step (numfct)                        : 8.424711 s
+Time spent in allocation of internal data structures (malloc)    : 1.629953 s
+Time spent in additional calculations                            : 0.000002 s
+Total time spent                                                 : 10.054666 s
+
+Statistics:
+===========
+Parallel Direct Factorization is running on 96 OpenMP
+
+< Linear system Ax = b >
+             number of equations:           418718
+             number of non-zeros in A:      921708586
+             number of non-zeros in A (%): 0.525715
+
+             number of right-hand sides:    1
+
+< Factors L and U >
+             number of columns for each panel: 72
+             number of independent subgraphs:  0
+< Preprocessing with state of the art partitioning metis>
+             number of supernodes:                    6440
+             size of largest supernode:               5240
+             number of non-zeros in L:                811538183
+             number of non-zeros in U:                782000789
+             number of non-zeros in L+U:              1593538972
+             gflop   for the numerical factorization: 13655.752241
+
+             gflop/s for the numerical factorization: 1620.916404
+
+T10_PARDISO_FACTOR seconds=10.054680 perturbed_pivots=0
+
+=== PARDISO: solving a complex nonsymmetric system ===
+
+
+Summary: ( solution phase )
+================
+
+Times:
+======
+Time spent in direct solver at solve step (solve)                : 0.277937 s
+Time spent in additional calculations                            : 3.284365 s
+Total time spent                                                 : 3.562302 s
+
+Statistics:
+===========
+Parallel Direct Factorization is running on 96 OpenMP
+
+< Linear system Ax = b >
+             number of equations:           418718
+             number of non-zeros in A:      921708586
+             number of non-zeros in A (%): 0.525715
+
+             number of right-hand sides:    1
+
+< Factors L and U >
+             number of columns for each panel: 72
+             number of independent subgraphs:  0
+< Preprocessing with state of the art partitioning metis>
+             number of supernodes:                    6440
+             size of largest supernode:               5240
+             number of non-zeros in L:                811538183
+             number of non-zeros in U:                782000789
+             number of non-zeros in L+U:              1593538972
+             gflop   for the numerical factorization: 13655.752241
+
+             gflop/s for the numerical factorization: 1620.916404
+
+T10_PARDISO_DONE refinements=4
+T10_PHASE_SECONDS analyse=184.391378 factor=10.054680 solve_cleanup=3.799820
+Total memory usage:                 127801.8398 MB
+------------------------------------------
+CHECK end to end time :           199.795372 s
+Check complex || b - Ax || 2             =  7.652619e-14 
+Check complex || b - Ax || MAX           =  1.854822e-14 
+Check complex || b - Ax || 2 / || b || 2 =  6.570774e-15 
+LD-Check complex || b - Ax || 2             =  7.647398e-14 
+LD-Check complex || b - Ax || MAX           =  1.853253e-14 
+LD-Check complex || b - Ax || 2 / || b || 2 =  6.566292e-15 
+Q-Check complex || b - Ax || 2             =  7.647398e-14
+Q-Check complex || b - Ax || MAX           =  1.853249e-14
+Q-Check complex || b - Ax || 2 / || b || 2 =  6.566291e-15
