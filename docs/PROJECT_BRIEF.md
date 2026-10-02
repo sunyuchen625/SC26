@@ -14,6 +14,8 @@ The schedule recorded in the project materials opens program submission on 30 Se
 
 ## Compute environment and access
 
+This section is a dated 30 September snapshot. Current access and allocation observations are in [Compute status, 1 October](COMPUTE_STATUS_2026-10-01.md); the [approved execution plan](EXECUTION_PLAN_2026-10-01.md) governs the ongoing remediation.
+
 All full scale numerical work has used the commercial CPU platform at Yancheng Supercomputing. The recorded competition node specification is Intel Xeon Platinum 8488C, 96 cores, and 512 GB DDR5. The verified Slurm partition is `qhn`, account `sunyc`, with work under `/data/home/sunyc/solverchallenge26`. The account association permits up to four nodes across the user's projects; each competition experiment uses one node. The allowance and account expiry remain unconfirmed.
 
 The validated software environment is GCC 11.3.0, OpenMPI 4.1.8, CMake 3.24.2, HYPRE 2.33.0, and oneMKL 2022.0.0. MPI iterative experiments generally use 96 ranks with one thread each; T2 uses 32 ranks and the failed T1 trial used 8 ranks to meet its memory budget. Direct solver experiments use one MPI rank and 96 OpenMP threads. The full input directory is `/data/home/maorz/SolverChallenge26-TenProblems`. Large solution files remain on that platform; local files retain logs, summaries, source snapshots, and small known solution outputs.

@@ -50,7 +50,7 @@ void analyse(struct MySolver* solver, const struct SC26_SolverInput* input)
 {
     double started = MPI_Wtime();
     HYPRE_CALL(HYPRE_Initialize());
-    solver->tolerance = 1e-11;
+    solver->tolerance = 1e-7;
     const char *setting = getenv("SC26_RTOL");
     if (setting) {
         char *end;
@@ -91,7 +91,7 @@ void preprocess(struct MySolver* solver, const struct SC26_SolverInput* input)
     HYPRE_CALL(HYPRE_IJVectorInitialize(solver->rhs));
     const char *project_constant = getenv("SC26_PROJECT_CONSTANT");
     double *projected_rhs = NULL;
-    if (project_constant && atoi(project_constant)) {
+    if (!project_constant || atoi(project_constant)) {
         long double local_sum = 0, global_sum;
         for (int i = 0; i < input->local_n; ++i) local_sum += (long double)input->b[i];
         MPI_Allreduce(&local_sum, &global_sum, 1, MPI_LONG_DOUBLE, MPI_SUM, input->comm);

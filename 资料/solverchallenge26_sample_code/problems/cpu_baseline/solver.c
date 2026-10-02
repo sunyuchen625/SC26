@@ -20,14 +20,15 @@ static void pardiso_phase(struct PardisoState *state, const struct SC26_SolverIn
                           SC26_DirectInt phase)
 {
     SC26_DirectInt one = 1, zero = 0, error, n = input->global_n;
-#if SC26_PROBLEM_NUMBER == 10
+    void *values = phase == 11 ? NULL : state->values;
+#if SC26_PROBLEM_NUMBER == 4 || SC26_PROBLEM_NUMBER == 10
     pardiso_64(state->handle, &one, &one, &state->matrix_type, &phase, &n,
-            state->values, state->row_ptr, state->col_idx, &zero, &one,
+            values, state->row_ptr, state->col_idx, &zero, &one,
             state->parameters, &one, state->rhs, state->solution, &error);
 #else
     pardiso(state->handle, &one, &one, &state->matrix_type, &phase, &n,
-            state->values, input->row_ptr, input->col_idx, &zero, &one,
-            state->parameters, &zero, state->rhs, state->solution, &error);
+            values, input->row_ptr, input->col_idx, &zero, &one,
+            state->parameters, &one, state->rhs, state->solution, &error);
 #endif
     if (error) {
         fprintf(stderr, "PARDISO phase=%lld error=%lld\n", (long long)phase, (long long)error);
@@ -49,27 +50,90 @@ static void prepare_direct(struct PardisoState *state, const struct SC26_SolverI
     #endif
     memset(state, 0, sizeof(*state));
     state->matrix_type = matrix_type;
-#if SC26_PROBLEM_NUMBER == 10
+#if SC26_PROBLEM_NUMBER == 4 || SC26_PROBLEM_NUMBER == 10
+    void *default_handle[64];
+    MKL_INT defaults[64];
+    pardisoinit(default_handle, &matrix_type, defaults);
+    printf("T%d_PARDISO_LIBRARY_DEFAULTS interface=pardiso index_bits=32 scaling=%d matching=%d\n", SC26_PROBLEM_NUMBER, defaults[10], defaults[12]);
     /* pardiso_64 requires explicit initialization of its 64-bit parameters. */
     state->parameters[0] = 1;
     state->parameters[9] = 13;
-    state->parameters[10] = 1;
-    state->parameters[12] = 1;
     state->parameters[17] = -1;
     state->parameters[18] = -1;
     int rows = input->global_n, nonzeros = input->row_ptr[rows];
     state->row_ptr = malloc(((size_t)rows+1)*sizeof(*state->row_ptr));
     state->col_idx = malloc((size_t)nonzeros*sizeof(*state->col_idx));
     if (!state->row_ptr || !state->col_idx) exit(EXIT_FAILURE);
+#if SC26_PROBLEM_NUMBER == 10
+    int *row_order = malloc((size_t)rows*sizeof(*row_order));
+    if (!row_order) exit(EXIT_FAILURE);
+    for (int i = 0; i < rows; ++i) row_order[i] = -1;
+    int missing_diagonal = 0;
+    for (int i = 0; i < rows; ++i) {
+        for (int k = input->row_ptr[i]; k < input->row_ptr[i+1]; ++k) {
+            if (input->col_idx[k] == i) {
+                row_order[i] = i;
+                break;
+            }
+        }
+        missing_diagonal += row_order[i] < 0;
+    }
+    int nearby_pairs = 0;
+    for (int row = 0; row < rows; ++row) {
+        if (row_order[row] >= 0) continue;
+        int nearest = -1, distance = rows;
+        for (int k = input->row_ptr[row]; k < input->row_ptr[row+1]; ++k) {
+            int column = input->col_idx[k], delta = abs(column-row);
+            if (row_order[column] != column || delta >= distance) continue;
+            for (int reverse = input->row_ptr[column]; reverse < input->row_ptr[column+1]; ++reverse) {
+                if (input->col_idx[reverse] != row) continue;
+                nearest = column;
+                distance = delta;
+                break;
+            }
+        }
+        if (nearest < 0) {
+            fprintf(stderr, "T10 structural matching has no reciprocal partner for row %d\n", row);
+            exit(EXIT_FAILURE);
+        }
+        row_order[row] = nearest; row_order[nearest] = row;
+        ++nearby_pairs;
+    }
+    state->row_ptr[0] = 0;
+    int moved = 0;
+    for (int i = 0; i < rows; ++i) {
+        int source = row_order[i];
+        moved += source != i;
+        state->row_ptr[i+1] = state->row_ptr[i]+input->row_ptr[source+1]-input->row_ptr[source];
+        SC26_DirectInt destination = state->row_ptr[i];
+        for (int k = input->row_ptr[source]; k < input->row_ptr[source+1]; ++k)
+            state->col_idx[destination++] = input->col_idx[k];
+    }
+    printf("T10_STRUCTURE_MATCH missing_diagonal=%d rows_moved=%d matched=%d nearby_pairs=%d\n",
+           missing_diagonal, moved, rows, nearby_pairs);
+#else
     for (int i = 0; i <= rows; ++i) state->row_ptr[i] = input->row_ptr[i];
     for (int k = 0; k < nonzeros; ++k) state->col_idx[k] = input->col_idx[k];
+#endif
 #else
     pardisoinit(state->handle, &state->matrix_type, state->parameters);
+    printf("T%d_PARDISO_LIBRARY_DEFAULTS scaling=%d matching=%d\n", SC26_PROBLEM_NUMBER,
+           state->parameters[10], state->parameters[12]);
 #endif
     state->parameters[1] = 2;
     state->parameters[7] = SC26_PROBLEM_NUMBER == 3 ? -8 : 4;
+    state->parameters[10] = 0;
+    state->parameters[12] = 0;
     state->parameters[26] = 1;
     state->parameters[34] = 1;
+    MKLVersion version;
+    mkl_get_version(&version);
+    printf("T%d_PARDISO_CONFIG mkl=%d.%d.%d build=%s index_bits=%zu ordering=%lld refinement=%lld pivot_exponent=%lld scaling=%lld matching=%lld checker=%lld zero_based=%lld analysis_values=null\n",
+           SC26_PROBLEM_NUMBER, version.MajorVersion, version.MinorVersion, version.UpdateVersion,
+           version.Build, 8*sizeof(SC26_DirectInt), (long long)state->parameters[1],
+           (long long)state->parameters[7], (long long)state->parameters[9],
+           (long long)state->parameters[10], (long long)state->parameters[12],
+           (long long)state->parameters[26], (long long)state->parameters[34]);
     state->values = (void *)input->val;
     state->rhs = (void *)input->b;
     state->solution = input->x;
@@ -79,14 +143,25 @@ static void prepare_direct(struct PardisoState *state, const struct SC26_SolverI
         MKL_Complex16 *b = malloc((size_t)n*sizeof(*b));
         MKL_Complex16 *x = calloc((size_t)n, sizeof(*x));
         if (!a || !b || !x) exit(EXIT_FAILURE);
+#if SC26_PROBLEM_NUMBER == 10
+        for (int i = 0; i < n; ++i) {
+            int source = row_order[i];
+            SC26_DirectInt destination = state->row_ptr[i];
+            for (int k = input->row_ptr[source]; k < input->row_ptr[source+1]; ++k)
+                a[destination++] = (MKL_Complex16){input->val[k], input->val_im[k]};
+            b[i] = (MKL_Complex16){input->b[source], input->b_im[source]};
+        }
+        free(row_order);
+#else
         for (int k = 0; k < nnz; ++k) a[k] = (MKL_Complex16){input->val[k], input->val_im[k]};
         for (int i = 0; i < n; ++i) b[i] = (MKL_Complex16){input->b[i], input->b_im[i]};
+#endif
         state->values = a; state->rhs = b; state->solution = x;
 #if SC26_PROBLEM_NUMBER == 10
         /* The supplied T10 CSR contains an unsorted final row. */
         int sorted_rows = 0;
         for (int i = 0; i < n; ++i) {
-            int begin = input->row_ptr[i], end = input->row_ptr[i+1], unsorted = 0;
+            int begin = state->row_ptr[i], end = state->row_ptr[i+1], unsorted = 0;
             for (int k = begin+1; k < end; ++k)
                 if (state->col_idx[k] < state->col_idx[k-1]) { unsorted = 1; break; }
             if (!unsorted) continue;
@@ -124,6 +199,27 @@ static void prepare_direct(struct PardisoState *state, const struct SC26_SolverI
 static void factor_direct(struct PardisoState *state, const struct SC26_SolverInput *input)
 {
     double started = dsecnd();
+#if SC26_PROBLEM_NUMBER == 10
+    int n = input->global_n;
+    MKL_Complex16 *a = state->values, *b = state->rhs;
+    state->scale = malloc((size_t)n*sizeof(*state->scale));
+    if (!state->scale) exit(EXIT_FAILURE);
+    for (int i = 0; i < n; ++i) {
+        double maximum = 0;
+        for (SC26_DirectInt k = state->row_ptr[i]; k < state->row_ptr[i+1]; ++k)
+            maximum = fmax(maximum, fmax(fabs(a[k].real), fabs(a[k].imag)));
+        state->scale[i] = 1/sqrt(maximum);
+    }
+    for (int i = 0; i < n; ++i) {
+        b[i].real *= state->scale[i]; b[i].imag *= state->scale[i];
+        for (SC26_DirectInt k = state->row_ptr[i]; k < state->row_ptr[i+1]; ++k) {
+            double column_scale = state->scale[state->col_idx[k]];
+            a[k].real = (a[k].real*state->scale[i])*column_scale;
+            a[k].imag = (a[k].imag*state->scale[i])*column_scale;
+        }
+    }
+    printf("T10_DIAGONAL_EQUILIBRATION stage=numerical_preparation matrix=D(PA)D rhs=DPb solution=Dy\n");
+#endif
     pardiso_phase(state, input, 22);
     state->factor_seconds = dsecnd()-started;
     printf("T%d_PARDISO_FACTOR seconds=%.6f perturbed_pivots=%lld\n", SC26_PROBLEM_NUMBER,
@@ -137,11 +233,17 @@ static void finish_direct(struct PardisoState *state, const struct SC26_SolverIn
     pardiso_phase(state, input, 33);
     int refinements = state->parameters[6];
     pardiso_phase(state, input, -1);
-#if SC26_PROBLEM_NUMBER == 10
+#if SC26_PROBLEM_NUMBER == 4 || SC26_PROBLEM_NUMBER == 10
     free(state->row_ptr); free(state->col_idx);
 #endif
     if (state->matrix_type == 13) {
         MKL_Complex16 *x = state->solution;
+#if SC26_PROBLEM_NUMBER == 10
+        for (int i = 0; i < input->global_n; ++i) {
+            x[i].real *= state->scale[i]; x[i].imag *= state->scale[i];
+        }
+        free(state->scale);
+#endif
         for (int i = 0; i < input->global_n; ++i) {
             input->x[i] = x[i].real; input->x_im[i] = x[i].imag;
         }
@@ -181,7 +283,8 @@ void analyse(struct MySolver* solver, const struct SC26_SolverInput* input)
 {
     double started = MPI_Wtime();
     HYPRE_CALL(HYPRE_Initialize());
-    solver->tolerance = 1e-11;
+    solver->tolerance = SC26_PROBLEM_NUMBER == 5 ? 5e-9 :
+                        SC26_PROBLEM_NUMBER == 7 ? 1e-12 : 1e-11;
     const char *setting = getenv("SC26_RTOL");
     if (setting) {
         char *end;
@@ -318,7 +421,7 @@ void preprocess(struct MySolver* solver, const struct SC26_SolverInput* input)
 #endif
     HYPRE_CALL(HYPRE_ParCSRGMRESCreate(input->comm, &solver->gmres));
     HYPRE_CALL(HYPRE_ParCSRGMRESSetKDim(solver->gmres, SC26_PROBLEM_NUMBER == 1 ? 30 : 50));
-    HYPRE_CALL(HYPRE_ParCSRGMRESSetMaxIter(solver->gmres, 300));
+    HYPRE_CALL(HYPRE_ParCSRGMRESSetMaxIter(solver->gmres, SC26_PROBLEM_NUMBER == 5 ? 450 : 300));
     HYPRE_CALL(HYPRE_ParCSRGMRESSetTol(solver->gmres, solver->tolerance));
     HYPRE_CALL(HYPRE_ParCSRGMRESSetAbsoluteTol(solver->gmres, 0));
     HYPRE_CALL(HYPRE_ParCSRGMRESSetLogging(solver->gmres, 1));

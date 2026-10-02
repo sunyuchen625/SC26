@@ -1,0 +1,25 @@
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+Currently Loaded Modulefiles:
+ 1) gcc/11.3.0   2) openmpi/4.1.8/gcc11.3.0   3) miniforge3/24.3.0  
+GNU time 1.7
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              c3n77
+  Local adapter:           mlx5_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   c3n77
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/data/home/sunyc/solverchallenge26/execution-20261001-v7-equilibrated/tests/check_result.py", line 21, in <module>
+    assert math.isfinite(residual) and residual < threshold, (residual, threshold)
+AssertionError: (3360065000.0, 1e-08)

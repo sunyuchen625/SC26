@@ -1,0 +1,45 @@
+T4_PARDISO_LIBRARY_DEFAULTS scaling=1 matching=1
+T4_PARDISO_CONFIG mkl=2022.0.0 build=20211112 index_bits=32 ordering=2 refinement=4 pivot_exponent=13 scaling=0 matching=0 checker=1 zero_based=1 analysis_values=null
+
+=== PARDISO: solving a real nonsymmetric system ===
+Matrix checker is turned ON
+0-based array is turned ON
+PARDISO double precision computation is turned ON
+METIS algorithm at reorder step is turned ON
+
+
+Summary: ( reordering phase )
+================
+
+Times:
+======
+Time spent in calculations of symmetric matrix portrait (fulladj): 7.695453 s
+Time spent in reordering of the initial matrix (reorder)         : 19.289226 s
+Time spent in symbolic factorization (symbfct)                   : 13.297553 s
+Time spent in data preparations for factorization (parlist)      : 0.186988 s
+Time spent in allocation of internal data structures (malloc)    : 0.404989 s
+Time spent in matching/scaling                                   : 0.061713 s
+Time spent in additional calculations                            : 13.010664 s
+Total time spent                                                 : 53.946586 s
+
+Statistics:
+===========
+Parallel Direct Factorization is running on 16 OpenMP
+
+< Linear system Ax = b >
+             number of equations:           12582822
+             number of non-zeros in A:      678943908
+             number of non-zeros in A (%): 0.000429
+
+             number of right-hand sides:    1
+
+< Factors L and U >
+             number of columns for each panel: 72
+             number of independent subgraphs:  0
+< Preprocessing with state of the art partitioning metis>
+             number of supernodes:                    1113856
+             size of largest supernode:               18504
+             number of non-zeros in L:                4933766628
+             number of non-zeros in U:                4605778368
+             number of non-zeros in L+U:              9539544996
+T4_PARDISO_ANALYSE seconds=55.796185 estimated_peak_kib=107062798 factor_nnz=949610404

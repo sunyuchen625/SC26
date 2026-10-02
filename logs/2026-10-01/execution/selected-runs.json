@@ -1,0 +1,104 @@
+{
+  "results": [
+    {
+      "job": 9210479,
+      "problem": "09",
+      "rhs": "01",
+      "run": "runs/t09-9210479/rhs-01",
+      "ranks": 1,
+      "threads": 32,
+      "threshold": 1e-08,
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:06:59",
+        "c3n06"
+      ],
+      "source_manifest": "source/v4/source-sha256.txt",
+      "batch_log": "batch/sc26_r1_t09_null-9210479.out",
+      "cmake_cache": "config/v4/build-t09/CMakeCache.txt",
+      "binary_sha256": "bbfa037f4872b4e1c8fcb3ccbe4eeb16b723be2e4935297987fd9112cb21615e",
+      "cache_sha256": "782109ea769a30993d0524ba1032f3e173a5b8b0ec14ea02f526ed7b09e5abc1"
+    },
+    {
+      "job": 9210509,
+      "problem": "06",
+      "rhs": "01",
+      "run": "runs/t06-9210509/rhs-01",
+      "ranks": 1,
+      "threads": 32,
+      "threshold": 1e-08,
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:05:09",
+        "c3n06"
+      ],
+      "source_manifest": "source/v4/source-sha256.txt",
+      "batch_log": "batch/sc26_r1_t06_null-9210509.out",
+      "cmake_cache": "config/v4/build-t06/CMakeCache.txt",
+      "binary_sha256": "928bb31bece3a49cfeb2f187e4050ebf5071d8414d110f96dc76b220d510ae96",
+      "cache_sha256": "31cd5653ca30698aa5e7f2a675befb0c771ee11f280999ff8441f38af12c9c20"
+    },
+    {
+      "job": 9210510,
+      "problem": "08",
+      "rhs": "01",
+      "run": "runs/t08-9210510/rhs-01",
+      "ranks": 1,
+      "threads": 32,
+      "threshold": 1e-08,
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:07:58",
+        "c3n06"
+      ],
+      "source_manifest": "source/v4/source-sha256.txt",
+      "batch_log": "batch/sc26_r1_t08_null-9210510.out",
+      "cmake_cache": "config/v4/build-t08/CMakeCache.txt",
+      "binary_sha256": "2fe533992af590ff960ce08c3db191a6fb97aeecf6cd58aef626377ce4f6b23d",
+      "cache_sha256": "95d2fe550d46e2c830777bf330745f1882d2306f11461b64ac6cf5f081c84848"
+    },
+    {
+      "job": 9211739,
+      "problem": "04",
+      "rhs": "01",
+      "run": "runs/t04-9211739/rhs-01",
+      "ranks": 1,
+      "threads": 32,
+      "threshold": 1e-08,
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:11:42",
+        "c3n14"
+      ],
+      "source_manifest": "source/v15-t4-accepted/source-sha256.txt",
+      "batch_log": "batch/sc26_t4_five-9211739.out",
+      "cmake_cache": "config/v15-t4-accepted/build-t04/CMakeCache.txt",
+      "binary_sha256": "4d5d3979820b57f0deb608c525ab8e1c70ea6fdb4c4a140f0b6fee20f8e40a6d",
+      "cache_sha256": "75cc6f429d865e4efcec90414c76f686bc23f02e3e442dfe1a2c1379c81bcc3a"
+    },
+    {
+      "job": 9211791,
+      "problem": "10",
+      "rhs": "01",
+      "run": "runs/t10-9211791/rhs-01",
+      "ranks": 1,
+      "threads": 32,
+      "threshold": 1e-08,
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:23:10",
+        "c3n11"
+      ],
+      "source_manifest": "source/v18-t10-nearby/source-sha256.txt",
+      "batch_log": "batch/sc26_t10_nearby-9211791.out",
+      "cmake_cache": "config/v18-t10-nearby/build-t10/CMakeCache.txt",
+      "binary_sha256": "768358c7c9a76fec8e8c43a2c3ce47b26d855a01789912d150fc22655f8ea246",
+      "cache_sha256": "ec17c40360ab120b00b70843ef20278ca22bdd7e60b5510e8414b54d8aaa3d08"
+    }
+  ]
+}

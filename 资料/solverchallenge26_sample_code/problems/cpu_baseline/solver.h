@@ -11,7 +11,7 @@
 
 #ifdef DIRECT_SOLVER
 #include <mkl.h>
-#if SC26_PROBLEM_NUMBER == 10
+#if SC26_PROBLEM_NUMBER == 4 || SC26_PROBLEM_NUMBER == 10
 typedef long long SC26_DirectInt;
 #else
 typedef MKL_INT SC26_DirectInt;
@@ -19,8 +19,11 @@ typedef MKL_INT SC26_DirectInt;
 struct PardisoState {
     void *handle[64];
     SC26_DirectInt parameters[64], matrix_type;
-#if SC26_PROBLEM_NUMBER == 10
+#if SC26_PROBLEM_NUMBER == 4 || SC26_PROBLEM_NUMBER == 10
     SC26_DirectInt *row_ptr, *col_idx;
+#endif
+#if SC26_PROBLEM_NUMBER == 10
+    double *scale;
 #endif
     void *values, *rhs, *solution;
     double analyse_seconds, factor_seconds;

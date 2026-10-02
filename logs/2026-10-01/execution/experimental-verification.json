@@ -1,0 +1,627 @@
+{
+  "results": [
+    {
+      "job": 9210555,
+      "problem": "01",
+      "rhs": "01",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 51.20941,
+      "numerical_pass": false,
+      "checker_output": "",
+      "checker_error": "Traceback (most recent call last):\n  File \"/Users/sunyuchen/Desktop/\u5b66\u4e1a\u4efb\u52a1/SC26/tests/check_result.py\", line 21, in <module>\n    assert math.isfinite(residual) and residual < threshold, (residual, threshold)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: (51.20941, 0.0001)",
+      "job_state": [
+        "FAILED",
+        "1:0",
+        "00:08:49",
+        "c3n53"
+      ],
+      "job_complete": false,
+      "process_exit": 0,
+      "rank_process_exits": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sum_full_process_peak_bytes": 6951284736,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        5326.0078
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        0.0051006,
+        7.3193284,
+        94.3765064
+      ],
+      "framework_mean_seconds": 101.701884,
+      "perturbed_pivots": [],
+      "internal_convergence": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "analysis_scaling_matching": [],
+      "provenance_verified": true,
+      "execution_pass": false,
+      "engineering_pass": null,
+      "accepted": false
+    },
+    {
+      "job": 9210520,
+      "problem": "10",
+      "rhs": "01",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 1.926778e+28,
+      "numerical_pass": false,
+      "checker_output": "",
+      "checker_error": "Traceback (most recent call last):\n  File \"/Users/sunyuchen/Desktop/\u5b66\u4e1a\u4efb\u52a1/SC26/tests/check_result.py\", line 21, in <module>\n    assert math.isfinite(residual) and residual < threshold, (residual, threshold)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: (1.926778e+28, 1e-08)",
+      "job_state": [
+        "FAILED",
+        "1:0",
+        "00:21:49",
+        "c3n06"
+      ],
+      "job_complete": false,
+      "process_exit": 0,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 121968054272,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        116317.8008
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        163.1971588,
+        17.444976,
+        4.1475494
+      ],
+      "framework_mean_seconds": 184.981494,
+      "perturbed_pivots": [
+        1386,
+        1386,
+        1386,
+        1386,
+        1386
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "provenance_verified": true,
+      "execution_pass": false,
+      "engineering_pass": null,
+      "accepted": false
+    },
+    {
+      "job": 9210580,
+      "problem": "01",
+      "rhs": "01",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 308.5449,
+      "numerical_pass": false,
+      "checker_output": "",
+      "checker_error": "Traceback (most recent call last):\n  File \"/Users/sunyuchen/Desktop/\u5b66\u4e1a\u4efb\u52a1/SC26/tests/check_result.py\", line 21, in <module>\n    assert math.isfinite(residual) and residual < threshold, (residual, threshold)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: (308.5449, 0.0001)",
+      "job_state": [
+        "FAILED",
+        "1:0",
+        "00:04:09",
+        "c3n90"
+      ],
+      "job_complete": false,
+      "process_exit": 0,
+      "rank_process_exits": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sum_full_process_peak_bytes": 8010092544,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        6000.668
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        0.0024064,
+        3.7471492,
+        43.646198999999996
+      ],
+      "framework_mean_seconds": 47.396139,
+      "perturbed_pivots": [],
+      "internal_convergence": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "analysis_scaling_matching": [],
+      "provenance_verified": true,
+      "execution_pass": false,
+      "engineering_pass": null,
+      "accepted": false
+    },
+    {
+      "job": 9210632,
+      "problem": "01",
+      "rhs": "01",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 93.48043,
+      "numerical_pass": false,
+      "checker_output": "",
+      "checker_error": "Traceback (most recent call last):\n  File \"/Users/sunyuchen/Desktop/\u5b66\u4e1a\u4efb\u52a1/SC26/tests/check_result.py\", line 21, in <module>\n    assert math.isfinite(residual) and residual < threshold, (residual, threshold)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: (93.48043, 0.0001)",
+      "job_state": [
+        "FAILED",
+        "1:0",
+        "00:08:18",
+        "c3n06"
+      ],
+      "job_complete": false,
+      "process_exit": 0,
+      "rank_process_exits": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sum_full_process_peak_bytes": 7764238336,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        6134.8633
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        0.0034526,
+        6.3184714,
+        88.650285
+      ],
+      "framework_mean_seconds": 94.972634,
+      "perturbed_pivots": [],
+      "internal_convergence": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "analysis_scaling_matching": [],
+      "provenance_verified": true,
+      "execution_pass": false,
+      "engineering_pass": null,
+      "accepted": false
+    },
+    {
+      "job": 9210633,
+      "problem": "01",
+      "rhs": "01",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 4.412557,
+      "numerical_pass": false,
+      "checker_output": "",
+      "checker_error": "Traceback (most recent call last):\n  File \"/Users/sunyuchen/Desktop/\u5b66\u4e1a\u4efb\u52a1/SC26/tests/check_result.py\", line 21, in <module>\n    assert math.isfinite(residual) and residual < threshold, (residual, threshold)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: (4.412557, 0.0001)",
+      "job_state": [
+        "FAILED",
+        "1:0",
+        "00:08:19",
+        "c3n06"
+      ],
+      "job_complete": false,
+      "process_exit": 0,
+      "rank_process_exits": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sum_full_process_peak_bytes": 7805251584,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        6231.4258
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        0.0040036,
+        4.4499656000000005,
+        91.6518092
+      ],
+      "framework_mean_seconds": 96.105858,
+      "perturbed_pivots": [],
+      "internal_convergence": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "analysis_scaling_matching": [],
+      "provenance_verified": true,
+      "execution_pass": false,
+      "engineering_pass": null,
+      "accepted": false
+    },
+    {
+      "job": 9210636,
+      "problem": "03",
+      "rhs": "01",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 5.41475e-05,
+      "numerical_pass": false,
+      "checker_output": "",
+      "checker_error": "Traceback (most recent call last):\n  File \"/Users/sunyuchen/Desktop/\u5b66\u4e1a\u4efb\u52a1/SC26/tests/check_result.py\", line 21, in <module>\n    assert math.isfinite(residual) and residual < threshold, (residual, threshold)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: (5.41475e-05, 1e-08)",
+      "job_state": [
+        "FAILED",
+        "1:0",
+        "00:04:05",
+        "c3n131"
+      ],
+      "job_complete": false,
+      "process_exit": 0,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 13850386432,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        13208.7578
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        13.1782568,
+        4.9885978,
+        27.7855318
+      ],
+      "framework_mean_seconds": 46.011686,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "provenance_verified": true,
+      "execution_pass": false,
+      "engineering_pass": null,
+      "accepted": false
+    },
+    {
+      "job": 9210634,
+      "problem": "10",
+      "rhs": "01",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 3360065000.0,
+      "numerical_pass": false,
+      "checker_output": "",
+      "checker_error": "Traceback (most recent call last):\n  File \"/Users/sunyuchen/Desktop/\u5b66\u4e1a\u4efb\u52a1/SC26/tests/check_result.py\", line 21, in <module>\n    assert math.isfinite(residual) and residual < threshold, (residual, threshold)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: (3360065000.0, 1e-08)",
+      "job_state": [
+        "FAILED",
+        "1:0",
+        "00:21:47",
+        "c3n77"
+      ],
+      "job_complete": false,
+      "process_exit": 0,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 121465712640,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        115838.7305
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        155.8615412,
+        26.4639992,
+        3.8058526
+      ],
+      "framework_mean_seconds": 186.279025,
+      "perturbed_pivots": [
+        1386,
+        1386,
+        1386,
+        1386,
+        1386
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "provenance_verified": true,
+      "execution_pass": false,
+      "engineering_pass": null,
+      "accepted": false
+    },
+    {
+      "job": 9210658,
+      "problem": "03",
+      "rhs": "01",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 2.702628e-05,
+      "numerical_pass": false,
+      "checker_output": "",
+      "checker_error": "Traceback (most recent call last):\n  File \"/Users/sunyuchen/Desktop/\u5b66\u4e1a\u4efb\u52a1/SC26/tests/check_result.py\", line 21, in <module>\n    assert math.isfinite(residual) and residual < threshold, (residual, threshold)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: (2.702628e-05, 1e-08)",
+      "job_state": [
+        "FAILED",
+        "1:0",
+        "00:05:33",
+        "c3n145"
+      ],
+      "job_complete": false,
+      "process_exit": 0,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 14587101184,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        13911.3438
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        12.3572116,
+        4.198714,
+        47.3357614
+      ],
+      "framework_mean_seconds": 63.972122,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "provenance_verified": true,
+      "execution_pass": false,
+      "engineering_pass": null,
+      "accepted": false
+    },
+    {
+      "job": 9210697,
+      "problem": "10",
+      "rhs": "01",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 1714870000.0,
+      "numerical_pass": false,
+      "checker_output": "",
+      "checker_error": "Traceback (most recent call last):\n  File \"/Users/sunyuchen/Desktop/\u5b66\u4e1a\u4efb\u52a1/SC26/tests/check_result.py\", line 21, in <module>\n    assert math.isfinite(residual) and residual < threshold, (residual, threshold)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: (1714870000.0, 1e-08)",
+      "job_state": [
+        "FAILED",
+        "1:0",
+        "00:16:48",
+        "c3n53"
+      ],
+      "job_complete": false,
+      "process_exit": 0,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 122426486784,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        116754.9961
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        104.4509574,
+        21.0371544,
+        3.142272
+      ],
+      "framework_mean_seconds": 128.836212,
+      "perturbed_pivots": [
+        1386,
+        1386,
+        1436,
+        1386,
+        1386
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "provenance_verified": true,
+      "execution_pass": false,
+      "engineering_pass": null,
+      "accepted": false
+    },
+    {
+      "job": 9211747,
+      "problem": "10",
+      "rhs": "01",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 1284191000000.0,
+      "numerical_pass": false,
+      "checker_output": "",
+      "checker_error": "Traceback (most recent call last):\n  File \"/Users/sunyuchen/Desktop/\u5b66\u4e1a\u4efb\u52a1/SC26/tests/check_result.py\", line 21, in <module>\n    assert math.isfinite(residual) and residual < threshold, (residual, threshold)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: (1284191000000.0, 1e-08)",
+      "job_state": [
+        "FAILED",
+        "1:0",
+        "00:23:31",
+        "c3n11"
+      ],
+      "job_complete": false,
+      "process_exit": 0,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 127409676288,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        121507.3359
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        170.0121312,
+        32.1570754,
+        4.400805
+      ],
+      "framework_mean_seconds": 206.717354,
+      "perturbed_pivots": [
+        580,
+        580,
+        580,
+        580,
+        580
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "provenance_verified": true,
+      "execution_pass": false,
+      "engineering_pass": null,
+      "accepted": false
+    }
+  ],
+  "boundaries": "Original float128 check follows solve five; rank peaks are summed and need not coincide. Pivots and internal convergence are separate diagnostics. Acceptance here does not establish official eligibility."
+}

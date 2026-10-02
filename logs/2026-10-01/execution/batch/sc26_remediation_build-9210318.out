@@ -1,0 +1,284 @@
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                96
+On-line CPU(s) list:   0-95
+Thread(s) per core:    1
+Core(s) per socket:    48
+Socket(s):             2
+NUMA node(s):          2
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 143
+Model name:            Intel(R) Xeon(R) Platinum 8488C
+Stepping:              8
+CPU MHz:               2826.416
+CPU max MHz:           3800.0000
+CPU min MHz:           800.0000
+BogoMIPS:              4800.00
+Virtualization:        VT-x
+L1d cache:             48K
+L1i cache:             32K
+L2 cache:              2048K
+L3 cache:              107520K
+NUMA node0 CPU(s):     0-47
+NUMA node1 CPU(s):     48-95
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cat_l2 cdp_l3 invpcid_single intel_pt cdp_l2 ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq cldemote movdiri movdir64b md_clear pconfig spec_ctrl intel_stibp flush_l1d arch_capabilities
+scripts/direct-baseline.sbatch: OK
+scripts/direct-small.sbatch: OK
+scripts/initial-baseline.sbatch: OK
+scripts/initial-small.sbatch: OK
+scripts/inspect-initial.sbatch: OK
+scripts/inspect-stage2.py: OK
+scripts/inspect-t2.py: OK
+scripts/inspect_t1_blocks.py: OK
+scripts/inspect_t2_rows.c: OK
+scripts/remediation-baseline.sbatch: OK
+scripts/remediation-build.sbatch: OK
+scripts/smoke.sbatch: OK
+scripts/stage2-complex.sbatch: OK
+scripts/stage2-fields-small.sbatch: OK
+scripts/stage2-inspect.sbatch: OK
+scripts/stage2-small.sbatch: OK
+scripts/t2-baseline.sbatch: OK
+scripts/t2-small.sbatch: OK
+scripts/t9-baseline.sbatch: OK
+src/.clang-format: OK
+src/.gitignore: OK
+src/CMakeLists.txt: OK
+src/CMakePresets.json: OK
+src/LICENSE: OK
+src/Makefile: OK
+src/README.md: OK
+src/SolverChallenge26_Hygon_DCU_Manual.pdf: OK
+src/SolverChallenge26报告模板.docx: OK
+src/apps/MPI_GPU_direct_solver.c: OK
+src/apps/MPI_GPU_iterative_solver.c: OK
+src/apps/MPI_direct_solver.c: OK
+src/apps/MPI_iterative_solver.c: OK
+src/apps/direct_solver.c: OK
+src/apps/iterative_solver.c: OK
+src/cmake/Dependencies.cmake: OK
+src/include/solverchallenge26/common_types.h: OK
+src/include/solverchallenge26/diagnostics.h: OK
+src/include/solverchallenge26/gpu_direct_solver_api.h: OK
+src/include/solverchallenge26/gpu_iterative_solver_api.h: OK
+src/include/solverchallenge26/gpu_metrics.h: OK
+src/include/solverchallenge26/matrix_market_reader.h: OK
+src/include/solverchallenge26/mpi_system_loader.h: OK
+src/include/solverchallenge26/petsc_binary_reader.h: OK
+src/include/solverchallenge26/residual_check.h: OK
+src/include/solverchallenge26/runtime_support.h: OK
+src/include/solverchallenge26/solver_api.h: OK
+src/include/solverchallenge26/solver_input.h: OK
+src/include/solverchallenge26/system_loader.h: OK
+src/problems/README.md: OK
+src/problems/cpu_baseline/CMakeLists.txt: OK
+src/problems/cpu_baseline/solver.c: OK
+src/problems/cpu_baseline/solver.h: OK
+src/problems/problem01/CMakeLists.txt: OK
+src/problems/problem01/gpu_direct_solver.cu: OK
+src/problems/problem01/gpu_iterative_solver.cu: OK
+src/problems/problem01/solver.c: OK
+src/problems/problem01/solver.h: OK
+src/problems/problem02/CMakeLists.txt: OK
+src/problems/problem02/gpu_direct_solver.cu: OK
+src/problems/problem02/gpu_iterative_solver.cu: OK
+src/problems/problem02/solver.c: OK
+src/problems/problem02/solver.h: OK
+src/problems/problem03/CMakeLists.txt: OK
+src/problems/problem03/gpu_direct_solver.cu: OK
+src/problems/problem03/gpu_iterative_solver.cu: OK
+src/problems/problem03/solver.c: OK
+src/problems/problem03/solver.h: OK
+src/problems/problem04/CMakeLists.txt: OK
+src/problems/problem04/gpu_direct_solver.cu: OK
+src/problems/problem04/gpu_iterative_solver.cu: OK
+src/problems/problem04/solver.c: OK
+src/problems/problem04/solver.h: OK
+src/problems/problem05/CMakeLists.txt: OK
+src/problems/problem05/gpu_direct_solver.cu: OK
+src/problems/problem05/gpu_iterative_solver.cu: OK
+src/problems/problem05/solver.c: OK
+src/problems/problem05/solver.h: OK
+src/problems/problem06/CMakeLists.txt: OK
+src/problems/problem06/gpu_direct_solver.cu: OK
+src/problems/problem06/gpu_iterative_solver.cu: OK
+src/problems/problem06/solver.c: OK
+src/problems/problem06/solver.h: OK
+src/problems/problem07/CMakeLists.txt: OK
+src/problems/problem07/gpu_direct_solver.cu: OK
+src/problems/problem07/gpu_iterative_solver.cu: OK
+src/problems/problem07/solver.c: OK
+src/problems/problem07/solver.h: OK
+src/problems/problem08/CMakeLists.txt: OK
+src/problems/problem08/gpu_direct_solver.cu: OK
+src/problems/problem08/gpu_iterative_solver.cu: OK
+src/problems/problem08/solver.c: OK
+src/problems/problem08/solver.h: OK
+src/problems/problem09/CMakeLists.txt: OK
+src/problems/problem09/gpu_direct_solver.cu: OK
+src/problems/problem09/gpu_iterative_solver.cu: OK
+src/problems/problem09/solver.c: OK
+src/problems/problem09/solver.h: OK
+src/problems/problem10/CMakeLists.txt: OK
+src/problems/problem10/gpu_direct_solver.cu: OK
+src/problems/problem10/gpu_iterative_solver.cu: OK
+src/problems/problem10/solver.c: OK
+src/problems/problem10/solver.h: OK
+src/src/diagnostics.c: OK
+src/src/matrix_market/highlevel.c: OK
+src/src/matrix_market/mmio.c: OK
+src/src/mpi_system_loader.c: OK
+src/src/petsc_binary_reader.c: OK
+src/src/system_loader.c: OK
+src/tests/header_include_order_mpi_first.c: OK
+src/tests/header_include_order_reader_first.c: OK
+tests/check_result.py: OK
+tests/make_complex_system.py: OK
+tests/make_field_systems.py: OK
+tests/make_small_systems.py: OK
+tests/mpi_smoke.c: OK
+poisson: n=385 nnz=2361
+nonsymmetric: n=385 nnz=2361
+neumann: n=385 nnz=2361
+scaled: n=385 nnz=2361
+complex: n=385 nnz=2361
+fields05: n=388 nnz=2320
+fields07: n=291 nnz=1449
+c8e2a37b0e47b90ca02ab31baa125b133a9e9645bf1f7a318776b1ed7146a8d4  build-t02/bin/MPI_iterative_solver
+fd5110e104cbfafd22fe9459dc317d60d292f775ae3cb91f57742b6e71c91f34  build-t02/CMakeCache.txt
+a9bc0a4ea27f49089ef7b0afc71b5e3e0ae27cb1941566ef4fe1e605fc70fb58  build-t03/bin/MPI_direct_solver
+4e741ff845d58ab39429f556aeda5bfdc6978f3a415277dc16c744445c12cb3a  build-t03/CMakeCache.txt
+8fad338fe29bec8f22e753dcbaa79d14774190a56f036a6be7c9d641a78ecd96  build-t05/bin/MPI_iterative_solver
+e6f3a13a32eed30036aa9bd85f8e9d1ef60950ddb79c3ba0abfd078c1569a714  build-t05/CMakeCache.txt
+6c6ba1cec46a73c3b64ae02b7617de8d4be58beb2a479e8fa073c628f161b1c4  build-t06/bin/MPI_direct_solver
+d380f98e69aadd1dd4afc39dbf0ce6d0011d74e21b0e37197e8835b10a775ead  build-t06/CMakeCache.txt
+6774f00222b06fa575f33f50aa17a23e0fe3b6b12c2161357ba3ab9dd749096d  build-t07/bin/MPI_iterative_solver
+74a4c2887b3034068e6f7a807547be8e62743953ec44b8a7d546f6ad2864d3e8  build-t07/CMakeCache.txt
+1722cbfcd67a1389b8a5f27663544128b27b1f27fd0cae1b725a19c2285189a9  build-t08/bin/MPI_direct_solver
+4dabcf02c8912eda1088080e1859cb1637b33bbad34ed42ead7e7e8cb8420fba  build-t08/CMakeCache.txt
+854b5a0b3bb9af603d8f04244899cab4e663c628b4a2069cd1bb5260b1f77807  build-t09/bin/MPI_direct_solver
+2e5f3a3db23f52690e7e3318a4209e1f023de40f42b0e80b1532f1989240b874  build-t09/CMakeCache.txt
+4c7f51f4fac175af444b66728bc0465520208064a5297225f8ade8f013d3bec0  build-t10/bin/MPI_direct_solver
+06e5d26cd85faa1dd0a114be3721a1516fc21e69eb118b9c9394720dcf977b15  build-t10/CMakeCache.txt
+poisson: n=385 nnz=2361
+nonsymmetric: n=385 nnz=2361
+neumann: n=385 nnz=2361
+scaled: n=385 nnz=2361
+matrix name :      /data/home/sunyc/solverchallenge26/execution-20261001/tests/small_systems/poisson_A.dat
+vectorb name :     /data/home/sunyc/solverchallenge26/execution-20261001/tests/small_systems/poisson_b.dat
+read function :    PETSc binary (0-base)
+sys_type :         0
+L2 norm of b: 1.947100e+02
+Initial L2 norm of residual: 1.947100e+02
+=============================================
+
+Iters     resid.norm     conv.rate  rel.res.norm
+-----    ------------    ---------- ------------
+    1    1.141698e+00    0.005864   5.863583e-03
+    2    1.131491e-02    0.009911   5.811159e-05
+    3    1.215027e-04    0.010738   6.240189e-07
+    4    1.485016e-06    0.012222   7.626805e-09
+    5    2.000468e-08    0.013471   1.027409e-10
+    6    2.543040e-10    0.012712   1.306065e-12
+
+
+Final L2 norm of residual: 2.543007e-10
+
+
+
+T2_GMRES iterations=6 relative_residual=1.306048043992e-12 rtol=1.0e-11
+T2_PHASE_SECONDS analyse=0.000022 preprocess=0.001012 solve_cleanup=0.000588
+L2 norm of b: 1.947100e+02
+Initial L2 norm of residual: 1.947100e+02
+=============================================
+
+Iters     resid.norm     conv.rate  rel.res.norm
+-----    ------------    ---------- ------------
+    1    1.141698e+00    0.005864   5.863583e-03
+    2    1.131491e-02    0.009911   5.811159e-05
+    3    1.215027e-04    0.010738   6.240189e-07
+    4    1.485016e-06    0.012222   7.626805e-09
+    5    2.000468e-08    0.013471   1.027409e-10
+    6    2.543040e-10    0.012712   1.306065e-12
+
+
+Final L2 norm of residual: 2.543007e-10
+
+
+
+T2_GMRES iterations=6 relative_residual=1.306048043992e-12 rtol=1.0e-11
+T2_PHASE_SECONDS analyse=0.000003 preprocess=0.000822 solve_cleanup=0.000332
+L2 norm of b: 1.947100e+02
+Initial L2 norm of residual: 1.947100e+02
+=============================================
+
+Iters     resid.norm     conv.rate  rel.res.norm
+-----    ------------    ---------- ------------
+    1    1.141698e+00    0.005864   5.863583e-03
+    2    1.131491e-02    0.009911   5.811159e-05
+    3    1.215027e-04    0.010738   6.240189e-07
+    4    1.485016e-06    0.012222   7.626805e-09
+    5    2.000468e-08    0.013471   1.027409e-10
+    6    2.543040e-10    0.012712   1.306065e-12
+
+
+Final L2 norm of residual: 2.543007e-10
+
+
+
+T2_GMRES iterations=6 relative_residual=1.306048043992e-12 rtol=1.0e-11
+T2_PHASE_SECONDS analyse=0.000002 preprocess=0.000814 solve_cleanup=0.000320
+L2 norm of b: 1.947100e+02
+Initial L2 norm of residual: 1.947100e+02
+=============================================
+
+Iters     resid.norm     conv.rate  rel.res.norm
+-----    ------------    ---------- ------------
+    1    1.141698e+00    0.005864   5.863583e-03
+    2    1.131491e-02    0.009911   5.811159e-05
+    3    1.215027e-04    0.010738   6.240189e-07
+    4    1.485016e-06    0.012222   7.626805e-09
+    5    2.000468e-08    0.013471   1.027409e-10
+    6    2.543040e-10    0.012712   1.306065e-12
+
+
+Final L2 norm of residual: 2.543007e-10
+
+
+
+T2_GMRES iterations=6 relative_residual=1.306048043992e-12 rtol=1.0e-11
+T2_PHASE_SECONDS analyse=0.000002 preprocess=0.000810 solve_cleanup=0.000321
+L2 norm of b: 1.947100e+02
+Initial L2 norm of residual: 1.947100e+02
+=============================================
+
+Iters     resid.norm     conv.rate  rel.res.norm
+-----    ------------    ---------- ------------
+    1    1.141698e+00    0.005864   5.863583e-03
+    2    1.131491e-02    0.009911   5.811159e-05
+    3    1.215027e-04    0.010738   6.240189e-07
+    4    1.485016e-06    0.012222   7.626805e-09
+    5    2.000468e-08    0.013471   1.027409e-10
+    6    2.543040e-10    0.012712   1.306065e-12
+
+
+Final L2 norm of residual: 2.543007e-10
+
+
+
+T2_GMRES iterations=6 relative_residual=1.306048043992e-12 rtol=1.0e-11
+T2_PHASE_SECONDS analyse=0.000002 preprocess=0.000809 solve_cleanup=0.000323
+Total memory usage:                 7.1758 MB
+------------------------------------------
+CHECK end to end time :             0.001251 s
+Check || b - Ax || 2             =  2.543021e-10
+Check || b - Ax || MAX           =  5.416112e-11
+Check || b - Ax || 2 / || b || 2 =  1.306055e-12
+LD-Check || b - Ax || 2             =  2.543040e-10
+LD-Check || b - Ax || MAX           =  5.416080e-11
+LD-Check || b - Ax || 2 / || b || 2 =  1.306065e-12
+Q-Check || b - Ax || 2             =  2.543040e-10
+Q-Check || b - Ax || MAX           =  5.416080e-11
+Q-Check || b - Ax || 2 / || b || 2 =  1.306065e-12

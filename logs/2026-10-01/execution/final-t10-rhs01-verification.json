@@ -1,0 +1,72 @@
+{
+  "results": [
+    {
+      "job": 9211884,
+      "problem": "10",
+      "rhs": "01",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 7.227728e-15,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=7.227728000000e-15 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:21:50",
+        "c3n144"
+      ],
+      "job_complete": true,
+      "process_exit": 0,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 128812560384,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        122845.2305
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        157.4212338,
+        27.92761,
+        3.3595278
+      ],
+      "framework_mean_seconds": 188.761426,
+      "perturbed_pivots": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "provenance_verified": true,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    }
+  ],
+  "boundaries": "Original float128 check follows solve five; rank peaks are summed and need not coincide. Pivots and internal convergence are separate diagnostics. Acceptance here does not establish official eligibility."
+}

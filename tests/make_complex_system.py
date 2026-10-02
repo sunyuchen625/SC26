@@ -34,3 +34,20 @@ with (root/'complex_b.dat').open('wb') as f:
     f.write(struct.pack('>%dd' % (2*n), *(part for v in rhs for part in (v.real, v.imag))))
 (root/'complex_x.txt').write_text(''.join(f'{v.real} {v.imag}\n' for v in solution))
 print(f'complex: n={n} nnz={len(values)}')
+
+solution = [1+2j, -0.5-0.2j, 3+1j]
+rows = [[(2, -1+0.2j), (0, 7+0.5j)], [(1, 6+0.2j), (0, -0.5j)], [(0, 2-0.3j)]]
+counts = [len(row) for row in rows]
+columns = [j for row in rows for j, _ in row]
+values = [v for row in rows for _, v in row]
+rhs = [sum(v*solution[j] for j, v in row) for row in rows]
+with (root/'complex_structural_A.dat').open('wb') as f:
+    f.write(struct.pack('>4i', 1211216, 3, 3, len(values)))
+    f.write(struct.pack('>3i', *counts))
+    f.write(struct.pack('>%di' % len(columns), *columns))
+    f.write(struct.pack('>%dd' % (2*len(values)), *(part for v in values for part in (v.real, v.imag))))
+with (root/'complex_structural_b.dat').open('wb') as f:
+    f.write(struct.pack('>2i', 1211214, 3))
+    f.write(struct.pack('>6d', *(part for v in rhs for part in (v.real, v.imag))))
+(root/'complex_structural_x.txt').write_text(''.join(f'{v.real} {v.imag}\n' for v in solution))
+print('complex_structural: n=3 nnz=5')

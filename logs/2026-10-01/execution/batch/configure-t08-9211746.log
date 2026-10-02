@@ -1,0 +1,15 @@
+-- The C compiler identification is GNU 11.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /data/public/software/gcc/11.3.0/bin/gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found MPI_C: /data/public/software/openmpi/4.18-gcc11.3/lib/libmpi.so (found version "3.1") 
+-- Found MPI: TRUE (found version "3.1") found components: C 
+-- Looking for quadmath.h
+-- Looking for quadmath.h - found
+-- Performing Test SC26_HAVE_QUADMATH
+-- Performing Test SC26_HAVE_QUADMATH - Success
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /data/home/sunyc/solverchallenge26/execution-20261001-v17-t10-structural/build-t08

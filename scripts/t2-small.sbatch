@@ -15,7 +15,7 @@ export LC_ALL=C
 module load gcc/11.3.0 openmpi/4.1.8/gcc11.3.0 cmake/3.24.2 miniforge3/24.3.0
 set -uo pipefail
 export OMP_NUM_THREADS=1 SC26_RTOL=1e-11
-root=/data/home/sunyc/solverchallenge26
+root=${SC26_ROOT:-/data/home/sunyc/solverchallenge26}
 python3 tests/make_small_systems.py
 for sample in poisson nonsymmetric neumann; do
     export SC26_PROJECT_CONSTANT=0
@@ -24,12 +24,11 @@ for sample in poisson nonsymmetric neumann; do
         run_dir="$root/runs/small-$SLURM_JOB_ID/$sample-$ranks"
         mkdir -p "$run_dir"
         cd "$run_dir"
-        mpirun -np "$ranks" "$root/build/bin/MPI_iterative_solver" \
+        mpirun -np "$ranks" "$root/${SC26_BUILD_DIR:-build}/bin/MPI_iterative_solver" \
             "$root/tests/small_systems/${sample}_A.dat" \
             "$root/tests/small_systems/${sample}_b.dat" 0 0 | tee solver.log
-        check_mode=unique
-        if [ "$sample" = neumann ]; then check_mode=constant-nullspace; fi
-        python3 "$root/tests/check_result.py" solver.log 1e-10 answer_x.rhs \
-            "$root/tests/small_systems/${sample}_x.txt" "$check_mode"
+        check_args=(solver.log 1e-10 answer_x.rhs "$root/tests/small_systems/${sample}_x.txt")
+        if [ "$sample" = neumann ]; then check_args+=(constant-nullspace); fi
+        python3 "$root/tests/check_result.py" "${check_args[@]}"
     done
 done

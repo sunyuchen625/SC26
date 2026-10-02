@@ -1,0 +1,340 @@
+{
+  "results": [
+    {
+      "job": 9210479,
+      "problem": "09",
+      "rhs": "01",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 1.326167e-16,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=1.326167000000e-16 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:06:59",
+        "c3n06"
+      ],
+      "job_complete": true,
+      "process_exit": 0,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 28128677888,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        26825.5977
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        69.855773,
+        7.9686984,
+        1.6714768
+      ],
+      "framework_mean_seconds": 79.63106,
+      "perturbed_pivots": [
+        168,
+        168,
+        168,
+        168,
+        168
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "provenance_verified": true,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9210509,
+      "problem": "06",
+      "rhs": "01",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 1.834771e-12,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=1.834771000000e-12 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:05:09",
+        "c3n06"
+      ],
+      "job_complete": true,
+      "process_exit": 0,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 37406158848,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        35673.293
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        19.7313226,
+        35.6214978,
+        2.774398
+      ],
+      "framework_mean_seconds": 58.308549,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "provenance_verified": true,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9210510,
+      "problem": "08",
+      "rhs": "01",
+      "metric": "max",
+      "original_float128_residual_after_fifth_solve": 2.408763e-16,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS max_residual=2.408763000000e-16 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:07:58",
+        "c3n06"
+      ],
+      "job_complete": true,
+      "process_exit": 0,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 42613714944,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        40639.6055
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        69.6668068,
+        5.4805202,
+        2.598642
+      ],
+      "framework_mean_seconds": 77.810522,
+      "perturbed_pivots": [
+        60,
+        60,
+        60,
+        60,
+        60
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "provenance_verified": true,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9211739,
+      "problem": "04",
+      "rhs": "01",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 1.170601e-12,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=1.170601000000e-12 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:11:42",
+        "c3n14"
+      ],
+      "job_complete": true,
+      "process_exit": 0,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 138445668352,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        132032.0781
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        69.5382304,
+        38.9156002,
+        6.167028
+      ],
+      "framework_mean_seconds": 114.693288,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "provenance_verified": true,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9211791,
+      "problem": "10",
+      "rhs": "01",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 7.231651e-15,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=7.231651000000e-15 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:23:10",
+        "c3n11"
+      ],
+      "job_complete": true,
+      "process_exit": 0,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 128814817280,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        122847.3828
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        166.1789952,
+        32.4510746,
+        3.9222958
+      ],
+      "framework_mean_seconds": 202.711104,
+      "perturbed_pivots": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "provenance_verified": true,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    }
+  ],
+  "boundaries": "Original float128 check follows solve five; rank peaks are summed and need not coincide. Pivots and internal convergence are separate diagnostics. Acceptance here does not establish official eligibility."
+}

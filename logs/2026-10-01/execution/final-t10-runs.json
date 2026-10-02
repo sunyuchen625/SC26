@@ -1,0 +1,218 @@
+{
+  "results": [
+    {
+      "job": 9211884,
+      "problem": "10",
+      "rhs": "01",
+      "run": "runs/t10-9211884/rhs-01",
+      "ranks": 1,
+      "threads": 32,
+      "threshold": 1e-08,
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:21:50",
+        "c3n144"
+      ],
+      "source_manifest": "source/v19-selected/source-sha256.txt",
+      "batch_log": "batch/sc26_t10_rhs_01-9211884.out",
+      "cmake_cache": "config/v19-selected/build-t10/CMakeCache.txt",
+      "binary_sha256": "4f24cdf20b9ac7b48928c2d048befdc9bf7a711c9de72f48596e4b19591536bd",
+      "cache_sha256": "c78da1a6ab741951c929b9a0cae16119e4996894612064077f2b48ffb1227ff1"
+    },
+    {
+      "job": 9211885,
+      "problem": "10",
+      "rhs": "02",
+      "run": "runs/t10-9211885/rhs-02",
+      "ranks": 1,
+      "threads": 32,
+      "threshold": 1e-08,
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:23:18",
+        "c3n11"
+      ],
+      "source_manifest": "source/v19-selected/source-sha256.txt",
+      "batch_log": "batch/sc26_t10_rhs_02-9211885.out",
+      "cmake_cache": "config/v19-selected/build-t10/CMakeCache.txt",
+      "binary_sha256": "4f24cdf20b9ac7b48928c2d048befdc9bf7a711c9de72f48596e4b19591536bd",
+      "cache_sha256": "c78da1a6ab741951c929b9a0cae16119e4996894612064077f2b48ffb1227ff1"
+    },
+    {
+      "job": 9211886,
+      "problem": "10",
+      "rhs": "03",
+      "run": "runs/t10-9211886/rhs-03",
+      "ranks": 1,
+      "threads": 32,
+      "threshold": 1e-08,
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:22:52",
+        "c3n11"
+      ],
+      "source_manifest": "source/v19-selected/source-sha256.txt",
+      "batch_log": "batch/sc26_t10_rhs_03-9211886.out",
+      "cmake_cache": "config/v19-selected/build-t10/CMakeCache.txt",
+      "binary_sha256": "4f24cdf20b9ac7b48928c2d048befdc9bf7a711c9de72f48596e4b19591536bd",
+      "cache_sha256": "c78da1a6ab741951c929b9a0cae16119e4996894612064077f2b48ffb1227ff1"
+    },
+    {
+      "job": 9211887,
+      "problem": "10",
+      "rhs": "04",
+      "run": "runs/t10-9211887/rhs-04",
+      "ranks": 1,
+      "threads": 32,
+      "threshold": 1e-08,
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:22:56",
+        "c3n11"
+      ],
+      "source_manifest": "source/v19-selected/source-sha256.txt",
+      "batch_log": "batch/sc26_t10_rhs_04-9211887.out",
+      "cmake_cache": "config/v19-selected/build-t10/CMakeCache.txt",
+      "binary_sha256": "4f24cdf20b9ac7b48928c2d048befdc9bf7a711c9de72f48596e4b19591536bd",
+      "cache_sha256": "c78da1a6ab741951c929b9a0cae16119e4996894612064077f2b48ffb1227ff1"
+    },
+    {
+      "job": 9211888,
+      "problem": "10",
+      "rhs": "05",
+      "run": "runs/t10-9211888/rhs-05",
+      "ranks": 1,
+      "threads": 32,
+      "threshold": 1e-08,
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:22:57",
+        "c3n11"
+      ],
+      "source_manifest": "source/v19-selected/source-sha256.txt",
+      "batch_log": "batch/sc26_t10_rhs_05-9211888.out",
+      "cmake_cache": "config/v19-selected/build-t10/CMakeCache.txt",
+      "binary_sha256": "4f24cdf20b9ac7b48928c2d048befdc9bf7a711c9de72f48596e4b19591536bd",
+      "cache_sha256": "c78da1a6ab741951c929b9a0cae16119e4996894612064077f2b48ffb1227ff1"
+    },
+    {
+      "job": 9211889,
+      "problem": "10",
+      "rhs": "06",
+      "run": "runs/t10-9211889/rhs-06",
+      "ranks": 1,
+      "threads": 32,
+      "threshold": 1e-08,
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:21:16",
+        "c3n87"
+      ],
+      "source_manifest": "source/v19-selected/source-sha256.txt",
+      "batch_log": "batch/sc26_t10_rhs_06-9211889.out",
+      "cmake_cache": "config/v19-selected/build-t10/CMakeCache.txt",
+      "binary_sha256": "4f24cdf20b9ac7b48928c2d048befdc9bf7a711c9de72f48596e4b19591536bd",
+      "cache_sha256": "c78da1a6ab741951c929b9a0cae16119e4996894612064077f2b48ffb1227ff1"
+    },
+    {
+      "job": 9211890,
+      "problem": "10",
+      "rhs": "07",
+      "run": "runs/t10-9211890/rhs-07",
+      "ranks": 1,
+      "threads": 32,
+      "threshold": 1e-08,
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:21:45",
+        "c3n144"
+      ],
+      "source_manifest": "source/v19-selected/source-sha256.txt",
+      "batch_log": "batch/sc26_t10_rhs_07-9211890.out",
+      "cmake_cache": "config/v19-selected/build-t10/CMakeCache.txt",
+      "binary_sha256": "4f24cdf20b9ac7b48928c2d048befdc9bf7a711c9de72f48596e4b19591536bd",
+      "cache_sha256": "c78da1a6ab741951c929b9a0cae16119e4996894612064077f2b48ffb1227ff1"
+    },
+    {
+      "job": 9211891,
+      "problem": "10",
+      "rhs": "08",
+      "run": "runs/t10-9211891/rhs-08",
+      "ranks": 1,
+      "threads": 32,
+      "threshold": 1e-08,
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:23:43",
+        "c3n14"
+      ],
+      "source_manifest": "source/v19-selected/source-sha256.txt",
+      "batch_log": "batch/sc26_t10_rhs_08-9211891.out",
+      "cmake_cache": "config/v19-selected/build-t10/CMakeCache.txt",
+      "binary_sha256": "4f24cdf20b9ac7b48928c2d048befdc9bf7a711c9de72f48596e4b19591536bd",
+      "cache_sha256": "c78da1a6ab741951c929b9a0cae16119e4996894612064077f2b48ffb1227ff1"
+    },
+    {
+      "job": 9211892,
+      "problem": "10",
+      "rhs": "09",
+      "run": "runs/t10-9211892/rhs-09",
+      "ranks": 1,
+      "threads": 32,
+      "threshold": 1e-08,
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:24:03",
+        "c3n14"
+      ],
+      "source_manifest": "source/v19-selected/source-sha256.txt",
+      "batch_log": "batch/sc26_t10_rhs_09-9211892.out",
+      "cmake_cache": "config/v19-selected/build-t10/CMakeCache.txt",
+      "binary_sha256": "4f24cdf20b9ac7b48928c2d048befdc9bf7a711c9de72f48596e4b19591536bd",
+      "cache_sha256": "c78da1a6ab741951c929b9a0cae16119e4996894612064077f2b48ffb1227ff1"
+    },
+    {
+      "job": 9211893,
+      "problem": "10",
+      "rhs": "10",
+      "run": "runs/t10-9211893/rhs-10",
+      "ranks": 1,
+      "threads": 32,
+      "threshold": 1e-08,
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:23:55",
+        "c3n14"
+      ],
+      "source_manifest": "source/v19-selected/source-sha256.txt",
+      "batch_log": "batch/sc26_t10_rhs_10-9211893.out",
+      "cmake_cache": "config/v19-selected/build-t10/CMakeCache.txt",
+      "binary_sha256": "4f24cdf20b9ac7b48928c2d048befdc9bf7a711c9de72f48596e4b19591536bd",
+      "cache_sha256": "c78da1a6ab741951c929b9a0cae16119e4996894612064077f2b48ffb1227ff1"
+    }
+  ],
+  "expected_rhs": {
+    "10": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10"
+    ]
+  }
+}

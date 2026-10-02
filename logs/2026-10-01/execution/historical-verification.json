@@ -1,0 +1,1808 @@
+{
+  "results": [
+    {
+      "job": 9193128,
+      "problem": "05",
+      "rhs": null,
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 0.002642542,
+      "numerical_pass": false,
+      "checker_output": "",
+      "checker_error": "Traceback (most recent call last):\n  File \"/Users/sunyuchen/Desktop/\u5b66\u4e1a\u4efb\u52a1/SC26/tests/check_result.py\", line 21, in <module>\n    assert math.isfinite(residual) and residual < threshold, (residual, threshold)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: (0.002642542, 1e-08)",
+      "job_state": [
+        "FAILED",
+        "1:0",
+        "00:10:33",
+        "c3n121"
+      ],
+      "job_complete": false,
+      "process_exit": null,
+      "rank_process_exits": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sum_full_process_peak_bytes": 154405023744,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        97905.8867
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        0.0036136,
+        9.6093252,
+        62.9256972
+      ],
+      "framework_mean_seconds": 72.538575,
+      "perturbed_pivots": [],
+      "internal_convergence": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": false,
+      "engineering_pass": null,
+      "accepted": false
+    },
+    {
+      "job": 9193138,
+      "problem": "05",
+      "rhs": null,
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 9.732279e-09,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=9.732279000000e-09 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:18:21",
+        "c3n103"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sum_full_process_peak_bytes": 202886234112,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        144339.5156
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        0.0049752,
+        10.018067199999999,
+        157.2154638
+      ],
+      "framework_mean_seconds": 167.237252,
+      "perturbed_pivots": [],
+      "internal_convergence": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9193129,
+      "problem": "07",
+      "rhs": null,
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 1.777361e-09,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=1.777361000000e-09 threshold=1.0e-06",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:02:23",
+        "c3n103"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sum_full_process_peak_bytes": 94067654656,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        68260.0078
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        0.0039234,
+        1.1601652,
+        5.026217
+      ],
+      "framework_mean_seconds": 6.190578,
+      "perturbed_pivots": [],
+      "internal_convergence": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9193126,
+      "problem": "08",
+      "rhs": "01",
+      "metric": "max",
+      "original_float128_residual_after_fifth_solve": 2.667063e-16,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS max_residual=2.667063000000e-16 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:07:47",
+        "c3n94"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 48184352768,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        45952.1797
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        68.839991,
+        4.8468468,
+        2.6187062
+      ],
+      "framework_mean_seconds": 76.4003,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9193141,
+      "problem": "08",
+      "rhs": "02",
+      "metric": "max",
+      "original_float128_residual_after_fifth_solve": 1.326576e-16,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS max_residual=1.326576000000e-16 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:23:04",
+        "c3n94"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 48181022720,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        45949.0039
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        68.3724208,
+        5.1984376,
+        2.6216058
+      ],
+      "framework_mean_seconds": 76.259158,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9193141,
+      "problem": "08",
+      "rhs": "03",
+      "metric": "max",
+      "original_float128_residual_after_fifth_solve": 1.810257e-16,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS max_residual=1.810257000000e-16 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:23:04",
+        "c3n94"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 48181194752,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        45949.168
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        68.208271,
+        4.7472968,
+        2.6092774
+      ],
+      "framework_mean_seconds": 75.717544,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9193141,
+      "problem": "08",
+      "rhs": "04",
+      "metric": "max",
+      "original_float128_residual_after_fifth_solve": 2.253287e-16,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS max_residual=2.253287000000e-16 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:23:04",
+        "c3n94"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 48183529472,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        45951.3945
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        68.3429084,
+        5.1584226,
+        2.5798964
+      ],
+      "framework_mean_seconds": 76.175781,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9193142,
+      "problem": "08",
+      "rhs": "05",
+      "metric": "max",
+      "original_float128_residual_after_fifth_solve": 2.012852e-16,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS max_residual=2.012852000000e-16 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:23:04",
+        "c3n121"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 48185917440,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        45953.6719
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        68.4191668,
+        5.0281544,
+        2.651699
+      ],
+      "framework_mean_seconds": 76.171821,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9193142,
+      "problem": "08",
+      "rhs": "06",
+      "metric": "max",
+      "original_float128_residual_after_fifth_solve": 1.943948e-16,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS max_residual=1.943948000000e-16 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:23:04",
+        "c3n121"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 48180256768,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        45948.2734
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        68.17035,
+        4.9347262,
+        2.5693866
+      ],
+      "framework_mean_seconds": 75.814699,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9193142,
+      "problem": "08",
+      "rhs": "07",
+      "metric": "max",
+      "original_float128_residual_after_fifth_solve": 1.990055e-16,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS max_residual=1.990055000000e-16 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:23:04",
+        "c3n121"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 48180457472,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        45948.4648
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        68.519733,
+        5.3919004,
+        2.6039528
+      ],
+      "framework_mean_seconds": 76.551812,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9193143,
+      "problem": "08",
+      "rhs": "08",
+      "metric": "max",
+      "original_float128_residual_after_fifth_solve": 1.65878e-16,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS max_residual=1.658780000000e-16 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:22:52",
+        "c3n153"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 48188743680,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        45956.3672
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        68.2237196,
+        4.7132508,
+        2.5043622
+      ],
+      "framework_mean_seconds": 75.562749,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9193143,
+      "problem": "08",
+      "rhs": "09",
+      "metric": "max",
+      "original_float128_residual_after_fifth_solve": 3.405284e-16,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS max_residual=3.405284000000e-16 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:22:52",
+        "c3n153"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 48181243904,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        45949.2148
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        68.0099506,
+        4.6675382,
+        2.4659286
+      ],
+      "framework_mean_seconds": 75.239949,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9193143,
+      "problem": "08",
+      "rhs": "10",
+      "metric": "max",
+      "original_float128_residual_after_fifth_solve": 3.65701e-16,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS max_residual=3.657010000000e-16 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:22:52",
+        "c3n153"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 48179703808,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        45947.7461
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        67.9535486,
+        4.8154332,
+        2.4950922
+      ],
+      "framework_mean_seconds": 75.435817,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9193147,
+      "problem": "10",
+      "rhs": "01",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 7.261475e-15,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=7.261475000000e-15 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:22:40",
+        "c3n103"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 133953605632,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        127748.1133
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        182.9172304,
+        11.013586,
+        4.5496568
+      ],
+      "framework_mean_seconds": 198.699109,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9193324,
+      "problem": "10",
+      "rhs": "05",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 6.532777e-15,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=6.532777000000e-15 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "01:07:32",
+        "c3n53"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 133991350272,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        127784.1094
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        185.8117192,
+        10.5765808,
+        4.013889
+      ],
+      "framework_mean_seconds": 200.674681,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9193324,
+      "problem": "10",
+      "rhs": "06",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 6.882366e-15,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=6.882366000000e-15 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "01:07:32",
+        "c3n53"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 134027653120,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        127818.7305
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        184.3052146,
+        10.169103,
+        3.9983466
+      ],
+      "framework_mean_seconds": 198.607999,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9193324,
+      "problem": "10",
+      "rhs": "07",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 7.161163e-15,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=7.161163000000e-15 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "01:07:32",
+        "c3n53"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 134051045376,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        127841.0391
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        184.02872399999998,
+        10.278059,
+        3.8594356
+      ],
+      "framework_mean_seconds": 198.188457,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9193325,
+      "problem": "10",
+      "rhs": "08",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 7.155695e-15,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=7.155695000000e-15 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "01:07:26",
+        "c3n54"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 133944680448,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        127739.6016
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        182.9421118,
+        10.3893462,
+        3.9332026
+      ],
+      "framework_mean_seconds": 197.519764,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9193325,
+      "problem": "10",
+      "rhs": "09",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 7.406004e-15,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=7.406004000000e-15 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "01:07:26",
+        "c3n54"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 134014300160,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        127805.9961
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        184.1999374,
+        10.4022568,
+        3.9719004
+      ],
+      "framework_mean_seconds": 198.673882,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9193325,
+      "problem": "10",
+      "rhs": "10",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 6.566291e-15,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=6.566291000000e-15 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "01:07:26",
+        "c3n54"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 134009942016,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        127801.8398
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        185.4087154,
+        10.495061999999999,
+        3.829571
+      ],
+      "framework_mean_seconds": 199.795372,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9193327,
+      "problem": "10",
+      "rhs": "02",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 6.507977e-15,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=6.507977000000e-15 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "01:07:04",
+        "c3n92"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 134002798592,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        127795.0273
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        182.16711420000001,
+        10.583049,
+        3.828892
+      ],
+      "framework_mean_seconds": 196.740315,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9193327,
+      "problem": "10",
+      "rhs": "03",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 7.28139e-15,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=7.281390000000e-15 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "01:07:04",
+        "c3n92"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 134037450752,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        127828.0742
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        183.4225648,
+        10.397146600000001,
+        3.9100944
+      ],
+      "framework_mean_seconds": 197.81654,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9193327,
+      "problem": "10",
+      "rhs": "04",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 6.771081e-15,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=6.771081000000e-15 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "01:07:04",
+        "c3n92"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 134008791040,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        127800.7422
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        182.725655,
+        10.385384199999999,
+        4.043343
+      ],
+      "framework_mean_seconds": 197.307199,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9188209,
+      "problem": "09",
+      "rhs": "01",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 1.388939e-16,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=1.388939000000e-16 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "CANCELLED by 11599",
+        "0:0",
+        "00:07:22",
+        "c3n86"
+      ],
+      "job_complete": false,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 37986611200,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        36226.8555
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        64.7158278,
+        7.5245208,
+        1.9471158
+      ],
+      "framework_mean_seconds": 74.410747,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": false,
+      "engineering_pass": null,
+      "accepted": false
+    },
+    {
+      "job": 9188212,
+      "problem": "09",
+      "rhs": "02",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 1.045516e-15,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=1.045516000000e-15 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:19:38",
+        "c3n21"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 37990494208,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        36230.5586
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        64.7934232,
+        7.5589096,
+        2.0027293999999998
+      ],
+      "framework_mean_seconds": 74.501044,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9188212,
+      "problem": "09",
+      "rhs": "03",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 4.702208e-16,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=4.702208000000e-16 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:19:38",
+        "c3n21"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 37979357184,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        36219.9375
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        65.0399404,
+        7.6860588000000005,
+        2.0166216
+      ],
+      "framework_mean_seconds": 74.941388,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9188212,
+      "problem": "09",
+      "rhs": "04",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 1.880471e-16,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=1.880471000000e-16 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:19:38",
+        "c3n21"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 37975982080,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        36216.7188
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        64.9937906,
+        7.5279284,
+        2.0449196
+      ],
+      "framework_mean_seconds": 74.638959,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9188213,
+      "problem": "09",
+      "rhs": "05",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 7.545714e-16,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=7.545714000000e-16 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:19:23",
+        "c3n124"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 37981921280,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        36222.3828
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        64.128749,
+        7.5732322000000005,
+        2.2428766
+      ],
+      "framework_mean_seconds": 74.150167,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9188213,
+      "problem": "09",
+      "rhs": "06",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 5.405732e-16,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=5.405732000000e-16 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:19:23",
+        "c3n124"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 37985624064,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        36225.9141
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        64.1725434,
+        7.482850200000001,
+        2.2509456
+      ],
+      "framework_mean_seconds": 73.957491,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9188213,
+      "problem": "09",
+      "rhs": "07",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 1.731246e-16,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=1.731246000000e-16 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:19:23",
+        "c3n124"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 37987700736,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        36227.8945
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        64.1268506,
+        7.6574208,
+        2.0917706
+      ],
+      "framework_mean_seconds": 74.006863,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9188219,
+      "problem": "09",
+      "rhs": "08",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 1.028239e-16,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=1.028239000000e-16 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:19:31",
+        "c3n152"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 37982085120,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        36222.5391
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        64.2577848,
+        8.6503396,
+        1.9095218
+      ],
+      "framework_mean_seconds": 75.026316,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9188219,
+      "problem": "09",
+      "rhs": "09",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 4.374093e-16,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=4.374093000000e-16 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:19:31",
+        "c3n152"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 37979136000,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        36219.7266
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        64.3424486,
+        8.4278136,
+        1.898657
+      ],
+      "framework_mean_seconds": 74.847503,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    },
+    {
+      "job": 9188219,
+      "problem": "09",
+      "rhs": "10",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 6.247663e-16,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=6.247663000000e-16 threshold=1.0e-08",
+      "checker_error": "",
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:19:31",
+        "c3n152"
+      ],
+      "job_complete": true,
+      "process_exit": null,
+      "rank_process_exits": [
+        0
+      ],
+      "sum_full_process_peak_bytes": 38015324160,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        36254.2383
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        64.44870300000001,
+        6.9157286,
+        1.9223945999999998
+      ],
+      "framework_mean_seconds": 73.410935,
+      "perturbed_pivots": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "internal_convergence": [],
+      "analysis_scaling_matching": [],
+      "provenance_verified": null,
+      "execution_pass": true,
+      "engineering_pass": null,
+      "accepted": true
+    }
+  ],
+  "boundaries": "Original float128 check follows solve five; rank peaks are summed and need not coincide. Pivots and internal convergence are separate diagnostics. Acceptance here does not establish official eligibility."
+}

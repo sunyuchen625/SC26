@@ -1,0 +1,31 @@
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+c3ln01
+Thu Oct  1 13:58:39 UTC 2026
+             JOBID                   NAME     STATE  NODES       TIME NODELIST(REASON)
+PARTITION AVAIL TIMELIMIT NODES CPUS(A/I/O/T)
+qhn* up infinite 200 18367/449/384/19200
+cluster|sunyc|sunyc|qhn|normal|node=4|||||
+Account                    User  RawShares  NormShares    RawUsage   NormUsage  EffectvUsage  FairShare    LevelFS                    GrpTRESMins                    TRESRunMins 
+-------------------- ---------- ---------- ----------- ----------- ----------- ------------- ---------- ---------- ------------------------------ ------------------------------ 
+sunyc                     sunyc          1    1.000000     3632992                  0.000000   0.000000   0.000000                                cpu=0,mem=0,energy=0,node=0,b+ 
+build
+build-t01
+build-t03
+build-t04
+build-t05
+build-t05-mgr
+build-t06
+build-t07
+build-t07-mgr
+build-t08
+build-t09
+build-t10
+deps
+hypre-2.33.0.tar.gz
+logs
+runs
+scripts
+src
+tests
+/usr/bin/quota

@@ -6,6 +6,8 @@ This report integrates the independent review with local verification of its mat
 
 **Scope.** This is a read-only review of the current working tree. I read the framework drivers, loader and diagnostics, both solver sources, CMake, every sbatch and test script, and `tests/check_result.py`. I also read the saved official page (`logs/2026-09-23/official-page.html`) and raw logs: all 20 T8/T10 and 10 T9 right-hand-side (RHS) logs, plus the full-scale T1–T7 logs. Nothing was run. Binaries and large inputs are remote. The reviewer did not run Git commands. Codex subsequently verified that the current solver source, scripts and tests have no diff against implementation commit `3970942`. I did not touch private application files, credentials or remote sources.
 
+**Resource update, 1 October.** [Current compute status](../COMPUTE_STATUS_2026-10-01.md) supersedes the access statements in finding 7: an allocated SCNet single-card job and the Huawei jump desktop have been demonstrated. Huawei backend recovery, quota and submission mechanics remain open. This dated audit retains its original numerical evidence; remediation follows the [approved execution plan](../EXECUTION_PLAN_2026-10-01.md).
+
 Evidence labels: **D** is demonstrated by cited local evidence, **I** is my inference, **U** is unknown locally.
 
 **Prior review scope.**

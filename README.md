@@ -1,8 +1,8 @@
 # SolverChallenge26 · CUDA OOM!
 
-线性解法器竞赛的 CPU 求解实现、实验脚本与基线记录。更新日期：2026-09-30。
+线性解法器竞赛的 CPU 求解实现、实验脚本与基线记录。更新日期：2026-10-02。
 
-当前在比赛 CPU 平台通过参考框架原始系统残差检查的结果：
+9 月归档基线中，在比赛 CPU 平台通过参考框架原始系统残差检查的结果：
 
 | 题目 | 方法 | 验收残差 | 五轮平均时间 |
 | --- | --- | ---: | ---: |
@@ -14,12 +14,17 @@
 | T9（10 个右端） | oneMKL PARDISO 实数直接法 | 相对残差最高 1.045516e-15 | 每右端 73.41～75.03 s |
 | T10（10 个右端） | oneMKL PARDISO 64 位复数直接法 | 相对残差最高 7.406004e-15 | 每右端 196.74～200.67 s |
 
-T1、T3、T4 和 T2 高精度档尚未达标；所有结果均以原始矩阵、原始右端的官方 float128 验证为准。
+上述表格为 9 月结果。10 月当前配置已完成 T2 低档、T4、T5、T6、T7 及 T8/T9/T10 全十个右端的五次验收。T4 使用 64 位索引，相对残差为 1.170601e-12，平均 114.69 s；T10 使用结构行配对与数值准备阶段缩放，十个右端最高相对残差 7.521765e-15。T1、T3 及 T2 高精度档未达标；所有结果均以原始矩阵、原始右端的官方 float128 验证为准。
 
-T8、T9、T10 均已完成十个右端的逐项验证。T5 当前残差距离阈值约 2.7%，下一步增加收敛余量、复现已通过配置，并推进 T1/T3/T4 与 T2 高档。已有结果尚需完成正式提交链路验收。
+9 月的 T8、T9、T10 均有十个右端的逐项数值记录；10 月 T8/T9 的全右端复跑全部通过。T5 在两节点、64/96 进程下的四组运行均达到原系统余量且五次均报收敛，96 进程默认配置平均 186.84 s。最新完成结果和当前验收边界见下方执行结果。已有结果尚需完成正式提交链路验收。
 
-9 月 30 日审计将直接法分析阶段的合规性、正式入口配置及十右端计时列为优先核对项。T10 在分析阶段明确启用了数值缩放与匹配，与本地保存的结构分析规则有冲突；其余直接法需核对库默认参数。详见审计报告。
+10 月修订将直接法分析阶段的系数指针设为 `NULL`，显式关闭数值缩放和匹配；T2 低档的投影与容差、T7 的容差已设为源码默认值。T5 默认使用压力 MGR、450 次迭代上限与 5e-9 容差，已通过正式规模余量验证。新实验记录位于 `logs/2026-10-01/execution/`。
 
+- [已批准执行计划（English）](docs/EXECUTION_PLAN_2026-10-01.md)
+- [当前执行结果（English）](docs/EXECUTION_RESULTS_2026-10-02.md)
+- [Claude Opus 5.5 max 执行审计（English）](docs/reviews/CLAUDE_EXECUTION_AUDIT_2026-10-02.md)
+- [技术报告](docs/SC26技术报告_2026-10-02.docx)
+- [当前算力状态（English）](docs/COMPUTE_STATUS_2026-10-01.md)
 - [项目计划](docs/项目背景与下一步工作方案.md)
 - [English project brief](docs/PROJECT_BRIEF.md)
 - [Claude Sonnet 5.5 max 项目审计（English）](docs/reviews/CLAUDE_AUDIT_2026-09-30.md)
@@ -68,3 +73,36 @@ tar -xzf hypre-2.33.0.tar.gz
 随后按 [T2 报告的依赖构建步骤](docs/baselines/T2数值基线_2026-09-22.md#复现)安装 HYPRE，再按 [扩展报告](docs/baselines/初步阶段扩展基线_2026-09-23.md#编译与复现)构建 T1/T3/T6 并提交小样例与全量作业。脚本使用本队 `sunyc` 账号和上述工作目录；其他账号复现时需对应修改 `#SBATCH --account`、`#SBATCH --chdir` 和 `root`。
 
 构建前执行 `module purge`，再加载报告中的 GCC/OpenMPI/CMake 模块，并单独设置 `MKLROOT`。`intel/2022.1` 模块会通过 `CPATH` 引入 Intel MPI 头文件，与本项目使用的 OpenMPI 不匹配。
+
+10 月修订使用新的实验目录。HYPRE 安装仍位于 `/data/home/sunyc/solverchallenge26/deps/hypre`。在登录节点复制平台提供的 GNU time 到共享依赖目录，以便计算节点使用同一个计时程序：
+
+```bash
+mkdir -p /data/home/sunyc/solverchallenge26/deps/gnu-time
+cp /usr/bin/time /data/home/sunyc/solverchallenge26/deps/gnu-time/time
+repo_root=$PWD
+work=/data/home/sunyc/solverchallenge26/execution-$(date +%Y%m%d-%H%M%S)
+mkdir -p "$work"/{src,scripts,tests,logs}
+cp -R "$repo_root/资料/solverchallenge26_sample_code/." "$work/src/"
+cp -R "$repo_root/scripts/." "$work/scripts/"
+cp -R "$repo_root/tests/." "$work/tests/"
+git rev-parse HEAD > "$work/parent-commit.txt"
+cd "$work"
+find src scripts tests -type f -print0 | sort -z | xargs -0 sha256sum > source-sha256.txt
+sbatch --chdir="$PWD" scripts/remediation-build.sbatch
+```
+
+构建作业在计算节点构建九个目标并运行二十四个小样例。确认作业 `COMPLETED 0:0` 后，从同一实验目录提交全量验证，例如：
+
+```bash
+unset SC26_RTOL SC26_PROJECT_CONSTANT
+sbatch --chdir="$PWD" --ntasks=16 --cpus-per-task=1 --mem=60G \
+  scripts/remediation-baseline.sbatch 02 01
+sbatch --chdir="$PWD" --ntasks=16 --cpus-per-task=1 --mem=75G \
+  scripts/remediation-baseline.sbatch 07 01
+sbatch --chdir="$PWD" --ntasks=96 --cpus-per-task=1 \
+  scripts/remediation-baseline.sbatch 05 01
+sbatch --chdir="$PWD" --ntasks=1 --cpus-per-task=32 --mem=95G \
+  scripts/remediation-baseline.sbatch 09 01
+```
+
+每个右端仍独立执行五次完整求解。脚本保留源码清单、配置与二进制哈希、进程退出状态、全程峰值内存和原始系统残差；`scripts/verify_runs.py` 根据运行清单复核归档证据，并调用既有 `tests/check_result.py`。同一时间最多运行两项本项目作业。

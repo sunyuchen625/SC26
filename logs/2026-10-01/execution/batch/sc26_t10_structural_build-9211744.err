@@ -1,0 +1,18 @@
+Currently Loaded Modulefiles:
+ 1) gcc/11.3.0                3) cmake/3.24.2       
+ 2) openmpi/4.1.8/gcc11.3.0   4) miniforge3/24.3.0  
+GNU time 1.7
+sha256sum: src/src/diagnostics.c: No such file or directory
+sha256sum: src/src/matrix_market/highlevel.c: No such file or directory
+sha256sum: src/src/matrix_market/mmio.c: No such file or directory
+sha256sum: src/src/mpi_system_loader.c: No such file or directory
+sha256sum: src/src/petsc_binary_reader.c: No such file or directory
+sha256sum: src/src/system_loader.c: No such file or directory
+sha256sum: src/tests/header_include_order_mpi_first.c: No such file or directory
+sha256sum: src/tests/header_include_order_reader_first.c: No such file or directory
+sha256sum: tests/check_result.py: No such file or directory
+sha256sum: tests/make_complex_system.py: No such file or directory
+sha256sum: tests/make_field_systems.py: No such file or directory
+sha256sum: tests/make_small_systems.py: No such file or directory
+sha256sum: tests/mpi_smoke.c: No such file or directory
+sha256sum: WARNING: 13 listed files could not be read

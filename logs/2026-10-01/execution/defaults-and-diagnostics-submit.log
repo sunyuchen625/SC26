@@ -1,0 +1,7 @@
+T2_DEFAULT job=9210551 dependency=afterok:9210520 ranks=32 threads=1 memory=100G limit=00:12:00 source=v4
+T7_DEFAULT job=9210552 dependency=afterany:9210551 ranks=32 threads=1 memory=100G limit=00:12:00 source=v4
+SC26_RTOL and SC26_PROJECT_CONSTANT unset for both default acceptance jobs.
+T3_DIAGNOSTIC job=9210553 dependency=afterany:9210552 ranks=1 threads=32 memory=150G limit=00:20:00 source=v5-probes
+T4_ANALYSIS job=9210554 dependency=afterany:9210553 ranks=1 threads=32 memory=150G limit=00:20:00 source=v5-probes
+T1_VARIABLE_AWARE job=9210555 ranks=8 threads=1 memory=16G limit=00:15:00 source=v6-temperature
+T5 job9210478 held before opening the second execution lane. Release with dependencies once the selected full-RHS reruns have been submitted, preserving the two-running-job maximum.

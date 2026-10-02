@@ -1,0 +1,116 @@
+matrix name :      /data/home/sunyc/solverchallenge26/execution-20261001-v10-t3-equilibrated/tests/small_systems/poisson_A.dat
+vectorb name :     /data/home/sunyc/solverchallenge26/execution-20261001-v10-t3-equilibrated/tests/small_systems/poisson_b.dat
+read function :    PETSc binary (0-base)
+sys_type :         0
+L2 norm of b: 1.947100e+02
+Initial L2 norm of residual: 1.947100e+02
+=============================================
+
+Iters     resid.norm     conv.rate  rel.res.norm
+-----    ------------    ---------- ------------
+    1    1.141698e+00    0.005864   5.863583e-03
+    2    1.131491e-02    0.009911   5.811159e-05
+    3    1.215027e-04    0.010738   6.240189e-07
+    4    1.485016e-06    0.012222   7.626805e-09
+    5    2.000468e-08    0.013471   1.027409e-10
+    6    2.543040e-10    0.012712   1.306065e-12
+
+
+Final L2 norm of residual: 2.543007e-10
+
+
+
+T2_GMRES iterations=6 relative_residual=1.306048043992e-12 rtol=1.0e-11
+T2_PHASE_SECONDS analyse=0.000039 preprocess=0.001589 solve_cleanup=0.001026
+L2 norm of b: 1.947100e+02
+Initial L2 norm of residual: 1.947100e+02
+=============================================
+
+Iters     resid.norm     conv.rate  rel.res.norm
+-----    ------------    ---------- ------------
+    1    1.141698e+00    0.005864   5.863583e-03
+    2    1.131491e-02    0.009911   5.811159e-05
+    3    1.215027e-04    0.010738   6.240189e-07
+    4    1.485016e-06    0.012222   7.626805e-09
+    5    2.000468e-08    0.013471   1.027409e-10
+    6    2.543040e-10    0.012712   1.306065e-12
+
+
+Final L2 norm of residual: 2.543007e-10
+
+
+
+T2_GMRES iterations=6 relative_residual=1.306048043992e-12 rtol=1.0e-11
+T2_PHASE_SECONDS analyse=0.000006 preprocess=0.001315 solve_cleanup=0.000512
+L2 norm of b: 1.947100e+02
+Initial L2 norm of residual: 1.947100e+02
+=============================================
+
+Iters     resid.norm     conv.rate  rel.res.norm
+-----    ------------    ---------- ------------
+    1    1.141698e+00    0.005864   5.863583e-03
+    2    1.131491e-02    0.009911   5.811159e-05
+    3    1.215027e-04    0.010738   6.240189e-07
+    4    1.485016e-06    0.012222   7.626805e-09
+    5    2.000468e-08    0.013471   1.027409e-10
+    6    2.543040e-10    0.012712   1.306065e-12
+
+
+Final L2 norm of residual: 2.543007e-10
+
+
+
+T2_GMRES iterations=6 relative_residual=1.306048043992e-12 rtol=1.0e-11
+T2_PHASE_SECONDS analyse=0.000004 preprocess=0.001261 solve_cleanup=0.000496
+L2 norm of b: 1.947100e+02
+Initial L2 norm of residual: 1.947100e+02
+=============================================
+
+Iters     resid.norm     conv.rate  rel.res.norm
+-----    ------------    ---------- ------------
+    1    1.141698e+00    0.005864   5.863583e-03
+    2    1.131491e-02    0.009911   5.811159e-05
+    3    1.215027e-04    0.010738   6.240189e-07
+    4    1.485016e-06    0.012222   7.626805e-09
+    5    2.000468e-08    0.013471   1.027409e-10
+    6    2.543040e-10    0.012712   1.306065e-12
+
+
+Final L2 norm of residual: 2.543007e-10
+
+
+
+T2_GMRES iterations=6 relative_residual=1.306048043992e-12 rtol=1.0e-11
+T2_PHASE_SECONDS analyse=0.000004 preprocess=0.001250 solve_cleanup=0.000479
+L2 norm of b: 1.947100e+02
+Initial L2 norm of residual: 1.947100e+02
+=============================================
+
+Iters     resid.norm     conv.rate  rel.res.norm
+-----    ------------    ---------- ------------
+    1    1.141698e+00    0.005864   5.863583e-03
+    2    1.131491e-02    0.009911   5.811159e-05
+    3    1.215027e-04    0.010738   6.240189e-07
+    4    1.485016e-06    0.012222   7.626805e-09
+    5    2.000468e-08    0.013471   1.027409e-10
+    6    2.543040e-10    0.012712   1.306065e-12
+
+
+Final L2 norm of residual: 2.543007e-10
+
+
+
+T2_GMRES iterations=6 relative_residual=1.306048043992e-12 rtol=1.0e-11
+T2_PHASE_SECONDS analyse=0.000003 preprocess=0.001206 solve_cleanup=0.000423
+Total memory usage:                 7.1602 MB
+------------------------------------------
+CHECK end to end time :             0.001942 s
+Check || b - Ax || 2             =  2.543021e-10
+Check || b - Ax || MAX           =  5.416112e-11
+Check || b - Ax || 2 / || b || 2 =  1.306055e-12
+LD-Check || b - Ax || 2             =  2.543040e-10
+LD-Check || b - Ax || MAX           =  5.416080e-11
+LD-Check || b - Ax || 2 / || b || 2 =  1.306065e-12
+Q-Check || b - Ax || 2             =  2.543040e-10
+Q-Check || b - Ax || MAX           =  5.416080e-11
+Q-Check || b - Ax || 2 / || b || 2 =  1.306065e-12

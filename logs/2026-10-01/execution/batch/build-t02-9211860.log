@@ -1,0 +1,117 @@
+[ 33%] Building C object CMakeFiles/sc26_io.dir/src/matrix_market/mmio.c.o
+[ 33%] Building C object CMakeFiles/sc26_io.dir/src/matrix_market/highlevel.c.o
+[ 33%] Building C object CMakeFiles/sc26_io.dir/src/petsc_binary_reader.c.o
+[ 33%] Building C object CMakeFiles/sc26_mpi_diagnostics.dir/src/diagnostics.c.o
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c: In function 'read_mtx_header':
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c:22:59: warning: unused variable 'isSymmetric_tmp' [-Wunused-variable]
+   22 |     int         isInteger = 0, isReal = 0, isPattern = 0, isSymmetric_tmp = 0;
+      |                                                           ^~~~~~~~~~~~~~~
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c:22:44: warning: variable 'isPattern' set but not used [-Wunused-but-set-variable]
+   22 |     int         isInteger = 0, isReal = 0, isPattern = 0, isSymmetric_tmp = 0;
+      |                                            ^~~~~~~~~
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c:22:32: warning: variable 'isReal' set but not used [-Wunused-but-set-variable]
+   22 |     int         isInteger = 0, isReal = 0, isPattern = 0, isSymmetric_tmp = 0;
+      |                                ^~~~~~
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c:22:17: warning: variable 'isInteger' set but not used [-Wunused-but-set-variable]
+   22 |     int         isInteger = 0, isReal = 0, isPattern = 0, isSymmetric_tmp = 0;
+      |                 ^~~~~~~~~
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c: In function 'mmio_allinone':
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c:95:54: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+   95 |     MAT_PTR_TYPE* csrRowPtr_counter = (MAT_PTR_TYPE*)malloc((m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+      |                                                      ^~~~~~
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c:2:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+    1 | #include "solverchallenge26/matrix_market_reader.h"
+  +++ |+#include <stdlib.h>
+    2 | 
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c:95:54: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+   95 |     MAT_PTR_TYPE* csrRowPtr_counter = (MAT_PTR_TYPE*)malloc((m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+      |                                                      ^~~~~~
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c:95:54: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c:96:5: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+   96 |     memset(csrRowPtr_counter, 0, (m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+      |     ^~~~~~
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c:2:1: note: include '<string.h>' or provide a declaration of 'memset'
+    1 | #include "solverchallenge26/matrix_market_reader.h"
+  +++ |+#include <string.h>
+    2 | 
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c:96:5: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+   96 |     memset(csrRowPtr_counter, 0, (m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+      |     ^~~~~~
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c:96:5: note: include '<string.h>' or provide a declaration of 'memset'
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c:110:16: warning: variable 'returnvalue' set but not used [-Wunused-but-set-variable]
+  110 |         int    returnvalue;
+      |                ^~~~~~~~~~~
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c:150:5: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  150 |     memcpy(csrRowPtr_alias, csrRowPtr_counter, (m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+      |     ^~~~~~
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c:150:5: note: include '<string.h>' or provide a declaration of 'memcpy'
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c:150:5: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c:150:5: note: include '<string.h>' or provide a declaration of 'memcpy'
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c:191:5: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  191 |     free(csrColIdx_tmp);
+      |     ^~~~
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c:191:5: note: include '<stdlib.h>' or provide a declaration of 'free'
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c:191:5: warning: incompatible implicit declaration of built-in function 'free' [-Wbuiltin-declaration-mismatch]
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c:191:5: note: include '<stdlib.h>' or provide a declaration of 'free'
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c: In function 'mmio_allinone_complex':
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c:244:54: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+  244 |     MAT_PTR_TYPE* csrRowPtr_counter = (MAT_PTR_TYPE*)malloc((m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+      |                                                      ^~~~~~
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c:244:54: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c:245:5: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  245 |     memset(csrRowPtr_counter, 0, (m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+      |     ^~~~~~
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c:245:5: note: include '<string.h>' or provide a declaration of 'memset'
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c:302:5: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  302 |     memcpy(csrRowPtr_alias, csrRowPtr_counter, (m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+      |     ^~~~~~
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c:302:5: note: include '<string.h>' or provide a declaration of 'memcpy'
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c:391:5: warning: incompatible implicit declaration of built-in function 'free' [-Wbuiltin-declaration-mismatch]
+  391 |     free(csrColIdx_tmp);
+      |     ^~~~
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/highlevel.c:391:5: note: include '<stdlib.h>' or provide a declaration of 'free'
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/mmio.c: In function 'mm_read_mtx_crd_data':
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/mmio.c:293:39: warning: unused parameter 'M' [-Wunused-parameter]
+  293 | int mm_read_mtx_crd_data(FILE* f, int M, int N, int nz, int I[], int J[], double val[], MM_typecode matcode)
+      |                                   ~~~~^
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/matrix_market/mmio.c:293:46: warning: unused parameter 'N' [-Wunused-parameter]
+  293 | int mm_read_mtx_crd_data(FILE* f, int M, int N, int nz, int I[], int J[], double val[], MM_typecode matcode)
+      |                                          ~~~~^
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/diagnostics.c: In function 'load_vector':
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/diagnostics.c:323:10: warning: variable 'r' set but not used [-Wunused-but-set-variable]
+  323 |     int  r = 0;
+      |          ^
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/diagnostics.c: In function 'load_b_complex':
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/diagnostics.c:349:10: warning: variable 'r' set but not used [-Wunused-but-set-variable]
+  349 |     int  r = 0;
+      |          ^
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/diagnostics.c: In function 'load_vector_ld':
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/src/diagnostics.c:771:9: warning: variable 'r' set but not used [-Wunused-but-set-variable]
+  771 |     int r = 0;
+      |         ^
+[ 41%] Building C object CMakeFiles/sc26_io.dir/src/system_loader.c.o
+[ 50%] Linking C static library libsc26_io.a
+[ 50%] Built target sc26_io
+[ 58%] Building C object CMakeFiles/sc26_mpi_io.dir/src/mpi_system_loader.c.o
+[ 66%] Linking C static library libsc26_mpi_diagnostics.a
+[ 66%] Built target sc26_mpi_diagnostics
+[ 75%] Linking C static library libsc26_mpi_io.a
+[ 75%] Built target sc26_mpi_io
+[ 83%] Building C object CMakeFiles/MPI_iterative_solver.dir/apps/MPI_iterative_solver.c.o
+[ 91%] Building C object CMakeFiles/MPI_iterative_solver.dir/problems/problem02/solver.c.o
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/problems/problem02/solver.c: In function 'preprocess_complex':
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/problems/problem02/solver.c:203:50: warning: unused parameter 'solver' [-Wunused-parameter]
+  203 | void preprocess_complex(struct MySolver_complex* solver, const struct SC26_SolverInput* input)
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/problems/problem02/solver.c:203:89: warning: unused parameter 'input' [-Wunused-parameter]
+  203 | void preprocess_complex(struct MySolver_complex* solver, const struct SC26_SolverInput* input)
+      |                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/problems/problem02/solver.c: In function 'iterative_solver_complex':
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/problems/problem02/solver.c:208:56: warning: unused parameter 'solver' [-Wunused-parameter]
+  208 | void iterative_solver_complex(struct MySolver_complex* solver, const struct SC26_SolverInput* input)
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/problems/problem02/solver.c:208:95: warning: unused parameter 'input' [-Wunused-parameter]
+  208 | void iterative_solver_complex(struct MySolver_complex* solver, const struct SC26_SolverInput* input)
+      |                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+[100%] Linking C executable bin/MPI_iterative_solver
+[100%] Built target MPI_iterative_solver

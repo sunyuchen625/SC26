@@ -1,0 +1,7 @@
+T6_NULL job=9210509 ranks=1 threads=32 memory=100G limit=00:15:00
+T8_NULL job=9210510 dependency=afterok:9210509 ranks=1 threads=32 memory=100G limit=00:18:00
+T10_NULL job=9210511 dependency=afterok:9210510 ranks=1 threads=48 memory=200G limit=00:45:00
+Pending-job resource update: T10 job9210511 threads=32 memory=153600MiB (150GiB), limit unchanged. qhn MaxMemPerCPU=5000MiB; the revised request fits a 32-core fragment and remains above the historical 134.1GB process peak.
+Job9210511 cancelled while PENDING because Slurm retained its original MinCPUsNode/TresPerTask constraints after the update. Replacement T10_NULL job=9210520 dependency=afterok:9210510 ranks=1 threads=32 memory=150G limit=00:45:00.
+Remote frozen source: /data/home/sunyc/solverchallenge26/execution-20261001-v4
+SC26_RTOL and SC26_PROJECT_CONSTANT unset at submission.

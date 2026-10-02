@@ -1,0 +1,45 @@
+T4_PARDISO_LIBRARY_DEFAULTS interface=pardiso index_bits=32 scaling=1 matching=1
+T4_PARDISO_CONFIG mkl=2022.0.0 build=20211112 index_bits=64 ordering=2 refinement=4 pivot_exponent=13 scaling=0 matching=0 checker=1 zero_based=1 analysis_values=null
+
+=== PARDISO: solving a real nonsymmetric system ===
+Matrix checker is turned ON
+0-based array is turned ON
+PARDISO double precision computation is turned ON
+METIS algorithm at reorder step is turned ON
+
+
+Summary: ( reordering phase )
+================
+
+Times:
+======
+Time spent in calculations of symmetric matrix portrait (fulladj): 14.562986 s
+Time spent in reordering of the initial matrix (reorder)         : 22.337110 s
+Time spent in symbolic factorization (symbfct)                   : 16.307356 s
+Time spent in data preparations for factorization (parlist)      : 0.340087 s
+Time spent in allocation of internal data structures (malloc)    : 0.539664 s
+Time spent in matching/scaling                                   : 0.070913 s
+Time spent in additional calculations                            : 19.821599 s
+Total time spent                                                 : 73.979715 s
+
+Statistics:
+===========
+Parallel Direct Factorization is running on 16 OpenMP
+
+< Linear system Ax = b >
+             number of equations:           12582822
+             number of non-zeros in A:      678943908
+             number of non-zeros in A (%): 0.000429
+
+             number of right-hand sides:    1
+
+< Factors L and U >
+             number of columns for each panel: 72
+             number of independent subgraphs:  0
+< Preprocessing with state of the art partitioning metis>
+             number of supernodes:                    1119286
+             size of largest supernode:               16128
+             number of non-zeros in L:                4748370444
+             number of non-zeros in U:                4421543328
+             number of non-zeros in L+U:              9169913772
+T4_PARDISO_ANALYSE seconds=78.185226 estimated_peak_kib=121479555 factor_nnz=9169913772
