@@ -1,6 +1,6 @@
 # SolverChallenge26 · CUDA OOM!
 
-线性解法器竞赛的 CPU 求解实现、实验脚本与基线记录。更新日期：2026-10-02。
+线性解法器竞赛的 CPU 求解实现、实验脚本与基线记录。更新日期：2026-10-04。
 
 9 月归档基线中，在比赛 CPU 平台通过参考框架原始系统残差检查的结果：
 
@@ -21,6 +21,11 @@
 10 月修订将直接法分析阶段的系数指针设为 `NULL`，显式关闭数值缩放和匹配；T2 低档的投影与容差、T7 的容差已设为源码默认值。T5 默认使用压力 MGR、450 次迭代上限与 5e-9 容差，已通过正式规模余量验证。新实验记录位于 `logs/2026-10-01/execution/`。
 
 - [已批准执行计划（English）](docs/EXECUTION_PLAN_2026-10-01.md)
+- [已批准的下一阶段计划（English）](docs/reviews/STATUS_REVIEW_2026-10-02.md)
+- [下一阶段结果与同节点配置比较（English）](docs/NEXT_PHASE_RESULTS_2026-10-04.md)
+- [Claude Opus 5.5 max 下一阶段审计（English）](docs/reviews/CLAUDE_NEXT_PHASE_AUDIT_2026-10-04.md)
+- [CPU 提交候选与主办方问题单](docs/SUBMISSION_CANDIDATE_2026-10-03.md)
+- [队友独立重建与复现步骤](docs/REPRODUCE_CPU_2026-10-03.md)
 - [当前执行结果（English）](docs/EXECUTION_RESULTS_2026-10-02.md)
 - [Claude Opus 5.5 max 执行审计（English）](docs/reviews/CLAUDE_EXECUTION_AUDIT_2026-10-02.md)
 - [技术报告](docs/SC26技术报告_2026-10-02.docx)

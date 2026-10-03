@@ -1,0 +1,16 @@
+Native Chrome E-Shell screen observed on 4 October 2026, Asia/Shanghai.
+This is a transcription of visible prior terminal output, not a fresh automated query.
+Login prompt: travissun@zz-login02
+
+Submitted batch job 883172
+
+$ sacct -j 883172 -X -o JobID,State,ExitCode,Elapsed,NodeList
+JobID        State    ExitCode  Elapsed   NodeList
+883172       PENDING  0:0       00:00:00  None assigned
+
+$ cat ~/sc26_gpu_g0-883172.out ~/sc26_gpu_g0-883172.err
+cat: /public/home/travissun/sc26_gpu_g0-883172.out: No such file or directory
+cat: /public/home/travissun/sc26_gpu_g0-883172.err: No such file or directory
+
+The visible screen repeats the same PENDING accounting result twice afterwards.
+No allocated node, device output or toolchain output is visible.

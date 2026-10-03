@@ -1,0 +1,13 @@
+{
+  "checked_date": "2026-10-04",
+  "check_environment": "Existing organizer CPU connection; Miniforge 24.3.0; archive metadata and contents only",
+  "source_commit": "6b7f675ecaa6949815a3a77f95467fc35f8d5bbf",
+  "archive_sha256": "dae96e3fa5c8dc4cf8d66469b34797a84a0f3d741d0f8f4d8b4884f16206a111",
+  "local_archive_sha256_matches": true,
+  "source_manifest_sha256": "bf8148b56bf20d4c0249b24c8d9540c4212cec153760944f5b38b20137ee68a9",
+  "source_entries_checked": 118,
+  "all_source_entries_match": true,
+  "t9_guide_threads": 16,
+  "report_sha256": "12c234efccfee7b23f75ba4191c6bef3500de1a4e6d569d7689800e812471fc4",
+  "report_matches_delivered_git_blob": true
+}

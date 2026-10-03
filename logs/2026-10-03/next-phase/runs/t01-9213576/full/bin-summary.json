@@ -1,0 +1,13 @@
+{
+  "original_90_percent_groups": [
+    [
+      1,
+      10
+    ]
+  ],
+  "original_error_energy_share": 0.9879895795483219,
+  "scaled_error_energy_share": 0.5886980763839851,
+  "heuristic_trigger": false,
+  "group_count": 24,
+  "selection_rule": "Sort nonempty joint bins by descending r_sq; select the shortest prefix reaching at least 90% of total r_sq. Report its fractions of total r_sq and Dr_sq; trigger when the Dr_sq fraction is at most 10%."
+}

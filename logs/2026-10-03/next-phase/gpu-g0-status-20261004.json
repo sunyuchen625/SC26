@@ -1,0 +1,11 @@
+{
+  "job": 883172,
+  "source": "User-reported scheduler state in execution chat, 4 October 2026",
+  "state": "PENDING",
+  "requested_nodes": 1,
+  "requested_cpus": 1,
+  "requested_dcus": 1,
+  "time_limit_seconds": 300,
+  "allocation_observed": false,
+  "device_toolchain_output_observed": false
+}

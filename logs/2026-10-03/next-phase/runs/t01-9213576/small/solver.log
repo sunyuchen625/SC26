@@ -1,0 +1,31 @@
+L2 norm of b: 7.288910e+01
+Initial L2 norm of residual: 7.288910e+01
+=============================================
+
+Iters     resid.norm     conv.rate  rel.res.norm
+-----    ------------    ---------- ------------
+    1    9.807226e-02    0.001345   1.345500e-03
+    2    2.784133e-04    0.002839   3.819683e-06
+    3    7.442972e-07    0.002673   1.021136e-08
+    4    2.396056e-09    0.003219   3.287263e-11
+    5    5.976367e-12    0.002494   8.199260e-14
+
+
+Final L2 norm of residual: 5.975288e-12
+
+
+
+T1_GMRES iterations=5 scaled_relative_residual=8.197779522602e-14 rtol=1.0e-11 converged=1
+T1_PHASE_SECONDS analyse=0.000067 preprocess=0.001008 solve_cleanup=0.001150
+T1_DIAGNOSTIC solves=1 matvec=float128 statistic_reduce=long_double temperature_blocks=3 contiguous=1
+T1_RESIDUAL_TOTAL rows=291 r_norm=1.130671315468179681e-11 Dr_norm=5.974245679622436130e-12 b_norm=1.439419452418230975e+02 Db_norm=7.288909955084733459e+01 original_relative=7.855050962168441774e-14 scaled_relative=8.196349956902418096e-14
+T1_RESIDUAL_BIN block=1 rowmax_decade=-1 rows=33 r_sq=2.064412523257705222e-25 Dr_sq=1.720343769381420819e-24 b_sq=5.786800000000001239e+00 Db_sq=4.822333333333333807e+01
+T1_RESIDUAL_BIN block=1 rowmax_decade=0 rows=64 r_sq=3.570436097653412592e-23 Dr_sq=8.926090244133531480e-24 b_sq=6.740759999999999691e+03 Db_sq=1.685189999999999923e+03
+T1_RESIDUAL_BIN block=2 rowmax_decade=-1 rows=32 r_sq=1.159691228911820306e-25 Dr_sq=9.664093574265168099e-25 b_sq=4.941200000000001068e+00 Db_sq=4.117666666666667080e+01
+T1_RESIDUAL_BIN block=2 rowmax_decade=0 rows=65 r_sq=3.265671906976937312e-23 Dr_sq=8.164179767442343281e-24 b_sq=7.054769999999999708e+03 Db_sq=1.763692499999999927e+03
+T1_RESIDUAL_BIN block=3 rowmax_decade=-1 rows=32 r_sq=1.391777711653666360e-25 Dr_sq=1.159814759711388499e-24 b_sq=5.725600000000001204e+00 Db_sq=4.771333333333333784e+01
+T1_RESIDUAL_BIN block=3 rowmax_decade=0 rows=65 r_sq=5.901909416956857150e-23 Dr_sq=1.475477354239214288e-23 b_sq=6.907299999999999662e+03 Db_sq=1.726824999999999915e+03
+Q-Check || b - Ax || 2             =  1.130671e-11
+Q-Check || b - Ax || MAX           =  3.722466e-12
+Q-Check || b - Ax || 2 / || b || 2 =  7.855051e-14
+Total memory usage:                 7.2695 MB

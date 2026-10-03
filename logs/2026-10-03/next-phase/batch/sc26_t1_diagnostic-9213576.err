@@ -1,0 +1,42 @@
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+Currently Loaded Modulefiles:
+ 1) gcc/11.3.0   2) openmpi/4.1.8/gcc11.3.0   3) miniforge3/24.3.0  
++ mpicc -O3 -std=gnu99 -DMPI_USE -DITERATIVE_SOLVER -DSC26_PROBLEM_NUMBER=1 -I /data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/include -I /data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/src/problems/cpu_baseline -I /data/home/sunyc/solverchallenge26/deps/hypre/include /data/home/sunyc/solverchallenge26/next-phase-20261003/scripts/t1-residual-diagnostic.c /data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/build-t07/libsc26_mpi_io.a /data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/build-t07/libsc26_mpi_diagnostics.a /data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/build-t07/libsc26_io.a /data/home/sunyc/solverchallenge26/deps/hypre/lib64/libHYPRE.a -lquadmath -lpthread -ldl -lm -o /data/home/sunyc/solverchallenge26/next-phase-20261003/bin/t1-residual-diagnostic
++ set +x
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              c3n10
+  Local adapter:           mlx5_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   c3n10
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              c3n10
+  Local adapter:           mlx5_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   c3n10
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+[c3n10:14586] 7 more processes have sent help message help-mpi-btl-openib.txt / ib port not selected
+[c3n10:14586] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[c3n10:14586] 7 more processes have sent help message help-mpi-btl-openib.txt / error in device init

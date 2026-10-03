@@ -1,0 +1,357 @@
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+Currently Loaded Modulefiles:
+ 1) gcc/11.3.0   2) openmpi/4.1.8/gcc11.3.0   3) miniforge3/24.3.0  
+[c3n200:22495] MCW rank 0 bound to socket 0[core 0[hwt 0]]: [B/././././././././././././././././././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22495] MCW rank 1 bound to socket 0[core 1[hwt 0]]: [./B/./././././././././././././././././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22495] MCW rank 2 bound to socket 0[core 2[hwt 0]]: [././B/././././././././././././././././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22495] MCW rank 3 bound to socket 0[core 3[hwt 0]]: [./././B/./././././././././././././././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22495] MCW rank 4 bound to socket 0[core 4[hwt 0]]: [././././B/././././././././././././././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22495] MCW rank 5 bound to socket 0[core 5[hwt 0]]: [./././././B/./././././././././././././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22495] MCW rank 6 bound to socket 0[core 6[hwt 0]]: [././././././B/././././././././././././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22495] MCW rank 7 bound to socket 0[core 7[hwt 0]]: [./././././././B/./././././././././././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22495] MCW rank 8 bound to socket 0[core 8[hwt 0]]: [././././././././B/././././././././././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22495] MCW rank 9 bound to socket 0[core 9[hwt 0]]: [./././././././././B/./././././././././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22495] MCW rank 10 bound to socket 0[core 10[hwt 0]]: [././././././././././B/././././././././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22495] MCW rank 11 bound to socket 0[core 11[hwt 0]]: [./././././././././././B/./././././././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22495] MCW rank 12 bound to socket 0[core 12[hwt 0]]: [././././././././././././B/././././././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22495] MCW rank 13 bound to socket 0[core 13[hwt 0]]: [./././././././././././././B/./././././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22495] MCW rank 14 bound to socket 0[core 14[hwt 0]]: [././././././././././././././B/././././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22495] MCW rank 15 bound to socket 0[core 15[hwt 0]]: [./././././././././././././././B/./././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              c3n200
+  Local adapter:           mlx5_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   c3n200
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+[c3n200:22495] 15 more processes have sent help message help-mpi-btl-openib.txt / ib port not selected
+[c3n200:22495] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[c3n200:22495] 15 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              c3n200
+  Local adapter:           mlx5_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+[c3n200:22765] MCW rank 0 bound to socket 0[core 0[hwt 0]]: [B/././././././././././././././././././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22765] MCW rank 1 bound to socket 0[core 1[hwt 0]]: [./B/./././././././././././././././././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22765] MCW rank 2 bound to socket 0[core 2[hwt 0]]: [././B/././././././././././././././././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22765] MCW rank 3 bound to socket 0[core 3[hwt 0]]: [./././B/./././././././././././././././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22765] MCW rank 4 bound to socket 0[core 4[hwt 0]]: [././././B/././././././././././././././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+/data/home/sunyc/solverchallenge26/deps/gnu-time/time: rank-4.time: No such device
+[c3n200:22765] MCW rank 5 bound to socket 0[core 5[hwt 0]]: [./././././B/./././././././././././././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22765] MCW rank 6 bound to socket 0[core 6[hwt 0]]: [././././././B/././././././././././././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22765] MCW rank 7 bound to socket 0[core 7[hwt 0]]: [./././././././B/./././././././././././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+/data/home/sunyc/solverchallenge26/deps/gnu-time/time: rank-7.time: Input/output error
+[c3n200:22765] MCW rank 8 bound to socket 0[core 8[hwt 0]]: [././././././././B/././././././././././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orterun:wdir-not-found
+But I couldn't open the help file:
+    /data/public/software/openmpi/4.18-gcc11.3/share/openmpi/help-orterun.txt: Cannot send after transport endpoint shutdown.  Sorry!
+--------------------------------------------------------------------------
+[c3n200:22796] *** Process received signal ***
+[c3n200:22796] Signal: Segmentation fault (11)
+[c3n200:22796] Signal code: Address not mapped (1)
+[c3n200:22796] Failing at address: (nil)
+[c3n200:22796] *** Process received signal ***
+[c3n200:22796] Signal: Bus error (7)
+[c3n200:22796] Signal code: Non-existant physical address (2)
+[c3n200:22796] Failing at address: 0x2ac6f502745a
+[c3n200:22797] Signal: Segmentation fault (11)
+[c3n200:22797] Signal code: Address not mapped (1)
+[c3n200:22797] Failing at address: (nil)
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    error in device init
+But I couldn't open the help file:
+    /data/public/software/openmpi/4.18-gcc11.3/share/openmpi/help-mpi-btl-openib.txt: Cannot send after transport endpoint shutdown.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    error in device init
+But I couldn't open the help file:
+    /data/public/software/openmpi/4.18-gcc11.3/share/openmpi/help-mpi-btl-openib.txt: Cannot send after transport endpoint shutdown.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    error in device init
+But I couldn't open the help file:
+    /data/public/software/openmpi/4.18-gcc11.3/share/openmpi/help-mpi-btl-openib.txt: Cannot send after transport endpoint shutdown.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    error in device init
+But I couldn't open the help file:
+    /data/public/software/openmpi/4.18-gcc11.3/share/openmpi/help-mpi-btl-openib.txt: Cannot send after transport endpoint shutdown.  Sorry!
+--------------------------------------------------------------------------
+/data/home/sunyc/solverchallenge26/deps/gnu-time/time: rank-5.time: No such device
+[c3n200:22788] *** Process received signal ***
+[c3n200:22788] Signal: Bus error (7)
+[c3n200:22788] Signal code: Non-existant physical address (2)
+[c3n200:22788] Failing at address: 0x2ae93faa4cb4
+[c3n200:22797] *** Process received signal ***
+[c3n200:22797] Signal: Bus error (7)
+[c3n200:22797] Signal code: Non-existant physical address (2)
+[c3n200:22797] Failing at address: 0x2ac6f527cba4
+[c3n200:22797] [c3n200:22786] [ 0] /lib64/libpthread.so.0(+0xf630)[0x2ac6f6450630]
+[ 0] [c3n200:22786] [ 1] /lib64/libpthread.so.0(+0xf630)[0x2ac6f6450630]
+[c3n200:22797] [ 1] /lib64/libgcc_s.so.1(+0x116c3)[0x2ac7104116c3]
+[c3n200:22797] [ 2] /lib64/libc.so.6(dl_iterate_phdr+0xec)[0x2ac6f679a24c]
+[c3n200:22797] [ 3] /lib64/libgcc_s.so.1(_Unwind_Find_FDE+0x1bf)[0x2ac710411bff]
+[c3n200:22797] [ 4] /lib64/libgcc_s.so.1(+0xed6c)[0x2ac71040ed6c]
+[c3n200:22797] [ 5] /lib64/libgcc_s.so.1(_Unwind_Backtrace+0x69)[0x2ac71040fff9]
+[c3n200:22797] [ 6] /lib64/libc.so.6(backtrace+0x56)[0x2ac6f6771b36]
+[c3n200:22797] [ 7] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-pal.so.40(opal_backtrace_print+0x46)[0x2ac6f50a27a6]
+[c3n200:22797] [ 8] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-pal.so.40(+0x9e75d)[0x2ac6f509a75d]
+[c3n200:22797] [ 9] /lib64/libpthread.so.0(+0xf630)[0x2ac6f6450630]
+[c3n200:22797] [10] /lib64/libc.so.6(+0x16f721)[0x2ac6f67cc721]
+[c3n200:22786] [ 2] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-rte.so.40(+0x90bdc)[0x2ac6f4d68bdc]
+[c3n200:22786] [ 3] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-rte.so.40(+0x90f69)[0x2ac6f4d68f69]
+[c3n200:22786] [ 4] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-rte.so.40(+0x912dd)[0x2ac6f4d692dd]
+[c3n200:22786] [ 5] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-rte.so.40(orte_odls_base_spawn_proc+0x434)[0x2ac6f4d61e24]
+[c3n200:22786] [ 6] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-pal.so.40(opal_libevent2022_event_base_loop+0x49a)[0x2ac6f50db8aa]
+[c3n200:22786] [ 7] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-pal.so.40(+0x67cde)[0x2ac6f5063cde]
+[c3n200:22786] [ 8] /lib64/libpthread.so.0(+0x7ea5)[0x2ac6f6448ea5]
+[c3n200:22786] [ 9] /lib64/libc.so.6(clone+0x6d)[0x2ac6f675b96d]
+[c3n200:22786] *** End of error message ***
+/lib64/libc.so.6(+0x16f721)[0x2ac6f67cc721]
+[c3n200:22797] [11] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-rte.so.40(+0x90bdc)[0x2ac6f4d68bdc]
+[c3n200:22797] [12] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-rte.so.40(+0x90f69)[0x2ac6f4d68f69]
+[c3n200:22797] [13] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-rte.so.40(+0x912dd)[0x2ac6f4d692dd]
+[c3n200:22797] [14] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-rte.so.40(orte_odls_base_spawn_proc+0x434)[0x2ac6f4d61e24]
+[c3n200:22797] [15] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-pal.so.40(opal_libevent2022_event_base_loop+0x49a)[0x2ac6f50db8aa]
+[c3n200:22797] [16] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-pal.so.40(+0x67cde)[0x2ac6f5063cde]
+[c3n200:22797] [17] /lib64/libpthread.so.0(+0x7ea5)[0x2ac6f6448ea5]
+[c3n200:22797] [18] /lib64/libc.so.6(clone+0x6d)[0x2ac6f675b96d]
+[c3n200:22797] *** End of error message ***
+[c3n200:22765] MCW rank 12 bound to socket 0[core 12[hwt 0]]: [././././././././././././B/././././././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22765] MCW rank 14 bound to socket 0[core 14[hwt 0]]: [././././././././././././././B/././././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22765] MCW rank 15 bound to socket 0[core 15[hwt 0]]: [./././././././././././././././B/./././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22765] MCW rank 13 bound to socket 0[core 13[hwt 0]]: [./././././././././././././B/./././././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22765] MCW rank 16 bound to socket 0[core 16[hwt 0]]: [././././././././././././././././B/././././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22765] MCW rank 18 bound to socket 0[core 18[hwt 0]]: [././././././././././././././././././B/././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22765] MCW rank 19 bound to socket 0[core 19[hwt 0]]: [./././././././././././././././././././B/./././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22765] MCW rank 17 bound to socket 0[core 17[hwt 0]]: [./././././././././././././././././B/./././././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22765] MCW rank 20 bound to socket 0[core 20[hwt 0]]: [././././././././././././././././././././B/././././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22765] MCW rank 21 bound to socket 0[core 21[hwt 0]]: [./././././././././././././././././././././B/./././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22765] MCW rank 22 bound to socket 0[core 22[hwt 0]]: [././././././././././././././././././././././B/././././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22765] MCW rank 23 bound to socket 0[core 23[hwt 0]]: [./././././././././././././././././././././././B/./././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22765] MCW rank 24 bound to socket 0[core 24[hwt 0]]: [././././././././././././././././././././././././B/././././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22765] MCW rank 26 bound to socket 0[core 26[hwt 0]]: [././././././././././././././././././././././././././B/././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22765] MCW rank 25 bound to socket 0[core 25[hwt 0]]: [./././././././././././././././././././././././././B/./././././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22765] MCW rank 27 bound to socket 0[core 27[hwt 0]]: [./././././././././././././././././././././././././././B/./././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22765] MCW rank 28 bound to socket 0[core 28[hwt 0]]: [././././././././././././././././././././././././././././B/././././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22765] MCW rank 30 bound to socket 0[core 30[hwt 0]]: [././././././././././././././././././././././././././././././B/././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22765] MCW rank 29 bound to socket 0[core 29[hwt 0]]: [./././././././././././././././././././././././././././././B/./././././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   c3n200
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+[c3n200:22765] 6 more processes have sent help message help-mpi-btl-openib.txt / ib port not selected
+[c3n200:22765] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[c3n200:22765] 2 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+/data/home/sunyc/solverchallenge26/deps/gnu-time/time: rank-17.time: Input/output error
+[c3n200:22783] *** Process received signal ***
+[c3n200:22783] Signal: Bus error (7)
+[c3n200:22783] Signal code: Non-existant physical address (2)
+[c3n200:22783] Failing at address: 0x2b3593c7a000
+[c3n200:22989] *** Process received signal ***
+[c3n200:22989] Signal: Bus error (7)
+[c3n200:22989] Signal code: Non-existant physical address (2)
+[c3n200:22989] Failing at address: 0x2b4b0fdcc250
+[c3n200:22988] *** Process received signal ***
+[c3n200:22988] Signal: Bus error (7)
+[c3n200:22988] Signal code: Non-existant physical address (2)
+[c3n200:22988] Failing at address: 0x2b88baf0a250
+[c3n200:22988] [ 0] /lib64/libpthread.so.0(+0xf630)[0x2b88b9e74630]
+[c3n200:22988] [ 1] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-pal.so.40(opal_progress+0x0)[0x2b88baf0a250]
+[c3n200:22988] [ 2] [c3n200:22989] [ 0] /lib64/libpthread.so.0(+0xf630)[0x2b4b0ed36630]
+[c3n200:22989] [ 1] /data/public/software/openmpi/4.18-gcc11.3/lib/libmpi.so.40(ompi_mpi_init+0x7ad)[0x2b88b951331d]
+[c3n200:22988] [ 3] /data/public/software/openmpi/4.18-gcc11.3/lib/libmpi.so.40(MPI_Init+0x5e)[0x2b88b9373a0e]
+[c3n200:22988] [ 4] /data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/build-t07/bin/MPI_iterative_solver[0x4033f6]
+[c3n200:22988] [ 5] [c3n200:22783] [ 0] /lib64/libc.so.6(__libc_start_main+0xf5)[0x2b88ba5a9555]
+[c3n200:22988] [ 6] /data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/build-t07/bin/MPI_iterative_solver[0x403f7b]
+[c3n200:22988] *** End of error message ***
+/data/public/software/openmpi/4.18-gcc11.3/lib/libopen-pal.so.40(opal_progress+0x0)[0x2b4b0fdcc250]
+[c3n200:22989] [ 2] /lib64/libpthread.so.0(+0xf630)[0x2b3592b5f630]
+[c3n200:22783] [ 1] /data/public/software/openmpi/4.18-gcc11.3/lib/libmpi.so.40(ompi_mpi_init+0x7ad)[0x2b4b0e3d531d]
+[c3n200:22989] [ 3] /data/public/software/openmpi/4.18-gcc11.3/lib/libmpi.so.40(MPI_Init+0x5e)[0x2b4b0e235a0e]
+/data/public/software/openmpi/4.18-gcc11.3/lib/libopen-pal.so.40(+0xe7000)[0x2b3593c7a000]
+[c3n200:22783] [ 2] [c3n200:22989] [ 4] /data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/build-t07/bin/MPI_iterative_solver[0x4033f6]
+[c3n200:22989] [ 5] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-pal.so.40(opal_libevent2022_event_base_loop+0x265)[0x2b3593c72675]
+[c3n200:22783] [ 3] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-pal.so.40(+0x62186)[0x2b3593bf5186]
+[c3n200:22783] [ 4] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-pal.so.40(opal_progress+0x84)[0x2b3593bf52d4]
+[c3n200:22783] [ 5] /lib64/libc.so.6(__libc_start_main+0xf5)[0x2b4b0f46b555]
+[c3n200:22989] [ 6] /data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/build-t07/bin/MPI_iterative_solver[0x403f7b]
+[c3n200:22989] *** End of error message ***
+/data/public/software/openmpi/4.18-gcc11.3/lib/libmpi.so.40(ompi_mpi_init+0x7ad)[0x2b35921fe31d]
+[c3n200:22783] [ 6] /data/public/software/openmpi/4.18-gcc11.3/lib/libmpi.so.40(MPI_Init+0x5e)[0x2b359205ea0e]
+[c3n200:22783] [ 7] /data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/build-t07/bin/MPI_iterative_solver[0x4033f6]
+[c3n200:22783] [ 8] /lib64/libc.so.6(__libc_start_main+0xf5)[0x2b3593294555]
+[c3n200:22783] [ 9] /data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/build-t07/bin/MPI_iterative_solver[0x403f7b]
+[c3n200:22783] *** End of error message ***
+/data/home/sunyc/solverchallenge26/deps/gnu-time/time: rank-20.time: No such device
+[c3n200:22765] MCW rank 32 bound to socket 0[core 32[hwt 0]]: [././././././././././././././././././././././././././././././././B/././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22765] 1 more process has sent help message help-mpi-btl-openib.txt / ib port not selected
+[c3n200:22765] 8 more processes have sent help message help-mpi-btl-openib.txt / ib port not selected
+[c3n200:22765] 9 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+[c3n200:22765] *** Process received signal ***
+/data/home/sunyc/solverchallenge26/deps/gnu-time/time: rank-26.time: Input/output error
+[c3n200:22765] Signal: Bus error (7)
+[c3n200:22765] Signal code: Non-existant physical address (2)
+[c3n200:22765] Failing at address: 0x2ac6f525dbbc
+[c3n200:23163] *** Process received signal ***
+[c3n200:23163] Signal: Bus error (7)
+[c3n200:23163] Signal code: Non-existant physical address (2)
+[c3n200:23163] Failing at address: 0x2ba96bb93250
+[c3n200:23163] [ 0] /lib64/libpthread.so.0(+0xf630)[0x2ba96aafd630]
+[c3n200:23163] [ 1] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-pal.so.40(opal_progress+0x0)[0x2ba96bb93250]
+[c3n200:23163] [ 2] /data/public/software/openmpi/4.18-gcc11.3/lib/libmpi.so.40(ompi_mpi_init+0x7ad)[0x2ba96a19c31d]
+[c3n200:23163] [ 3] /data/public/software/openmpi/4.18-gcc11.3/lib/libmpi.so.40(MPI_Init+0x5e)[0x2ba969ffca0e]
+[c3n200:23163] [ 4] /data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/build-t07/bin/MPI_iterative_solver[0x4033f6]
+[c3n200:23163] [ 5] /lib64/libc.so.6(__libc_start_main+0xf5)[0x2ba96b232555]
+[c3n200:23163] [ 6] /data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/build-t07/bin/MPI_iterative_solver[0x403f7b]
+[c3n200:23163] *** End of error message ***
+[c3n200:22765] [[34039,0],0] ORTE_ERROR_LOG: Error in file base/schizo_base_stubs.c at line 141
+[c3n200:23164] *** Process received signal ***
+[c3n200:23164] Signal: Bus error (7)
+[c3n200:23164] Signal code: Non-existant physical address (2)
+[c3n200:23164] Failing at address: 0x2b3eace87250
+[c3n200:23164] [ 0] /lib64/libpthread.so.0(+0xf630)[0x2b3eabdf1630]
+[c3n200:23164] [ 1] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-pal.so.40(opal_progress+0x0)[0x2b3eace87250]
+[c3n200:23164] [ 2] /data/public/software/openmpi/4.18-gcc11.3/lib/libmpi.so.40(ompi_mpi_init+0x7ad)[0x2b3eab49031d]
+[c3n200:23164] [ 3] /data/public/software/openmpi/4.18-gcc11.3/lib/libmpi.so.40(MPI_Init+0x5e)[0x2b3eab2f0a0e]
+[c3n200:23164] [ 4] /data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/build-t07/bin/MPI_iterative_solver[0x4033f6]
+[c3n200:23164] [ 5] /lib64/libc.so.6(__libc_start_main+0xf5)[0x2b3eac526555]
+[c3n200:23164] [ 6] /data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/build-t07/bin/MPI_iterative_solver[0x403f7b]
+[c3n200:23164] *** End of error message ***
+[c3n200:22765] [[34039,0],0] ORTE_ERROR_LOG: Error in file base/odls_base_default_fns.c at line 963
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orterun:wdir-not-found
+But I couldn't open the help file:
+    /data/public/software/openmpi/4.18-gcc11.3/share/openmpi/help-orterun.txt: Cannot send after transport endpoint shutdown.  Sorry!
+--------------------------------------------------------------------------
+[c3n200:22986] *** Process received signal ***
+[c3n200:22986] Signal: Segmentation fault (11)
+[c3n200:22986] Signal code: Address not mapped (1)
+[c3n200:22986] Failing at address: (nil)
+[c3n200:22986] [ 0] /lib64/libpthread.so.0(+0xf630)[0x2ac6f6450630]
+[c3n200:22986] [ 1] /lib64/libc.so.6(+0x16f721)[0x2ac6f67cc721]
+[c3n200:22986] [ 2] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-rte.so.40(+0x90bdc)[0x2ac6f4d68bdc]
+[c3n200:22986] [ 3] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-rte.so.40(+0x90f69)[0x2ac6f4d68f69]
+[c3n200:22986] [ 4] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-rte.so.40(+0x912dd)[0x2ac6f4d692dd]
+[c3n200:22986] [ 5] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-rte.so.40(orte_odls_base_spawn_proc+0x434)[0x2ac6f4d61e24]
+[c3n200:22986] [ 6] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-pal.so.40(opal_libevent2022_event_base_loop+0x49a)[0x2ac6f50db8aa]
+[c3n200:22986] [ 7] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-pal.so.40(+0x67cde)[0x2ac6f5063cde]
+[c3n200:22986] [ 8] /lib64/libpthread.so.0(+0x7ea5)[0x2ac6f6448ea5]
+[c3n200:22986] [ 9] /lib64/libc.so.6(clone+0x6d)[0x2ac6f675b96d]
+[c3n200:22986] *** End of error message ***
+[c3n200:22765] [[34039,0],0] ORTE_ERROR_LOG: Error in file base/schizo_base_stubs.c at line 141
+[c3n200:22765] [[34039,0],0] ORTE_ERROR_LOG: Error in file base/odls_base_default_fns.c at line [c3n200:22765] [[34039,0],0] ORTE_ERROR_LOG: Error in file base/odls_base_default_fns.c at line 963
+[c3n200:22765] [[34039,0],0] ORTE_ERROR_LOG: Error in file base/odls_base_default_fns.c at line 963
+[c3n200:23165] *** Process received signal ***
+[c3n200:23165] Signal: Bus error (7)
+[c3n200:23165] Signal code: Non-existant physical address (2)
+[c3n200:23165] Failing at address: 0x2b88f4d4c000
+[c3n200:23165] [ 0] /lib64/libpthread.so.0(+0xf630)[0x2b88f3c31630]
+[c3n200:23165] [ 1] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-pal.so.40(+0xe7000)[0x2b88f4d4c000]
+[c3n200:23165] [ 2] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-pal.so.40(opal_libevent2022_event_base_loop+0x265)[0x2b88f4d44675]
+[c3n200:23165] [ 3] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-pal.so.40(+0x62186)[0x2b88f4cc7186]
+[c3n200:23165] [ 4] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-pal.so.40(opal_progress+0x84)[0x2b88f4cc72d4]
+[c3n200:23165] [ 5] /data/public/software/openmpi/4.18-gcc11.3/lib/libmpi.so.40(ompi_mpi_init+0x7ad)[0x2b88f32d031d]
+[c3n200:23165] [ 6] --------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orterun:wdir-not-found
+But I couldn't open the help file:
+    /data/public/software/openmpi/4.18-gcc11.3/share/openmpi/help-orterun.txt: Cannot send after transport endpoint shutdown.  Sorry!
+--------------------------------------------------------------------------
+[c3n200:23168] *** Process received signal ***
+[c3n200:23168] Signal: Segmentation fault (11)
+[c3n200:23168] Signal code: Address not mapped (1)
+[c3n200:23168] Failing at address: (nil)
+[c3n200:23168] [ 0] /lib64/libpthread.so.0(+0xf630)[0x2ac6f6450630]
+[c3n200:23168] [ 1] /lib64/libc.so.6(+0x16f721)[0x2ac6f67cc721]
+[c3n200:23168] [ 2] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-rte.so.40(+0x90bdc)[0x2ac6f4d68bdc]
+[c3n200:23168] [ 3] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-rte.so.40(+0x90f69)[0x2ac6f4d68f69]
+[c3n200:23168] [ 4] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-rte.so.40(+0x912dd)[0x2ac6f4d692dd]
+[c3n200:23168] [ 5] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-rte.so.40(orte_odls_base_spawn_proc+0x434)[0x2ac6f4d61e24]
+[c3n200:23168] [ 6] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-pal.so.40(opal_libevent2022_event_base_loop+0x49a)[0x2ac6f50db8aa]
+[c3n200:23168] [ 7] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-pal.so.40(+0x67cde)[0x2ac6f5063cde]
+[c3n200:23168] [ 8] /lib64/libpthread.so.0(+0x7ea5)[0x2ac6f6448ea5]
+[c3n200:23168] [ 9] /lib64/libc.so.6(clone+0x6d)[0x2ac6f675b96d]
+[c3n200:23168] *** End of error message ***
+sh: /data/home/sunyc/solverchallenge26/deps/gnu-time/time: Cannot send after transport endpoint shutdown
+sh: line 0: exec: /data/home/sunyc/solverchallenge26/deps/gnu-time/time: cannot execute: Cannot send after transport endpoint shutdown
+sh: /data/home/sunyc/solverchallenge26/deps/gnu-time/time: Cannot send after transport endpoint shutdown
+sh: line 0: exec: /data/home/sunyc/solverchallenge26/deps/gnu-time/time: cannot execute: Cannot send after transport endpoint shutdown
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orterun:wdir-not-found
+But I couldn't open the help file:
+    /data/public/software/openmpi/4.18-gcc11.3/share/openmpi/help-orterun.txt: Cannot send after transport endpoint shutdown.  Sorry!
+--------------------------------------------------------------------------
+[c3n200:22985] *** Process received signal ***
+[c3n200:22985] Signal: Segmentation fault (11)
+[c3n200:22985] Signal code: Address not mapped (1)
+[c3n200:22985] Failing at address: (nil)
+[c3n200:22985] [ 0] /lib64/libpthread.so.0(+0xf630)[0x2ac6f6450630]
+[c3n200:22985] [ 1] /lib64/libc.so.6(+0x16f721)[0x2ac6f67cc721]
+[c3n200:22985] [ 2] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-rte.so.40(+0x90bdc)[0x2ac6f4d68bdc]
+[c3n200:22985] [ 3] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-rte.so.40(+0x90f69)[0x2ac6f4d68f69]
+[c3n200:22985] [ 4] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-rte.so.40(+0x912dd)[0x2ac6f4d692dd]
+[c3n200:22985] [ 5] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-rte.so.40(orte_odls_base_spawn_proc+0x434)[0x2ac6f4d61e24]
+[c3n200:22985] [ 6] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-pal.so.40(opal_libevent2022_event_base_loop+0x49a)[0x2ac6f50db8aa]
+[c3n200:22985] [ 7] /data/public/software/openmpi/4.18-gcc11.3/lib/libopen-pal.so.40(+0x67cde)[0x2ac6f5063cde]
+[c3n200:22985] [ 8] /lib64/libpthread.so.0(+0x7ea5)[0x2ac6f6448ea5]
+[c3n200:22985] [ 9] /lib64/libc.so.6(clone+0x6d)[0x2ac6f675b96d]
+[c3n200:22985] *** End of error message ***
+sh: /data/home/sunyc/solverchallenge26/deps/gnu-time/time: Cannot send after transport endpoint shutdown
+sh: line 0: exec: /data/home/sunyc/solverchallenge26/deps/gnu-time/time: cannot execute: Cannot send after transport endpoint shutdown
+/data/public/software/openmpi/4.18-gcc11.3/lib/libmpi.so.40(MPI_Init+0x5e)[0x2b88f3130a0e]
+[c3n200:23165] [ 7] /data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/build-t07/bin/MPI_iterative_solver[0x4033f6]
+[c3n200:23165] [ 8] /lib64/libc.so.6(__libc_start_main+0xf5)[0x2b88f4366555]
+[c3n200:23165] [ 9] /data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/build-t07/bin/MPI_iterative_solver[0x403f7b]
+[c3n200:23165] *** End of error message ***
+[c3n200:22765] MCW rank 31 bound to socket 0[core 31[hwt 0]]: [./././././././././././././././././././././././././././././././B/./././././././././././././././.][./././././././././././././././././././././././././././././././././././././././././././././././.]
+[c3n200:22765] [[34039,0],0] ORTE_ERROR_LOG: Error in file base/schizo_base_stubs.c at line 141
+[c3n200:22765] [[34039,0],0] ORTE_ERROR_LOG: Error in file base/odls_base_default_fns.c at line [c3n200:22765] [[34039,0],0] ORTE_ERROR_LOG: Error in file base/odls_base_default_fns.c at line 963
+[c3n200:22765] [[34039,0],0] ORTE_ERROR_LOG: Error in file base/odls_base_default_fns.c at line 963
+[c3n200:22765] [[34039,0],0] ORTE_ERROR_LOG: Error in file base/schizo_base_stubs.c at line 141
+[c3n200:22765] [[34039,0],0] ORTE_ERROR_LOG: Error in file base/schizo_base_stubs.c at line 141
+ 63
+[c3n200:22765] [[34039,0],0] ORTE_ERROR_LOG: Error in file base/schizo_base_stubs.c at line 141
+[c3n200:22765] [[34039,0],0] ORTE_ERROR_LOG: Error in file base/odls_base_default_fns.c at line 963
+[c3n200:22765] [[34039,0],0] ORTE_ERROR_LOG: Error in file base/schizo_base_stubs.c at line 141
+[c3n200:22765] [[34039,0],0] ORTE_ERROR_LOG: Error in file base/odls_base_default_fns.c at line 963
+[c3n200:22765] [[34039,0],0] ORTE_ERROR_LOG: Error in file base/schizo_base_stubs.c at line 141
+[c3n200:22765] [[34039,0],0] ORTE_ERROR_LOG: Error in file base/odls_base_default_fns.c at line 963
+[c3n200:22765] [[34039,0],0] ORTE_ERROR_LOG: Error in file base/schizo_base_stubs.c at line 141
+[c3n200:22765] [[34039,0],0] ORTE_ERROR_LOG: Error in file base/odls_base_default_fns.c at line 963
+[c3n200:22765] [[34039,0],0] ORTE_ERROR_LOG: Error in file base/schizo_base_stubs.c at line 141
+[c3n200:22765] [[34039,0],0] ORTE_ERROR_LOG: Error in file base/odls_base_default_fns.c at line 963
+[c3n200:22765] [[34039,0],0] ORTE_ERROR_LOG: Error in file base/schizo_base_stubs.c at line 141
+[c3n200:22765] [c3n200:22765] [[34039,0],0] ORTE_ERROR_LOG: Error in file base/schizo_base_stubs.c at line 141
+ 63
+[c3n200:22765] [[34039,0],0] ORTE_ERROR_LOG: Error in file base/schizo_base_stubs.c at line 141
+[ 0] [c3n200:22765] [[34039,0],0] ORTE_ERROR_LOG: Error in file base/odls_base_default_fns.c at line 963
+/lib64/libpthread.so.0(+0xf630)[0x2ac6f6450630]
+[c3n200:22765] [ 1] /lib64/libc.so.6(_IO_vfprintf+0x4a79)[0x2ac6f66aa079]

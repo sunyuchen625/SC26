@@ -1,0 +1,6 @@
+Evidence: native Chrome E-Shell screenshot observed after the user executed the requested G0 command, 4 October 2026. Region: 华中一区【A区】. Linux user: travissun. Login node: zz-login04. Home shown by pwd: /public/home/travissun.
+Request: one node, one CPU, one Hygon DCU, 5-minute run limit, srun --immediate=10 on hx1hdnormal.
+Observed terminal output:
+srun: job 882897 queued and waiting for resources
+srun: error: Unable to allocate resources: Requested nodes are busy
+The terminal returned to the login-node prompt. No allocated device/compiler output was produced by this attempt.

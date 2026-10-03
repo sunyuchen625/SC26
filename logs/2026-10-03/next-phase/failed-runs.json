@@ -1,0 +1,28 @@
+{
+  "results": [
+    {
+      "job": 9213582,
+      "problem": "07",
+      "rhs": "01",
+      "ranks": 16,
+      "threads": 1,
+      "run": "runs/t07-9213582/16-ranks",
+      "threshold": 1e-06,
+      "job_state": [
+        "FAILED",
+        "1:0",
+        "00:10:54",
+        "c3n200"
+      ],
+      "batch_log": "batch/sc26_launch_compare-9213582.out",
+      "source_manifest": "../../2026-10-01/execution/source/v19-selected/source-sha256.txt",
+      "cmake_cache": "../../2026-10-01/execution/config/v19-selected/build-t07/CMakeCache.txt",
+      "cache_sha256": "fe24ffb9970e7b7d6b9f8734bbfeecf96fa0c3dc2719b73b685a30abcebf5747",
+      "binary_sha256": "fb0dee16980b39839a2d4b84486e4a1938f48911e50e62a27c19de859aba7865",
+      "launch_script": "source/launch-comparison-v2.sbatch",
+      "launch_script_sha256": "0d55fdd506adec27e3f801bf32870b7353250d608064b5b3f099bbf778c49538",
+      "binding": "core",
+      "mapping": "core"
+    }
+  ]
+}

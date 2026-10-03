@@ -1,0 +1,66 @@
+{
+  "results": [
+    {
+      "job": 9213582,
+      "problem": "07",
+      "rhs": "01",
+      "metric": "relative",
+      "original_float128_residual_after_fifth_solve": 1.60145e-09,
+      "numerical_pass": true,
+      "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=1.601450000000e-09 threshold=1.0e-06",
+      "checker_error": "",
+      "job_state": [
+        "FAILED",
+        "1:0",
+        "00:10:54",
+        "c3n200"
+      ],
+      "job_complete": false,
+      "process_exit": 0,
+      "rank_process_exits": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sum_full_process_peak_bytes": 67249000448,
+      "memory_pass": true,
+      "framework_memory_MiB": [
+        44568.7695
+      ],
+      "phase_count": 5,
+      "phase_means_seconds": [
+        0.0087038,
+        3.6827844,
+        13.425419999999999
+      ],
+      "framework_mean_seconds": 17.119623,
+      "perturbed_pivots": [],
+      "internal_convergence": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "analysis_scaling_matching": [],
+      "provenance_verified": true,
+      "execution_pass": false,
+      "engineering_pass": null,
+      "accepted": false
+    }
+  ],
+  "boundaries": "Original float128 check follows solve five; rank peaks are summed and need not coincide. Pivots and internal convergence are separate diagnostics. Acceptance here does not establish official eligibility."
+}

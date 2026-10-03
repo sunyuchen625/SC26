@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-04",
+  "native_cli": "2.1.288",
+  "subscription": "Claude Pro",
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "available_tools": [
+    "Glob",
+    "Grep",
+    "Read"
+  ],
+  "completed_reviews": [
+    {
+      "session_id": "d6155db9-0942-426a-9584-d62eeff391c4",
+      "duration_ms": 623532,
+      "turns": 87,
+      "local_tool_calls": 86,
+      "verdict": "PASS",
+      "web_search_requests": 0,
+      "web_fetch_requests": 0,
+      "permission_denials": 0,
+      "final_usage_windows": {
+        "five_hour": {
+          "utilization": 0.21,
+          "resetsAt": 1791072600
+        },
+        "seven_day": {
+          "utilization": 0.27,
+          "resetsAt": 1791489600
+        }
+      },
+      "scope_limit": "Three repository-root searches covered the private-application subtree; no content from it was returned."
+    },
+    {
+      "session_id": "aa5ee0f1-7ea2-4bf8-a79d-c109418ac38e",
+      "duration_ms": 567201,
+      "turns": 78,
+      "local_tool_calls": 77,
+      "verdict": "PASS",
+      "web_search_requests": 0,
+      "web_fetch_requests": 0,
+      "permission_denials": 0,
+      "final_usage_windows": {
+        "five_hour": {
+          "utilization": 0.64,
+          "resetsAt": 1791072600
+        },
+        "seven_day": {
+          "utilization": 0.3,
+          "resetsAt": 1791489600
+        }
+      },
+      "all_tool_paths_in_workspace": true,
+      "private_original_calls": 0,
+      "repo_root_searches": 0,
+      "outside_workspace_calls": 0
+    }
+  ]
+}

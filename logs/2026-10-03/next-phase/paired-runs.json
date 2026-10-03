@@ -1,0 +1,100 @@
+{
+  "results": [
+    {
+      "job": 9213575,
+      "problem": "07",
+      "rhs": "01",
+      "ranks": 16,
+      "threads": 1,
+      "run": "runs/t07-9213575/16-ranks",
+      "threshold": 1e-06,
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:10:10",
+        "c3n182"
+      ],
+      "batch_log": "batch/sc26_launch_compare-9213575.out",
+      "source_manifest": "../../2026-10-01/execution/source/v19-selected/source-sha256.txt",
+      "cmake_cache": "../../2026-10-01/execution/config/v19-selected/build-t07/CMakeCache.txt",
+      "cache_sha256": "fe24ffb9970e7b7d6b9f8734bbfeecf96fa0c3dc2719b73b685a30abcebf5747",
+      "binary_sha256": "fb0dee16980b39839a2d4b84486e4a1938f48911e50e62a27c19de859aba7865",
+      "launch_script": "source/launch-comparison-v1.sbatch",
+      "launch_script_sha256": "11584dfa3ac4cc6571122baaa180769f95904ab2656bb403c7e450e72c173596",
+      "binding": "core",
+      "mapping": "core"
+    },
+    {
+      "job": 9213575,
+      "problem": "07",
+      "rhs": "01",
+      "ranks": 96,
+      "threads": 1,
+      "run": "runs/t07-9213575/96-ranks",
+      "threshold": 1e-06,
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:10:10",
+        "c3n182"
+      ],
+      "batch_log": "batch/sc26_launch_compare-9213575.out",
+      "source_manifest": "../../2026-10-01/execution/source/v19-selected/source-sha256.txt",
+      "cmake_cache": "../../2026-10-01/execution/config/v19-selected/build-t07/CMakeCache.txt",
+      "cache_sha256": "fe24ffb9970e7b7d6b9f8734bbfeecf96fa0c3dc2719b73b685a30abcebf5747",
+      "binary_sha256": "fb0dee16980b39839a2d4b84486e4a1938f48911e50e62a27c19de859aba7865",
+      "launch_script": "source/launch-comparison-v1.sbatch",
+      "launch_script_sha256": "11584dfa3ac4cc6571122baaa180769f95904ab2656bb403c7e450e72c173596",
+      "binding": "core",
+      "mapping": "core"
+    },
+    {
+      "job": 9213575,
+      "problem": "02",
+      "rhs": "01",
+      "ranks": 16,
+      "threads": 1,
+      "run": "runs/t02-9213575/16-ranks",
+      "threshold": 1e-06,
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:10:10",
+        "c3n182"
+      ],
+      "batch_log": "batch/sc26_launch_compare-9213575.out",
+      "source_manifest": "../../2026-10-01/execution/source/v19-selected/source-sha256.txt",
+      "cmake_cache": "../../2026-10-01/execution/config/v19-selected/build-t02/CMakeCache.txt",
+      "cache_sha256": "04a5885cdcde0a0e22ec45a2eae704d1eea0fdb92386a03bbc7682fb17cd7b17",
+      "binary_sha256": "bc629226457cff919173680a3d20713fa5a51f9a3c74b7369c6ef742d52c9d4b",
+      "launch_script": "source/launch-comparison-v1.sbatch",
+      "launch_script_sha256": "11584dfa3ac4cc6571122baaa180769f95904ab2656bb403c7e450e72c173596",
+      "binding": "core",
+      "mapping": "core"
+    },
+    {
+      "job": 9213575,
+      "problem": "02",
+      "rhs": "01",
+      "ranks": 32,
+      "threads": 1,
+      "run": "runs/t02-9213575/32-ranks",
+      "threshold": 1e-06,
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "00:10:10",
+        "c3n182"
+      ],
+      "batch_log": "batch/sc26_launch_compare-9213575.out",
+      "source_manifest": "../../2026-10-01/execution/source/v19-selected/source-sha256.txt",
+      "cmake_cache": "../../2026-10-01/execution/config/v19-selected/build-t02/CMakeCache.txt",
+      "cache_sha256": "04a5885cdcde0a0e22ec45a2eae704d1eea0fdb92386a03bbc7682fb17cd7b17",
+      "binary_sha256": "bc629226457cff919173680a3d20713fa5a51f9a3c74b7369c6ef742d52c9d4b",
+      "launch_script": "source/launch-comparison-v1.sbatch",
+      "launch_script_sha256": "11584dfa3ac4cc6571122baaa180769f95904ab2656bb403c7e450e72c173596",
+      "binding": "core",
+      "mapping": "core"
+    }
+  ]
+}
