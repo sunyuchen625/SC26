@@ -9,6 +9,10 @@
 #SBATCH --output=sc26_gpu_g0-%j.out
 #SBATCH --error=sc26_gpu_g0-%j.err
 set -e
+if [[ -z ${SLURM_JOB_ID:-} || -z ${SLURMD_NODENAME:-} || $(hostname -s) != "$SLURMD_NODENAME" ]]; then
+    printf 'Submit with sbatch; execution requires the allocated compute node.\n' >&2
+    exit 2
+fi
 export LC_ALL=C
 printf 'JOB_ID=%s NODELIST=%s CPUS_PER_TASK=%s\n' "$SLURM_JOB_ID" "$SLURM_JOB_NODELIST" "$SLURM_CPUS_PER_TASK"
 hostname

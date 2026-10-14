@@ -1,0 +1,211 @@
+User-supplied concatenated sc26_gpu_g0-883172.out and .err text, 4 October 2026.
+Spacing normalized during transcription. The RUNNING snapshot was captured inside the job; final sacct was COMPLETED 0:0, elapsed 00:00:02.
+
+JOB_ID=883172 NODELIST=f11r1n20 CPUS_PER_TASK=1
+f11r1n20
+travissun
+/public/home/travissun
+JobId=883172 JobName=sc26_gpu_g0
+   UserId=travissun(424871) GroupId=ac3k88uz8y(371608) MCS_label=N/A
+   Priority=1143 Nice=0 Account=ac3k88uz8y QOS=user_travissun
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:01 TimeLimit=00:05:00 TimeMin=N/A
+   SubmitTime=2026-10-04T03:06:21 EligibleTime=2026-10-04T03:06:21
+   AccrueTime=2026-10-04T03:06:21
+   StartTime=2026-10-04T03:39:19 EndTime=2026-10-04T03:44:19 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-04T03:39:19 Scheduler=Main
+   Partition=hx1hdnormal AllocNode:Sid=zz-login02:1399233
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=f11r1n20
+   BatchHost=f11r1n20
+   StepMgrEnabled=Yes
+   NumNodes=1 NumCPUs=1 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=1,mem=3800M,node=1,billing=1,gres/dcu=1
+   AllocTRES=cpu=1,mem=3800M,node=1,billing=1,gres/dcu=1
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=1 MinMemoryCPU=3800M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=(null)
+   WorkDir=/public/home/travissun
+   StdErr=/public/home/travissun/sc26_gpu_g0-883172.err
+   StdIn=/dev/null
+   StdOut=/public/home/travissun/sc26_gpu_g0-883172.out
+   GresEnforceBind=Yes
+   TresPerNode=gres/dcu:Hygon:1
+   TresPerTask=cpu=1
+
+compiler/cmake/3.15.6
+compiler/cmake/3.23.3
+compiler/gcc/9.3.0
+compiler/gcc/10.3.0
+compiler/gcc/11.4.0
+compiler/gcc/12.2.0
+compiler/intel/2013.2.146
+compiler/intel/2015.2.164
+compiler/intel/2017.5.239
+compiler/intel/2018.5.274
+compiler/intel/2020.1.217
+compiler/intel/2021.3.0
+compiler/intel/oneapi/oneapi-2021.3.0
+compiler/intel/oneapi/oneapi-2023.2.0
+compiler/intel/oneapi/oneapi-2024.0.1
+mathlib/fftw/3.3.10-intelmpi_21-double
+mathlib/fftw/3.3.10-intelmpi_21-single
+mathlib/pnetcdf/1.12.0-impi-2017
+mathlib/pnetcdf/1.12.2-impi-2021
+mpi/hpcx/2.7.4-gcc-7.3.1
+mpi/hpcx/gcc-7.3.1
+mpi/hpcx/intel-2017.5.239
+mpi/intelmpi/5.0.2.044
+mpi/intelmpi/2017.4.239
+mpi/intelmpi/2017.5.239
+mpi/intelmpi/2018.4.274
+mpi/intelmpi/2020.1.217
+mpi/intelmpi/2021.3.0
+mpi/mpich/3.1.3-intel2013
+mpi/mpich/3.3.2-gcc-7.3.1
+mpi/mpich/4.1.2-gcc-9.3.0
+mpi/openmpi/2.1.6/gcc-4.8.5
+mpi/openmpi/3.1.4-intel-2017
+mpi/openmpi/openmpi-3.1.6
+mpi/openmpi/openmpi-4.0.5-gcc7.3.1
+mpi/openmpi/openmpi-4.1.5-gcc9.3.0
+sghpc-mpi-gcc/26.3
+app/rccl/dtk-25.04/26.01.1
+compiler/cmake/3.24.1
+compiler/dtk/24.04.2
+compiler/dtk/24.04.3
+compiler/dtk/25.04
+compiler/dtk/25.04.1
+compiler/dtk/25.04.2
+compiler/dtk/25.04.4
+compiler/dtk/26.04
+hwloc-dtk_2604/2.12.2
+libevent-dtk_2604/2.1.12
+mathlib/hdf5/1.12.2-dtk-openmpi
+mathlib/netcdf/4.8.1-dtk-openmpi
+mpi/hpcx/2.18.0/gcc-8.5.0/mlnx
+mpi/hpcx/2.18.0/gcc-8.5.0/shca
+mpi/intelmpi/2021.14.0
+mpi/intelmpi/2021.17.2.94/mlnx
+mpi/openmpi/4.1.8/gcc-12.2.0/mlnx
+mpi/openmpi/4.1.8/gcc-12.2.0/shca
+mpi/openmpi/5.0.3/clang/mlnx
+mpi/openmpi/5.0.3/clang/shca
+mpi/openmpi/5.0.3/gcc-8.5.0/mlnx
+mpi/openmpi/5.0.3/gcc-8.5.0/shca
+mpi/ucx/1.18.0/dtk-25.04.4/mlnx
+mpi/ucx/1.18.0/dtk-25.04.4/shca
+mpi/ucx/1.18.0/dtk-25.04/mlnx
+mpi/ucx/1.18.0/dtk-25.04/shca
+pmix-dtk_2604/5.0.8
+ucx-dtk_2504_mlnx/1.18.0
+ucx-dtk_2604/1.17.0
+Currently Loaded Modulefiles:
+ 1) compiler/dtk/25.04.2
+dcc version: 25.08.0-0
+clang version 17.0.0 (http://10.15.3.7/dcutoolkit/driverruntime/llvm-project.git d21995155f60c427e7df118689262a073369149a)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /public/software/compiler/dtk-25.04.2/llvm/bin
+
+================================= System Management Interface ==================================
+================================================================================================
+HCU     Temp     AvgPwr     Perf     PwrCap     VRAM%      HCU%      Dec%      Enc%      Mode
+0       51.0C    461.0W    auto     1000.0W    0%         0.0%      0.0%      0.0%      Normal
+================================================================================================
+======================================== End of SMI Log ========================================
+
+HIP_VISIBLE_DEVICES=0 ROCR_VISIBLE_DEVICES=0 CUDA_VISIBLE_DEVICES=0
+  Name:                    Hygon C86 Processor
+  Marketing Name:          Hygon C86 Processor
+  Vendor Name:             HygonGenuine
+  Queue Min Size:          0(0x0)
+  Queue Max Size:          0(0x0)
+  Cacheline Size:          64(0x40)
+      Size:                    131359272(0x7d46228) KB
+      Size:                    131359272(0x7d46228) KB
+      Size:                    131359272(0x7d46228) KB
+  Name:                    Hygon C86 Processor
+  Marketing Name:          Hygon C86 Processor
+  Vendor Name:             HygonGenuine
+  Queue Min Size:          0(0x0)
+  Queue Max Size:          0(0x0)
+  Cacheline Size:          64(0x40)
+      Size:                    132113768(0x7dfe568) KB
+      Size:                    132113768(0x7dfe568) KB
+      Size:                    132113768(0x7dfe568) KB
+  Name:                    Hygon C86 Processor
+  Marketing Name:          Hygon C86 Processor
+  Vendor Name:             HygonGenuine
+  Queue Min Size:          0(0x0)
+  Queue Max Size:          0(0x0)
+  Cacheline Size:          64(0x40)
+      Size:                    132071728(0x7df4130) KB
+      Size:                    132071728(0x7df4130) KB
+      Size:                    132071728(0x7df4130) KB
+  Name:                    Hygon C86 Processor
+  Marketing Name:          Hygon C86 Processor
+  Vendor Name:             HygonGenuine
+  Queue Min Size:          0(0x0)
+  Queue Max Size:          0(0x0)
+  Cacheline Size:          64(0x40)
+      Size:                    132113768(0x7dfe568) KB
+      Size:                    132113768(0x7dfe568) KB
+      Size:                    132113768(0x7dfe568) KB
+  Name:                    Hygon C86 Processor
+  Marketing Name:          Hygon C86 Processor
+  Vendor Name:             HygonGenuine
+  Queue Min Size:          0(0x0)
+  Queue Max Size:          0(0x0)
+  Cacheline Size:          64(0x40)
+      Size:                    132113768(0x7dfe568) KB
+      Size:                    132113768(0x7dfe568) KB
+      Size:                    132113768(0x7dfe568) KB
+  Name:                    Hygon C86 Processor
+  Marketing Name:          Hygon C86 Processor
+  Vendor Name:             HygonGenuine
+  Queue Min Size:          0(0x0)
+  Queue Max Size:          0(0x0)
+  Cacheline Size:          64(0x40)
+      Size:                    132110364(0x7dfd81c) KB
+      Size:                    132110364(0x7dfd81c) KB
+      Size:                    132110364(0x7dfd81c) KB
+  Name:                    Hygon C86 Processor
+  Marketing Name:          Hygon C86 Processor
+  Vendor Name:             HygonGenuine
+  Queue Min Size:          0(0x0)
+  Queue Max Size:          0(0x0)
+  Cacheline Size:          64(0x40)
+      Size:                    132113768(0x7dfe568) KB
+      Size:                    132113768(0x7dfe568) KB
+      Size:                    132113768(0x7dfe568) KB
+  Name:                    Hygon C86 Processor
+  Marketing Name:          Hygon C86 Processor
+  Vendor Name:             HygonGenuine
+  Queue Min Size:          0(0x0)
+  Queue Max Size:          0(0x0)
+  Cacheline Size:          64(0x40)
+      Size:                    132113768(0x7dfe568) KB
+      Size:                    132113768(0x7dfe568) KB
+      Size:                    132113768(0x7dfe568) KB
+  Name:                    gfx936
+  Marketing Name:          BW
+  Vendor Name:             C-3000
+  Queue Min Size:          64(0x40)
+  Queue Max Size:          131072(0x20000)
+  Cacheline Size:          64(0x40)
+  Wavefront Size:          64(0x40)
+  Workgroup Max Size:      1024(0x400)
+  Grid Max Size:           4294967295(0xffffffff)
+      Size:                    67092480(0x3ffc000) KB
+      Size:                    67092480(0x3ffc000) KB
+      Size:                    67092480(0x3ffc000) KB
+      Size:                    64(0x40) KB
+      Name:                    amdgcn-amd-amdhsa--gfx936:sramecc+:xnack-
+      Workgroup Max Size:      1024(0x400)
+      Grid Max Size:           4294967295(0xffffffff)
+      FBarrier Max Size:       32
+MPI executable unavailable in the current module environment

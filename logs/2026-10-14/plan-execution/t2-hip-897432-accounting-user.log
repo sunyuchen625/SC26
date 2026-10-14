@@ -1,0 +1,5 @@
+Source: user-supplied E-Shell accounting on 14 October 2026, Asia/Shanghai; native screenshot shows the same record.
+[travissun@zz-login02 ~]$ sacct -j 897432 -X -o JobID,State,ExitCode,Elapsed,NodeList,AllocCPUS
+JobID                 State ExitCode    Elapsed        NodeList  AllocCPUS
+---------------- ---------- -------- ---------- --------------- ----------
+897432            COMPLETED      0:0   00:00:20        f11r2n10          4

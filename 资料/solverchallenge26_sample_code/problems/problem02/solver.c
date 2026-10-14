@@ -50,6 +50,12 @@ void analyse(struct MySolver* solver, const struct SC26_SolverInput* input)
 {
     double started = MPI_Wtime();
     HYPRE_CALL(HYPRE_Initialize());
+#ifdef HYPRE_USING_HIP
+    HYPRE_CALL(HYPRE_SetMemoryLocation(HYPRE_MEMORY_HOST));
+    HYPRE_CALL(HYPRE_DeviceInitialize());
+    HYPRE_CALL(HYPRE_PrintDeviceInfo());
+    HYPRE_CALL(HYPRE_MemoryPrintUsage(input->comm, 1, "T2_HIP_ANALYSE", -1));
+#endif
     solver->tolerance = 1e-7;
     const char *setting = getenv("SC26_RTOL");
     if (setting) {
@@ -85,7 +91,6 @@ void preprocess(struct MySolver* solver, const struct SC26_SolverInput* input)
     HYPRE_CALL(HYPRE_IJMatrixSetValues(solver->matrix, input->local_n,
         solver->row_sizes, solver->rows, input->col_idx, input->val));
     HYPRE_CALL(HYPRE_IJMatrixAssemble(solver->matrix));
-    HYPRE_CALL(HYPRE_IJMatrixGetObject(solver->matrix, (void **)&solver->par_matrix));
     HYPRE_CALL(HYPRE_IJVectorCreate(input->comm, lower, upper, &solver->rhs));
     HYPRE_CALL(HYPRE_IJVectorSetObjectType(solver->rhs, HYPRE_PARCSR));
     HYPRE_CALL(HYPRE_IJVectorInitialize(solver->rhs));
@@ -107,16 +112,37 @@ void preprocess(struct MySolver* solver, const struct SC26_SolverInput* input)
         projected_rhs ? projected_rhs : input->b));
     free(projected_rhs);
     HYPRE_CALL(HYPRE_IJVectorAssemble(solver->rhs));
-    HYPRE_CALL(HYPRE_IJVectorGetObject(solver->rhs, (void **)&solver->par_rhs));
     HYPRE_CALL(HYPRE_IJVectorCreate(input->comm, lower, upper, &solver->solution));
     HYPRE_CALL(HYPRE_IJVectorSetObjectType(solver->solution, HYPRE_PARCSR));
     HYPRE_CALL(HYPRE_IJVectorInitialize(solver->solution));
     HYPRE_CALL(HYPRE_IJVectorSetValues(solver->solution, input->local_n, solver->rows, input->x));
     HYPRE_CALL(HYPRE_IJVectorAssemble(solver->solution));
+
+#ifdef HYPRE_USING_HIP
+    HYPRE_CALL(HYPRE_IJMatrixMigrate(solver->matrix, HYPRE_MEMORY_DEVICE));
+    HYPRE_CALL(HYPRE_IJVectorMigrate(solver->rhs, HYPRE_MEMORY_DEVICE));
+    HYPRE_CALL(HYPRE_IJVectorMigrate(solver->solution, HYPRE_MEMORY_DEVICE));
+    HYPRE_CALL(HYPRE_SetMemoryLocation(HYPRE_MEMORY_DEVICE));
+    HYPRE_CALL(HYPRE_SetExecutionPolicy(HYPRE_EXEC_DEVICE));
+    HYPRE_MemoryLocation location;
+    HYPRE_ExecutionPolicy policy;
+    HYPRE_CALL(HYPRE_GetMemoryLocation(&location));
+    HYPRE_CALL(HYPRE_GetExecutionPolicy(&policy));
+    printf("T2_HIP_POLICY memory_device=%d execution_device=%d\n",
+           location == HYPRE_MEMORY_DEVICE, policy == HYPRE_EXEC_DEVICE);
+#endif
+    HYPRE_CALL(HYPRE_IJMatrixGetObject(solver->matrix, (void **)&solver->par_matrix));
+    HYPRE_CALL(HYPRE_IJVectorGetObject(solver->rhs, (void **)&solver->par_rhs));
     HYPRE_CALL(HYPRE_IJVectorGetObject(solver->solution, (void **)&solver->par_solution));
 
     HYPRE_CALL(HYPRE_BoomerAMGCreate(&solver->amg));
+#ifdef HYPRE_USING_HIP
+    HYPRE_CALL(HYPRE_BoomerAMGSetCoarsenType(solver->amg, 8));
+    HYPRE_CALL(HYPRE_BoomerAMGSetRAP2(solver->amg, 1));
+    HYPRE_CALL(HYPRE_BoomerAMGSetKeepTranspose(solver->amg, 1));
+#else
     HYPRE_CALL(HYPRE_BoomerAMGSetCoarsenType(solver->amg, 10));
+#endif
     HYPRE_CALL(HYPRE_BoomerAMGSetInterpType(solver->amg, 6));
     HYPRE_CALL(HYPRE_BoomerAMGSetPMaxElmts(solver->amg, 4));
     HYPRE_CALL(HYPRE_BoomerAMGSetStrongThreshold(solver->amg, 0.25));
@@ -137,6 +163,9 @@ void preprocess(struct MySolver* solver, const struct SC26_SolverInput* input)
         HYPRE_BoomerAMGSolve, HYPRE_BoomerAMGSetup, solver->amg));
     HYPRE_CALL(HYPRE_ParCSRGMRESSetup(solver->gmres,
         solver->par_matrix, solver->par_rhs, solver->par_solution));
+#ifdef HYPRE_USING_HIP
+    HYPRE_CALL(HYPRE_MemoryPrintUsage(input->comm, 1, "T2_HIP_SETUP", -1));
+#endif
     solver->preprocess_seconds = MPI_Wtime() - started;
 }
 
@@ -145,6 +174,10 @@ void iterative_solver(struct MySolver* solver, const struct SC26_SolverInput* in
     double started = MPI_Wtime();
     HYPRE_CALL(HYPRE_ParCSRGMRESSolve(solver->gmres,
         solver->par_matrix, solver->par_rhs, solver->par_solution));
+#ifdef HYPRE_USING_HIP
+    HYPRE_CALL(HYPRE_MemoryPrintUsage(input->comm, 1, "T2_HIP_SOLVE", -1));
+    HYPRE_CALL(HYPRE_IJVectorMigrate(solver->solution, HYPRE_MEMORY_HOST));
+#endif
     HYPRE_CALL(HYPRE_IJVectorGetValues(solver->solution, input->local_n, solver->rows, input->x));
     HYPRE_Int iterations;
     HYPRE_Real residual;

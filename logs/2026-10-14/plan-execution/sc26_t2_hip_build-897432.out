@@ -1,0 +1,197 @@
+ace025f03759e267dd645b0d4960aa3994fff8f71eae5897f675bab26451a6be  submitted.sbatch
+JOB_ID=897432 NODE=f11r2n10 PROTOTYPE=/public/home/travissun/sc26-hip-20261007/t2-897432 HYPRE_BUILD_JOB=892588
+JobId=897432 JobName=sc26_t2_hip_build
+   UserId=travissun(424871) GroupId=ac3k88uz8y(371608) MCS_label=N/A
+   Priority=1223 Nice=0 Account=ac3k88uz8y QOS=user_travissun
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:00 TimeLimit=00:15:00 TimeMin=00:08:00
+   SubmitTime=2026-10-09T19:25:50 EligibleTime=2026-10-09T19:25:50
+   AccrueTime=2026-10-09T19:25:50
+   StartTime=2026-10-14T10:12:25 EndTime=2026-10-14T10:20:25 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-14T10:12:25 Scheduler=Main
+   Partition=hx1hdnormal AllocNode:Sid=zz-login03:2947795
+   ReqNodeList=f11r2n10 ExcNodeList=(null)
+   NodeList=f11r2n10
+   BatchHost=f11r2n10
+   StepMgrEnabled=Yes
+   NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=4,mem=15200M,node=1,billing=4,gres/dcu=1
+   AllocTRES=cpu=4,mem=15200M,node=1,billing=4,gres/dcu=1
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=4 MinMemoryCPU=3800M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/public/home/travissun/sc26-hip-20261007/scnet-t2-hip-build.sbatch
+   WorkDir=/public/home/travissun/sc26-hip-20261007
+   StdErr=/public/home/travissun/sc26-hip-20261007/sc26_t2_hip_build-897432.err
+   StdIn=/dev/null
+   StdOut=/public/home/travissun/sc26-hip-20261007/sc26_t2_hip_build-897432.out
+   GresEnforceBind=Yes
+   TresPerNode=gres/dcu:Hygon:1
+   TresPerTask=cpu=4
+   
+
+Currently Loaded Modulefiles:
+ 1) compiler/gcc/12.2.0     3) compiler/dtk/25.04.2               
+ 2) compiler/cmake/3.24.1   4) mpi/openmpi/4.1.8/gcc-12.2.0/shca  
+/public/home/travissun/sc26-hip-20261007/SC26_T2_HIP_source_20261009.tar.gz: OK
+7a5f354a82e8f5429190428f1a1c3f1381113e9eb7d4265de5b197cd906a96e9  source-sha256.txt
+src/CMakeLists.txt: OK
+src/CMakePresets.json: OK
+src/LICENSE: OK
+src/Makefile: OK
+src/README.md: OK
+src/apps/MPI_GPU_direct_solver.c: OK
+src/apps/MPI_GPU_iterative_solver.c: OK
+src/apps/MPI_direct_solver.c: OK
+src/apps/MPI_iterative_solver.c: OK
+src/apps/direct_solver.c: OK
+src/apps/iterative_solver.c: OK
+src/cmake/Dependencies.cmake: OK
+src/include/solverchallenge26/common_types.h: OK
+src/include/solverchallenge26/diagnostics.h: OK
+src/include/solverchallenge26/gpu_direct_solver_api.h: OK
+src/include/solverchallenge26/gpu_iterative_solver_api.h: OK
+src/include/solverchallenge26/gpu_metrics.h: OK
+src/include/solverchallenge26/matrix_market_reader.h: OK
+src/include/solverchallenge26/mpi_system_loader.h: OK
+src/include/solverchallenge26/petsc_binary_reader.h: OK
+src/include/solverchallenge26/residual_check.h: OK
+src/include/solverchallenge26/runtime_support.h: OK
+src/include/solverchallenge26/solver_api.h: OK
+src/include/solverchallenge26/solver_input.h: OK
+src/include/solverchallenge26/system_loader.h: OK
+src/problems/README.md: OK
+src/problems/cpu_baseline/CMakeLists.txt: OK
+src/problems/cpu_baseline/solver.c: OK
+src/problems/cpu_baseline/solver.h: OK
+src/problems/problem01/CMakeLists.txt: OK
+src/problems/problem01/gpu_direct_solver.cu: OK
+src/problems/problem01/gpu_iterative_solver.cu: OK
+src/problems/problem01/solver.c: OK
+src/problems/problem01/solver.h: OK
+src/problems/problem02/CMakeLists.txt: OK
+src/problems/problem02/gpu_direct_solver.cu: OK
+src/problems/problem02/gpu_iterative_solver.cu: OK
+src/problems/problem02/solver.c: OK
+src/problems/problem02/solver.h: OK
+src/problems/problem03/CMakeLists.txt: OK
+src/problems/problem03/gpu_direct_solver.cu: OK
+src/problems/problem03/gpu_iterative_solver.cu: OK
+src/problems/problem03/solver.c: OK
+src/problems/problem03/solver.h: OK
+src/problems/problem04/CMakeLists.txt: OK
+src/problems/problem04/gpu_direct_solver.cu: OK
+src/problems/problem04/gpu_iterative_solver.cu: OK
+src/problems/problem04/solver.c: OK
+src/problems/problem04/solver.h: OK
+src/problems/problem05/CMakeLists.txt: OK
+src/problems/problem05/gpu_direct_solver.cu: OK
+src/problems/problem05/gpu_iterative_solver.cu: OK
+src/problems/problem05/solver.c: OK
+src/problems/problem05/solver.h: OK
+src/problems/problem06/CMakeLists.txt: OK
+src/problems/problem06/gpu_direct_solver.cu: OK
+src/problems/problem06/gpu_iterative_solver.cu: OK
+src/problems/problem06/solver.c: OK
+src/problems/problem06/solver.h: OK
+src/problems/problem07/CMakeLists.txt: OK
+src/problems/problem07/gpu_direct_solver.cu: OK
+src/problems/problem07/gpu_iterative_solver.cu: OK
+src/problems/problem07/solver.c: OK
+src/problems/problem07/solver.h: OK
+src/problems/problem08/CMakeLists.txt: OK
+src/problems/problem08/gpu_direct_solver.cu: OK
+src/problems/problem08/gpu_iterative_solver.cu: OK
+src/problems/problem08/solver.c: OK
+src/problems/problem08/solver.h: OK
+src/problems/problem09/CMakeLists.txt: OK
+src/problems/problem09/gpu_direct_solver.cu: OK
+src/problems/problem09/gpu_iterative_solver.cu: OK
+src/problems/problem09/solver.c: OK
+src/problems/problem09/solver.h: OK
+src/problems/problem10/CMakeLists.txt: OK
+src/problems/problem10/gpu_direct_solver.cu: OK
+src/problems/problem10/gpu_iterative_solver.cu: OK
+src/problems/problem10/solver.c: OK
+src/problems/problem10/solver.h: OK
+src/src/diagnostics.c: OK
+src/src/matrix_market/highlevel.c: OK
+src/src/matrix_market/mmio.c: OK
+src/src/mpi_system_loader.c: OK
+src/src/petsc_binary_reader.c: OK
+src/src/system_loader.c: OK
+src/tests/header_include_order_mpi_first.c: OK
+src/tests/header_include_order_reader_first.c: OK
+tests/check_result.py: OK
+tests/make_small_systems.py: OK
+d1c5bd160b5fd823c24e9f0f125f1f19cb7704e4
+Python 3.6.8
+time (GNU Time) UNKNOWN
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by David Keppel, David MacKenzie, and Assaf Gordon.
+/public/home/travissun/sc26-hip-20261007/install-892588/lib/libHYPRE.a: OK
+/* #undef HYPRE_USING_GPU_AWARE_MPI */
+/* #undef HYPRE_USING_UNIFIED_MEMORY */
+#define HYPRE_USING_GPU 1
+#define HYPRE_USING_HIP 1
+set(HYPRE_ENABLE_HIP ON)
+set(HYPRE_ENABLE_UNIFIED_MEMORY OFF)
+if(HYPRE_ENABLE_CUDA OR HYPRE_ENABLE_HIP OR HYPRE_ENABLE_SYCL)
+  elseif(HYPRE_ENABLE_HIP)
+    elseif(HYPRE_ENABLE_HIP)
+        elseif(HYPRE_ENABLE_HIP AND NOT TARGET roc::${component})
+5e0d630e62ea9a7c4d1330045e19e5d20594a5ee7cefcf445fe6b105d6d1e1bd  build/CMakeCache.txt
+7f02c33a25b0f30b80224b505e73a63a8f2dbda3f3cddd064003743fd6ea168d  build/bin/MPI_iterative_solver
+CMAKE_CXX_COMPILER:STRING=/public/software/compiler/dtk-25.04.2/llvm/bin/clang++
+CMAKE_CXX_COMPILER_AR:FILEPATH=/public/software/compiler/dtk-25.04.2/dcc/bin/llvm-ar
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=CMAKE_CXX_COMPILER_RANLIB-NOTFOUND
+CMAKE_C_COMPILER:STRING=/public/software/mpi/openmpi/openmpi-4.1.8/bin/mpicc
+CMAKE_C_COMPILER_AR:FILEPATH=/public/software/compiler/gcc-12.2.0/bin/gcc-ar
+CMAKE_C_COMPILER_RANLIB:FILEPATH=/public/software/compiler/gcc-12.2.0/bin/gcc-ranlib
+CMAKE_HIP_COMPILER:STRING=/public/software/compiler/dtk-25.04.2/llvm/bin/clang++
+CMAKE_HIP_COMPILER_AR:FILEPATH=/public/software/compiler/dtk-25.04.2/dcc/bin/llvm-ar
+CMAKE_HIP_COMPILER_RANLIB:FILEPATH=CMAKE_HIP_COMPILER_RANLIB-NOTFOUND
+CMAKE_HIP_COMPILER_ROCM_ROOT:UNINITIALIZED=/public/software/compiler/dtk-25.04.2/hip
+HYPRE_DIR:UNINITIALIZED=/public/home/travissun/sc26-hip-20261007/install-892588/lib/cmake/HYPRE
+SC26_BUILD_MPI:BOOL=ON
+SC26_BUILD_MPI_GPU:BOOL=OFF
+SC26_ENABLE_FLOAT128:BOOL=ON
+SC26_PROBLEM:STRING=02
+SC26_T2_HIP:BOOL=ON
+SC26_TEST_MATRIX:FILEPATH=
+SC26_TEST_RHS:FILEPATH=
+CMAKE_CXX_COMPILER-ADVANCED:INTERNAL=1
+CMAKE_CXX_COMPILER_AR-ADVANCED:INTERNAL=1
+CMAKE_CXX_COMPILER_RANLIB-ADVANCED:INTERNAL=1
+CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
+CMAKE_C_COMPILER_AR-ADVANCED:INTERNAL=1
+CMAKE_C_COMPILER_RANLIB-ADVANCED:INTERNAL=1
+CMAKE_HIP_COMPILER-ADVANCED:INTERNAL=1
+CMAKE_HIP_COMPILER_AR-ADVANCED:INTERNAL=1
+CMAKE_HIP_COMPILER_RANLIB-ADVANCED:INTERNAL=1
+SC26_HAVE_QUADMATH:INTERNAL=1
+SC26_HAVE_QUADMATH_H:INTERNAL=1
+SC26_PROBLEM-STRINGS:INTERNAL=01;02;03;04;05;06;07;08;09;10
+poisson: n=385 nnz=2361
+nonsymmetric: n=385 nnz=2361
+neumann: n=385 nnz=2361
+scaled: n=385 nnz=2361
+CASE=poisson SOLVER_EXIT_CODE=0
+KNOWN_SOLUTION_PASS max_abs_error=0.000000000000e+00
+OFFICIAL_RESIDUAL_PASS relative_residual=5.279773000000e-12 threshold=1.0e-10
+	Maximum resident set size (kbytes): 577544
+CASE=nonsymmetric SOLVER_EXIT_CODE=0
+KNOWN_SOLUTION_PASS max_abs_error=0.000000000000e+00
+OFFICIAL_RESIDUAL_PASS relative_residual=3.654671000000e-13 threshold=1.0e-10
+	Maximum resident set size (kbytes): 579956
+CASE=neumann SOLVER_EXIT_CODE=0
+KNOWN_SOLUTION_PASS max_abs_error=8.673617379884e-17
+OFFICIAL_RESIDUAL_PASS relative_residual=6.013760000000e-13 threshold=1.0e-10
+	Maximum resident set size (kbytes): 581792
+SC26_T2_HIP_SMALL_COMPLETE

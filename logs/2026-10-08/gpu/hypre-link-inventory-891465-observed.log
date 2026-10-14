@@ -1,0 +1,18 @@
+Source: transcription of native E-Shell screenshot after the user executed the requested read-only queries; line spacing normalized.
+
+Generated IJ link command uses the DTK LLVM clang++ CXX driver and contains:
+-L"/public/software/compiler/dtk-25.04.2/llvm/lib/clang/17.0.0/../lib/linux" -lclang_rt.builtins-x86_64
+The generated command also includes -lmpi and -lpthread.
+
+[travissun@zz-login03 ~]$ find -H /public/software/compiler/dtk-25.04.2/llvm/lib -maxdepth 6 -name 'libclang_rt.builtins-x86_64*' -print
+/public/software/compiler/dtk-25.04.2/llvm/lib/clang/17.0.0/lib/linux/libclang_rt.builtins-x86_64.a
+
+[travissun@zz-login03 ~]$ tail -n 8 /public/home/travissun/sc26-hip-20261007/sc26_hypre_hip_build-891465.out
+[100%] Building C object CMakeFiles/HYPRE.dir/sstruct_ls/sys_semi_restrict.c.o
+[100%] Linking HIP static library lib/libHYPRE.a
+[100%] Built target HYPRE
+Consolidate compiler generated dependencies of target HYPRE
+[ 98%] Built target HYPRE
+Scanning dependencies of target ij
+[ 98%] Building HIP object test/CMakeFiles/ij.dir/ij.c.o
+[100%] Linking CXX executable ij

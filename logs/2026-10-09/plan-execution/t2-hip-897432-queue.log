@@ -1,0 +1,35 @@
+Source: actual user-supplied E-Shell output, 9 October 2026; native screenshot independently shows the same record.
+
+[travissun@zz-login03 sc26-hip-20261007]$ squeue -j 897432 -o '%.18i %.10T %.10M %R'
+             JOBID      STATE       TIME NODELIST(REASON)
+            897432    PENDING       0:00 (AssocGrpNodeLimit)
+[travissun@zz-login03 sc26-hip-20261007]$ scontrol show job 897432
+JobId=897432 JobName=sc26_t2_hip_build
+   UserId=travissun(424871) GroupId=ac3k88uz8y(371608) MCS_label=N/A
+   Priority=1132 Nice=0 Account=ac3k88uz8y QOS=user_travissun
+   JobState=PENDING Reason=AssocGrpNodeLimit Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:00 TimeLimit=00:15:00 TimeMin=00:08:00
+   SubmitTime=2026-10-09T19:25:50 EligibleTime=2026-10-09T19:25:50
+   AccrueTime=2026-10-09T19:25:50
+   StartTime=2026-10-10T12:09:49 EndTime=2026-10-10T12:17:49 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-09T19:48:09 Scheduler=Main
+   Partition=hx1hdnormal AllocNode:Sid=zz-login03:2947795
+   ReqNodeList=f11r2n10 ExcNodeList=(null)
+   NodeList=
+   StepMgrEnabled=Yes
+   NumNodes=1-1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=4,mem=15200M,node=1,billing=4,gres/dcu=1
+   AllocTRES=(null)
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=4 MinMemoryCPU=3800M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/public/home/travissun/sc26-hip-20261007/scnet-t2-hip-build.sbatch
+   WorkDir=/public/home/travissun/sc26-hip-20261007
+   StdErr=/public/home/travissun/sc26-hip-20261007/sc26_t2_hip_build-897432.err
+   StdIn=/dev/null
+   StdOut=/public/home/travissun/sc26-hip-20261007/sc26_t2_hip_build-897432.out
+   GresEnforceBind=Yes
+   TresPerNode=gres/dcu:Hygon:1
+   TresPerTask=cpu=4

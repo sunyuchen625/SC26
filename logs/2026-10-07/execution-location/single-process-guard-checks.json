@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-07",
+  "checks": [
+    {
+      "script": "scripts/scnet-mpi-probe.sbatch",
+      "case": "missing_allocation",
+      "exit_code": 2,
+      "blocked_before_MPI_or_compilation": true
+    },
+    {
+      "script": "scripts/scnet-mpi-probe.sbatch",
+      "case": "wrong_host",
+      "exit_code": 2,
+      "blocked_before_MPI_or_compilation": true
+    },
+    {
+      "script": "scripts/scnet-hip-probe.sbatch",
+      "case": "missing_allocation",
+      "exit_code": 2,
+      "blocked_before_MPI_or_compilation": true
+    },
+    {
+      "script": "scripts/scnet-hip-probe.sbatch",
+      "case": "wrong_host",
+      "exit_code": 2,
+      "blocked_before_MPI_or_compilation": true
+    }
+  ]
+}

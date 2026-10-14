@@ -1,0 +1,78 @@
+User-supplied accounting and concatenated stdout/stderr; spacing normalized during transcription.
+
+890784 FAILED 1:0 00:00:00 f11r2n02
+JOB_ID=890784 NODELIST=f11r2n02
+JobId=890784 JobName=sc26_mpi_probe
+   UserId=travissun(424871) GroupId=ac3k88uz8y(371608) MCS_label=N/A
+   Priority=1124 Nice=0 Account=ac3k88uz8y QOS=user_travissun
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:00 TimeLimit=00:05:00 TimeMin=00:03:00
+   SubmitTime=2026-10-07T17:12:17 EligibleTime=2026-10-07T17:12:17
+   AccrueTime=2026-10-07T17:12:17
+   StartTime=2026-10-07T17:12:18 EndTime=2026-10-07T17:15:18 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-07T17:12:18 Scheduler=Main
+   Partition=hx1hdnormal AllocNode:Sid=zz-login03:2893974
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=f11r2n02
+   BatchHost=f11r2n02
+   StepMgrEnabled=Yes
+   NumNodes=1 NumCPUs=1 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=1,mem=3800M,node=1,billing=1,gres/dcu=1
+   AllocTRES=cpu=1,mem=3800M,node=1,billing=1,gres/dcu=1
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=1 MinMemoryCPU=3800M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=(null)
+   WorkDir=/public/home/travissun
+   StdErr=/public/home/travissun/sc26_mpi_probe-890784.err
+   StdIn=/dev/null
+   StdOut=/public/home/travissun/sc26_mpi_probe-890784.out
+   GresEnforceBind=Yes
+   TresPerNode=gres/dcu:Hygon:1
+   TresPerTask=cpu=1
+
+Currently Loaded Modulefiles:
+ 1) compiler/gcc/12.2.0    3) mpi/openmpi/4.1.8/gcc-12.2.0/shca
+ 2) compiler/dtk/25.04.2
+mpi-probe: OK
+MPI_EXEC_HOST=f11r2n02
+--------------------------------------------------------------------------
+It looks like opal_init failed for some reason; your parallel process is
+likely to abort. There are many reasons that a parallel process can
+fail during opal_init; some of which are due to configuration or
+environment problems. This failure appears to be an internal failure;
+here's some additional information (which may only be relevant to an
+Open MPI developer):
+
+  opal_shmem_base_select failed
+  --> Returned value -1 instead of OPAL_SUCCESS
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+It looks like orte_init failed for some reason; your parallel process is
+likely to abort. There are many reasons that a parallel process can
+fail during orte_init; some of which are due to configuration or
+environment problems. This failure appears to be an internal failure;
+here's some additional information (which may only be relevant to an
+Open MPI developer):
+
+  opal_init failed
+  --> Returned value Error (-1) instead of ORTE_SUCCESS
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+It looks like MPI_INIT failed for some reason; your parallel process is
+likely to abort. There are many reasons that a parallel process can
+fail during MPI_INIT; some of which are due to configuration or environment
+problems. This failure appears to be an internal failure; here's some
+additional information (which may only be relevant to an Open MPI
+developer):
+
+  ompi_mpi_init: ompi_rte_init failed
+  --> Returned "Error" (-1) instead of "Success" (0)
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[f11r2n02:39425] Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!

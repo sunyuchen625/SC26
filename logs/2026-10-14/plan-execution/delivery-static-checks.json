@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-14",
+  "scope": "Changed/new batch entry points and delivery document links; local shell parsing/boundary checks only",
+  "scripts": [
+    {
+      "script": "scripts/launch-comparison.sbatch",
+      "bash_syntax": "PASS",
+      "missing_allocation_exit": 2,
+      "wrong_host_exit": 2
+    },
+    {
+      "script": "scripts/remediation-baseline.sbatch",
+      "bash_syntax": "PASS",
+      "missing_allocation_exit": 2,
+      "wrong_host_exit": 2
+    },
+    {
+      "script": "scripts/remediation-build.sbatch",
+      "bash_syntax": "PASS",
+      "missing_allocation_exit": 2,
+      "wrong_host_exit": 2
+    },
+    {
+      "script": "scripts/scnet-g0.sbatch",
+      "bash_syntax": "PASS",
+      "missing_allocation_exit": 2,
+      "wrong_host_exit": 2
+    },
+    {
+      "script": "scripts/scnet-hip-probe.sbatch",
+      "bash_syntax": "PASS",
+      "missing_allocation_exit": 2,
+      "wrong_host_exit": 2
+    },
+    {
+      "script": "scripts/scnet-hypre-build.sbatch",
+      "bash_syntax": "PASS",
+      "missing_allocation_exit": 2,
+      "wrong_host_exit": 2
+    },
+    {
+      "script": "scripts/scnet-hypre-inputs.sbatch",
+      "bash_syntax": "PASS",
+      "missing_allocation_exit": 2,
+      "wrong_host_exit": 2
+    },
+    {
+      "script": "scripts/scnet-hypre-smoke.sbatch",
+      "bash_syntax": "PASS",
+      "missing_allocation_exit": 2,
+      "wrong_host_exit": 2
+    },
+    {
+      "script": "scripts/scnet-mpi-components.sbatch",
+      "bash_syntax": "PASS",
+      "missing_allocation_exit": 2,
+      "wrong_host_exit": 2
+    },
+    {
+      "script": "scripts/scnet-mpi-probe.sbatch",
+      "bash_syntax": "PASS",
+      "missing_allocation_exit": 2,
+      "wrong_host_exit": 2
+    },
+    {
+      "script": "scripts/scnet-t2-hip-build.sbatch",
+      "bash_syntax": "PASS",
+      "missing_allocation_exit": 2,
+      "wrong_host_exit": 2
+    },
+    {
+      "script": "scripts/scnet-t2-hip-full.sbatch",
+      "bash_syntax": "PASS",
+      "missing_allocation_exit": 2,
+      "wrong_host_exit": 2
+    },
+    {
+      "script": "scripts/t1-residual-diagnostic.sbatch",
+      "bash_syntax": "PASS",
+      "missing_allocation_exit": 2,
+      "wrong_host_exit": 2
+    },
+    {
+      "script": "scripts/t2-hipoff-regression.sbatch",
+      "bash_syntax": "PASS",
+      "missing_allocation_exit": 2,
+      "wrong_host_exit": 2
+    }
+  ],
+  "delivery_document_links": "PASS",
+  "git_diff_check": "PASS",
+  "compiler_or_solver_executed": false,
+  "status": "PASS",
+  "git_diff_check_scope": "Authored docs, active scripts and current framework source; raw retrieved records retain original whitespace"
+}

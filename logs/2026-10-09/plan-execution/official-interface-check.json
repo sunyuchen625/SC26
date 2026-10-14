@@ -1,0 +1,59 @@
+{
+  "sources": [
+    {
+      "name": "contest",
+      "url": "https://solver-conference.cn/solverchallenge26/",
+      "retrieved_date": "2026-10-09",
+      "bytes": 64541,
+      "sha256": "900e45ac1889e8494910d0d9791d39c58e80949296228af20cc7a7fabd45affa",
+      "matches_local_bytes": null
+    },
+    {
+      "name": "conference",
+      "url": "https://solver-conference.cn/solver26/index.html",
+      "retrieved_date": "2026-10-09",
+      "bytes": 39268,
+      "sha256": "11aa081085f975a358103aedd2183640de9d4965592efa210415484309dae885",
+      "matches_local_bytes": null
+    },
+    {
+      "name": "README",
+      "url": "https://gitee.com/godjs/solverchallenge26_sample_code/raw/master/README.md",
+      "retrieved_date": "2026-10-09",
+      "bytes": 6623,
+      "sha256": "c0231764304b9ccb5184c80926616f00f459f8c584ff84803c683b6e37d488f6",
+      "matches_local_bytes": true
+    },
+    {
+      "name": "CPU driver",
+      "url": "https://gitee.com/godjs/solverchallenge26_sample_code/raw/master/apps/MPI_iterative_solver.c",
+      "retrieved_date": "2026-10-09",
+      "bytes": 12042,
+      "sha256": "078a8b734fa457705343ecfcceb26c235b2779597a6100c6c6605d6583740547",
+      "matches_local_bytes": false
+    },
+    {
+      "name": "GPU driver",
+      "url": "https://gitee.com/godjs/solverchallenge26_sample_code/raw/master/apps/MPI_GPU_iterative_solver.c",
+      "retrieved_date": "2026-10-09",
+      "bytes": 13902,
+      "sha256": "804481298e1252938614e88fc40eb22dc88a0dd98aa7d0103e647195bdbc2396",
+      "matches_local_bytes": false
+    },
+    {
+      "name": "GPU metrics",
+      "url": "https://gitee.com/godjs/solverchallenge26_sample_code/raw/master/include/solverchallenge26/gpu_metrics.h",
+      "retrieved_date": "2026-10-09",
+      "bytes": 3521,
+      "sha256": "757c483d491f1f7057cfcf94f7ba91541fa03ed3f76acf39f63851e9772d8ae3",
+      "matches_local_bytes": true
+    }
+  ],
+  "conference_task_deadline_text": "10\u670830\u65e5 24:00",
+  "timezone_explicit_in_source": false,
+  "actual_submission_portal_and_launcher_received": false,
+  "current_gpu_interface": "Separate upload and copy-solution callbacks; transfers excluded from accumulated local_total_ms; helper uses CUDA events, tracked-byte peak and sampled observed memory delta.",
+  "reference_validation_difference": "Current official CPU/GPU drivers promote the double solution to long double and float128 for output/checks; local framework checks the in-memory double solution through its retained d2ld/d2q helpers. Reference README and GPU metrics are byte-identical.",
+  "independent_teammate_job_evidence_received": false,
+  "LX2_compute_backend_received": false
+}

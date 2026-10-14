@@ -1,0 +1,36 @@
+Source: user-supplied batch identity, solver summary and complete small-test
+stderr on 8 October 2026. The batch stdout portions are excerpts.
+
+hypre-2.33.0.tar.gz: OK
+f7dde8d4f7bbd3d33ba3716b6f8c30dbf7239ae46fdba677d9ea92db194f4561  /public/home/travissun/sc26-hip-20261007/build-892588/submitted.sbatch
+JOB_ID=892588 NODE=f11r2n10 BUILD=/public/home/travissun/sc26-hip-20261007/build-892588 INSTALL=/public/home/travissun/sc26-hip-20261007/install-892588
+
+47c583997c57e6e141e676ca00dc74bfb7adf26d43ebd6925bca3df11b03f8ff  /public/home/travissun/sc26-hip-20261007/build-892588/CMakeCache.txt
+6bb5dd78bb2e70fe64be4c6977ce206464423d05227e1c22747d4b76dffce5b9  /public/home/travissun/sc26-hip-20261007/build-892588/test/ij
+e3887d90f71190657cd3315b8b4e896bbf238ad38b0178f0b2b05ad8535deb36  /public/home/travissun/sc26-hip-20261007/install-892588/lib/libHYPRE.a
+HYPRE_HIP_LIBRARY_BUILT
+Iterations = 12
+Final Relative Residual Norm = 2.016065e-09
+free(): double free detected in tcache 2
+
+Complete ij-smoke.err supplied by the user:
+free(): double free detected in tcache 2
+[f11r2n10:2876551] *** Process received signal ***
+[f11r2n10:2876551] Signal: Aborted (6)
+[f11r2n10:2876551] Signal code:  (-6)
+[f11r2n10:2876551] [ 0] /lib64/libpthread.so.0(+0x12d20)[0x7f18aea12d20]
+[f11r2n10:2876551] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x7f18ae64e49f]
+[f11r2n10:2876551] [ 2] /lib64/libc.so.6(abort+0x127)[0x7f18ae621e65]
+[f11r2n10:2876551] [ 3] /lib64/libc.so.6(+0x8f697)[0x7f18ae68f697]
+[f11r2n10:2876551] [ 4] /lib64/libc.so.6(+0x9699c)[0x7f18ae69699c]
+[f11r2n10:2876551] [ 5] /lib64/libc.so.6(+0x98c3d)[0x7f18ae698c3d]
+[f11r2n10:2876551] [ 6] /opt/hpc/software/mpi/hwloc/2.12.0/lib/libhwloc.so.15(+0x160c3)[0x7f18afe160c3]
+[f11r2n10:2876551] [ 7] /opt/hpc/software/mpi/hwloc/2.12.0/lib/libhwloc.so.15(+0xe4e0)[0x7f18afe0e4e0]
+[f11r2n10:2876551] [ 8] /opt/hpc/software/mpi/hwloc/2.12.0/lib/libhwloc.so.15(hwloc_topology_destroy+0x2e)[0x7f18afe0e59e]
+[f11r2n10:2876551] [ 9] /public/software/mpi/openmpi/openmpi-4.1.8/lib/libopen-pal.so.40(+0x77224)[0x7f18b1277224]
+[f11r2n10:2876551] [10] /public/software/mpi/openmpi/openmpi-4.1.8/lib/libopen-pal.so.40(mca_base_framework_close+0x64)[0x7f18b125e6c4]
+[f11r2n10:2876551] [11] /public/software/mpi/openmpi/openmpi-4.1.8/lib/libopen-pal.so.40(opal_finalize+0x83)[0x7f18b1231e63]
+[f11r2n10:2876551] [12] /public/software/mpi/openmpi/openmpi-4.1.8/lib/libopen-rte.so.40(orte_daemon+0xb15)[0x7f18b1639ee5]
+[f11r2n10:2876551] [13] /lib64/libc.so.6(__libc_start_main+0xe5)[0x7f18ae63a7e5]
+[f11r2n10:2876551] [14] orted[0x4007ae]
+[f11r2n10:2876551] *** End of error message ***

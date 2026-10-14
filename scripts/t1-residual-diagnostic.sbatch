@@ -10,6 +10,10 @@
 #SBATCH --output=logs/%x-%j.out
 #SBATCH --error=logs/%x-%j.err
 set -e
+if [[ -z ${SLURM_JOB_ID:-} || -z ${SLURMD_NODENAME:-} || $(hostname -s) != "$SLURMD_NODENAME" ]]; then
+    printf 'Submit with sbatch; execution requires the allocated compute node.\n' >&2
+    exit 2
+fi
 export LC_ALL=C
 module purge
 module load gcc/11.3.0 openmpi/4.1.8/gcc11.3.0 miniforge3/24.3.0

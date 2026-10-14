@@ -1,0 +1,43 @@
+Source: transcription of native SCNet E-Shell screenshots; line spacing normalized.
+
+[travissun@zz-login03 sc26-hip-20261007]$ squeue -u travissun -o '%i %j %T %R'
+JOBID NAME STATE NODELIST(REASON)
+[travissun@zz-login03 sc26-hip-20261007]$ sbatch /public/home/travissun/sc26-hip-20261007/scnet-hypre-build.sbatch
+Submitted batch job 891465
+[travissun@zz-login03 sc26-hip-20261007]$ sacct -j 891465 -X -o JobID,State,ExitCode,Elapsed,NodeList,AllocCPUS
+JobID State ExitCode Elapsed NodeList AllocCPUS
+891465 PENDING 0:0 00:00:00 None assigned 0
+[travissun@zz-login03 sc26-hip-20261007]$ squeue -j 891465 -o '%i %T %R'
+JOBID STATE NODELIST(REASON)
+891465 PENDING (AssocGrpNodeLimit)
+[travissun@zz-login03 sc26-hip-20261007]$ scontrol show job 891465
+JobId=891465 JobName=sc26_hypre_hip_build
+JobState=PENDING Reason=AssocGrpNodeLimit Dependency=(null)
+RunTime=00:00:00 TimeLimit=01:30:00 TimeMin=00:45:00
+SubmitTime=2026-10-08T00:33:08 EligibleTime=2026-10-08T00:33:08
+StartTime=Unknown EndTime=Unknown
+LastSchedEval=2026-10-08T00:35:26
+Partition=hx1hdnormal AllocNode:Sid=zz-login03:3156550
+NodeList=
+NumNodes=1-1 NumCPUs=4 NumTasks=1 CPUs/Task=4
+ReqTRES=cpu=4,mem=15200M,node=1,billing=4,gres/dcu=1
+AllocTRES=(null)
+Command=/public/home/travissun/sc26-hip-20261007/scnet-hypre-build.sbatch
+WorkDir=/public/home/travissun/sc26-hip-20261007
+StdErr=/public/home/travissun/sc26-hip-20261007/sc26_hypre_hip_build-891465.err
+StdOut=/public/home/travissun/sc26-hip-20261007/sc26_hypre_hip_build-891465.out
+TresPerNode=gres/dcu:Hygon:1
+TresPerTask=cpu=4
+
+Subsequent failure inspection on 8 October 2026:
+[travissun@zz-login03 ~]$ sacct -j 891465 -X -o JobID,State,ExitCode,Elapsed,NodeList,AllocCPUS
+JobID State ExitCode Elapsed NodeList AllocCPUS
+891465 FAILED 2:0 00:07:07 f11r2n02 4
+
+Fatal stderr excerpt from the downloaded original file:
+/usr/bin/ld: cannot find -lclang_rt.builtins-x86_64
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[3]: *** [test/CMakeFiles/ij.dir/build.make:102: test/ij] Error 1
+gmake[2]: *** [CMakeFiles/Makefile2:1327: test/CMakeFiles/ij.dir/all] Error 2
+gmake[1]: *** [CMakeFiles/Makefile2:1334: test/CMakeFiles/ij.dir/rule] Error 2
+gmake: *** [Makefile:582: ij] Error 2

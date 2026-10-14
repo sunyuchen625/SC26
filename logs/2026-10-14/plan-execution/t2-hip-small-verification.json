@@ -1,0 +1,410 @@
+{
+  "status": "PASS",
+  "scope": "S1 T2 HIP three known systems, one MPI process / one DCU",
+  "job_id": 897432,
+  "scheduler_state": "COMPLETED",
+  "scheduler_exit": "0:0",
+  "allocated_seconds": 20,
+  "node": "f11r2n10",
+  "allocated_cpus": 4,
+  "allocated_memory": "15200M",
+  "allocated_dcus": 1,
+  "source_sha256": "9708c99de61699a0c9d7452503ab07c97284ed3287b57185a816947d8de58ee0",
+  "source_manifest_sha256": "7a5f354a82e8f5429190428f1a1c3f1381113e9eb7d4265de5b197cd906a96e9",
+  "source_entries_verified": 89,
+  "batch_sha256": "ace025f03759e267dd645b0d4960aa3994fff8f71eae5897f675bab26451a6be",
+  "hypre_library_sha256": "e3887d90f71190657cd3315b8b4e896bbf238ad38b0178f0b2b05ad8535deb36",
+  "cache_sha256": "5e0d630e62ea9a7c4d1330045e19e5d20594a5ee7cefcf445fe6b105d6d1e1bd",
+  "binary_sha256": "7f02c33a25b0f30b80224b505e73a63a8f2dbda3f3cddd064003743fd6ea168d",
+  "hip_enabled": true,
+  "unified_memory_enabled": false,
+  "record_check_source": "Locally retrieved raw evidence packet with verified SHA256; counts, residuals, runtime errors, process exits, cache, batch and manifest checked against the retained record.",
+  "remote_evidence_archive_sha256": "dd6ba2d52cd9e337b8d64b5940e63ee67ae774108575641f34cfd9f2f4509cbf",
+  "cases": [
+    {
+      "case": "poisson",
+      "solver_exit": 0,
+      "solves": 5,
+      "device_policy_records": 5,
+      "phase_records": 5,
+      "rtol": "1e-11",
+      "constant_projection": false,
+      "runtime_stderr_bytes": 0,
+      "original_float128_relative_residual": "5.279773000000e-12",
+      "known_solution_max_abs_error": "0.000000000000e+00",
+      "host_process_peak_kbytes": 577544,
+      "gmres_iterations": [
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "phase_seconds": [
+        {
+          "analyse": "0.921409",
+          "preprocess": "0.187401",
+          "solve_cleanup": "0.121412"
+        },
+        {
+          "analyse": "0.000345",
+          "preprocess": "0.015783",
+          "solve_cleanup": "0.008978"
+        },
+        {
+          "analyse": "0.000339",
+          "preprocess": "0.015614",
+          "solve_cleanup": "0.009003"
+        },
+        {
+          "analyse": "0.000348",
+          "preprocess": "0.015637",
+          "solve_cleanup": "0.008973"
+        },
+        {
+          "analyse": "0.000345",
+          "preprocess": "0.015630",
+          "solve_cleanup": "0.008965"
+        }
+      ],
+      "gpu_memory_snapshots": [
+        {
+          "stage": "ANALYSE",
+          "used_gib": "0.39",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SETUP",
+          "used_gib": "0.40",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SOLVE",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "ANALYSE",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SETUP",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SOLVE",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "ANALYSE",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SETUP",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SOLVE",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "ANALYSE",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SETUP",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SOLVE",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "ANALYSE",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SETUP",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SOLVE",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        }
+      ],
+      "solver_log_sha256": "b0faff6ddcfcc543df8654dd2c0622a56a37852dcb7f36f5b0b6ca8effc4029d"
+    },
+    {
+      "case": "nonsymmetric",
+      "solver_exit": 0,
+      "solves": 5,
+      "device_policy_records": 5,
+      "phase_records": 5,
+      "rtol": "1e-11",
+      "constant_projection": false,
+      "runtime_stderr_bytes": 0,
+      "original_float128_relative_residual": "3.654671000000e-13",
+      "known_solution_max_abs_error": "0.000000000000e+00",
+      "host_process_peak_kbytes": 579956,
+      "gmres_iterations": [
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "phase_seconds": [
+        {
+          "analyse": "0.061965",
+          "preprocess": "0.107445",
+          "solve_cleanup": "0.048287"
+        },
+        {
+          "analyse": "0.000353",
+          "preprocess": "0.015601",
+          "solve_cleanup": "0.010166"
+        },
+        {
+          "analyse": "0.000338",
+          "preprocess": "0.015541",
+          "solve_cleanup": "0.010529"
+        },
+        {
+          "analyse": "0.000322",
+          "preprocess": "0.015512",
+          "solve_cleanup": "0.010180"
+        },
+        {
+          "analyse": "0.000337",
+          "preprocess": "0.015511",
+          "solve_cleanup": "0.010208"
+        }
+      ],
+      "gpu_memory_snapshots": [
+        {
+          "stage": "ANALYSE",
+          "used_gib": "0.39",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SETUP",
+          "used_gib": "0.40",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SOLVE",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "ANALYSE",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SETUP",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SOLVE",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "ANALYSE",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SETUP",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SOLVE",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "ANALYSE",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SETUP",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SOLVE",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "ANALYSE",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SETUP",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SOLVE",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        }
+      ],
+      "solver_log_sha256": "30c93864d56f2d4268ac6d9ebc6b9b09a046d2b5f9ab9f1ed53eb136df2512a8"
+    },
+    {
+      "case": "neumann",
+      "solver_exit": 0,
+      "solves": 5,
+      "device_policy_records": 5,
+      "phase_records": 5,
+      "rtol": "1e-11",
+      "constant_projection": true,
+      "runtime_stderr_bytes": 0,
+      "original_float128_relative_residual": "6.013760000000e-13",
+      "known_solution_max_abs_error": "8.673617379884e-17",
+      "host_process_peak_kbytes": 581792,
+      "gmres_iterations": [
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "phase_seconds": [
+        {
+          "analyse": "0.076289",
+          "preprocess": "0.107012",
+          "solve_cleanup": "0.051027"
+        },
+        {
+          "analyse": "0.000348",
+          "preprocess": "0.015867",
+          "solve_cleanup": "0.011654"
+        },
+        {
+          "analyse": "0.000362",
+          "preprocess": "0.015718",
+          "solve_cleanup": "0.011646"
+        },
+        {
+          "analyse": "0.000338",
+          "preprocess": "0.015767",
+          "solve_cleanup": "0.011663"
+        },
+        {
+          "analyse": "0.000338",
+          "preprocess": "0.015739",
+          "solve_cleanup": "0.011699"
+        }
+      ],
+      "gpu_memory_snapshots": [
+        {
+          "stage": "ANALYSE",
+          "used_gib": "0.39",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SETUP",
+          "used_gib": "0.40",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SOLVE",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "ANALYSE",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SETUP",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SOLVE",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "ANALYSE",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SETUP",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SOLVE",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "ANALYSE",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SETUP",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SOLVE",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "ANALYSE",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SETUP",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        },
+        {
+          "stage": "SOLVE",
+          "used_gib": "0.41",
+          "total_gib": "63.98"
+        }
+      ],
+      "solver_log_sha256": "f32c507420f7fffa8b108143d9d8e91bd0e16602fdfcbbfec124b27202dbc657"
+    }
+  ],
+  "raw_evidence_retrieved": true,
+  "raw_evidence_directory": "t2-897432",
+  "batch_stderr_bytes": 0,
+  "gpu_memory_scope": "Phase-labelled HYPRE observed device usage, rounded to 0.01 GiB; these samples are not a continuous peak.",
+  "device_evidence_basis": [
+    "Identified install-892588 HYPRE library: HIP and GPU enabled; unified memory disabled.",
+    "Identified application source, manifest, cache and executable; checked IJ matrix/rhs/solution migrations to device memory.",
+    "HYPRE 2.33.0 src/seq_mv/csr_matvec.c dispatches device-resident CSR matrices to hypre_CSRMatrixMatvecDevice.",
+    "Five successful device/device policy records and fifteen phase-labelled memory samples per case accompany the completed numerical solves."
+  ]
+}

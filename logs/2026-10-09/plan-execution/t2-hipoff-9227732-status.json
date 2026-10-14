@@ -1,0 +1,16 @@
+{
+  "job_id": 9227732,
+  "submission_confirmed": true,
+  "state": "FAILED",
+  "exit_code": "1:0",
+  "elapsed_seconds": 47,
+  "source_sha256": "9708c99de61699a0c9d7452503ab07c97284ed3287b57185a816947d8de58ee0",
+  "batch_sha256": "39361ef7cd5c98bbaf5d4bf25fb0c9280f5681a9e73798272ca899fb6c22b49d",
+  "test_script_sha256": "39fe7c929fc1695216157a223ed112a13513cd93327e0a8a84f938d2a2ec5ec0",
+  "node": "c3n10",
+  "allocated_cpus": 4,
+  "requested_memory": "16G",
+  "numerical_cases_passed": 6,
+  "execution_accepted": false,
+  "failure_reason": "Batch stopped at added empty-stderr assertion after all six existing case checks passed; captured stderr contains OpenMPI OpenFabrics warnings."
+}

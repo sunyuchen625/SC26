@@ -1,0 +1,24 @@
+Source: user-supplied final accounting, script identity, stdout tail,
+empty batch stderr and runtime stderr byte count on 9 October 2026.
+
+JobID                 State ExitCode    Elapsed        NodeList  AllocCPUS
+---------------- ---------- -------- ---------- --------------- ----------
+893006            COMPLETED      0:0   00:00:02        f11r2n10          4
+
+1f0eae2560abede89318338f12318792e5656349d4432bcb6877c4f35ed4d41d  submitted.sbatch
+JOB_ID=893006 NODE=f11r2n10 ORIGIN_BUILD_JOB=892588
+
+   TresPerTask=cpu=4
+
+Currently Loaded Modulefiles:
+ 1) compiler/gcc/12.2.0     3) compiler/dtk/25.04.2
+ 2) compiler/cmake/3.24.1   4) mpi/openmpi/4.1.8/gcc-12.2.0/shca
+/public/home/travissun/sc26-hip-20261007/build-892588/test/ij: OK
+mca:ess:singleton:param:ess_singleton_isolated:value:true
+SOLVER_EXIT_CODE=0
+Iterations = 12
+Final Relative Residual Norm = 2.016065e-09
+HYPRE_HIP_SMOKE_JOB_COMPLETE
+
+cat sc26_hypre_hip_smoke-893006.err produced no output.
+0 /public/home/travissun/sc26-hip-20261007/smoke-893006/ij-smoke.err

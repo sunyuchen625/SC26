@@ -1,6 +1,6 @@
 # CUDA OOM! CPU 独立重建与复现
 
-日期：2026-10-03。源码版本：`6b7f675ecaa6949815a3a77f95467fc35f8d5bbf`。执行人由队友本人填写。完成状态依据该执行人的新构建、新作业和检查记录。
+更新：2026-10-14。冻结 CPU 源码版本：`6b7f675ecaa6949815a3a77f95467fc35f8d5bbf`。执行人由队友本人填写。完成状态依据该执行人的新构建、新作业和检查记录。
 
 ## 环境及准备
 
@@ -24,7 +24,21 @@ cd "$work"
 find src scripts tests -type f -print0 | sort -z | xargs -0 sha256sum > source-sha256.txt
 ```
 
-候选包已包含 `src/scripts/tests` 布局，直接复制到独立工作目录，并保留包中的 `SOURCE_COMMIT`、来源清单和校验记录。
+推荐从[冻结候选包](../deliverables/SC26_CPU_candidate_6b7f675.tar.gz)开始，SHA256 为 `dae96e3fa5c8dc4cf8d66469b34797a84a0f3d741d0f8f4d8b4884f16206a111`。它已包含 `src/scripts/tests` 布局，复制到独立工作目录，保留 `SOURCE_COMMIT`、来源清单和校验记录，并先建立 `logs/`：
+
+```bash
+sha256sum SC26_CPU_candidate_6b7f675.tar.gz
+tar -xzf SC26_CPU_candidate_6b7f675.tar.gz
+participant_id=填写本人标识
+work=/data/home/sunyc/solverchallenge26/reproduce-20261014-$participant_id
+mkdir -p "$work"
+cp -R SC26_CPU_candidate_6b7f675/. "$work/"
+cd "$work"
+mkdir -p logs
+sha256sum -c source-sha256.txt
+```
+
+后续命令均在该独立目录执行。本指南复现报告对应的 T2/T7 16 进程、T6 32 线程等原交付设置；96 进程/线程性能结果和正式采用条件见[候选设置表](SUBMISSION_CANDIDATE_2026-10-03.md)。当前 T2 HIP 来源包的 S2 回归验证范围另见[T2 记录](T2_HIP_RESULTS_2026-10-09.md)。
 
 ## 新构建与 24 个已知解样例
 

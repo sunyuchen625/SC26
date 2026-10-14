@@ -1,0 +1,10 @@
+Source: agent-observed SCNet E-Shell screenshot after human submission.
+Visible script sets the job-local singleton isolated mode, reuses build-892588,
+verifies the recorded executable checksum, records the parameter with ompi_info,
+and checks solver exit, runtime stderr and reported residual.
+
+Submitted batch job 893006
+[travissun@zz-login03 sc26-hip-20261007]$
+
+Submission is confirmed. Scheduler state and execution results have not yet
+been observed. The script SHA256 is the expected local source hash.

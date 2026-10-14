@@ -1,0 +1,5 @@
+Source: actual user E-Shell outcome on 14 October 2026.
+scnet-t2-hip-full.sbatch: OK
+sbatch: error: Batch job submission failed: Invalid account or account/partition combination specified
+Expected script SHA256: 5ab397d022815105a635b6479c305f9039d2e89d86daa1d18f2e162fa6d60d72
+Request: CPU18, MPI1, DCU1,64G,45min. No job ID or allocation.

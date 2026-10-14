@@ -1,0 +1,4 @@
+Source: actual user E-Shell output on 14 October 2026.
+ClusterName             = cluster_zz_2
+scontrol -M cluster_zz_2 show partition hx1hdnormal
+Partition hx1hdnormal not found

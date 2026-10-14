@@ -1,0 +1,25 @@
+Source: user-supplied sacct and batch stdout/stderr tails on 8 October 2026.
+These are excerpts, not complete original output files.
+
+JobID                 State ExitCode    Elapsed        NodeList  AllocCPUS
+---------------- ---------- -------- ---------- --------------- ----------
+892588            COMPLETED      0:0   00:06:53        f11r2n10          4
+
+Batch stdout tail:
+[f11r2n10:2876551] [ 5] /lib64/libc.so.6(+0x98c3d)[0x7f18ae698c3d]
+[f11r2n10:2876551] [ 6] /opt/hpc/software/mpi/hwloc/2.12.0/lib/libhwloc.so.15(+0x160c3)[0x7f18afe160c3]
+[f11r2n10:2876551] [ 7] /opt/hpc/software/mpi/hwloc/2.12.0/lib/libhwloc.so.15(+0xe4e0)[0x7f18afe0e4e0]
+[f11r2n10:2876551] [ 8] /opt/hpc/software/mpi/hwloc/2.12.0/lib/libhwloc.so.15(hwloc_topology_destroy+0x2e)[0x7f18afe0e59e]
+[f11r2n10:2876551] [ 9] /public/software/mpi/openmpi/openmpi-4.1.8/lib/libopen-pal.so.40(+0x77224)[0x7f18b1277224]
+[f11r2n10:2876551] [10] /public/software/mpi/openmpi/openmpi-4.1.8/lib/libopen-pal.so.40(mca_base_framework_close+0x64)[0x7f18b125e6c4]
+[f11r2n10:2876551] [11] /public/software/mpi/openmpi/openmpi-4.1.8/lib/libopen-pal.so.40(opal_finalize+0x83)[0x7f18b1231e63]
+[f11r2n10:2876551] [12] /public/software/mpi/openmpi/openmpi-4.1.8/lib/libopen-rte.so.40(orte_daemon+0xb15)[0x7f18b1639ee5]
+[f11r2n10:2876551] [13] /lib64/libc.so.6(__libc_start_main+0xe5)[0x7f18ae63a7e5]
+[f11r2n10:2876551] [14] orted[0x4007ae]
+[f11r2n10:2876551] *** End of error message ***
+HYPRE_HIP_BUILD_JOB_COMPLETE
+
+Batch stderr tail:
+}
+^
+1 warning generated when compiling for host.

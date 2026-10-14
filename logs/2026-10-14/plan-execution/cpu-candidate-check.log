@@ -1,0 +1,17 @@
+SC26_READONLY_BEGIN
+ARCHIVE=/data/home/sunyc/solverchallenge26/next-phase-20261003/SC26_CPU_candidate_6b7f675.tar.gz
+{
+  "checked_date": "2026-10-14",
+  "check_environment": "Existing commercial CPU SSH; archive/source metadata only",
+  "archive_path": "/data/home/sunyc/solverchallenge26/next-phase-20261003/SC26_CPU_candidate_6b7f675.tar.gz",
+  "archive_sha256": "dae96e3fa5c8dc4cf8d66469b34797a84a0f3d741d0f8f4d8b4884f16206a111",
+  "source_manifest_sha256": "bf8148b56bf20d4c0249b24c8d9540c4212cec153760944f5b38b20137ee68a9",
+  "source_entries_checked": 118,
+  "all_entries_match_package_and_accepted_v19": true,
+  "report_sha256": "12c234efccfee7b23f75ba4191c6bef3500de1a4e6d569d7689800e812471fc4",
+  "report_matches_frozen_delivered_identity": true,
+  "t9_guide_threads": 16,
+  "source_commit": "6b7f675ecaa6949815a3a77f95467fc35f8d5bbf",
+  "status": "PASS"
+}
+SC26_READONLY_END status=0

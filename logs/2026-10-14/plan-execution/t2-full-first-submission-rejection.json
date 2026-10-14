@@ -1,0 +1,23 @@
+{
+  "submission_confirmed": false,
+  "job_id": null,
+  "request": {
+    "nodes": 1,
+    "mpi_processes": 1,
+    "cpus": 4,
+    "dcus": 1,
+    "memory": "64G",
+    "time_limit_seconds": 2700
+  },
+  "script_sha256": "f954ecec6238f6f93790299a6d257226be2c08674edb92febb6dcd0cb1bf6844",
+  "observed_rejection": "Requested memory:CPU exceeds DefMemPerCPU",
+  "allocated_seconds": 0,
+  "corrected_request": {
+    "cpus": 18,
+    "memory": "64G",
+    "mpi_processes": 1,
+    "OMP_NUM_THREADS": 1
+  },
+  "def_mem_per_cpu_observed": "3800M",
+  "corrected_script_sha256": "5ab397d022815105a635b6479c305f9039d2e89d86daa1d18f2e162fa6d60d72"
+}

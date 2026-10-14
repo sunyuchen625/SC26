@@ -1,0 +1,15 @@
+{
+  "job_id": 9227847,
+  "submission_confirmed": true,
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "elapsed_seconds": 25,
+  "source_sha256": "9708c99de61699a0c9d7452503ab07c97284ed3287b57185a816947d8de58ee0",
+  "batch_sha256": "a2b35fae376c1812073f2ab1a9c5426f1b1f597f8e78b2042e2a34ece4f07173",
+  "test_script_sha256": "39fe7c929fc1695216157a223ed112a13513cd93327e0a8a84f938d2a2ec5ec0",
+  "node": "c3n78",
+  "allocated_cpus": 4,
+  "requested_memory": "16G",
+  "numerical_cases_passed": 6,
+  "execution_accepted": true
+}

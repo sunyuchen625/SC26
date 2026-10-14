@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "scope": "T2 HIPOFF edited-snapshot six-case CPU regression",
+  "job_id": 9227847,
+  "scheduler_state": "COMPLETED",
+  "scheduler_exit": "0:0",
+  "elapsed_seconds": 25,
+  "node": "c3n78",
+  "allocated_cpus": 4,
+  "requested_memory": "16G",
+  "source_archive_sha256": "9708c99de61699a0c9d7452503ab07c97284ed3287b57185a816947d8de58ee0",
+  "source_manifest_entries": 89,
+  "source_manifest_sha256": "7a5f354a82e8f5429190428f1a1c3f1381113e9eb7d4265de5b197cd906a96e9",
+  "batch_sha256": "a2b35fae376c1812073f2ab1a9c5426f1b1f597f8e78b2042e2a34ece4f07173",
+  "test_script_sha256": "39fe7c929fc1695216157a223ed112a13513cd93327e0a8a84f938d2a2ec5ec0",
+  "hypre_library_sha256": "38b938ccd82b81d8f49930ce051288a08a9a38852b659434066e5e9889fd6b43",
+  "cache_sha256": "6eb81974d26f2506040d4b3e125584888044fe96884f660022d829fe786508b9",
+  "binary_sha256": "6b02653379cef1a24599bf9b10dfe157f6dd19694080bf03e60c9ad4ddc29ffd",
+  "fresh_binary_verified": true,
+  "cases": [
+    {
+      "case": "poisson-1",
+      "solves": 5,
+      "phases": 5,
+      "constant_projection": false,
+      "rtol": "1e-11",
+      "original_float128_relative_residual": "1.306065000000e-12",
+      "known_solution_max_error": "0.000000000000e+00",
+      "log": "t2-hipoff-9227847/runs/small-9227847/poisson-1/solver.log"
+    },
+    {
+      "case": "poisson-4",
+      "solves": 5,
+      "phases": 5,
+      "constant_projection": false,
+      "rtol": "1e-11",
+      "original_float128_relative_residual": "4.340013000000e-12",
+      "known_solution_max_error": "0.000000000000e+00",
+      "log": "t2-hipoff-9227847/runs/small-9227847/poisson-4/solver.log"
+    },
+    {
+      "case": "nonsymmetric-1",
+      "solves": 5,
+      "phases": 5,
+      "constant_projection": false,
+      "rtol": "1e-11",
+      "original_float128_relative_residual": "3.957536000000e-13",
+      "known_solution_max_error": "0.000000000000e+00",
+      "log": "t2-hipoff-9227847/runs/small-9227847/nonsymmetric-1/solver.log"
+    },
+    {
+      "case": "nonsymmetric-4",
+      "solves": 5,
+      "phases": 5,
+      "constant_projection": false,
+      "rtol": "1e-11",
+      "original_float128_relative_residual": "3.526985000000e-12",
+      "known_solution_max_error": "0.000000000000e+00",
+      "log": "t2-hipoff-9227847/runs/small-9227847/nonsymmetric-4/solver.log"
+    },
+    {
+      "case": "neumann-1",
+      "solves": 5,
+      "phases": 5,
+      "constant_projection": true,
+      "rtol": "1e-11",
+      "original_float128_relative_residual": "1.126722000000e-12",
+      "known_solution_max_error": "1.249000902703e-16",
+      "log": "t2-hipoff-9227847/runs/small-9227847/neumann-1/solver.log"
+    },
+    {
+      "case": "neumann-4",
+      "solves": 5,
+      "phases": 5,
+      "constant_projection": true,
+      "rtol": "1e-11",
+      "original_float128_relative_residual": "5.420348000000e-13",
+      "known_solution_max_error": "8.153200337091e-17",
+      "log": "t2-hipoff-9227847/runs/small-9227847/neumann-4/solver.log"
+    }
+  ],
+  "runtime_diagnostics": "Captured OpenMPI OpenFabrics initialization warnings; existing launcher/case checks exited zero."
+}

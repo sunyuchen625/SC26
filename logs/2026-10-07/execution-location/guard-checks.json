@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-07",
+  "checks": [
+    {
+      "script": "scripts/scnet-g0.sbatch",
+      "case": "missing_allocation",
+      "exit_code": 2,
+      "rejected_before_module_or_compute": true
+    },
+    {
+      "script": "scripts/scnet-g0.sbatch",
+      "case": "wrong_host",
+      "exit_code": 2,
+      "rejected_before_module_or_compute": true
+    },
+    {
+      "script": "scripts/scnet-hip-probe.sbatch",
+      "case": "missing_allocation",
+      "exit_code": 2,
+      "rejected_before_module_or_compute": true
+    },
+    {
+      "script": "scripts/scnet-hip-probe.sbatch",
+      "case": "wrong_host",
+      "exit_code": 2,
+      "rejected_before_module_or_compute": true
+    },
+    {
+      "script": "scripts/scnet-mpi-probe.sbatch",
+      "case": "missing_allocation",
+      "exit_code": 2,
+      "rejected_before_module_or_compute": true
+    },
+    {
+      "script": "scripts/scnet-mpi-probe.sbatch",
+      "case": "wrong_host",
+      "exit_code": 2,
+      "rejected_before_module_or_compute": true
+    },
+    {
+      "script": "scripts/remediation-build.sbatch",
+      "case": "missing_allocation",
+      "exit_code": 2,
+      "rejected_before_module_or_compute": true
+    },
+    {
+      "script": "scripts/remediation-build.sbatch",
+      "case": "wrong_host",
+      "exit_code": 2,
+      "rejected_before_module_or_compute": true
+    },
+    {
+      "script": "scripts/remediation-baseline.sbatch",
+      "case": "missing_allocation",
+      "exit_code": 2,
+      "rejected_before_module_or_compute": true
+    },
+    {
+      "script": "scripts/remediation-baseline.sbatch",
+      "case": "wrong_host",
+      "exit_code": 2,
+      "rejected_before_module_or_compute": true
+    },
+    {
+      "script": "scripts/launch-comparison.sbatch",
+      "case": "missing_allocation",
+      "exit_code": 2,
+      "rejected_before_module_or_compute": true
+    },
+    {
+      "script": "scripts/launch-comparison.sbatch",
+      "case": "wrong_host",
+      "exit_code": 2,
+      "rejected_before_module_or_compute": true
+    },
+    {
+      "script": "scripts/t1-residual-diagnostic.sbatch",
+      "case": "missing_allocation",
+      "exit_code": 2,
+      "rejected_before_module_or_compute": true
+    },
+    {
+      "script": "scripts/t1-residual-diagnostic.sbatch",
+      "case": "wrong_host",
+      "exit_code": 2,
+      "rejected_before_module_or_compute": true
+    }
+  ]
+}

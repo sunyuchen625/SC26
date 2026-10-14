@@ -1,0 +1,75 @@
+Source: user-supplied sacct and stdout/stderr excerpts on 8 October 2026.
+These are excerpts, not complete original output files.
+
+JobID                 State ExitCode    Elapsed        NodeList  AllocCPUS
+---------------- ---------- -------- ---------- --------------- ----------
+892530            COMPLETED      0:0   00:02:11        f11r3n10          4
+
+HYPRE_ARCHIVE_BEFORE
+333e1622a0ef6d6a79ab87516b5e017224b260f71f6d3dc1b8e65f493ae63389  /public/home/travissun/sc26-hip-20261007/build-891465/lib/libHYPRE.a
+--
+HYPRE_ARCHIVE_AFTER
+e756d36c2516b140bdeb0bcefdfbbc843b172ffbe5d06444805571b93f4e104a  /public/home/travissun/sc26-hip-20261007/build-891465/lib/libHYPRE.a
+
+     Complexity:   grid = 1.468750
+               operator = 2.411250
+                 memory = 3.110312
+
+BoomerAMG SOLVER PARAMETERS:
+
+  Maximum number of cycles:         1
+  Stopping Tolerance:               0.000000e+00
+  Cycle type (1 = V, 2 = W, etc.):  1
+
+  Relaxation Parameters:
+   Visiting Grid:                     down   up  coarse
+            Number of sweeps:            1    1     1
+   Type 0=Jac, 3=hGS, 6=hSGS, 9=GE:     18   18    18
+   Point types, partial sweeps (1=C, -1=F):
+                  Pre-CG relaxation (down):   0
+                   Post-CG relaxation (up):   0
+                             Coarsest grid:   0
+
+=============================================
+Setup phase times:
+=============================================
+PCG Setup:
+  wall clock time = 0.097731 seconds
+  wall MFLOPS     = 0.000000
+  cpu clock time  = 0.057779 seconds
+  cpu MFLOPS      = 0.000000
+
+<b,b>: 5.120000e+02
+
+Iters       ||r||_2     conv.rate  ||r||_2/||b||_2
+-----    ------------   ---------  ------------
+    1    6.816076e+00    0.301231    3.012309e-01
+    2    1.370987e+00    0.201140    6.058963e-02
+    3    2.374001e-01    0.173160    1.049170e-02
+    4    4.798332e-02    0.202120    2.120583e-03
+    5    8.961840e-03    0.186770    3.960611e-04
+    6    1.662999e-03    0.185564    7.349485e-05
+    7    2.820937e-04    0.169630    1.246690e-05
+    8    5.249038e-05    0.186074    2.319769e-06
+    9    8.834052e-06    0.168298    3.904136e-07
+   10    1.602488e-06    0.181399    7.082064e-08
+   11    2.760154e-07    0.172242    1.219827e-08
+   12    4.561833e-08    0.165275    2.016065e-09
+
+=============================================
+Solve phase times:
+=============================================
+PCG Solve:
+  wall clock time = 0.038224 seconds
+  wall MFLOPS     = 0.000000
+  cpu clock time  = 0.036381 seconds
+  cpu MFLOPS      = 0.000000
+
+Iterations = 12
+Final Relative Residual Norm = 2.016065e-09
+
+HYPRE_HIP_RELINK_JOB_COMPLETE
+
+             ^
+11 warnings generated when compiling for host.
+Launch params (512, 1, 1) are larger than launch bounds (256) for kernel _Z20hypreGPUKernel_fillnIcEvRPvPT_mS2_ please add __launch_bounds__ to kernel define or use --gpu-max-threads-per-block recompile program !

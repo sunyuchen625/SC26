@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-07",
+  "checks": [
+    {
+      "expected_host_matches": true,
+      "exit_code": 0,
+      "test_program": "/usr/bin/true; shell-boundary test only"
+    },
+    {
+      "expected_host_matches": false,
+      "exit_code": 2,
+      "test_program": "/usr/bin/true; shell-boundary test only"
+    }
+  ]
+}

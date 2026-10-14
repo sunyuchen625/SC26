@@ -1,0 +1,10 @@
+Source: agent-observed SCNet E-Shell screenshot after human submission.
+The screenshot shows the quoted sbatch heredoc, the extra executable linker
+search directory, reuse of build-891465, and the 8x8x8 device-memory example.
+
+Submitted batch job 892530
+[travissun@zz-login03 sc26-hip-20261007]$
+
+This receipt confirms submission. Scheduler state and execution results have
+not yet been observed. The batch hash in the status record is the expected
+local source hash; a remote byte hash has not been observed.

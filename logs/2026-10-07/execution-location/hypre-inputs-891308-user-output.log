@@ -1,0 +1,54 @@
+User-supplied accounting and concatenated stdout/stderr; spacing normalized and curl progress meter omitted during transcription.
+
+891308 FAILED 6:0 00:00:03 f11r1n18
+JOB_ID=891308 NODE=f11r1n18 WORK=/public/home/travissun/sc26-hip-20261007
+JobId=891308 JobName=sc26_hypre_inputs
+   UserId=travissun(424871) GroupId=ac3k88uz8y(371608) MCS_label=N/A
+   Priority=1125 Nice=0 Account=ac3k88uz8y QOS=user_travissun
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:00 TimeLimit=00:05:00 TimeMin=00:03:00
+   SubmitTime=2026-10-07T22:17:47 EligibleTime=2026-10-07T22:17:47
+   AccrueTime=2026-10-07T22:17:47
+   StartTime=2026-10-07T22:24:47 EndTime=2026-10-07T22:27:47 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-07T22:24:47 Scheduler=Main
+   Partition=hx1hdnormal AllocNode:Sid=zz-login03:3156550
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=f11r1n18
+   BatchHost=f11r1n18
+   StepMgrEnabled=Yes
+   NumNodes=1 NumCPUs=1 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=1,mem=3800M,node=1,billing=1,gres/dcu=1
+   AllocTRES=cpu=1,mem=3800M,node=1,billing=1,gres/dcu=1
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=1 MinMemoryCPU=3800M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=(null)
+   WorkDir=/public/home/travissun
+   StdErr=/public/home/travissun/sc26_hypre_inputs-891308.err
+   StdIn=/dev/null
+   StdOut=/public/home/travissun/sc26_hypre_inputs-891308.out
+   GresEnforceBind=Yes
+   TresPerNode=gres/dcu:Hygon:1
+   TresPerTask=cpu=1
+
+Currently Loaded Modulefiles:
+ 1) compiler/gcc/12.2.0     3) compiler/dtk/25.04.2
+ 2) compiler/cmake/3.24.1   4) mpi/openmpi/4.1.8/gcc-12.2.0/shca
+/public/software/compiler/dtk-25.04.2/bin/hipcc
+/public/software/compiler/cmake-3.24.1/bin/cmake
+/public/software/mpi/openmpi/openmpi-4.1.8/bin/mpicc
+ROCM_PATH=/public/software/compiler/dtk-25.04.2
+HIP_PATH=/public/software/compiler/dtk-25.04.2/hip
+HIP_CLANG_PATH=
+/public/software/compiler/dtk-25.04.2/rocrand/lib/cmake/rocrand-config.cmake
+/public/software/compiler/dtk-25.04.2/rocblas/lib/cmake/rocblas-config.cmake
+/public/software/compiler/dtk-25.04.2/lib/cmake/rocsparse/rocsparse-config.cmake
+/public/software/compiler/dtk-25.04.2/lib/cmake/rocrand/rocrand-config.cmake
+/public/software/compiler/dtk-25.04.2/lib/cmake/rocblas/rocblas-config.cmake
+/public/software/compiler/dtk-25.04.2/hip/lib/cmake/hip-lang/hip-lang-config.cmake
+/public/software/compiler/dtk-25.04.2/hip/lib/cmake/hip/hip-config.cmake
+/public/software/compiler/dtk-25.04.2/rocsparse/lib/cmake/rocsparse-config.cmake
+drwxr-xr-x 2 solverchallenge ac3k88uz8y 8192 Sep 17 18:38 /public/share/ac3k88uz8y/SolverChallenge26-TenProblems/solverchallenge26_02
+curl: (6) Could not resolve host: github.com

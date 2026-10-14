@@ -1,0 +1,7 @@
+Source: actual user E-Shell output on 14 October 2026.
+[travissun@zz-login02 ~]$ sacctmgr -n -P show user where name=travissun format=User,DefaultAccount
+travissun|ac3k88uz8y
+[travissun@zz-login02 ~]$ sacctmgr -n -P show association where user=travissun format=Cluster,Account,User,Partition,DefaultQOS,QOS,GrpTRES,MaxTRESPJ
+cluster_zz_2|ac3k88uz8y|travissun|hx1hdnormal||user_travissun||
+[travissun@zz-login02 ~]$ scontrol show partition hx1hdnormal
+Partition hx1hdnormal not found

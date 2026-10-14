@@ -8,6 +8,7 @@ include(cmake/Dependencies.cmake)
 option(SC26_BUILD_MPI "Build MPI solver samples" ON)
 option(SC26_BUILD_MPI_GPU "Build the MPI GPU direct and iterative solvers" OFF)
 option(SC26_ENABLE_FLOAT128 "Enable float128 residual checks" ON)
+option(SC26_T2_HIP "Build the T2 MPI iterative solver with HYPRE HIP" OFF)
 set(SC26_PROBLEM "01" CACHE STRING "Problem slot to build: 01 through 10")
 set_property(CACHE SC26_PROBLEM PROPERTY STRINGS 01 02 03 04 05 06 07 08 09 10)
 set(SC26_TEST_MATRIX "" CACHE FILEPATH "Optional matrix for the MPI smoke test")
@@ -19,6 +20,13 @@ set(CMAKE_C_STANDARD_REQUIRED ON)
 
 if(SC26_BUILD_MPI_GPU AND NOT SC26_BUILD_MPI)
     message(FATAL_ERROR "SC26_BUILD_MPI_GPU requires SC26_BUILD_MPI=ON")
+endif()
+
+if(SC26_T2_HIP)
+    if(NOT SC26_PROBLEM STREQUAL "02" OR NOT SC26_BUILD_MPI)
+        message(FATAL_ERROR "SC26_T2_HIP requires SC26_PROBLEM=02 and SC26_BUILD_MPI=ON")
+    endif()
+    enable_language(CXX HIP)
 endif()
 
 if(SC26_BUILD_MPI_GPU)
@@ -119,6 +127,10 @@ if(SC26_BUILD_MPI)
     target_link_libraries(MPI_iterative_solver PRIVATE sc26_mpi_io sc26_mpi_diagnostics
         sc26_solver_config sc26_problem_dependencies)
     target_compile_definitions(MPI_iterative_solver PRIVATE ITERATIVE_SOLVER MPI_USE)
+
+    if(SC26_T2_HIP)
+        set_property(TARGET MPI_iterative_solver PROPERTY LINKER_LANGUAGE CXX)
+    endif()
 
     if(SC26_BUILD_MPI_GPU)
         add_library(sc26_problem_gpu_direct STATIC

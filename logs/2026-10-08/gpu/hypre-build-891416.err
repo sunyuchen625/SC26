@@ -1,0 +1,39 @@
+CMake Warning at config/cmake/HYPRE_CMakeUtilities.cmake:163 (message):
+  MPI include directory not found.  Please specify -DMPI_INCLUDE_DIR or the
+  compilation may fail.
+Call Stack (most recent call first):
+  CMakeLists.txt:363 (configure_mpi_target)
+
+
+In file included from /public/home/travissun/sc26-hip-20261007/source-891416/src/utilities/HYPRE_handle.c:14:
+In file included from /public/home/travissun/sc26-hip-20261007/source-891416/src/utilities/_hypre_utilities.h:7:
+/public/home/travissun/sc26-hip-20261007/source-891416/src/utilities/HYPRE_utilities.h:20:10: fatal error: 'mpi.h' file not found
+#include "mpi.h"
+         ^~~~~~~
+1 error generated when compiling for gfx936.
+gmake[3]: *** [CMakeFiles/HYPRE.dir/build.make:1433: CMakeFiles/HYPRE.dir/utilities/HYPRE_handle.c.o] Error 1
+gmake[3]: *** Waiting for unfinished jobs....
+In file included from /public/home/travissun/sc26-hip-20261007/source-891416/src/utilities/device_utils.c:9:
+In file included from /public/home/travissun/sc26-hip-20261007/source-891416/src/utilities/_hypre_utilities.h:7:
+/public/home/travissun/sc26-hip-20261007/source-891416/src/utilities/HYPRE_utilities.h:20:10: fatal error: 'mpi.h' file not found
+#include "mpi.h"
+         ^~~~~~~
+In file included from /public/home/travissun/sc26-hip-20261007/source-891416/src/utilities/general.c:8:
+In file included from /public/home/travissun/sc26-hip-20261007/source-891416/src/utilities/_hypre_utilities.h:7:
+/public/home/travissun/sc26-hip-20261007/source-891416/src/utilities/HYPRE_utilities.h:20:10: fatal error: 'mpi.h' file not found
+#include "mpi.h"
+         ^~~~~~~
+In file included from /public/home/travissun/sc26-hip-20261007/source-891416/src/utilities/handle.c:14:
+In file included from /public/home/travissun/sc26-hip-20261007/source-891416/src/utilities/_hypre_utilities.h:7:
+/public/home/travissun/sc26-hip-20261007/source-891416/src/utilities/HYPRE_utilities.h:20:10: fatal error: 'mpi.h' file not found
+#include "mpi.h"
+         ^~~~~~~
+1 error generated when compiling for gfx936.
+1 error generated when compiling for gfx936.
+gmake[3]: *** [CMakeFiles/HYPRE.dir/build.make:1626: CMakeFiles/HYPRE.dir/utilities/handle.c.o] Error 1
+gmake[3]: *** [CMakeFiles/HYPRE.dir/build.make:1613: CMakeFiles/HYPRE.dir/utilities/general.c.o] Error 1
+1 error generated when compiling for gfx936.
+gmake[3]: *** [CMakeFiles/HYPRE.dir/build.make:1586: CMakeFiles/HYPRE.dir/utilities/device_utils.c.o] Error 1
+gmake[2]: *** [CMakeFiles/Makefile2:521: CMakeFiles/HYPRE.dir/all] Error 2
+gmake[1]: *** [CMakeFiles/Makefile2:528: CMakeFiles/HYPRE.dir/rule] Error 2
+gmake: *** [Makefile:179: HYPRE] Error 2

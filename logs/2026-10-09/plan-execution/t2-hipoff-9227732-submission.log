@@ -1,0 +1,6 @@
+Source: observed SSH submission output on 9 October 2026, Asia/Shanghai.
+SC26_T2_HIP_source_20261009.tar.gz: OK
+t2-hipoff-regression.sbatch: OK
+t2-small.sbatch: OK
+Submitted batch job 9227732
+SSH_SUBMIT_EXIT=0

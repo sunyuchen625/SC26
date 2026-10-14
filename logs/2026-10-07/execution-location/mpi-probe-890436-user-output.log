@@ -1,0 +1,41 @@
+User-supplied accounting and concatenated stdout/stderr, 7 October 2026; spacing normalized during transcription.
+
+JobID                 State ExitCode    Elapsed        NodeList
+890436               FAILED      1:0   00:00:00        f11r1n19
+JOB_ID=890436 NODELIST=f11r1n19
+JobId=890436 JobName=sc26_mpi_probe
+   UserId=travissun(424871) GroupId=ac3k88uz8y(371608) MCS_label=N/A
+   Priority=1138 Nice=0 Account=ac3k88uz8y QOS=user_travissun
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:00 TimeLimit=00:05:00 TimeMin=00:03:00
+   SubmitTime=2026-10-07T14:12:03 EligibleTime=2026-10-07T14:12:03
+   AccrueTime=2026-10-07T14:12:03
+   StartTime=2026-10-07T14:47:57 EndTime=2026-10-07T14:50:57 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-07T14:47:57 Scheduler=Main
+   Partition=hx1hdnormal AllocNode:Sid=zz-login03:2715711
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=f11r1n19
+   BatchHost=f11r1n19
+   StepMgrEnabled=Yes
+   NumNodes=1 NumCPUs=1 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=1,mem=3800M,node=1,billing=1,gres/dcu=1
+   AllocTRES=cpu=1,mem=3800M,node=1,billing=1,gres/dcu=1
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=1 MinMemoryCPU=3800M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=(null)
+   WorkDir=/public/home/travissun
+   StdErr=/public/home/travissun/sc26_mpi_probe-890436.err
+   StdIn=/dev/null
+   StdOut=/public/home/travissun/sc26_mpi_probe-890436.out
+   GresEnforceBind=Yes
+   TresPerNode=gres/dcu:Hygon:1
+   TresPerTask=cpu=1
+
+Currently Loaded Modulefiles:
+ 1) compiler/gcc/12.2.0    3) mpi/openmpi/4.1.8/gcc-12.2.0/shca
+ 2) compiler/dtk/25.04.2
+mpi-probe: OK
+/public/software/mpi/openmpi/openmpi-4.1.8/bin/mpirun: Error: unknown option "-np"

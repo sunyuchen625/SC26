@@ -1,0 +1,11 @@
+Source: agent-observed SCNet E-Shell screenshot after human submission.
+The visible quoted sbatch script supplies the actual Clang runtime directory,
+MPI include directory, and --gpu-max-threads-per-block=1024. It records the
+small device-memory test in separate stdout/stderr files and prints its summary.
+
+Submitted batch job 892588
+[travissun@zz-login03 sc26-hip-20261007]$
+
+This receipt confirms submission. Scheduler state and execution results have
+not yet been observed. The recorded batch SHA256 is the expected local source
+hash; a remote batch hash has not yet been observed.

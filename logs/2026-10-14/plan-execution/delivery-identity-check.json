@@ -1,0 +1,30 @@
+{
+  "checked_date": "2026-10-14",
+  "scope": "Source/package and archived evidence identity; no compilation or numerical rerun",
+  "source_archive_sha256": "9708c99de61699a0c9d7452503ab07c97284ed3287b57185a816947d8de58ee0",
+  "source_manifest_sha256": "7a5f354a82e8f5429190428f1a1c3f1381113e9eb7d4265de5b197cd906a96e9",
+  "source_entries_checked": 89,
+  "all_entries_match_archive_and_current_source": true,
+  "gates": {
+    "S1": {
+      "job_id": 897432,
+      "batch_matches_current": true,
+      "cache_matches_accepted": true,
+      "manifest_matches_source_archive": true,
+      "status": "PASS",
+      "numerical_evidence": "logs/2026-10-14/plan-execution/t2-hip-small-verification.json"
+    },
+    "S2": {
+      "job_id": 9227847,
+      "batch_matches_current": true,
+      "cache_matches_accepted": true,
+      "manifest_matches_source_archive": true,
+      "status": "PASS",
+      "numerical_evidence": "logs/2026-10-09/plan-execution/t2-hipoff-verification.json"
+    }
+  },
+  "full_S3_allocated": false,
+  "S4_performance_complete": false,
+  "LX2_compute_validated": false,
+  "status": "PASS"
+}

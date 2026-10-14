@@ -1,0 +1,5 @@
+User-supplied sacct output, received 7 October 2026, Asia/Shanghai.
+
+$ sacct -j 887220 -X -o JobID,State,ExitCode,Elapsed,NodeList
+JobID                 State ExitCode    Elapsed        NodeList
+887220               FAILED      1:0   00:00:01        f11r3n11

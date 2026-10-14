@@ -1,0 +1,9 @@
+Source: transcription of native SCNet E-Shell screenshot; line spacing normalized.
+
+The local corrected batch was copied into the existing remote batch path through a quoted cat heredoc. The batch contents were written as a file; they were not executed in the login shell.
+
+[travissun@zz-login03 sc26-hip-20261007]$ sha256sum /public/home/travissun/sc26-hip-20261007/scnet-hypre-build.sbatch
+fbaf6edfa53dc9587f406ab174a6a336db4aeb25d8d7d4d01c1c19fb9214f899  /public/home/travissun/sc26-hip-20261007/scnet-hypre-build.sbatch
+
+The matching local batch contains:
+    -DMPI_C_INCLUDE_DIR="$mpi_prefix/include" \

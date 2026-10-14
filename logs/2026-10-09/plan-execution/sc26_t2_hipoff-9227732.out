@@ -1,0 +1,261 @@
+JOB_ID=9227732 NODE=c3n10 ROOT=/data/home/sunyc/solverchallenge26/plan-execution-20261009/t2-hipoff-9227732
+JobId=9227732 JobName=sc26_t2_hipoff
+   UserId=sunyc(11599) GroupId=sunyc(11599) MCS_label=N/A
+   Priority=1 Nice=0 Account=sunyc QOS=normal
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:01 TimeLimit=00:15:00 TimeMin=N/A
+   SubmitTime=2026-10-09T19:18:45 EligibleTime=2026-10-09T19:18:45
+   AccrueTime=2026-10-09T19:18:45
+   StartTime=2026-10-09T19:18:46 EndTime=2026-10-09T19:33:46 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-09T19:18:46 Scheduler=Main
+   Partition=qhn AllocNode:Sid=c3ln01:28281
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=c3n10
+   BatchHost=c3n10
+   NumNodes=1 NumCPUs=4 NumTasks=4 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=4,mem=16G,node=1,billing=4
+   AllocTRES=cpu=4,mem=16G,node=1,billing=4
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=4 MinMemoryNode=16G MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/data/home/sunyc/solverchallenge26/plan-execution-20261009/t2-hipoff-regression.sbatch
+   WorkDir=/data/home/sunyc/solverchallenge26/plan-execution-20261009
+   StdErr=/data/home/sunyc/solverchallenge26/plan-execution-20261009/sc26_t2_hipoff-9227732.err
+   StdIn=/dev/null
+   StdOut=/data/home/sunyc/solverchallenge26/plan-execution-20261009/sc26_t2_hipoff-9227732.out
+   Power=
+   TresPerTask=cpu:1
+   
+
+/data/home/sunyc/solverchallenge26/plan-execution-20261009/SC26_T2_HIP_source_20261009.tar.gz: OK
+7a5f354a82e8f5429190428f1a1c3f1381113e9eb7d4265de5b197cd906a96e9  source-sha256.txt
+39361ef7cd5c98bbaf5d4bf25fb0c9280f5681a9e73798272ca899fb6c22b49d  submitted.sbatch
+39fe7c929fc1695216157a223ed112a13513cd93327e0a8a84f938d2a2ec5ec0  /data/home/sunyc/solverchallenge26/plan-execution-20261009/t2-small.sbatch
+38b938ccd82b81d8f49930ce051288a08a9a38852b659434066e5e9889fd6b43  /data/home/sunyc/solverchallenge26/deps/hypre/lib64/libHYPRE.a
+src/CMakeLists.txt: OK
+src/CMakePresets.json: OK
+src/LICENSE: OK
+src/Makefile: OK
+src/README.md: OK
+src/apps/MPI_GPU_direct_solver.c: OK
+src/apps/MPI_GPU_iterative_solver.c: OK
+src/apps/MPI_direct_solver.c: OK
+src/apps/MPI_iterative_solver.c: OK
+src/apps/direct_solver.c: OK
+src/apps/iterative_solver.c: OK
+src/cmake/Dependencies.cmake: OK
+src/include/solverchallenge26/common_types.h: OK
+src/include/solverchallenge26/diagnostics.h: OK
+src/include/solverchallenge26/gpu_direct_solver_api.h: OK
+src/include/solverchallenge26/gpu_iterative_solver_api.h: OK
+src/include/solverchallenge26/gpu_metrics.h: OK
+src/include/solverchallenge26/matrix_market_reader.h: OK
+src/include/solverchallenge26/mpi_system_loader.h: OK
+src/include/solverchallenge26/petsc_binary_reader.h: OK
+src/include/solverchallenge26/residual_check.h: OK
+src/include/solverchallenge26/runtime_support.h: OK
+src/include/solverchallenge26/solver_api.h: OK
+src/include/solverchallenge26/solver_input.h: OK
+src/include/solverchallenge26/system_loader.h: OK
+src/problems/README.md: OK
+src/problems/cpu_baseline/CMakeLists.txt: OK
+src/problems/cpu_baseline/solver.c: OK
+src/problems/cpu_baseline/solver.h: OK
+src/problems/problem01/CMakeLists.txt: OK
+src/problems/problem01/gpu_direct_solver.cu: OK
+src/problems/problem01/gpu_iterative_solver.cu: OK
+src/problems/problem01/solver.c: OK
+src/problems/problem01/solver.h: OK
+src/problems/problem02/CMakeLists.txt: OK
+src/problems/problem02/gpu_direct_solver.cu: OK
+src/problems/problem02/gpu_iterative_solver.cu: OK
+src/problems/problem02/solver.c: OK
+src/problems/problem02/solver.h: OK
+src/problems/problem03/CMakeLists.txt: OK
+src/problems/problem03/gpu_direct_solver.cu: OK
+src/problems/problem03/gpu_iterative_solver.cu: OK
+src/problems/problem03/solver.c: OK
+src/problems/problem03/solver.h: OK
+src/problems/problem04/CMakeLists.txt: OK
+src/problems/problem04/gpu_direct_solver.cu: OK
+src/problems/problem04/gpu_iterative_solver.cu: OK
+src/problems/problem04/solver.c: OK
+src/problems/problem04/solver.h: OK
+src/problems/problem05/CMakeLists.txt: OK
+src/problems/problem05/gpu_direct_solver.cu: OK
+src/problems/problem05/gpu_iterative_solver.cu: OK
+src/problems/problem05/solver.c: OK
+src/problems/problem05/solver.h: OK
+src/problems/problem06/CMakeLists.txt: OK
+src/problems/problem06/gpu_direct_solver.cu: OK
+src/problems/problem06/gpu_iterative_solver.cu: OK
+src/problems/problem06/solver.c: OK
+src/problems/problem06/solver.h: OK
+src/problems/problem07/CMakeLists.txt: OK
+src/problems/problem07/gpu_direct_solver.cu: OK
+src/problems/problem07/gpu_iterative_solver.cu: OK
+src/problems/problem07/solver.c: OK
+src/problems/problem07/solver.h: OK
+src/problems/problem08/CMakeLists.txt: OK
+src/problems/problem08/gpu_direct_solver.cu: OK
+src/problems/problem08/gpu_iterative_solver.cu: OK
+src/problems/problem08/solver.c: OK
+src/problems/problem08/solver.h: OK
+src/problems/problem09/CMakeLists.txt: OK
+src/problems/problem09/gpu_direct_solver.cu: OK
+src/problems/problem09/gpu_iterative_solver.cu: OK
+src/problems/problem09/solver.c: OK
+src/problems/problem09/solver.h: OK
+src/problems/problem10/CMakeLists.txt: OK
+src/problems/problem10/gpu_direct_solver.cu: OK
+src/problems/problem10/gpu_iterative_solver.cu: OK
+src/problems/problem10/solver.c: OK
+src/problems/problem10/solver.h: OK
+src/src/diagnostics.c: OK
+src/src/matrix_market/highlevel.c: OK
+src/src/matrix_market/mmio.c: OK
+src/src/mpi_system_loader.c: OK
+src/src/petsc_binary_reader.c: OK
+src/src/system_loader.c: OK
+src/tests/header_include_order_mpi_first.c: OK
+src/tests/header_include_order_reader_first.c: OK
+tests/check_result.py: OK
+tests/make_small_systems.py: OK
+d1c5bd160b5fd823c24e9f0f125f1f19cb7704e4
+64d31a18f34dc77b46217a0490bf2398f46e106df3445827d2c9740b60debfc1  build/CMakeCache.txt
+6b02653379cef1a24599bf9b10dfe157f6dd19694080bf03e60c9ad4ddc29ffd  build/bin/MPI_iterative_solver
+CMAKE_C_COMPILER:STRING=/data/public/software/gcc/11.3.0/bin/gcc
+CMAKE_C_COMPILER_AR:FILEPATH=/data/public/software/gcc/11.3.0/bin/gcc-ar
+CMAKE_C_COMPILER_RANLIB:FILEPATH=/data/public/software/gcc/11.3.0/bin/gcc-ranlib
+HYPRE_DIR:UNINITIALIZED=/data/home/sunyc/solverchallenge26/deps/hypre/lib64/cmake/HYPRE
+SC26_BUILD_MPI:BOOL=ON
+SC26_BUILD_MPI_GPU:BOOL=OFF
+SC26_ENABLE_FLOAT128:BOOL=ON
+SC26_PROBLEM:STRING=02
+SC26_T2_HIP:BOOL=OFF
+SC26_TEST_MATRIX:FILEPATH=
+SC26_TEST_RHS:FILEPATH=
+CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
+CMAKE_C_COMPILER_AR-ADVANCED:INTERNAL=1
+CMAKE_C_COMPILER_RANLIB-ADVANCED:INTERNAL=1
+SC26_HAVE_QUADMATH:INTERNAL=1
+SC26_HAVE_QUADMATH_H:INTERNAL=1
+SC26_PROBLEM-STRINGS:INTERNAL=01;02;03;04;05;06;07;08;09;10
+/* #undef HYPRE_USING_GPU_AWARE_MPI */
+/* #undef HYPRE_USING_UNIFIED_MEMORY */
+/* #undef HYPRE_USING_GPU */
+/* #undef HYPRE_USING_HIP */
+REGRESSION_ROOT=/data/home/sunyc/solverchallenge26/plan-execution-20261009/t2-hipoff-9227732 REGRESSION_BINARY=/data/home/sunyc/solverchallenge26/plan-execution-20261009/t2-hipoff-9227732/build/bin/MPI_iterative_solver
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              c3n10
+  Local adapter:           mlx5_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   c3n10
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              c3n10
+  Local adapter:           mlx5_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   c3n10
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+[c3n10:91775] 3 more processes have sent help message help-mpi-btl-openib.txt / ib port not selected
+[c3n10:91775] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[c3n10:91775] 3 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              c3n10
+  Local adapter:           mlx5_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   c3n10
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              c3n10
+  Local adapter:           mlx5_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   c3n10
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+[c3n10:91819] 3 more processes have sent help message help-mpi-btl-openib.txt / ib port not selected
+[c3n10:91819] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[c3n10:91819] 3 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              c3n10
+  Local adapter:           mlx5_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   c3n10
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              c3n10
+  Local adapter:           mlx5_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   c3n10
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+[c3n10:91860] 3 more processes have sent help message help-mpi-btl-openib.txt / ib port not selected
+[c3n10:91860] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[c3n10:91860] 3 more processes have sent help message help-mpi-btl-openib.txt / error in device init

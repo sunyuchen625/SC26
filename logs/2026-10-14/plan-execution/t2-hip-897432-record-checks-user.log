@@ -1,0 +1,9 @@
+Source: user-supplied actual E-Shell command outcome on 14 October 2026, Asia/Shanghai.
+S1_CASE_VERIFIED=poisson SOLVES=5 POLICY=5 PHASES=5 PROJECTION=0
+S1_CASE_VERIFIED=nonsymmetric SOLVES=5 POLICY=5 PHASES=5 PROJECTION=0
+S1_CASE_VERIFIED=neumann SOLVES=5 POLICY=5 PHASES=5 PROJECTION=5
+t2-897432/build/bin/MPI_iterative_solver: OK
+dd6ba2d52cd9e337b8d64b5940e63ee67ae774108575641f34cfd9f2f4509cbf  t2-897432-evidence-20261014.tar.gz
+scnet-t2-hip-full.sbatch: OK
+sbatch: error: Batch job submission failed: Job submission failed because too much memory was requested relative to the number of CPUs requested. The requested memory:CPU should be kept no more than DefMemPerCPU
+sbatch: ======= Tips: reduce job's request memory (--mem or --memory-per-cpu) =======

@@ -1,0 +1,70 @@
+User-supplied accounting and concatenated stdout/stderr; spacing normalized during transcription.
+
+[travissun@zz-login03 ~]$ sacct -j 887201 -X -o JobID,State,ExitCode,Elapsed,NodeList
+JobID                 State ExitCode    Elapsed        NodeList
+---------------- ---------- -------- ---------- ---------------
+887201               FAILED      1:0   00:00:03        f11r3n11
+[travissun@zz-login03 ~]$ cat ~/sc26_hip_probe-887201.out ~/sc26_hip_probe-887201.err
+d733e0145f3686825ade0d204f725e72782d9fe677fcdbf4ef7909253c808e68  submitted.sbatch
+JOB_ID=887201 NODELIST=f11r3n11 CPUS_PER_TASK=1
+JobId=887201 JobName=sc26_hip_probe
+   UserId=travissun(424871) GroupId=ac3k88uz8y(371608) MCS_label=N/A
+   Priority=1126 Nice=0 Account=ac3k88uz8y QOS=user_travissun
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:00 TimeLimit=00:05:00 TimeMin=00:03:00
+   SubmitTime=2026-10-05T22:48:25 EligibleTime=2026-10-05T22:48:25
+   AccrueTime=2026-10-05T22:48:25
+   StartTime=2026-10-05T22:48:26 EndTime=2026-10-05T22:51:26 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-05T22:48:26 Scheduler=Main
+   Partition=hx1hdnormal AllocNode:Sid=zz-login03:824635
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=f11r3n11
+   BatchHost=f11r3n11
+   StepMgrEnabled=Yes
+   NumNodes=1 NumCPUs=1 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=1,mem=3800M,node=1,billing=1,gres/dcu=1
+   AllocTRES=cpu=1,mem=3800M,node=1,billing=1,gres/dcu=1
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=1 MinMemoryCPU=3800M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=(null)
+   WorkDir=/public/home/travissun
+   StdErr=/public/home/travissun/sc26_hip_probe-887201.err
+   StdIn=/dev/null
+   StdOut=/public/home/travissun/sc26_hip_probe-887201.out
+   GresEnforceBind=Yes
+   TresPerNode=gres/dcu:Hygon:1
+   TresPerTask=cpu=1
+
+Currently Loaded Modulefiles:
+ 1) compiler/gcc/12.2.0   2) compiler/cmake/3.24.1   3) compiler/dtk/25.04.2
+dcc version: 25.08.0-0
+clang version 17.0.0 (http://10.15.3.7/dcutoolkit/driverruntime/llvm-project.git d21995155f60c427e7df118689262a073369149a)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /public/software/compiler/dtk-25.04.2/llvm/bin
+cmake version 3.24.1
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+d634ebac5867269f3120f7bfe554ecac4c604491e1a7123d3c0c02669393665e  hip-probe.cpp
+9673de5d003dd718ac376c7a8981f80be4944c682c9a31e255d5b5baf977187c  hip-probe
+HIP_DEVICE count=1 name=BW architecture=gfx936:sramecc+:xnack- global_memory_bytes=68702699520
+HIP_RUNTIME_VERSION=60325422
+HIP_KERNEL_PASS elements=8 precision=double
+Currently Loaded Modulefiles:
+ 1) compiler/gcc/12.2.0     3) compiler/dtk/25.04.2
+ 2) compiler/cmake/3.24.1   4) mpi/openmpi/4.1.8/gcc-12.2.0/shca
+gcc -I/public/software/mpi/openmpi/openmpi-4.1.8/include -I/public/software/mpi/openmpi/openmpi-4.1.8/include/openmpi -I/public/software/mpi/hwloc/2.12.0/include -pthread -L/public/software/mpi/openmpi/openmpi-4.1.8/lib -L/public/software/mpi/hwloc/2.12.0//lib -Wl,-rpath -Wl,/public/software/mpi/openmpi/openmpi-4.1.8/lib -Wl,-rpath -Wl,/public/software/mpi/hwloc/2.12.0//lib -Wl,--enable-new-dtags -lmpi
+baa1a508eac8d51a5f65a394cd35071737a4b4edb897c2879bdedc21aeaf4743  mpi-probe.c
+90933f5a2b79d54f6447f967470110fbe8fc40411fa17eb381fb361915b4d61c  mpi-probe
+hip-probe.cpp:7:1: warning: void function is missing a return statement [-Wreturn-type]
+}
+^
+1 warning generated when compiling for gfx936.
+hip-probe.cpp:7:1: warning: void function is missing a return statement [-Wreturn-type]
+}
+^
+1 warning generated when compiling for host.
+mpirun: Error: unknown option "--bind-to"

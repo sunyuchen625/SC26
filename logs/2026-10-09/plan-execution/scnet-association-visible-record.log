@@ -1,0 +1,19 @@
+Source: observed native Chrome E-Shell screenshot on 9 October 2026. Excerpts transcribed; unrelated output omitted.
+
+squeue -A ac3k88uz8y -o '%.18i %.12u %.24j %.10T %.5D %.12M %N'
+JOBID USER NAME STATE NODES TIME NODELIST
+897432 travissun sc26_t2_hip_build PENDING 1 0:00
+
+sacctmgr -n -P show association where account=ac3k88uz8y format=Cluster,Account,User,Partition,GrpNodes,GrpTRES
+cluster_zz_2|ac3k88uz8y|travissun|hx1hdnormal||
+
+scontrol show assoc_mgr accounts=ac3k88uz8y flags=assoc
+Current Association Manager state
+Association Records
+ClusterName=cluster_zz_2 Account=ac3k88uz8y UserName=travissun(424871) Partition=hx1hdnormal Priority=0 ID=60794
+ParentAccount= Lineage=/ac3k88uz8y/0-travissun/hx1hdnormal/ DefAssoc=Yes
+GrpJobs=N(0) GrpJobsAccrue=N(1)
+GrpSubmitJobs=N(1) GrpWall=N(14.64)
+GrpTRES=cpu=N(0),mem=N(0),energy=N(0),node=N(0),billing=N(0),fs/disk=N(0),vmem=N(0),pages=N(0),gres/dcu=N(0),gres/gpu=N(0),gres/gpumem=N(0),gres/gpuutil=N(0)
+
+The account query displayed one pending job and no running jobs. The visible user association has blank explicit sacctmgr limits and node=N(0) in controller cache. The association level/value responsible for the job's AssocGrpNodeLimit was not shown by these scoped queries.

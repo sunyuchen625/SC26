@@ -1,0 +1,161 @@
+[travissun@zz-login03 ~]$ sacct -j 890896 -X -o JobID,State,ExitCode,Elapsed,NodeList
+JobID                 State ExitCode    Elapsed        NodeList 
+---------------- ---------- -------- ---------- --------------- 
+890896               FAILED      1:0   00:00:00        f11r1n20 
+[travissun@zz-login03 ~]$ cat ~/sc26_mpi_components-890896.out ~/sc26_mpi_components-890896.err
+JOB_ID=890896 NODE=f11r1n20
+JobId=890896 JobName=sc26_mpi_components
+   UserId=travissun(424871) GroupId=ac3k88uz8y(371608) MCS_label=N/A
+   Priority=1124 Nice=0 Account=ac3k88uz8y QOS=user_travissun
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:00 TimeLimit=00:05:00 TimeMin=00:03:00
+   SubmitTime=2026-10-07T17:59:48 EligibleTime=2026-10-07T17:59:48
+   AccrueTime=2026-10-07T17:59:48
+   StartTime=2026-10-07T17:59:49 EndTime=2026-10-07T18:02:49 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-07T17:59:49 Scheduler=Main
+   Partition=hx1hdnormal AllocNode:Sid=zz-login03:2893974
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=f11r1n20
+   BatchHost=f11r1n20
+   StepMgrEnabled=Yes
+   NumNodes=1 NumCPUs=1 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=1,mem=3800M,node=1,billing=1,gres/dcu=1
+   AllocTRES=cpu=1,mem=3800M,node=1,billing=1,gres/dcu=1
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=1 MinMemoryCPU=3800M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=(null)
+   WorkDir=/public/home/travissun
+   StdErr=/public/home/travissun/sc26_mpi_components-890896.err
+   StdIn=/dev/null
+   StdOut=/public/home/travissun/sc26_mpi_components-890896.out
+   GresEnforceBind=Yes
+   TresPerNode=gres/dcu:Hygon:1
+   TresPerTask=cpu=1
+   
+
+Currently Loaded Modulefiles:
+ 1) compiler/gcc/12.2.0    3) mpi/openmpi/4.1.8/gcc-12.2.0/shca  
+ 2) compiler/dtk/25.04.2  
+OPAL_PREFIX=/public/software/mpi/openmpi/openmpi-4.1.8
+OPAL_LIBDIR=
+OPAL_PKGLIBDIR=
+OMPI_MCA_shmem=
+OMPI_MCA_mca_base_component_path=:/public/software/mpi/pmix/4.2.9/lib/pmix
+LD_LIBRARY_PATH=/public/software/mpi/libevent/2.1.8/lib:/public/software/mpi/ucx/1.18.0/dtk-25.04/shca/lib:/public/software/mpi/pmix/4.2.9/lib:/public/software/mpi/hwloc/2.12.0/lib:/public/software/mpi/openmpi/openmpi-4.1.8/lib:/public/software/compiler/dtk-25.04.2/hip/lib:/public/software/compiler/dtk-25.04.2/llvm/lib:/public/software/compiler/dtk-25.04.2/lib:/public/software/compiler/dtk-25.04.2/lib64:/opt/hyhal/lib:/opt/hyhal/lib64:/public/software/compiler/dtk-25.04.2/opencl/lib:/public/software/compiler/gcc-12.2.0/lib:/public/software/compiler/gcc-12.2.0/lib64:/opt/gridview/slurm/lib:/opt/gridview/slurm/lib64:/opt/gridview/munge/lib
+LD_PRELOAD=
+drwxrwxrwt    3 root root   2160 Oct  7 17:59 /dev/shm
+drwxr-xr-x    4 root root   8192 Mar  4  2026 /public/software/mpi/openmpi/openmpi-4.1.8/lib
+drwxr-xr-x    2 root root   8192 Mar  4  2026 /public/software/mpi/openmpi/openmpi-4.1.8/lib/openmpi
+drwxrwxrwt. 111 root root 483328 Oct  7 17:59 /tmp
+DIRECTORY_QUERY_EXIT=0
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           504G  5.9M  504G   1% /dev/shm
+/dev/nvme1n1p3  437G  316G   99G  77% /
+FILESYSTEM_QUERY_EXIT=0
+/public/software/mpi/openmpi/openmpi-4.1.8/lib/openmpi/mca_shmem_sysv.la
+/public/software/mpi/openmpi/openmpi-4.1.8/lib/openmpi/mca_shmem_sysv.so
+/public/software/mpi/openmpi/openmpi-4.1.8/lib/openmpi/mca_shmem_posix.so
+/public/software/mpi/openmpi/openmpi-4.1.8/lib/openmpi/mca_shmem_mmap.so
+/public/software/mpi/openmpi/openmpi-4.1.8/lib/openmpi/mca_shmem_posix.la
+/public/software/mpi/openmpi/openmpi-4.1.8/lib/openmpi/mca_shmem_mmap.la
+COMPONENT_LIST_EXIT=0
+SHMEM_COMPONENT=/public/software/mpi/openmpi/openmpi-4.1.8/lib/openmpi/mca_shmem_mmap.so
+        linux-vdso.so.1 (0x00007ffe17ea4000)
+        libopen-pal.so.40 => /public/software/mpi/openmpi/openmpi-4.1.8/lib/libopen-pal.so.40 (0x00007f1381800000)
+        libdl.so.2 => /lib64/libdl.so.2 (0x00007f1381400000)
+        librt.so.1 => /lib64/librt.so.1 (0x00007f1381000000)
+        libutil.so.1 => /lib64/libutil.so.1 (0x00007f1380c00000)
+        libz.so.1 => /lib64/libz.so.1 (0x00007f1380800000)
+        libhwloc.so.15 => /opt/hpc/software/mpi/hwloc/2.12.0/lib/libhwloc.so.15 (0x00007f1380400000)
+        libm.so.6 => /lib64/libm.so.6 (0x00007f1380000000)
+        libpciaccess.so.0 => /lib64/libpciaccess.so.0 (0x00007f137fc00000)
+        libevent_core-2.1.so.6 => /lib64/libevent_core-2.1.so.6 (0x00007f137f800000)
+        libevent_pthreads-2.1.so.6 => /lib64/libevent_pthreads-2.1.so.6 (0x00007f137f400000)
+        libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f137f000000)
+        libc.so.6 => /lib64/libc.so.6 (0x00007f137ec00000)
+        /lib64/ld-linux-x86-64.so.2 (0x00007f1382000000)
+        libcrypto.so.1.1 => /lib64/libcrypto.so.1.1 (0x00007f137e600000)
+COMPONENT_LDD_EXIT=0
+SHMEM_COMPONENT=/public/software/mpi/openmpi/openmpi-4.1.8/lib/openmpi/mca_shmem_posix.so
+        linux-vdso.so.1 (0x00007ffce3923000)
+        libopen-pal.so.40 => /public/software/mpi/openmpi/openmpi-4.1.8/lib/libopen-pal.so.40 (0x00007f549b400000)
+        libdl.so.2 => /lib64/libdl.so.2 (0x00007f549b000000)
+        librt.so.1 => /lib64/librt.so.1 (0x00007f549ac00000)
+        libutil.so.1 => /lib64/libutil.so.1 (0x00007f549a800000)
+        libz.so.1 => /lib64/libz.so.1 (0x00007f549a400000)
+        libhwloc.so.15 => /opt/hpc/software/mpi/hwloc/2.12.0/lib/libhwloc.so.15 (0x00007f549a000000)
+        libm.so.6 => /lib64/libm.so.6 (0x00007f5499c00000)
+        libpciaccess.so.0 => /lib64/libpciaccess.so.0 (0x00007f5499800000)
+        libevent_core-2.1.so.6 => /lib64/libevent_core-2.1.so.6 (0x00007f5499400000)
+        libevent_pthreads-2.1.so.6 => /lib64/libevent_pthreads-2.1.so.6 (0x00007f5499000000)
+        libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f5498c00000)
+        libc.so.6 => /lib64/libc.so.6 (0x00007f5498800000)
+        /lib64/ld-linux-x86-64.so.2 (0x00007f549bc00000)
+        libcrypto.so.1.1 => /lib64/libcrypto.so.1.1 (0x00007f5498200000)
+COMPONENT_LDD_EXIT=0
+SHMEM_COMPONENT=/public/software/mpi/openmpi/openmpi-4.1.8/lib/openmpi/mca_shmem_sysv.so
+        linux-vdso.so.1 (0x00007ffd541fd000)
+        libopen-pal.so.40 => /public/software/mpi/openmpi/openmpi-4.1.8/lib/libopen-pal.so.40 (0x00007f2f55200000)
+        libdl.so.2 => /lib64/libdl.so.2 (0x00007f2f54e00000)
+        librt.so.1 => /lib64/librt.so.1 (0x00007f2f54a00000)
+        libutil.so.1 => /lib64/libutil.so.1 (0x00007f2f54600000)
+        libz.so.1 => /lib64/libz.so.1 (0x00007f2f54200000)
+        libhwloc.so.15 => /opt/hpc/software/mpi/hwloc/2.12.0/lib/libhwloc.so.15 (0x00007f2f53e00000)
+        libm.so.6 => /lib64/libm.so.6 (0x00007f2f53a00000)
+        libpciaccess.so.0 => /lib64/libpciaccess.so.0 (0x00007f2f53600000)
+        libevent_core-2.1.so.6 => /lib64/libevent_core-2.1.so.6 (0x00007f2f53200000)
+        libevent_pthreads-2.1.so.6 => /lib64/libevent_pthreads-2.1.so.6 (0x00007f2f52e00000)
+        libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f2f52a00000)
+        libc.so.6 => /lib64/libc.so.6 (0x00007f2f52600000)
+        /lib64/ld-linux-x86-64.so.2 (0x00007f2f55a00000)
+        libcrypto.so.1.1 => /lib64/libcrypto.so.1.1 (0x00007f2f52000000)
+COMPONENT_LDD_EXIT=0
+MPI_CONFIG=/public/software/mpi/openmpi/openmpi-4.1.8/etc/openmpi-mca-params.conf
+mpi-probe: OK
+MPI_PREFIX_TEST=/public/software/mpi/openmpi/openmpi-4.1.8 MPI_EXEC_HOST=f11r1n20
+MPI_PREFIX_TEST_EXIT=1
+[f11r1n20:4143199] mca: base: components_register: registering framework shmem components
+[f11r1n20:4143199] mca: base: components_open: opening shmem components
+[f11r1n20:4143199] shmem: base: runtime_query: Auto-selecting shmem components
+[f11r1n20:4143199] shmem: base: runtime_query: (shmem) No component selected!
+--------------------------------------------------------------------------
+It looks like opal_init failed for some reason; your parallel process is
+likely to abort.  There are many reasons that a parallel process can
+fail during opal_init; some of which are due to configuration or
+environment problems.  This failure appears to be an internal failure;
+here's some additional information (which may only be relevant to an
+Open MPI developer):
+
+  opal_shmem_base_select failed
+  --> Returned value -1 instead of OPAL_SUCCESS
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+It looks like orte_init failed for some reason; your parallel process is
+likely to abort.  There are many reasons that a parallel process can
+fail during orte_init; some of which are due to configuration or
+environment problems.  This failure appears to be an internal failure;
+here's some additional information (which may only be relevant to an
+Open MPI developer):
+
+  opal_init failed
+  --> Returned value Error (-1) instead of ORTE_SUCCESS
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+It looks like MPI_INIT failed for some reason; your parallel process is
+likely to abort.  There are many reasons that a parallel process can
+fail during MPI_INIT; some of which are due to configuration or environment
+problems.  This failure appears to be an internal failure; here's some
+additional information (which may only be relevant to an Open MPI
+developer):
+
+  ompi_mpi_init: ompi_rte_init failed
+  --> Returned "Error" (-1) instead of "Success" (0)
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[f11r1n20:4143199] Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!
