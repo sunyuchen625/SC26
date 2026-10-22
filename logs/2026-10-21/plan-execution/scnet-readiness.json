@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-10-21T18:11:35+08:00",
+  "source": "Human-executed query, read directly from native E-Shell screenshot",
+  "host": "zz-login02",
+  "user": "travissun",
+  "account": "ac3k88uz8y",
+  "cluster": "cluster_zz_2",
+  "partition": "hx1hdnormal",
+  "association_QOS": "user_travissun",
+  "own_queue_empty": true,
+  "directly_allowed_account": true,
+  "prior_2026_10_14_directly_allowed_account": false,
+  "partition_QOS": "partition_hx1hdnormal",
+  "AllowQOS": "ALL",
+  "partition_state": "UP",
+  "DefMemPerCPU_MiB": 3800,
+  "partition_max_time": "3-00:00:00",
+  "balance_policy": "User reports committee confirmed no hard balance limit",
+  "expiry_verified": false,
+  "full_job_admission_receipt_obtained": false
+}

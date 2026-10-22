@@ -1,0 +1,74 @@
+{
+  "checked_date": "2026-10-21",
+  "observation_method": "Relevant fields transcribed from native E-Shell after human executed scoped query",
+  "node": "f11r2n10",
+  "arch": "x86_64",
+  "cores_per_socket": 16,
+  "sockets": 8,
+  "CPUTot": 128,
+  "CPUAlloc": 127,
+  "RealMemory_MiB": 510000,
+  "AllocMem_MiB": 474752,
+  "state": "MIXED",
+  "partition": "hx1hdnormal",
+  "GRES": "dcu:Hygon:8(S:0-7)",
+  "allocated_DCUs": 8,
+  "partition_node_states": {
+    "planned": 3,
+    "down": 1,
+    "drain": 61,
+    "mixed": 19,
+    "allocated": 11
+  },
+  "failure_records": [
+    {
+      "job": 953802,
+      "submit": "2026-10-21T18:13:22",
+      "start": "2026-10-21T18:13:22",
+      "end": "2026-10-21T18:13:22",
+      "sacct_state": "FAILED",
+      "sacct_exit": "1:0",
+      "elapsed_seconds": 0,
+      "allocated_CPUs": 0,
+      "NodeList": "None assigned",
+      "AllocTRES": ""
+    },
+    {
+      "job": 953805,
+      "submit": "2026-10-21T18:13:43",
+      "start": "2026-10-21T18:13:43",
+      "end": "2026-10-21T18:13:43",
+      "sacct_state": "FAILED",
+      "sacct_exit": "1:0",
+      "elapsed_seconds": 0,
+      "allocated_CPUs": 0,
+      "NodeList": "None assigned",
+      "AllocTRES": ""
+    }
+  ],
+  "scontrol_953802": {
+    "Reason": "BadConstraints",
+    "ExitCode": "0:1",
+    "ReqTRES": "cpu=18,mem=64G,node=1,billing=18,gres/dcu=1",
+    "AllocTRES": "(null)",
+    "ReqNodeList": "f11r2n10",
+    "GresEnforceBind": "Yes"
+  },
+  "submission_error": "Requested node configuration is not available",
+  "scheduler_tip": "request another nodes or remove -w",
+  "inference": "The original node is fully occupied for DCUs; the request also enforces GRES CPU binding while asking for 18 CPUs against 16 cores per socket. Exact binding-related rejection cause remains to be confirmed by the corrected scheduler request.",
+  "official_binding_reference": "https://slurm.schedmd.com/sbatch.html#OPT_gres-flags",
+  "correction": "Accepted job 953826 uses scheduler-selected node, one DCU, 16 CPUs and 58 GiB. It retains the same binary and runs three known systems before full data.",
+  "corrected_batch_sha256": "3f28ebcddad50856031878bf7a81f7f06bcb1b15a255b71c7b90d6b331646261",
+  "corrected_batch_submitted": true,
+  "admitted_job": 953826,
+  "test_only_attempt": {
+    "batch_sha256": "6c2fddef3ddba185f3f941cd667d1e669edab31786e96de86bc0ddc5d198db2f",
+    "CPU": 18,
+    "memory_GiB": 64,
+    "node_pin": false,
+    "gres_binding": "disable",
+    "result": "allocation failure: Requested node configuration is not available",
+    "actual_sbatch_prevented_by_failed_test_only": true
+  }
+}

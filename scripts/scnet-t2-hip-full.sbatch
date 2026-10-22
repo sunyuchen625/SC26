@@ -2,11 +2,10 @@
 #SBATCH --job-name=sc26_t2_hip_full
 #SBATCH --partition=hx1hdnormal
 #SBATCH --nodes=1
-#SBATCH --nodelist=f11r2n10
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=18
+#SBATCH --cpus-per-task=16
 #SBATCH --gres=dcu:Hygon:1
-#SBATCH --mem=64G
+#SBATCH --mem=58G
 #SBATCH --time=00:45:00
 #SBATCH --output=sc26_t2_hip_full-%j.out
 #SBATCH --error=sc26_t2_hip_full-%j.err
@@ -65,6 +64,32 @@ for name, count in zip(sys.argv[1:], (4, 2)):
     print('PETSC_INPUT file=%s bytes=%d header=%s' % (name, Path(name).stat().st_size, header))
 SC26_INPUT_ID
 cd "$run"
+export SC26_RTOL=1e-11
+for sample in poisson nonsymmetric neumann; do
+    export SC26_PROJECT_CONSTANT=0
+    check_args=(solver.log 1e-10 answer_x.rhs "$small_dir/tests/small_systems/${sample}_x.txt")
+    if [[ "$sample" == neumann ]]; then
+        export SC26_PROJECT_CONSTANT=1
+        check_args+=(constant-nullspace)
+    fi
+    mkdir -p "device-small/$sample"
+    cd "device-small/$sample"
+    solver_exit=0
+    /usr/bin/time -v -o process.time "$small_dir/build/bin/MPI_iterative_solver" \
+        "$small_dir/tests/small_systems/${sample}_A.dat" \
+        "$small_dir/tests/small_systems/${sample}_b.dat" 0 0 \
+        >solver.log 2>solver.err || solver_exit=$?
+    printf '%s\n' "$solver_exit" >process.exit
+    printf 'CASE=%s SOLVER_EXIT_CODE=%s\n' "$sample" "$solver_exit"
+    cat solver.err
+    if [[ "$solver_exit" -ne 0 ]]; then tail -n 30 solver.log >&2; exit "$solver_exit"; fi
+    test ! -s solver.err
+    test "$(grep -c '^T2_HIP_POLICY memory_device=1 execution_device=1$' solver.log)" -eq 5
+    python3 "$small_dir/tests/check_result.py" "${check_args[@]}"
+    cd "$run"
+done
+unset SC26_RTOL SC26_PROJECT_CONSTANT
+printf 'SC26_T2_HIP_DEVICE_SMALL_COMPLETE\n'
 solver_exit=0
 /usr/bin/time -v -o process.time "$small_dir/build/bin/MPI_iterative_solver" \
     "$data/solverchallenge26_02_A.dat" "$data/solverchallenge26_02_b.dat" 0 0 \

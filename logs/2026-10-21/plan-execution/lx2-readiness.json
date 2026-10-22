@@ -1,0 +1,76 @@
+{
+  "checked_date": "2026-10-21",
+  "source": "Human-executed read-only query, viewed on native RDP/MobaXterm; no platform files downloaded",
+  "host": "node76",
+  "user": "travissun",
+  "architecture": "aarch64",
+  "os": {
+    "NAME": "Kylin Linux Advanced Server",
+    "VERSION": "V10 (Jasmine)",
+    "ID": "kylin",
+    "VERSION_ID": "V10"
+  },
+  "paths_found": [
+    "/usr/bin/gcc",
+    "/usr/bin/g++",
+    "/usr/bin/gfortran",
+    "/usr/local/bin/cmake",
+    "/opt/batch/cli/bin/dsub",
+    "/opt/batch/cli/bin/dlogin"
+  ],
+  "PATH_queries_without_result": [
+    "mpicc",
+    "mpirun",
+    "7z",
+    "7za"
+  ],
+  "home_permissions": "drwx------ travissun solverchallenge26",
+  "announced_proxy_script": "/fs_real_a800/home/challenge26/env/set_proxy.sh",
+  "proxy_script_bytes": 130,
+  "proxy_script_syntax_exit": 0,
+  "proxy_script_lines": 4,
+  "proxy_assignment_names": [
+    "http_proxy",
+    "https_proxy",
+    "ftp_proxy",
+    "no_proxy"
+  ],
+  "proxy_values_observed_or_retained": false,
+  "proxy_loaded_and_ingress_tested": true,
+  "new_dlogin_attempts": 0,
+  "scheduler_authentication_resolved": false,
+  "allocated_native_build_or_quadmath_probe": false,
+  "permitted_generated_evidence_export_arrangement_established": false,
+  "ingress_attempt": {
+    "source": "https://cmake.org/files/v3.24/cmake-3.24.2-linux-aarch64.tar.gz",
+    "download_exit": 60,
+    "error": "SSL certificate problem: self signed certificate in certificate chain",
+    "downloaded_CMake_sha256_check_executed": false,
+    "extraction_executed": false,
+    "native_CMake_version_query_executed": false,
+    "work_prefix": "/fs_real_a800/home/travissun/sc26-lx2-20261021/deps"
+  },
+  "scheduler_install_directory_entries": [
+    "bin",
+    "certs",
+    "config",
+    "envs",
+    "install",
+    "kmc_conf",
+    "version.properties"
+  ],
+  "CA_metadata_observed": {
+    "public_env_entries": [
+      "set_proxy.sh"
+    ],
+    "system_anchor_directory": "/etc/pki/ca-trust/source/anchors",
+    "system_anchor_directory_total": 0,
+    "system_ca_bundle": "/etc/pki/tls/certs/ca-bundle.crt",
+    "system_ca_bundle_is_symlink": true,
+    "alternate_bundle": "/etc/ssl/certs/ca-certificates.crt",
+    "alternate_bundle_exists": false,
+    "dlogin_file_type": "symbolic link to dconfig",
+    "provider_proxy_CA_identified": false,
+    "scope": "Observed directory names and public trust-path metadata only; no credentials or certificate store contents read."
+  }
+}

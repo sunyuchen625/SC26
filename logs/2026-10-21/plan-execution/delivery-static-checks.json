@@ -1,0 +1,16 @@
+{
+  "checked_date": "2026-10-21",
+  "batch_sha256": "3f28ebcddad50856031878bf7a81f7f06bcb1b15a255b71c7b90d6b331646261",
+  "bash_syntax_exit": 0,
+  "missing_allocation_guard_exit": 2,
+  "wrong_host_guard_exit": 2,
+  "solver_or_compiler_executed_locally": false,
+  "framework_and_test_sources_unchanged_from_HEAD_5add951": true,
+  "frozen_artifact_sha256": {
+    "deliverables/SC26_CPU_candidate_6b7f675.tar.gz": "dae96e3fa5c8dc4cf8d66469b34797a84a0f3d741d0f8f4d8b4884f16206a111",
+    "deliverables/SC26_T2_HIP_source_20261009.tar.gz": "9708c99de61699a0c9d7452503ab07c97284ed3287b57185a816947d8de58ee0",
+    "docs/SC26技术报告_2026-10-02.docx": "12c234efccfee7b23f75ba4191c6bef3500de1a4e6d569d7689800e812471fc4"
+  },
+  "independent_resource_document_diff_matches_initial": true,
+  "scope": "Batch shell boundaries and delivery/source identities; runtime acceptance requires actual cloud evidence."
+}

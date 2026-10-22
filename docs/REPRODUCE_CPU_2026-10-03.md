@@ -1,12 +1,14 @@
 # CUDA OOM! CPU 独立重建与复现
 
-更新：2026-10-14。冻结 CPU 源码版本：`6b7f675ecaa6949815a3a77f95467fc35f8d5bbf`。执行人由队友本人填写。完成状态依据该执行人的新构建、新作业和检查记录。
+更新：2026-10-21。冻结 CPU 源码版本：`6b7f675ecaa6949815a3a77f95467fc35f8d5bbf`。执行人由队友本人填写。完成状态依据该执行人的新构建、新作业和检查记录。
 
 ## 环境及准备
 
 使用组织方商用 CPU 的单节点资源，沿用已验证 GCC 11.3.0、OpenMPI 4.1.8、CMake 3.24.2、HYPRE 2.33.0 和 oneMKL 2022.0.0。正式 MPI 要求以主办方启动合同为准；当前复现路径使用 OpenMPI。
 
-本队已验证工作区为 `/data/home/sunyc/solverchallenge26`，HYPRE 在其 `deps/hypre`，GNU time 在 `deps/gnu-time/time`。官方输入在 `/data/home/maorz/SolverChallenge26-TenProblems`。沿用已有认证连接。每人建立单独目录，构建及求解均由 Slurm 作业执行；同一时间最多运行两项 SC26 作业。
+本队已验证工作区为 `/data/home/sunyc/solverchallenge26`，HYPRE 在其 `deps/hypre`，GNU time 在 `deps/gnu-time/time`。官方输入在 `/data/home/maorz/SolverChallenge26-TenProblems`。沿用已有认证连接。每人建立单独目录，构建及求解均由 Slurm 作业执行；按平台实际授权和可用容量并行调度独立任务，保留其他项目的作业。
+
+10 月 21 日维护后复核已通过：所需模块可加载，候选包、来源清单及依赖身份一致，四题目录存在，`qhn` 为 UP，本人队列为空。[调度器只校验](../logs/2026-10-21/plan-execution/cpu-launch-validation.json)接受下列构建和四题资源请求；新的实际构建、数值结果与本人复现记录由执行人取得。
 
 从已授权读取的本队仓库取得该提交，或解压随附候选包。仓库来源操作：
 
@@ -51,17 +53,17 @@ printf '%s\n' "$build_job" > rebuild-job-id.txt
 
 ## 四个正式规模复现
 
-下列依赖形成两条作业链。请先确认账号没有其他正在运行的 SC26 作业，再提交；构建失败则后续作业等待处理。
+下列四项均依赖新构建成功，可按平台实际授权和可用容量并行推进。提交前核对本人作业与资源状态；构建失败则先处理实际报错。
 
 ```bash
 unset SC26_RTOL SC26_PROJECT_CONSTANT
 t2_job=$(sbatch --parsable --dependency=afterok:$build_job \
   --chdir="$PWD" --ntasks=16 --cpus-per-task=1 --mem=60G \
   scripts/remediation-baseline.sbatch 02 01)
-t7_job=$(sbatch --parsable --dependency=afterok:$t2_job \
+t7_job=$(sbatch --parsable --dependency=afterok:$build_job \
   --chdir="$PWD" --ntasks=16 --cpus-per-task=1 --mem=75G \
   scripts/remediation-baseline.sbatch 07 01)
-t9_job=$(sbatch --parsable --dependency=afterok:$t7_job \
+t9_job=$(sbatch --parsable --dependency=afterok:$build_job \
   --chdir="$PWD" --ntasks=1 --cpus-per-task=16 --mem=95G \
   scripts/remediation-baseline.sbatch 09 01)
 t5_job=$(sbatch --parsable --dependency=afterok:$build_job \

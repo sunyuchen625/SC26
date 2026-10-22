@@ -1,0 +1,83 @@
+{
+  "retrieval_method": "Direct HTTPS curl",
+  "sources": [
+    {
+      "name": "contest",
+      "url": "https://solver-conference.cn/solverchallenge26/",
+      "checked_at": "2026-10-21T18:04:16.209284+08:00",
+      "curl_exit": 0,
+      "snapshot": "logs/2026-10-14/plan-execution/official/contest.html",
+      "bytes": 64541,
+      "sha256": "900e45ac1889e8494910d0d9791d39c58e80949296228af20cc7a7fabd45affa",
+      "matches_2026_10_14_receipt": true
+    },
+    {
+      "name": "conference",
+      "url": "https://solver-conference.cn/solver26/index.html",
+      "checked_at": "2026-10-21T18:04:16.234485+08:00",
+      "curl_exit": 0,
+      "snapshot": "logs/2026-10-21/plan-execution/official/conference.html",
+      "bytes": 39340,
+      "sha256": "73b4b309a634ff9839790ac13bc5d22737a39d11bcc955f9986f72a88e33bc3f",
+      "matches_2026_10_14_receipt": false
+    },
+    {
+      "name": "README",
+      "url": "https://gitee.com/godjs/solverchallenge26_sample_code/raw/master/README.md",
+      "checked_at": "2026-10-21T18:04:16.691052+08:00",
+      "curl_exit": 0,
+      "snapshot": "logs/2026-10-14/plan-execution/official/README.md",
+      "bytes": 6623,
+      "sha256": "c0231764304b9ccb5184c80926616f00f459f8c584ff84803c683b6e37d488f6",
+      "matches_2026_10_14_receipt": true
+    },
+    {
+      "name": "CPU driver",
+      "url": "https://gitee.com/godjs/solverchallenge26_sample_code/raw/master/apps/MPI_iterative_solver.c",
+      "checked_at": "2026-10-21T18:04:16.847805+08:00",
+      "curl_exit": 0,
+      "snapshot": "logs/2026-10-14/plan-execution/official/MPI_iterative_solver.c",
+      "bytes": 12042,
+      "sha256": "078a8b734fa457705343ecfcceb26c235b2779597a6100c6c6605d6583740547",
+      "matches_2026_10_14_receipt": true
+    },
+    {
+      "name": "GPU driver",
+      "url": "https://gitee.com/godjs/solverchallenge26_sample_code/raw/master/apps/MPI_GPU_iterative_solver.c",
+      "checked_at": "2026-10-21T18:04:16.704555+08:00",
+      "curl_exit": 0,
+      "snapshot": "logs/2026-10-14/plan-execution/official/MPI_GPU_iterative_solver.c",
+      "bytes": 13902,
+      "sha256": "804481298e1252938614e88fc40eb22dc88a0dd98aa7d0103e647195bdbc2396",
+      "matches_2026_10_14_receipt": true
+    },
+    {
+      "name": "GPU metrics",
+      "url": "https://gitee.com/godjs/solverchallenge26_sample_code/raw/master/include/solverchallenge26/gpu_metrics.h",
+      "checked_at": "2026-10-21T18:04:16.659806+08:00",
+      "curl_exit": 0,
+      "snapshot": "logs/2026-10-14/plan-execution/official/gpu_metrics.h",
+      "bytes": 3521,
+      "sha256": "757c483d491f1f7057cfcf94f7ba91541fa03ed3f76acf39f63851e9772d8ae3",
+      "matches_2026_10_14_receipt": true
+    }
+  ],
+  "conference_task_deadline_text": "10月30日 24:00",
+  "timezone_explicit_in_source": false,
+  "actual_submission_portal_and_launcher_received": false,
+  "conference_diff": "Asset version changed; a two-page conference-notice PDF link was added. Task deadline unchanged.",
+  "conference_notice": {
+    "url": "https://solver-conference.cn/solver26/assets/file/SOLVER26%E4%BC%9A%E8%AE%AE%E9%80%9A%E7%9F%A5.pdf",
+    "snapshot": "logs/2026-10-21/plan-execution/official/conference-notice.pdf",
+    "bytes": 1572923,
+    "sha256": "242da3c00fabb529d7450b579ad2b6d27c538223477010aef46df47d7f29525c",
+    "pages_visually_read": [
+      1,
+      2
+    ],
+    "text_layer": false,
+    "scope": "Meeting date/location, topics, registration fees, conference/contest websites and public contacts; no task upload portal, package list, launcher or test harness."
+  },
+  "web_tool_result": "All three page opens failed (timeouts or inaccessible); direct HTTPS curl succeeded for all six sources and the linked PDF.",
+  "independent_teammate_job_evidence_received": false
+}

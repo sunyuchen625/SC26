@@ -1,0 +1,15 @@
+Observation: native Chrome E-Shell screenshot after human executed scnet-readiness-query.txt; transcribed relevant output only.
+2026-10-21T18:11:35+08:00
+zz-login02
+travissun
+Own squeue output: header only, no rows.
+cluster_zz_2|ac3k88uz8y|travissun|hx1hdnormal|user_travissun|||
+PartitionName=hx1hdnormal
+ACCOUNT=ac3k88uz8y DIRECTLY_LISTED_IN_ALLOWACCOUNTS=1
+AllowQos=ALL
+QoS=partition_hx1hdnormal
+MaxTime=3-00:00:00
+State=UP
+TotalCPUs=12160
+TotalNodes=95
+DefMemPerCPU=3800

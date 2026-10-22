@@ -1,0 +1,35 @@
+SC26_READONLY_BEGIN
+c3ln01
+uid=11599(sunyc) gid=11599(sunyc) groups=11599(sunyc)
+             JOBID           NAME    PARTITION      STATE         TIME  NODES NODELIST(REASON)
+cluster|sunyc|sunyc|qhn|normal|node=4|
+PartitionName=qhn
+   AllowGroups=ALL AllowAccounts=ALL AllowQos=ALL
+   AllocNodes=ALL Default=YES QoS=N/A
+   DefaultTime=NONE DisableRootJobs=NO ExclusiveUser=NO GraceTime=0 Hidden=NO
+   MaxNodes=UNLIMITED MaxTime=UNLIMITED MinNodes=0 LLN=NO MaxCPUsPerNode=UNLIMITED MaxCPUsPerSocket=UNLIMITED
+   Nodes=c3n[01-200]
+   PriorityJobFactor=1 PriorityTier=1 RootOnly=NO ReqResv=NO OverSubscribe=NO
+   OverTimeLimit=NONE PreemptMode=OFF
+   State=UP TotalCPUs=19200 TotalNodes=200 SelectTypeParameters=NONE
+   JobDefaults=(null)
+   DefMemPerCPU=5000 MaxMemPerCPU=5000
+   TRES=cpu=19200,mem=98000000M,node=200,billing=19200
+
+Currently Loaded Modulefiles:
+ 1) gcc/11.3.0                3) cmake/3.24.2       
+ 2) openmpi/4.1.8/gcc11.3.0   4) miniforge3/24.3.0  
+-rw-r--r-- 7397728 2026-09-22 20:15:10.000000000 +0800 /data/home/sunyc/solverchallenge26/deps/hypre/lib64/libHYPRE.a
+-rwxr-xr-x 15920 2026-10-01 22:18:20.000000000 +0800 /data/home/sunyc/solverchallenge26/deps/gnu-time/time
+lrwxrwxrwx 14 2025-05-25 15:34:28.000000000 +0800 /data/public/software/intel/oneapi/mkl/2022.0.0/lib/intel64/libmkl_rt.so
+-rw-rw-r-- 2241702 2026-10-04 03:35:11.000000000 +0800 /data/home/sunyc/solverchallenge26/next-phase-20261003/SC26_CPU_candidate_6b7f675.tar.gz
+-rw-r--r-- 11887 2026-10-02 14:56:30.000000000 +0800 /data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/source-sha256.txt
+dr-xr-xr-x 4096 2026-09-17 18:38:56.000000000 +0800 /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_02
+dr-xr-xr-x 4096 2026-09-17 18:46:43.000000000 +0800 /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_05
+dr-xr-xr-x 4096 2026-09-17 18:47:16.000000000 +0800 /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_07
+dr-xr-xr-x 4096 2026-09-17 18:47:47.000000000 +0800 /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_09
+dae96e3fa5c8dc4cf8d66469b34797a84a0f3d741d0f8f4d8b4884f16206a111  /data/home/sunyc/solverchallenge26/next-phase-20261003/SC26_CPU_candidate_6b7f675.tar.gz
+bf8148b56bf20d4c0249b24c8d9540c4212cec153760944f5b38b20137ee68a9  /data/home/sunyc/solverchallenge26/execution-20261001-v19-selected/source-sha256.txt
+38b938ccd82b81d8f49930ce051288a08a9a38852b659434066e5e9889fd6b43  /data/home/sunyc/solverchallenge26/deps/hypre/lib64/libHYPRE.a
+54643b2f510907c0bc0a1d13373f1d8233deb38c90dd97ebd9ecb27010e4d803  /data/home/sunyc/solverchallenge26/deps/gnu-time/time
+SC26_READONLY_END

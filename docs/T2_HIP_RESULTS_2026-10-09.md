@@ -1,8 +1,10 @@
 # T2 HIP execution record
 
-Updated: 14 October 2026, Asia/Shanghai. Acceptance follows the [approved plan](NEXT_PLAN_ACCEPTANCE_2026-10-09.md).
+Updated: 21 October 2026, Asia/Shanghai. Current acceptance follows the [approved plan](NEXT_PLAN_ACCEPTANCE_2026-10-21.md).
 
-**S1 HIP small systems and S2 CPU regression pass for the identified source snapshot.** Job **897432** completed `0:0` in 20 allocated seconds on `f11r2n10`. Neither full-data S3 request created a job: the first was rejected for the memory/CPU ratio, and the corrected request for the current account/partition combination. The live partition is UP, but the team's account is not directly listed in `AllowAccounts`. Effective account/partition access requires platform-side verification before full T2 accuracy and performance can be measured.
+**S1, S2 and original full T2-low S3 numerical acceptance pass for their identified snapshots.** Full job **953826** completed `0:0` on `f11r3n09` in 116 allocated seconds. Its original in-memory float128 relative residual is **5.938952e-7**. The GPU prototype mean is **12.833244 s**, versus the experimental 96-rank CPU reference **7.036402 s**; CPU retention is provisional pending the permitted CPU control and formal GPU entry/timing. The [21 October full-data result](T2_HIP_FULL_RESULTS_2026-10-21.md) supplies the actual device, source, memory, timing and exit evidence, lower-rank CPU comparisons and the 24 October S4 gate.
+
+The sections below retain the S1/S2 and 14 October request evidence for their recorded snapshots. The current full entry point requests one DCU, 16 CPUs and 58 GiB with scheduler node selection, and revalidates three known systems on the allocated device before full data.
 
 ## Identified snapshot
 
@@ -53,15 +55,15 @@ The [complete verification](../logs/2026-10-09/plan-execution/t2-hipoff-verifica
 
 Earlier job **9227732** completed all six numerical checks but ended `FAILED 1:0` at the batch's extra empty-stderr assertion. Its [status](../logs/2026-10-09/plan-execution/t2-hipoff-9227732-status.json), [batch output](../logs/2026-10-09/plan-execution/sc26_t2_hipoff-9227732.out) and individual case files are retained. The corrected batch used for 9227847 completes the required six-case gate. Both allocations count toward the engineering budget: **72 new CPU seconds**, bringing the tracked CPU total to **12.3136 node-hours**.
 
-## S3: full-data request and current access
+## S3: 14 October full-data request evidence
 
-The [full T2 batch](../scripts/scnet-t2-hip-full.sbatch) uses the verified S1 executable without rebuilding. It requests one MPI process, one DCU, 18 CPUs, 64 GiB host memory and a 45-minute limit on `f11r2n10`; the solver uses one OpenMP thread. Script SHA256 is `5ab397d022815105a635b6479c305f9039d2e89d86daa1d18f2e162fa6d60d72`. The transferred script passed its checksum check.
+The 14 October full T2 batch snapshot used the verified S1 executable without rebuilding. It requested one MPI process, one DCU, 18 CPUs, 64 GiB host memory and a 45-minute limit on `f11r2n10`; the solver used one OpenMP thread. Script SHA256 was `5ab397d022815105a635b6479c305f9039d2e89d86daa1d18f2e162fa6d60d72`. The transferred script passed its checksum check.
 
 The first [submission receipt](../logs/2026-10-14/plan-execution/t2-full-first-submission-rejection.json) rejected 64 GiB with four requested CPUs because the partition's `DefMemPerCPU` is 3800 MiB. Eighteen requested CPUs cover that ratio. The [corrected submission](../logs/2026-10-14/plan-execution/t2-full-second-submission-rejection.log) was then rejected with `Invalid account or account/partition combination specified`. Neither submission created a job or consumed allocated time.
 
-The [live access summary](../logs/2026-10-14/plan-execution/scnet-partition-access-summary.json) records default account `ac3k88uz8y`, its `cluster_zz_2` association with `hx1hdnormal`, and the partition's UP state. The [exact membership query](../logs/2026-10-14/plan-execution/scnet-own-account-membership-user.log) returns `DIRECTLY_LISTED_IN_ALLOWACCOUNTS=0`. These records establish the current submission/access problem; effective account inheritance and its cause remain unverified.
+The [live access summary](../logs/2026-10-14/plan-execution/scnet-partition-access-summary.json) records default account `ac3k88uz8y`, its `cluster_zz_2` association with `hx1hdnormal`, and the partition's UP state. The [exact membership query](../logs/2026-10-14/plan-execution/scnet-own-account-membership-user.log) returns `DIRECTLY_LISTED_IN_ALLOWACCOUNTS=0`. These records establish the 14 October submission/access problem; effective account inheritance and its cause remained unverified at that checkpoint.
 
-## Remaining execution and integration gates
+## Gates recorded at the 14 October checkpoint
 
 Fourteen completed GPU allocations total **1,044 seconds**. The four HYPRE build/relink jobs account for 1,009 seconds; counting the whole new 20-second build/small-case allocation toward integration gives **1,029 seconds** against the two-hour integration cap. Both totals remain below the approved branch budgets. S3 must still complete five solves on original T2-low with the required residual, device, provenance and resource evidence. S4 retains the predeclared decision against the fastest permitted CPU control, currently 7.036402 seconds under the experimental CPU setup.
 

@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-21",
+  "prior_completed_allocations": 14,
+  "prior_allocated_seconds": 1044,
+  "new_allocations": [
+    {
+      "job": 953826,
+      "node": "f11r3n09",
+      "seconds": 116,
+      "state": "COMPLETED",
+      "exit": "0:0",
+      "CPUs": 16,
+      "memory": "58G",
+      "DCUs": 1,
+      "scope": "Three same-binary device known-system checks followed by original full T2-low five solves"
+    }
+  ],
+  "completed_allocations": 15,
+  "total_allocated_seconds": 1160,
+  "new_build_allocations": 0,
+  "prior_build_integration_allocated_seconds": 1029,
+  "new_device_revalidation_process_wall_seconds": [
+    "1.34",
+    "1.28",
+    "1.31"
+  ],
+  "integration_accounting_note": "No new compilation. Revalidation and full solving share the 116-second allocation; the three GNU-time process durations are process observations, not separately allocated integration seconds. Historical integration 1029 seconds is retained without inventing a split of this allocation.",
+  "no_allocation_records": [
+    953802,
+    953805
+  ],
+  "test_only_attempt_allocations": 0,
+  "commercial_CPU_prior_node_hours": "12.3136",
+  "commercial_CPU_new_allocations": 0,
+  "LX2_new_allocations": 0
+}

@@ -1,0 +1,31 @@
+{
+  "checked_date": "2026-10-21",
+  "captured_log_mtime": "2026-10-21T18:02:53.197414+08:00",
+  "route": "Existing Keychain-to-Expect SSH, no stored or printed password",
+  "endpoint": "sunyc@122.228.252.34:6084",
+  "host": "c3ln01",
+  "ssh_exit": 0,
+  "own_queue_empty": true,
+  "partition": "qhn",
+  "partition_state": "UP",
+  "association": "cluster|sunyc|sunyc|qhn|normal|node=4|",
+  "module_load_succeeded": [
+    "gcc/11.3.0",
+    "openmpi/4.1.8/gcc11.3.0",
+    "cmake/3.24.2",
+    "miniforge3/24.3.0"
+  ],
+  "candidate_archive_sha256": "dae96e3fa5c8dc4cf8d66469b34797a84a0f3d741d0f8f4d8b4884f16206a111",
+  "accepted_source_manifest_sha256": "bf8148b56bf20d4c0249b24c8d9540c4212cec153760944f5b38b20137ee68a9",
+  "CPU_HYPRE_sha256": "38b938ccd82b81d8f49930ce051288a08a9a38852b659434066e5e9889fd6b43",
+  "GNU_time_sha256": "54643b2f510907c0bc0a1d13373f1d8233deb38c90dd97ebd9ecb27010e4d803",
+  "data_directories_present": [
+    "02",
+    "05",
+    "07",
+    "09"
+  ],
+  "status": "PASS for environment metadata readiness",
+  "scope": "SSH, own queue, association/partition, modules, required paths and file identities; no compilation, numerical execution or new job",
+  "credit_and_expiry_verified": false
+}

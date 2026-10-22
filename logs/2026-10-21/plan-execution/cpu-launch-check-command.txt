@@ -1,0 +1,15 @@
+export LC_ALL=C
+printf 'SC26_READONLY_BEGIN\n'
+printf 'SCHEDULER_VALIDATE_ONLY no allocations requested\n'
+sbatch --help | sed -n '/test-only/p'
+work=/data/home/sunyc/solverchallenge26/execution-20261001-v19-selected
+cd "$work" || exit 1
+sbatch --test-only --chdir="$work" scripts/remediation-build.sbatch
+printf 'BUILD_VALIDATION_EXIT=%s\n' "$?"
+for item in '02 16 1 60G' '07 16 1 75G' '09 1 16 95G' '05 96 1 450G'; do
+    set -- $item
+    printf 'VALIDATE problem=%s ntasks=%s cpus_per_task=%s mem=%s\n' "$1" "$2" "$3" "$4"
+    sbatch --test-only --chdir="$work" --ntasks="$2" --cpus-per-task="$3" --mem="$4" scripts/remediation-baseline.sbatch "$1" 01
+    printf 'VALIDATION_EXIT=%s\n' "$?"
+done
+printf 'SC26_READONLY_END\n'
