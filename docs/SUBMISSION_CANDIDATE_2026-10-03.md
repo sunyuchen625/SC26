@@ -1,72 +1,65 @@
-# SolverChallenge26 CPU 提交候选
+# SolverChallenge26 当前交付候选
 
-更新：2026-10-23。队伍：CUDA OOM!。冻结 CPU 数值实现来源：`6b7f675ecaa6949815a3a77f95467fc35f8d5bbf`。
+更新：2026-10-24。从当前 `main` 的[交接工单](SC26_队友交接工单_2026-10-24.md)开始；`038c0a8` 是数值实现与已发布实验的基线。
 
-候选保留已验收的数值方法、参考框架和技术报告，可在已验证的商用 CPU 环境重建。正式启动合同尚待确认；本页列出公开接口、当前配置和需要主办方回答的问题。
+## 候选身份
 
-## 已核实的公开接口
-
-10 月 3 日直接读取了[赛事官网](https://solver-conference.cn/solverchallenge26/)及[官方框架 README](https://gitee.com/godjs/solverchallenge26_sample_code/blob/master/README.md)。官网要求单节点，结构分析不依赖矩阵数值，并将读入、格式转换、分发、坐标排序及 CPU/GPU 传输排除在统计时间外。程序提交截止日期为 10 月 30 日；页面未列具体时刻，“24:00”对应报名截止。
-
-10 月 14 日核查的公开 README 与本地保存版本一致。其接口为 `executable matrix-file vector-file [read_base] [sys_type]`，PETSc 输入使用 `0`；实数系统的 `sys_type=0`，复数为 `1`。框架重复五次完整阶段后检查原始系统，并按题号选择实现。README 写明 MPICH，并给出两进程示例；本队已验收运行使用 OpenMPI。读取的赛事页、会议页和 README 未给出任务上传地址、文件清单或逐题正式启动配置。
-
-10 月 9 日重新获取赛事页、官方 README 和 [SOLVER26 会议页](https://solver-conference.cn/solver26/index.html)。README 仍与本地版本逐字节一致；会议页明确列出 SolverChallenge 任务提交为 **10 月 30 日 24:00**。门户对应时区和最终确认流程仍待核实。
-
-10 月 14 日直接重新取得上述三项及官方 CPU/GPU 驱动、GPU 计量头文件；六份文件均与 10 月 9 日来源快照逐字节一致。[来源回执](../logs/2026-10-14/plan-execution/official-interface-check.json)记录地址、身份和核查范围。公开 CPU 驱动使用 `MPI_Wtime()` 的秒值计算五次均值，打印标签却为 `ms`；本队已验收驱动打印 `s`。公开 GPU 驱动显式乘以 1000 后打印 `ms`，并分别统计上传、下载。正式 CPU 单位与框架版本需要测试组确认。公开驱动将双精度解提升至 long double/float128 后输出和检查；本队冻结驱动直接对同一个内存双精度解执行 d2ld/d2q 原系统检查，输出文件保留六位小数。输出文件是否参与正式判定仍需确认。
-
-10 月 21 日同步的用户群截图补充两项明确答复：10 月 15 日 22:58 允许在所讨论的残差验证场景使用 long double；10 月 19 日 07:13 明确 T1 的 9GB 指 **9 GiB**。本项目继续保留原始系统 float128 检查，其他题的内存口径沿用各自规则。两项答复不改变 T1/T3/T2 高档的未达标状态；输出文件精度及其他正式合同仍需确认。[21 日资源与规则记录](COMPUTE_STATUS_2026-10-21.md)保留日期和范围。会议页于 10 月 21 日再次读取，任务提交仍列为 10 月 30 日 24:00，门户时区与回执流程待确认。
-
-10 月 21 日 18:04 重新取得六项官方来源，赛事页、README、CPU/GPU 驱动及 GPU 计量头文件均与 14 日一致。会议页新增的两页会议通知已逐页核对，未补充任务上传入口、包清单、逐题启动或验收框架。[最新来源回执](../logs/2026-10-21/plan-execution/official-interface-check.json)保存具体身份和核查范围，现有正式合同问题仍待答复。
-
-## 候选内容及已验收配置
-
-候选包含 `src/`、`scripts/`、`tests/`、`report/`、源码清单和验收摘要。依赖使用比赛平台现有 oneMKL 2022.0.0 与已验证的 HYPRE 2.33.0；构建在分配到的计算节点进行。
-
-| 题目 | 已验收启动设置 | 数值配置 / 覆盖范围 |
+| 候选 | 文件与 SHA256 | 用途 |
 | --- | --- | --- |
-| T2 低档 | 16 MPI 进程，每进程 1 线程 | 默认投影，容差 1e-7；原始相对残差 <1e-6 |
-| T4 | 1 MPI 进程，32 线程 | 64 位 PARDISO；五次完整求解 |
-| T5 | 96 MPI 进程，每进程 1 线程 | 默认压力 MGR，容差 5e-9，上限 450；两节点/64、96 进程余量验证 |
-| T6 | 1 MPI 进程，32 线程 | 复数 PARDISO；五次完整求解 |
-| T7 | 16 MPI 进程，每进程 1 线程 | 默认 ILU(0)，容差 1e-12 |
+| CPU 冻结候选 | [SC26_CPU_candidate_6b7f675.tar.gz](../deliverables/SC26_CPU_candidate_6b7f675.tar.gz)，`dae96e3fa5c8dc4cf8d66469b34797a84a0f3d741d0f8f4d8b4884f16206a111` | 当前正式交付主线与独立复现起点；118 项源码/脚本/测试清单对应 v19，来源 `6b7f675ecaa6949815a3a77f95467fc35f8d5bbf` |
+| HIP 准备优化候选 | [SC26_T2_HIP_preparation_20261023.tar.gz](../deliverables/SC26_T2_HIP_preparation_20261023.tar.gz)，`f9482721a702b88d4e1b5e87957f59a8391215eb1938a8599bfc055e1e1c1e3a` | 当前 T2 GPU 候选；89 项清单、91 个归档成员，包内父提交 `d09163c18ce629d65d55c0e6316b9755b7e2975d` |
+
+CPU 包与当前 [技术报告](SC26技术报告_2026-10-02.docx)身份匹配，报告 SHA256 为 `12c234efccfee7b23f75ba4191c6bef3500de1a4e6d569d7689800e812471fc4`。GPU [身份记录](../logs/2026-10-23/gpu-preparation/source-identity.json)绑定当前源码、GPU 验证及 CPU 回归。两份包在独立目录解压并分别验证清单。
+
+## 已验收设置
+
+| 题目 | 冻结 CPU 交付设置 | 数值配置及覆盖 |
+| --- | --- | --- |
+| T2 低档 | 16 MPI 进程，每进程 1 线程 | 默认投影、容差1e-7，原始相对残差<1e-6 |
+| T4 | 1 MPI 进程，32 线程 | 64 位 PARDISO，五次完整求解 |
+| T5 | 96 MPI 进程，每进程 1 线程 | 默认压力 MGR、容差5e-9、上限450；两节点/64、96进程余量验证 |
+| T6 | 1 MPI 进程，32 线程 | 复数 PARDISO，五次完整求解 |
+| T7 | 16 MPI 进程，每进程 1 线程 | 默认 ILU(0)，容差1e-12 |
 | T8 / T9 | 1 MPI 进程，16 线程 | 各十个右端，逐右端五次完整求解 |
-| T10 | 1 MPI 进程，32 线程 | 结构行配对，数值准备阶段缩放并还原解；十个右端 |
+| T10 | 1 MPI 进程，32 线程 | 结构行配对、数值准备缩放与还原解，十个右端 |
 
-上述是已交付配置。本阶段的同分配性能比较独立记录；其正式采用取决于主办方允许的启动参数。T1、T3 和 T2 高档仍未达到精度要求。
+这些是冻结交付设置。另有同分配 CPU 比较支持 T2/T7 的96进程和 T6 的96线程设置，其正式采用取决于实际允许的启动配置。每份结果保留各自节点、来源、计时和内存口径，见 [CPU 结果](CPU_RESULTS.md)与[23日对照](T2_CPU_CONTROLS_2026-10-23.md)。T1、T3、T2高档仍未达标。
 
-### 包、报告和启动设置
+当前 HIP 采用 l1-Jacobi18、粗层relax6、插值18、RAP2开启、GMRES restart50和精确IJ预分配。三次五轮均时3.905254/3.907222/3.903342秒，原始残差5.896126e-7，详见[GPU结果](T2_GPU_PREPARATION_2026-10-23.md)。
 
-[冻结 CPU 包](../deliverables/SC26_CPU_candidate_6b7f675.tar.gz) SHA256 为 `dae96e3fa5c8dc4cf8d66469b34797a84a0f3d741d0f8f4d8b4884f16206a111`。包内 118 项 `src/scripts/tests` 与已验收 v19 清单一致；`report/` 内报告与 [10 月 2 日报告](SC26技术报告_2026-10-02.docx)身份一致，SHA256 为 `12c234efccfee7b23f75ba4191c6bef3500de1a4e6d569d7689800e812471fc4`。[14 日包核查](../logs/2026-10-14/plan-execution/cpu-candidate-check.json)记录实际验证。
+## 构建与复现
 
-报告中 T2/T7 使用 16 进程、T6 使用 32 线程；报告时间来自该报告标明的原验收作业。后续同分配比较使用同一冻结数值实现，已通过数值、执行和来源核验：
+CPU 从冻结包按[独立复现指南](REPRODUCE_CPU_2026-10-03.md)重建九个目标、24个已知解案例和四项全量检查。保留本人独立目录和真实新作业记录。
 
-| 题目 | 后续最快实测设置 | 五次均值 | 原始相对残差 | 保守进程峰值和 |
-| --- | --- | ---: | ---: | ---: |
-| T2 低档 | 96 MPI 进程，各 1 线程，core 绑定 | 7.036402 s | 5.875263e-7 | 20.385 GB |
-| T7 | 96 MPI 进程，各 1 线程，core 绑定 | 5.869507 s | 1.777361e-9 | 94.064 GB |
-| T6 | 1 MPI 进程、96 OpenMP/MKL 线程，MPI 不绑定 | 35.427933 s | 1.828909e-12 | 40.450 GB |
+以下是最终 GPU 候选已经验证过的实验构建配置。候选解压后的 `src/`、`tests/` 和清单位于各自工作目录；在**实际分配的计算节点作业内**加载已验证 GCC/CMake/DTK/OpenMPI 模块，设置既有 MPI 组件路径与 singleton-isolated 模式，再执行：
 
-这些结果的作业为 `9213608`，完整来源见[性能记录](NEXT_PHASE_RESULTS_2026-10-04.md)及[验收清单](../logs/2026-10-03/next-phase/launch-verification.json)。正式合同允许上述设置时，最终启动表和报告按对应作业结果一并更新；选用原交付设置时，使用包内报告和复现指南记录的原配置。正式性能比较取合同允许的最快 CPU 设置。
+```bash
+mpi_prefix=/public/software/mpi/openmpi/openmpi-4.1.8
+dtk_root=/public/software/compiler/dtk-25.04.2
+hypre_prefix=/public/home/travissun/sc26-hip-20261007/install-892588
+sha256sum -c source-sha256.txt
+cmake -S src -B build -DCMAKE_BUILD_TYPE=Release \
+  -DSC26_PROBLEM=02 -DSC26_T2_HIP=ON -DSC26_BUILD_MPI=ON \
+  -DSC26_BUILD_MPI_GPU=OFF -DSC26_ENABLE_FLOAT128=ON \
+  -DCMAKE_C_COMPILER="$mpi_prefix/bin/mpicc" \
+  -DCMAKE_CXX_COMPILER="$dtk_root/llvm/bin/clang++" \
+  -DCMAKE_HIP_COMPILER="$dtk_root/llvm/bin/clang++" \
+  -DCMAKE_HIP_COMPILER_ROCM_ROOT="$dtk_root/hip" \
+  -DCMAKE_HIP_ARCHITECTURES=gfx936 \
+  -DCMAKE_HIP_FLAGS="--gpu-max-threads-per-block=1024" \
+  -DCMAKE_EXE_LINKER_FLAGS="-L$dtk_root/llvm/lib/clang/17.0.0/lib/linux" \
+  -DHYPRE_DIR="$hypre_prefix/lib/cmake/HYPRE" \
+  -DROCM_PATH="$dtk_root/hip" -Dhip_DIR="$dtk_root/hip/lib/cmake/hip" \
+  -Drocblas_DIR="$dtk_root/lib/cmake/rocblas" \
+  -Drocsparse_DIR="$dtk_root/lib/cmake/rocsparse" \
+  -Drocrand_DIR="$dtk_root/lib/cmake/rocrand"
+cmake --build build --parallel "$SLURM_CPUS_PER_TASK" --target MPI_iterative_solver
+```
 
-T2 HIP 的 [9 日来源包](../deliverables/SC26_T2_HIP_source_20261009.tar.gz)已通过 S1、S2 和完整 T2-low S3。其 21 日作业 `953826` 均时为 `12.833244 s`、原始 float128 相对残差为 `5.938952e-7`。[23 日平滑器对照](T2_HIP_OPTIMIZATION_2026-10-23.md)将同一分配中的 GPU 均时从 `12.739078 s` 降到 `6.809676 s`，原始残差 `5.894610e-7`；[同期 96 进程 CPU 对照](T2_CPU_CONTROLS_2026-10-23.md)为 `7.126864 s`。当前工作树将改进限定于 HIP 路径，CPU 使用松弛类型 6；[23 日源码包](../deliverables/SC26_T2_HIP_source_20261023.tar.gz)的最终 HIP 与 HIPOFF 复验均已通过，作业分别为 `962050` 和 `9270600`，最终 HIP 均时 `6.860954 s`。S4 仍待较小优势复验标准及正式资格/计时合同满足。各源码包绑定各自证据，CPU 交付基础继续使用已验收冻结包。
+原始命令、模块、环境及库身份见[已提交批处理](../logs/2026-10-23/gpu-preparation/exact/exact-962526/submitted.sbatch)和[输出](../logs/2026-10-23/gpu-preparation/exact/sc26_t2_exact-962526.out)。正式测试采用何种构建/入口仍须按实际合同确定；此处配置对应已验收的实验路径。
 
-构建入口为 `scripts/remediation-build.sbatch`；全量入口为 `scripts/remediation-baseline.sbatch`。重建细节及证据交付见[队友复现步骤](REPRODUCE_CPU_2026-10-03.md)。既有[执行结果](EXECUTION_RESULTS_2026-10-02.md)记录九个目标、24 个已知解样例及完整数值验收。
+## 正式采用条件
 
-## 需主办方回答的问题单
+[正式合同核查与问题稿](FORMAL_ENTRY_GPU_CONTRACT_2026-10-23.md)列明提交地址、包形状、谁构建运行、MPI实现、共享文件修改、启动配置、计时字段/单位、转换和传输边界、GPU完成与计量、原始残差/输出及多右端约定。
 
-1. **提交包和入口：**实际上传地址、截止前操作流程及文件清单是什么？提交源码、可执行文件还是链接文件？是否允许当前根 CMake 选择共享 CPU 实现，还是必须仅修改 `problems/problemXX/`？技术报告以官方 DOCX 模板提交即可吗？
-2. **MPI 与启动：**逐题实际命令、MPI 进程数、OpenMP 线程数及允许的环境变量是什么？MPICH 是否强制？是否允许每题自己的 CMake 选项及进程数？当前直接法使用单进程；公开 README 的两进程示例是否属于强制合同？
-3. **分析与数值准备：**当前 PARDISO phase 11 传入 `NULL`，缩放与匹配均为 0；T10 行配对仅使用 CSR 索引。数值准备阶段形成 D(PA)D、DPb 并还原 x=Dy 是否符合要求？需要提交哪些参数与阶段证据？
-4. **转换、排序和时间单位：**公开规则排除格式转换与坐标排序时间。当前复数转换及 T10 成对排序位于计时回调内，正式框架应在哪个入口完成它们，如何核对计时边界？公开 CPU 驱动的秒值打印为 `ms`，请确认正式版本、单位及测试组采用的计时入口。
-5. **十个右端：**T8/T9/T10 是十次独立调用，还是一次提供十个右端？分析和分解能否跨右端复用？逐右端时间如何聚合？五次计时重复之间仍执行完整阶段是否正确？
-6. **两档与 T2 兼容性：**T1/T2 两档如何选择和提交，能否分别使用配置？T2 高档按原始 b 的残差检查，还是允许兼容性投影？本队当前投影配置的原始残差约为 5.87e-7。
-7. **T3 精度与输出：**已知群答复允许所讨论场景使用 long double 验残差；正式检查以何种内存解或输出文件为输入，输出格式是什么，参考框架六位小数答案文件是否参与判定？目前已测改进路径停滞在约 2.7e-5，仍按已验收记录保留未达标状态。
-8. **平台选择与资源：**最快平台是否逐题独立选择？组委会反馈未设置硬性余额。SCNet 已确认本队有效账户/分区/QOS，完整 T2 作业 `953826` 以 1 DCU、16 CPU、58 GiB 接收，已在 `f11r3n09` 完成 `0:0`、116 分配秒；授权有效期仍待确认。LX2 新公告允许代理网络传入、明确只入不出且套件自行安装；本队已确认 Kylin V10/aarch64、本人目录可写及四项代理导出配置可读。请确认 Donau 认证/队列授权、支持的自装基线及允许的验收留证方式。
-9. **HIP 接口与 GPU 计量：**HYPRE HIP 实现可否通过当前 CPU MPI 驱动接入，还是必须实现 GPU 驱动的上传/下载接口？正式传输排除、设备工作完成及显存计量以哪个入口和指标为准？当前原型回调计时包含迁移和诊断；设备阶段快照不代表连续显存峰值。
-10. **截止时刻：**会议页列出的 10 月 30 日 24:00 对应门户的哪个时区？上传失败、重交与最终确认以哪个记录为准？
-
-## 正式适配的完成条件
-
-实际合同确定后，按其包形状、MPI 与启动设置做必要适配，保存对应源码、构建、二进制与原始系统验收证据。现有共享实现、单进程直接法、数值准备缩放和转换/排序的放置均有具体待确认项。队友本人独立复现及门户回执分别提供独立复现和正式提交证据。
-
-[资源方、测试组和队友反馈稿](反馈稿_2026-10-14.md)已按 21 日已知信息更新。CPU 候选、报告和复现准备已随 `5add951` 完成范围内审计与发布；正式合同、队友本人新作业证据、GPU 原型的正式资格/计时及 LX2 计算仍有未完成项。[21 日执行计划](NEXT_PLAN_ACCEPTANCE_2026-10-21.md)已获用户批准，冻结 CPU 包身份保持不变。
+当前真实 HIP 实现通过 MPI C 驱动运行；独立 GPU 适配器仍是模板。约3.9秒是原型口径，不能直接减探针耗时成为正式成绩。公开规则允许外部软件包；实际接入方式、所选配置和最终包仍需资格验证与审查。正式提交和最终选型由队长确认。

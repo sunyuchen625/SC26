@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+etag: W/"179634187-39340-2026-10-11T11:40:05.593Z"
+content-type: text/html; charset=UTF-8
+Date: Fri, 23 Oct 2026 11:35:01 GMT
+X-Cache-Lookup: Cache Miss
+Last-Modified: Sun, 11 Oct 2026 11:40:05 GMT
+Cache-Control: max-age=3600
+Age: 0
+Content-Length: 39340
+X-Cache-Lookup: Cache Miss

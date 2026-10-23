@@ -1,0 +1,13 @@
+HTTP/1.1 302 Found
+Date: Fri, 23 Oct 2026 11:33:07 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 500
+Cache-Control: public, max-age=60
+Etag: W/"9df5247093b6ebf514ca37358d5cee1cbd18967c"
+Age: 0
+HTTP/1.1 200 OK
+Date: Fri, 23 Oct 2026 11:33:08 GMT
+Content-Type: text/plain; charset=utf-8
+Cache-Control: public, max-age=60
+Etag: W/"9df5247093b6ebf514ca37358d5cee1cbd18967c"
+Age: 0

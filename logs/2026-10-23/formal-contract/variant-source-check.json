@@ -1,0 +1,68 @@
+[
+  {
+    "name": "conference-v20261011a",
+    "url": "https://solver-conference.cn/solver26/index.html?v=20261011a",
+    "checked_at": "2026-10-23T19:35:00.371643+08:00",
+    "curl_exit": 0,
+    "http_status": "200",
+    "bytes": 39340,
+    "sha256": "73b4b309a634ff9839790ac13bc5d22737a39d11bcc955f9986f72a88e33bc3f",
+    "stderr": "",
+    "snapshot": "logs/2026-10-23/formal-contract/official/conference-v20261011a.html"
+  },
+  {
+    "name": "conference-www",
+    "url": "https://www.solver-conference.cn/solver26/index.html",
+    "checked_at": "2026-10-23T19:35:00.382927+08:00",
+    "curl_exit": 28,
+    "http_status": "000",
+    "bytes": 0,
+    "sha256": null,
+    "stderr": "curl: (28) Resolving timed out after 12001 milliseconds\n",
+    "snapshot": "logs/2026-10-23/formal-contract/official/conference-www.html"
+  },
+  {
+    "name": "conference-no-cache",
+    "url": "https://solver-conference.cn/solver26/index.html?sc26_check=20261023",
+    "checked_at": "2026-10-23T19:35:00.458353+08:00",
+    "curl_exit": 0,
+    "http_status": "200",
+    "bytes": 39340,
+    "sha256": "73b4b309a634ff9839790ac13bc5d22737a39d11bcc955f9986f72a88e33bc3f",
+    "stderr": "",
+    "snapshot": "logs/2026-10-23/formal-contract/official/conference-no-cache.html"
+  },
+  {
+    "name": "contest-no-cache",
+    "url": "https://solver-conference.cn/solverchallenge26/?sc26_check=20261023",
+    "checked_at": "2026-10-23T19:35:00.583906+08:00",
+    "curl_exit": 0,
+    "http_status": "200",
+    "bytes": 64541,
+    "sha256": "900e45ac1889e8494910d0d9791d39c58e80949296228af20cc7a7fabd45affa",
+    "stderr": "",
+    "snapshot": "logs/2026-10-23/formal-contract/official/contest-no-cache.html"
+  },
+  {
+    "name": "report-form",
+    "url": "https://f.wps.cn/g/IcnokSXH",
+    "checked_at": "2026-10-23T19:35:00.615089+08:00",
+    "curl_exit": 0,
+    "http_status": "200",
+    "bytes": 4267,
+    "sha256": "a5af2557542122df9a695b5ff9e471aef68c5c7464a3c8d250d83972d1174d7a",
+    "stderr": "",
+    "snapshot": "logs/2026-10-23/formal-contract/official/report-form.html"
+  },
+  {
+    "name": "registration-form",
+    "url": "https://f.wps.cn/g/lBe8NFXR/",
+    "checked_at": "2026-10-23T19:35:00.630101+08:00",
+    "curl_exit": 0,
+    "http_status": "200",
+    "bytes": 4246,
+    "sha256": "8b7435f43ff67eed8149b72048e20425e203ece452cca5b3077755451f616713",
+    "stderr": "",
+    "snapshot": "logs/2026-10-23/formal-contract/official/registration-form.html"
+  }
+]

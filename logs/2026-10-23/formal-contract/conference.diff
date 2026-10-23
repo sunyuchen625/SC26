@@ -1,0 +1,24 @@
+--- conference-2026-10-21
+
++++ conference-2026-10-23
+
+@@ -10,7 +10,7 @@
+
+     <title>第九届解法器快速算法及应用研讨会</title>
+     <script>
+         // 发布时只改这一处：HTML 会跳到新 ?v=，CSS / JS / 图片也会带上新版本号
+-        var ASSET_V = '20261011a';
++        var ASSET_V = '20260905a';
+         (function () {
+             var host = location.hostname;
+             if (host !== 'solver-conference.cn' && host !== 'www.solver-conference.cn') return;
+@@ -357,7 +357,7 @@
+
+                         </p>
+                         <h2 style="margin-top: 40px;">参会资料</h2>
+                         <p style="text-align: center; font-size: 20px;">
+-                            <a href="assets/file/SOLVER26会议通知.pdf" style="text-decoration: none;" target="_blank"><span style="font-size: 20px;">SOLVER26会议通知</span></a>
++                            SOLVER26 会议通知、海报及邀请函等将在发布后加入本栏目链接。
+                         </p>
+                     </div>
+                 </div>

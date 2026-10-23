@@ -1,0 +1,56 @@
+[
+  {
+    "name": "gpu_iterative_solver.cu",
+    "url": "https://gitee.com/godjs/solverchallenge26_sample_code/raw/master/problems/problem02/gpu_iterative_solver.cu",
+    "checked_at": "2026-10-23T19:40:57.267882+08:00",
+    "curl_exit": 0,
+    "http_status": "200",
+    "bytes": 2334,
+    "sha256": "a070c03c9dd934b1ba621d173ef09820feaf6618184aa1ea0602f94d04eceaa7",
+    "matches_saved_copy": true,
+    "comparison_copy": "\u8d44\u6599/solverchallenge26_sample_code/problems/problem02/gpu_iterative_solver.cu",
+    "snapshot": "logs/2026-10-23/formal-contract/official/gpu_iterative_solver.cu",
+    "stderr": ""
+  },
+  {
+    "name": "gpu_iterative_solver_api.h",
+    "url": "https://gitee.com/godjs/solverchallenge26_sample_code/raw/master/include/solverchallenge26/gpu_iterative_solver_api.h",
+    "checked_at": "2026-10-23T19:40:57.268267+08:00",
+    "curl_exit": 0,
+    "http_status": "200",
+    "bytes": 1321,
+    "sha256": "dbfdc95d5d4c18ce2fc6908c5bbf18d9fc400d6224b41a064c0186d9a408c2b7",
+    "matches_saved_copy": true,
+    "comparison_copy": "\u8d44\u6599/solverchallenge26_sample_code/include/solverchallenge26/gpu_iterative_solver_api.h",
+    "snapshot": "logs/2026-10-23/formal-contract/official/gpu_iterative_solver_api.h",
+    "stderr": ""
+  },
+  {
+    "name": "CMakeLists.txt",
+    "url": "https://gitee.com/godjs/solverchallenge26_sample_code/raw/master/CMakeLists.txt",
+    "checked_at": "2026-10-23T19:40:57.269406+08:00",
+    "curl_exit": 0,
+    "http_status": "200",
+    "bytes": 7545,
+    "sha256": "958fd93f4c880468d1208f2e20db17cd4f78c399b805ea35f4b65f05a620c7cd",
+    "matches_saved_copy": false,
+    "comparison_copy": "\u8d44\u6599/solverchallenge26_sample_code/CMakeLists.txt",
+    "snapshot": "logs/2026-10-23/formal-contract/official/CMakeLists.txt",
+    "stderr": "",
+    "comparison_scope": "Compared with the team-modified local CMake file; this difference does not establish an upstream update."
+  },
+  {
+    "name": "conference-notice.pdf",
+    "url": "https://solver-conference.cn/solver26/assets/file/SOLVER26%E4%BC%9A%E8%AE%AE%E9%80%9A%E7%9F%A5.pdf?sc26_check=20261023",
+    "checked_at": "2026-10-23T19:40:57.269938+08:00",
+    "curl_exit": 0,
+    "http_status": "200",
+    "bytes": 1572923,
+    "sha256": "242da3c00fabb529d7450b579ad2b6d27c538223477010aef46df47d7f29525c",
+    "matches_saved_copy": true,
+    "comparison_copy": "logs/2026-10-21/plan-execution/official/conference-notice.pdf",
+    "snapshot": "logs/2026-10-21/plan-execution/official/conference-notice.pdf",
+    "stderr": "",
+    "snapshot_reuse": "Freshly downloaded bytes equal the existing archived notice; retain a single shared snapshot."
+  }
+]

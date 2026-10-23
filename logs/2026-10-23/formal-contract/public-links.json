@@ -1,0 +1,268 @@
+{
+  "contest": {
+    "source": "logs/2026-10-23/formal-contract/official/contest-no-cache.html",
+    "links": [
+      {
+        "url": "#",
+        "text": "SolverChallenge"
+      },
+      {
+        "tag": "button",
+        "attrs": {
+          "data-bs-toggle": "collapse",
+          "class": "navbar-toggler navbar-toggler-right",
+          "data-bs-target": "#navbarResponsive",
+          "type": "button",
+          "aria-controls": "navbarResponsive",
+          "aria-expanded": "false",
+          "aria-label": "Toggle navigation",
+          "value": "Menu"
+        }
+      },
+      {
+        "url": "#about-solverchallenge",
+        "text": "关于竞赛"
+      },
+      {
+        "url": "#scheme",
+        "text": "竞赛方案"
+      },
+      {
+        "url": "#process",
+        "text": "竞赛流程"
+      },
+      {
+        "url": "#competition",
+        "text": "竞赛赛题"
+      },
+      {
+        "url": "#organization",
+        "text": "竞赛组织"
+      },
+      {
+        "url": "#contact",
+        "text": "联系方式"
+      },
+      {
+        "url": "awards.html",
+        "text": "往届获奖"
+      },
+      {
+        "url": "/solver26/index.html",
+        "text": "Solver26"
+      },
+      {
+        "url": "/solver26/index.html",
+        "text": "SOLVER26"
+      },
+      {
+        "url": "https://f.wps.cn/g/lBe8NFXR/",
+        "text": "点击此处"
+      },
+      {
+        "url": "awards.html",
+        "text": "查看往届获奖名单"
+      },
+      {
+        "url": "https://pan.baidu.com/s/1YSBg8chWPWwGwNPoHSDXVw?pwd=ni6w",
+        "text": "下载链接"
+      },
+      {
+        "url": "https://gitee.com/godjs/solverchallenge26_sample_code",
+        "text": "比赛参考代码"
+      },
+      {
+        "url": "https://pan.baidu.com/s/1B9a6GNrvOKzretxJUiYYfw",
+        "text": "百度网盘"
+      },
+      {
+        "url": "https://pan.baidu.com/s/1CHD7JHG4UXcWH5S8ob9v-Q",
+        "text": "百度网盘"
+      },
+      {
+        "url": "https://pan.baidu.com/s/1jfHvjQIRaUHOlLaa-aSjHw",
+        "text": "百度网盘"
+      },
+      {
+        "url": "https://pan.baidu.com/s/1B9a6GNrvOKzretxJUiYYfw",
+        "text": "百度网盘"
+      },
+      {
+        "url": "https://pan.baidu.com/s/1jfHvjQIRaUHOlLaa-aSjHw",
+        "text": "百度网盘"
+      },
+      {
+        "url": "https://pan.baidu.com/s/156WUoTHFUA38fmrGAOOAvg",
+        "text": "百度网盘"
+      },
+      {
+        "url": "https://pan.baidu.com/s/1B9a6GNrvOKzretxJUiYYfw",
+        "text": "百度网盘"
+      },
+      {
+        "url": "https://beian.miit.gov.cn/",
+        "text": "京ICP备2021019551号-2"
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "src": "assets/bootstrap/js/bootstrap.min.js"
+        }
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "src": "https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"
+        }
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "src": "https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"
+        }
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "src": "assets/js/grayscale.js"
+        }
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "src": "assets/js/HTML-Table-to-Excel-V2.js"
+        }
+      }
+    ]
+  },
+  "conference": {
+    "source": "logs/2026-10-23/formal-contract/official/conference-no-cache.html",
+    "links": [
+      {
+        "tag": "script",
+        "attrs": {}
+      },
+      {
+        "url": "#",
+        "text": "SOLVER26"
+      },
+      {
+        "tag": "button",
+        "attrs": {
+          "data-bs-toggle": "collapse",
+          "class": "navbar-toggler navbar-toggler-right",
+          "data-bs-target": "#navbarResponsive",
+          "type": "button",
+          "aria-controls": "navbarResponsive",
+          "aria-expanded": "false",
+          "aria-label": "Toggle navigation",
+          "value": "Menu"
+        }
+      },
+      {
+        "url": "#about-solver",
+        "text": "SOLVER"
+      },
+      {
+        "url": "#conference-deadline",
+        "text": "重要节点"
+      },
+      {
+        "url": "#problem_sets",
+        "text": "解法器问题集"
+      },
+      {
+        "url": "#program",
+        "text": "会议日程"
+      },
+      {
+        "url": "#organization",
+        "text": "会议组织"
+      },
+      {
+        "url": "#info",
+        "text": "参会信息"
+      },
+      {
+        "url": "#venue",
+        "text": "会场交通"
+      },
+      {
+        "url": "#archive",
+        "text": "往届会议"
+      },
+      {
+        "url": "/solverchallenge26",
+        "text": "SolverChallenge"
+      },
+      {
+        "url": "/solverchallenge26",
+        "text": "SolverChallenge 竞赛"
+      },
+      {
+        "url": "/solverchallenge26",
+        "text": "SolverChallenge"
+      },
+      {
+        "url": "https://f.wps.cn/g/MpYOIZCm",
+        "text": " >>>>>> 会议注册报名表 <<<<<< "
+      },
+      {
+        "url": "https://f.wps.cn/g/IcnokSXH",
+        "text": " >>>>>> 会议报告提交通道 <<<<<< "
+      },
+      {
+        "url": "mailto:rl.chen@siat.ac.cn",
+        "text": "rl.chen@siat.ac.cn"
+      },
+      {
+        "url": "mailto:y.zhang@siat.ac.cn",
+        "text": "y.zhang@siat.ac.cn"
+      },
+      {
+        "url": "assets/file/SOLVER26会议通知.pdf",
+        "text": "SOLVER26会议通知"
+      },
+      {
+        "url": "https://www.solver-conference.cn/solver25/index.html",
+        "text": "2025 年 8 月 2 日—8 月 6 日 SOLVER25 山东·青岛"
+      },
+      {
+        "url": "https://www.solver-conference.cn/solver24/index.html",
+        "text": "2024 年 7 月 22 日—7 月 26 日 SOLVER24 四川·成都"
+      },
+      {
+        "url": "https://www.solver-conference.cn/solver23/index.html",
+        "text": "2023 年 8 月 7 日—8 月 11 日 SOLVER23 青海·西宁"
+      },
+      {
+        "url": "https://www.solver-conference.cn/solver22/index.html",
+        "text": "2022 年 7 月 20 日—7 月 24 日 SOLVER22 中国·重庆"
+      },
+      {
+        "url": "https://www.solver-conference.cn/solver21/index.html",
+        "text": "2021 年 12 月 24 日—12 月 27 日 SOLVER21 新疆·克拉玛依"
+      },
+      {
+        "url": "http://math.xtu.edu.cn/solver/2020/index.html",
+        "text": "2020 年 8 月 6 日—8 月 8 日 SOLVER20 江苏·苏州"
+      },
+      {
+        "url": "http://math.xtu.edu.cn/solver/2019/index.html",
+        "text": "2019 年 8 月 13 日—8 月 16 日 SOLVER19 云南·昆明"
+      },
+      {
+        "url": "http://math.xtu.edu.cn/solver/2018/index.html",
+        "text": "2018 年 6 月 22 日—6 月 25 日 SOLVER18 湖南·韶山"
+      },
+      {
+        "url": "https://beian.miit.gov.cn/",
+        "text": "京ICP备2021019551号-2"
+      },
+      {
+        "tag": "script",
+        "attrs": {}
+      }
+    ]
+  }
+}

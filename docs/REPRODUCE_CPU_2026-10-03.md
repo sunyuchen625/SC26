@@ -1,6 +1,6 @@
 # CUDA OOM! CPU 独立重建与复现
 
-更新：2026-10-21。冻结 CPU 源码版本：`6b7f675ecaa6949815a3a77f95467fc35f8d5bbf`。执行人由队友本人填写。完成状态依据该执行人的新构建、新作业和检查记录。
+更新：2026-10-24（冻结源码与实验身份保持不变）。冻结 CPU 源码版本：`6b7f675ecaa6949815a3a77f95467fc35f8d5bbf`。执行人由队友本人填写。完成状态依据该执行人的新构建、新作业和检查记录。
 
 ## 环境及准备
 
@@ -10,23 +10,7 @@
 
 10 月 21 日维护后复核已通过：所需模块可加载，候选包、来源清单及依赖身份一致，四题目录存在，`qhn` 为 UP，本人队列为空。[调度器只校验](../logs/2026-10-21/plan-execution/cpu-launch-validation.json)接受下列构建和四题资源请求；新的实际构建、数值结果与本人复现记录由执行人取得。
 
-从已授权读取的本队仓库取得该提交，或解压随附候选包。仓库来源操作：
-
-```bash
-git switch --detach 6b7f675ecaa6949815a3a77f95467fc35f8d5bbf
-repo_root=$PWD
-participant_id=填写本人标识
-work=/data/home/sunyc/solverchallenge26/reproduce-20261003-$participant_id
-mkdir -p "$work"/{src,scripts,tests,logs}
-cp -R "$repo_root/资料/solverchallenge26_sample_code/." "$work/src/"
-cp -R "$repo_root/scripts/." "$work/scripts/"
-cp -R "$repo_root/tests/." "$work/tests/"
-git rev-parse HEAD > "$work/parent-commit.txt"
-cd "$work"
-find src scripts tests -type f -print0 | sort -z | xargs -0 sha256sum > source-sha256.txt
-```
-
-推荐从[冻结候选包](../deliverables/SC26_CPU_candidate_6b7f675.tar.gz)开始，SHA256 为 `dae96e3fa5c8dc4cf8d66469b34797a84a0f3d741d0f8f4d8b4884f16206a111`。它已包含 `src/scripts/tests` 布局，复制到独立工作目录，保留 `SOURCE_COMMIT`、来源清单和校验记录，并先建立 `logs/`：
+从[冻结候选包](../deliverables/SC26_CPU_candidate_6b7f675.tar.gz)开始，SHA256 为 `dae96e3fa5c8dc4cf8d66469b34797a84a0f3d741d0f8f4d8b4884f16206a111`。它已包含 `src/scripts/tests` 布局，复制到独立工作目录，保留 `SOURCE_COMMIT`、来源清单和校验记录，并先建立 `logs/`：
 
 ```bash
 sha256sum SC26_CPU_candidate_6b7f675.tar.gz
@@ -40,7 +24,7 @@ mkdir -p logs
 sha256sum -c source-sha256.txt
 ```
 
-后续命令均在该独立目录执行。本指南复现报告对应的 T2/T7 16 进程、T6 32 线程等原交付设置；96 进程/线程性能结果和正式采用条件见[候选设置表](SUBMISSION_CANDIDATE_2026-10-03.md)。当前 T2 HIP 来源包的 S2 回归验证范围另见[T2 记录](T2_HIP_RESULTS_2026-10-09.md)。
+后续命令均在该独立目录执行。本指南复现报告对应的 T2/T7 16 进程、T6 32 线程等原交付设置；96 进程/线程性能结果和正式采用条件见[候选设置表](SUBMISSION_CANDIDATE_2026-10-03.md)。当前 T2 HIP 来源包的 S2 回归验证范围另见[当前 GPU 记录](T2_GPU_PREPARATION_2026-10-23.md)。
 
 ## 新构建与 24 个已知解样例
 

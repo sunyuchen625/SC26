@@ -1,0 +1,91 @@
+{
+  "sources": [
+    {
+      "name": "contest",
+      "url": "https://solver-conference.cn/solverchallenge26/",
+      "checked_at": "2026-10-23T19:33:07.109429+08:00",
+      "transport": "direct HTTPS curl with TLS verification",
+      "curl_exit": 0,
+      "http_status": "200",
+      "effective_url": "https://solver-conference.cn/solverchallenge26/",
+      "stderr": "",
+      "snapshot": "logs/2026-10-23/formal-contract/official/contest.html",
+      "bytes": 64541,
+      "sha256": "900e45ac1889e8494910d0d9791d39c58e80949296228af20cc7a7fabd45affa",
+      "matches_2026_10_21": true
+    },
+    {
+      "name": "conference",
+      "url": "https://solver-conference.cn/solver26/index.html",
+      "checked_at": "2026-10-23T19:33:07.110209+08:00",
+      "transport": "direct HTTPS curl with TLS verification",
+      "curl_exit": 0,
+      "http_status": "200",
+      "effective_url": "https://solver-conference.cn/solver26/index.html",
+      "stderr": "",
+      "snapshot": "logs/2026-10-23/formal-contract/official/conference.html",
+      "bytes": 39268,
+      "sha256": "11aa081085f975a358103aedd2183640de9d4965592efa210415484309dae885",
+      "matches_2026_10_21": false
+    },
+    {
+      "name": "README",
+      "url": "https://gitee.com/godjs/solverchallenge26_sample_code/raw/master/README.md",
+      "checked_at": "2026-10-23T19:33:07.110322+08:00",
+      "transport": "direct HTTPS curl with TLS verification",
+      "curl_exit": 0,
+      "http_status": "200",
+      "effective_url": "https://raw.giteeusercontent.com/godjs/solverchallenge26_sample_code/raw/master/README.md",
+      "stderr": "",
+      "snapshot": "logs/2026-10-23/formal-contract/official/README.md",
+      "bytes": 6623,
+      "sha256": "c0231764304b9ccb5184c80926616f00f459f8c584ff84803c683b6e37d488f6",
+      "matches_2026_10_21": true
+    },
+    {
+      "name": "CPU driver",
+      "url": "https://gitee.com/godjs/solverchallenge26_sample_code/raw/master/apps/MPI_iterative_solver.c",
+      "checked_at": "2026-10-23T19:33:07.110522+08:00",
+      "transport": "direct HTTPS curl with TLS verification",
+      "curl_exit": 0,
+      "http_status": "200",
+      "effective_url": "https://raw.giteeusercontent.com/godjs/solverchallenge26_sample_code/raw/master/apps/MPI_iterative_solver.c",
+      "stderr": "",
+      "snapshot": "logs/2026-10-23/formal-contract/official/MPI_iterative_solver.c",
+      "bytes": 12042,
+      "sha256": "078a8b734fa457705343ecfcceb26c235b2779597a6100c6c6605d6583740547",
+      "matches_2026_10_21": true
+    },
+    {
+      "name": "GPU driver",
+      "url": "https://gitee.com/godjs/solverchallenge26_sample_code/raw/master/apps/MPI_GPU_iterative_solver.c",
+      "checked_at": "2026-10-23T19:33:07.110635+08:00",
+      "transport": "direct HTTPS curl with TLS verification",
+      "curl_exit": 0,
+      "http_status": "200",
+      "effective_url": "https://raw.giteeusercontent.com/godjs/solverchallenge26_sample_code/raw/master/apps/MPI_GPU_iterative_solver.c",
+      "stderr": "",
+      "snapshot": "logs/2026-10-23/formal-contract/official/MPI_GPU_iterative_solver.c",
+      "bytes": 13902,
+      "sha256": "804481298e1252938614e88fc40eb22dc88a0dd98aa7d0103e647195bdbc2396",
+      "matches_2026_10_21": true
+    },
+    {
+      "name": "GPU metrics",
+      "url": "https://gitee.com/godjs/solverchallenge26_sample_code/raw/master/include/solverchallenge26/gpu_metrics.h",
+      "checked_at": "2026-10-23T19:33:07.110737+08:00",
+      "transport": "direct HTTPS curl with TLS verification",
+      "curl_exit": 0,
+      "http_status": "200",
+      "effective_url": "https://raw.giteeusercontent.com/godjs/solverchallenge26_sample_code/raw/master/include/solverchallenge26/gpu_metrics.h",
+      "stderr": "",
+      "snapshot": "logs/2026-10-23/formal-contract/official/gpu_metrics.h",
+      "bytes": 3521,
+      "sha256": "757c483d491f1f7057cfcf94f7ba91541fa03ed3f76acf39f63851e9772d8ae3",
+      "matches_2026_10_21": true
+    }
+  ],
+  "conference_authoritative_response": "Versioned and no-cache GETs match the 21October39340-byte snapshot. BareURL response is an older cached39268-byte variant; do not infer the notice was removed.",
+  "no_actual_contest_upload_portal_identified_in_examined_sources": true,
+  "web_tool_scope": "Contest/Gitee opens timed out or were inaccessible. Conference/search results were supplemental; direct HTTPS receipts and versioned/no-cache variants establish source identity."
+}

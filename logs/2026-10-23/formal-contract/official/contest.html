@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>第六届线性解法器算法与性能优化竞赛</title>
+    <style>
+        h1 {
+          white-space: nowrap;  /* 阻止文本换行 */
+        }
+      </style>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Article-Cards.css">
+    <link rel="stylesheet" href="assets/css/Data-Table-1.css">
+    <link rel="stylesheet" href="assets/css/Data-Table.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Pricing-Table-Style-01-1.css">
+    <link rel="stylesheet" href="assets/css/Pricing-Table-Style-01.css">
+    <link rel="stylesheet" href="assets/css/untitled-1.css">
+    <link rel="stylesheet" href="assets/css/untitled-2.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="77" style="background: var(--bs-red);">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav" style="background: rgba(0,0,0,0);">
+        <div class="container"><a class="navbar-brand" href="#">SolverChallenge</a><button data-bs-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-bs-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item nav-link"><a class="nav-link active" href="#about-solverchallenge" style="background: rgba(255,255,255,0);">关于竞赛</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#scheme">竞赛方案</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#process">竞赛流程</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#competition">竞赛赛题</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#organization">竞赛组织</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#contact">联系方式</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="awards.html">往届获奖</a></li>
+                    <!-- <li class="nav-item nav-link"><a class="nav-link" href="https://www.solver-conference.cn/">Solver25</a></li> -->
+                    <li class="nav-item nav-link"><a class="nav-link"href="/solver26/index.html">Solver26</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background: url(&quot;assets/img/深圳.jpg&quot;) repeat;background-size: cover;">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h1 class="brand-heading" style="font-size: 45px;">第六届线性解法器算法与性能优化竞赛</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="text-center content-section" id="about-solverchallenge" style="padding: 100px 0px;background: #CAD2C5;">                
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 style="color: var(--bs-dark);">关于SolverChallenge</h2>
+                    <p style="text-align: left;color: var(--bs-dark);">&nbsp; &nbsp; &nbsp; &nbsp; SolverChallenge竞赛是解法器快速算法及应用研讨会（SOLVER会议）的一项特色活动，由SOLVER会议组委会主办，每年举行一次。竞赛针对实际应用中抽取出来的线性代数问题，要求参赛队伍在一定约束条件下通过算法设计与性能调优等手段对这些系统进行数值求解，并基于不同标准从多个维度对所获结果进行评价。第六届竞赛（SolverChallenge26）将与第九届解法器快速算法及应用研讨会（<a href="/solver26/index.html" target="blank">SOLVER26</a>，广东深圳）同期启动，欢迎解法器领域的同行及研究生报名参赛。<br><br></p>
+                    <!-- "https://www.solver-conference.cn/"   -->
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;">
+                    <h2 style="margin-bottom: 15px;color: var(--bs-dark);">竞赛背景</h2>
+                    <p style="text-align: left;margin-bottom: 5px;color: var(--bs-dark);">&nbsp; &nbsp; &nbsp; &nbsp; <br>&nbsp; &nbsp; &nbsp; &nbsp; 线性代数方程组&nbsp;<em>Ax=b&nbsp;</em>是科学与工程计算领域面临的共性问题，求解该类方程的解法器已成为很多应用软件的性能瓶颈。当前，国产高性能计算机已进入百亿亿次（E级）计算时代。这些国际领先的超级计算机为我国科学与工程计算应用迈进超大规模计算时代、实现更高精细的数值模拟成为可能。然而，超大规模计算给解法器算法设计与性能优化带来巨大挑战。一方面，超大规模计算必然是求解越来越复杂的实际应用问题，更加精细的物理建模蕴含着越来越复杂的应用特征（如：多时空尺度、多物理耦合、多介质、复杂流动、强非线性强间断、长时间积分等），从而导致现有解法器算法的计算复杂度急剧增长。另一方面，随着计算机硬件性能的提升，超级计算机呈现“多级嵌套海量并行、异构众核加速”的复杂体系结构特征，导致解法器算法的实现效率急剧下降。这种“应用与机器”的双重复杂性导致解法器越来越成为实际数值模拟应用的性能瓶颈，如何设计能同时匹配实际应用特征和机器体系结构特征的快速算法与性能优化技术是当前亟待解决的关键问题。<br><br></p>
+                    <p style="text-align: left;margin-bottom: 5px;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;">
+                    <h2 style="margin-bottom: 15px;color: var(--bs-dark);">竞赛宗旨</h2>
+                    <p style="text-align: left;margin-bottom: 5px;color: var(--bs-dark);">&nbsp; &nbsp; &nbsp; &nbsp; <br>&nbsp; &nbsp; &nbsp; &nbsp; SolverChallenge竞赛瞄准我国重要行业应用中的解法器瓶颈问题，赛题源于实际应用的需求，并根据每年的需求和优化情况持续更新。一方面，希望通过检验参赛队伍的算法与软件对这些问题的适应性，从中筛选出合适的算法及解法器策略，为应用提供新的思路与解决途径，提升我国重要行业应用中自主软件的解法器计算能力。另一方面，希望通过实际问题的牵引，吸引更多科研人员开展应用驱动的解法器算法创新与性能优化研究，同时培养具有交叉学科背景的优秀青年研究人员和研究生。<br><br></p>
+                    <p style="text-align: left;margin-bottom: 5px;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br></p>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 style="margin-bottom: 15px;color: var(--bs-dark);color: rgb(255, 0, 0);">说明</h2>
+                    <p style="text-align: left;color: var(--bs-dark);color: rgb(255, 0, 0);">&nbsp; &nbsp; &nbsp; &nbsp; 本页面的竞赛方案、规则和赛题为SolverChallenge26的内容，SolverChallenge26的赛题、计分规则等相关竞赛细节预计5月中旬发布。整体上与去年相比无大变化，参赛队伍可以参考历届的赛题和去年的规则进行准备。
+                </div>
+            </div>
+        </div> -->
+    </section>
+    <section id="scheme" class="content-section" style="background: #52796F;padding: 100px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;color: var(--bs-white);">
+                    <h2 style="margin-bottom: 15px;color: var(--bs-light);">竞赛方案与规则</h2>
+                    <h2 style="margin-bottom: 15px;color: var(--bs-white);text-align: left;font-size: 20.128px;">竞赛方案</h2>
+                    <p style="text-align: left;margin-bottom: 5px;color: var(--bs-white);">
+                        &nbsp; &nbsp; &nbsp; &nbsp; <br>&nbsp; &nbsp; &nbsp; &nbsp; 竞赛组委会提供10套来源于不同应用领域的线性系统（每套线性系统包括矩阵A和右端向量b、存储格式的描述、求解约束条件等），参赛选手针对这10套系统进行求解，不限制求解方法（即迭代法、直接法或混合方法均可），也不限制解法器软件包的来源。竞赛网站将提供程序中输入、输出与计时部分，并开放接口供参赛选手提交自己的执行代码（若是闭源的，则提交链接文件）。<br><br></p>
+                    <h2 style="margin-bottom: 15px;color: var(--bs-white);text-align: left;font-size: 20.128px;">竞赛规则</h2>
+                    <p style="text-align: left;margin-bottom: 5px;color: var(--bs-white);">&nbsp; &nbsp; &nbsp; &nbsp; 
+                        <br><strong>&nbsp; &nbsp; &nbsp; &nbsp; 硬件环境：</strong>竞赛指定硬件作为程序性能的测试平台，参赛选手有权使用竞赛测试平台，但使用时间将被限制，在使用时间内参赛选手可以配置环境与测试程序。在竞赛提供的平台测出的成绩会作为参赛选手的最终成绩。
+                        <br><br>&nbsp; &nbsp; &nbsp; &nbsp; 指定硬件包括：
+                        <br>
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 1.  商用 CPU（Intel Xeon Platinum 8488C, 2 路共 96 核，频率 2.4 GHz, 内存 512 GB DDR5）；
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 2.  国产 CPU（LX2，2 路共 608 核，频率 2.0 GHz，内存 1024 GB DDR5 + 64GB HBM）；
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 3.  国产 GPU（2 张海光 BW1000 DCU, 频率 1.5 GHz, 每张 64GB 显存; 32 核海光 C86 CPU, 频率 2.4 GHz；内存 128GB DDR5）。
+                        <br><br>&nbsp; &nbsp; &nbsp; &nbsp; 本次比赛提供的超算环境仅限使用单个节点。
+                        <br><br>&nbsp; &nbsp; &nbsp; &nbsp; <strong>软件环境：</strong>准许使用任何软件包参与竞赛，但是在评分时会考虑所使用软件包的自主性和创新性。为方便参赛选手快速搭建程序，请尽可能基于比赛参考代码进行开发，参考代码中包含输入、输出与计时部分的实现。
+                        <br><br>&nbsp; &nbsp; &nbsp; &nbsp; <strong>参赛队伍：</strong>竞赛面向本科生、研究生与博士后开放，采用自愿组合方式组成参赛队伍。每支队伍人数不超过3人，且应指定1-2名指导教师。
+                        <br><br>
+                    </p>
+                    <h2 style="margin-bottom: 15px;color: var(--bs-white);text-align: left;font-size: 20.128px;">文档内容规范</h2>
+                    <p style="text-align: left;margin-bottom: 5px;color: var(--bs-white);">
+                        &nbsp; &nbsp; &nbsp; &nbsp; 
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 算法设计实现涉及到的技术栈：包含采用的硬件、系统环境、软件；
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 算法详细内容：包含采用的算法、参数；
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 总体思路：包含问题的简要分析、求解策略；
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 结果分析（注明使用内存的情况）；
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 遇到的问题。
+                        <br>
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;">
+                    <h2 style="margin-bottom: 15px;color: var(--bs-white);">评分依据</h2>
+                    <p style="text-align: left;margin-bottom: 5px;color: var(--bs-white);">&nbsp; &nbsp; &nbsp; &nbsp; 
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; <strong>求解速度（到解墙上时间）：</strong>评分标准同时考虑求解的线性系统个数与性能。每个系统满分10分，能正确解出且性能最优者得满分，其他选手的成绩依次顺延，未能解出者不得分。所有10组系统得分累加得到总成绩。此外，为让各队伍积极参与，鼓励大家设计创新的思路，只要保证能解出正确结果，会给予基准分。
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 
+                        评分公式：在赛题不特殊说明下，分数 =（T<sub>min</sub>/T<sub>self</sub>）* (10 - x) + x，其中 T<sub>min</sub> 为正确解出赛题的所有参赛队伍中用时最少的时间，T<sub>self</sub> 为参赛队伍的时间，x 为基准分（默认基准分为1分）。
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 例如：求解某一系统时，假设基准分为x=1，排名第一的参赛小组用时120ms、排名第二的参赛小组用时240ms、排名第三的参赛小组用时800ms、排名第四的参赛小组用时10000ms甚至更多，排名第五的参赛小组未解出，则第一参赛小组得10分，第二参赛小组得5.5分，第三参赛小组得2.35分，第四参赛小组得1.108分，第五参赛小组得0分。
+                        <br><br>&nbsp; &nbsp; &nbsp; &nbsp; <strong>限制：</strong>确保求解出的解向量x满足相应的精度要求，每道题限制使用单节点计算资源。<br><br></p>
+                    <p style="text-align: left;margin-bottom: 5px;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;">
+                    <h2 style="margin-bottom: 15px;color: var(--bs-white);">奖项设定</h2>
+                    <p style="text-align: left;margin-bottom: 5px;color: var(--bs-white);">&nbsp; &nbsp; &nbsp; &nbsp; <br>&nbsp; &nbsp; &nbsp; &nbsp; 竞赛专委会将根据参赛作品的创新性、完成度、文档质量、难度以及答辩表现等情况进行评奖。<br><br>&nbsp; &nbsp; &nbsp; &nbsp; <strong>基础奖项：</strong>按照求解速度与浮点运算次数得分，分别设特等奖（不超过1项），一等奖（不超过报名队伍总数的15%）、二等奖（不超过报名队伍总数的30%）、三等奖若干；<br>&nbsp; &nbsp; &nbsp; &nbsp; <strong>特别奖项：</strong>创新奖若干（在算法或性能优化方法方面有独特创新）、单系统奖共10项（对于某一个线性系统有独特贡献）、开源创新奖共10项（每个线性系统开源源码中第一，由队伍自愿报名）等；<br>&nbsp; &nbsp; &nbsp; &nbsp; <strong>企业特别奖：</strong>赞助厂商可根据自己的需求评选企业特别奖。<br><br></p>
+                    <p style="text-align: left;margin-bottom: 5px;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="process" class="content-section" style="background: #354F52;padding: 100px 0px;">
+        <div class="container">
+            <div class="col-lg-8 mx-auto" style="color: var(--bs-white);">
+                <h1 style="color: var(--bs-white);text-align: center;">竞赛流程</h1>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="color: var(--bs-white);">事项</th>
+                                <th style="color: var(--bs-white);">时间</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="color: var(--bs-white);">开启报名</td>
+                                <td style="color: var(--bs-white);">9月1日<br></td>
+                            </tr>
+                            <tr>
+                                <td style="color: var(--bs-white);">公布赛题<br></td>
+                                <td style="color: var(--bs-white);">9月1日<br></td>
+                            </tr>
+                            <tr>
+                                <td style="color: var(--bs-white);">报名截止<br></td>
+                                <td style="color: var(--bs-white);">9月30日<br></td>
+                            </tr>
+                            <tr>
+                                <td style="color: var(--bs-white);">开启程序提交<br></td>
+                                <td style="color: var(--bs-white);">9月30日<br></td>
+                            </tr>
+                            <tr>
+                                <td style="color: var(--bs-white);">关闭程序提交<br></td>
+                                <td style="color: var(--bs-white);">10月30日<br></td>
+                            </tr>
+                            <tr>
+                                <td style="color: var(--bs-white);">入围名单公布<br></td>
+                                <td style="color: var(--bs-white);">11月10日<br></td>
+                            </tr>
+                            <tr>
+                                <td style="color: var(--bs-white);">在SOLVER26会议上进行答辩、颁奖<br></td>
+                                <td style="color: var(--bs-white);">11月20日-23日<br></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;">
+                    <p></p>
+                    <h2 style="margin-bottom: 15px;color: var(--bs-white);">竞赛截止报名时间</h2>
+                    <p style="text-align: center;margin-bottom: 5px;color: var(--bs-white);">2026 年 9 月 30 日24:00<br><br></p>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 30px;text-align: center;margin-right: 15px;margin-left: 15px;">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;margin: 9px;">
+                    <p></p>
+                    <h2 style="margin-bottom: 15px;color: var(--bs-white);">竞赛报名方式</h2>
+                    <p style="text-align: center;margin-bottom: 5px;color: var(--bs-white);">
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <br>竞赛报名请<a href="https://f.wps.cn/g/lBe8NFXR/">点击此处</a>填写表格，或扫描下方二维码
+                        <br>
+                        <br>
+                        <img src="assets/img/sc26报名.png" style="width: 256px;">
+                        <br>
+                        <br><a href="awards.html">查看往届获奖名单</a>
+                        <br>
+                        <br>
+                    </p>
+                    <p style="text-align: left;margin-bottom: 5px;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="text-center content-section" id="competition" style="background: #BE95C4;padding: 100px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;">
+                    <h2 style="margin-bottom: 45px;color: var(--bs-dark);"><strong>第六届解法器算法及优化竞赛（SolverChallenge26）赛题</strong></h2>
+                    <p>百度网盘：<a href="https://pan.baidu.com/s/1YSBg8chWPWwGwNPoHSDXVw?pwd=ni6w" target="_blank">下载链接</a>&nbsp;&nbsp;&nbsp;提取码: &nbsp;ni6w </p>
+                    <h4>赛题说明</h4>
+                    <p style="text-align: left;">
+                        <strong>端到端时间可分为如下3部分:</strong>
+                        <br>
+                        1. 分析
+                        <br>
+                        2. 准备
+                        <br>
+                        3. 求解
+                        <br>
+                        矩阵和向量的读入、格式转换、分发至多进程、矩阵坐标排序，以及 CPU 与 GPU 之间的数据传输，均不列入统计时间。
+                        <br>
+                        <br>
+                        <strong>
+                            直接法和迭代法对于上述3步的定义略有不同。
+                        </strong>
+                        <br>
+                        <br>
+                        <strong>直接法：</strong>
+                        <br>
+                        1. 分析：利用矩阵结构信息（即不依赖矩阵数值），做解法器预处理，包括图分析、图优化、预开辟空间、节点优化编号等操作，参考intel pardiso的phase=11（注意，pardiso phase=11可以传入矩阵的值做一定的处理，本次比赛不允许）。
+                        <br>
+                        2. 准备：利用矩阵数值信息做数值分解，参考intel pardiso phase=22。
+                        <br>
+                        3. 求解：输入右端向量b，得到解向量x，参考intel pardiso phase=33。
+                        <br>
+                        <br>
+                        <strong>迭代法：</strong>
+                        <br>
+                        1. 分析：利用矩阵结构信息（即不依赖矩阵数值），做解法器预处理，包括预条件子构建、多重网格构建等。
+                        <br>
+                        2. 准备：利用矩阵数值信息做数值准备，包括预条件子数值准备，多重网格数值准备等。
+                        <br>
+                        3. 求解：输入右端向量b，得到解向量x。
+                        <br>
+                        <br>
+                        <strong>注：</strong>
+                        若将直接法作为预条件子用在迭代法中，则直接法部分参考“直接法”的说明计入迭代法三项相应时间中。
+                        <br>
+                        <img style="max-width: 90%; min-width: 200px; margin-top: 36px; margin-bottom: 36px; text-align: center;" src="assets/img/g7.png">
+                        <br>
+                        <strong>
+                            1、不同题目对于内存、收敛准则和求解右端项个数的要求不同，请选手注意。
+                            <br>
+                            2、关于矩阵说明：
+                            <span style="display: block;padding-left: 2em;">
+                            为方便不同进程数下快速读取文件，本次比赛矩阵与右端向量统一采用 PETSc 二进制格式存储。
+                            <br>
+                            矩阵文件依次存储：MAT_FILE_CLASSID（1211216）、行数 m、列数 n、非零元数 nnz、每行非零元个数（m 个 32 位整数）、列下标（nnz 个 32 位整数，从 0 开始）、非零元数值（nnz 个 double，与列下标一一对应）。
+                            <br>
+                            右端向量文件依次存储：VEC_FILE_CLASSID（1211214）、向量长度 n、向量数值（n 个 double）。
+                            <br>
+                            复型系统赛题（T6、T8、T10）的矩阵与向量数值为双精度复数，每个元素按实部、虚部两个 double 依次存储。
+                            <br>
+                            比赛参考代码中提供了读取二进制矩阵和右端项的代码。
+                            </span>
+                            <br>
+                            3、组委会提供的所有硬件环境均已下载所有赛题，参赛选手请勿重复下载。
+                            <br>
+                            4、对于沿自 SolverChallenge25 的赛题，在对应赛题信息中提供了 SolverChallenge25 最优报告，即上届竞赛中该题成绩最优队伍的技术报告，内容包括其算法设计、性能优化方法及其实现效果，供参赛选手参考。
+                            <br>
+                            5、关于赛题的参考代码，请参见：<a href="https://gitee.com/godjs/solverchallenge26_sample_code" target="_blank">比赛参考代码</a>。
+                        </strong>
+                    </p>
+
+
+                    <div class="table-responsive" style="margin-bottom: 50px;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th id="style_td">赛题名称</th>
+                                    <th id="style_td"><strong>SolverChallenge26_01</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="style_td">矩阵阶数</td>
+                                    <td id="style_td_7">6,291,456</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">非零元数</td>
+                                    <td id="style_td">52,133,888</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">应用领域</td>
+                                    <td id="style_td_7">激光聚变</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">来源与背景描述&nbsp;&nbsp;</td>
+                                    <td id="style_td_7">PDE：辐射流体力学三维三温能量方程；<br>网格类型：结构网格；<br>网格规模：128×128×128；<br>离散格式：有限体积7点格式。</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">MD5</td>
+                                    <td id="style_td_7">c0d0a33e199a7746b0d9ba62396a0e79</td>
+                                </tr>
+                                <tr>
+                                    <td class="float-none" id="style_td">约束</td>
+                                    <td id="style_td_7">（1）||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub> &lt; 1e-4， 内存要求 ≤ 9GB（CPU 和 GPU 内存均需满足）；<br> （2）||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub> &lt; 1e-8， 内存要求 ≤ 9GB（CPU 和 GPU 内存均需满足）。</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">关注时间<br></td>
+                                    <td id="style_td_7">
+                                        端到端时间
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <!-- <td id="style_td">分数说明</td> -->
+                                    <td class="float-none" id="style_td-9">分数说明</td>
+                                    <td id="style_td_7">达到约束(1)：基准分为1分，满分为5分；<br>达到约束(2)：基准分为1分，满分为5分；<br>约束(1)和约束(2)分别计分，总分为两者累加。</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="table-responsive" style="margin-bottom: 50px;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th id="style_td">赛题名称</th>
+                                    <th id="style_td_7"><strong>SolverChallenge26_02</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="style_td-3">矩阵阶数</td>
+                                    <td id="style_td_-1">19,637,808</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-4">非零元数</td>
+                                    <td id="style_td-5">97,535,322&nbsp;&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-6">应用领域</td>
+                                    <td id="style_td_-2">复杂流动</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-7">来源与背景描述&nbsp;&nbsp;</td>
+                                    <td id="style_td_-3">PDE：航空发动机燃烧室仿真三维压力方程；<br>网格类型：非结构网格；<br>离散格式：单元中心有限体积。</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-8">MD5</td>
+                                    <td id="style_td_7">05398264671f6acfc8160e057b1fb6b9</td>
+                                </tr>
+                                <tr>
+                                    <td class="float-none" id="style_td-9">约束</td>
+                                    <td id="style_td_7">（1）||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub> &lt; 1e-6; <br>（2）||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub> &lt; 1e-10;<br>内存要求：无。</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">关注时间<br></td>
+                                    <td id="style_td_7">
+                                        端到端时间
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="float-none" id="style_td-9">分数说明</td>
+                                    <td id="style_td_7">达到约束(1)：基准分为1分，满分为5分；<br>达到约束(2)：基准分为1分，满分为5分；<br>约束(1)和约束(2)分别计分，总分为两者累加。</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">SolverChallenge25最优报告</td>
+                                    <td id="style_td_7">有理想有本领有担当队（<a href="https://pan.baidu.com/s/1B9a6GNrvOKzretxJUiYYfw" target="_blank">百度网盘</a>，提取码：w4z6）</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="table-responsive" style="margin-bottom: 50px;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th id="style_td-51">赛题名称</th>
+                                    <th id="style_td-52"><strong>SolverChallenge26_03</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="style_td-53">矩阵阶数</td>
+                                    <td id="style_td_-31">2,081,541</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-54">非零元数</td>
+                                    <td id="style_td-55">71,033,481</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-56">应用领域</td>
+                                    <td id="style_td_-32">结构力学</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-57">来源与背景描述&nbsp;&nbsp;</td>
+                                    <td id="style_td_-33">
+                                        PDE：航空发动机整机静力学仿真，接触力学线弹性方程；
+                                        <br>离散格式：一阶节点有限元，每个节点定义三个自由（位移三个分量）；
+                                        <br>网格类型：非结构网格；
+                                        <br>特点：带有复杂约束条件。   
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-58">MD5</td>
+                                    <td id="style_td_7">b97d1f5b31e207de7a8e4fe1f639f949</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td class="float-none" id="style_td-59">约束</td>
+                                    <td id="style_td_7">||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub> &lt; 1e-8; <br>内存要求：无。</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">关注时间<br></td>
+                                    <td id="style_td_7">
+                                        端到端时间
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">分数说明</td>
+                                    <td id="style_td_7">基准分为1分，满分为10分</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">SolverChallenge25最优报告</td>
+                                    <td id="style_td_7">就很嗨队（<a href="https://pan.baidu.com/s/1CHD7JHG4UXcWH5S8ob9v-Q" target="_blank">百度网盘</a>，提取码：5bep）</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    
+                    <div class="table-responsive" style="margin-bottom: 50px;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th id="style_td-81">赛题名称</th>
+                                    <th id="style_td-82"><strong>SolverChallenge26_04</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="style_td-83">矩阵阶数</td>
+                                    <td id="style_td_-49">12,582,822</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-84">非零元数</td>
+                                    <td id="style_td-85">678,943,908</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-86">应用领域</td>
+                                    <td id="style_td_-50">结构力学</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-87">来源与背景描述&nbsp;&nbsp;</td>
+                                    <td id="style_td_-51">PDE：三维线弹性方程；<br>网格类型：非结构网格；<br>离散格式：有限元。 &nbsp;&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-88">MD5</td>
+                                    <td id="style_td_7">069b83d1ed0817b492ff59bdb70ff94d</td>
+                                </tr>
+                                <tr>
+                                    <td class="float-none" id="style_td-89">约束</td>
+                                    <td id="style_td_7">||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub> &lt; 1e-8; <br>内存要求：无; <br> 初始x<sub>0</sub>为零向量。</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">关注时间<br></td>
+                                    <td id="style_td_7">
+                                        端到端时间
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">分数说明</td>
+                                    <td id="style_td_7">基准分为1分，满分为10分</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">SolverChallenge25最优报告</td>
+                                    <td id="style_td_7">祺德隆东强队（<a href="https://pan.baidu.com/s/1jfHvjQIRaUHOlLaa-aSjHw" target="_blank">百度网盘</a>，提取码：5gb1）</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="table-responsive" style="margin-bottom: 50px;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th id="style_td-71">赛题名称</th>
+                                    <th id="style_td-72"><strong>SolverChallenge26_05</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="style_td">矩阵阶数</td>
+                                    <td id="style_td_7">31,214,240</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">非零元数</td>
+                                    <td id="style_td_7">1,786,704,832</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">应用领域</td>
+                                    <td id="style_td_7">复杂流动</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">来源与背景描述&nbsp;&nbsp;</td>
+                                    <td id="style_td_7">PDE：复杂装备三维不可压NS方程；<br>网格类型：非结构网格；<br>网格规模：单元数7,803,560；<br>离散格式：有限体元离散；<br>自由度排序：速度-压力耦合求解，采用节点序（同一节点的三个速度分量和压力连续编号）。</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">MD5</td>
+                                    <td id="style_td_7">4ee6effefcc6a248a96b91519b45abbf</td>
+                                </tr>
+                                <tr>
+                                    <td class="float-none" id="style_td">约束</td>
+                                    <td id="style_td_7">||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub> &lt; 1e-8; <br>内存要求：无。</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">关注时间<br></td>
+                                    <td id="style_td_7">端到端时间</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">分数说明</td>
+                                    <td id="style_td_7">基准分为1分，满分为10分</td>
+                                </tr>
+                                </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="table-responsive" style="margin-bottom: 50px;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th id="style_td-41">赛题名称</th>
+                                    <th id="style_td-42"><strong>SolverChallenge26_06</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="style_td-43">矩阵阶数</td>
+                                    <td id="style_td_-25">1,765,074</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-44">非零元数</td>
+                                    <td id="style_td-45">28,533,594</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-46">应用领域</td>
+                                    <td id="style_td_-26">电子学系统</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-47">来源与背景描述&nbsp;&nbsp;</td>
+                                    <td id="style_td_-27">
+                                        PDE：滤波器电磁场仿真时谐麦克斯韦方程；
+                                        <br>离散格式：一阶Nedelec有限元，每条边一个自由度；
+                                        <br>特点：离散矩阵为复型系统。
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-48">MD5</td>
+                                    <td id="style_td_7">2c5d20456ecb6657a022ea9324a4e4ad</td>
+                                </tr>
+                                <tr>
+                                    <td class="float-none" id="style_td-49">约束</td>
+                                    <td id="style_td_7">||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub> &lt; 1e-8; <br>内存要求：无; <br> 初始x<sub>0</sub>为零向量。</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">关注时间<br></td>
+                                    <td id="style_td_7">
+                                        端到端时间
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">分数说明</td>
+                                    <td id="style_td_7">基准分为1分，满分为10分</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">SolverChallenge25最优报告</td>
+                                    <td id="style_td_7">有理想有本领有担当队（<a href="https://pan.baidu.com/s/1B9a6GNrvOKzretxJUiYYfw" target="_blank">百度网盘</a>，提取码：w4z6）</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <div class="table-responsive" style="margin-bottom: 50px;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th id="style_td-61">赛题名称</th>
+                                    <th id="style_td-62"><strong>SolverChallenge26_07</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="style_td">矩阵阶数</td>
+                                    <td id="style_td_7">34,500,003</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">非零元数</td>
+                                    <td id="style_td_7">721,719,027</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">应用领域</td>
+                                    <td id="style_td_7">碳封存</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">来源与背景描述&nbsp;&nbsp;</td>
+                                    <td id="style_td_7">PDE：多组分渗流方程；<br>离散格式：非结构网格，有限体积七点格式，每个单元自由度为3；<br>特点：自由度按单元节点排序，同一个节点的压力和各组分饱和度排在一起，压力排前。</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">MD5</td>
+                                    <td id="style_td_7">0bf100709a1dfbf4978ad2deae7a91a7</td>
+                                </tr>
+                                <tr>
+                                    <td class="float-none" id="style_td">约束</td>
+                                    <td id="style_td_7">||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub> &lt; 1e-6；<br>内存要求：无；<br>初始x<sub>0</sub>为零向量。</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">关注时间<br></td>
+                                    <td id="style_td_7">端到端时间</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">分数说明</td>
+                                    <td id="style_td_7">基准分为1分，满分为10分</td>
+                                </tr>
+                                </tbody>
+                        </table>
+                    </div>
+                    
+                    
+                    
+                    <div class="table-responsive" style="margin-bottom: 50px;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th id="style_td-31">赛题名称</th>
+                                    <th id="style_td-32"><strong>SolverChallenge26_08</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="style_td-33">矩阵阶数</td>
+                                    <td id="style_td_-19">5,809,680</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-34">非零元数</td>
+                                    <td id="style_td-35">194,348,610</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-36">应用领域</td>
+                                    <td id="style_td_-20">集成电路</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-37">来源与背景描述&nbsp;&nbsp;</td>
+                                    <td id="style_td_-21">
+                                        电路谐波平衡分析;
+                                        <br>电路工艺：T65；
+                                        <br>特点：离散矩阵为复型系统。
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-38">MD5</td>
+                                    <td id="style_td_7">cc64f7dd8e1c925098dbe433bdf0db96</td>
+                                </tr>
+                                <tr>
+                                    <td class="float-none" id="style_td-39">约束</td>
+                                    <td id="style_td_7">||r||<sub>max</sub> &lt; 1e-8；<br>内存要求：无；<br>右端项：10个。</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">提示<br></td>
+                                    <td id="style_td_7">请认真分析矩阵元素结构和数值分布，多为块矩阵；可以考虑迭代法，预处理子一般选为将每个块矩阵变成对角矩阵（或三对角、五对角等），或变成更小的对角块矩阵；也可以考虑直接法，注意填入元个数。该题块大小15x15，块类型：满阵/对角阵。<br></td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">关注时间<br></td>
+                                    <td id="style_td_7">
+                                        端到端时间
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">分数说明</td>
+                                    <td id="style_td_7">基准分为1分，满分为10分</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">SolverChallenge25最优报告</td>
+                                    <td id="style_td_7">祺德隆东强队（<a href="https://pan.baidu.com/s/1jfHvjQIRaUHOlLaa-aSjHw" target="_blank">百度网盘</a>，提取码：5gb1）</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    
+                    <div class="table-responsive" style="margin-bottom: 50px;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th id="style_td-21">赛题名称</th>
+                                    <th id="style_td-22"><strong>SolverChallenge26_09</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="style_td-23">矩阵阶数</td>
+                                    <td id="style_td_-13">9,683,038</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-24">非零元数</td>
+                                    <td id="style_td-25">75,425,210&nbsp;&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-26">应用领域</td>
+                                    <td id="style_td_-14">集成电路</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-27">来源与背景描述&nbsp;&nbsp;</td>
+                                    <td id="style_td_-15">集成电路瞬态仿真方程；<br>电路类型：sram后仿电路；<br>电路工艺：16nm。</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-28">MD5</td>
+                                    <td id="style_td_7">f984ba35f027a0c9f5b4eac7004c4b6c</td>
+                                </tr>
+                                <tr>
+                                    <td class="float-none" id="style_td-29">约束</td>
+                                    <td id="style_td_-17">||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub> &lt; 1e-8；<br>内存要求 &lt; 100GB（CPU 和 GPU 内存均需满足）；<br>右端项：10个。</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">提示<br></td>
+                                    <td id="style_td_7">一般用直接法<br></td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">关注时间<br></td>
+                                    <td id="style_td_7">
+                                        端到端时间
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">分数说明</td>
+                                    <td id="style_td_7">基准分为1分，满分为10分</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">SolverChallenge25最优报告</td>
+                                    <td id="style_td_7">不知道取什么名字队（<a href="https://pan.baidu.com/s/156WUoTHFUA38fmrGAOOAvg" target="_blank">百度网盘</a>，提取码：gy4h）</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="table-responsive" style="margin-bottom: 50px;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th id="style_td-11">赛题名称</th>
+                                    <th id="style_td-12"><strong>SolverChallenge26_10</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="style_td-13">矩阵阶数</td>
+                                    <td id="style_td_-7">418,718</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-14">非零元数</td>
+                                    <td id="style_td-15">921,708,586</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-16">应用领域</td>
+                                    <td id="style_td_-8">集成电路</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-17">来源与背景描述&nbsp;&nbsp;</td>
+                                    <td id="style_td_-9">
+                                        射频电路谐波平衡仿真方程；
+                                        <br>电路类型：VCO；
+                                        <br>电路工艺：28nm；
+                                        <br>特点：离散矩阵为复型系统。
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-18">MD5</td>
+                                    <td id="style_td_7">80aebbeeb0d22cd22ebb6af788191616</td>
+                                </tr>
+                                <tr>
+                                    <td class="float-none" id="style_td-19">约束 </td>
+                                    <td id="style_td_7">||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub> &lt; 1e-8；<br>内存要求：无；<br>右端项：10个。</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">提示<br></td>
+                                    <td id="style_td_7">请认真分析矩阵元素结构和数值分布，多为块矩阵；可以考虑迭代法，预处理子一般选为将每个块矩阵变成对角矩阵（或三对角、五对角等），或变成更小的对角块矩阵；也可以考虑直接法，注意填入元个数。<br></td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">关注时间<br></td>
+                                    <td id="style_td_7">
+                                        端到端时间
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">分数说明</td>
+                                    <td id="style_td_7">基准分为1分，满分为10分</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">SolverChallenge25最优报告</td>
+                                    <td id="style_td_7">有理想有本领有担当队（<a href="https://pan.baidu.com/s/1B9a6GNrvOKzretxJUiYYfw" target="_blank">百度网盘</a>，提取码：w4z6）</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="organization" class="content-section" style="background: #E0B1CB;padding: 100px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;">
+                    <h2 style="margin-bottom: 15px;color: var(--bs-dark);">竞赛组织</h2>
+                    <p style="text-align: left;margin-bottom: 5px;color: var(--bs-dark);">
+                        &nbsp; &nbsp; &nbsp; &nbsp; 
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 主办单位：解法器快速算法及应用研讨会组织委员会
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; <span style="display: inline-block;vertical-align: top;">承办单位：</span><span style="display: inline-block;vertical-align: top;text-align: left;">中国科学院深圳先进技术研究院<br>香港中文大学（深圳）<br>湖南韶峰应用数学研究院<br>深圳国际工业与应用数学中心</span>
+                        <br>
+                        <br>
+                    </p>
+                    <p style="text-align: left;margin-bottom: 5px;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;">
+                    <h2 style="margin-bottom: 15px;color: var(--bs-dark);">竞赛评奖委员会共同主席</h2>
+                    <p style="text-align: left;color: var(--bs-dark);">
+                        &nbsp; &nbsp; &nbsp; &nbsp; 徐小文（北京应用物理与计算数学研究所）
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 张晨松（中国科学院数学与系统科学研究院）
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 舒&nbsp; &nbsp; 适（湘潭大学）
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 谭光明（中国科学院计算技术研究所）
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 刘伟峰（中国石油大学（北京））
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 薛&nbsp; &nbsp; 巍（清华大学）
+                    </p>
+                    <h2 style="margin-bottom: 15px;color: var(--bs-dark);">竞赛评奖委员会委员</h2>
+                    <p style="text-align: left;color: var(--bs-dark);">
+                        &nbsp; &nbsp; &nbsp; &nbsp; 崔&nbsp; &nbsp; 涛（中国科学院数学与系统科学研究院）
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 冯春生（湘潭大学）
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 胡少亮（中物院数值模拟软件中心）
+                        <!-- <br>&nbsp; &nbsp; &nbsp; &nbsp; 荆燕飞（电子科技大学） -->
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 刘伟峰（中国石油大学（北京））
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 舒&nbsp; &nbsp; 适（湘潭大学）
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 谭光明（中国科学院计算技术研究所）
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 谢和虎（中国科学院数学与系统科学研究院）
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 徐小文（北京应用物理与计算数学研究所）
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 薛&nbsp; &nbsp; 巍（清华大学）
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 岳孝强（湘潭大学）
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 张晨松（中国科学院数学与系统科学研究院）
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 周振亚（北京华大九天科技股份有限公司）
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="content-section" style="background: #F4ACB7;padding: 100px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;">
+                    <h2 style="margin-bottom: 15px;color: var(--bs-dark);"><strong>竞赛联系人</strong></h2>
+                    <p style="text-align: left;margin-bottom: 5px;color: var(--bs-dark);">
+                        &nbsp; &nbsp; &nbsp; &nbsp; 
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; <strong>毛润彰： </strong>19310195829 (电话) | mrz@nudt.edu.cn (邮箱)
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; <strong>李易达： </strong>17742914916 (电话) | yida.li@student.cup.edu.cn (邮箱)
+                        <br>
+                        <br>
+                    </p>
+                    <p style="text-align: left;margin-bottom: 5px;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="map-clean"></div>
+    <footer>
+        <div class="container text-center">
+            <p>Copyright © 线性解法器算法与性能优化竞赛</p><a href="https://beian.miit.gov.cn/" target="blank">京ICP备2021019551号-2</a>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+    <script src="assets/js/grayscale.js"></script>
+    <script src="assets/js/HTML-Table-to-Excel-V2.js"></script>
+</body>
+
+</html>

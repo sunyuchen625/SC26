@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "date": "2026-10-24",
+  "algorithm_and_experiment_baseline": "038c0a8bfd4e23bc391e01c9799f4215dfc48180",
+  "obsolete_files_deleted": 3539,
+  "deleted_worktree_bytes": 155692541,
+  "deletion_categories": {
+    "Superseded narrative, plan, draft or review; current handoff documents replace it.": 34,
+    "Completed exploratory/old-source probe; retained build and reproduction paths do not call it.": 29,
+    "Superseded package/document or duplicate of the canonical DCU manual.": 4,
+    "Obsolete full experimental source snapshot; live verifier manifests and original run/config/batch evidence retained.": 2261,
+    "Completed agent temporary workspace/cache.": 1177,
+    "Superseded agent progress note.": 1,
+    "Completed local upstream/cache.": 27,
+    "Python bytecode cache.": 3,
+    "Superseded policy-bearing ledger; actual allocation totals and records consolidated into current ledger.": 3
+  },
+  "current_document_links_checked": 96,
+  "broken_current_document_links": 0,
+  "CPU_archive_entries_verified": 118,
+  "GPU_archive_entries_verified": 89,
+  "GPU_archive_members": 91,
+  "current_GPU_manifest_matches_worktree": true,
+  "candidate_archive_sha256": {
+    "deliverables/SC26_CPU_candidate_6b7f675.tar.gz": "dae96e3fa5c8dc4cf8d66469b34797a84a0f3d741d0f8f4d8b4884f16206a111",
+    "deliverables/SC26_T2_HIP_preparation_20261023.tar.gz": "f9482721a702b88d4e1b5e87957f59a8391215eb1938a8599bfc055e1e1c1e3a"
+  },
+  "CPU_report_identity_preserved": true,
+  "solver_code_and_numerical_tests_modified": false,
+  "retained_evidence_check": {
+    "checks": [
+      {
+        "manifest": "logs/2026-10-01/execution/defaults-runs.json",
+        "accepted_records": 2,
+        "status": "PASS"
+      },
+      {
+        "manifest": "logs/2026-10-01/execution/selected-runs.json",
+        "accepted_records": 5,
+        "status": "PASS"
+      },
+      {
+        "manifest": "logs/2026-10-01/execution/full-rhs-runs.json",
+        "accepted_records": 30,
+        "status": "PASS"
+      },
+      {
+        "manifest": "logs/2026-10-01/execution/t5-margin-runs.json",
+        "accepted_records": 4,
+        "status": "PASS"
+      }
+    ],
+    "all_archived_run_source_cache_batch_references_exist": true,
+    "retained_batch_syntax": "PASS"
+  },
+  "independent_user_resource_facts_retained_in_updated_record": true,
+  "GPU_cumulative_seconds": 2664,
+  "GPU_cumulative_terminal_allocations": 20,
+  "commercial_CPU_cumulative_approximate_node_hours": 12.574433333333333,
+  "handoff_archive": "deliverables/SC26_队友交接资料_20261024.zip",
+  "handoff_archive_bytes": 8129132,
+  "handoff_archive_sha256": "7e217b5fdac299b577f18c15903a429db7ed5d390b9602b4861a3c21acb1bb5f",
+  "handoff_payload_files": 2217,
+  "handoff_archive_entries": 2218,
+  "CRC_and_payload_identity": "PASS",
+  "excluded_material": [
+    "private resource-application originals",
+    "agent runtime files",
+    "local dependency checkout",
+    "superseded plans and source candidates"
+  ]
+}

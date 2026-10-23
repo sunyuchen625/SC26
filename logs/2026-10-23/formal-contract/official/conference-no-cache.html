@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>第九届解法器快速算法及应用研讨会</title>
+    <script>
+        // 发布时只改这一处：HTML 会跳到新 ?v=，CSS / JS / 图片也会带上新版本号
+        var ASSET_V = '20261011a';
+        (function () {
+            var host = location.hostname;
+            if (host !== 'solver-conference.cn' && host !== 'www.solver-conference.cn') return;
+            var params = new URLSearchParams(location.search);
+            if (location.protocol === 'https:' && host === 'www.solver-conference.cn' && params.get('v') === ASSET_V) return;
+            params.set('v', ASSET_V);
+            location.replace('https://www.solver-conference.cn' + location.pathname + '?' + params.toString() + location.hash);
+        })();
+        function assetUrl(path) {
+            if (!path) return path;
+            return path.split('?')[0] + '?v=' + ASSET_V;
+        }
+        (function () {
+            function apply(el) {
+                if (!el || el.nodeType !== 1) return;
+                if (el.hasAttribute('data-src')) {
+                    el.setAttribute('src', assetUrl(el.getAttribute('data-src')));
+                }
+                if (el.hasAttribute('data-bg')) {
+                    el.style.background = 'url("' + assetUrl(el.getAttribute('data-bg')) + '") center repeat';
+                    el.style.backgroundSize = 'cover';
+                }
+                if (el.querySelectorAll) {
+                    el.querySelectorAll('[data-src], [data-bg]').forEach(apply);
+                }
+            }
+            new MutationObserver(function (mutations) {
+                mutations.forEach(function (m) {
+                    m.addedNodes.forEach(apply);
+                });
+            }).observe(document.documentElement, { childList: true, subtree: true });
+        })();
+        [
+            'assets/bootstrap/css/bootstrap.min.css',
+            'assets/fonts/font-awesome.min.css',
+            'assets/css/untitled-1.css',
+            'assets/css/untitled-2.css',
+            'assets/css/untitled.css'
+        ].forEach(function (href) {
+            document.write('<link rel="stylesheet" href="' + assetUrl(href) + '">');
+        });
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700&amp;display=swap">
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="77" style="background: var(--bs-dark);">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav">
+        <div class="container"><a class="navbar-brand" href="#">SOLVER26</a><button data-bs-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-bs-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item nav-link"><a class="nav-link active" href="#about-solver" style="background: rgba(255,255,255,0);">SOLVER</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#conference-deadline">重要节点</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#problem_sets">解法器问题集</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#program">会议日程</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#organization">会议组织</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#info">参会信息</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#venue">会场交通</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#archive">往届会议</a></li>
+                    <li class="nav-item nav-link" style="text-transform : none;"><a class="nav-link" href="/solverchallenge26" target="_blank">SolverChallenge</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="masthead" data-bg="assets/img/background.jpg" style="background-size: cover;">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <h1 class="brand-heading" style="font-size: 46px; margin-top: -8%; text-shadow: 0 2px 12px rgba(0,0,0,0.45);">第九届解法器快速算法及应用研讨会</h1>
+                        <p class="intro-text" style="filter: brightness(200%) contrast(106%); font-size: 26px; margin-top: -2%; text-shadow: 0 1px 8px rgba(0,0,0,0.5);"><strong>2026年11月20日—11月23日<br>广东 · 深圳<br></strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="text-center content-section" id="about-solver" style="background: rgb(109, 164, 172); padding: 100px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>关于 SOLVER 系列研讨会</h2>
+                    <p style="text-align: left;">
+                        &nbsp; &nbsp; &nbsp; &nbsp; SOLVER 系列研讨会围绕科学工程计算与工业仿真领域中的数值代数问题，探讨应用驱动且适合大规模计算的高可扩展快速算法及高性能实现技术。该会议面向数值代数解法器的算法设计、理论分析、并行实现、性能优化、软件研发及实际应用，研讨主题包括但不限于如下方面：<br>
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 线性代数方程组求解算法；
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 非线性代数方程组求解算法；
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 特征值问题求解算法；
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 微分方程快速求解算法；
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 稀疏矩阵与图计算相关算法；
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 面向体系结构的解法器性能优化；
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 解法器软件与性能调优工具；
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 智能解法器；
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 解法器量子算法；
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 解法器在实际数值模拟与工业仿真中的应用。
+                        <br>
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; <a href="/solverchallenge26" target="_blank" style="text-decoration: underline;">SolverChallenge 竞赛</a>是 SOLVER 系列研讨会的一项特色活动，由 SOLVER 组委会主办，每年举行一次。第六届竞赛（SolverChallenge26）将与 SOLVER26 同期启动。<br>
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 第九届会议（SOLVER2026）由中国科学院深圳先进技术研究院承办，定于 2026 年 11 月 20 日—23 日在广东省深圳市举办。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section" id="conference-deadline" style="background-color: rgb(117, 185, 212); padding: 100px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 style="text-align: center;">重要节点</h2>
+                    <div style="max-width: 640px; margin: 24px auto 0; font-size: 24px; text-align: left;">
+                        <p style="margin: 0; display: flex; justify-content: space-between;">
+                            <span>参会注册开启：</span>
+                            <span>9月1日</span>
+                        </p>
+                        <p style="margin: 0; display: flex; justify-content: space-between;">
+                            <span>注册费优惠日期截止：</span>
+                            <span>10月30日</span>
+                        </p>
+                        <p style="margin: 0; display: flex; justify-content: space-between;">
+                            <span>报告摘要提交截止：</span>
+                            <span>10月30日</span>
+                        </p>
+                        <br>
+                        <p style="margin: 0; display: flex; justify-content: space-between;">
+                            <span>SolverChallenge 报名开启：</span>
+                            <span>9月1日</span>
+                        </p>
+                        <p style="margin: 0; display: flex; justify-content: space-between;">
+                            <span>SolverChallenge 报名截止：</span>
+                            <span>9月30日 24:00</span>
+                        </p>
+                        <p style="margin: 0; display: flex; justify-content: space-between;">
+                            <span>SolverChallenge 任务提交：</span>
+                            <span>10月30日 24:00</span>
+                        </p>
+                        <p style="margin: 28px 0 0; font-size: 16px; line-height: 1.8;">
+                            提示：按照Solver会议惯例，所有报告均自愿提交，最终由程序委员会筛选确认。报告顺序按照报告人姓氏拼音排序（正序或倒序），所有报告时间长短相同，不设邀请报告（组委会安排的特别环节除外）。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center content-section" id="host" style="background: white; padding: 100px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2><strong style="color: rgba(2, 54, 54, 0.555);">SOLVER26 承办单位</strong></h2>
+                    <p style="text-align: center; font-size: 24px; margin-top: 24px;">
+                        <img data-src="assets/img/siat_logo_1.png" alt="中国科学院深圳先进技术研究院" style="width: 75%; max-width: 640px; background-color: white; padding: 26px 16px 16px 16px; object-fit: contain;">
+                        <br><br>
+                        <img data-src="assets/img/cuhk_shenzhen_logo.png" alt="香港中文大学（深圳）" style="width: 74%; max-width: 680px; background-color: white; padding: 40px 16px 16px 16px; object-fit: contain;">
+                        <br><br>
+                        <img data-src="assets/img/hsiam_logo_1.jpg" alt="合作承办单位" style="width: 74%; max-width: 640px; background-color: white; padding: 0px 16px 16px 16px; object-fit: contain;">
+                        <br><br>
+                        <img data-src="assets/img/SZ_ICIAM.png" alt="深圳国际工业与应用数学大会（ICIAM）" style="width: 70%; max-width: 640px; background-color: white; padding: 0px 16px 16px 16px; object-fit: contain;">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="problem_sets" class="content-section" style="background: rgb(136, 178, 218); padding: 100px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%; text-align: center;">
+                    <h2 style="margin-bottom: 15px;">解法器问题集</h2>
+                    <p style="text-align: left; margin-bottom: 5px;">
+                        &nbsp; &nbsp; &nbsp; &nbsp; Solver 研讨会公开征集解法器问题，形成问题集。讨论主题可由 1 人或多人联合提出，对每个入选的主题，将安排不超过 5 分钟主题发言（形式不限），由提议者阐述问题，然后组织讨论。主题讨论时间根据具体情况确定。征集范围包括但不限于：
+                        <br><br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; 有待解决的解法器相关理论、算法、实现及应用等问题；
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 实际应用对解法器的需求；
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 解法器研究及应用过程中的新现象和新问题；
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 对解法器相关研究进展的评论与讨论；
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 解法器相关学术交流、合作平台的建议与提议；
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 其他任何与解法器相关的问题。
+                        <br><br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; 当前问题集：详见 <a href="/solverchallenge26" target="_blank" style="text-decoration: underline;">SolverChallenge</a>。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center download-section content-section" id="program" style="background: rgb(171, 227, 241); padding: 100px 0px;">
+        <div class="container">
+            <div class="col-lg-8 mx-auto">
+                <h1>会议日程</h1>
+                <div class="table-responsive">
+                    <table class="table" style="font-size: 20px;">
+                        <thead>
+                            <tr>
+                                <th>日期</th>
+                                <th>计划</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>11 月 20 日</td>
+                                <td>报到</td>
+                            </tr>
+                            <tr>
+                                <td>11 月 21 日</td>
+                                <td>会议</td>
+                            </tr>
+                            <tr>
+                                <td>11 月 22 日</td>
+                                <td>会议</td>
+                            </tr>
+                            <tr>
+                                <td>11 月 23 日</td>
+                                <td>离会</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p style="text-align: center; font-size: 20px; margin-top: 40px;">详细日程安排将在会前通过本站发布。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="organization" class="content-section" style="background: rgb(120, 180, 219); padding: 100px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%; text-align: center;">
+                    <h2 style="margin-bottom: 15px;">组织委员会</h2>
+                    <p style="text-align: left;">
+                        徐小文（北京应用物理与计算数学研究所）
+                        <br>张晨松（中国科学院数学与系统科学研究院）
+                        <br>舒&nbsp; &nbsp; 适（湘潭大学）
+                        <br>谭光明（中国科学院计算技术研究所）
+                        <br>刘伟峰（中国石油大学（北京））
+                        <br>薛&nbsp; &nbsp; 巍（清华大学）
+                    </p>
+                    <h2 style="margin-bottom: 15px;">本地组织委员会</h2>
+                    <p style="text-align: left;">
+                        陈荣亮（中国科学院深圳先进技术研究院）
+                        <br>龚世华（香港中文大学（深圳））
+                        <br>蒋&nbsp; &nbsp; 毅（中国科学院深圳先进技术研究院）
+                        <br>林&nbsp; &nbsp; 增（中国科学院深圳先进技术研究院）
+                        <br>覃善林（中国科学院深圳先进技术研究院）
+                        <br>王&nbsp; &nbsp; 东（香港中文大学（深圳））
+                        <br>王筱平（香港中文大学（深圳））
+                        <br>徐&nbsp; &nbsp; 磊（中国科学院深圳先进技术研究院）
+                        <br>闫争争（中国科学院深圳先进技术研究院）
+                    </p>
+                    <h2 style="margin-bottom: 15px;">程序委员会共同主席</h2>
+                    <p style="text-align: left;">
+                        刘伟峰（中国石油大学（北京））
+                        <br>谢和虎（中国科学院数学与系统科学研究院）
+                        <br>陈荣亮（中国科学院深圳先进技术研究院）
+                    </p>
+                    <h2 style="margin-bottom: 15px;">程序委员会委员</h2>
+                    <p style="text-align: left;">
+                        安恒斌（北京应用物理与计算数学研究所）
+                        <br>陈荣亮（中国科学院深圳先进技术研究院）
+                        <br>崔&nbsp; &nbsp; 涛（中国科学院数学与系统科学研究院）
+                        <br>冯春生（湘潭大学）
+                        <br>高&nbsp; &nbsp; 振（中国海洋大学）
+                        <br>何&nbsp; &nbsp; 鑫（中国科学院计算技术研究所）
+                        <br>胡少亮（中物院高性能数值模拟软件中心）
+                        <br>荆燕飞（电子科技大学）
+                        <br>李胜国（国防科技大学）
+                        <br>刘伟峰（中国石油大学（北京））
+                        <br>谭光明（中国科学院计算技术研究所）
+                        <br>谢和虎（中国科学院数学与系统科学研究院）
+                        <br>徐小文（北京应用物理与计算数学研究所）
+                        <br>薛&nbsp; &nbsp; 巍（清华大学）
+                        <br>岳孝强（湘潭大学）
+                        <br>张晨松（中国科学院数学与系统科学研究院）
+                        <br>张&nbsp; &nbsp; 硕（中国科学院数学与系统科学研究院）
+                        <br>钟柳强（华南师范大学）
+                        <br>周振亚（北京华大九天科技股份有限公司）
+                        <br>朱圣鑫（北师港浸大（UIC））
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center content-section" id="info" style="background: rgb(115, 155, 182); padding: 100px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%; text-align: center;">
+                    <div class="col-lg-8 mx-auto" style="width: 100%; max-width: 900px;">
+                        <h2>会议注册</h2>
+                        <p style="text-align: center; font-size: 24px; margin-bottom: 32px;">
+                            <a href="https://f.wps.cn/g/MpYOIZCm" style="font-size: 24px;"> >>>>>> 会议注册报名表 <<<<<< </a>
+                            <br>
+                            <img style="max-width: 40%; margin-top: 10px; margin-bottom: 10px;" data-src="assets/img/会议注册.png" alt="SOLVER26会议注册报名表">
+                        </p>
+                        <div class="reg-info">
+                            <table class="reg-fee-table">
+                                <thead>
+                                    <tr>
+                                        <th>会议注册费</th>
+                                        <th>10 月 30 日前</th>
+                                        <th>之后</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>普通</td>
+                                        <td>2000 元/人</td>
+                                        <td>2400 元/人</td>
+                                    </tr>
+                                    <tr>
+                                        <td>学生</td>
+                                        <td>1200 元/人</td>
+                                        <td>1500 元/人</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="reg-subtitle">收款账户<span class="reg-account-tag">（仅接收公对公转账）</span></p>
+                            <p class="reg-account">
+                                账户名：湖南韶峰应用数学研究院<br>
+                                开户银行：中国建设银行股份有限公司湘潭湘大支行<br>
+                                银行账号：43050163580800000247
+                            </p>
+                            <p class="reg-note">
+                                请备注标题、姓名、单位等信息，详情：<br>
+                                公对公账户转账时请注明：SOLVER 2026 + 付款单位名称+注册人员姓名。<br>
+                                如个人付款请直接扫描二维码支付，支付时请注明：SOLVER 2026+姓名+单位。
+                            </p>
+                        </div>
+                        <p style="text-align: center; font-size: 20px; margin-top: 8px; margin-bottom: 0;">
+                            <img style="max-width: 40%; margin-top: 10px; margin-bottom: 10px;" data-src="assets/img/收款码.jpg" alt="会议注册收款码">
+                        </p>
+                        <h2 style="margin-top: 40px;">会议报告</h2>
+                        <p style="text-align: center; font-size: 24px;">
+                            <a href="https://f.wps.cn/g/IcnokSXH" style="font-size: 24px;"> >>>>>> 会议报告提交通道 <<<<<< </a>
+                            <br>
+                            <img style="max-width: 40%; margin-top: 10px; margin-bottom: 10px;" data-src="assets/img/会议报告提交.png" alt="SOLVER26会议报告提交通道">
+                            <br>
+                            线上提交截止时间为 2026 年 10 月 30 日。
+                        </p>
+                        <p style="text-align: center; font-size: 18px; margin-top: 12px;">
+                            会务注册咨询相关事宜，请联系：
+                            <br>
+                            陈荣亮老师，<a href="mailto:rl.chen@siat.ac.cn" style="color: #2ee6c8;">rl.chen@siat.ac.cn</a>；
+                            <br>
+                            张烨老师，<a href="mailto:y.zhang@siat.ac.cn" style="color: #2ee6c8;">y.zhang@siat.ac.cn</a>。
+                        </p>
+                        <h2 style="margin-top: 40px;">参会资料</h2>
+                        <p style="text-align: center; font-size: 20px;">
+                            <a href="assets/file/SOLVER26会议通知.pdf" style="text-decoration: none;" target="_blank"><span style="font-size: 20px;">SOLVER26会议通知</span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center content-section" id="venue" style="background: rgb(129, 174, 198); padding: 100px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%; text-align: center;">
+                    <div class="col-lg-8 mx-auto" style="width: 100%; max-width: 900px;">
+                        <h2 style="margin-bottom: 15px;">Solver 会场 / 会场位置</h2>
+                        <h4 style="margin-bottom: 15px;">中国科学院深圳先进技术研究院 A 栋 5 楼 504 会议室</h4>
+                        <h4 style="margin-bottom: 15px; font-weight: normal; line-height: 1.6;">广东省深圳市南山区中国科学院深圳先进技术研究院（深圳西丽深圳大学城学苑大道 1068 号）</h4>
+
+                        <h2 style="margin-top: 36px; margin-bottom: 15px;">会议酒店</h2>
+                        <p style="text-align: center;">
+                            享受协议价的酒店房间数量有限，且会议期间会场周边酒店资源紧张，请参会者注册缴费后尽早与酒店联系预订房间。
+                        </p>
+
+                        <h4 style="margin-bottom: 15px; margin-top: 28px;">维也纳 3 好酒店（深圳南科大店）</h4>
+                        <img style="max-width: 100%; width: 640px; height: auto;" data-src="assets/img/vienna.jpg" alt="维也纳3好酒店（深圳南科大店）位置示意图">
+                        <p style="text-align: center; margin-top: 16px;">
+                            <br><strong>酒店位置：</strong>广东省深圳市南山区西丽学苑大道 1153 号
+                            <br><strong>预定电话：</strong>袁经理 18194061779
+                            <br><strong style="color: yellow;">预定方式：</strong><span style="color: yellow;">预定时声明参加 Solver26 会议、注册交费凭证</span>
+                            <br><strong>协议价：</strong>
+                            <br>标准双床房 326 元/晚，豪华大床房 350 元/晚
+                            <br>豪华双床房 350 元/晚，影音双床房 366 元/晚
+                            <br>影音大床房 366 元/晚，商务双床房 374 元/晚
+                            <br><strong>距会场：</strong>约 700 米，步行约 10 分钟
+                        </p>
+
+                        <h4 style="margin-bottom: 15px; margin-top: 36px;">深圳南山深铁塘朗城君璞酒店</h4>
+                        <img style="max-width: 100%; width: 640px; height: auto;" data-src="assets/img/JunPu.jpg" alt="深圳南山深铁塘朗城君璞酒店位置示意图">
+                        <p style="text-align: center; margin-top: 16px;">
+                            <br><strong>酒店位置：</strong>南山区留仙大道 3333 号塘朗城西区 C 座 6-16 楼
+                            <br><strong style="color: yellow;">预定方式：</strong><span style="color: yellow;">会议注册填写（酒店房间有限，先到先得）</span>
+                            <br><strong>协议价：</strong>
+                            <br>城景大床房 550 元/晚，城景双床房 500 元/晚
+                            <br>山景大床房 600 元/晚，山景双床房 550 元/晚
+                            <br>典雅大床房 700 元/晚，君璞套房 1000 元/晚
+                            <br><strong>距会场：</strong>约 1.9 公里，骑车约 10 分钟
+                        </p>
+
+                        <h4 style="margin-bottom: 15px; margin-top: 36px;">深圳璟峯酒店（西丽大学城店）</h4>
+                        <img style="max-width: 100%; width: 640px; height: auto;" data-src="assets/img/JingFeng.jpg" alt="深圳璟峯酒店（西丽大学城店）位置示意图">
+                        <p style="text-align: center; margin-top: 16px;">
+                            <br><strong>酒店位置：</strong>南山区留仙大道 4168 号众冠时代广场 B 塔 101
+                            <br><strong>预定电话：</strong>金经理 13728828561
+                            <br><strong style="color: yellow;">预定方式：</strong><span style="color: yellow;">预定时声明参加 Solver26 会议、注册交费凭证</span>
+                            <br><strong>协议价：</strong>
+                            <br>豪华大床房 388 元/晚（无早）、428 元/晚（单早）
+                            <br>豪华双床房 428 元/晚（无早）、508 元/晚（双早）
+                            <br>豪华套房 618 元/晚（单早）、658 元/晚（双早）
+                            <br>家庭套房 808 元/晚（无早）、888 元/晚（双早）
+                            <br><strong>距会场：</strong>约 4 公里，驾车约 15 分钟；会务组将安排大巴统一接送
+                        </p>
+                    </div>
+                    <br>
+                    <div class="col-lg-8 mx-auto" style="width: 100%; max-width: 900px;">
+                        <h2 style="margin-bottom: 15px;">交通方式</h2>
+                        <h4>1. 前往中国科学院深圳先进技术研究院（会场）</h4>
+                        <p style="text-align: left;">
+                            （1）从 <strong style="color: yellow;">深圳宝安国际机场</strong>（起点）至 <strong style="color: yellow;">中国科学院深圳先进技术研究院</strong>（终点）
+                            <br><br>
+                            <strong>路线 1：</strong>从机场站乘坐地铁 11 号线（红岭南方向）至前海湾站换乘地铁 5 号线（大剧院方向）至西丽站，换乘地铁 7 号线（深大丽湖方向）至深大丽湖站（D 口出），步行至中国科学院深圳先进技术研究院，全程约 63 分钟，费用 7 元。
+                            <br>
+                            <strong>路线 2：</strong>直接打车至中国科学院深圳先进技术研究院东门，全程约 28 公里，耗时约 35 分钟，费用约 70 元。
+                            <br><br>
+                            （2）从 <strong style="color: yellow;">深圳北站</strong>（起点）至 <strong style="color: yellow;">中国科学院深圳先进技术研究院</strong>（终点）
+                            <br><br>
+                            <strong>路线 1：</strong>从深圳北站乘坐地铁 5 号线（赤湾方向）至西丽站，换乘地铁 7 号线（深大丽湖方向）至深大丽湖站（D 口出），步行至中国科学院深圳先进技术研究院，全程约 45 分钟，费用 5 元。
+                            <br>
+                            <strong>路线 2：</strong>直接打车至中国科学院深圳先进技术研究院东门，全程约 5.1 公里，耗时约 25 分钟，费用约 30 元。
+                            <br><br>
+                            （3）从 <strong style="color: yellow;">深圳东站</strong>（起点）至 <strong style="color: yellow;">中国科学院深圳先进技术研究院</strong>（终点）
+                            <br><br>
+                            <strong>路线 1：</strong>从布吉站乘坐地铁 5 号线（赤湾方向）至西丽站，换乘地铁 7 号线（深大丽湖方向）至深大丽湖站（D 口出），步行至中国科学院深圳先进技术研究院，全程约 60 分钟，费用 7 元。
+                            <br>
+                            <strong>路线 2：</strong>直接打车至中国科学院深圳先进技术研究院东门，全程约 23 公里，耗时约 35 分钟，费用约 50 元。
+                        </p>
+                        <br>
+                        <h4>2. 前往维也纳 3 好酒店（深圳南科大店）</h4>
+                        <p style="text-align: left;">
+                            （1）从 <strong style="color: yellow;">深圳宝安国际机场</strong>（起点）至 <strong style="color: yellow;">维也纳 3 好酒店</strong>（终点）
+                            <br><br>
+                            <strong>路线 1：</strong>从机场站乘坐地铁 11 号线（红岭南方向）至前海湾站换乘地铁 5 号线（大剧院方向）至塘朗站（D 口出），步行至维也纳 3 好酒店，全程约 58 分钟，费用 7 元。
+                            <br>
+                            <strong>路线 2：</strong>直接打车至维也纳 3 好酒店，全程约 29 公里，耗时约 45 分钟，费用约 70 元。
+                            <br><br>
+                            （2）从 <strong style="color: yellow;">深圳北站</strong>（起点）至 <strong style="color: yellow;">维也纳 3 好酒店</strong>（终点）
+                            <br><br>
+                            <strong>路线 1：</strong>从深圳北站乘坐地铁 5 号线（赤湾方向）至塘朗站（D 口出），步行至维也纳 3 好酒店，全程约 32 分钟，费用 3 元。
+                            <br>
+                            <strong>路线 2：</strong>直接打车至维也纳 3 好酒店，全程约 5.3 公里，耗时约 20 分钟，费用约 30 元。
+                        </p>
+                        <br>
+                        <h4>3. 前往深圳南山深铁塘朗城君璞酒店</h4>
+                        <p style="text-align: left;">
+                            （1）从 <strong style="color: yellow;">深圳宝安国际机场</strong>（起点）至 <strong style="color: yellow;">深圳南山深铁塘朗城君璞酒店</strong>（终点）
+                            <br><br>
+                            <strong>路线 1：</strong>从机场站乘坐地铁 11 号线（红岭南方向）至前海湾站换乘地铁 5 号线（大剧院方向）至塘朗站（A 口出），经室内通道或乘电梯至君璞酒店大堂，全程约 58 分钟，费用 7 元。
+                            <br>
+                            <strong>路线 2：</strong>直接打车至深圳南山深铁塘朗城君璞酒店，全程约 25 公里，耗时约 40 分钟，费用约 70 元。
+                            <br><br>
+                            （2）从 <strong style="color: yellow;">深圳北站</strong>（起点）至 <strong style="color: yellow;">深圳南山深铁塘朗城君璞酒店</strong>（终点）
+                            <br><br>
+                            <strong>路线 1：</strong>从深圳北站乘坐地铁 5 号线（赤湾方向）至塘朗站（A 口出），经室内通道或乘电梯至君璞酒店大堂，全程约 20 分钟，费用 3 元。
+                            <br>
+                            <strong>路线 2：</strong>直接打车至深圳南山深铁塘朗城君璞酒店，全程约 5.3 公里，耗时约 20 分钟，费用约 30 元。
+                        </p>
+                        <br>
+                        <h4>4. 前往深圳璟峯酒店（西丽大学城店）</h4>
+                        <p style="text-align: left;">
+                            （1）从 <strong style="color: yellow;">深圳宝安国际机场</strong>（起点）至 <strong style="color: yellow;">深圳璟峯酒店</strong>（终点）
+                            <br><br>
+                            <strong>路线 1：</strong>从机场站乘坐地铁 11 号线（红岭南方向）至前海湾站换乘地铁 5 号线（大剧院方向）至大学城站（C 口出），步行至深圳璟峯酒店，全程约 47 分钟，费用 7 元。
+                            <br>
+                            <strong>路线 2：</strong>直接打车至深圳璟峯酒店，全程约 26 公里，耗时约 35 分钟，费用约 65 元。
+                            <br><br>
+                            （2）从 <strong style="color: yellow;">深圳北站</strong>（起点）至 <strong style="color: yellow;">深圳璟峯酒店</strong>（终点）
+                            <br><br>
+                            <strong>路线 1：</strong>从深圳北站乘坐地铁 5 号线（赤湾方向）至大学城站（C 口出），步行至深圳璟峯酒店，全程约 17 分钟，费用 3 元。
+                            <br>
+                            <strong>路线 2：</strong>直接打车至深圳璟峯酒店，全程约 8 公里，耗时约 25 分钟，费用约 30 元。
+                        </p>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center content-section" id="archive" style="background: rgb(53, 154, 194); padding: 100px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%; text-align: center;">
+                    <h2 style="margin-bottom: 15px;">往届会议</h2>
+                    <p style="text-align: center;">
+                        <a href="https://www.solver-conference.cn/solver25/index.html" style="text-decoration: none;" target="_blank">2025 年 8 月 2 日—8 月 6 日 SOLVER25&nbsp;山东·青岛</a>
+                        <br>
+                        <a href="https://www.solver-conference.cn/solver24/index.html" style="text-decoration: none;" target="_blank">2024 年 7 月 22 日—7 月 26 日 SOLVER24&nbsp;四川·成都</a>
+                        <br>
+                        <a href="https://www.solver-conference.cn/solver23/index.html" style="text-decoration: none;" target="_blank">2023 年 8 月 7 日—8 月 11 日 SOLVER23&nbsp;青海·西宁</a>
+                        <br>
+                        <a href="https://www.solver-conference.cn/solver22/index.html" style="text-decoration: none;" target="_blank">2022 年 7 月 20 日—7 月 24 日 SOLVER22&nbsp;中国·重庆</a>
+                        <br>
+                        <a href="https://www.solver-conference.cn/solver21/index.html" style="text-decoration: none;" target="_blank">2021 年 12 月 24 日—12 月 27 日 SOLVER21&nbsp;新疆·克拉玛依</a>
+                        <br>
+                        <a href="http://math.xtu.edu.cn/solver/2020/index.html" style="text-decoration: none;" target="_blank">2020 年 8 月 6 日—8 月 8 日 SOLVER20&nbsp;江苏·苏州</a>
+                        <br>
+                        <a href="http://math.xtu.edu.cn/solver/2019/index.html" style="text-decoration: none;" target="_blank">2019 年 8 月 13 日—8 月 16 日 SOLVER19&nbsp;云南·昆明</a>
+                        <br>
+                        <a href="http://math.xtu.edu.cn/solver/2018/index.html" style="text-decoration: none;" target="_blank">2018 年 6 月 22 日—6 月 25 日 SOLVER18&nbsp;湖南·韶山</a>
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="map-clean"></div>
+    <footer>
+        <div class="container text-center">
+            <p>Copyright © 解法器快速算法及应用研讨会</p><a href="https://beian.miit.gov.cn/" target="blank">京ICP备2021019551号-2</a>
+        </div>
+    </footer>
+    <script>
+        document.write('<script src="' + assetUrl('assets/bootstrap/js/bootstrap.min.js') + '"><\/script>');
+        document.write('<script src="' + assetUrl('assets/js/grayscale.js') + '"><\/script>');
+    </script>
+</body>
+
+</html>

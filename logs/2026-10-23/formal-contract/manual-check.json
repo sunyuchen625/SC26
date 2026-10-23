@@ -1,0 +1,10 @@
+{
+  "document": "\u8d44\u6599/SolverChallenge26_Hygon_DCU_Manual.pdf",
+  "sha256": "27efc38ddd3fc4b171bcb08104f3acb4c0a841500af887a2bec7e2029336055f",
+  "pages": 13,
+  "printed_page_3_pdf_page_4_visually_read": true,
+  "credited_author": "SolverChallenge26 test group",
+  "version": "1.0, September2026",
+  "hardware_fingerprint": "BW1000 / BW / C-3000 / gfx936 / 67092480KiB per device",
+  "grant_instruction": "Use test-group assigned region, queue/account/node range, device count and validity period; detected physical capacity is not the allocation."
+}
