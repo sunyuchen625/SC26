@@ -1,0 +1,1855 @@
+{
+  "status": "PASS",
+  "job": 962398,
+  "node": "f11r1n08",
+  "submit": "2026-10-23T15:39:50",
+  "start": "2026-10-23T15:42:26",
+  "end": "2026-10-23T15:52:37",
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "allocated_seconds": 611,
+  "CPUs": 16,
+  "DCUs": 1,
+  "host_memory_GiB": 58,
+  "evidence_archive_sha256": "5a22e05078b49c2cb3c01d65d38669453d5c467fef562753b85915e555a35d1e",
+  "submitted_batch_sha256": "bd6329d6df7ab864a6aa45eb11c2ed47fa5bbe26fdfb4d8014f09e3058175783",
+  "total_complete_solves": 95,
+  "max_known_solution_error": 1.249000902703e-16,
+  "fastest_screened_variant": "interp18",
+  "results": {
+    "baseline": {
+      "identity": {
+        "solver_sha256": "d3d23ecdd3a015faa2d48cb9671d03a4461c404c52e653aec486c8e8baea9d98",
+        "driver_sha256": "34f19d4985ded7685eeca2f1f07e6dfec0af91c9039dba668be75a6dedf2a6d0",
+        "manifest_sha256": "87970171b59c3e1316662348eb9748b452540d83bcba11ef9387381563801299"
+      },
+      "cache_sha256": "44316af27839ea602f6fd65e0b992097882a65fde6b1827443bee221e253fb1f",
+      "binary_sha256": "e903d484ff019b76fc7c1d27113a5f36e4163f9daea7ccce27c2a0a0d4907904",
+      "cases": {
+        "full/repeat": {
+          "complete_solves": 5,
+          "iterations": [
+            25,
+            25,
+            25,
+            25,
+            25
+          ],
+          "internal_residuals": [
+            5.65373321885e-08,
+            5.653720862682e-08,
+            5.653707870803e-08,
+            5.653693551023e-08,
+            5.65368276087e-08
+          ],
+          "original_float128_residual_after_five_rounds": 5.89461e-07,
+          "driver_outer_mean_seconds": 6.821888,
+          "round_max_seconds": [
+            6.970338834,
+            6.783807134,
+            6.784724651,
+            6.78200034,
+            6.788565113
+          ],
+          "mean_round_max_seconds": 6.8218872144,
+          "round_range_seconds": [
+            6.78200034,
+            6.970338834
+          ],
+          "callback_phases_seconds": [
+            {
+              "analyse": 0.105585,
+              "preprocess": 5.829015,
+              "solve_cleanup": 1.016827
+            },
+            {
+              "analyse": 0.045218,
+              "preprocess": 5.725401,
+              "solve_cleanup": 1.002644
+            },
+            {
+              "analyse": 0.045261,
+              "preprocess": 5.733279,
+              "solve_cleanup": 0.995269
+            },
+            {
+              "analyse": 0.045408,
+              "preprocess": 5.728094,
+              "solve_cleanup": 0.997932
+            },
+            {
+              "analyse": 0.045367,
+              "preprocess": 5.737836,
+              "solve_cleanup": 0.994732
+            }
+          ],
+          "preparation_host_call_seconds": [
+            {
+              "assembly": 3.815706297,
+              "migration_policy": 0.144195024,
+              "gmres_amg_setup": 1.869111425
+            },
+            {
+              "assembly": 3.779622718,
+              "migration_policy": 0.142701655,
+              "gmres_amg_setup": 1.803073632
+            },
+            {
+              "assembly": 3.786833234,
+              "migration_policy": 0.143704385,
+              "gmres_amg_setup": 1.802739305
+            },
+            {
+              "assembly": 3.787405114,
+              "migration_policy": 0.143721315,
+              "gmres_amg_setup": 1.796964987
+            },
+            {
+              "assembly": 3.797463564,
+              "migration_policy": 0.143632883,
+              "gmres_amg_setup": 1.796737513
+            }
+          ],
+          "mean_preparation_host_call_seconds": {
+            "assembly": 3.7934061854,
+            "migration_policy": 0.1435910524,
+            "gmres_amg_setup": 1.8137253724
+          },
+          "host_process_peak_RSS_KiB": 5673596,
+          "GPU_max_observed_phase_GiB": 15.28,
+          "GPU_phase_samples": 15,
+          "process_exit": 0
+        },
+        "full/screen": {
+          "complete_solves": 5,
+          "iterations": [
+            25,
+            25,
+            25,
+            25,
+            25
+          ],
+          "internal_residuals": [
+            5.653692477944e-08,
+            5.653684532017e-08,
+            5.653711826433e-08,
+            5.653705644854e-08,
+            5.653711929727e-08
+          ],
+          "original_float128_residual_after_five_rounds": 5.89461e-07,
+          "driver_outer_mean_seconds": 6.82554,
+          "round_max_seconds": [
+            7.022962454,
+            6.772298457,
+            6.775792303,
+            6.781687883,
+            6.774958827
+          ],
+          "mean_round_max_seconds": 6.8255399848,
+          "round_range_seconds": [
+            6.772298457,
+            7.022962454
+          ],
+          "callback_phases_seconds": [
+            {
+              "analyse": 0.113708,
+              "preprocess": 5.868717,
+              "solve_cleanup": 1.021501
+            },
+            {
+              "analyse": 0.04534,
+              "preprocess": 5.721623,
+              "solve_cleanup": 0.994603
+            },
+            {
+              "analyse": 0.045244,
+              "preprocess": 5.724846,
+              "solve_cleanup": 0.995088
+            },
+            {
+              "analyse": 0.045242,
+              "preprocess": 5.731123,
+              "solve_cleanup": 0.994634
+            },
+            {
+              "analyse": 0.04518,
+              "preprocess": 5.721409,
+              "solve_cleanup": 0.997773
+            }
+          ],
+          "preparation_host_call_seconds": [
+            {
+              "assembly": 3.844448531,
+              "migration_policy": 0.144286525,
+              "gmres_amg_setup": 1.879979771
+            },
+            {
+              "assembly": 3.78272596,
+              "migration_policy": 0.142793666,
+              "gmres_amg_setup": 1.796101443
+            },
+            {
+              "assembly": 3.786710765,
+              "migration_policy": 0.142549302,
+              "gmres_amg_setup": 1.795584003
+            },
+            {
+              "assembly": 3.792166308,
+              "migration_policy": 0.142909558,
+              "gmres_amg_setup": 1.796044562
+            },
+            {
+              "assembly": 3.782055157,
+              "migration_policy": 0.143382698,
+              "gmres_amg_setup": 1.79596887
+            }
+          ],
+          "mean_preparation_host_call_seconds": {
+            "assembly": 3.7976213442,
+            "migration_policy": 0.1431843498,
+            "gmres_amg_setup": 1.8127357298
+          },
+          "host_process_peak_RSS_KiB": 5674060,
+          "GPU_max_observed_phase_GiB": 15.28,
+          "GPU_phase_samples": 15,
+          "process_exit": 0
+        },
+        "small/neumann": {
+          "complete_solves": 5,
+          "iterations": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "internal_residuals": [
+            5.119009710125e-12,
+            5.118998336721e-12,
+            5.119009710125e-12,
+            5.119009710125e-12,
+            5.118998336721e-12
+          ],
+          "original_float128_residual_after_five_rounds": 5.118996e-12,
+          "driver_outer_mean_seconds": 0.063863,
+          "round_max_seconds": [
+            0.207002784,
+            0.028241832,
+            0.028009417,
+            0.028022967,
+            0.028039197
+          ],
+          "mean_round_max_seconds": 0.0638632394,
+          "round_range_seconds": [
+            0.028009417,
+            0.207002784
+          ],
+          "callback_phases_seconds": [
+            {
+              "analyse": 0.040933,
+              "preprocess": 0.119422,
+              "solve_cleanup": 0.046631
+            },
+            {
+              "analyse": 0.000359,
+              "preprocess": 0.0169,
+              "solve_cleanup": 0.010962
+            },
+            {
+              "analyse": 0.000342,
+              "preprocess": 0.016724,
+              "solve_cleanup": 0.010935
+            },
+            {
+              "analyse": 0.000337,
+              "preprocess": 0.01673,
+              "solve_cleanup": 0.010948
+            },
+            {
+              "analyse": 0.000339,
+              "preprocess": 0.016764,
+              "solve_cleanup": 0.010929
+            }
+          ],
+          "preparation_host_call_seconds": [
+            {
+              "assembly": 0.000107302,
+              "migration_policy": 0.00104785,
+              "gmres_amg_setup": 0.118264235
+            },
+            {
+              "assembly": 8.9622e-05,
+              "migration_policy": 0.000214254,
+              "gmres_amg_setup": 0.016593782
+            },
+            {
+              "assembly": 8.6332e-05,
+              "migration_policy": 0.000212424,
+              "gmres_amg_setup": 0.016423509
+            },
+            {
+              "assembly": 8.4252e-05,
+              "migration_policy": 0.000217564,
+              "gmres_amg_setup": 0.016426119
+            },
+            {
+              "assembly": 8.5272e-05,
+              "migration_policy": 0.000207874,
+              "gmres_amg_setup": 0.01646879
+            }
+          ],
+          "mean_preparation_host_call_seconds": {
+            "assembly": 9.0556e-05,
+            "migration_policy": 0.0003799932,
+            "gmres_amg_setup": 0.036835287
+          },
+          "host_process_peak_RSS_KiB": 624588,
+          "GPU_max_observed_phase_GiB": 0.41,
+          "GPU_phase_samples": 15,
+          "process_exit": 0
+        },
+        "small/nonsymmetric": {
+          "complete_solves": 5,
+          "iterations": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "internal_residuals": [
+            2.685087173688e-12,
+            2.685087173688e-12,
+            2.685087173688e-12,
+            2.685087173688e-12,
+            2.685087173688e-12
+          ],
+          "original_float128_residual_after_five_rounds": 2.685092e-12,
+          "driver_outer_mean_seconds": 0.06317,
+          "round_max_seconds": [
+            0.204768573,
+            0.027887385,
+            0.027740721,
+            0.027719572,
+            0.027732922
+          ],
+          "mean_round_max_seconds": 0.0631698346,
+          "round_range_seconds": [
+            0.027719572,
+            0.204768573
+          ],
+          "callback_phases_seconds": [
+            {
+              "analyse": 0.038761,
+              "preprocess": 0.119281,
+              "solve_cleanup": 0.046694
+            },
+            {
+              "analyse": 0.000365,
+              "preprocess": 0.016733,
+              "solve_cleanup": 0.010781
+            },
+            {
+              "analyse": 0.000355,
+              "preprocess": 0.016634,
+              "solve_cleanup": 0.010744
+            },
+            {
+              "analyse": 0.000342,
+              "preprocess": 0.016596,
+              "solve_cleanup": 0.010773
+            },
+            {
+              "analyse": 0.000329,
+              "preprocess": 0.016618,
+              "solve_cleanup": 0.010778
+            }
+          ],
+          "preparation_host_call_seconds": [
+            {
+              "assembly": 0.000106932,
+              "migration_policy": 0.001003528,
+              "gmres_amg_setup": 0.118166764
+            },
+            {
+              "assembly": 8.5691e-05,
+              "migration_policy": 0.000214944,
+              "gmres_amg_setup": 0.01643032
+            },
+            {
+              "assembly": 8.3152e-05,
+              "migration_policy": 0.000209094,
+              "gmres_amg_setup": 0.016339577
+            },
+            {
+              "assembly": 9.5282e-05,
+              "migration_policy": 0.000209554,
+              "gmres_amg_setup": 0.016289316
+            },
+            {
+              "assembly": 8.2832e-05,
+              "migration_policy": 0.000207814,
+              "gmres_amg_setup": 0.016325257
+            }
+          ],
+          "mean_preparation_host_call_seconds": {
+            "assembly": 9.07778e-05,
+            "migration_policy": 0.0003689868,
+            "gmres_amg_setup": 0.0367102468
+          },
+          "host_process_peak_RSS_KiB": 622324,
+          "GPU_max_observed_phase_GiB": 0.41,
+          "GPU_phase_samples": 15,
+          "process_exit": 0
+        },
+        "small/poisson": {
+          "complete_solves": 5,
+          "iterations": [
+            14,
+            14,
+            14,
+            14,
+            14
+          ],
+          "internal_residuals": [
+            3.408649784557e-12,
+            3.408649784557e-12,
+            3.408662345174e-12,
+            3.408649784557e-12,
+            3.408649784557e-12
+          ],
+          "original_float128_residual_after_five_rounds": 3.408651e-12,
+          "driver_outer_mean_seconds": 0.066552,
+          "round_max_seconds": [
+            0.225026954,
+            0.02710517,
+            0.026928287,
+            0.026848315,
+            0.026850805
+          ],
+          "mean_round_max_seconds": 0.0665519062,
+          "round_range_seconds": [
+            0.026848315,
+            0.225026954
+          ],
+          "callback_phases_seconds": [
+            {
+              "analyse": 0.046568,
+              "preprocess": 0.130335,
+              "solve_cleanup": 0.048106
+            },
+            {
+              "analyse": 0.000362,
+              "preprocess": 0.01687,
+              "solve_cleanup": 0.009864
+            },
+            {
+              "analyse": 0.00035,
+              "preprocess": 0.016711,
+              "solve_cleanup": 0.00986
+            },
+            {
+              "analyse": 0.000333,
+              "preprocess": 0.016717,
+              "solve_cleanup": 0.00979
+            },
+            {
+              "analyse": 0.000348,
+              "preprocess": 0.016668,
+              "solve_cleanup": 0.009826
+            }
+          ],
+          "preparation_host_call_seconds": [
+            {
+              "assembly": 0.000104222,
+              "migration_policy": 0.001007949,
+              "gmres_amg_setup": 0.129220072
+            },
+            {
+              "assembly": 8.7062e-05,
+              "migration_policy": 0.000213914,
+              "gmres_amg_setup": 0.016566781
+            },
+            {
+              "assembly": 8.2491e-05,
+              "migration_policy": 0.000210544,
+              "gmres_amg_setup": 0.016415459
+            },
+            {
+              "assembly": 8.2681e-05,
+              "migration_policy": 0.000207954,
+              "gmres_amg_setup": 0.016424549
+            },
+            {
+              "assembly": 8.3012e-05,
+              "migration_policy": 0.000209014,
+              "gmres_amg_setup": 0.016373978
+            }
+          ],
+          "mean_preparation_host_call_seconds": {
+            "assembly": 8.78936e-05,
+            "migration_policy": 0.000369875,
+            "gmres_amg_setup": 0.0390001678
+          },
+          "host_process_peak_RSS_KiB": 622648,
+          "GPU_max_observed_phase_GiB": 0.41,
+          "GPU_phase_samples": 15,
+          "process_exit": 0
+        }
+      }
+    },
+    "kdim30": {
+      "identity": {
+        "solver_sha256": "23baf4da0548d7ce491128e21ea5f404d6eda123f984bb9a0e0a3c06c297deaf",
+        "driver_sha256": "34f19d4985ded7685eeca2f1f07e6dfec0af91c9039dba668be75a6dedf2a6d0",
+        "manifest_sha256": "11a6b3baf7f810f7a005cc8638580a0569842397be1f1a76bb0b273073849a1b"
+      },
+      "cache_sha256": "71f3f20ca51963d4a7070950f52e883781d3fae90bec575314558a1973c9eda4",
+      "binary_sha256": "c80e3826a3b4353dba691f1a481047278f3f9358a2d1360d53f0272ef011f630",
+      "cases": {
+        "full/screen": {
+          "complete_solves": 5,
+          "iterations": [
+            25,
+            25,
+            25,
+            25,
+            25
+          ],
+          "internal_residuals": [
+            5.653723647361e-08,
+            5.653697245002e-08,
+            5.653702263885e-08,
+            5.653714906985e-08,
+            5.653687899875e-08
+          ],
+          "original_float128_residual_after_five_rounds": 5.89461e-07,
+          "driver_outer_mean_seconds": 6.839748,
+          "round_max_seconds": [
+            6.999483674,
+            6.792307726,
+            6.811589178,
+            6.797362001,
+            6.797997932
+          ],
+          "mean_round_max_seconds": 6.8397481022,
+          "round_range_seconds": [
+            6.792307726,
+            6.999483674
+          ],
+          "callback_phases_seconds": [
+            {
+              "analyse": 0.105506,
+              "preprocess": 5.858948,
+              "solve_cleanup": 1.016076
+            },
+            {
+              "analyse": 0.045143,
+              "preprocess": 5.74018,
+              "solve_cleanup": 0.996588
+            },
+            {
+              "analyse": 0.045232,
+              "preprocess": 5.757779,
+              "solve_cleanup": 0.998104
+            },
+            {
+              "analyse": 0.045372,
+              "preprocess": 5.743162,
+              "solve_cleanup": 0.998116
+            },
+            {
+              "analyse": 0.0452,
+              "preprocess": 5.743946,
+              "solve_cleanup": 0.99836
+            }
+          ],
+          "preparation_host_call_seconds": [
+            {
+              "assembly": 3.855870704,
+              "migration_policy": 0.144391918,
+              "gmres_amg_setup": 1.858683289
+            },
+            {
+              "assembly": 3.80730528,
+              "migration_policy": 0.145428137,
+              "gmres_amg_setup": 1.787444228
+            },
+            {
+              "assembly": 3.816734758,
+              "migration_policy": 0.145869525,
+              "gmres_amg_setup": 1.795172204
+            },
+            {
+              "assembly": 3.811587911,
+              "migration_policy": 0.143588812,
+              "gmres_amg_setup": 1.787982898
+            },
+            {
+              "assembly": 3.813244102,
+              "migration_policy": 0.144039091,
+              "gmres_amg_setup": 1.786660793
+            }
+          ],
+          "mean_preparation_host_call_seconds": {
+            "assembly": 3.820948551,
+            "migration_policy": 0.1446634966,
+            "gmres_amg_setup": 1.8031886824
+          },
+          "host_process_peak_RSS_KiB": 5673784,
+          "GPU_max_observed_phase_GiB": 12.35,
+          "GPU_phase_samples": 15,
+          "process_exit": 0
+        },
+        "small/neumann": {
+          "complete_solves": 5,
+          "iterations": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "internal_residuals": [
+            5.119009710125e-12,
+            5.119009710125e-12,
+            5.119009710125e-12,
+            5.119009710125e-12,
+            5.119009710125e-12
+          ],
+          "original_float128_residual_after_five_rounds": 5.119008e-12,
+          "driver_outer_mean_seconds": 0.063938,
+          "round_max_seconds": [
+            0.207229709,
+            0.028242661,
+            0.028093999,
+            0.028081818,
+            0.028040958
+          ],
+          "mean_round_max_seconds": 0.063937829,
+          "round_range_seconds": [
+            0.028040958,
+            0.207229709
+          ],
+          "callback_phases_seconds": [
+            {
+              "analyse": 0.038495,
+              "preprocess": 0.121469,
+              "solve_cleanup": 0.047248
+            },
+            {
+              "analyse": 0.000359,
+              "preprocess": 0.016902,
+              "solve_cleanup": 0.010963
+            },
+            {
+              "analyse": 0.000352,
+              "preprocess": 0.016794,
+              "solve_cleanup": 0.01094
+            },
+            {
+              "analyse": 0.00035,
+              "preprocess": 0.016813,
+              "solve_cleanup": 0.01091
+            },
+            {
+              "analyse": 0.000343,
+              "preprocess": 0.016756,
+              "solve_cleanup": 0.010933
+            }
+          ],
+          "preparation_host_call_seconds": [
+            {
+              "assembly": 0.000104512,
+              "migration_policy": 0.000978309,
+              "gmres_amg_setup": 0.120384035
+            },
+            {
+              "assembly": 8.7831e-05,
+              "migration_policy": 0.000221385,
+              "gmres_amg_setup": 0.016590942
+            },
+            {
+              "assembly": 8.5002e-05,
+              "migration_policy": 0.000210524,
+              "gmres_amg_setup": 0.01649604
+            },
+            {
+              "assembly": 8.4861e-05,
+              "migration_policy": 0.000208944,
+              "gmres_amg_setup": 0.016517121
+            },
+            {
+              "assembly": 8.3851e-05,
+              "migration_policy": 0.000208524,
+              "gmres_amg_setup": 0.01646186
+            }
+          ],
+          "mean_preparation_host_call_seconds": {
+            "assembly": 8.92114e-05,
+            "migration_policy": 0.0003655372,
+            "gmres_amg_setup": 0.0372899996
+          },
+          "host_process_peak_RSS_KiB": 622768,
+          "GPU_max_observed_phase_GiB": 0.41,
+          "GPU_phase_samples": 15,
+          "process_exit": 0
+        },
+        "small/nonsymmetric": {
+          "complete_solves": 5,
+          "iterations": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "internal_residuals": [
+            2.685087173688e-12,
+            2.685087173688e-12,
+            2.685087173688e-12,
+            2.685087173688e-12,
+            2.685087173688e-12
+          ],
+          "original_float128_residual_after_five_rounds": 2.685092e-12,
+          "driver_outer_mean_seconds": 0.063069,
+          "round_max_seconds": [
+            0.20411542,
+            0.028004917,
+            0.027725442,
+            0.027808233,
+            0.027688191
+          ],
+          "mean_round_max_seconds": 0.0630684406,
+          "round_range_seconds": [
+            0.027688191,
+            0.20411542
+          ],
+          "callback_phases_seconds": [
+            {
+              "analyse": 0.038161,
+              "preprocess": 0.120567,
+              "solve_cleanup": 0.04537
+            },
+            {
+              "analyse": 0.000361,
+              "preprocess": 0.016816,
+              "solve_cleanup": 0.010819
+            },
+            {
+              "analyse": 0.000356,
+              "preprocess": 0.016582,
+              "solve_cleanup": 0.010779
+            },
+            {
+              "analyse": 0.000339,
+              "preprocess": 0.01663,
+              "solve_cleanup": 0.01083
+            },
+            {
+              "analyse": 0.000328,
+              "preprocess": 0.016581,
+              "solve_cleanup": 0.010771
+            }
+          ],
+          "preparation_host_call_seconds": [
+            {
+              "assembly": 0.000100702,
+              "migration_policy": 0.000991489,
+              "gmres_amg_setup": 0.119472108
+            },
+            {
+              "assembly": 8.6162e-05,
+              "migration_policy": 0.000214624,
+              "gmres_amg_setup": 0.016513461
+            },
+            {
+              "assembly": 8.2802e-05,
+              "migration_policy": 0.000210654,
+              "gmres_amg_setup": 0.016286486
+            },
+            {
+              "assembly": 8.2122e-05,
+              "migration_policy": 0.000215504,
+              "gmres_amg_setup": 0.016330387
+            },
+            {
+              "assembly": 8.1922e-05,
+              "migration_policy": 0.000210204,
+              "gmres_amg_setup": 0.016286636
+            }
+          ],
+          "mean_preparation_host_call_seconds": {
+            "assembly": 8.6742e-05,
+            "migration_policy": 0.000368495,
+            "gmres_amg_setup": 0.0369778156
+          },
+          "host_process_peak_RSS_KiB": 623584,
+          "GPU_max_observed_phase_GiB": 0.41,
+          "GPU_phase_samples": 15,
+          "process_exit": 0
+        },
+        "small/poisson": {
+          "complete_solves": 5,
+          "iterations": [
+            14,
+            14,
+            14,
+            14,
+            14
+          ],
+          "internal_residuals": [
+            3.408649784557e-12,
+            3.408649784557e-12,
+            3.408649784557e-12,
+            3.408649784557e-12,
+            3.408649784557e-12
+          ],
+          "original_float128_residual_after_five_rounds": 3.408651e-12,
+          "driver_outer_mean_seconds": 0.063116,
+          "round_max_seconds": [
+            0.208097306,
+            0.026981787,
+            0.026839305,
+            0.026851085,
+            0.026808245
+          ],
+          "mean_round_max_seconds": 0.0631155456,
+          "round_range_seconds": [
+            0.026808245,
+            0.208097306
+          ],
+          "callback_phases_seconds": [
+            {
+              "analyse": 0.043518,
+              "preprocess": 0.119659,
+              "solve_cleanup": 0.044905
+            },
+            {
+              "analyse": 0.000361,
+              "preprocess": 0.016829,
+              "solve_cleanup": 0.009783
+            },
+            {
+              "analyse": 0.000352,
+              "preprocess": 0.016703,
+              "solve_cleanup": 0.009776
+            },
+            {
+              "analyse": 0.000342,
+              "preprocess": 0.016691,
+              "solve_cleanup": 0.00981
+            },
+            {
+              "analyse": 0.000346,
+              "preprocess": 0.016683,
+              "solve_cleanup": 0.00977
+            }
+          ],
+          "preparation_host_call_seconds": [
+            {
+              "assembly": 9.7032e-05,
+              "migration_policy": 0.000987948,
+              "gmres_amg_setup": 0.118570811
+            },
+            {
+              "assembly": 8.7662e-05,
+              "migration_policy": 0.000214484,
+              "gmres_amg_setup": 0.016524691
+            },
+            {
+              "assembly": 8.2451e-05,
+              "migration_policy": 0.000211584,
+              "gmres_amg_setup": 0.016406719
+            },
+            {
+              "assembly": 8.3341e-05,
+              "migration_policy": 0.000210154,
+              "gmres_amg_setup": 0.016395799
+            },
+            {
+              "assembly": 8.1771e-05,
+              "migration_policy": 0.000208594,
+              "gmres_amg_setup": 0.016391099
+            }
+          ],
+          "mean_preparation_host_call_seconds": {
+            "assembly": 8.64514e-05,
+            "migration_policy": 0.00036655279999999997,
+            "gmres_amg_setup": 0.0368578238
+          },
+          "host_process_peak_RSS_KiB": 623104,
+          "GPU_max_observed_phase_GiB": 0.41,
+          "GPU_phase_samples": 15,
+          "process_exit": 0
+        }
+      }
+    },
+    "interp18": {
+      "identity": {
+        "solver_sha256": "c41653a15933fbda399aa305a6010a991fd2d7548edf27987ba35a20783639de",
+        "driver_sha256": "34f19d4985ded7685eeca2f1f07e6dfec0af91c9039dba668be75a6dedf2a6d0",
+        "manifest_sha256": "2360c24e1557b8cd4869ba708631a2faaab40026792a7c7df73e09c11bb02465"
+      },
+      "cache_sha256": "a6acfcccc0a199d4a75845204ea47500a3fc90d78230f2d94b26edbac853cccf",
+      "binary_sha256": "a4490e4e7f7154eaf9c72130fe5490443175b888645f96c1f5b1059de936c9e9",
+      "cases": {
+        "full/repeat-1": {
+          "complete_solves": 5,
+          "iterations": [
+            24,
+            24,
+            24,
+            24,
+            24
+          ],
+          "internal_residuals": [
+            5.864119166832e-08,
+            5.864116005384e-08,
+            5.86412308365e-08,
+            5.864100672919e-08,
+            5.864111414908e-08
+          ],
+          "original_float128_residual_after_five_rounds": 5.896665e-07,
+          "driver_outer_mean_seconds": 6.741028,
+          "round_max_seconds": [
+            6.913992764,
+            6.703412091,
+            6.688265596,
+            6.699754142,
+            6.699714181
+          ],
+          "mean_round_max_seconds": 6.7410277548,
+          "round_range_seconds": [
+            6.688265596,
+            6.913992764
+          ],
+          "callback_phases_seconds": [
+            {
+              "analyse": 0.101549,
+              "preprocess": 5.818919,
+              "solve_cleanup": 0.974751
+            },
+            {
+              "analyse": 0.045227,
+              "preprocess": 5.692073,
+              "solve_cleanup": 0.955396
+            },
+            {
+              "analyse": 0.045162,
+              "preprocess": 5.678011,
+              "solve_cleanup": 0.954474
+            },
+            {
+              "analyse": 0.045311,
+              "preprocess": 5.688429,
+              "solve_cleanup": 0.95545
+            },
+            {
+              "analyse": 0.0452,
+              "preprocess": 5.688364,
+              "solve_cleanup": 0.955752
+            }
+          ],
+          "preparation_host_call_seconds": [
+            {
+              "assembly": 3.826618243,
+              "migration_policy": 0.144167173,
+              "gmres_amg_setup": 1.84813204
+            },
+            {
+              "assembly": 3.787843553,
+              "migration_policy": 0.143389718,
+              "gmres_amg_setup": 1.760837957
+            },
+            {
+              "assembly": 3.774743376,
+              "migration_policy": 0.143056762,
+              "gmres_amg_setup": 1.760208226
+            },
+            {
+              "assembly": 3.784962649,
+              "migration_policy": 0.143784226,
+              "gmres_amg_setup": 1.759679666
+            },
+            {
+              "assembly": 3.783700676,
+              "migration_policy": 0.142692265,
+              "gmres_amg_setup": 1.761968958
+            }
+          ],
+          "mean_preparation_host_call_seconds": {
+            "assembly": 3.7915736994,
+            "migration_policy": 0.1434180288,
+            "gmres_amg_setup": 1.7781653694
+          },
+          "host_process_peak_RSS_KiB": 5682788,
+          "GPU_max_observed_phase_GiB": 15.3,
+          "GPU_phase_samples": 15,
+          "process_exit": 0
+        },
+        "full/repeat-2": {
+          "complete_solves": 5,
+          "iterations": [
+            24,
+            24,
+            24,
+            24,
+            24
+          ],
+          "internal_residuals": [
+            5.864117606725e-08,
+            5.864115931042e-08,
+            5.864111229033e-08,
+            5.864112070034e-08,
+            5.864117740912e-08
+          ],
+          "original_float128_residual_after_five_rounds": 5.896665e-07,
+          "driver_outer_mean_seconds": 6.732985,
+          "round_max_seconds": [
+            6.904270641,
+            6.690201662,
+            6.688534921,
+            6.697809626,
+            6.684107328
+          ],
+          "mean_round_max_seconds": 6.7329848356,
+          "round_range_seconds": [
+            6.684107328,
+            6.904270641
+          ],
+          "callback_phases_seconds": [
+            {
+              "analyse": 0.103667,
+              "preprocess": 5.806157,
+              "solve_cleanup": 0.975495
+            },
+            {
+              "analyse": 0.045383,
+              "preprocess": 5.679765,
+              "solve_cleanup": 0.954626
+            },
+            {
+              "analyse": 0.045311,
+              "preprocess": 5.676487,
+              "solve_cleanup": 0.955665
+            },
+            {
+              "analyse": 0.045404,
+              "preprocess": 5.687878,
+              "solve_cleanup": 0.953982
+            },
+            {
+              "analyse": 0.045213,
+              "preprocess": 5.675116,
+              "solve_cleanup": 0.953203
+            }
+          ],
+          "preparation_host_call_seconds": [
+            {
+              "assembly": 3.82545084,
+              "migration_policy": 0.143906329,
+              "gmres_amg_setup": 1.836797536
+            },
+            {
+              "assembly": 3.774759847,
+              "migration_policy": 0.142466301,
+              "gmres_amg_setup": 1.762536779
+            },
+            {
+              "assembly": 3.773069195,
+              "migration_policy": 0.142368599,
+              "gmres_amg_setup": 1.761047331
+            },
+            {
+              "assembly": 3.783879659,
+              "migration_policy": 0.143005511,
+              "gmres_amg_setup": 1.76099102
+            },
+            {
+              "assembly": 3.772003015,
+              "migration_policy": 0.142712036,
+              "gmres_amg_setup": 1.760398678
+            }
+          ],
+          "mean_preparation_host_call_seconds": {
+            "assembly": 3.7858325112,
+            "migration_policy": 0.1428917552,
+            "gmres_amg_setup": 1.7763542688
+          },
+          "host_process_peak_RSS_KiB": 5683416,
+          "GPU_max_observed_phase_GiB": 15.3,
+          "GPU_phase_samples": 15,
+          "process_exit": 0
+        },
+        "full/screen": {
+          "complete_solves": 5,
+          "iterations": [
+            24,
+            24,
+            24,
+            24,
+            24
+          ],
+          "internal_residuals": [
+            5.864120531519e-08,
+            5.864096304078e-08,
+            5.864094837416e-08,
+            5.864100027461e-08,
+            5.864099542111e-08
+          ],
+          "original_float128_residual_after_five_rounds": 5.896665e-07,
+          "driver_outer_mean_seconds": 6.744615,
+          "round_max_seconds": [
+            6.899417811,
+            6.701293123,
+            6.710779181,
+            6.707766665,
+            6.70381929
+          ],
+          "mean_round_max_seconds": 6.744615214,
+          "round_range_seconds": [
+            6.701293123,
+            6.899417811
+          ],
+          "callback_phases_seconds": [
+            {
+              "analyse": 0.100566,
+              "preprocess": 5.802868,
+              "solve_cleanup": 0.977197
+            },
+            {
+              "analyse": 0.045574,
+              "preprocess": 5.687074,
+              "solve_cleanup": 0.958079
+            },
+            {
+              "analyse": 0.04526,
+              "preprocess": 5.699787,
+              "solve_cleanup": 0.954849
+            },
+            {
+              "analyse": 0.045285,
+              "preprocess": 5.696638,
+              "solve_cleanup": 0.955309
+            },
+            {
+              "analyse": 0.045611,
+              "preprocess": 5.692607,
+              "solve_cleanup": 0.955181
+            }
+          ],
+          "preparation_host_call_seconds": [
+            {
+              "assembly": 3.829040289,
+              "migration_policy": 0.14453304,
+              "gmres_amg_setup": 1.829292036
+            },
+            {
+              "assembly": 3.783048014,
+              "migration_policy": 0.142887799,
+              "gmres_amg_setup": 1.761135983
+            },
+            {
+              "assembly": 3.795969587,
+              "migration_policy": 0.143587452,
+              "gmres_amg_setup": 1.760227506
+            },
+            {
+              "assembly": 3.794378277,
+              "migration_policy": 0.142648164,
+              "gmres_amg_setup": 1.759609075
+            },
+            {
+              "assembly": 3.787670381,
+              "migration_policy": 0.143051162,
+              "gmres_amg_setup": 1.761882787
+            }
+          ],
+          "mean_preparation_host_call_seconds": {
+            "assembly": 3.7980213095999997,
+            "migration_policy": 0.1433415234,
+            "gmres_amg_setup": 1.7744294774
+          },
+          "host_process_peak_RSS_KiB": 5673904,
+          "GPU_max_observed_phase_GiB": 15.3,
+          "GPU_phase_samples": 15,
+          "process_exit": 0
+        },
+        "small/neumann": {
+          "complete_solves": 5,
+          "iterations": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "internal_residuals": [
+            4.489396808358e-12,
+            4.489396808358e-12,
+            4.489396808358e-12,
+            4.489396808358e-12,
+            4.489396808358e-12
+          ],
+          "original_float128_residual_after_five_rounds": 4.489396e-12,
+          "driver_outer_mean_seconds": 0.064427,
+          "round_max_seconds": [
+            0.20883807,
+            0.028339864,
+            0.028660639,
+            0.02814289,
+            0.028153889
+          ],
+          "mean_round_max_seconds": 0.0644270704,
+          "round_range_seconds": [
+            0.02814289,
+            0.20883807
+          ],
+          "callback_phases_seconds": [
+            {
+              "analyse": 0.038555,
+              "preprocess": 0.123306,
+              "solve_cleanup": 0.046959
+            },
+            {
+              "analyse": 0.000365,
+              "preprocess": 0.016995,
+              "solve_cleanup": 0.010962
+            },
+            {
+              "analyse": 0.000343,
+              "preprocess": 0.016891,
+              "solve_cleanup": 0.011418
+            },
+            {
+              "analyse": 0.000347,
+              "preprocess": 0.016832,
+              "solve_cleanup": 0.010955
+            },
+            {
+              "analyse": 0.000339,
+              "preprocess": 0.016829,
+              "solve_cleanup": 0.010977
+            }
+          ],
+          "preparation_host_call_seconds": [
+            {
+              "assembly": 0.000106302,
+              "migration_policy": 0.000976978,
+              "gmres_amg_setup": 0.12222069
+            },
+            {
+              "assembly": 8.8292e-05,
+              "migration_policy": 0.000214704,
+              "gmres_amg_setup": 0.016689504
+            },
+            {
+              "assembly": 8.4752e-05,
+              "migration_policy": 0.000209104,
+              "gmres_amg_setup": 0.016595272
+            },
+            {
+              "assembly": 8.4691e-05,
+              "migration_policy": 0.000207354,
+              "gmres_amg_setup": 0.016537811
+            },
+            {
+              "assembly": 8.4332e-05,
+              "migration_policy": 0.000208063,
+              "gmres_amg_setup": 0.016535122
+            }
+          ],
+          "mean_preparation_host_call_seconds": {
+            "assembly": 8.967380000000001e-05,
+            "migration_policy": 0.0003632406,
+            "gmres_amg_setup": 0.0377156798
+          },
+          "host_process_peak_RSS_KiB": 621936,
+          "GPU_max_observed_phase_GiB": 0.41,
+          "GPU_phase_samples": 15,
+          "process_exit": 0
+        },
+        "small/nonsymmetric": {
+          "complete_solves": 5,
+          "iterations": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "internal_residuals": [
+            2.226711065563e-12,
+            2.226718940718e-12,
+            2.226718940718e-12,
+            2.226711065563e-12,
+            2.226718940718e-12
+          ],
+          "original_float128_residual_after_five_rounds": 2.226712e-12,
+          "driver_outer_mean_seconds": 0.062958,
+          "round_max_seconds": [
+            0.201589454,
+            0.028443775,
+            0.028214441,
+            0.028290823,
+            0.028252071
+          ],
+          "mean_round_max_seconds": 0.0629581128,
+          "round_range_seconds": [
+            0.028214441,
+            0.201589454
+          ],
+          "callback_phases_seconds": [
+            {
+              "analyse": 0.038068,
+              "preprocess": 0.116741,
+              "solve_cleanup": 0.046765
+            },
+            {
+              "analyse": 0.000365,
+              "preprocess": 0.017141,
+              "solve_cleanup": 0.010928
+            },
+            {
+              "analyse": 0.000352,
+              "preprocess": 0.016969,
+              "solve_cleanup": 0.010886
+            },
+            {
+              "analyse": 0.000338,
+              "preprocess": 0.017024,
+              "solve_cleanup": 0.010921
+            },
+            {
+              "analyse": 0.00035,
+              "preprocess": 0.016977,
+              "solve_cleanup": 0.010917
+            }
+          ],
+          "preparation_host_call_seconds": [
+            {
+              "assembly": 9.9281e-05,
+              "migration_policy": 0.000986559,
+              "gmres_amg_setup": 0.115652386
+            },
+            {
+              "assembly": 8.7891e-05,
+              "migration_policy": 0.000213644,
+              "gmres_amg_setup": 0.016837287
+            },
+            {
+              "assembly": 8.2501e-05,
+              "migration_policy": 0.000209744,
+              "gmres_amg_setup": 0.016674664
+            },
+            {
+              "assembly": 8.2742e-05,
+              "migration_policy": 0.000217524,
+              "gmres_amg_setup": 0.016721485
+            },
+            {
+              "assembly": 8.2202e-05,
+              "migration_policy": 0.000208954,
+              "gmres_amg_setup": 0.016684103
+            }
+          ],
+          "mean_preparation_host_call_seconds": {
+            "assembly": 8.69234e-05,
+            "migration_policy": 0.00036728499999999996,
+            "gmres_amg_setup": 0.036513985
+          },
+          "host_process_peak_RSS_KiB": 622100,
+          "GPU_max_observed_phase_GiB": 0.41,
+          "GPU_phase_samples": 15,
+          "process_exit": 0
+        },
+        "small/poisson": {
+          "complete_solves": 5,
+          "iterations": [
+            14,
+            14,
+            14,
+            14,
+            14
+          ],
+          "internal_residuals": [
+            3.406165042117e-12,
+            3.406165042117e-12,
+            3.406172745372e-12,
+            3.406165042117e-12,
+            3.406172745372e-12
+          ],
+          "original_float128_residual_after_five_rounds": 3.406163e-12,
+          "driver_outer_mean_seconds": 0.062687,
+          "round_max_seconds": [
+            0.204768594,
+            0.027299693,
+            0.027111681,
+            0.02711014,
+            0.027143011
+          ],
+          "mean_round_max_seconds": 0.0626866238,
+          "round_range_seconds": [
+            0.02711014,
+            0.204768594
+          ],
+          "callback_phases_seconds": [
+            {
+              "analyse": 0.042497,
+              "preprocess": 0.116278,
+              "solve_cleanup": 0.045976
+            },
+            {
+              "analyse": 0.00036,
+              "preprocess": 0.016813,
+              "solve_cleanup": 0.010118
+            },
+            {
+              "analyse": 0.000362,
+              "preprocess": 0.016651,
+              "solve_cleanup": 0.01009
+            },
+            {
+              "analyse": 0.00035,
+              "preprocess": 0.016679,
+              "solve_cleanup": 0.010073
+            },
+            {
+              "analyse": 0.000352,
+              "preprocess": 0.016641,
+              "solve_cleanup": 0.010141
+            }
+          ],
+          "preparation_host_call_seconds": [
+            {
+              "assembly": 9.8712e-05,
+              "migration_policy": 0.000984418,
+              "gmres_amg_setup": 0.115192018
+            },
+            {
+              "assembly": 8.6522e-05,
+              "migration_policy": 0.000219084,
+              "gmres_amg_setup": 0.016504781
+            },
+            {
+              "assembly": 8.3322e-05,
+              "migration_policy": 0.000209494,
+              "gmres_amg_setup": 0.016356378
+            },
+            {
+              "assembly": 8.1812e-05,
+              "migration_policy": 0.000208734,
+              "gmres_amg_setup": 0.016386758
+            },
+            {
+              "assembly": 8.1832e-05,
+              "migration_policy": 0.000207234,
+              "gmres_amg_setup": 0.016350238
+            }
+          ],
+          "mean_preparation_host_call_seconds": {
+            "assembly": 8.643999999999999e-05,
+            "migration_policy": 0.0003657928,
+            "gmres_amg_setup": 0.0361580346
+          },
+          "host_process_peak_RSS_KiB": 625000,
+          "GPU_max_observed_phase_GiB": 0.41,
+          "GPU_phase_samples": 15,
+          "process_exit": 0
+        }
+      }
+    },
+    "rap0": {
+      "identity": {
+        "solver_sha256": "8f92698f0ae4290cc0ca02763f3f49b6a22158beb67867686db24c51b7449a00",
+        "driver_sha256": "34f19d4985ded7685eeca2f1f07e6dfec0af91c9039dba668be75a6dedf2a6d0",
+        "manifest_sha256": "a35c8dc8db0c637b1f95ba4f9eab494afa72ee587b3ac0254929d31b88381f9b"
+      },
+      "cache_sha256": "fd6df3f104cdd7a50edd70af73684400e4a4c2c46900721918dce7b925848e8c",
+      "binary_sha256": "90bf9c87d602e9aad2ccb1399ad7a64ceb7d78384b8cf34200b4b4927ed98ff6",
+      "cases": {
+        "full/screen": {
+          "complete_solves": 5,
+          "iterations": [
+            25,
+            25,
+            25,
+            25,
+            25
+          ],
+          "internal_residuals": [
+            5.65371322344e-08,
+            5.653698232127e-08,
+            5.653711041206e-08,
+            5.653682084397e-08,
+            5.653713578185e-08
+          ],
+          "original_float128_residual_after_five_rounds": 5.89461e-07,
+          "driver_outer_mean_seconds": 6.854984,
+          "round_max_seconds": [
+            7.00192571,
+            6.82760821,
+            6.821675428,
+            6.814219348,
+            6.809490999
+          ],
+          "mean_round_max_seconds": 6.854983939,
+          "round_range_seconds": [
+            6.809490999,
+            7.00192571
+          ],
+          "callback_phases_seconds": [
+            {
+              "analyse": 0.106562,
+              "preprocess": 5.858088,
+              "solve_cleanup": 1.018346
+            },
+            {
+              "analyse": 0.045239,
+              "preprocess": 5.762711,
+              "solve_cleanup": 1.009152
+            },
+            {
+              "analyse": 0.046402,
+              "preprocess": 5.765352,
+              "solve_cleanup": 0.999215
+            },
+            {
+              "analyse": 0.046142,
+              "preprocess": 5.761591,
+              "solve_cleanup": 0.995788
+            },
+            {
+              "analyse": 0.045326,
+              "preprocess": 5.754432,
+              "solve_cleanup": 0.998277
+            }
+          ],
+          "preparation_host_call_seconds": [
+            {
+              "assembly": 3.847344854,
+              "migration_policy": 0.145020509,
+              "gmres_amg_setup": 1.865720562
+            },
+            {
+              "assembly": 3.818357899,
+              "migration_policy": 0.143937528,
+              "gmres_amg_setup": 1.800413153
+            },
+            {
+              "assembly": 3.823669668,
+              "migration_policy": 0.143331058,
+              "gmres_amg_setup": 1.798348683
+            },
+            {
+              "assembly": 3.820255544,
+              "migration_policy": 0.144202134,
+              "gmres_amg_setup": 1.79713056
+            },
+            {
+              "assembly": 3.810749425,
+              "migration_policy": 0.144314436,
+              "gmres_amg_setup": 1.799365183
+            }
+          ],
+          "mean_preparation_host_call_seconds": {
+            "assembly": 3.824075478,
+            "migration_policy": 0.144161133,
+            "gmres_amg_setup": 1.8121956282
+          },
+          "host_process_peak_RSS_KiB": 5673500,
+          "GPU_max_observed_phase_GiB": 15.28,
+          "GPU_phase_samples": 15,
+          "process_exit": 0
+        },
+        "small/neumann": {
+          "complete_solves": 5,
+          "iterations": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "internal_residuals": [
+            5.119009710125e-12,
+            5.119009710125e-12,
+            5.119009710125e-12,
+            5.119009710125e-12,
+            5.118998336721e-12
+          ],
+          "original_float128_residual_after_five_rounds": 5.118996e-12,
+          "driver_outer_mean_seconds": 0.06821,
+          "round_max_seconds": [
+            0.228091103,
+            0.028398184,
+            0.028191011,
+            0.02815125,
+            0.028219021
+          ],
+          "mean_round_max_seconds": 0.0682101138,
+          "round_range_seconds": [
+            0.02815125,
+            0.228091103
+          ],
+          "callback_phases_seconds": [
+            {
+              "analyse": 0.058054,
+              "preprocess": 0.123524,
+              "solve_cleanup": 0.046497
+            },
+            {
+              "analyse": 0.000374,
+              "preprocess": 0.01701,
+              "solve_cleanup": 0.011005
+            },
+            {
+              "analyse": 0.000348,
+              "preprocess": 0.01687,
+              "solve_cleanup": 0.010964
+            },
+            {
+              "analyse": 0.000339,
+              "preprocess": 0.016869,
+              "solve_cleanup": 0.010936
+            },
+            {
+              "analyse": 0.000325,
+              "preprocess": 0.016869,
+              "solve_cleanup": 0.011018
+            }
+          ],
+          "preparation_host_call_seconds": [
+            {
+              "assembly": 0.000106672,
+              "migration_policy": 0.000973658,
+              "gmres_amg_setup": 0.122441005
+            },
+            {
+              "assembly": 8.8772e-05,
+              "migration_policy": 0.000213364,
+              "gmres_amg_setup": 0.016705984
+            },
+            {
+              "assembly": 8.5842e-05,
+              "migration_policy": 0.000208713,
+              "gmres_amg_setup": 0.016573982
+            },
+            {
+              "assembly": 8.4102e-05,
+              "migration_policy": 0.000211814,
+              "gmres_amg_setup": 0.016570922
+            },
+            {
+              "assembly": 9.4222e-05,
+              "migration_policy": 0.000209423,
+              "gmres_amg_setup": 0.016563282
+            }
+          ],
+          "mean_preparation_host_call_seconds": {
+            "assembly": 9.192199999999999e-05,
+            "migration_policy": 0.0003633944,
+            "gmres_amg_setup": 0.037771035
+          },
+          "host_process_peak_RSS_KiB": 623016,
+          "GPU_max_observed_phase_GiB": 0.41,
+          "GPU_phase_samples": 15,
+          "process_exit": 0
+        },
+        "small/nonsymmetric": {
+          "complete_solves": 5,
+          "iterations": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "internal_residuals": [
+            2.685087173688e-12,
+            2.685087173688e-12,
+            2.685087173688e-12,
+            2.685087173688e-12,
+            2.685087173688e-12
+          ],
+          "original_float128_residual_after_five_rounds": 2.685092e-12,
+          "driver_outer_mean_seconds": 0.063133,
+          "round_max_seconds": [
+            0.204275574,
+            0.027956786,
+            0.027824474,
+            0.027785503,
+            0.027822693
+          ],
+          "mean_round_max_seconds": 0.06313300599999999,
+          "round_range_seconds": [
+            0.027785503,
+            0.204275574
+          ],
+          "callback_phases_seconds": [
+            {
+              "analyse": 0.037825,
+              "preprocess": 0.120306,
+              "solve_cleanup": 0.046128
+            },
+            {
+              "analyse": 0.000359,
+              "preprocess": 0.016797,
+              "solve_cleanup": 0.010792
+            },
+            {
+              "analyse": 0.00035,
+              "preprocess": 0.016676,
+              "solve_cleanup": 0.01079
+            },
+            {
+              "analyse": 0.000353,
+              "preprocess": 0.016623,
+              "solve_cleanup": 0.010801
+            },
+            {
+              "analyse": 0.000348,
+              "preprocess": 0.016704,
+              "solve_cleanup": 0.010762
+            }
+          ],
+          "preparation_host_call_seconds": [
+            {
+              "assembly": 0.000105312,
+              "migration_policy": 0.000970779,
+              "gmres_amg_setup": 0.119226973
+            },
+            {
+              "assembly": 8.6091e-05,
+              "migration_policy": 0.000214344,
+              "gmres_amg_setup": 0.016494791
+            },
+            {
+              "assembly": 8.1991e-05,
+              "migration_policy": 0.000210374,
+              "gmres_amg_setup": 0.016381828
+            },
+            {
+              "assembly": 8.2282e-05,
+              "migration_policy": 0.000207354,
+              "gmres_amg_setup": 0.016331737
+            },
+            {
+              "assembly": 8.1742e-05,
+              "migration_policy": 0.000209804,
+              "gmres_amg_setup": 0.016410788
+            }
+          ],
+          "mean_preparation_host_call_seconds": {
+            "assembly": 8.74836e-05,
+            "migration_policy": 0.000362531,
+            "gmres_amg_setup": 0.0369692234
+          },
+          "host_process_peak_RSS_KiB": 622764,
+          "GPU_max_observed_phase_GiB": 0.41,
+          "GPU_phase_samples": 15,
+          "process_exit": 0
+        },
+        "small/poisson": {
+          "complete_solves": 5,
+          "iterations": [
+            14,
+            14,
+            14,
+            14,
+            14
+          ],
+          "internal_residuals": [
+            3.408649784557e-12,
+            3.408662345174e-12,
+            3.408662345174e-12,
+            3.408649784557e-12,
+            3.408649784557e-12
+          ],
+          "original_float128_residual_after_five_rounds": 3.408651e-12,
+          "driver_outer_mean_seconds": 0.06214,
+          "round_max_seconds": [
+            0.202896618,
+            0.027145431,
+            0.026884406,
+            0.026890426,
+            0.026882516
+          ],
+          "mean_round_max_seconds": 0.0621398794,
+          "round_range_seconds": [
+            0.026882516,
+            0.202896618
+          ],
+          "callback_phases_seconds": [
+            {
+              "analyse": 0.037498,
+              "preprocess": 0.117743,
+              "solve_cleanup": 0.047638
+            },
+            {
+              "analyse": 0.00036,
+              "preprocess": 0.01696,
+              "solve_cleanup": 0.009817
+            },
+            {
+              "analyse": 0.000351,
+              "preprocess": 0.016755,
+              "solve_cleanup": 0.00977
+            },
+            {
+              "analyse": 0.000339,
+              "preprocess": 0.016756,
+              "solve_cleanup": 0.009787
+            },
+            {
+              "analyse": 0.000339,
+              "preprocess": 0.016741,
+              "solve_cleanup": 0.009795
+            }
+          ],
+          "preparation_host_call_seconds": [
+            {
+              "assembly": 0.000100392,
+              "migration_policy": 0.000979539,
+              "gmres_amg_setup": 0.116660905
+            },
+            {
+              "assembly": 8.5921e-05,
+              "migration_policy": 0.000216885,
+              "gmres_amg_setup": 0.016654573
+            },
+            {
+              "assembly": 9.4742e-05,
+              "migration_policy": 0.000208254,
+              "gmres_amg_setup": 0.01644962
+            },
+            {
+              "assembly": 8.2622e-05,
+              "migration_policy": 0.000218574,
+              "gmres_amg_setup": 0.01645242
+            },
+            {
+              "assembly": 8.1682e-05,
+              "migration_policy": 0.000217324,
+              "gmres_amg_setup": 0.016439739
+            }
+          ],
+          "mean_preparation_host_call_seconds": {
+            "assembly": 8.90718e-05,
+            "migration_policy": 0.0003681152,
+            "gmres_amg_setup": 0.0365314514
+          },
+          "host_process_peak_RSS_KiB": 622984,
+          "GPU_max_observed_phase_GiB": 0.41,
+          "GPU_phase_samples": 15,
+          "process_exit": 0
+        }
+      }
+    }
+  },
+  "timing_scope": "Existing max-rank overall five-round mean is preserved. Individual rows are MPI maxima of each complete local round interval, including vector reset, callbacks and ending barrier. Their arithmetic mean is a separate statistic; post-timer reductions/printing are excluded from the overall timer.",
+  "preparation_probe_scope": "Single-rank host-observed call intervals, including any implicit library synchronization, not isolated GPU kernel timings.",
+  "memory_scope": "Full-process GNU time host RSS peak and rounded phase GPU observations, not continuous GPU peaks.",
+  "S4": "See cpu-control-verification.json: exact candidate experimental S4 target passes against measured96-rankCPU; formal contract/eligibility remains open."
+}

@@ -1,0 +1,23 @@
+	Command being timed: "/public/home/travissun/sc26-hip-20261007/prep-962398/baseline/source/build/bin/MPI_iterative_solver /public/share/ac3k88uz8y/SolverChallenge26-TenProblems/solverchallenge26_02/solverchallenge26_02_A.dat /public/share/ac3k88uz8y/SolverChallenge26-TenProblems/solverchallenge26_02/solverchallenge26_02_b.dat 0 0"
+	User time (seconds): 59.57
+	System time (seconds): 5.26
+	Percent of CPU this job got: 83%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:17.32
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5674060
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 530
+	Minor (reclaiming a frame) page faults: 1993962
+	Voluntary context switches: 10458
+	Involuntary context switches: 937
+	Swaps: 0
+	File system inputs: 1648
+	File system outputs: 544352
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

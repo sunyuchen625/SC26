@@ -78,7 +78,23 @@ void analyse(struct MySolver* solver, const struct SC26_SolverInput* input)
     HYPRE_BigInt upper = lower + input->local_n - 1;
     HYPRE_CALL(HYPRE_IJMatrixCreate(input->comm, lower, upper, lower, upper, &solver->matrix));
     HYPRE_CALL(HYPRE_IJMatrixSetObjectType(solver->matrix, HYPRE_PARCSR));
+#ifdef HYPRE_USING_HIP
+    HYPRE_Int *diag_sizes = malloc((size_t)input->local_n * sizeof(*diag_sizes));
+    HYPRE_Int *offdiag_sizes = malloc((size_t)input->local_n * sizeof(*offdiag_sizes));
+    if (input->local_n && (!diag_sizes || !offdiag_sizes)) MPI_Abort(input->comm, 1);
+    for (int i = 0; i < input->local_n; ++i) {
+        HYPRE_Int diagonal = 0;
+        for (int j = input->row_ptr[i]; j < input->row_ptr[i + 1]; ++j)
+            diagonal += input->col_idx[j] >= lower && input->col_idx[j] <= upper;
+        diag_sizes[i] = diagonal;
+        offdiag_sizes[i] = solver->row_sizes[i] - diagonal;
+    }
+    HYPRE_CALL(HYPRE_IJMatrixSetDiagOffdSizes(solver->matrix, diag_sizes, offdiag_sizes));
+    free(diag_sizes);
+    free(offdiag_sizes);
+#else
     HYPRE_CALL(HYPRE_IJMatrixSetRowSizes(solver->matrix, solver->row_sizes));
+#endif
     solver->analyse_seconds = MPI_Wtime() - started;
 }
 
@@ -119,11 +135,13 @@ void preprocess(struct MySolver* solver, const struct SC26_SolverInput* input)
     HYPRE_CALL(HYPRE_IJVectorAssemble(solver->solution));
 
 #ifdef HYPRE_USING_HIP
+    double assembly_finished = MPI_Wtime();
     HYPRE_CALL(HYPRE_IJMatrixMigrate(solver->matrix, HYPRE_MEMORY_DEVICE));
     HYPRE_CALL(HYPRE_IJVectorMigrate(solver->rhs, HYPRE_MEMORY_DEVICE));
     HYPRE_CALL(HYPRE_IJVectorMigrate(solver->solution, HYPRE_MEMORY_DEVICE));
     HYPRE_CALL(HYPRE_SetMemoryLocation(HYPRE_MEMORY_DEVICE));
     HYPRE_CALL(HYPRE_SetExecutionPolicy(HYPRE_EXEC_DEVICE));
+    double migration_finished = MPI_Wtime();
     HYPRE_MemoryLocation location;
     HYPRE_ExecutionPolicy policy;
     HYPRE_CALL(HYPRE_GetMemoryLocation(&location));
@@ -145,7 +163,11 @@ void preprocess(struct MySolver* solver, const struct SC26_SolverInput* input)
     HYPRE_CALL(HYPRE_BoomerAMGSetCoarsenType(solver->amg, 10));
     HYPRE_CALL(HYPRE_BoomerAMGSetRelaxType(solver->amg, 6));
 #endif
+#ifdef HYPRE_USING_HIP
+    HYPRE_CALL(HYPRE_BoomerAMGSetInterpType(solver->amg, 18));
+#else
     HYPRE_CALL(HYPRE_BoomerAMGSetInterpType(solver->amg, 6));
+#endif
     HYPRE_CALL(HYPRE_BoomerAMGSetPMaxElmts(solver->amg, 4));
     HYPRE_CALL(HYPRE_BoomerAMGSetStrongThreshold(solver->amg, 0.25));
     /* Pressure has a constant nullspace; keep the coarse solve iterative. */
@@ -166,6 +188,9 @@ void preprocess(struct MySolver* solver, const struct SC26_SolverInput* input)
         solver->par_matrix, solver->par_rhs, solver->par_solution));
 #ifdef HYPRE_USING_HIP
     HYPRE_CALL(HYPRE_MemoryPrintUsage(input->comm, 1, "T2_HIP_SETUP", -1));
+    printf("T2_PREP_CALL_SECONDS assembly=%.9f migration_policy=%.9f gmres_amg_setup=%.9f\n",
+           assembly_finished - started, migration_finished - assembly_finished,
+           MPI_Wtime() - migration_finished);
 #endif
     solver->preprocess_seconds = MPI_Wtime() - started;
 }

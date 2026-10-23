@@ -1,0 +1,1425 @@
+{
+  "status": "PASS",
+  "reviewer": "Claude Code Opus5.5/max through native ClaudePro subscription",
+  "conversation_id": "ef1db968-de76-4675-954f-2de0efe1b081",
+  "rounds": [
+    {
+      "round": "audit1",
+      "session_id": "ef1db968-de76-4675-954f-2de0efe1b081",
+      "model": "claude-opus-5-5",
+      "configured_effort": "max",
+      "permission_mode": "plan",
+      "api_key_source": "none",
+      "tools": [
+        "Grep",
+        "Read"
+      ],
+      "all_tool_targets_within_scope": true,
+      "tool_requests": [
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/.agents/collaboration/2026-10-23-gpu-preparation/review-scope.json"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/.agents/collaboration/2026-10-23-gpu-preparation/review-scope.json",
+            "offset": 273,
+            "limit": 211
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/docs/T2_GPU_PREPARATION_2026-10-23.md"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/exact-verification.json"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/screening-verification.json"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/historical-960428-verification.json"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/资料/solverchallenge26_sample_code/apps/MPI_iterative_solver.c"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/资料/solverchallenge26_sample_code/problems/problem02/solver.c"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "SetDiagOffdSizes|NeedAux|DiagSizes|OffdSizes",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/资料/dependencies/hypre-2.33.0/src/IJ_mv/IJMatrix_parcsr.c",
+            "output_mode": "content",
+            "-n": true
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "SetDiagOffdSizes|SetRowSizes",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/资料/dependencies/hypre-2.33.0/src/IJ_mv/HYPRE_IJ_mv.h",
+            "output_mode": "content",
+            "-n": true,
+            "-B": 25,
+            "-A": 4
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/资料/dependencies/hypre-2.33.0/src/IJ_mv/IJMatrix_parcsr.c",
+            "offset": 80,
+            "limit": 100
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/资料/dependencies/hypre-2.33.0/src/IJ_mv/IJMatrix_parcsr.c",
+            "offset": 330,
+            "limit": 120
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/资料/dependencies/hypre-2.33.0/src/IJ_mv/IJMatrix_parcsr.c",
+            "offset": 900,
+            "limit": 260
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "^hypre_IJMatrixAssembleParCSR|hypre_CSRMatrixReorder|diag first|first in each row|MoveDiagFirst|cnt_diag|diag_pos",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/资料/dependencies/hypre-2.33.0/src/IJ_mv/IJMatrix_parcsr.c",
+            "output_mode": "content",
+            "-n": true
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/资料/dependencies/hypre-2.33.0/src/IJ_mv/IJMatrix_parcsr.c",
+            "offset": 2634,
+            "limit": 480
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/.agents/collaboration/2026-10-23-gpu-preparation/verify_gpu.py"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/.agents/collaboration/2026-10-23-gpu-preparation/verify_history.py"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/exact/exact-962526/submitted.sbatch"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/screening/prep-962398/submitted.sbatch"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/full/screen/solver.log"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/exact/exact-962526/baseline/full/screen/solver.log",
+            "offset": 1,
+            "limit": 50
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/exact/exact-962526/baseline/full/screen/solver.log",
+            "offset": 230,
+            "limit": 25
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/exact/relax18-960428/baseline/full/solver.log"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/exact/relax18-960428/l1jacobi/small/poisson/solver.log"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/exact/relax18-960428-accounting-readback.log"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "CHECK end to end|Q-Check \\|\\| b - Ax \\|\\| 2 / |CHECK round|T2_GMRES",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/exact/relax18-960428/l1jacobi/full/solver.log",
+            "output_mode": "content",
+            "-n": true
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "OFFICIAL_RESIDUAL_PASS|KNOWN_SOLUTION_PASS|CHECK end to end|SC26_RELAX18_COMPARISON_COMPLETE|sha256|OK$|FAILED",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/exact/sc26_t2_relax18-960428.out",
+            "output_mode": "content",
+            "-n": true
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "OFFICIAL_RESIDUAL_PASS|KNOWN_SOLUTION_PASS|CHECK end to end|COMPLETE|FAIL|rror",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/exact/sc26_t2_relax18-960428.out",
+            "output_mode": "content",
+            "-n": true
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "OFFICIAL_RESIDUAL_PASS|KNOWN_SOLUTION_PASS|FASTEST_SCREENED|COMPLETE|FULL_PASS|OUTER_ROUND|SOURCE_VARIANT|  build/bin/MPI_iterative_solver|  build/CMakeCache.txt|HYPRE_USING|rror|FAIL",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/exact/sc26_t2_exact-962526.out",
+            "output_mode": "content",
+            "-n": true
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "OFFICIAL_RESIDUAL_PASS|KNOWN_SOLUTION_PASS|FASTEST_SCREENED|_COMPLETE|FULL_PASS|SOURCE_VARIANT|  build/bin/MPI_iterative_solver|  build/CMakeCache.txt|define HYPRE_USING_HIP|UNIFIED_MEMORY|rror|FAIL",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/screening/sc26_t2_prep-962398.out",
+            "output_mode": "content",
+            "-n": true
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/screening/prep-962398-accounting.log"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/exact/exact-962526-accounting.log"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/screening/prep-962398-controller.log"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/exact/exact-962526-controller.log"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/.agents/collaboration/2026-10-23-gpu-preparation/cpu-split-status.log"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/.agents/collaboration/2026-10-23-gpu-preparation/cpu-timed-build.sbatch"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/.agents/collaboration/2026-10-23-gpu-preparation/cpu-s4-control.sbatch"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/docs/T2_CPU_CONTROLS_2026-10-23.md"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/docs/T2_HIP_OPTIMIZATION_2026-10-23.md"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "S4|outer-round|outer round|range|repeat|smaller-advantage|10%|20%|per-round|non-overlap|overlap",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/docs/NEXT_PLAN_ACCEPTANCE_2026-10-21.md",
+            "output_mode": "content",
+            "-n": true,
+            "-C": 2
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/docs/NEXT_PLAN_ACCEPTANCE_2026-10-21.md",
+            "offset": 1,
+            "limit": 62
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/source-identity.json"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/资料/solverchallenge26_sample_code/problems/problem02/solver.h"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "warning|error|Error|Built target|Linking",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/source/build.log",
+            "output_mode": "content",
+            "-n": true
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/exact/exact-962526/screening-means.json"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/screening/prep-962398/screening-means.json"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "^(CMAKE_BUILD_TYPE|CMAKE_C_FLAGS_RELEASE|CMAKE_C_FLAGS|CMAKE_HIP_ARCHITECTURES|SC26_T2_HIP|SC26_BUILD_MPI|SC26_ENABLE_FLOAT128|HYPRE_DIR|CMAKE_C_COMPILER):",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/source/build/CMakeCache.txt",
+            "output_mode": "content",
+            "-n": true
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/exact/exact-submission-20261023.txt"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/screening/prep-submission-20261023.txt"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/full/repeat-2/process.time"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "HYPRE_USING_HIP|SetDiagOffdSizes|SetRowSizes|SetInterpType|diagonal \\+=|free\\((diag|offdiag)_sizes\\)",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/source/src/problems/problem02/solver.c",
+            "output_mode": "content",
+            "-n": true
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "^T2_GMRES iterations=|^Q-Check \\|\\| b - Ax \\|\\| 2 / |^CHECK round",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/exact/relax18-960428/baseline/small/neumann/solver.log",
+            "output_mode": "count"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "^T2_GMRES iterations=|^Q-Check \\|\\| b - Ax \\|\\| 2 / |^CHECK round",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/exact/relax18-960428/baseline/small/nonsymmetric/solver.log",
+            "output_mode": "count"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "^T2_GMRES iterations=|^Q-Check \\|\\| b - Ax \\|\\| 2 / |^CHECK round",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/exact/relax18-960428/baseline/small/poisson/solver.log",
+            "output_mode": "count"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "^T2_GMRES iterations=|^Q-Check \\|\\| b - Ax \\|\\| 2 / |^CHECK round",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/exact/relax18-960428/l1jacobi/small/neumann/solver.log",
+            "output_mode": "count"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "^T2_GMRES iterations=|^Q-Check \\|\\| b - Ax \\|\\| 2 / |^CHECK round",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/exact/relax18-960428/l1jacobi/small/nonsymmetric/solver.log",
+            "output_mode": "count"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "^T2_GMRES iterations=|^Q-Check \\|\\| b - Ax \\|\\| 2 / |^CHECK round",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/exact/relax18-960428/l1jacobi/small/poisson/solver.log",
+            "output_mode": "count"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/full/repeat-1/process.exit"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "CHECK round|MPI_Barrier|round_seconds|round_maximum|round_started",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/source/src/apps/MPI_iterative_solver.c",
+            "output_mode": "content",
+            "-n": true
+          },
+          "within_exact_local_scope": true
+        }
+      ],
+      "duration_ms": 989113,
+      "five_hour_utilization_observations": [
+        0.23,
+        0.24,
+        0.25,
+        0.27,
+        0.31,
+        0.32,
+        0.33,
+        0.34,
+        0.35,
+        0.38,
+        0.39,
+        0.4,
+        0.41,
+        0.42,
+        0.43,
+        0.44,
+        0.45,
+        0.46,
+        0.47,
+        0.5,
+        0.52
+      ],
+      "response_sha256": "ef045885cfe9b05bc9c9955fbbfae51911a90d8e7e1bd20e541bb8564465209e",
+      "verdict": "Preliminary source/GPU acceptance with documentation corrections"
+    },
+    {
+      "round": "audit2",
+      "session_id": "ef1db968-de76-4675-954f-2de0efe1b081",
+      "model": "claude-opus-5-5",
+      "configured_effort": "max",
+      "permission_mode": "plan",
+      "api_key_source": "none",
+      "tools": [
+        "Grep",
+        "Read"
+      ],
+      "all_tool_targets_within_scope": true,
+      "tool_requests": [
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "primary_review_files|driver-at-d09163c|code-change\\.diff|\"[a-z_]+\":\\s*\\[|\"[a-z_]+\":\\s*\\{|\"[a-z_]+\":\\s*\"",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/.agents/collaboration/2026-10-23-gpu-preparation/audit2-review-scope.json",
+            "output_mode": "content",
+            "-n": true,
+            "head_limit": 80
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/.agents/collaboration/2026-10-23-gpu-preparation/audit2-review-scope.json",
+            "offset": 1,
+            "limit": 40
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/.agents/collaboration/2026-10-23-gpu-preparation/driver-at-d09163c.c",
+            "offset": 140,
+            "limit": 60
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/.agents/collaboration/2026-10-23-gpu-preparation/code-change.diff"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/docs/T2_GPU_PREPARATION_2026-10-23.md"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/cpu-control-verification.json"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/cpu-build-verification.json"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/historical-960428-verification.json"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/allocation-ledger.json"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/source-identity.json"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/.agents/collaboration/2026-10-23-gpu-preparation/local-verification.json"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "allocation-ledger|953826|9269822|cpu-control/|small-cases|build-receipt|verify_history|verify_gpu|T2_CPU_CONTROLS|NEXT_PLAN|PROJECT_BRIEF|README|项目背景|T2_HIP_RESULTS|T2_HIP_OPTIMIZATION",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/.agents/collaboration/2026-10-23-gpu-preparation/audit2-review-scope.json",
+            "output_mode": "content",
+            "-n": true,
+            "offset": 0,
+            "head_limit": 120
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "resource-optimization|953826|2026-10-21|cpu-control-9270819-accounting|sc26_t2_s4_cpu-9270819|accounting",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/.agents/collaboration/2026-10-23-gpu-preparation/audit2-review-scope.json",
+            "output_mode": "content",
+            "-n": true,
+            "head_limit": 40
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/.agents/collaboration/2026-10-23-gpu-preparation/audit2-review-scope.json",
+            "offset": 592,
+            "limit": 30
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/.agents/collaboration/2026-10-23-gpu-preparation/audit2-review-scope.json",
+            "offset": 1170,
+            "limit": 40
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/resource-optimization/allocation-ledger.json"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/cpu-control/cpu-final-accounting.log"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/cpu-control/original-control-accounting.log"
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "^CHECK round|^CHECK end|^Q-Check \\|\\| b - Ax \\|\\| 2 / |^T2_GMRES|^T2_PHASE_SECONDS",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/solver.log",
+            "output_mode": "content",
+            "-n": true
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "^T2_PHASE_SECONDS|^T2_GMRES|^CHECK end|^Q-Check \\|\\| b - Ax \\|\\| 2 / ",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/solver.log",
+            "output_mode": "content",
+            "-n": true
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "^T2_PHASE_SECONDS|^T2_GMRES|^CHECK end|^Q-Check \\|\\| b - Ax \\|\\| 2 / ",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/resource-optimization/runs/t02-9269822/96-ranks/solver.log",
+            "output_mode": "content",
+            "-n": true
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "winner|min\\(|means|Q-Check|5\\.938952|5\\.894610|solver\\.log|T2_GMRES|CHECK end",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/.agents/collaboration/2026-10-23-gpu-preparation/verify_history.py",
+            "output_mode": "content",
+            "-n": true
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "winner|screen_means|min\\(",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/.agents/collaboration/2026-10-23-gpu-preparation/verify_gpu.py",
+            "output_mode": "content",
+            "-n": true
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/.agents/collaboration/2026-10-23-gpu-preparation/verify_history.py",
+            "offset": 24,
+            "limit": 30
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "S4|3\\.905254|inconclusive|新的屏障|barrier",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/docs/NEXT_PLAN_ACCEPTANCE_2026-10-21.md",
+            "output_mode": "content",
+            "-n": true,
+            "head_limit": 12
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "S4|3\\.905254|inconclusive|barrier",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/docs/T2_HIP_OPTIMIZATION_2026-10-23.md",
+            "output_mode": "content",
+            "-n": true
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "S4|3\\.905254|inconclusive|9270819",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/docs/T2_CPU_CONTROLS_2026-10-23.md",
+            "output_mode": "content",
+            "-n": true
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "S4|3\\.905254|inconclusive|GPU",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/README.md",
+            "output_mode": "content",
+            "-n": true,
+            "head_limit": 10
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Read",
+          "input": {
+            "file_path": "/Users/sunyuchen/Desktop/学业任务/SC26/docs/NEXT_PLAN_ACCEPTANCE_2026-10-21.md",
+            "offset": 12,
+            "limit": 1
+          },
+          "within_exact_local_scope": true
+        },
+        {
+          "tool": "Grep",
+          "input": {
+            "pattern": "Exit status|Maximum resident set size|Command being timed",
+            "path": "/Users/sunyuchen/Desktop/学业任务/SC26/logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-95.time",
+            "output_mode": "content",
+            "-n": true
+          },
+          "within_exact_local_scope": true
+        }
+      ],
+      "duration_ms": 153015,
+      "five_hour_utilization_observations": [
+        0.55,
+        0.56,
+        0.57,
+        0.58,
+        0.59,
+        0.6,
+        0.61,
+        0.62,
+        0.63,
+        0.64
+      ],
+      "response_sha256": "aaa8d1733d00e1b6e32fec593a70c8b5c251acd18cfc2337b8731d5a834610d7",
+      "verdict": "PASS for scoped publication; no required fixes remain"
+    }
+  ],
+  "maximum_streamed_five_hour_utilization": 0.64,
+  "native_usage_before_final_round": 0.55,
+  "pause_threshold": 0.95,
+  "threshold_reached": false,
+  "overage_used": false,
+  "web_requests": 0,
+  "reviewed_publication_sha256": {
+    "README.md": "d19e4a61bb8bb8febfecc1514893f8111ff2cf765b01b4c4b3a4ec6ed43587b3",
+    "deliverables/SC26_T2_HIP_preparation_20261023.tar.gz": "f9482721a702b88d4e1b5e87957f59a8391215eb1938a8599bfc055e1e1c1e3a",
+    "docs/NEXT_PLAN_ACCEPTANCE_2026-10-21.md": "08d8b818eab5f52859460cd4297946e3458f1ad3bbb71fb7fab50c31eea2a25a",
+    "docs/PROJECT_BRIEF.md": "620b09772ecc6fa541e998c98923220602e85e856e7b9574339006d847e96352",
+    "docs/T2_CPU_CONTROLS_2026-10-23.md": "8ac59daeec985d543a2229a0adc89f0a3fff3bbae24ee287f0a37619163442a7",
+    "docs/T2_GPU_PREPARATION_2026-10-23.md": "0c550928063d6d748ee288360477c4ac21a26ca1f33fcf3d824f48dba1113bd3",
+    "docs/T2_HIP_OPTIMIZATION_2026-10-23.md": "61203b64fb60d234245704618916441846c8bee14a44360e6d57579a8a9ffd86",
+    "docs/T2_HIP_RESULTS_2026-10-09.md": "4b4291d22876803f96e8441feba50aa0e75e4581f2b57b2e3ebcd552bb6c85ae",
+    "docs/项目背景与下一步工作方案.md": "556c363287e7f4c680e286a690536afa296c8600f1bb20ed5b3e5a55ade6d043",
+    "logs/2026-10-23/gpu-preparation/allocation-ledger.json": "b593b71fe4621d818e762c238f9d4de56f7a3f58038a6775bc1436e3f7a30423",
+    "logs/2026-10-23/gpu-preparation/cpu-build-verification.json": "e14de5dee326b2543f9919f9c519c508cc0a2ed62eef25a0f9306cab0ff5e752",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/build-receipt.sha256": "7bd6510f867a6188c3c19206d6ba4d99a5c78eb21b0d8d3d4055eccaa5b72c6e",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/build.log": "c5ee1e58220e0f052b45e16fd5d7b1f83961d63a08a715a38c5372d0eedef048",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/build/CMakeCache.txt": "1e2c58419da18100d772cb2580853aec0b35b9294516a8a53669541d4dcac28e",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/build/CTestTestfile.cmake": "5c085bb84d0a8e7e4f84aafe64543dc472bab61edb0c02ab58caaf9286c19d20",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/build/DartConfiguration.tcl": "bd8997b9d99025ef40bf292e8afd5b39414d0cccca1a5fbdffebd2900b4fb793",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/build/Makefile": "beb87b55faa80576704a07581d5bb8208af811a370ca7cdeebbcdb6fbafab3e3",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/build/cmake_install.cmake": "5f5c340abea392ddf0fa7ddd775f85f3c318fa57550a35f89b0604b3d1485020",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/build/selected_problem/CMakeFiles/CMakeDirectoryInformation.cmake": "00efaddf1b39eceb1da2bac5a3e57d54e147731fcc4e178bb745ba865e3abf9d",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/build/selected_problem/CMakeFiles/progress.marks": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/build/selected_problem/CTestTestfile.cmake": "4dbae8fddc7bfb966b4db5ce5fb0a259dc6e19b2195abc033ffe6828ee1e67c8",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/build/selected_problem/Makefile": "91bb13eb8bc70daac32fe21b479574eaaf5907d4c0eb6c0bfd807ce88cd66a36",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/build/selected_problem/cmake_install.cmake": "05313dd2001a2cedd94724093661ab43e20787e2754e2a460665b61b99c4c187",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/configure.log": "b381b3bdc89db4041b4266d7d97f1b08099949e48f7b6bc2c63f2fd2f6485cb9",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/parent-commit.txt": "1804fcdb34cbfbd1ebdae5eb8530ba8054646b1bf244f9cadf470a8797f59e13",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/runs/small-9270818/neumann-1/solver.log": "3b74ddc81526fa7d5b6a2ddcf653160ab374e0e2f76011fdc95be05a2fd6bf73",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/runs/small-9270818/neumann-4/solver.log": "06218c8609fa6daa12c66cd2e511079634a909cad2bc98f792d781a73c8f103c",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/runs/small-9270818/nonsymmetric-1/solver.log": "b84ec5b3e26a137c32f36c9252ed468f2e77e7225fae997e2845d5b118431521",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/runs/small-9270818/nonsymmetric-4/solver.log": "82c98f09861ba5043f05ecd2771f99ace6f27267ca9bee1de833f22f6d313573",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/runs/small-9270818/poisson-1/solver.log": "66b4f132ba80565344950bc5d57ec99e7910c114b51589e03b6860f42247f7e6",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/runs/small-9270818/poisson-4/solver.log": "7b25a6b624e96f8f1fdca2a1a3d3701e42e24ff59c70c25c2c36b5d829652e83",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/small-cases.err": "3372c9b4501f0eb519bdbfa7b91b3da1dbb440eb7ced77e83305259ef78e2165",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/small-cases.out": "4a9f691b5319225b604c5aedb4b2653ce138374ad40eff0015e5c3ff69a1b046",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/source-sha256.txt": "edcbf44abeee448a736cc01bfe16ac58a052a74e44a132a2d67a2f35e0080d6b",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/CMakeLists.txt": "3f20b301f3ab9aff1726d8b0cdf615948b130b440d3a66e5d2ba24e1344b5fb3",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/CMakePresets.json": "8a1d3a0d2d0339fab58686fa1a9438c42883b76fd402621ee555e9d24833e47a",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/LICENSE": "38f1054d25d7f9741d68f328d9f84a196aded9121487a3d238dfe12199fb0fe6",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/Makefile": "30260f16ea1834ff5a4420d078caa8fce78b0cfc616223d98c96d9cccfaf95c0",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/README.md": "c0231764304b9ccb5184c80926616f00f459f8c584ff84803c683b6e37d488f6",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/apps/MPI_GPU_direct_solver.c": "eba3de7a82dccdb8b641c103f0b386e27487bc4660980b8ca857a532eb714274",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/apps/MPI_GPU_iterative_solver.c": "f4e2ef49229464877771ce603ad25184f7b9f1f407730eae20c106453c11a51f",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/apps/MPI_direct_solver.c": "35bc47e42ac2043109f3531216b95c95a2e5f63d7d55d1cc110afbcd54dba849",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/apps/MPI_iterative_solver.c": "34f19d4985ded7685eeca2f1f07e6dfec0af91c9039dba668be75a6dedf2a6d0",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/apps/direct_solver.c": "19dbca340fb91d3681219a06820f595eba5db2a654455f2a607e78c1253a5d53",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/apps/iterative_solver.c": "6b23202b1606e7173bfa0802bf1bbcda28f4a2d80978839090ccf058e1d7f610",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/cmake/Dependencies.cmake": "0f4e729537eb89c036fe26300c27484d9dd7eb162db00b5238bc11fed81aeb67",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/include/solverchallenge26/common_types.h": "eef76c37e9ca5238c4e417e5d5099e78a8238ed8e46c3d1ee6bb4e784a026ee5",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/include/solverchallenge26/diagnostics.h": "554c2bf26796210749f5c1bf363171299bf9bc3edb36087d4178ecd9deb5abe3",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/include/solverchallenge26/gpu_direct_solver_api.h": "cb9ff150202fb980454491f528c9d258bee4bf58a74f6ce3856d92986dbe84c4",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/include/solverchallenge26/gpu_iterative_solver_api.h": "dbfdc95d5d4c18ce2fc6908c5bbf18d9fc400d6224b41a064c0186d9a408c2b7",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/include/solverchallenge26/gpu_metrics.h": "757c483d491f1f7057cfcf94f7ba91541fa03ed3f76acf39f63851e9772d8ae3",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/include/solverchallenge26/matrix_market_reader.h": "b46ddb056c75367e2f533b498e4d0561ab71e5e5b82366dc495b02c3087f094b",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/include/solverchallenge26/mpi_system_loader.h": "1c7a8c7c11890061723cb4743f78cf5564ebbea7ae0dba33dbfa0a8248f84496",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/include/solverchallenge26/petsc_binary_reader.h": "d794b5d6f7df3a15ca8c8fe8ceb760b2497974d2a85491ab64288333f8004bca",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/include/solverchallenge26/residual_check.h": "87114ec749b946d3fad6657bf58ddcb30d2d7c8653d098df3ea5f01330dd413f",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/include/solverchallenge26/runtime_support.h": "fb151cfde3474d1ea63cde7bf9398cf359c8468d7f017ae47e78838f149784c0",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/include/solverchallenge26/solver_api.h": "698753fcb9874250bf1985e72f78d652cb7448b4eeb0ae587c6e1c33ace2fc86",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/include/solverchallenge26/solver_input.h": "b16e5ae4eff385e97934202b5e2a475508884d79381a35b9befea2e68d344ed4",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/include/solverchallenge26/system_loader.h": "f5988a0bc091fc3147f68b11f9488f599352a41a9fc7e4d61c55d451627b2e26",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/README.md": "01a7d3db2a131f6a64f2af1857969e279b68e2a311bb4aebd0bd590d8339ea57",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/cpu_baseline/CMakeLists.txt": "42f43dd7a399bab10c4e10a6334952cd2fcdd5b209195a75823cb88f469b0803",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/cpu_baseline/solver.c": "8c945b2d5661fa80bf1abd57ae22c480f4bb294b09ac74073ab5cd41c4b4a4b1",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/cpu_baseline/solver.h": "b0c5eae17ecf9efda8bf9f7ebe4673e9852e47ff136394d48fd4a1c3efdcaf76",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem01/CMakeLists.txt": "789ed473ae2f0ffc35a8e314c2514dcfe25be143f44f1aefc734fdc0754ec87a",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem01/gpu_direct_solver.cu": "f00ffbeadb7001a08bbe749fd28e1c44818815d7505737daa865b09eef1094c7",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem01/gpu_iterative_solver.cu": "89237e4a1e91e60c5dee69002b40a6290ba9ed4b2de87372313ef256f8b207e7",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem01/solver.c": "7671d51b838c55cd67c12309487862d1d94518396afb13fed205a57e0a369f3f",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem01/solver.h": "dda59b7cc162a46c663c6c860556fa6d1dd2f08ebdfc47f77f657af12fd9f8d2",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem02/CMakeLists.txt": "6b51f0d9f8da21cde5cacddd5bcf75d7da30349ce452a2e3767ae03008675bf1",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem02/gpu_direct_solver.cu": "eaf0c3fad3d418551bff3a655a479e07fc9a963ab729c3e6c4d48446db57e03c",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem02/gpu_iterative_solver.cu": "a070c03c9dd934b1ba621d173ef09820feaf6618184aa1ea0602f94d04eceaa7",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem02/solver.c": "ea585ebaf584fa059946ba40371378a03b5404629f841e66c286eb1a8f2856f4",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem02/solver.h": "91190f133a37b680b6e3618951b821bc120e99a6a395555c76be3e650c16aa46",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem03/CMakeLists.txt": "6d1f9bca7404d9c55e951e60b50fddb6cb796c056963e9b525ee1c2a37a9e58d",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem03/gpu_direct_solver.cu": "c5bc0fad46b284a51933db70b64ba30173580ff390254a64084ea8eed7b4dea0",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem03/gpu_iterative_solver.cu": "3e2a64d9a485b59c833d874804b6f1c49b93b4ab0c2f3b8161bece53281d7c76",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem03/solver.c": "d6fbf28d4edd37a4f662a288727b06ceaaf0e2b0cb261ce43701c60438f3b79a",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem03/solver.h": "38f5acba32205bef544eb3fd698223b1b69ad12f9ea093df82ae369319e10c6d",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem04/CMakeLists.txt": "b0f23146054d69219e83c2ada6625726efc83a26f47fff71c764c8f3479b8626",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem04/gpu_direct_solver.cu": "be9e73332483288c182b78bfbc0578aa0f6334244c1087857c1e408b2899e693",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem04/gpu_iterative_solver.cu": "6256dbe06e47e4a0afd8bdd6a5b6a64a11ad8a9d86b2154a07a48460d5e4600a",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem04/solver.c": "3ac21a29fd959facab873bb9d199c22c5c2b2850085b05a730f5c4f44014efde",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem04/solver.h": "347359b7c3be60dc729da682f7ce4ae31af4b586378d8e4f84432b431e4f2f06",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem05/CMakeLists.txt": "2652e14ff7c37a137ca37af877b0ce30842c168f744f7d41205bf282538f9aae",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem05/gpu_direct_solver.cu": "6ede548253a684a42a8affdffe9275896765b06673629185f66950d9aba17d9d",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem05/gpu_iterative_solver.cu": "597a1e1a7c2bd07b8caadf9774c9edc7a9c159b9b7070fed3dad6df6bdbe8f5a",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem05/solver.c": "50a2316541b1c1f3ad093c159956ab7850ada939117a71251a11cc2acfc933b7",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem05/solver.h": "18f05a33ab948058009d10274dcb19f1dea3697bcfe7131b654b782143b97d5b",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem06/CMakeLists.txt": "c115c3f24c7cc04af7ca7967c110a1a505cb191b19a7f87794e4b32c99499de5",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem06/gpu_direct_solver.cu": "205610afbe1d7731c8c66217a2f94cde32cde1f3d8bec0d6a808a8054cac4933",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem06/gpu_iterative_solver.cu": "cdd5245302d64aa6fe663c0f4cb8e636053a13bf2bb632d3f8b9cec14c6454fc",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem06/solver.c": "4c412ee25bae6d09c2ab9febba5975d0099b362a7a150be5e38c71d97e1da360",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem06/solver.h": "1715e0c81a98b18dfe77a90afc994a26fb4c8e364600445883af1b9e8497e08d",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem07/CMakeLists.txt": "3537e428b91b081b019b1deb6386698576f0d432b8113b5a3353421d4c6ec417",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem07/gpu_direct_solver.cu": "984e5d4fb9e73af6371fd536c463f07d9d8a284327311c7e3f9ec652deef3152",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem07/gpu_iterative_solver.cu": "86d8587e2f85b151ba5a74c4b347411820ba868638095c5074a532ed80cd9a7f",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem07/solver.c": "94f2f15f3994f2e112531831e7673004e41c2d33bc77b462928240597d2af3d9",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem07/solver.h": "2383213455ad23816c21087133f31401d40a8d38c70681665a05e679a2e3bb61",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem08/CMakeLists.txt": "e6a8530d39201254b5e217fd9d7cc28523fbd156e03109362134fdaaa13a038a",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem08/gpu_direct_solver.cu": "d5495f7a71ca6b74af2d743560b4a9f97528116e7661675290f4f2de9180fe09",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem08/gpu_iterative_solver.cu": "8b0e52d37a6391487c817501ecf95d8ac06b6f11f5c8f5b72c3f5ca140ff4345",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem08/solver.c": "0ee5d2862b420fca1776392ed8f01b583b2e30b9ca83827adfca9f3b03d16655",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem08/solver.h": "2499f02d641dd7f469956fdb1da5d229272e278bad59c17850f4d7c7a9726492",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem09/CMakeLists.txt": "0c992c5cd93d85c43e32faad338feaf5e84263d6aa689e238e97b84423be9e89",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem09/gpu_direct_solver.cu": "18e3d935e4add89416d72d0f49bbc056aa5df8a09ccd79c00334dded7e6e2a1e",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem09/gpu_iterative_solver.cu": "9b2fdf43177bc1d5f4d043b5d8a06d92bf462af7c895db5059b601b6ed556176",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem09/solver.c": "31cc9aa9fff403ee66db4064ea8076c947b6883a5d235dd9db65d63e4d47deca",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem09/solver.h": "a3769f948200a0ccac3087ac3671a2e8385b0bbcb5a46c8820e8e0cb85d1fa38",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem10/CMakeLists.txt": "d2b2711cf28a94fb0a89b4466d519a1e74fffd7c87e2aadf4d89cbece6484091",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem10/gpu_direct_solver.cu": "8d73330f93e0813d85088a164d85cfd6ea2a60878a4f7cb692c3f8e367580891",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem10/gpu_iterative_solver.cu": "2b53c50fca734b35c241a056ae7a9ba0cc54d74a225b23ce2649ad9d2e8db6ad",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem10/solver.c": "2fe56def9355a106ba837716dec845c3d237eda55bc01493feb28223636503fc",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/problems/problem10/solver.h": "8939415a98f35cd71f2dfe6942b5f412d7211ec96db051953a12f01e869828e6",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/src/diagnostics.c": "674ee88b6fe773e86b6ee0f9ea6bd8ea65a8e9deb3894d0f0d99d481431ab4e6",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/src/matrix_market/highlevel.c": "1e8045f9e75ee770a21e7d5da755527747fb453ddae1f3763b069b441b9ebd16",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/src/matrix_market/mmio.c": "6c0754ef11472a56773e5df6fc89203cfa58787cdc2345c1b11ea0773a042194",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/src/mpi_system_loader.c": "9016d248818131a09821f885fee3b33a3bc91be49240b8883c174085b14ec9ae",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/src/petsc_binary_reader.c": "d5a8087edc2f77e88fc8ed59013628a36f2bd918d84da565bb6110cae042998f",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/src/system_loader.c": "eec277fa0c0ddc65c28681c6374a1b7c7c845866441d5293db53982cd301c461",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/tests/header_include_order_mpi_first.c": "aaa4516619796b7e72e1cbe9472837b58a41a66f2b40673d6e096f2877e1d6d3",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/src/tests/header_include_order_reader_first.c": "58413fdf9a7d785f1f5206a87b209d1f95767fcf7e831671343086f0ebe1a6c8",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/submitted.sbatch": "cea756a55739c59043bb54d611fe1a3609f4dbb80598fc4625c024ba1ba92da9",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/tests/check_result.py": "5635d9680b321e766cbbc3e197cfcac6305421e4527898ac5e105834caf6afb3",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/tests/make_small_systems.py": "e20ed0a8f961cf62a64271c70f7265bb3fd4a74c44bb57e60565be95bd25276d",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/tests/small_systems/neumann_A.dat": "f9a360463ea2f6d31a867f6dad762c1e52c1ca11d142fd02cb7887df86647ca1",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/tests/small_systems/neumann_b.dat": "edba380a1e19ddfeec14f59e3d6dafcf08e68079aaf97b7b3198b3dd266ddc59",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/tests/small_systems/neumann_x.txt": "6131f529659c5a011ab6d5e0c8ac77ab9a904f9563dd74736aee23aefc0eda32",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/tests/small_systems/nonsymmetric_A.dat": "0bd7b109687327e2a2a15908089bde38c073f2b60ea4b43316d992013e25c889",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/tests/small_systems/nonsymmetric_b.dat": "5266567f471232223434dc42bb03fe719ab5c4a3c97a4afc777bd357b109fe38",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/tests/small_systems/nonsymmetric_x.txt": "6131f529659c5a011ab6d5e0c8ac77ab9a904f9563dd74736aee23aefc0eda32",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/tests/small_systems/poisson_A.dat": "b60d5598f415a658a9a5d9621f6adea1406badbb92fb8acc3dcd87c2cdce386c",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/tests/small_systems/poisson_b.dat": "41819123d81814690ac4b7bd7f049b28d7f72987ea669a48d421e530f1c4b66a",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/tests/small_systems/poisson_x.txt": "6131f529659c5a011ab6d5e0c8ac77ab9a904f9563dd74736aee23aefc0eda32",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/tests/small_systems/scaled_A.dat": "5f9d7fcda4092bf1e35563565e7ed9c00865a77dbd44f2f9c6b94507e97cf60f",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/tests/small_systems/scaled_b.dat": "ff71ea282ec441bcc53cce92ef32ca203a53dff18059197cfd15d4b6c771348d",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-9270818/tests/small_systems/scaled_x.txt": "6131f529659c5a011ab6d5e0c8ac77ab9a904f9563dd74736aee23aefc0eda32",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-accounting.log": "53c76800e7854af269b994e1efb6a49cc983fd2a25175d720d6c02786acafe5c",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-build-submission.txt": "bafbe4ec5faa65fdc113a287928b60582bf400b9300f0cd535164b3b52ed792d",
+    "logs/2026-10-23/gpu-preparation/cpu-build/cpu-control-submission.txt": "e738989735fb9a2a31e218fd43c42d3f054c22f90b9a6200407aeaa5f455787c",
+    "logs/2026-10-23/gpu-preparation/cpu-build/original-control-accounting.log": "74b91f5d2c59150d4019be8af2507b7bf1959b5fc4f948947fc232eae48a1636",
+    "logs/2026-10-23/gpu-preparation/cpu-build/sc26_t2_timed_build-9270818.err": "e8bab8776b31a7a846c866a156ab88518f36bc192401d0135e5face30f6783d3",
+    "logs/2026-10-23/gpu-preparation/cpu-build/sc26_t2_timed_build-9270818.out": "197f8d4cd529d40aed37c1672be0e48f652dee371b05a7dd23de4a09314ffeb7",
+    "logs/2026-10-23/gpu-preparation/cpu-control-verification.json": "ee3bec09012500481289a062fbfd5d3613004a774ed9ce6f6350b2fadded5865",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-build-9270818/source-sha256.txt": "edcbf44abeee448a736cc01bfe16ac58a052a74e44a132a2d67a2f35e0080d6b",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-build-submission.txt": "bafbe4ec5faa65fdc113a287928b60582bf400b9300f0cd535164b3b52ed792d",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-0.time": "f069caa7cc2c1586aa14f94c5495bb684b9d94e47f469e9afce71336ed51904c",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-1.time": "955097e14d0324cff8b5310a0c087584d1ffd0b48cf71bc2908cb9e0e8890a6a",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-10.time": "bba24cbc754b84a91d410cc03cf9c64f39d09a340e07be0c91d5a637d8773df4",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-11.time": "8be3a5e51c2e1a1e0b5062bac848d95452b279230fb9ef7eeeaf1bb810b320fb",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-12.time": "47d42262beac9eb2e11edb4d0ed322e2f835cbb7a9e09a7fee7a311c5924c78e",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-13.time": "7be190ee8d4827b2afc2e93d639c9f4d95eeb9dffb4b97227f2f4dae2c1e71dd",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-14.time": "05b1d38d7954d079fa8a9f1cd693738dc832b6232a5a6ce43ff8aaee07d8fb90",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-15.time": "164d223663cd9e69437f291491ac20644ea81c101007b96751bcac9f11425c21",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-16.time": "80a73b0fcc5cb7546c2f6bbcea3a81fe841729246c00e0998df81dc1b5c976da",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-17.time": "a230acaf5a2d7186614fcbae4bf81ccb9397c8229f867b219008eba21c628bc3",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-18.time": "99355804645f5f9d682994b36f975987c923667f09ff2d870e98047a2c90d10b",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-19.time": "b09f8f40484dfb2f17e2c9138cb64c9ba62594a408084df8e591ebe9aa186c42",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-2.time": "caca7b80114f5bbcef822e986f9b00b8a070f9d286c87131022867409c9dbf5a",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-20.time": "38ef1e974c0daac0be5ae0e2970f3a336240a9700e69093bf48887cb515ac6f8",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-21.time": "7b689e2f50061e24b55f064d245f99184b8fcd35e08ae35018d2fee13b40919c",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-22.time": "7ac72c45c107f4450b290acfbc45d97394b5bd99bdd991c8634f1d4a5a49e1e6",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-23.time": "3e38e90010ae409839551050977371579d66f4da4af8de73d3c344a3de7bdbb0",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-24.time": "71be77c9fefb3b6c96755bc5762fd92e4a4d37c619107640d6827fe717c22e48",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-25.time": "829c00bf021735678253d415813ca8b53d8fb12a273fa76d3cc9278e8e0acfbb",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-26.time": "bf11082c066db9a4dcbe51184347f5d9b251f5da57dc05eb07490f05d8f1d440",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-27.time": "0bd99b5f95c9ffae39801ec2a4b2460d2256fa9acafc19ddd3c38e88ec0cdce1",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-28.time": "60e831ad7f590ddc095cc600538ba92a6dac5f9dab48980b6c7323f9812f52e5",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-29.time": "80c87d321a242068f1f50ea65c46fbc5a751bd6cfc09c261e43bb3b75d6a3f56",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-3.time": "b2a34a5e0f9546a8917439065c81bdd5005ca3d726a449f4122757d674476d38",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-30.time": "c6a37f8d394624498078b4296fc584a29efe2de7690c5190a5c6904a59c33157",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-31.time": "7f796b892c9be2ce873fd05e05d8f91ec88a07e186c4324734478a9f8a169a4f",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-32.time": "ef87d73b9a85adf9d5bf2e04fcb49671bb5fe6bf6b0e53ddf12a95a0c0ad8b21",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-33.time": "3a4d332e88ef55c0ed5b029b4ccfb649a66a2160f8d60d845952d9c06359f0fe",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-34.time": "e7a7d516cf318479cef0511c52b97333846bbf9cf619b274acad77fdc99e1486",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-35.time": "3f00ff142e8238598f6e056f9cfae741b7209ece812ed9efcfcceacf6712c451",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-36.time": "af6244daa14043a1389739108cdd63afa88ef54c97fa9e3345be46dd60103f8b",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-37.time": "e0805c7eea5b6b5bdc67d357493afb8a4a55a67eb7d43ceed26189292127c6f3",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-38.time": "84c884a08a7f1fcbff26334a79e5ea175a449583e42402a9fc87045146241a4e",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-39.time": "0b55b4a939f8ec7e1386a3732105355b4108dd75e2285974d63495738a0a6007",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-4.time": "13b046e0423b76f0d6aa489d2b10b44cc03233eba8a3da83bfa4ffe6ab1f074b",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-40.time": "cfb97ab27d9f8133c7cb79ab17d9d7bc805c85c1f7eb4d05ca66775b6f757adf",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-41.time": "73200a350715f4ba3a1af002c00833ff3c177267b3cba4661127e818e3fc94e0",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-42.time": "529b2e515ac3a49d7471066561504c3765e081a76198aef36a70e8a613c209b4",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-43.time": "0ee4f58df324a4c4e2c18354862a71ea6b143a4cfe5491e3fc63281e0199cd58",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-44.time": "02f12b0f2ef63f213eedb70fa884020375654b40539ae90474f6855b630e5a2f",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-45.time": "47d6f303a32fd17c0c7b004580a0783bca02cf4f10e263a73b1d8a9d981f9768",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-46.time": "aa6289ad34d2773bf5aae130e12bf5721863ce2929f777a659e04cc06d5360f5",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-47.time": "cde46884addf03af098a3fa1a620d180c0ef1359a05bb134bf808616d1ff4401",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-48.time": "c9c5c1bc6030046193cc26c20a1cdab264a263fc35c6117006e5e51182ba01e0",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-49.time": "ef1656d6b33536cabed718c812aeafa56c265c9c19acb68e3097fb40fc1b34a7",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-5.time": "ff34e3edd36146f990b8bea0fcfc8d3ebd1e5956d3418494bd9f1fce8f37a196",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-50.time": "f31fbad824422d13ad11ec7a6b65c7cfbcd5b3b6c2adaa3c83d2dca33206c293",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-51.time": "28ba975d4587e743bfff98b61dd9b1497af203a9793d53c5707a0408dc423355",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-52.time": "f3676c85810cacd0ebb3f9c587a36ea1472b691e197cac0ec598e9745752ced3",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-53.time": "74e05edd6454b822def896fb8848e1477a275c87e4680480cd6378508f1c9508",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-54.time": "6266d48d6517e46423cc4f5c3f49d28437f8213d9244bf92adedfe77d03082f4",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-55.time": "9029e1db9e94dbd61f776e73588d8b6b066dec767bd3e3d3e15ea15b3a41c691",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-56.time": "008164bee2216b02522110813936729e33589b066329e4073390b8e3230695f3",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-57.time": "d0b1050ed11ede5a82041459190319bc46eb696f855a827f0400cc176572397e",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-58.time": "928d0d171c1e7b3e3dcb0722983b387fb318530a89a04fec18c03badc92445b8",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-59.time": "4c0c09a3f7b5bf7d696b79f1f021e6f7baa0b9e5c8c300f6ef5a52d6500cc13f",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-6.time": "7ed906cab74a3a88899856c486a18b9e29fd44e17bf310fe27a8e22e9e86eda7",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-60.time": "314d255a6f49db436e615a5813a2b77b5b57260b1060a23b9f60636f561ca302",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-61.time": "d4e9c8f7749afd33486342120e743ac2de73e1aeedde1972aabffaddd22af2b7",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-62.time": "d3b430121684486c6353733290ef5b46e8420c03f5013f964468293fa05c7086",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-63.time": "283303e24cd41ae57f77c804e876bcd96868a2587cd1c687b3371f85440a30ac",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-64.time": "bff953a1f0ab19fdaadcba448e300acbb04c67b3c509225b34d3179ea60337b4",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-65.time": "a3adc67bf05e462ff5f87db272c75a702d0db90ba0a6075ffd4663d225710d09",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-66.time": "1a17d8821be0f0c8a9c2e5f1036f070192b8c53685bf3d8292e61398d0149163",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-67.time": "06a405e96e2a851cedd7d5139dc430892254e859b45b665ccb25a4c12d0ea0ed",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-68.time": "6219ec584d3d3c23ad2994f72b76d0b4bf8c2c417b7801721e69b66652c8b213",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-69.time": "1fc2979bf8ffff7b82d69d10af666b3d06efea282ba61ed1fb4cc9490eb2927d",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-7.time": "fae58374b7625cba924a91d48cac4eb67daccda1567449b2b2a90a731f40c946",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-70.time": "62025fa62a6cdc3a3556dcf65f191c3aefcc72a5ea7daf576bd3b577c12d9a97",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-71.time": "94e8c04de0407a8dd03b7c2581226e9a0d09e736714358783d0617ad93f86020",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-72.time": "cbeb7fa9e6d935f559e9d7e1573f3626700934e534e54e0592b6447ada7c6d9c",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-73.time": "39e1f3cad2e3b62bcb28f570d650fe02823c239252a3a9a8f7795c96fa39698b",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-74.time": "a528ec56cc69f496695b7985aa8ee52dbd1283279f4380e9706fc0c64a9fb54c",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-75.time": "fdc24c89f77648828982176b882b7ef24f84aacdecd84079286e44b024171d7c",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-76.time": "f8d5aecd6511d3066a3168ef2727ead446424a7abf20c6a63b62644095fef0c5",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-77.time": "5e83caeabf7542c2abe93a2e678752ac5f3616270a2df5c773859e98f5c0f7f7",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-78.time": "ffe2be678147abf97d0e5edb7bf25b1db2908a5a58de9d7fefc2d8e8405f3b47",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-79.time": "456f24a16b92707bed9e719485b990446a7d3bab1bd9cafad017581a105e94da",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-8.time": "f2aed37cedb2c27735003aae69c66a3f78080e9d667a24f01933b7eb1b319227",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-80.time": "918d8d6965164749949d7961f8e62850b0266c5031410f27bfab412a122c3c46",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-81.time": "2aeaa3c6a9f5173cbe01036a411937896c39f8afb190efd1d4b9ebf42e72a8ea",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-82.time": "e4605e109a30e2eb747f29c67f9891780bed99b34582824a167cea9a0296b62a",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-83.time": "0115ca5ac046fab3584aa1126726bd99d1268c7912ce820073d40159a0831df9",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-84.time": "23f6f90bb49f83d36f6d94182cb340ab6ffe1cb24870f2ae7585652a4f1b0bc6",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-85.time": "221e9d6895ef8033e9952ce30db5e55cbe07a777438a9243727d64a25576fe6a",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-86.time": "f515d595a74ad87c45879a81d2cc3d4ca3a8c7efcebe018d560aaf5892d998b5",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-87.time": "01043371be597295a5d4da90d53f2bec280ec26c1cf70f27a270613058ba07b0",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-88.time": "c61de30de9e33dbdc6b1b8c575badacc5b59ba4ab0e26db42579f39da0ba6ab7",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-89.time": "dcd5a3016fc5becdffec60d1a1fae079345df402934b1fea709bdac4e84aeb3a",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-9.time": "498a4256199480813e659cf6a28397f08eed5f4cadf85ebbbfc5df510dab1f25",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-90.time": "44f8ff1dcada0bb7f7f215b078fd04becbf13539883fd5417491a60335d26cd0",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-91.time": "3ace679c88877fec0e13bfa72248baa12c0f2213429209ac6b11c5cc7c553a0b",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-92.time": "38f746b3cace3d97594cbc3cefa500fb52dfa3255961b0fba674b64459302da6",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-93.time": "59add026616ef56319ac5bfd56d79168e6d8b5e3842a3c5ef3dc426b33a34970",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-94.time": "c5459e5f700bea006ab36bc3d6ece25430ef330a54a0118a211a1429f9f9b43a",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/rank-95.time": "c1c2697474eb721b8ff96021127d88eb00ed095c3eb4aa08bb053063a74228f7",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/solver.err": "86687fa09b1ade48d82ffd72a8420c335c9f6d774a5e89b7e01d9280c09ef90b",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-1/solver.log": "837e8960c7c921ca20081c5e015f4439de809201bfb3531942970ed5351b9a82",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-0.time": "30b4b4355045cea90ab89ce06efbc8931a9b9b178abd040593b1c4548352b588",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-1.time": "4030ce5d87f173aac0f8d78c8c2084ccce99e1f34ea2818380e28991db55d3ef",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-10.time": "d44fa967dafe2b6d9a5386711d1a9bce2bbdca632fdeaa16e903c7d8a3e677ad",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-11.time": "497b6a45b33e3ec99ed2f25b9d5aed0678cf3f66676aa7eaecb298a98a6b6449",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-12.time": "abdfec6b43e85a2fafdf8fdcff017c3143b51190fac99ee5121f20fb6a303633",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-13.time": "fc4ffc1f229cb338d10a7557ab84e95dbea4213fd6286ad12416fc9159b683cf",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-14.time": "382490c02e64d39921f005f212d125765757d2ae01dd07b735f220d2510210c3",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-15.time": "0f42d81e08a069ba1b5fa076c78acf404f1dab037d4e09186673aad6688da1a5",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-16.time": "ef97151399411526306f7970a829e295f2e304ae9bbb133651001d01fb4b0a6a",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-17.time": "ca803fabd93d19a25c526349397288c0ac017316384ace59c9dbf391c3360bc1",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-18.time": "4b30aefbb04e800b642ec48411af2e0a7fe9750a13aa8db2dd39c4c6b4f87c3b",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-19.time": "cedfbb4b7cc28c6227331ed9b77c5f725f7285a4358c10d30e3168fa742f0dcd",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-2.time": "80376e1558d6cbe151e2e9b4cb7327d33a520fff896bb506fcf2eb71d0cc2402",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-20.time": "8f9b7f6400f90e9ad5b7830b74366cde1a9037fedb97a525ce4e665cb346eddc",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-21.time": "eeab5a92efdb480eaf2c487e1eeed5ac6817e83b8b3deaf20ab7a6b63f13f61b",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-22.time": "d11930ada0f139a54b9568e13488faa75bc8e0d656a5dd67a077ba5e43a14784",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-23.time": "62918b19ea9e53c47088e1a83c6ee10b03e82fcf0283923135bc45d9393e0e27",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-24.time": "b44bcdc396b2400c8693ff76dce2a48f7a6a18c5ea107d05e8f66dee71e2b7bf",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-25.time": "0fbd8defb4fda7e0c4848672f9a8af0f41454934f287174cb484d6fa238130b8",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-26.time": "41119a6ea753230233c896bbbd82afbb729ec54263c08724e1c142d579d20dd2",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-27.time": "3d858b945068c1425d41d0effea1ee129cd4baff2c618d3e197429b26dd15631",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-28.time": "d653712a09b6164afb5ccfb896dbfa81a845a88ea641831a5395f61a871e30ee",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-29.time": "2e4af87e4e0d8b96d6cf1688c5e0db183bb55b0d8e80fccbb9f2236030d663e2",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-3.time": "acdca9dbc16186e0dc15e9a3e0b00eee8e60d6c18da08f033182fa78c12fe2c0",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-30.time": "77168c9c721cb6c69069a50d94b2678b050665458ba84211c28286fff3915e20",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-31.time": "dfa1e699278299dbb7c2ed9a6a18a4ce0c80ed83a4b6c1e425d397131a12ccef",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-32.time": "d0a52a55e5399f6c0c6e26cdd9827e2a414418962ec3c591092906203cfac53d",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-33.time": "8647422b4cac8ce6610817fd95f22b061a3672b68983b78fab764d8f9afda08d",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-34.time": "2f3c29561822936a5f4e8f51a978ac01bbae90c59e15cb61c0c613c3dc38c1d9",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-35.time": "bb35ce92aedfbe967f467c22ab860430c7b26d422f49e74788b72cfb95e02191",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-36.time": "4348bf6c7ca268b826ed076bed3f67c9cf190627f377340bf6cc8faf15295c24",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-37.time": "3fda5e561da90ffd9339f7e7b210b642a582549051f3fc483e80cf2d4d88d1ba",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-38.time": "6171a5a1fa2e715b2320eb827f263c4e0cf0cca4ec82a2075f7ee9bb3d261d13",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-39.time": "be2d5f19b995f821d0cbaa972853d7f0021cb0bede6cb4a0d78d9a8fdb7176ab",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-4.time": "e08d07b79515a273bb51d1e65e6a1b8989b68ab31ae6ebe56244e9f699159a1f",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-40.time": "76b032c9cee270a1908da7b16bf6e4246cc1450b69c9334849f9b4f1ad4848c1",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-41.time": "e6b05362bccedb2c8829451e9328af6237365e3538e1f733e79e1f4f7b56aba1",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-42.time": "e48cdd57c2617bdcf4aa7acc70508de1d27c51145516a116fc05740e34b4390d",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-43.time": "d30e6ffdd2dd60e59aeb839650347f61e589ebc434388cd20a4b960dcba00b7e",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-44.time": "783a0f3d322926e187d3f154a05adf5fe2ae954794ecd28daca13807e885d3ea",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-45.time": "c00bab648070980da283515d6ab69bc6e4965fd385b85ebdee76f2daad76e3a5",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-46.time": "5a4b68ea9af70192c59eebe133fabc5267fb736cbc6e5c5979fa2d05a4e30c71",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-47.time": "04c257785e24340109a2726427c13949e8341aeb285fc9831b625e3fa2c41d82",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-48.time": "0f9d3517a8c86d4e01f284a2c607c52f7a656de3050cff112db0ce3dd3001054",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-49.time": "df97286bc9acd8a4a9769624f5345d23a2c6d2f0861db2c7245e2b25a223800e",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-5.time": "32b8c3057436d4b29d1f1eade9375f845e119afbdb3de833def5621bc34bbb56",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-50.time": "17bfbe78accdcc94da9d93a7daa1db3955fd386f788fb3630dda03128b00aea3",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-51.time": "fc3a74391a7693a480c2a668520a95df71af7e18c7f4b2b3c8ca40444f00f970",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-52.time": "8cc44c89c7ee071d6b45b39b4ca40d461e2cbcdad5d51602e65b695f08150558",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-53.time": "e36d85b37fcddf576eea8b27e84876ec381800523a61c06b76d1c5736c1bc836",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-54.time": "6744150158f73c50111b41ba3ddec4663961a059a4f44b503ad84aef320148e6",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-55.time": "274f1fd7ebcc9a277f145e51a43c784efc8026d8ad74aded5a55d4e25a733387",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-56.time": "354041a51baefa5e6ab89e1f55ebad9c10a693a1f91e41b89c5a14d518a550c0",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-57.time": "62cb44fd3a24d446298afad0ed0382d7020ce57b0e96cef4fde3b1fe4ed49d60",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-58.time": "ba2e29ed5e244d224c9b05f971505e7a91bef7c01b769b768892b77a29c0a83e",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-59.time": "5219cdd40c9a47ff9a8678daeddbcd45b3f29d28593aa1c43a30278a744e3a18",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-6.time": "7a6d0cca02070ae9e97fe7c808ed8c929b7074f6919dfc9739af79fa00138f78",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-60.time": "5998cad0c0626eace15bd1cfffb634e465138ffb89711b3c31ada9d904cb2665",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-61.time": "cfd8c39d0d8613c8d295f701f62691350739b04daf366e55ea827bbbb31508e9",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-62.time": "6c164b38fe81c57a52354afcc89919de0bf3d9343556fa7d788b3d8f351b8a77",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-63.time": "0fcc6a32656e498216e7c09f068d9a7138cdb401831d249025d05529477e5a68",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-64.time": "f8dd4586511dabd2cdde402abdedb6c396c6b6731695f11d502d286ec3ea3d5e",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-65.time": "421d4c042fa20f9e046a5d1a831e18b40a1e3b3a3c402a23838c5f8172d8c379",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-66.time": "1bd18e71f929c37790a573a1591fd5e0ddc3e44f3f873fc01f777c28d4c5e4ef",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-67.time": "6532fdc064d775dc3a962b05e83f8c00dde4f3af565607214d7dd38dcdeab3d9",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-68.time": "9138c8b52a6204f3680b7592bef3e09b2fb6cc2999ca2fe98b6e65e333bc2065",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-69.time": "a5608367ae296c3b534f0caccd92a357e3066268bf517f82bddf1597be4a7565",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-7.time": "8efbd3af1c757abe7d3e7466d3b1e287186680d29acb4d4fb42fa2a9fd61244d",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-70.time": "e731687ad63eb6a24af4841f95a32308dc790a8bed3319f041627c85a0dd75dd",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-71.time": "924d9b2223eaa334b8ea8c1f843606b0798944c10d36c094280e921db6ceb3bd",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-72.time": "da2fd6320cc8302c9129063bf25e21928a47e87c4c9b72779c611fd9a1c5471a",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-73.time": "3dac1344d42debd613ba73f270b6308543181673346c3f9c138d767805859ec4",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-74.time": "5b29596ef85888ef0139350872d38e24f1f0ec0d4f925880f06ec03f51818853",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-75.time": "48a065f2581a9415c9795d13865a25d9da9976c7ea24c5431dc07795c6b4ca87",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-76.time": "1b4e997b265843ddd0a84cd6f09be406d10f2f79b18848bbfd8550f13cd30251",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-77.time": "b59361e03d9c7fff1b86a4d1b910910b7ef9d655284858dd48c48ad85d9c71ef",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-78.time": "ad5f1cdb8496abc3644d33fe665a9ef012bd38ab532f4447bb3627cfc845a788",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-79.time": "22086ccb395992fc0ba350f28005b82221cc6cd8050eb702bf9b9ed0df58cbb1",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-8.time": "1b42fdb95c51a75cc5a264a3453308beae869e63199596b87c13ddee17fb8641",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-80.time": "9d917cf463b316b82317489045c35776c520951a2249637ffde1a68ad954979c",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-81.time": "7717e93d06c550baea9844c791296e79822620ca0c438a773e357c7e37198cc6",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-82.time": "412db623ea0b708b04488ea56a2b91e35ace77b1674ca0976f95fe7d8046992e",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-83.time": "eeb7192bdafd3f592dfb122fe8066d8952d0b6379198da28233d4da175da7ea8",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-84.time": "927ea9dfb35389ec1311911bb2958dd2a55bd9b7e45e1223a2ca2b7f7d4065a6",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-85.time": "2033671ba37b55848e4ed4deae34fd21eb76f9fe908f0d522c05d5166f3dbc4e",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-86.time": "7375f92c15e3e6def0a214c2268083d521ce26cec0615ba2a04f70f63111c64a",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-87.time": "8a296d82692afe69f8e4c5b57d7077b993e4552a1c6998e159818db384eb49a7",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-88.time": "d0fa90715612a7819ef10fdd9f2150a6160a525c107e5207db9afb67508ea49a",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-89.time": "7275728ba0fcd06fb9bab2f99ce5ce98a0a99b0271b1a32e6508c0b5ee3c5794",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-9.time": "df569fc96707f4d9168ee9ec94ee92651ff23f004f4356e81abc77f439b4287c",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-90.time": "1a492e07d038cd9729df73aa49c59fe162a674148e9003ba6bf20d88636f563a",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-91.time": "542a3b66010b41e27127ca53fd15a9b773e1bc2dfdedf140475db885955d0902",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-92.time": "df1a6dc4838248da7a5d723e85bf900ba10c8a6f4a183f836999947f524a30da",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-93.time": "8fe3f39d6b8cc9d7ec0adccb117ede3480faab747881d2b0b190255d0213e61c",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-94.time": "6912af4b8b3eb8b049e52560f8e6741715c81c2a1979c11415edf0fd83725974",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/rank-95.time": "1a1a536c3350c25979ab85a8fce9e8e266b4b98b666b3cc2ab4f0fc1611d7cc0",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/solver.err": "78a0317432e5019a9ab3b8039980457d3db045a9e66c59d7302c785ab1d4c51f",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/full/repeat-2/solver.log": "94b9d9fe8f671b146db7943bece72db76d5ea7d5ce22f67c16534f5c8e5cefdc",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-9270819/submitted.sbatch": "cdce0c0f207fc0c2e085f4627bae1dc665187693fbe1976de41b4ade995ac1fa",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-control-submission.txt": "e738989735fb9a2a31e218fd43c42d3f054c22f90b9a6200407aeaa5f455787c",
+    "logs/2026-10-23/gpu-preparation/cpu-control/cpu-final-accounting.log": "3a1230195461a92e1f0de49fade8ad6d21da755b39a4eff4b396d6b84b769cee",
+    "logs/2026-10-23/gpu-preparation/cpu-control/original-control-accounting.log": "74b91f5d2c59150d4019be8af2507b7bf1959b5fc4f948947fc232eae48a1636",
+    "logs/2026-10-23/gpu-preparation/cpu-control/sc26_t2_s4_cpu-9270819.err": "e8bab8776b31a7a846c866a156ab88518f36bc192401d0135e5face30f6783d3",
+    "logs/2026-10-23/gpu-preparation/cpu-control/sc26_t2_s4_cpu-9270819.out": "a16794327b4b12c4274264629c308afbf868f3062498afa0235ea2a5f5c0aa4c",
+    "logs/2026-10-23/gpu-preparation/cpu-control/sc26_t2_timed_build-9270818.err": "e8bab8776b31a7a846c866a156ab88518f36bc192401d0135e5face30f6783d3",
+    "logs/2026-10-23/gpu-preparation/cpu-control/sc26_t2_timed_build-9270818.out": "197f8d4cd529d40aed37c1672be0e48f652dee371b05a7dd23de4a09314ffeb7",
+    "logs/2026-10-23/gpu-preparation/exact-verification.json": "758a3fb957087cba131c33f4c7f539575fc3355a8e8d13262bffc8305589a5c9",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526-accounting.log": "c4ae2521156b10b516f100db40365fc7050998a4ec0abf19a5aaae63fd258554",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526-controller.log": "487a5f61b81531ea392ede355d936f8a521f6194c5eeed4e19b62eb1df600f63",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/baseline/full/repeat/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/baseline/full/repeat/process.time": "2162ad9f3a643b39adde4c4ab0326ffd7faf171b0a32fc7cecbb715f300e7bbf",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/baseline/full/repeat/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/baseline/full/repeat/solver.log": "09fff6fb57efdf9b2d0dc2a7d8b00fb6083a6898f44de7e357b9ccfca8b8e21c",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/baseline/full/screen/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/baseline/full/screen/process.time": "e130dafc9e51392dc9889a1051b69ac547e79f1b41f910558083902b3d66ffdb",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/baseline/full/screen/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/baseline/full/screen/solver.log": "b8147e9307c32b3e25ccf90e2e06034a2ff49ce8e80eccf4780191839940a49f",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/baseline/small/neumann/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/baseline/small/neumann/process.time": "b7e5bc0483cf896040634309cb641ab29ff7cc630ee16eb2274c4259d343e585",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/baseline/small/neumann/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/baseline/small/neumann/solver.log": "8de3c1b879d680ea4f876b78632617327fb17b28bcd43e7e8e4796f28da51d0d",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/baseline/small/nonsymmetric/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/baseline/small/nonsymmetric/process.time": "2d7eae84a943312c9eed32008cc8eadbba196cf591f13451f3e77b628fd09f12",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/baseline/small/nonsymmetric/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/baseline/small/nonsymmetric/solver.log": "2a6d70bd013bed06fddf4ce261cbbdc8d414c16b29863c6ae1df5e5753cd875e",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/baseline/small/poisson/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/baseline/small/poisson/process.time": "1f87d2dc9d7a378ac7d034baa8e232fe941a043347764a79291bc84eb94b81e8",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/baseline/small/poisson/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/baseline/small/poisson/solver.log": "04e6bc953babb945cb3d7544af9cede49e56a7aceacadf28b9b06f0597395506",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/baseline/source/build.log": "faeea375eee9d5b2a5bb1e3eacaea24cd5ec4b7214a399cf549a014576d35680",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/baseline/source/build/CMakeCache.txt": "c79f3c6317ac55ebe72c231ebc1f3f95e6d5cf86f85d4931d7b51ce0c4b68b84",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/baseline/source/configure.log": "c54f27b72c6563a47d73440a35133b5a86438e6fe9b99c6d14a901dec2a49988",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/baseline/source/parent-commit.txt": "1804fcdb34cbfbd1ebdae5eb8530ba8054646b1bf244f9cadf470a8797f59e13",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/baseline/source/source-sha256.txt": "2360c24e1557b8cd4869ba708631a2faaab40026792a7c7df73e09c11bb02465",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/baseline/source/src/apps/MPI_iterative_solver.c": "34f19d4985ded7685eeca2f1f07e6dfec0af91c9039dba668be75a6dedf2a6d0",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/baseline/source/src/problems/problem02/solver.c": "c41653a15933fbda399aa305a6010a991fd2d7548edf27987ba35a20783639de",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/full/repeat-1/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/full/repeat-1/process.time": "d93f674fc5a83191c7205251158d4313de8cbb50d680f9d10519b4c34649ea0f",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/full/repeat-1/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/full/repeat-1/solver.log": "8e14f13c6930a4420e3924bf2289aea37509c1149a9243394511c85ab6196930",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/full/repeat-2/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/full/repeat-2/process.time": "98f7c200aa368a9d312af32b6d8495adf57e8ee1085ccce3f9f4992f65639a7d",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/full/repeat-2/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/full/repeat-2/solver.log": "9329ce4dcb92ebb9b83c85e8d31feaaec40583a817768562c383897076654620",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/full/screen/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/full/screen/process.time": "2a593256df07d43327129ec6d1b5ef79106394f821cf8f76f1265681ddc9cfd2",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/full/screen/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/full/screen/solver.log": "65b1cd67c362e5422299234b21ca2fd0e55d1351dbee839687ed71392dec83cc",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/small/neumann/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/small/neumann/process.time": "17ce1e3c3fdafc0202a813e5f9b099dece6eea8ae71cc404b7733590eda62e06",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/small/neumann/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/small/neumann/solver.log": "1c15c34c9ff5d1899ef2fd764ed57a4ad5ca6c1a3c4e3f1bf95ba0b049450ca7",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/small/nonsymmetric/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/small/nonsymmetric/process.time": "55d32b54527cecaecb8cfe8fb8b16f39c60bd18cb5de5e7b6be1c2dc067e5b3f",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/small/nonsymmetric/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/small/nonsymmetric/solver.log": "5ec7612770f288bc508a650ec53de728cd6cbcc9075b7aecd0d7f10b2c51baed",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/small/poisson/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/small/poisson/process.time": "23ed30cab444dc526ebac0930c31336b5d3b0f33fc1e823e3e19e2613ff12505",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/small/poisson/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/small/poisson/solver.log": "f19d9758b8e7e7311b04f481c18593fbc848b98a812e3648ef5285b8dfc2580e",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/source/build.log": "7c453b577fb130c65ccbe200a1617cf971c85f42661f483cd0714dad6a4a9ff4",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/source/build/CMakeCache.txt": "322f9220c10b871ec0566bf55185fbfe5b5e149de3c894de86af6dbb71dc4404",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/source/configure.log": "d2602fb90cbbe7a6188b387a6fca039eacf50575011a4e528cc1572987beab9b",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/source/parent-commit.txt": "1804fcdb34cbfbd1ebdae5eb8530ba8054646b1bf244f9cadf470a8797f59e13",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/source/source-sha256.txt": "edcbf44abeee448a736cc01bfe16ac58a052a74e44a132a2d67a2f35e0080d6b",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/source/src/apps/MPI_iterative_solver.c": "34f19d4985ded7685eeca2f1f07e6dfec0af91c9039dba668be75a6dedf2a6d0",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/exact/source/src/problems/problem02/solver.c": "ea585ebaf584fa059946ba40371378a03b5404629f841e66c286eb1a8f2856f4",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/screening-means.json": "8bf04e14d7e9d20119ed951d20f487bd6ffa88b51c6afcab2e2a43ca821a54a8",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/submitted.sbatch": "aa0625d12136076fc607d410425a3c13ee81882f66cab28e1da944019e40a54a",
+    "logs/2026-10-23/gpu-preparation/exact/exact-962526/winner.txt": "8e266f4266798896afd029fd0502d7ced391c612da600485ff68fa04c984b630",
+    "logs/2026-10-23/gpu-preparation/exact/exact-submission-20261023.txt": "113e7178cdf9f2507d281e07897cca2ef66d213bb446c94e9be57ef4abb452d4",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428-accounting-readback.log": "218820c711ed5cf47937a27cc4e0f9481b9af383ae6d2dc4bf01ff8b9d089c81",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/baseline/full/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/baseline/full/process.time": "8a2b5aa1825ac5c3b3242d2a396650fb376a72ba0de2fef4b22ea60d40a5d7c8",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/baseline/full/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/baseline/full/solver.log": "eb4e02df23cacdbd3b84bc54b222b6c7a93309dcaa9bc44dda6837eceb7821bb",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/baseline/small/neumann/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/baseline/small/neumann/process.time": "97413bc35666483d67532aa4a3707fd75908dddae81aaefc21bb97fbce485617",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/baseline/small/neumann/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/baseline/small/neumann/solver.log": "e641d8e151e37accf326da7aaa09f21b9adb9f635adb490472161b9635924956",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/baseline/small/nonsymmetric/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/baseline/small/nonsymmetric/process.time": "fce7b2070624b69b8b8e8c6c360c543c73979259cd9031385e99e5b2ed0574ff",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/baseline/small/nonsymmetric/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/baseline/small/nonsymmetric/solver.log": "0a9f074a6ac271c85e15088c45c3fbd68b49702066faa5579b1f1d8cded8ccec",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/baseline/small/poisson/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/baseline/small/poisson/process.time": "f00c93e9244bf1173dbbbee8d343c2c9e4182fa945289fbf64b09fde5218dcaf",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/baseline/small/poisson/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/baseline/small/poisson/solver.log": "bee80e17814e9c291a1c4c9f56d7117b0dc04af7d91914b5572330bac4948b87",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/candidate/build.log": "78fbcb5b1bc037dfb6f96f92ce06dcd7a37b0d17c9c4e286d2a2f3d86b1cd2ff",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/candidate/build/CMakeCache.txt": "00361b5cad3a12413ba0b48b9086ff6c9c989c2a0682ad3bfef389fb5391e704",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/candidate/configure.log": "edf951c5302f0bf42733e3188abd5fcda2c7357fe8bc154ee74b783aecbeea10",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/candidate/parent-commit.txt": "33493850528c3f43ce075a15fd00b2b139e5290312286d27f91cfc7f65bddb0a",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/candidate/source-sha256.txt": "b23c27241d691aa45e2b5899df31d329b266f388b462dbeb4683ee45f0c44186",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/candidate/src/problems/problem02/solver.c": "4e08cf8c7fd6892943fffb17f393ce175a4d7714ad1ee98acf8d3584bb9854ca",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/l1jacobi/full/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/l1jacobi/full/process.time": "5fbdfff830bcdabcfd79031a6de1c368b377d33d52e17fcb313ee85047ea35dc",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/l1jacobi/full/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/l1jacobi/full/solver.log": "19ccca494c792dd539c26bfc737cad68d74f5c61b297c7b4a3f44fffc593f3f9",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/l1jacobi/small/neumann/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/l1jacobi/small/neumann/process.time": "4429a377e4ae9e02623615fd5d35e4bb40c5c03723a1dd84e4b36dae3c4caa55",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/l1jacobi/small/neumann/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/l1jacobi/small/neumann/solver.log": "3ded7bca18efc4f5353a57c2a8e100c0b65d598c20c724414f28fdbbf75e9b5a",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/l1jacobi/small/nonsymmetric/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/l1jacobi/small/nonsymmetric/process.time": "7013c258796cab9e3a493d7619076efa2814373ccd456b18ebf9ba8fe7d2364d",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/l1jacobi/small/nonsymmetric/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/l1jacobi/small/nonsymmetric/solver.log": "9dbd19d2678f2cf27ff64ec285836fc417b642f69392c62756994b61675e3d2c",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/l1jacobi/small/poisson/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/l1jacobi/small/poisson/process.time": "e2ff1177609e355d9d43097cad6dadb4907e6a4d7b3bddfc592a21eb93b8d834",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/l1jacobi/small/poisson/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/l1jacobi/small/poisson/solver.log": "14854fbb2d39dd619921b8c212cd809c1587785c41abd2c46cfad4feaea520c1",
+    "logs/2026-10-23/gpu-preparation/exact/relax18-960428/submitted.sbatch": "96925cf4f22a22df3f54c77278130ab1f0b0a55ca2d90bf672948ff80cf1a869",
+    "logs/2026-10-23/gpu-preparation/exact/sc26_t2_exact-962526.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/exact/sc26_t2_exact-962526.out": "58f9f9ee526297af42571e2752c72d539bd544e5108bf097e6f23cdccfff4f62",
+    "logs/2026-10-23/gpu-preparation/exact/sc26_t2_relax18-960428.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/exact/sc26_t2_relax18-960428.out": "8b4301f1f0f2b6a44fc0b0469516404556d7bb253ce69021318886042101a050",
+    "logs/2026-10-23/gpu-preparation/historical-960428-verification.json": "636693e2d27f47eaa31b3e1ded717fd2c01dd5eebde42397c8027b3cdd4ff04a",
+    "logs/2026-10-23/gpu-preparation/screening-verification.json": "ef4e62110bf6f9c2c2aefb180f1a1d8fb583b291d2851a091f7c3f037aca42a7",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398-accounting.log": "e9f6e7993926765e90ea959a105020dbd0a74f78f0bdf1a1b1b24bb746a5f29d",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398-controller.log": "f06614058a3b1347d685a428da0d7daf1d9b1d57147d8285936046adbc26cbb7",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/baseline/full/repeat/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/baseline/full/repeat/process.time": "0f420e8be8038de2403714b1d42bf232de094627746b55d3dd6c622f5f0449b1",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/baseline/full/repeat/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/baseline/full/repeat/solver.log": "9ecdc2681b16b1a519f17e4aa1a8ab451e878b63f2c4d914a26ffa9d87b45d3f",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/baseline/full/screen/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/baseline/full/screen/process.time": "aa9deda9acf563078613346ddf9d6f68fb954e7394dca9c83ad75a231fcdba24",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/baseline/full/screen/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/baseline/full/screen/solver.log": "601f698909761b44972619f8bc5e3ba9e53551f19d84fd4ecbffeaa0cc20d980",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/baseline/small/neumann/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/baseline/small/neumann/process.time": "a978fbccf03cf52fa969a4f8bb708c7ac05ae5640b728c865dd9a7719831c725",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/baseline/small/neumann/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/baseline/small/neumann/solver.log": "0073e55c0967446af8101ffd599246c1b9222eead1e079b9fb4f517d25ece486",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/baseline/small/nonsymmetric/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/baseline/small/nonsymmetric/process.time": "796a18eb1b163e0d033dfb9919ae688132de04838c4b23cf96823dea3c543e7e",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/baseline/small/nonsymmetric/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/baseline/small/nonsymmetric/solver.log": "1bf50dfc8640b85e847bae7251d1de52689e8849bd1a5bd56192b1f04ccc4437",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/baseline/small/poisson/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/baseline/small/poisson/process.time": "99e678e65685d4eb8d17ec89e88c1fc7d6102c14db32ef4bd0d4f4cb545f198e",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/baseline/small/poisson/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/baseline/small/poisson/solver.log": "1058b60436f80af9abc36891b10c3d0ba82afcfc5bf70e3f0212bd64ca382d59",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/baseline/source/build.log": "a0222a19236386c06177c8646c04ac6ba75afd6517829c23b1e1f8ac62758dd5",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/baseline/source/build/CMakeCache.txt": "44316af27839ea602f6fd65e0b992097882a65fde6b1827443bee221e253fb1f",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/baseline/source/configure.log": "90b5cbb4a3766292a598a12e376352fcb1fdcb0d96c9ac9003ce465a2c196cb3",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/baseline/source/parent-commit.txt": "1804fcdb34cbfbd1ebdae5eb8530ba8054646b1bf244f9cadf470a8797f59e13",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/baseline/source/source-sha256.txt": "87970171b59c3e1316662348eb9748b452540d83bcba11ef9387381563801299",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/baseline/source/src/apps/MPI_iterative_solver.c": "34f19d4985ded7685eeca2f1f07e6dfec0af91c9039dba668be75a6dedf2a6d0",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/baseline/source/src/problems/problem02/solver.c": "d3d23ecdd3a015faa2d48cb9671d03a4461c404c52e653aec486c8e8baea9d98",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/full/repeat-1/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/full/repeat-1/process.time": "51c515ce515ef221b22f4c4650194b230d850144653f6089468236cc8633c00a",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/full/repeat-1/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/full/repeat-1/solver.log": "055246423abf198e8af2109b198b77173a83bf620c4165516f34fc9a45b3754e",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/full/repeat-2/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/full/repeat-2/process.time": "1c06a554d9c2dba347a8eada03057cfc4140222de61d0df9411f62af586f3c2a",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/full/repeat-2/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/full/repeat-2/solver.log": "627999e3240a1f8e33e75698dde3301a5d565f853219fa23d9f702301a09089a",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/full/screen/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/full/screen/process.time": "47b8cd8970a1a6e39275f6d7b3a88b8e3ac51c55afabe9c8984766023e21972b",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/full/screen/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/full/screen/solver.log": "a880fe9d64609d4427e6434b7e3e42caa8c3a3b5426d76f3ba2622175d2e53a2",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/small/neumann/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/small/neumann/process.time": "df714a08e83d53a9ab35628f484ff27b9f6ca50e32d74e355792cc5eefbf5fa9",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/small/neumann/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/small/neumann/solver.log": "820d09edc64fa9d211dd5212b32a7365046a039d00c1adcb7ebe3723fda191a7",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/small/nonsymmetric/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/small/nonsymmetric/process.time": "6ec7d3af62475304401fe14bc6ec4bc7b40f7e89b3d1b61085acdb21a1904abe",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/small/nonsymmetric/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/small/nonsymmetric/solver.log": "06e71c492a2ae70de2d156d3c342ec08098d38a92c69be3b730bde3ccf7a159b",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/small/poisson/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/small/poisson/process.time": "e2c68a464fa372548d23eaca0e0e21c0814339c223485a5ff73c584148f4e6c2",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/small/poisson/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/small/poisson/solver.log": "9c560fd3fb85b61235e714f431cc4a1a4a40880de31fa37010d75624146a0a1c",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/source/build.log": "2abcc8f401aacd42cfce54722c76d0dda76dfab5a844b7247dc2b8fdf46e0971",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/source/build/CMakeCache.txt": "a6acfcccc0a199d4a75845204ea47500a3fc90d78230f2d94b26edbac853cccf",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/source/configure.log": "ded924717675b7114c5f217f6faac39622ec762a788476f58199d812d0bd10ae",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/source/parent-commit.txt": "1804fcdb34cbfbd1ebdae5eb8530ba8054646b1bf244f9cadf470a8797f59e13",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/source/source-sha256.txt": "2360c24e1557b8cd4869ba708631a2faaab40026792a7c7df73e09c11bb02465",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/source/src/apps/MPI_iterative_solver.c": "34f19d4985ded7685eeca2f1f07e6dfec0af91c9039dba668be75a6dedf2a6d0",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/interp18/source/src/problems/problem02/solver.c": "c41653a15933fbda399aa305a6010a991fd2d7548edf27987ba35a20783639de",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/kdim30/full/screen/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/kdim30/full/screen/process.time": "528d334f5db482629884b1cde588eb1d2e6de059246ce853cf54332de8c5c17b",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/kdim30/full/screen/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/kdim30/full/screen/solver.log": "362dfae4891b7908080f09800b42338a3564b9924505f0b5d94d77669b0992a2",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/kdim30/small/neumann/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/kdim30/small/neumann/process.time": "4c4cf58edc77ac5b7cc99402d024516b16292669fe0f9dbf3d306889302abfe8",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/kdim30/small/neumann/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/kdim30/small/neumann/solver.log": "da5249b4789db751d29600398c403ee16e4aedf37dff2e3ca659794c56ad92df",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/kdim30/small/nonsymmetric/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/kdim30/small/nonsymmetric/process.time": "03373d0b72027402efdbc371fe6a86a5b780a4e78780d0e9d7413d98744f73f4",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/kdim30/small/nonsymmetric/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/kdim30/small/nonsymmetric/solver.log": "16f4c62621a2ff71caf0ece15bcaa03427c52a62d03a71c7ae6a6b1a7838a62d",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/kdim30/small/poisson/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/kdim30/small/poisson/process.time": "17b87b3963615269029e2e05cb392ccd26c1845652db2cb2e82aba002c259cf9",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/kdim30/small/poisson/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/kdim30/small/poisson/solver.log": "2429409be779318c0502b70ab3b58f27f9cf9b76a5b534d858625144efbb34c6",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/kdim30/source/build.log": "b393f24a6d43f4fe4db804ffe39abd7d8d94123a2dae3b0541635e4a558eccff",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/kdim30/source/build/CMakeCache.txt": "71f3f20ca51963d4a7070950f52e883781d3fae90bec575314558a1973c9eda4",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/kdim30/source/configure.log": "0dd5b02e242a77407df1a5d54e1518882b2ffe4360e227666097c04c6d17ae74",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/kdim30/source/parent-commit.txt": "1804fcdb34cbfbd1ebdae5eb8530ba8054646b1bf244f9cadf470a8797f59e13",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/kdim30/source/source-sha256.txt": "11a6b3baf7f810f7a005cc8638580a0569842397be1f1a76bb0b273073849a1b",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/kdim30/source/src/apps/MPI_iterative_solver.c": "34f19d4985ded7685eeca2f1f07e6dfec0af91c9039dba668be75a6dedf2a6d0",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/kdim30/source/src/problems/problem02/solver.c": "23baf4da0548d7ce491128e21ea5f404d6eda123f984bb9a0e0a3c06c297deaf",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/rap0/full/screen/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/rap0/full/screen/process.time": "ef4f7753ab5e7171e86330962b4b24c2b04b4116fc6cb415da285e9419c95af4",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/rap0/full/screen/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/rap0/full/screen/solver.log": "ef0ab567913c573e0034637eb00af8832be7190c9274f74e6de7bb7d3dccf261",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/rap0/small/neumann/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/rap0/small/neumann/process.time": "36849eaa03a7a3f40eb0f97e7a93a097d53d17e22864c94b17e54b4bb6e27b58",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/rap0/small/neumann/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/rap0/small/neumann/solver.log": "ea92da679ba68b1b7496c787a771992cde585b1cf6e3afa228af591ad6b66ebb",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/rap0/small/nonsymmetric/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/rap0/small/nonsymmetric/process.time": "7b8a0ee2c42e6e817690a0d8ca9fea81bd3ced76d19285bb6509f0af50dc2934",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/rap0/small/nonsymmetric/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/rap0/small/nonsymmetric/solver.log": "e6186aece85079570b74b3ebd0e128edbce0921168dd2cf2e06a2be061ccbc09",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/rap0/small/poisson/process.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/rap0/small/poisson/process.time": "bb9c0273fbf671aa30c3f380ee1dce5dbd8486d390987eb6630ea336cf97498b",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/rap0/small/poisson/solver.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/rap0/small/poisson/solver.log": "66d50bec6021d2c503f3556c8b2c85752c572c00b36da940bdcc76d41be2f332",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/rap0/source/build.log": "644d81d37c274776ad2a3f6afe57ddee7f75f756453c26d9df3b4ba137155aff",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/rap0/source/build/CMakeCache.txt": "fd6df3f104cdd7a50edd70af73684400e4a4c2c46900721918dce7b925848e8c",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/rap0/source/configure.log": "5d193a74707ed38527534f33817a95cd4548ffe42382b84d4236ab86b2efea17",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/rap0/source/parent-commit.txt": "1804fcdb34cbfbd1ebdae5eb8530ba8054646b1bf244f9cadf470a8797f59e13",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/rap0/source/source-sha256.txt": "a35c8dc8db0c637b1f95ba4f9eab494afa72ee587b3ac0254929d31b88381f9b",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/rap0/source/src/apps/MPI_iterative_solver.c": "34f19d4985ded7685eeca2f1f07e6dfec0af91c9039dba668be75a6dedf2a6d0",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/rap0/source/src/problems/problem02/solver.c": "8f92698f0ae4290cc0ca02763f3f49b6a22158beb67867686db24c51b7449a00",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/screening-means.json": "5e1bf5fe9e1ad0e8d356efc368ab7bd012087120df97e97ba62f0e02f9ba8801",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/submitted.sbatch": "bd6329d6df7ab864a6aa45eb11c2ed47fa5bbe26fdfb4d8014f09e3058175783",
+    "logs/2026-10-23/gpu-preparation/screening/prep-962398/winner.txt": "e97daaa3f201010e6079f536a8dd71fbd1cc8fbd59d431df959aa23b5f199700",
+    "logs/2026-10-23/gpu-preparation/screening/prep-submission-20261023.txt": "0d24184101c42fceec191733376750ba8646101d384f367cedbf0fae632126f8",
+    "logs/2026-10-23/gpu-preparation/screening/sc26_t2_prep-962398.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/2026-10-23/gpu-preparation/screening/sc26_t2_prep-962398.out": "cee41ae776d3d9775098d5dc01dff40d0a31377af1e50768e2728077d11d262a",
+    "logs/2026-10-23/gpu-preparation/source-identity.json": "09221146577565d65f0bb778e2625ba8dc4614e0137034f747504ee2a57e511a",
+    "资料/solverchallenge26_sample_code/apps/MPI_iterative_solver.c": "34f19d4985ded7685eeca2f1f07e6dfec0af91c9039dba668be75a6dedf2a6d0",
+    "资料/solverchallenge26_sample_code/problems/problem02/solver.c": "ea585ebaf584fa059946ba40371378a03b5404629f841e66c286eb1a8f2856f4"
+  },
+  "reviewed_publication_files": 577,
+  "final_scope": "Single-rank HIP prototype source/numerics/timings and experimental S4 against measured96-rank CPU; formal competition contract and eligibility remain open.",
+  "local_verification": {
+    "status": "PASS",
+    "changed_markdown_local_links_valid": 8,
+    "manifest_entries_equal_worktree": 89,
+    "archive_members": 91,
+    "independent_resource_edit_preserved": true,
+    "production_source_unchanged_since_validated_GPU_and_CPU_jobs": true,
+    "complete_new_solves": 190,
+    "recovered_historical_solves": 40
+  }
+}

@@ -1,5 +1,7 @@
 # T2-low CPU controls — 23 October 2026
 
+Later same-day exact-source controls and individual round times are in [GPU preparation and S4 results](T2_GPU_PREPARATION_2026-10-23.md). The earlier 7.126864 s control below remains part of the conservative comparison.
+
 Job **9269822** completed `0:0` on `c3n17`, with one node, 96 allocated CPUs, 60 GiB requested memory and **448 allocated seconds**. Operator: Codex using the existing team account. The four launch settings ran sequentially in this same allocation, with one thread per MPI process and core binding.
 
 The unchanged accepted v19 T2 binary, CMake cache and original input hashes match comparison job `9213608`. Source manifest checks pass. Each setting completes five full solves, with default projection and tolerance `1e-7`, zero launcher/rank exits and original-system in-memory float128 residual below `1e-6`.

@@ -1,0 +1,148 @@
+{
+  "status": "PASS",
+  "job": 9270818,
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "allocated_seconds": 172,
+  "CPUs": 4,
+  "host_memory_GiB": 16,
+  "node": "c3n50",
+  "submit": "2026-10-23T16:17:03",
+  "start": "2026-10-23T16:17:05",
+  "end": "2026-10-23T16:19:57",
+  "source_identity": {
+    "archive_sha256": "f9482721a702b88d4e1b5e87957f59a8391215eb1938a8599bfc055e1e1c1e3a",
+    "manifest_sha256": "edcbf44abeee448a736cc01bfe16ac58a052a74e44a132a2d67a2f35e0080d6b",
+    "solver_sha256": "ea585ebaf584fa059946ba40371378a03b5404629f841e66c286eb1a8f2856f4",
+    "driver_sha256": "34f19d4985ded7685eeca2f1f07e6dfec0af91c9039dba668be75a6dedf2a6d0",
+    "parent_commit": "d09163c18ce629d65d55c0e6316b9755b7e2975d",
+    "archive": "deliverables/SC26_T2_HIP_preparation_20261023.tar.gz",
+    "manifest_entries": 89,
+    "archive_members": 91,
+    "status": "PASS: all 89 manifested entries equal the worktree and the validated GPU/CPU build snapshots.",
+    "validation_jobs": {
+      "GPU": 962526,
+      "CPU_regression": 9270818,
+      "CPU_full_control": 9270819
+    }
+  },
+  "cache_sha256": "1e2c58419da18100d772cb2580853aec0b35b9294516a8a53669541d4dcac28e",
+  "binary_sha256": "ecce4548c40e0a0880f3339dfb278a17df6ab1dd0fdeb043892bc393975132b5",
+  "total_complete_solves": 30,
+  "max_known_solution_error": 1.249000902703e-16,
+  "max_original_float128_residual": 4.340013e-12,
+  "evidence_archive_sha256": "79069fe97b40c0447a2349b5e2315b86a8d4a0dcd646c14523b79edced7510d9",
+  "cases": {
+    "poisson-1": {
+      "complete_solves": 5,
+      "original_float128_residual": 1.306065e-12,
+      "iterations": [
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "round_max_seconds": [
+        0.004131494,
+        0.001534618,
+        0.001522989,
+        0.001514675,
+        0.001514556
+      ]
+    },
+    "poisson-4": {
+      "complete_solves": 5,
+      "original_float128_residual": 4.340013e-12,
+      "iterations": [
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "round_max_seconds": [
+        0.007610871,
+        0.00563262,
+        0.005299061,
+        0.003955049,
+        0.003933597
+      ]
+    },
+    "nonsymmetric-1": {
+      "complete_solves": 5,
+      "original_float128_residual": 3.957536e-13,
+      "iterations": [
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "round_max_seconds": [
+        0.002289866,
+        0.001993103,
+        0.001932522,
+        0.001895828,
+        0.001727363
+      ]
+    },
+    "nonsymmetric-4": {
+      "complete_solves": 5,
+      "original_float128_residual": 3.526985e-12,
+      "iterations": [
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "round_max_seconds": [
+        0.005663939,
+        0.004774635,
+        0.003182745,
+        0.003207148,
+        0.003230275
+      ]
+    },
+    "neumann-1": {
+      "complete_solves": 5,
+      "original_float128_residual": 1.126722e-12,
+      "iterations": [
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "round_max_seconds": [
+        0.002264957,
+        0.001902572,
+        0.001882265,
+        0.001835255,
+        0.001710908
+      ]
+    },
+    "neumann-4": {
+      "complete_solves": 5,
+      "original_float128_residual": 5.420348e-13,
+      "iterations": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "round_max_seconds": [
+        0.008189514,
+        0.006242749,
+        0.004405182,
+        0.004471367,
+        0.003737473
+      ]
+    }
+  },
+  "exit_scope": "Six successful pipeline/checker pairs under set -e/pipefail and final build marker, plus scheduler COMPLETED0:0.",
+  "warnings": "Raw module/locale and OpenMPI device warnings are retained in batch/small-case stderr.",
+  "full_CPU_control": "9270819 completed0:0; see cpu-control-verification.json."
+}

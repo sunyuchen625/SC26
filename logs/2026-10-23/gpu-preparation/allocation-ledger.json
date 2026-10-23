@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-23",
+  "prior_ledger": "logs/2026-10-23/resource-optimization/allocation-ledger.json",
+  "prior_received_GPU_seconds": 1466,
+  "historical_recovered_GPU_seconds": 208,
+  "new_GPU_seconds": 990,
+  "GPU_cumulative_seconds": 2664,
+  "GPU_cumulative_terminal_allocations": 20,
+  "GPU_entries": [
+    {
+      "job": 960428,
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "f11r1n01",
+      "allocated_seconds": 208,
+      "CPUs": 16,
+      "DCUs": 1,
+      "host_memory_GiB": 58
+    },
+    {
+      "job": 962398,
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "f11r1n08",
+      "allocated_seconds": 611,
+      "CPUs": 16,
+      "DCUs": 1,
+      "host_memory_GiB": 58
+    },
+    {
+      "job": 962526,
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "f11r1n09",
+      "allocated_seconds": 379,
+      "CPUs": 16,
+      "DCUs": 1,
+      "host_memory_GiB": 58
+    }
+  ],
+  "new_commercial_CPU_completed": [
+    {
+      "job": 9270818,
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "c3n50",
+      "allocated_seconds": 172,
+      "CPUs": 4,
+      "host_memory_GiB": 16
+    },
+    {
+      "job": 9270819,
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "node": "c3n182",
+      "allocated_seconds": 167,
+      "CPUs": 96,
+      "host_memory_GiB": 60
+    }
+  ],
+  "commercial_CPU_prior_approximate_node_hours": 12.480266666666665,
+  "commercial_CPU_cumulative_approximate_node_hours": 12.574433333333332,
+  "zero_allocation_cancelled_job": {
+    "job": 9270765,
+    "state": "CANCELLED",
+    "allocated_seconds": 0,
+    "allocated_CPUs": 0,
+    "reason": "Replaced only while pending by separate build and short full control."
+  },
+  "LX2_new_allocations": 0,
+  "scope": "Actual elapsed allocation seconds on one node, not core-hours or remaining platform credit. Prior GPU totals include failed allocations.",
+  "commercial_CPU_new_single_node_seconds": 339
+}

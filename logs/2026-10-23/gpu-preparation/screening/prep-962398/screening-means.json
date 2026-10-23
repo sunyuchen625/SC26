@@ -1,0 +1,9 @@
+{
+  "means": {
+    "baseline": 6.82554,
+    "kdim30": 6.839748,
+    "interp18": 6.744615,
+    "rap0": 6.854984
+  },
+  "fastest_screened_variant": "interp18"
+}

@@ -1,0 +1,206 @@
+matrix name :      /public/home/travissun/sc26-hip-20261007/exact-962526/baseline/source/tests/small_systems/neumann_A.dat
+vectorb name :     /public/home/travissun/sc26-hip-20261007/exact-962526/baseline/source/tests/small_systems/neumann_b.dat
+read function :    PETSc binary (0-base)
+sys_type :         0
+Running on "BW", major 9, minor 3, total memory 0.00 GiB
+MaxSharedMemoryPerBlock 65536, MaxSharedMemoryPerBlockOptin 0
+[0]: T2_HIP_ANALYSE | Vm[Size,RSS]/[Peak,HWM]: (6.36, 0.52 / 6.42, 0.52) GiB | Used/Total RAM: (517.53 / 1007.19) | Used/Total VRAM: (0.39 / 63.98)
+T2_RHS_PROJECTION mean=0.000000000000000000e+00
+T2_HIP_POLICY memory_device=1 execution_device=1
+[0]: T2_HIP_SETUP | Vm[Size,RSS]/[Peak,HWM]: (6.40, 0.55 / 6.42, 0.55) GiB | Used/Total RAM: (517.56 / 1007.19) | Used/Total VRAM: (0.40 / 63.98)
+T2_PREP_CALL_SECONDS assembly=0.000108213 migration_policy=0.000979587 gmres_amg_setup=0.114244879
+L2 norm of b: 1.637681e+02
+Initial L2 norm of residual: 1.637681e+02
+=============================================
+
+Iters     resid.norm     conv.rate  rel.res.norm
+-----    ------------    ---------- ------------
+    1    2.751398e+01    0.168006   1.680057e-01
+    2    4.179424e+00    0.151902   2.552038e-02
+    3    6.668754e-01    0.159562   4.072070e-03
+    4    1.225906e-01    0.183828   7.485619e-04
+    5    2.441942e-02    0.199195   1.491097e-04
+    6    4.620966e-03    0.189233   2.821651e-05
+    7    8.277963e-04    0.179139   5.054685e-06
+    8    1.576319e-04    0.190424   9.625313e-07
+    9    2.848000e-05    0.180674   1.739044e-07
+   10    5.155273e-06    0.181014   3.147910e-08
+   11    9.029706e-07    0.175155   5.513714e-09
+   12    1.483633e-07    0.164306   9.059354e-10
+   13    2.450670e-08    0.165180   1.496426e-10
+   14    4.177324e-09    0.170456   2.550755e-11
+   15    7.352214e-10    0.176003   4.489405e-12
+
+
+Final L2 norm of residual: 7.352198e-10
+
+
+
+[0]: T2_HIP_SOLVE | Vm[Size,RSS]/[Peak,HWM]: (6.42, 0.57 / 6.42, 0.57) GiB | Used/Total RAM: (517.58 / 1007.19) | Used/Total VRAM: (0.41 / 63.98)
+T2_GMRES iterations=15 relative_residual=4.489394687432e-12 rtol=1.0e-11
+T2_PHASE_SECONDS analyse=0.057149 preprocess=0.115335 solve_cleanup=0.046996
+Running on "BW", major 9, minor 3, total memory 0.00 GiB
+MaxSharedMemoryPerBlock 65536, MaxSharedMemoryPerBlockOptin 0
+[0]: T2_HIP_ANALYSE | Vm[Size,RSS]/[Peak,HWM]: (6.42, 0.57 / 6.42, 0.57) GiB | Used/Total RAM: (517.58 / 1007.19) | Used/Total VRAM: (0.41 / 63.98)
+T2_RHS_PROJECTION mean=0.000000000000000000e+00
+T2_HIP_POLICY memory_device=1 execution_device=1
+[0]: T2_HIP_SETUP | Vm[Size,RSS]/[Peak,HWM]: (6.42, 0.57 / 6.42, 0.57) GiB | Used/Total RAM: (517.58 / 1007.19) | Used/Total VRAM: (0.41 / 63.98)
+T2_PREP_CALL_SECONDS assembly=0.000089363 migration_policy=0.000218546 gmres_amg_setup=0.016870522
+L2 norm of b: 1.637681e+02
+Initial L2 norm of residual: 1.637681e+02
+=============================================
+
+Iters     resid.norm     conv.rate  rel.res.norm
+-----    ------------    ---------- ------------
+    1    2.751398e+01    0.168006   1.680057e-01
+    2    4.179424e+00    0.151902   2.552038e-02
+    3    6.668754e-01    0.159562   4.072070e-03
+    4    1.225906e-01    0.183828   7.485619e-04
+    5    2.441942e-02    0.199195   1.491097e-04
+    6    4.620966e-03    0.189233   2.821651e-05
+    7    8.277963e-04    0.179139   5.054685e-06
+    8    1.576319e-04    0.190424   9.625313e-07
+    9    2.848000e-05    0.180674   1.739044e-07
+   10    5.155273e-06    0.181014   3.147910e-08
+   11    9.029706e-07    0.175155   5.513714e-09
+   12    1.483633e-07    0.164306   9.059354e-10
+   13    2.450670e-08    0.165180   1.496426e-10
+   14    4.177324e-09    0.170456   2.550755e-11
+   15    7.352214e-10    0.176003   4.489405e-12
+
+
+Final L2 norm of residual: 7.352198e-10
+
+
+
+[0]: T2_HIP_SOLVE | Vm[Size,RSS]/[Peak,HWM]: (6.42, 0.57 / 6.42, 0.57) GiB | Used/Total RAM: (517.58 / 1007.19) | Used/Total VRAM: (0.41 / 63.98)
+T2_GMRES iterations=15 relative_residual=4.489394687432e-12 rtol=1.0e-11
+T2_PHASE_SECONDS analyse=0.000385 preprocess=0.017181 solve_cleanup=0.011092
+Running on "BW", major 9, minor 3, total memory 0.00 GiB
+MaxSharedMemoryPerBlock 65536, MaxSharedMemoryPerBlockOptin 0
+[0]: T2_HIP_ANALYSE | Vm[Size,RSS]/[Peak,HWM]: (6.42, 0.57 / 6.42, 0.57) GiB | Used/Total RAM: (517.58 / 1007.19) | Used/Total VRAM: (0.41 / 63.98)
+T2_RHS_PROJECTION mean=0.000000000000000000e+00
+T2_HIP_POLICY memory_device=1 execution_device=1
+[0]: T2_HIP_SETUP | Vm[Size,RSS]/[Peak,HWM]: (6.42, 0.57 / 6.42, 0.57) GiB | Used/Total RAM: (517.58 / 1007.19) | Used/Total VRAM: (0.41 / 63.98)
+T2_PREP_CALL_SECONDS assembly=0.000096482 migration_policy=0.000213766 gmres_amg_setup=0.016735239
+L2 norm of b: 1.637681e+02
+Initial L2 norm of residual: 1.637681e+02
+=============================================
+
+Iters     resid.norm     conv.rate  rel.res.norm
+-----    ------------    ---------- ------------
+    1    2.751398e+01    0.168006   1.680057e-01
+    2    4.179424e+00    0.151902   2.552038e-02
+    3    6.668754e-01    0.159562   4.072070e-03
+    4    1.225906e-01    0.183828   7.485619e-04
+    5    2.441942e-02    0.199195   1.491097e-04
+    6    4.620966e-03    0.189233   2.821651e-05
+    7    8.277963e-04    0.179139   5.054685e-06
+    8    1.576319e-04    0.190424   9.625313e-07
+    9    2.848000e-05    0.180674   1.739044e-07
+   10    5.155273e-06    0.181014   3.147910e-08
+   11    9.029706e-07    0.175155   5.513714e-09
+   12    1.483633e-07    0.164306   9.059354e-10
+   13    2.450670e-08    0.165180   1.496426e-10
+   14    4.177324e-09    0.170456   2.550755e-11
+   15    7.352214e-10    0.176003   4.489405e-12
+
+
+Final L2 norm of residual: 7.352201e-10
+
+
+
+[0]: T2_HIP_SOLVE | Vm[Size,RSS]/[Peak,HWM]: (6.42, 0.57 / 6.42, 0.57) GiB | Used/Total RAM: (517.58 / 1007.19) | Used/Total VRAM: (0.41 / 63.98)
+T2_GMRES iterations=15 relative_residual=4.489396808358e-12 rtol=1.0e-11
+T2_PHASE_SECONDS analyse=0.000343 preprocess=0.017047 solve_cleanup=0.011055
+Running on "BW", major 9, minor 3, total memory 0.00 GiB
+MaxSharedMemoryPerBlock 65536, MaxSharedMemoryPerBlockOptin 0
+[0]: T2_HIP_ANALYSE | Vm[Size,RSS]/[Peak,HWM]: (6.42, 0.57 / 6.42, 0.57) GiB | Used/Total RAM: (517.58 / 1007.19) | Used/Total VRAM: (0.41 / 63.98)
+T2_RHS_PROJECTION mean=0.000000000000000000e+00
+T2_HIP_POLICY memory_device=1 execution_device=1
+[0]: T2_HIP_SETUP | Vm[Size,RSS]/[Peak,HWM]: (6.42, 0.57 / 6.42, 0.57) GiB | Used/Total RAM: (517.58 / 1007.19) | Used/Total VRAM: (0.41 / 63.98)
+T2_PREP_CALL_SECONDS assembly=0.000084662 migration_policy=0.000213016 gmres_amg_setup=0.016678557
+L2 norm of b: 1.637681e+02
+Initial L2 norm of residual: 1.637681e+02
+=============================================
+
+Iters     resid.norm     conv.rate  rel.res.norm
+-----    ------------    ---------- ------------
+    1    2.751398e+01    0.168006   1.680057e-01
+    2    4.179424e+00    0.151902   2.552038e-02
+    3    6.668754e-01    0.159562   4.072070e-03
+    4    1.225906e-01    0.183828   7.485619e-04
+    5    2.441942e-02    0.199195   1.491097e-04
+    6    4.620966e-03    0.189233   2.821651e-05
+    7    8.277963e-04    0.179139   5.054685e-06
+    8    1.576319e-04    0.190424   9.625313e-07
+    9    2.848000e-05    0.180674   1.739044e-07
+   10    5.155273e-06    0.181014   3.147910e-08
+   11    9.029706e-07    0.175155   5.513714e-09
+   12    1.483633e-07    0.164306   9.059354e-10
+   13    2.450670e-08    0.165180   1.496426e-10
+   14    4.177324e-09    0.170456   2.550755e-11
+   15    7.352214e-10    0.176003   4.489405e-12
+
+
+Final L2 norm of residual: 7.352201e-10
+
+
+
+[0]: T2_HIP_SOLVE | Vm[Size,RSS]/[Peak,HWM]: (6.42, 0.57 / 6.42, 0.57) GiB | Used/Total RAM: (517.58 / 1007.19) | Used/Total VRAM: (0.41 / 63.98)
+T2_GMRES iterations=15 relative_residual=4.489396808358e-12 rtol=1.0e-11
+T2_PHASE_SECONDS analyse=0.000343 preprocess=0.016978 solve_cleanup=0.011056
+Running on "BW", major 9, minor 3, total memory 0.00 GiB
+MaxSharedMemoryPerBlock 65536, MaxSharedMemoryPerBlockOptin 0
+[0]: T2_HIP_ANALYSE | Vm[Size,RSS]/[Peak,HWM]: (6.42, 0.57 / 6.42, 0.57) GiB | Used/Total RAM: (517.58 / 1007.19) | Used/Total VRAM: (0.41 / 63.98)
+T2_RHS_PROJECTION mean=0.000000000000000000e+00
+T2_HIP_POLICY memory_device=1 execution_device=1
+[0]: T2_HIP_SETUP | Vm[Size,RSS]/[Peak,HWM]: (6.42, 0.57 / 6.42, 0.57) GiB | Used/Total RAM: (517.58 / 1007.19) | Used/Total VRAM: (0.41 / 63.98)
+T2_PREP_CALL_SECONDS assembly=0.000085263 migration_policy=0.000220786 gmres_amg_setup=0.016686247
+L2 norm of b: 1.637681e+02
+Initial L2 norm of residual: 1.637681e+02
+=============================================
+
+Iters     resid.norm     conv.rate  rel.res.norm
+-----    ------------    ---------- ------------
+    1    2.751398e+01    0.168006   1.680057e-01
+    2    4.179424e+00    0.151902   2.552038e-02
+    3    6.668754e-01    0.159562   4.072070e-03
+    4    1.225906e-01    0.183828   7.485619e-04
+    5    2.441942e-02    0.199195   1.491097e-04
+    6    4.620966e-03    0.189233   2.821651e-05
+    7    8.277963e-04    0.179139   5.054685e-06
+    8    1.576319e-04    0.190424   9.625313e-07
+    9    2.848000e-05    0.180674   1.739044e-07
+   10    5.155273e-06    0.181014   3.147910e-08
+   11    9.029706e-07    0.175155   5.513714e-09
+   12    1.483633e-07    0.164306   9.059354e-10
+   13    2.450670e-08    0.165180   1.496426e-10
+   14    4.177324e-09    0.170456   2.550755e-11
+   15    7.352214e-10    0.176003   4.489405e-12
+
+
+Final L2 norm of residual: 7.352198e-10
+
+
+
+[0]: T2_HIP_SOLVE | Vm[Size,RSS]/[Peak,HWM]: (6.42, 0.57 / 6.42, 0.57) GiB | Used/Total RAM: (517.58 / 1007.19) | Used/Total VRAM: (0.41 / 63.98)
+T2_GMRES iterations=15 relative_residual=4.489394687432e-12 rtol=1.0e-11
+T2_PHASE_SECONDS analyse=0.000341 preprocess=0.016994 solve_cleanup=0.011004
+CHECK round 1 time : 0.219498302 s
+CHECK round 2 time : 0.028680775 s
+CHECK round 3 time : 0.028454350 s
+CHECK round 4 time : 0.028385367 s
+CHECK round 5 time : 0.028347767 s
+Total memory usage:                 588.6758 MB
+------------------------------------------
+CHECK end to end time :             0.066674 s
+Check || b - Ax || 2             =  7.352186e-10
+Check || b - Ax || MAX           =  2.066494e-10
+Check || b - Ax || 2 / || b || 2 =  4.489388e-12
+LD-Check || b - Ax || 2             =  7.352195e-10
+LD-Check || b - Ax || MAX           =  2.066494e-10
+LD-Check || b - Ax || 2 / || b || 2 =  4.489393e-12
+Q-Check || b - Ax || 2             =  7.352195e-10
+Q-Check || b - Ax || MAX           =  2.066494e-10
+Q-Check || b - Ax || 2 / || b || 2 =  4.489393e-12

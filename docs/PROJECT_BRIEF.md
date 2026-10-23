@@ -1,5 +1,7 @@
 # SolverChallenge26 Project Brief
 
+Current status, 23 October 2026: T2-low GPU preparation reaches 3.905254 s, reproduced at 3.907222/3.903342 s. Exact-source CPU regression and repeated full controls pass; experimental S4 performance passes against measured 96-rank CPU, while formal entry/timing eligibility remains open. See [current results](T2_GPU_PREPARATION_2026-10-23.md). The dated snapshot below records 30 September.
+
 Status date: 30 September 2026, Asia/Shanghai.
 
 CUDA OOM! is an Ocean University of China team participating in SolverChallenge26, the sixth linear solver algorithm and performance optimization competition. The project implements and benchmarks solvers for ten large sparse linear systems from engineering applications. Its immediate objective is to establish valid solutions across the problems, then optimize measured performance and prepare reproducible competition submissions.

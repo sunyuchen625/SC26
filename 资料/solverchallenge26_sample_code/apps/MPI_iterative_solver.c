@@ -147,20 +147,24 @@ int main(int argc, char** argv)
     /* ========================================== */
     // Step 2: Solve the linear system
     /* ========================================== */
+    double round_seconds[test_frequency], round_maximum[test_frequency];
     MPI_Barrier(MPI_COMM_WORLD);
     tt = MPI_Wtime();
     if (sys_type == 0) {
         struct MySolver mysolver;
         for (int i = 0; i < test_frequency; i++) {
+            double round_started = MPI_Wtime();
             if (local_n) memset(x, 0, sizeof(*x) * (size_t)local_n);
             analyse(&mysolver, &solver_input);
             preprocess(&mysolver, &solver_input);
             iterative_solver(&mysolver, &solver_input);
             MPI_Barrier(MPI_COMM_WORLD);
+            round_seconds[i] = MPI_Wtime() - round_started;
         }
     } else {
         struct MySolver_complex mysolver;
         for (int i = 0; i < test_frequency; i++) {
+            double round_started = MPI_Wtime();
             if (local_n) {
                 memset(x, 0, sizeof(*x) * (size_t)local_n);
                 memset(x_im, 0, sizeof(*x_im) * (size_t)local_n);
@@ -169,6 +173,7 @@ int main(int argc, char** argv)
             preprocess_complex(&mysolver, &solver_input);
             iterative_solver_complex(&mysolver, &solver_input);
             MPI_Barrier(MPI_COMM_WORLD);
+            round_seconds[i] = MPI_Wtime() - round_started;
         }
     }
     {
@@ -176,6 +181,11 @@ int main(int argc, char** argv)
         MPI_Reduce(&local_time, &time, 1, MPI_DOUBLE, MPI_MAX, 0,
                    MPI_COMM_WORLD);
     }
+    MPI_Reduce(round_seconds, round_maximum, test_frequency, MPI_DOUBLE,
+               MPI_MAX, 0, MPI_COMM_WORLD);
+    if (myrank == 0)
+        for (int i = 0; i < test_frequency; ++i)
+            printf("CHECK round %d time : %.9f s\n", i + 1, round_maximum[i]);
 
     /* ========================================== */
     // Step 3: Check time, memory and correctness

@@ -1,0 +1,156 @@
+{
+  "status": "PASS",
+  "job": 960428,
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "allocated_seconds": 208,
+  "CPUs": 16,
+  "DCUs": 1,
+  "host_memory_GiB": 58,
+  "node": "f11r1n01",
+  "submit": "2026-10-23T03:37:40",
+  "start": "2026-10-23T03:37:56",
+  "end": "2026-10-23T03:41:24",
+  "complete_solves": 40,
+  "same_batch_as": 961898,
+  "baseline_driver_mean_seconds": 12.740458,
+  "l1jacobi_driver_mean_seconds": 6.894245,
+  "baseline_original_residual": 5.938952e-07,
+  "l1jacobi_original_residual": 5.89461e-07,
+  "cases": {
+    "baseline": {
+      "small/poisson": {
+        "complete_solves": 5,
+        "driver_outer_mean_seconds": 0.096551,
+        "original_float128_residual": 5.279773e-12,
+        "iterations": [
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "host_peak_RSS_KiB": 570412,
+        "maximum_GPU_phase_GiB": 0.41,
+        "GPU_phase_samples": 15,
+        "exit": 0
+      },
+      "small/nonsymmetric": {
+        "complete_solves": 5,
+        "driver_outer_mean_seconds": 0.068307,
+        "original_float128_residual": 3.654671e-13,
+        "iterations": [
+          7,
+          7,
+          7,
+          7,
+          7
+        ],
+        "host_peak_RSS_KiB": 570464,
+        "maximum_GPU_phase_GiB": 0.41,
+        "GPU_phase_samples": 15,
+        "exit": 0
+      },
+      "small/neumann": {
+        "complete_solves": 5,
+        "driver_outer_mean_seconds": 0.069059,
+        "original_float128_residual": 6.013807e-13,
+        "iterations": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "host_peak_RSS_KiB": 570396,
+        "maximum_GPU_phase_GiB": 0.41,
+        "GPU_phase_samples": 15,
+        "exit": 0
+      },
+      "full": {
+        "complete_solves": 5,
+        "driver_outer_mean_seconds": 12.740458,
+        "original_float128_residual": 5.938952e-07,
+        "iterations": [
+          13,
+          13,
+          13,
+          13,
+          13
+        ],
+        "host_peak_RSS_KiB": 5622236,
+        "maximum_GPU_phase_GiB": 21.9,
+        "GPU_phase_samples": 15,
+        "exit": 0
+      }
+    },
+    "l1jacobi": {
+      "small/poisson": {
+        "complete_solves": 5,
+        "driver_outer_mean_seconds": 0.070074,
+        "original_float128_residual": 3.408651e-12,
+        "iterations": [
+          14,
+          14,
+          14,
+          14,
+          14
+        ],
+        "host_peak_RSS_KiB": 571852,
+        "maximum_GPU_phase_GiB": 0.41,
+        "GPU_phase_samples": 15,
+        "exit": 0
+      },
+      "small/nonsymmetric": {
+        "complete_solves": 5,
+        "driver_outer_mean_seconds": 0.0678,
+        "original_float128_residual": 2.685097e-12,
+        "iterations": [
+          15,
+          15,
+          15,
+          15,
+          15
+        ],
+        "host_peak_RSS_KiB": 573312,
+        "maximum_GPU_phase_GiB": 0.41,
+        "GPU_phase_samples": 15,
+        "exit": 0
+      },
+      "small/neumann": {
+        "complete_solves": 5,
+        "driver_outer_mean_seconds": 0.069891,
+        "original_float128_residual": 5.119008e-12,
+        "iterations": [
+          15,
+          15,
+          15,
+          15,
+          15
+        ],
+        "host_peak_RSS_KiB": 571856,
+        "maximum_GPU_phase_GiB": 0.41,
+        "GPU_phase_samples": 15,
+        "exit": 0
+      },
+      "full": {
+        "complete_solves": 5,
+        "driver_outer_mean_seconds": 6.894245,
+        "original_float128_residual": 5.89461e-07,
+        "iterations": [
+          25,
+          25,
+          25,
+          25,
+          25
+        ],
+        "host_peak_RSS_KiB": 5625824,
+        "maximum_GPU_phase_GiB": 15.28,
+        "GPU_phase_samples": 15,
+        "exit": 0
+      }
+    }
+  },
+  "evidence": "All eight individual solver logs, process exit/time/stderr records and batch stdout are retained and verified. Each log contains five converged solves, phase and device-policy records, final original float128 check and fifteen GPU phase samples. This historical driver reports an overall mean but has no individual outer-round rows.",
+  "provenance": "Overnight submission recovered on 23 October in the exact-962526 bundle. Add 208 seconds to the prior received-evidence ledger; retain this comparable run alongside 961898."
+}

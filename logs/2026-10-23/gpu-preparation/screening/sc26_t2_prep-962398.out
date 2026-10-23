@@ -1,0 +1,1216 @@
+EXPERIMENT=preparation_and_round_timing JOB=962398 NODE=f11r1n08
+JobId=962398 JobName=sc26_t2_prep
+   UserId=travissun(424871) GroupId=ac3k88uz8y(371608) MCS_label=N/A
+   Priority=1121 Nice=0 Account=ac3k88uz8y QOS=user_travissun
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:00 TimeLimit=00:45:00 TimeMin=00:23:00
+   SubmitTime=2026-10-23T15:39:50 EligibleTime=2026-10-23T15:39:50
+   AccrueTime=2026-10-23T15:39:50
+   StartTime=2026-10-23T15:42:26 EndTime=2026-10-23T16:05:26 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-23T15:42:26 Scheduler=Backfill
+   Partition=hx1hdnormal AllocNode:Sid=zz-login03:3141869
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=f11r1n08
+   BatchHost=f11r1n08
+   StepMgrEnabled=Yes
+   NumNodes=1 NumCPUs=16 NumTasks=1 CPUs/Task=16 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=16,mem=58G,node=1,billing=16,gres/dcu=1
+   AllocTRES=cpu=16,mem=58G,node=1,billing=16,gres/dcu=1
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=16 MinMemoryNode=58G MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/public/home/travissun/sc26-hip-20261007/scnet-preparation-20261023.sbatch
+   WorkDir=/public/home/travissun/sc26-hip-20261007
+   StdErr=/public/home/travissun/sc26-hip-20261007/sc26_t2_prep-962398.err
+   StdIn=/dev/null
+   StdOut=/public/home/travissun/sc26-hip-20261007/sc26_t2_prep-962398.out
+   GresEnforceBind=Yes
+   TresPerNode=gres/dcu:Hygon:1
+   TresPerTask=cpu=16
+   
+
+Currently Loaded Modulefiles:
+ 1) compiler/gcc/12.2.0     3) compiler/dtk/25.04.2               
+ 2) compiler/cmake/3.24.1   4) mpi/openmpi/4.1.8/gcc-12.2.0/shca  
+
+================================= System Management Interface ==================================
+================================================================================================
+HCU     Temp     AvgPwr     Perf     PwrCap     VRAM%      HCU%      Dec%      Enc%      Mode     
+0       51.0C    91.0W      auto     1000.0W    0%         0.0%      0.0%      0.0%      Normal   
+================================================================================================
+======================================== End of SMI Log ========================================
+
+  Name:                    Hygon C86 (OPN:7581B)              
+  Marketing Name:          Hygon C86 (OPN:7581B)              
+  Vendor Name:             HygonGenuine                       
+  Queue Min Size:          0(0x0)                             
+  Queue Max Size:          0(0x0)                             
+  Cacheline Size:          64(0x40)                           
+      Size:                    131359272(0x7d46228) KB            
+      Size:                    131359272(0x7d46228) KB            
+      Size:                    131359272(0x7d46228) KB            
+  Name:                    Hygon C86 (OPN:7581B)              
+  Marketing Name:          Hygon C86 (OPN:7581B)              
+  Vendor Name:             HygonGenuine                       
+  Queue Min Size:          0(0x0)                             
+  Queue Max Size:          0(0x0)                             
+  Cacheline Size:          64(0x40)                           
+      Size:                    132113768(0x7dfe568) KB            
+      Size:                    132113768(0x7dfe568) KB            
+      Size:                    132113768(0x7dfe568) KB            
+  Name:                    Hygon C86 (OPN:7581B)              
+  Marketing Name:          Hygon C86 (OPN:7581B)              
+  Vendor Name:             HygonGenuine                       
+  Queue Min Size:          0(0x0)                             
+  Queue Max Size:          0(0x0)                             
+  Cacheline Size:          64(0x40)                           
+      Size:                    132113768(0x7dfe568) KB            
+      Size:                    132113768(0x7dfe568) KB            
+      Size:                    132113768(0x7dfe568) KB            
+  Name:                    Hygon C86 (OPN:7581B)              
+  Marketing Name:          Hygon C86 (OPN:7581B)              
+  Vendor Name:             HygonGenuine                       
+  Queue Min Size:          0(0x0)                             
+  Queue Max Size:          0(0x0)                             
+  Cacheline Size:          64(0x40)                           
+      Size:                    132113768(0x7dfe568) KB            
+      Size:                    132113768(0x7dfe568) KB            
+      Size:                    132113768(0x7dfe568) KB            
+  Name:                    Hygon C86 (OPN:7581B)              
+  Marketing Name:          Hygon C86 (OPN:7581B)              
+  Vendor Name:             HygonGenuine                       
+  Queue Min Size:          0(0x0)                             
+  Queue Max Size:          0(0x0)                             
+  Cacheline Size:          64(0x40)                           
+      Size:                    132113768(0x7dfe568) KB            
+      Size:                    132113768(0x7dfe568) KB            
+      Size:                    132113768(0x7dfe568) KB            
+  Name:                    Hygon C86 (OPN:7581B)              
+  Marketing Name:          Hygon C86 (OPN:7581B)              
+  Vendor Name:             HygonGenuine                       
+  Queue Min Size:          0(0x0)                             
+  Queue Max Size:          0(0x0)                             
+  Cacheline Size:          64(0x40)                           
+      Size:                    132110400(0x7dfd840) KB            
+      Size:                    132110400(0x7dfd840) KB            
+      Size:                    132110400(0x7dfd840) KB            
+  Name:                    Hygon C86 (OPN:7581B)              
+  Marketing Name:          Hygon C86 (OPN:7581B)              
+  Vendor Name:             HygonGenuine                       
+  Queue Min Size:          0(0x0)                             
+  Queue Max Size:          0(0x0)                             
+  Cacheline Size:          64(0x40)                           
+      Size:                    132071728(0x7df4130) KB            
+      Size:                    132071728(0x7df4130) KB            
+      Size:                    132071728(0x7df4130) KB            
+  Name:                    Hygon C86 (OPN:7581B)              
+  Marketing Name:          Hygon C86 (OPN:7581B)              
+  Vendor Name:             HygonGenuine                       
+  Queue Min Size:          0(0x0)                             
+  Queue Max Size:          0(0x0)                             
+  Cacheline Size:          64(0x40)                           
+      Size:                    132113768(0x7dfe568) KB            
+      Size:                    132113768(0x7dfe568) KB            
+      Size:                    132113768(0x7dfe568) KB            
+  Name:                    gfx936                             
+  Marketing Name:          BW                                 
+  Vendor Name:             C-3000                             
+  Queue Min Size:          64(0x40)                           
+  Queue Max Size:          131072(0x20000)                    
+  Cacheline Size:          64(0x40)                           
+  Wavefront Size:          64(0x40)                           
+  Workgroup Max Size:      1024(0x400)                        
+  Grid Max Size:           4294967295(0xffffffff)             
+      Size:                    67092480(0x3ffc000) KB             
+      Size:                    67092480(0x3ffc000) KB             
+      Size:                    67092480(0x3ffc000) KB             
+      Size:                    64(0x40) KB                        
+      Name:                    amdgcn-amd-amdhsa--gfx936:sramecc+:xnack-
+      Workgroup Max Size:      1024(0x400)                        
+      Grid Max Size:           4294967295(0xffffffff)             
+      FBarrier Max Size:       32                                 
+/public/home/travissun/sc26-hip-20261007/SC26_T2_HIP_source_20261009.tar.gz: OK
+/public/home/travissun/sc26-hip-20261007/install-892588/lib/libHYPRE.a: OK
+/public/share/ac3k88uz8y/SolverChallenge26-TenProblems/solverchallenge26_02/solverchallenge26_02_A.dat: OK
+/public/share/ac3k88uz8y/SolverChallenge26-TenProblems/solverchallenge26_02/solverchallenge26_02_b.dat: OK
+/* #undef HYPRE_USING_GPU_AWARE_MPI */
+/* #undef HYPRE_USING_UNIFIED_MEMORY */
+#define HYPRE_USING_GPU 1
+#define HYPRE_USING_HIP 1
+src/CMakeLists.txt: OK
+src/CMakePresets.json: OK
+src/LICENSE: OK
+src/Makefile: OK
+src/README.md: OK
+src/apps/MPI_GPU_direct_solver.c: OK
+src/apps/MPI_GPU_iterative_solver.c: OK
+src/apps/MPI_direct_solver.c: OK
+src/apps/MPI_iterative_solver.c: OK
+src/apps/direct_solver.c: OK
+src/apps/iterative_solver.c: OK
+src/cmake/Dependencies.cmake: OK
+src/include/solverchallenge26/common_types.h: OK
+src/include/solverchallenge26/diagnostics.h: OK
+src/include/solverchallenge26/gpu_direct_solver_api.h: OK
+src/include/solverchallenge26/gpu_iterative_solver_api.h: OK
+src/include/solverchallenge26/gpu_metrics.h: OK
+src/include/solverchallenge26/matrix_market_reader.h: OK
+src/include/solverchallenge26/mpi_system_loader.h: OK
+src/include/solverchallenge26/petsc_binary_reader.h: OK
+src/include/solverchallenge26/residual_check.h: OK
+src/include/solverchallenge26/runtime_support.h: OK
+src/include/solverchallenge26/solver_api.h: OK
+src/include/solverchallenge26/solver_input.h: OK
+src/include/solverchallenge26/system_loader.h: OK
+src/problems/README.md: OK
+src/problems/cpu_baseline/CMakeLists.txt: OK
+src/problems/cpu_baseline/solver.c: OK
+src/problems/cpu_baseline/solver.h: OK
+src/problems/problem01/CMakeLists.txt: OK
+src/problems/problem01/gpu_direct_solver.cu: OK
+src/problems/problem01/gpu_iterative_solver.cu: OK
+src/problems/problem01/solver.c: OK
+src/problems/problem01/solver.h: OK
+src/problems/problem02/CMakeLists.txt: OK
+src/problems/problem02/gpu_direct_solver.cu: OK
+src/problems/problem02/gpu_iterative_solver.cu: OK
+src/problems/problem02/solver.c: OK
+src/problems/problem02/solver.h: OK
+src/problems/problem03/CMakeLists.txt: OK
+src/problems/problem03/gpu_direct_solver.cu: OK
+src/problems/problem03/gpu_iterative_solver.cu: OK
+src/problems/problem03/solver.c: OK
+src/problems/problem03/solver.h: OK
+src/problems/problem04/CMakeLists.txt: OK
+src/problems/problem04/gpu_direct_solver.cu: OK
+src/problems/problem04/gpu_iterative_solver.cu: OK
+src/problems/problem04/solver.c: OK
+src/problems/problem04/solver.h: OK
+src/problems/problem05/CMakeLists.txt: OK
+src/problems/problem05/gpu_direct_solver.cu: OK
+src/problems/problem05/gpu_iterative_solver.cu: OK
+src/problems/problem05/solver.c: OK
+src/problems/problem05/solver.h: OK
+src/problems/problem06/CMakeLists.txt: OK
+src/problems/problem06/gpu_direct_solver.cu: OK
+src/problems/problem06/gpu_iterative_solver.cu: OK
+src/problems/problem06/solver.c: OK
+src/problems/problem06/solver.h: OK
+src/problems/problem07/CMakeLists.txt: OK
+src/problems/problem07/gpu_direct_solver.cu: OK
+src/problems/problem07/gpu_iterative_solver.cu: OK
+src/problems/problem07/solver.c: OK
+src/problems/problem07/solver.h: OK
+src/problems/problem08/CMakeLists.txt: OK
+src/problems/problem08/gpu_direct_solver.cu: OK
+src/problems/problem08/gpu_iterative_solver.cu: OK
+src/problems/problem08/solver.c: OK
+src/problems/problem08/solver.h: OK
+src/problems/problem09/CMakeLists.txt: OK
+src/problems/problem09/gpu_direct_solver.cu: OK
+src/problems/problem09/gpu_iterative_solver.cu: OK
+src/problems/problem09/solver.c: OK
+src/problems/problem09/solver.h: OK
+src/problems/problem10/CMakeLists.txt: OK
+src/problems/problem10/gpu_direct_solver.cu: OK
+src/problems/problem10/gpu_iterative_solver.cu: OK
+src/problems/problem10/solver.c: OK
+src/problems/problem10/solver.h: OK
+src/src/diagnostics.c: OK
+src/src/matrix_market/highlevel.c: OK
+src/src/matrix_market/mmio.c: OK
+src/src/mpi_system_loader.c: OK
+src/src/petsc_binary_reader.c: OK
+src/src/system_loader.c: OK
+src/tests/header_include_order_mpi_first.c: OK
+src/tests/header_include_order_reader_first.c: OK
+tests/check_result.py: OK
+tests/make_small_systems.py: OK
+SOURCE_VARIANT=baseline
+src/CMakeLists.txt: OK
+src/CMakePresets.json: OK
+src/LICENSE: OK
+src/Makefile: OK
+src/README.md: OK
+src/apps/MPI_GPU_direct_solver.c: OK
+src/apps/MPI_GPU_iterative_solver.c: OK
+src/apps/MPI_direct_solver.c: OK
+src/apps/MPI_iterative_solver.c: OK
+src/apps/direct_solver.c: OK
+src/apps/iterative_solver.c: OK
+src/cmake/Dependencies.cmake: OK
+src/include/solverchallenge26/common_types.h: OK
+src/include/solverchallenge26/diagnostics.h: OK
+src/include/solverchallenge26/gpu_direct_solver_api.h: OK
+src/include/solverchallenge26/gpu_iterative_solver_api.h: OK
+src/include/solverchallenge26/gpu_metrics.h: OK
+src/include/solverchallenge26/matrix_market_reader.h: OK
+src/include/solverchallenge26/mpi_system_loader.h: OK
+src/include/solverchallenge26/petsc_binary_reader.h: OK
+src/include/solverchallenge26/residual_check.h: OK
+src/include/solverchallenge26/runtime_support.h: OK
+src/include/solverchallenge26/solver_api.h: OK
+src/include/solverchallenge26/solver_input.h: OK
+src/include/solverchallenge26/system_loader.h: OK
+src/problems/README.md: OK
+src/problems/cpu_baseline/CMakeLists.txt: OK
+src/problems/cpu_baseline/solver.c: OK
+src/problems/cpu_baseline/solver.h: OK
+src/problems/problem01/CMakeLists.txt: OK
+src/problems/problem01/gpu_direct_solver.cu: OK
+src/problems/problem01/gpu_iterative_solver.cu: OK
+src/problems/problem01/solver.c: OK
+src/problems/problem01/solver.h: OK
+src/problems/problem02/CMakeLists.txt: OK
+src/problems/problem02/gpu_direct_solver.cu: OK
+src/problems/problem02/gpu_iterative_solver.cu: OK
+src/problems/problem02/solver.c: OK
+src/problems/problem02/solver.h: OK
+src/problems/problem03/CMakeLists.txt: OK
+src/problems/problem03/gpu_direct_solver.cu: OK
+src/problems/problem03/gpu_iterative_solver.cu: OK
+src/problems/problem03/solver.c: OK
+src/problems/problem03/solver.h: OK
+src/problems/problem04/CMakeLists.txt: OK
+src/problems/problem04/gpu_direct_solver.cu: OK
+src/problems/problem04/gpu_iterative_solver.cu: OK
+src/problems/problem04/solver.c: OK
+src/problems/problem04/solver.h: OK
+src/problems/problem05/CMakeLists.txt: OK
+src/problems/problem05/gpu_direct_solver.cu: OK
+src/problems/problem05/gpu_iterative_solver.cu: OK
+src/problems/problem05/solver.c: OK
+src/problems/problem05/solver.h: OK
+src/problems/problem06/CMakeLists.txt: OK
+src/problems/problem06/gpu_direct_solver.cu: OK
+src/problems/problem06/gpu_iterative_solver.cu: OK
+src/problems/problem06/solver.c: OK
+src/problems/problem06/solver.h: OK
+src/problems/problem07/CMakeLists.txt: OK
+src/problems/problem07/gpu_direct_solver.cu: OK
+src/problems/problem07/gpu_iterative_solver.cu: OK
+src/problems/problem07/solver.c: OK
+src/problems/problem07/solver.h: OK
+src/problems/problem08/CMakeLists.txt: OK
+src/problems/problem08/gpu_direct_solver.cu: OK
+src/problems/problem08/gpu_iterative_solver.cu: OK
+src/problems/problem08/solver.c: OK
+src/problems/problem08/solver.h: OK
+src/problems/problem09/CMakeLists.txt: OK
+src/problems/problem09/gpu_direct_solver.cu: OK
+src/problems/problem09/gpu_iterative_solver.cu: OK
+src/problems/problem09/solver.c: OK
+src/problems/problem09/solver.h: OK
+src/problems/problem10/CMakeLists.txt: OK
+src/problems/problem10/gpu_direct_solver.cu: OK
+src/problems/problem10/gpu_iterative_solver.cu: OK
+src/problems/problem10/solver.c: OK
+src/problems/problem10/solver.h: OK
+src/src/diagnostics.c: OK
+src/src/matrix_market/highlevel.c: OK
+src/src/matrix_market/mmio.c: OK
+src/src/mpi_system_loader.c: OK
+src/src/petsc_binary_reader.c: OK
+src/src/system_loader.c: OK
+src/tests/header_include_order_mpi_first.c: OK
+src/tests/header_include_order_reader_first.c: OK
+tests/check_result.py: OK
+tests/make_small_systems.py: OK
+87970171b59c3e1316662348eb9748b452540d83bcba11ef9387381563801299  source-sha256.txt
+d3d23ecdd3a015faa2d48cb9671d03a4461c404c52e653aec486c8e8baea9d98  src/problems/problem02/solver.c
+34f19d4985ded7685eeca2f1f07e6dfec0af91c9039dba668be75a6dedf2a6d0  src/apps/MPI_iterative_solver.c
+44316af27839ea602f6fd65e0b992097882a65fde6b1827443bee221e253fb1f  build/CMakeCache.txt
+e903d484ff019b76fc7c1d27113a5f36e4163f9daea7ccce27c2a0a0d4907904  build/bin/MPI_iterative_solver
+	linux-vdso.so.1 (0x00007fce46fab000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007fce46800000)
+	libquadmath.so.0 => /public/software/compiler/gcc-12.2.0/lib64/libquadmath.so.0 (0x00007fce46400000)
+	libstdc++.so.6 => /public/software/compiler/gcc-12.2.0/lib64/libstdc++.so.6 (0x00007fce45e00000)
+	librocblas.so.4 => /public/software/compiler/dtk-25.04.2/lib/librocblas.so.4 (0x00007fce18600000)
+	librocsparse.so.1 => /public/software/compiler/dtk-25.04.2/lib/librocsparse.so.1 (0x00007fcdf0a00000)
+	librocrand.so.1 => /public/software/compiler/dtk-25.04.2/lib/librocrand.so.1 (0x00007fcdee400000)
+	libgalaxyhip.so.5 => /public/software/compiler/dtk-25.04.2/lib/libgalaxyhip.so.5 (0x00007fcded600000)
+	libmpi.so.40 => /public/software/mpi/openmpi/openmpi-4.1.8/lib/libmpi.so.40 (0x00007fcded200000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007fcdece00000)
+	libgcc_s.so.1 => /public/software/compiler/gcc-12.2.0/lib64/libgcc_s.so.1 (0x00007fcdeca00000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007fcdec600000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fce46c00000)
+	librt.so.1 => /lib64/librt.so.1 (0x00007fcdec200000)
+	libnuma.so.1 => /lib64/libnuma.so.1 (0x00007fcdebe00000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007fcdeba00000)
+	libopen-rte.so.40 => /public/software/mpi/openmpi/openmpi-4.1.8/lib/libopen-rte.so.40 (0x00007fcdeb600000)
+	libopen-pal.so.40 => /public/software/mpi/openmpi/openmpi-4.1.8/lib/libopen-pal.so.40 (0x00007fcdeb200000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x00007fcdeae00000)
+	libz.so.1 => /lib64/libz.so.1 (0x00007fcdeaa00000)
+	libhwloc.so.15 => /opt/hpc/software/mpi/hwloc/2.12.0/lib/libhwloc.so.15 (0x00007fcdea600000)
+	libpciaccess.so.0 => /lib64/libpciaccess.so.0 (0x00007fcdea200000)
+	libevent_core-2.1.so.6 => /lib64/libevent_core-2.1.so.6 (0x00007fcde9e00000)
+	libevent_pthreads-2.1.so.6 => /lib64/libevent_pthreads-2.1.so.6 (0x00007fcde9a00000)
+	libcrypto.so.1.1 => /lib64/libcrypto.so.1.1 (0x00007fcde9400000)
+e903d484ff019b76fc7c1d27113a5f36e4163f9daea7ccce27c2a0a0d4907904  build/bin/MPI_iterative_solver
+44316af27839ea602f6fd65e0b992097882a65fde6b1827443bee221e253fb1f  build/CMakeCache.txt
+poisson: n=385 nnz=2361
+nonsymmetric: n=385 nnz=2361
+neumann: n=385 nnz=2361
+scaled: n=385 nnz=2361
+KNOWN_SOLUTION_PASS max_abs_error=0.000000000000e+00
+OFFICIAL_RESIDUAL_PASS relative_residual=3.408651000000e-12 threshold=1.0e-10
+KNOWN_SOLUTION_PASS max_abs_error=0.000000000000e+00
+OFFICIAL_RESIDUAL_PASS relative_residual=2.685092000000e-12 threshold=1.0e-10
+KNOWN_SOLUTION_PASS max_abs_error=1.249000902703e-16
+OFFICIAL_RESIDUAL_PASS relative_residual=5.118996000000e-12 threshold=1.0e-10
+OFFICIAL_RESIDUAL_PASS relative_residual=5.894610000000e-07 threshold=1.0e-06
+OUTER_ROUND_RECORDS_PASS
+FULL_PASS=/public/home/travissun/sc26-hip-20261007/prep-962398/baseline/full/screen
+T2_PREP_CALL_SECONDS assembly=3.844448531 migration_policy=0.144286525 gmres_amg_setup=1.879979771
+T2_GMRES iterations=25 relative_residual=5.653692477944e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.113708 preprocess=5.868717 solve_cleanup=1.021501
+T2_PREP_CALL_SECONDS assembly=3.782725960 migration_policy=0.142793666 gmres_amg_setup=1.796101443
+T2_GMRES iterations=25 relative_residual=5.653684532017e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.045340 preprocess=5.721623 solve_cleanup=0.994603
+T2_PREP_CALL_SECONDS assembly=3.786710765 migration_policy=0.142549302 gmres_amg_setup=1.795584003
+T2_GMRES iterations=25 relative_residual=5.653711826433e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.045244 preprocess=5.724846 solve_cleanup=0.995088
+T2_PREP_CALL_SECONDS assembly=3.792166308 migration_policy=0.142909558 gmres_amg_setup=1.796044562
+T2_GMRES iterations=25 relative_residual=5.653705644854e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.045242 preprocess=5.731123 solve_cleanup=0.994634
+T2_PREP_CALL_SECONDS assembly=3.782055157 migration_policy=0.143382698 gmres_amg_setup=1.795968870
+T2_GMRES iterations=25 relative_residual=5.653711929727e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.045180 preprocess=5.721409 solve_cleanup=0.997773
+CHECK round 1 time : 7.022962454 s
+CHECK round 2 time : 6.772298457 s
+CHECK round 3 time : 6.775792303 s
+CHECK round 4 time : 6.781687883 s
+CHECK round 5 time : 6.774958827 s
+CHECK end to end time :             6.825540 s
+Q-Check || b - Ax || 2             =  1.649087e-10
+Q-Check || b - Ax || MAX           =  9.606034e-13
+Q-Check || b - Ax || 2 / || b || 2 =  5.894610e-07
+src/CMakeLists.txt: OK
+src/CMakePresets.json: OK
+src/LICENSE: OK
+src/Makefile: OK
+src/README.md: OK
+src/apps/MPI_GPU_direct_solver.c: OK
+src/apps/MPI_GPU_iterative_solver.c: OK
+src/apps/MPI_direct_solver.c: OK
+src/apps/MPI_iterative_solver.c: OK
+src/apps/direct_solver.c: OK
+src/apps/iterative_solver.c: OK
+src/cmake/Dependencies.cmake: OK
+src/include/solverchallenge26/common_types.h: OK
+src/include/solverchallenge26/diagnostics.h: OK
+src/include/solverchallenge26/gpu_direct_solver_api.h: OK
+src/include/solverchallenge26/gpu_iterative_solver_api.h: OK
+src/include/solverchallenge26/gpu_metrics.h: OK
+src/include/solverchallenge26/matrix_market_reader.h: OK
+src/include/solverchallenge26/mpi_system_loader.h: OK
+src/include/solverchallenge26/petsc_binary_reader.h: OK
+src/include/solverchallenge26/residual_check.h: OK
+src/include/solverchallenge26/runtime_support.h: OK
+src/include/solverchallenge26/solver_api.h: OK
+src/include/solverchallenge26/solver_input.h: OK
+src/include/solverchallenge26/system_loader.h: OK
+src/problems/README.md: OK
+src/problems/cpu_baseline/CMakeLists.txt: OK
+src/problems/cpu_baseline/solver.c: OK
+src/problems/cpu_baseline/solver.h: OK
+src/problems/problem01/CMakeLists.txt: OK
+src/problems/problem01/gpu_direct_solver.cu: OK
+src/problems/problem01/gpu_iterative_solver.cu: OK
+src/problems/problem01/solver.c: OK
+src/problems/problem01/solver.h: OK
+src/problems/problem02/CMakeLists.txt: OK
+src/problems/problem02/gpu_direct_solver.cu: OK
+src/problems/problem02/gpu_iterative_solver.cu: OK
+src/problems/problem02/solver.c: OK
+src/problems/problem02/solver.h: OK
+src/problems/problem03/CMakeLists.txt: OK
+src/problems/problem03/gpu_direct_solver.cu: OK
+src/problems/problem03/gpu_iterative_solver.cu: OK
+src/problems/problem03/solver.c: OK
+src/problems/problem03/solver.h: OK
+src/problems/problem04/CMakeLists.txt: OK
+src/problems/problem04/gpu_direct_solver.cu: OK
+src/problems/problem04/gpu_iterative_solver.cu: OK
+src/problems/problem04/solver.c: OK
+src/problems/problem04/solver.h: OK
+src/problems/problem05/CMakeLists.txt: OK
+src/problems/problem05/gpu_direct_solver.cu: OK
+src/problems/problem05/gpu_iterative_solver.cu: OK
+src/problems/problem05/solver.c: OK
+src/problems/problem05/solver.h: OK
+src/problems/problem06/CMakeLists.txt: OK
+src/problems/problem06/gpu_direct_solver.cu: OK
+src/problems/problem06/gpu_iterative_solver.cu: OK
+src/problems/problem06/solver.c: OK
+src/problems/problem06/solver.h: OK
+src/problems/problem07/CMakeLists.txt: OK
+src/problems/problem07/gpu_direct_solver.cu: OK
+src/problems/problem07/gpu_iterative_solver.cu: OK
+src/problems/problem07/solver.c: OK
+src/problems/problem07/solver.h: OK
+src/problems/problem08/CMakeLists.txt: OK
+src/problems/problem08/gpu_direct_solver.cu: OK
+src/problems/problem08/gpu_iterative_solver.cu: OK
+src/problems/problem08/solver.c: OK
+src/problems/problem08/solver.h: OK
+src/problems/problem09/CMakeLists.txt: OK
+src/problems/problem09/gpu_direct_solver.cu: OK
+src/problems/problem09/gpu_iterative_solver.cu: OK
+src/problems/problem09/solver.c: OK
+src/problems/problem09/solver.h: OK
+src/problems/problem10/CMakeLists.txt: OK
+src/problems/problem10/gpu_direct_solver.cu: OK
+src/problems/problem10/gpu_iterative_solver.cu: OK
+src/problems/problem10/solver.c: OK
+src/problems/problem10/solver.h: OK
+src/src/diagnostics.c: OK
+src/src/matrix_market/highlevel.c: OK
+src/src/matrix_market/mmio.c: OK
+src/src/mpi_system_loader.c: OK
+src/src/petsc_binary_reader.c: OK
+src/src/system_loader.c: OK
+src/tests/header_include_order_mpi_first.c: OK
+src/tests/header_include_order_reader_first.c: OK
+tests/check_result.py: OK
+tests/make_small_systems.py: OK
+SOURCE_VARIANT=kdim30
+src/CMakeLists.txt: OK
+src/CMakePresets.json: OK
+src/LICENSE: OK
+src/Makefile: OK
+src/README.md: OK
+src/apps/MPI_GPU_direct_solver.c: OK
+src/apps/MPI_GPU_iterative_solver.c: OK
+src/apps/MPI_direct_solver.c: OK
+src/apps/MPI_iterative_solver.c: OK
+src/apps/direct_solver.c: OK
+src/apps/iterative_solver.c: OK
+src/cmake/Dependencies.cmake: OK
+src/include/solverchallenge26/common_types.h: OK
+src/include/solverchallenge26/diagnostics.h: OK
+src/include/solverchallenge26/gpu_direct_solver_api.h: OK
+src/include/solverchallenge26/gpu_iterative_solver_api.h: OK
+src/include/solverchallenge26/gpu_metrics.h: OK
+src/include/solverchallenge26/matrix_market_reader.h: OK
+src/include/solverchallenge26/mpi_system_loader.h: OK
+src/include/solverchallenge26/petsc_binary_reader.h: OK
+src/include/solverchallenge26/residual_check.h: OK
+src/include/solverchallenge26/runtime_support.h: OK
+src/include/solverchallenge26/solver_api.h: OK
+src/include/solverchallenge26/solver_input.h: OK
+src/include/solverchallenge26/system_loader.h: OK
+src/problems/README.md: OK
+src/problems/cpu_baseline/CMakeLists.txt: OK
+src/problems/cpu_baseline/solver.c: OK
+src/problems/cpu_baseline/solver.h: OK
+src/problems/problem01/CMakeLists.txt: OK
+src/problems/problem01/gpu_direct_solver.cu: OK
+src/problems/problem01/gpu_iterative_solver.cu: OK
+src/problems/problem01/solver.c: OK
+src/problems/problem01/solver.h: OK
+src/problems/problem02/CMakeLists.txt: OK
+src/problems/problem02/gpu_direct_solver.cu: OK
+src/problems/problem02/gpu_iterative_solver.cu: OK
+src/problems/problem02/solver.c: OK
+src/problems/problem02/solver.h: OK
+src/problems/problem03/CMakeLists.txt: OK
+src/problems/problem03/gpu_direct_solver.cu: OK
+src/problems/problem03/gpu_iterative_solver.cu: OK
+src/problems/problem03/solver.c: OK
+src/problems/problem03/solver.h: OK
+src/problems/problem04/CMakeLists.txt: OK
+src/problems/problem04/gpu_direct_solver.cu: OK
+src/problems/problem04/gpu_iterative_solver.cu: OK
+src/problems/problem04/solver.c: OK
+src/problems/problem04/solver.h: OK
+src/problems/problem05/CMakeLists.txt: OK
+src/problems/problem05/gpu_direct_solver.cu: OK
+src/problems/problem05/gpu_iterative_solver.cu: OK
+src/problems/problem05/solver.c: OK
+src/problems/problem05/solver.h: OK
+src/problems/problem06/CMakeLists.txt: OK
+src/problems/problem06/gpu_direct_solver.cu: OK
+src/problems/problem06/gpu_iterative_solver.cu: OK
+src/problems/problem06/solver.c: OK
+src/problems/problem06/solver.h: OK
+src/problems/problem07/CMakeLists.txt: OK
+src/problems/problem07/gpu_direct_solver.cu: OK
+src/problems/problem07/gpu_iterative_solver.cu: OK
+src/problems/problem07/solver.c: OK
+src/problems/problem07/solver.h: OK
+src/problems/problem08/CMakeLists.txt: OK
+src/problems/problem08/gpu_direct_solver.cu: OK
+src/problems/problem08/gpu_iterative_solver.cu: OK
+src/problems/problem08/solver.c: OK
+src/problems/problem08/solver.h: OK
+src/problems/problem09/CMakeLists.txt: OK
+src/problems/problem09/gpu_direct_solver.cu: OK
+src/problems/problem09/gpu_iterative_solver.cu: OK
+src/problems/problem09/solver.c: OK
+src/problems/problem09/solver.h: OK
+src/problems/problem10/CMakeLists.txt: OK
+src/problems/problem10/gpu_direct_solver.cu: OK
+src/problems/problem10/gpu_iterative_solver.cu: OK
+src/problems/problem10/solver.c: OK
+src/problems/problem10/solver.h: OK
+src/src/diagnostics.c: OK
+src/src/matrix_market/highlevel.c: OK
+src/src/matrix_market/mmio.c: OK
+src/src/mpi_system_loader.c: OK
+src/src/petsc_binary_reader.c: OK
+src/src/system_loader.c: OK
+src/tests/header_include_order_mpi_first.c: OK
+src/tests/header_include_order_reader_first.c: OK
+tests/check_result.py: OK
+tests/make_small_systems.py: OK
+11a6b3baf7f810f7a005cc8638580a0569842397be1f1a76bb0b273073849a1b  source-sha256.txt
+23baf4da0548d7ce491128e21ea5f404d6eda123f984bb9a0e0a3c06c297deaf  src/problems/problem02/solver.c
+34f19d4985ded7685eeca2f1f07e6dfec0af91c9039dba668be75a6dedf2a6d0  src/apps/MPI_iterative_solver.c
+71f3f20ca51963d4a7070950f52e883781d3fae90bec575314558a1973c9eda4  build/CMakeCache.txt
+c80e3826a3b4353dba691f1a481047278f3f9358a2d1360d53f0272ef011f630  build/bin/MPI_iterative_solver
+	linux-vdso.so.1 (0x00007ffe77572000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f8cab400000)
+	libquadmath.so.0 => /public/software/compiler/gcc-12.2.0/lib64/libquadmath.so.0 (0x00007f8cab000000)
+	libstdc++.so.6 => /public/software/compiler/gcc-12.2.0/lib64/libstdc++.so.6 (0x00007f8caaa00000)
+	librocblas.so.4 => /public/software/compiler/dtk-25.04.2/lib/librocblas.so.4 (0x00007f8c7d200000)
+	librocsparse.so.1 => /public/software/compiler/dtk-25.04.2/lib/librocsparse.so.1 (0x00007f8c55600000)
+	librocrand.so.1 => /public/software/compiler/dtk-25.04.2/lib/librocrand.so.1 (0x00007f8c53000000)
+	libgalaxyhip.so.5 => /public/software/compiler/dtk-25.04.2/lib/libgalaxyhip.so.5 (0x00007f8c52200000)
+	libmpi.so.40 => /public/software/mpi/openmpi/openmpi-4.1.8/lib/libmpi.so.40 (0x00007f8c51e00000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f8c51a00000)
+	libgcc_s.so.1 => /public/software/compiler/gcc-12.2.0/lib64/libgcc_s.so.1 (0x00007f8c51600000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f8c51200000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f8cab800000)
+	librt.so.1 => /lib64/librt.so.1 (0x00007f8c50e00000)
+	libnuma.so.1 => /lib64/libnuma.so.1 (0x00007f8c50a00000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007f8c50600000)
+	libopen-rte.so.40 => /public/software/mpi/openmpi/openmpi-4.1.8/lib/libopen-rte.so.40 (0x00007f8c50200000)
+	libopen-pal.so.40 => /public/software/mpi/openmpi/openmpi-4.1.8/lib/libopen-pal.so.40 (0x00007f8c4fe00000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x00007f8c4fa00000)
+	libz.so.1 => /lib64/libz.so.1 (0x00007f8c4f600000)
+	libhwloc.so.15 => /opt/hpc/software/mpi/hwloc/2.12.0/lib/libhwloc.so.15 (0x00007f8c4f200000)
+	libpciaccess.so.0 => /lib64/libpciaccess.so.0 (0x00007f8c4ee00000)
+	libevent_core-2.1.so.6 => /lib64/libevent_core-2.1.so.6 (0x00007f8c4ea00000)
+	libevent_pthreads-2.1.so.6 => /lib64/libevent_pthreads-2.1.so.6 (0x00007f8c4e600000)
+	libcrypto.so.1.1 => /lib64/libcrypto.so.1.1 (0x00007f8c4e000000)
+c80e3826a3b4353dba691f1a481047278f3f9358a2d1360d53f0272ef011f630  build/bin/MPI_iterative_solver
+71f3f20ca51963d4a7070950f52e883781d3fae90bec575314558a1973c9eda4  build/CMakeCache.txt
+poisson: n=385 nnz=2361
+nonsymmetric: n=385 nnz=2361
+neumann: n=385 nnz=2361
+scaled: n=385 nnz=2361
+KNOWN_SOLUTION_PASS max_abs_error=0.000000000000e+00
+OFFICIAL_RESIDUAL_PASS relative_residual=3.408651000000e-12 threshold=1.0e-10
+KNOWN_SOLUTION_PASS max_abs_error=0.000000000000e+00
+OFFICIAL_RESIDUAL_PASS relative_residual=2.685092000000e-12 threshold=1.0e-10
+KNOWN_SOLUTION_PASS max_abs_error=1.249000902703e-16
+OFFICIAL_RESIDUAL_PASS relative_residual=5.119008000000e-12 threshold=1.0e-10
+OFFICIAL_RESIDUAL_PASS relative_residual=5.894610000000e-07 threshold=1.0e-06
+OUTER_ROUND_RECORDS_PASS
+FULL_PASS=/public/home/travissun/sc26-hip-20261007/prep-962398/kdim30/full/screen
+T2_PREP_CALL_SECONDS assembly=3.855870704 migration_policy=0.144391918 gmres_amg_setup=1.858683289
+T2_GMRES iterations=25 relative_residual=5.653723647361e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.105506 preprocess=5.858948 solve_cleanup=1.016076
+T2_PREP_CALL_SECONDS assembly=3.807305280 migration_policy=0.145428137 gmres_amg_setup=1.787444228
+T2_GMRES iterations=25 relative_residual=5.653697245002e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.045143 preprocess=5.740180 solve_cleanup=0.996588
+T2_PREP_CALL_SECONDS assembly=3.816734758 migration_policy=0.145869525 gmres_amg_setup=1.795172204
+T2_GMRES iterations=25 relative_residual=5.653702263885e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.045232 preprocess=5.757779 solve_cleanup=0.998104
+T2_PREP_CALL_SECONDS assembly=3.811587911 migration_policy=0.143588812 gmres_amg_setup=1.787982898
+T2_GMRES iterations=25 relative_residual=5.653714906985e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.045372 preprocess=5.743162 solve_cleanup=0.998116
+T2_PREP_CALL_SECONDS assembly=3.813244102 migration_policy=0.144039091 gmres_amg_setup=1.786660793
+T2_GMRES iterations=25 relative_residual=5.653687899875e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.045200 preprocess=5.743946 solve_cleanup=0.998360
+CHECK round 1 time : 6.999483674 s
+CHECK round 2 time : 6.792307726 s
+CHECK round 3 time : 6.811589178 s
+CHECK round 4 time : 6.797362001 s
+CHECK round 5 time : 6.797997932 s
+CHECK end to end time :             6.839748 s
+Q-Check || b - Ax || 2             =  1.649087e-10
+Q-Check || b - Ax || MAX           =  9.604148e-13
+Q-Check || b - Ax || 2 / || b || 2 =  5.894610e-07
+src/CMakeLists.txt: OK
+src/CMakePresets.json: OK
+src/LICENSE: OK
+src/Makefile: OK
+src/README.md: OK
+src/apps/MPI_GPU_direct_solver.c: OK
+src/apps/MPI_GPU_iterative_solver.c: OK
+src/apps/MPI_direct_solver.c: OK
+src/apps/MPI_iterative_solver.c: OK
+src/apps/direct_solver.c: OK
+src/apps/iterative_solver.c: OK
+src/cmake/Dependencies.cmake: OK
+src/include/solverchallenge26/common_types.h: OK
+src/include/solverchallenge26/diagnostics.h: OK
+src/include/solverchallenge26/gpu_direct_solver_api.h: OK
+src/include/solverchallenge26/gpu_iterative_solver_api.h: OK
+src/include/solverchallenge26/gpu_metrics.h: OK
+src/include/solverchallenge26/matrix_market_reader.h: OK
+src/include/solverchallenge26/mpi_system_loader.h: OK
+src/include/solverchallenge26/petsc_binary_reader.h: OK
+src/include/solverchallenge26/residual_check.h: OK
+src/include/solverchallenge26/runtime_support.h: OK
+src/include/solverchallenge26/solver_api.h: OK
+src/include/solverchallenge26/solver_input.h: OK
+src/include/solverchallenge26/system_loader.h: OK
+src/problems/README.md: OK
+src/problems/cpu_baseline/CMakeLists.txt: OK
+src/problems/cpu_baseline/solver.c: OK
+src/problems/cpu_baseline/solver.h: OK
+src/problems/problem01/CMakeLists.txt: OK
+src/problems/problem01/gpu_direct_solver.cu: OK
+src/problems/problem01/gpu_iterative_solver.cu: OK
+src/problems/problem01/solver.c: OK
+src/problems/problem01/solver.h: OK
+src/problems/problem02/CMakeLists.txt: OK
+src/problems/problem02/gpu_direct_solver.cu: OK
+src/problems/problem02/gpu_iterative_solver.cu: OK
+src/problems/problem02/solver.c: OK
+src/problems/problem02/solver.h: OK
+src/problems/problem03/CMakeLists.txt: OK
+src/problems/problem03/gpu_direct_solver.cu: OK
+src/problems/problem03/gpu_iterative_solver.cu: OK
+src/problems/problem03/solver.c: OK
+src/problems/problem03/solver.h: OK
+src/problems/problem04/CMakeLists.txt: OK
+src/problems/problem04/gpu_direct_solver.cu: OK
+src/problems/problem04/gpu_iterative_solver.cu: OK
+src/problems/problem04/solver.c: OK
+src/problems/problem04/solver.h: OK
+src/problems/problem05/CMakeLists.txt: OK
+src/problems/problem05/gpu_direct_solver.cu: OK
+src/problems/problem05/gpu_iterative_solver.cu: OK
+src/problems/problem05/solver.c: OK
+src/problems/problem05/solver.h: OK
+src/problems/problem06/CMakeLists.txt: OK
+src/problems/problem06/gpu_direct_solver.cu: OK
+src/problems/problem06/gpu_iterative_solver.cu: OK
+src/problems/problem06/solver.c: OK
+src/problems/problem06/solver.h: OK
+src/problems/problem07/CMakeLists.txt: OK
+src/problems/problem07/gpu_direct_solver.cu: OK
+src/problems/problem07/gpu_iterative_solver.cu: OK
+src/problems/problem07/solver.c: OK
+src/problems/problem07/solver.h: OK
+src/problems/problem08/CMakeLists.txt: OK
+src/problems/problem08/gpu_direct_solver.cu: OK
+src/problems/problem08/gpu_iterative_solver.cu: OK
+src/problems/problem08/solver.c: OK
+src/problems/problem08/solver.h: OK
+src/problems/problem09/CMakeLists.txt: OK
+src/problems/problem09/gpu_direct_solver.cu: OK
+src/problems/problem09/gpu_iterative_solver.cu: OK
+src/problems/problem09/solver.c: OK
+src/problems/problem09/solver.h: OK
+src/problems/problem10/CMakeLists.txt: OK
+src/problems/problem10/gpu_direct_solver.cu: OK
+src/problems/problem10/gpu_iterative_solver.cu: OK
+src/problems/problem10/solver.c: OK
+src/problems/problem10/solver.h: OK
+src/src/diagnostics.c: OK
+src/src/matrix_market/highlevel.c: OK
+src/src/matrix_market/mmio.c: OK
+src/src/mpi_system_loader.c: OK
+src/src/petsc_binary_reader.c: OK
+src/src/system_loader.c: OK
+src/tests/header_include_order_mpi_first.c: OK
+src/tests/header_include_order_reader_first.c: OK
+tests/check_result.py: OK
+tests/make_small_systems.py: OK
+SOURCE_VARIANT=interp18
+src/CMakeLists.txt: OK
+src/CMakePresets.json: OK
+src/LICENSE: OK
+src/Makefile: OK
+src/README.md: OK
+src/apps/MPI_GPU_direct_solver.c: OK
+src/apps/MPI_GPU_iterative_solver.c: OK
+src/apps/MPI_direct_solver.c: OK
+src/apps/MPI_iterative_solver.c: OK
+src/apps/direct_solver.c: OK
+src/apps/iterative_solver.c: OK
+src/cmake/Dependencies.cmake: OK
+src/include/solverchallenge26/common_types.h: OK
+src/include/solverchallenge26/diagnostics.h: OK
+src/include/solverchallenge26/gpu_direct_solver_api.h: OK
+src/include/solverchallenge26/gpu_iterative_solver_api.h: OK
+src/include/solverchallenge26/gpu_metrics.h: OK
+src/include/solverchallenge26/matrix_market_reader.h: OK
+src/include/solverchallenge26/mpi_system_loader.h: OK
+src/include/solverchallenge26/petsc_binary_reader.h: OK
+src/include/solverchallenge26/residual_check.h: OK
+src/include/solverchallenge26/runtime_support.h: OK
+src/include/solverchallenge26/solver_api.h: OK
+src/include/solverchallenge26/solver_input.h: OK
+src/include/solverchallenge26/system_loader.h: OK
+src/problems/README.md: OK
+src/problems/cpu_baseline/CMakeLists.txt: OK
+src/problems/cpu_baseline/solver.c: OK
+src/problems/cpu_baseline/solver.h: OK
+src/problems/problem01/CMakeLists.txt: OK
+src/problems/problem01/gpu_direct_solver.cu: OK
+src/problems/problem01/gpu_iterative_solver.cu: OK
+src/problems/problem01/solver.c: OK
+src/problems/problem01/solver.h: OK
+src/problems/problem02/CMakeLists.txt: OK
+src/problems/problem02/gpu_direct_solver.cu: OK
+src/problems/problem02/gpu_iterative_solver.cu: OK
+src/problems/problem02/solver.c: OK
+src/problems/problem02/solver.h: OK
+src/problems/problem03/CMakeLists.txt: OK
+src/problems/problem03/gpu_direct_solver.cu: OK
+src/problems/problem03/gpu_iterative_solver.cu: OK
+src/problems/problem03/solver.c: OK
+src/problems/problem03/solver.h: OK
+src/problems/problem04/CMakeLists.txt: OK
+src/problems/problem04/gpu_direct_solver.cu: OK
+src/problems/problem04/gpu_iterative_solver.cu: OK
+src/problems/problem04/solver.c: OK
+src/problems/problem04/solver.h: OK
+src/problems/problem05/CMakeLists.txt: OK
+src/problems/problem05/gpu_direct_solver.cu: OK
+src/problems/problem05/gpu_iterative_solver.cu: OK
+src/problems/problem05/solver.c: OK
+src/problems/problem05/solver.h: OK
+src/problems/problem06/CMakeLists.txt: OK
+src/problems/problem06/gpu_direct_solver.cu: OK
+src/problems/problem06/gpu_iterative_solver.cu: OK
+src/problems/problem06/solver.c: OK
+src/problems/problem06/solver.h: OK
+src/problems/problem07/CMakeLists.txt: OK
+src/problems/problem07/gpu_direct_solver.cu: OK
+src/problems/problem07/gpu_iterative_solver.cu: OK
+src/problems/problem07/solver.c: OK
+src/problems/problem07/solver.h: OK
+src/problems/problem08/CMakeLists.txt: OK
+src/problems/problem08/gpu_direct_solver.cu: OK
+src/problems/problem08/gpu_iterative_solver.cu: OK
+src/problems/problem08/solver.c: OK
+src/problems/problem08/solver.h: OK
+src/problems/problem09/CMakeLists.txt: OK
+src/problems/problem09/gpu_direct_solver.cu: OK
+src/problems/problem09/gpu_iterative_solver.cu: OK
+src/problems/problem09/solver.c: OK
+src/problems/problem09/solver.h: OK
+src/problems/problem10/CMakeLists.txt: OK
+src/problems/problem10/gpu_direct_solver.cu: OK
+src/problems/problem10/gpu_iterative_solver.cu: OK
+src/problems/problem10/solver.c: OK
+src/problems/problem10/solver.h: OK
+src/src/diagnostics.c: OK
+src/src/matrix_market/highlevel.c: OK
+src/src/matrix_market/mmio.c: OK
+src/src/mpi_system_loader.c: OK
+src/src/petsc_binary_reader.c: OK
+src/src/system_loader.c: OK
+src/tests/header_include_order_mpi_first.c: OK
+src/tests/header_include_order_reader_first.c: OK
+tests/check_result.py: OK
+tests/make_small_systems.py: OK
+2360c24e1557b8cd4869ba708631a2faaab40026792a7c7df73e09c11bb02465  source-sha256.txt
+c41653a15933fbda399aa305a6010a991fd2d7548edf27987ba35a20783639de  src/problems/problem02/solver.c
+34f19d4985ded7685eeca2f1f07e6dfec0af91c9039dba668be75a6dedf2a6d0  src/apps/MPI_iterative_solver.c
+a6acfcccc0a199d4a75845204ea47500a3fc90d78230f2d94b26edbac853cccf  build/CMakeCache.txt
+a4490e4e7f7154eaf9c72130fe5490443175b888645f96c1f5b1059de936c9e9  build/bin/MPI_iterative_solver
+	linux-vdso.so.1 (0x00007ffd99dee000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007fc97ac00000)
+	libquadmath.so.0 => /public/software/compiler/gcc-12.2.0/lib64/libquadmath.so.0 (0x00007fc97a800000)
+	libstdc++.so.6 => /public/software/compiler/gcc-12.2.0/lib64/libstdc++.so.6 (0x00007fc97a200000)
+	librocblas.so.4 => /public/software/compiler/dtk-25.04.2/lib/librocblas.so.4 (0x00007fc94ca00000)
+	librocsparse.so.1 => /public/software/compiler/dtk-25.04.2/lib/librocsparse.so.1 (0x00007fc924e00000)
+	librocrand.so.1 => /public/software/compiler/dtk-25.04.2/lib/librocrand.so.1 (0x00007fc922800000)
+	libgalaxyhip.so.5 => /public/software/compiler/dtk-25.04.2/lib/libgalaxyhip.so.5 (0x00007fc921a00000)
+	libmpi.so.40 => /public/software/mpi/openmpi/openmpi-4.1.8/lib/libmpi.so.40 (0x00007fc921600000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007fc921200000)
+	libgcc_s.so.1 => /public/software/compiler/gcc-12.2.0/lib64/libgcc_s.so.1 (0x00007fc920e00000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007fc920a00000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fc97b000000)
+	librt.so.1 => /lib64/librt.so.1 (0x00007fc920600000)
+	libnuma.so.1 => /lib64/libnuma.so.1 (0x00007fc920200000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007fc91fe00000)
+	libopen-rte.so.40 => /public/software/mpi/openmpi/openmpi-4.1.8/lib/libopen-rte.so.40 (0x00007fc91fa00000)
+	libopen-pal.so.40 => /public/software/mpi/openmpi/openmpi-4.1.8/lib/libopen-pal.so.40 (0x00007fc91f600000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x00007fc91f200000)
+	libz.so.1 => /lib64/libz.so.1 (0x00007fc91ee00000)
+	libhwloc.so.15 => /opt/hpc/software/mpi/hwloc/2.12.0/lib/libhwloc.so.15 (0x00007fc91ea00000)
+	libpciaccess.so.0 => /lib64/libpciaccess.so.0 (0x00007fc91e600000)
+	libevent_core-2.1.so.6 => /lib64/libevent_core-2.1.so.6 (0x00007fc91e200000)
+	libevent_pthreads-2.1.so.6 => /lib64/libevent_pthreads-2.1.so.6 (0x00007fc91de00000)
+	libcrypto.so.1.1 => /lib64/libcrypto.so.1.1 (0x00007fc91d800000)
+a4490e4e7f7154eaf9c72130fe5490443175b888645f96c1f5b1059de936c9e9  build/bin/MPI_iterative_solver
+a6acfcccc0a199d4a75845204ea47500a3fc90d78230f2d94b26edbac853cccf  build/CMakeCache.txt
+poisson: n=385 nnz=2361
+nonsymmetric: n=385 nnz=2361
+neumann: n=385 nnz=2361
+scaled: n=385 nnz=2361
+KNOWN_SOLUTION_PASS max_abs_error=0.000000000000e+00
+OFFICIAL_RESIDUAL_PASS relative_residual=3.406163000000e-12 threshold=1.0e-10
+KNOWN_SOLUTION_PASS max_abs_error=0.000000000000e+00
+OFFICIAL_RESIDUAL_PASS relative_residual=2.226712000000e-12 threshold=1.0e-10
+KNOWN_SOLUTION_PASS max_abs_error=8.326672684689e-17
+OFFICIAL_RESIDUAL_PASS relative_residual=4.489396000000e-12 threshold=1.0e-10
+OFFICIAL_RESIDUAL_PASS relative_residual=5.896665000000e-07 threshold=1.0e-06
+OUTER_ROUND_RECORDS_PASS
+FULL_PASS=/public/home/travissun/sc26-hip-20261007/prep-962398/interp18/full/screen
+T2_PREP_CALL_SECONDS assembly=3.829040289 migration_policy=0.144533040 gmres_amg_setup=1.829292036
+T2_GMRES iterations=24 relative_residual=5.864120531519e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.100566 preprocess=5.802868 solve_cleanup=0.977197
+T2_PREP_CALL_SECONDS assembly=3.783048014 migration_policy=0.142887799 gmres_amg_setup=1.761135983
+T2_GMRES iterations=24 relative_residual=5.864096304078e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.045574 preprocess=5.687074 solve_cleanup=0.958079
+T2_PREP_CALL_SECONDS assembly=3.795969587 migration_policy=0.143587452 gmres_amg_setup=1.760227506
+T2_GMRES iterations=24 relative_residual=5.864094837416e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.045260 preprocess=5.699787 solve_cleanup=0.954849
+T2_PREP_CALL_SECONDS assembly=3.794378277 migration_policy=0.142648164 gmres_amg_setup=1.759609075
+T2_GMRES iterations=24 relative_residual=5.864100027461e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.045285 preprocess=5.696638 solve_cleanup=0.955309
+T2_PREP_CALL_SECONDS assembly=3.787670381 migration_policy=0.143051162 gmres_amg_setup=1.761882787
+T2_GMRES iterations=24 relative_residual=5.864099542111e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.045611 preprocess=5.692607 solve_cleanup=0.955181
+CHECK round 1 time : 6.899417811 s
+CHECK round 2 time : 6.701293123 s
+CHECK round 3 time : 6.710779181 s
+CHECK round 4 time : 6.707766665 s
+CHECK round 5 time : 6.703819290 s
+CHECK end to end time :             6.744615 s
+Q-Check || b - Ax || 2             =  1.649662e-10
+Q-Check || b - Ax || MAX           =  8.183609e-13
+Q-Check || b - Ax || 2 / || b || 2 =  5.896665e-07
+src/CMakeLists.txt: OK
+src/CMakePresets.json: OK
+src/LICENSE: OK
+src/Makefile: OK
+src/README.md: OK
+src/apps/MPI_GPU_direct_solver.c: OK
+src/apps/MPI_GPU_iterative_solver.c: OK
+src/apps/MPI_direct_solver.c: OK
+src/apps/MPI_iterative_solver.c: OK
+src/apps/direct_solver.c: OK
+src/apps/iterative_solver.c: OK
+src/cmake/Dependencies.cmake: OK
+src/include/solverchallenge26/common_types.h: OK
+src/include/solverchallenge26/diagnostics.h: OK
+src/include/solverchallenge26/gpu_direct_solver_api.h: OK
+src/include/solverchallenge26/gpu_iterative_solver_api.h: OK
+src/include/solverchallenge26/gpu_metrics.h: OK
+src/include/solverchallenge26/matrix_market_reader.h: OK
+src/include/solverchallenge26/mpi_system_loader.h: OK
+src/include/solverchallenge26/petsc_binary_reader.h: OK
+src/include/solverchallenge26/residual_check.h: OK
+src/include/solverchallenge26/runtime_support.h: OK
+src/include/solverchallenge26/solver_api.h: OK
+src/include/solverchallenge26/solver_input.h: OK
+src/include/solverchallenge26/system_loader.h: OK
+src/problems/README.md: OK
+src/problems/cpu_baseline/CMakeLists.txt: OK
+src/problems/cpu_baseline/solver.c: OK
+src/problems/cpu_baseline/solver.h: OK
+src/problems/problem01/CMakeLists.txt: OK
+src/problems/problem01/gpu_direct_solver.cu: OK
+src/problems/problem01/gpu_iterative_solver.cu: OK
+src/problems/problem01/solver.c: OK
+src/problems/problem01/solver.h: OK
+src/problems/problem02/CMakeLists.txt: OK
+src/problems/problem02/gpu_direct_solver.cu: OK
+src/problems/problem02/gpu_iterative_solver.cu: OK
+src/problems/problem02/solver.c: OK
+src/problems/problem02/solver.h: OK
+src/problems/problem03/CMakeLists.txt: OK
+src/problems/problem03/gpu_direct_solver.cu: OK
+src/problems/problem03/gpu_iterative_solver.cu: OK
+src/problems/problem03/solver.c: OK
+src/problems/problem03/solver.h: OK
+src/problems/problem04/CMakeLists.txt: OK
+src/problems/problem04/gpu_direct_solver.cu: OK
+src/problems/problem04/gpu_iterative_solver.cu: OK
+src/problems/problem04/solver.c: OK
+src/problems/problem04/solver.h: OK
+src/problems/problem05/CMakeLists.txt: OK
+src/problems/problem05/gpu_direct_solver.cu: OK
+src/problems/problem05/gpu_iterative_solver.cu: OK
+src/problems/problem05/solver.c: OK
+src/problems/problem05/solver.h: OK
+src/problems/problem06/CMakeLists.txt: OK
+src/problems/problem06/gpu_direct_solver.cu: OK
+src/problems/problem06/gpu_iterative_solver.cu: OK
+src/problems/problem06/solver.c: OK
+src/problems/problem06/solver.h: OK
+src/problems/problem07/CMakeLists.txt: OK
+src/problems/problem07/gpu_direct_solver.cu: OK
+src/problems/problem07/gpu_iterative_solver.cu: OK
+src/problems/problem07/solver.c: OK
+src/problems/problem07/solver.h: OK
+src/problems/problem08/CMakeLists.txt: OK
+src/problems/problem08/gpu_direct_solver.cu: OK
+src/problems/problem08/gpu_iterative_solver.cu: OK
+src/problems/problem08/solver.c: OK
+src/problems/problem08/solver.h: OK
+src/problems/problem09/CMakeLists.txt: OK
+src/problems/problem09/gpu_direct_solver.cu: OK
+src/problems/problem09/gpu_iterative_solver.cu: OK
+src/problems/problem09/solver.c: OK
+src/problems/problem09/solver.h: OK
+src/problems/problem10/CMakeLists.txt: OK
+src/problems/problem10/gpu_direct_solver.cu: OK
+src/problems/problem10/gpu_iterative_solver.cu: OK
+src/problems/problem10/solver.c: OK
+src/problems/problem10/solver.h: OK
+src/src/diagnostics.c: OK
+src/src/matrix_market/highlevel.c: OK
+src/src/matrix_market/mmio.c: OK
+src/src/mpi_system_loader.c: OK
+src/src/petsc_binary_reader.c: OK
+src/src/system_loader.c: OK
+src/tests/header_include_order_mpi_first.c: OK
+src/tests/header_include_order_reader_first.c: OK
+tests/check_result.py: OK
+tests/make_small_systems.py: OK
+SOURCE_VARIANT=rap0
+src/CMakeLists.txt: OK
+src/CMakePresets.json: OK
+src/LICENSE: OK
+src/Makefile: OK
+src/README.md: OK
+src/apps/MPI_GPU_direct_solver.c: OK
+src/apps/MPI_GPU_iterative_solver.c: OK
+src/apps/MPI_direct_solver.c: OK
+src/apps/MPI_iterative_solver.c: OK
+src/apps/direct_solver.c: OK
+src/apps/iterative_solver.c: OK
+src/cmake/Dependencies.cmake: OK
+src/include/solverchallenge26/common_types.h: OK
+src/include/solverchallenge26/diagnostics.h: OK
+src/include/solverchallenge26/gpu_direct_solver_api.h: OK
+src/include/solverchallenge26/gpu_iterative_solver_api.h: OK
+src/include/solverchallenge26/gpu_metrics.h: OK
+src/include/solverchallenge26/matrix_market_reader.h: OK
+src/include/solverchallenge26/mpi_system_loader.h: OK
+src/include/solverchallenge26/petsc_binary_reader.h: OK
+src/include/solverchallenge26/residual_check.h: OK
+src/include/solverchallenge26/runtime_support.h: OK
+src/include/solverchallenge26/solver_api.h: OK
+src/include/solverchallenge26/solver_input.h: OK
+src/include/solverchallenge26/system_loader.h: OK
+src/problems/README.md: OK
+src/problems/cpu_baseline/CMakeLists.txt: OK
+src/problems/cpu_baseline/solver.c: OK
+src/problems/cpu_baseline/solver.h: OK
+src/problems/problem01/CMakeLists.txt: OK
+src/problems/problem01/gpu_direct_solver.cu: OK
+src/problems/problem01/gpu_iterative_solver.cu: OK
+src/problems/problem01/solver.c: OK
+src/problems/problem01/solver.h: OK
+src/problems/problem02/CMakeLists.txt: OK
+src/problems/problem02/gpu_direct_solver.cu: OK
+src/problems/problem02/gpu_iterative_solver.cu: OK
+src/problems/problem02/solver.c: OK
+src/problems/problem02/solver.h: OK
+src/problems/problem03/CMakeLists.txt: OK
+src/problems/problem03/gpu_direct_solver.cu: OK
+src/problems/problem03/gpu_iterative_solver.cu: OK
+src/problems/problem03/solver.c: OK
+src/problems/problem03/solver.h: OK
+src/problems/problem04/CMakeLists.txt: OK
+src/problems/problem04/gpu_direct_solver.cu: OK
+src/problems/problem04/gpu_iterative_solver.cu: OK
+src/problems/problem04/solver.c: OK
+src/problems/problem04/solver.h: OK
+src/problems/problem05/CMakeLists.txt: OK
+src/problems/problem05/gpu_direct_solver.cu: OK
+src/problems/problem05/gpu_iterative_solver.cu: OK
+src/problems/problem05/solver.c: OK
+src/problems/problem05/solver.h: OK
+src/problems/problem06/CMakeLists.txt: OK
+src/problems/problem06/gpu_direct_solver.cu: OK
+src/problems/problem06/gpu_iterative_solver.cu: OK
+src/problems/problem06/solver.c: OK
+src/problems/problem06/solver.h: OK
+src/problems/problem07/CMakeLists.txt: OK
+src/problems/problem07/gpu_direct_solver.cu: OK
+src/problems/problem07/gpu_iterative_solver.cu: OK
+src/problems/problem07/solver.c: OK
+src/problems/problem07/solver.h: OK
+src/problems/problem08/CMakeLists.txt: OK
+src/problems/problem08/gpu_direct_solver.cu: OK
+src/problems/problem08/gpu_iterative_solver.cu: OK
+src/problems/problem08/solver.c: OK
+src/problems/problem08/solver.h: OK
+src/problems/problem09/CMakeLists.txt: OK
+src/problems/problem09/gpu_direct_solver.cu: OK
+src/problems/problem09/gpu_iterative_solver.cu: OK
+src/problems/problem09/solver.c: OK
+src/problems/problem09/solver.h: OK
+src/problems/problem10/CMakeLists.txt: OK
+src/problems/problem10/gpu_direct_solver.cu: OK
+src/problems/problem10/gpu_iterative_solver.cu: OK
+src/problems/problem10/solver.c: OK
+src/problems/problem10/solver.h: OK
+src/src/diagnostics.c: OK
+src/src/matrix_market/highlevel.c: OK
+src/src/matrix_market/mmio.c: OK
+src/src/mpi_system_loader.c: OK
+src/src/petsc_binary_reader.c: OK
+src/src/system_loader.c: OK
+src/tests/header_include_order_mpi_first.c: OK
+src/tests/header_include_order_reader_first.c: OK
+tests/check_result.py: OK
+tests/make_small_systems.py: OK
+a35c8dc8db0c637b1f95ba4f9eab494afa72ee587b3ac0254929d31b88381f9b  source-sha256.txt
+8f92698f0ae4290cc0ca02763f3f49b6a22158beb67867686db24c51b7449a00  src/problems/problem02/solver.c
+34f19d4985ded7685eeca2f1f07e6dfec0af91c9039dba668be75a6dedf2a6d0  src/apps/MPI_iterative_solver.c
+fd6df3f104cdd7a50edd70af73684400e4a4c2c46900721918dce7b925848e8c  build/CMakeCache.txt
+90bf9c87d602e9aad2ccb1399ad7a64ceb7d78384b8cf34200b4b4927ed98ff6  build/bin/MPI_iterative_solver
+	linux-vdso.so.1 (0x00007ffdbb1ae000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f77bf600000)
+	libquadmath.so.0 => /public/software/compiler/gcc-12.2.0/lib64/libquadmath.so.0 (0x00007f77bf200000)
+	libstdc++.so.6 => /public/software/compiler/gcc-12.2.0/lib64/libstdc++.so.6 (0x00007f77bec00000)
+	librocblas.so.4 => /public/software/compiler/dtk-25.04.2/lib/librocblas.so.4 (0x00007f7791400000)
+	librocsparse.so.1 => /public/software/compiler/dtk-25.04.2/lib/librocsparse.so.1 (0x00007f7769800000)
+	librocrand.so.1 => /public/software/compiler/dtk-25.04.2/lib/librocrand.so.1 (0x00007f7767200000)
+	libgalaxyhip.so.5 => /public/software/compiler/dtk-25.04.2/lib/libgalaxyhip.so.5 (0x00007f7766400000)
+	libmpi.so.40 => /public/software/mpi/openmpi/openmpi-4.1.8/lib/libmpi.so.40 (0x00007f7766000000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f7765c00000)
+	libgcc_s.so.1 => /public/software/compiler/gcc-12.2.0/lib64/libgcc_s.so.1 (0x00007f7765800000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f7765400000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f77bfa00000)
+	librt.so.1 => /lib64/librt.so.1 (0x00007f7765000000)
+	libnuma.so.1 => /lib64/libnuma.so.1 (0x00007f7764c00000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007f7764800000)
+	libopen-rte.so.40 => /public/software/mpi/openmpi/openmpi-4.1.8/lib/libopen-rte.so.40 (0x00007f7764400000)
+	libopen-pal.so.40 => /public/software/mpi/openmpi/openmpi-4.1.8/lib/libopen-pal.so.40 (0x00007f7764000000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x00007f7763c00000)
+	libz.so.1 => /lib64/libz.so.1 (0x00007f7763800000)
+	libhwloc.so.15 => /opt/hpc/software/mpi/hwloc/2.12.0/lib/libhwloc.so.15 (0x00007f7763400000)
+	libpciaccess.so.0 => /lib64/libpciaccess.so.0 (0x00007f7763000000)
+	libevent_core-2.1.so.6 => /lib64/libevent_core-2.1.so.6 (0x00007f7762c00000)
+	libevent_pthreads-2.1.so.6 => /lib64/libevent_pthreads-2.1.so.6 (0x00007f7762800000)
+	libcrypto.so.1.1 => /lib64/libcrypto.so.1.1 (0x00007f7762200000)
+90bf9c87d602e9aad2ccb1399ad7a64ceb7d78384b8cf34200b4b4927ed98ff6  build/bin/MPI_iterative_solver
+fd6df3f104cdd7a50edd70af73684400e4a4c2c46900721918dce7b925848e8c  build/CMakeCache.txt
+poisson: n=385 nnz=2361
+nonsymmetric: n=385 nnz=2361
+neumann: n=385 nnz=2361
+scaled: n=385 nnz=2361
+KNOWN_SOLUTION_PASS max_abs_error=0.000000000000e+00
+OFFICIAL_RESIDUAL_PASS relative_residual=3.408651000000e-12 threshold=1.0e-10
+KNOWN_SOLUTION_PASS max_abs_error=0.000000000000e+00
+OFFICIAL_RESIDUAL_PASS relative_residual=2.685092000000e-12 threshold=1.0e-10
+KNOWN_SOLUTION_PASS max_abs_error=1.249000902703e-16
+OFFICIAL_RESIDUAL_PASS relative_residual=5.118996000000e-12 threshold=1.0e-10
+OFFICIAL_RESIDUAL_PASS relative_residual=5.894610000000e-07 threshold=1.0e-06
+OUTER_ROUND_RECORDS_PASS
+FULL_PASS=/public/home/travissun/sc26-hip-20261007/prep-962398/rap0/full/screen
+T2_PREP_CALL_SECONDS assembly=3.847344854 migration_policy=0.145020509 gmres_amg_setup=1.865720562
+T2_GMRES iterations=25 relative_residual=5.653713223440e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.106562 preprocess=5.858088 solve_cleanup=1.018346
+T2_PREP_CALL_SECONDS assembly=3.818357899 migration_policy=0.143937528 gmres_amg_setup=1.800413153
+T2_GMRES iterations=25 relative_residual=5.653698232127e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.045239 preprocess=5.762711 solve_cleanup=1.009152
+T2_PREP_CALL_SECONDS assembly=3.823669668 migration_policy=0.143331058 gmres_amg_setup=1.798348683
+T2_GMRES iterations=25 relative_residual=5.653711041206e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.046402 preprocess=5.765352 solve_cleanup=0.999215
+T2_PREP_CALL_SECONDS assembly=3.820255544 migration_policy=0.144202134 gmres_amg_setup=1.797130560
+T2_GMRES iterations=25 relative_residual=5.653682084397e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.046142 preprocess=5.761591 solve_cleanup=0.995788
+T2_PREP_CALL_SECONDS assembly=3.810749425 migration_policy=0.144314436 gmres_amg_setup=1.799365183
+T2_GMRES iterations=25 relative_residual=5.653713578185e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.045326 preprocess=5.754432 solve_cleanup=0.998277
+CHECK round 1 time : 7.001925710 s
+CHECK round 2 time : 6.827608210 s
+CHECK round 3 time : 6.821675428 s
+CHECK round 4 time : 6.814219348 s
+CHECK round 5 time : 6.809490999 s
+CHECK end to end time :             6.854984 s
+Q-Check || b - Ax || 2             =  1.649087e-10
+Q-Check || b - Ax || MAX           =  9.605645e-13
+Q-Check || b - Ax || 2 / || b || 2 =  5.894610e-07
+FASTEST_SCREENED_VARIANT=interp18
+OFFICIAL_RESIDUAL_PASS relative_residual=5.894610000000e-07 threshold=1.0e-06
+OUTER_ROUND_RECORDS_PASS
+FULL_PASS=/public/home/travissun/sc26-hip-20261007/prep-962398/baseline/full/repeat
+T2_PREP_CALL_SECONDS assembly=3.815706297 migration_policy=0.144195024 gmres_amg_setup=1.869111425
+T2_GMRES iterations=25 relative_residual=5.653733218850e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.105585 preprocess=5.829015 solve_cleanup=1.016827
+T2_PREP_CALL_SECONDS assembly=3.779622718 migration_policy=0.142701655 gmres_amg_setup=1.803073632
+T2_GMRES iterations=25 relative_residual=5.653720862682e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.045218 preprocess=5.725401 solve_cleanup=1.002644
+T2_PREP_CALL_SECONDS assembly=3.786833234 migration_policy=0.143704385 gmres_amg_setup=1.802739305
+T2_GMRES iterations=25 relative_residual=5.653707870803e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.045261 preprocess=5.733279 solve_cleanup=0.995269
+T2_PREP_CALL_SECONDS assembly=3.787405114 migration_policy=0.143721315 gmres_amg_setup=1.796964987
+T2_GMRES iterations=25 relative_residual=5.653693551023e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.045408 preprocess=5.728094 solve_cleanup=0.997932
+T2_PREP_CALL_SECONDS assembly=3.797463564 migration_policy=0.143632883 gmres_amg_setup=1.796737513
+T2_GMRES iterations=25 relative_residual=5.653682760870e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.045367 preprocess=5.737836 solve_cleanup=0.994732
+CHECK round 1 time : 6.970338834 s
+CHECK round 2 time : 6.783807134 s
+CHECK round 3 time : 6.784724651 s
+CHECK round 4 time : 6.782000340 s
+CHECK round 5 time : 6.788565113 s
+CHECK end to end time :             6.821888 s
+Q-Check || b - Ax || 2             =  1.649087e-10
+Q-Check || b - Ax || MAX           =  9.605355e-13
+Q-Check || b - Ax || 2 / || b || 2 =  5.894610e-07
+OFFICIAL_RESIDUAL_PASS relative_residual=5.896665000000e-07 threshold=1.0e-06
+OUTER_ROUND_RECORDS_PASS
+FULL_PASS=/public/home/travissun/sc26-hip-20261007/prep-962398/interp18/full/repeat-1
+T2_PREP_CALL_SECONDS assembly=3.826618243 migration_policy=0.144167173 gmres_amg_setup=1.848132040
+T2_GMRES iterations=24 relative_residual=5.864119166832e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.101549 preprocess=5.818919 solve_cleanup=0.974751
+T2_PREP_CALL_SECONDS assembly=3.787843553 migration_policy=0.143389718 gmres_amg_setup=1.760837957
+T2_GMRES iterations=24 relative_residual=5.864116005384e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.045227 preprocess=5.692073 solve_cleanup=0.955396
+T2_PREP_CALL_SECONDS assembly=3.774743376 migration_policy=0.143056762 gmres_amg_setup=1.760208226
+T2_GMRES iterations=24 relative_residual=5.864123083650e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.045162 preprocess=5.678011 solve_cleanup=0.954474
+T2_PREP_CALL_SECONDS assembly=3.784962649 migration_policy=0.143784226 gmres_amg_setup=1.759679666
+T2_GMRES iterations=24 relative_residual=5.864100672919e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.045311 preprocess=5.688429 solve_cleanup=0.955450
+T2_PREP_CALL_SECONDS assembly=3.783700676 migration_policy=0.142692265 gmres_amg_setup=1.761968958
+T2_GMRES iterations=24 relative_residual=5.864111414908e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.045200 preprocess=5.688364 solve_cleanup=0.955752
+CHECK round 1 time : 6.913992764 s
+CHECK round 2 time : 6.703412091 s
+CHECK round 3 time : 6.688265596 s
+CHECK round 4 time : 6.699754142 s
+CHECK round 5 time : 6.699714181 s
+CHECK end to end time :             6.741028 s
+Q-Check || b - Ax || 2             =  1.649662e-10
+Q-Check || b - Ax || MAX           =  8.184112e-13
+Q-Check || b - Ax || 2 / || b || 2 =  5.896665e-07
+OFFICIAL_RESIDUAL_PASS relative_residual=5.896665000000e-07 threshold=1.0e-06
+OUTER_ROUND_RECORDS_PASS
+FULL_PASS=/public/home/travissun/sc26-hip-20261007/prep-962398/interp18/full/repeat-2
+T2_PREP_CALL_SECONDS assembly=3.825450840 migration_policy=0.143906329 gmres_amg_setup=1.836797536
+T2_GMRES iterations=24 relative_residual=5.864117606725e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.103667 preprocess=5.806157 solve_cleanup=0.975495
+T2_PREP_CALL_SECONDS assembly=3.774759847 migration_policy=0.142466301 gmres_amg_setup=1.762536779
+T2_GMRES iterations=24 relative_residual=5.864115931042e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.045383 preprocess=5.679765 solve_cleanup=0.954626
+T2_PREP_CALL_SECONDS assembly=3.773069195 migration_policy=0.142368599 gmres_amg_setup=1.761047331
+T2_GMRES iterations=24 relative_residual=5.864111229033e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.045311 preprocess=5.676487 solve_cleanup=0.955665
+T2_PREP_CALL_SECONDS assembly=3.783879659 migration_policy=0.143005511 gmres_amg_setup=1.760991020
+T2_GMRES iterations=24 relative_residual=5.864112070034e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.045404 preprocess=5.687878 solve_cleanup=0.953982
+T2_PREP_CALL_SECONDS assembly=3.772003015 migration_policy=0.142712036 gmres_amg_setup=1.760398678
+T2_GMRES iterations=24 relative_residual=5.864117740912e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.045213 preprocess=5.675116 solve_cleanup=0.953203
+CHECK round 1 time : 6.904270641 s
+CHECK round 2 time : 6.690201662 s
+CHECK round 3 time : 6.688534921 s
+CHECK round 4 time : 6.697809626 s
+CHECK round 5 time : 6.684107328 s
+CHECK end to end time :             6.732985 s
+Q-Check || b - Ax || 2             =  1.649662e-10
+Q-Check || b - Ax || MAX           =  8.183541e-13
+Q-Check || b - Ax || 2 / || b || 2 =  5.896665e-07
+SC26_PREPARATION_EXPERIMENT_COMPLETE

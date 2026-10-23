@@ -1,5 +1,7 @@
 # T2-low HIP smoother comparison
 
+Current configuration and S4 update: [GPU preparation optimization](T2_GPU_PREPARATION_2026-10-23.md) supersedes this earlier phase, with exact allocation/interpolation 18 at 3.905254 s and repeated CPU/GPU controls. The measurements and archive identities below describe the earlier accepted smoother snapshot.
+
 Date: 23 October 2026, Asia/Shanghai. Job **961898** completed `0:0` on `f11r1n07`, from **13:41:54 to 13:45:22**, with **208 allocated seconds**, one Hygon DCU, 16 CPUs and 58 GiB. The accepted relax-6 binary and an l1-Jacobi candidate ran sequentially in this same allocation. Each used one MPI process and one OpenMP thread.
 
 | Full original T2-low | Relax 6 | l1-Jacobi 18 |

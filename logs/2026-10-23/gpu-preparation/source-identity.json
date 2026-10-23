@@ -1,0 +1,16 @@
+{
+  "archive_sha256": "f9482721a702b88d4e1b5e87957f59a8391215eb1938a8599bfc055e1e1c1e3a",
+  "manifest_sha256": "edcbf44abeee448a736cc01bfe16ac58a052a74e44a132a2d67a2f35e0080d6b",
+  "solver_sha256": "ea585ebaf584fa059946ba40371378a03b5404629f841e66c286eb1a8f2856f4",
+  "driver_sha256": "34f19d4985ded7685eeca2f1f07e6dfec0af91c9039dba668be75a6dedf2a6d0",
+  "parent_commit": "d09163c18ce629d65d55c0e6316b9755b7e2975d",
+  "archive": "deliverables/SC26_T2_HIP_preparation_20261023.tar.gz",
+  "manifest_entries": 89,
+  "archive_members": 91,
+  "status": "PASS: all 89 manifested entries equal the worktree and the validated GPU/CPU build snapshots.",
+  "validation_jobs": {
+    "GPU": 962526,
+    "CPU_regression": 9270818,
+    "CPU_full_control": 9270819
+  }
+}

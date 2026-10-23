@@ -1,0 +1,207 @@
+BUILD_ROOT=/data/home/sunyc/solverchallenge26/gpu-preparation-20261023/cpu-build-9270818 CONTROL_ROOT=/data/home/sunyc/solverchallenge26/gpu-preparation-20261023/cpu-control-9270819
+JobId=9270819 JobName=sc26_t2_s4_cpu
+   UserId=sunyc(11599) GroupId=sunyc(11599) MCS_label=N/A
+   Priority=1 Nice=0 Account=sunyc QOS=normal
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:00 TimeLimit=00:06:00 TimeMin=N/A
+   SubmitTime=2026-10-23T16:17:03 EligibleTime=2026-10-23T16:19:57
+   AccrueTime=2026-10-23T16:19:57
+   StartTime=2026-10-23T16:23:56 EndTime=2026-10-23T16:29:56 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-23T16:23:56 Scheduler=Main
+   Partition=qhn AllocNode:Sid=c3ln01:28228
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=c3n182
+   BatchHost=c3n182
+   NumNodes=1 NumCPUs=96 NumTasks=96 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=96,mem=60G,node=1,billing=96
+   AllocTRES=cpu=96,mem=60G,node=1,billing=96
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=13 MinMemoryNode=60G MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/data/home/sunyc/solverchallenge26/gpu-preparation-20261023/cpu-s4-control.sbatch
+   WorkDir=/data/home/sunyc/solverchallenge26/gpu-preparation-20261023
+   StdErr=/data/home/sunyc/solverchallenge26/gpu-preparation-20261023/sc26_t2_s4_cpu-9270819.err
+   StdIn=/dev/null
+   StdOut=/data/home/sunyc/solverchallenge26/gpu-preparation-20261023/sc26_t2_s4_cpu-9270819.out
+   Power=
+   TresPerTask=cpu:1
+   
+
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                96
+On-line CPU(s) list:   0-95
+Thread(s) per core:    1
+Core(s) per socket:    48
+Socket(s):             2
+NUMA node(s):          2
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 143
+Model name:            Intel(R) Xeon(R) Platinum 8488C
+Stepping:              8
+CPU MHz:               3199.951
+CPU max MHz:           3800.0000
+CPU min MHz:           800.0000
+BogoMIPS:              4800.00
+Virtualization:        VT-x
+L1d cache:             48K
+L1i cache:             32K
+L2 cache:              2048K
+L3 cache:              107520K
+NUMA node0 CPU(s):     0-47
+NUMA node1 CPU(s):     48-95
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cat_l2 cdp_l3 invpcid_single intel_pt cdp_l2 ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq cldemote movdiri movdir64b md_clear pconfig spec_ctrl intel_stibp flush_l1d arch_capabilities
+src/CMakeLists.txt: OK
+src/CMakePresets.json: OK
+src/LICENSE: OK
+src/Makefile: OK
+src/README.md: OK
+src/apps/MPI_GPU_direct_solver.c: OK
+src/apps/MPI_GPU_iterative_solver.c: OK
+src/apps/MPI_direct_solver.c: OK
+src/apps/MPI_iterative_solver.c: OK
+src/apps/direct_solver.c: OK
+src/apps/iterative_solver.c: OK
+src/cmake/Dependencies.cmake: OK
+src/include/solverchallenge26/common_types.h: OK
+src/include/solverchallenge26/diagnostics.h: OK
+src/include/solverchallenge26/gpu_direct_solver_api.h: OK
+src/include/solverchallenge26/gpu_iterative_solver_api.h: OK
+src/include/solverchallenge26/gpu_metrics.h: OK
+src/include/solverchallenge26/matrix_market_reader.h: OK
+src/include/solverchallenge26/mpi_system_loader.h: OK
+src/include/solverchallenge26/petsc_binary_reader.h: OK
+src/include/solverchallenge26/residual_check.h: OK
+src/include/solverchallenge26/runtime_support.h: OK
+src/include/solverchallenge26/solver_api.h: OK
+src/include/solverchallenge26/solver_input.h: OK
+src/include/solverchallenge26/system_loader.h: OK
+src/problems/README.md: OK
+src/problems/cpu_baseline/CMakeLists.txt: OK
+src/problems/cpu_baseline/solver.c: OK
+src/problems/cpu_baseline/solver.h: OK
+src/problems/problem01/CMakeLists.txt: OK
+src/problems/problem01/gpu_direct_solver.cu: OK
+src/problems/problem01/gpu_iterative_solver.cu: OK
+src/problems/problem01/solver.c: OK
+src/problems/problem01/solver.h: OK
+src/problems/problem02/CMakeLists.txt: OK
+src/problems/problem02/gpu_direct_solver.cu: OK
+src/problems/problem02/gpu_iterative_solver.cu: OK
+src/problems/problem02/solver.c: OK
+src/problems/problem02/solver.h: OK
+src/problems/problem03/CMakeLists.txt: OK
+src/problems/problem03/gpu_direct_solver.cu: OK
+src/problems/problem03/gpu_iterative_solver.cu: OK
+src/problems/problem03/solver.c: OK
+src/problems/problem03/solver.h: OK
+src/problems/problem04/CMakeLists.txt: OK
+src/problems/problem04/gpu_direct_solver.cu: OK
+src/problems/problem04/gpu_iterative_solver.cu: OK
+src/problems/problem04/solver.c: OK
+src/problems/problem04/solver.h: OK
+src/problems/problem05/CMakeLists.txt: OK
+src/problems/problem05/gpu_direct_solver.cu: OK
+src/problems/problem05/gpu_iterative_solver.cu: OK
+src/problems/problem05/solver.c: OK
+src/problems/problem05/solver.h: OK
+src/problems/problem06/CMakeLists.txt: OK
+src/problems/problem06/gpu_direct_solver.cu: OK
+src/problems/problem06/gpu_iterative_solver.cu: OK
+src/problems/problem06/solver.c: OK
+src/problems/problem06/solver.h: OK
+src/problems/problem07/CMakeLists.txt: OK
+src/problems/problem07/gpu_direct_solver.cu: OK
+src/problems/problem07/gpu_iterative_solver.cu: OK
+src/problems/problem07/solver.c: OK
+src/problems/problem07/solver.h: OK
+src/problems/problem08/CMakeLists.txt: OK
+src/problems/problem08/gpu_direct_solver.cu: OK
+src/problems/problem08/gpu_iterative_solver.cu: OK
+src/problems/problem08/solver.c: OK
+src/problems/problem08/solver.h: OK
+src/problems/problem09/CMakeLists.txt: OK
+src/problems/problem09/gpu_direct_solver.cu: OK
+src/problems/problem09/gpu_iterative_solver.cu: OK
+src/problems/problem09/solver.c: OK
+src/problems/problem09/solver.h: OK
+src/problems/problem10/CMakeLists.txt: OK
+src/problems/problem10/gpu_direct_solver.cu: OK
+src/problems/problem10/gpu_iterative_solver.cu: OK
+src/problems/problem10/solver.c: OK
+src/problems/problem10/solver.h: OK
+src/src/diagnostics.c: OK
+src/src/matrix_market/highlevel.c: OK
+src/src/matrix_market/mmio.c: OK
+src/src/mpi_system_loader.c: OK
+src/src/petsc_binary_reader.c: OK
+src/src/system_loader.c: OK
+src/tests/header_include_order_mpi_first.c: OK
+src/tests/header_include_order_reader_first.c: OK
+tests/check_result.py: OK
+tests/make_small_systems.py: OK
+source-sha256.txt: OK
+src/problems/problem02/solver.c: OK
+src/apps/MPI_iterative_solver.c: OK
+build/CMakeCache.txt: OK
+build/bin/MPI_iterative_solver: OK
+d09163c18ce629d65d55c0e6316b9755b7e2975d
+38b938ccd82b81d8f49930ce051288a08a9a38852b659434066e5e9889fd6b43  /data/home/sunyc/solverchallenge26/deps/hypre/lib64/libHYPRE.a
+54643b2f510907c0bc0a1d13373f1d8233deb38c90dd97ebd9ecb27010e4d803  /data/home/sunyc/solverchallenge26/deps/gnu-time/time
+/* #undef HYPRE_USING_GPU_AWARE_MPI */
+/* #undef HYPRE_USING_UNIFIED_MEMORY */
+/* #undef HYPRE_USING_GPU */
+/* #undef HYPRE_USING_HIP */
+/data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_02/solverchallenge26_02_A.dat: OK
+/data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_02/solverchallenge26_02_b.dat: OK
+CONTROL_REPEAT=1 RANKS=96 NODE=c3n182
+OFFICIAL_RESIDUAL_PASS relative_residual=5.875263000000e-07 threshold=1.0e-06
+CPU_OUTER_ROUNDS_AND_RSS_PASS sum_peak_RSS_KiB=20005840
+T2_GMRES iterations=18 relative_residual=3.032017251610e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.003489 preprocess=6.663381 solve_cleanup=1.786022
+T2_GMRES iterations=18 relative_residual=3.032017251610e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.001534 preprocess=6.605742 solve_cleanup=1.773837
+T2_GMRES iterations=18 relative_residual=3.032017251610e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.001448 preprocess=6.679240 solve_cleanup=1.760528
+T2_GMRES iterations=18 relative_residual=3.032017251610e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.001516 preprocess=6.601096 solve_cleanup=1.819906
+T2_GMRES iterations=18 relative_residual=3.032017251610e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.001504 preprocess=6.632269 solve_cleanup=1.750526
+CHECK round 1 time : 8.451929333 s
+CHECK round 2 time : 8.381401304 s
+CHECK round 3 time : 8.441860665 s
+CHECK round 4 time : 8.422939108 s
+CHECK round 5 time : 8.384708296 s
+CHECK end to end time :             8.416504 s
+Q-Check || b - Ax || 2             =  1.643675e-10
+Q-Check || b - Ax || MAX           =  1.217768e-12
+Q-Check || b - Ax || 2 / || b || 2 =  5.875263e-07
+CPU_CONTROL_REPEAT_PASS=1
+CONTROL_REPEAT=2 RANKS=96 NODE=c3n182
+OFFICIAL_RESIDUAL_PASS relative_residual=5.875263000000e-07 threshold=1.0e-06
+CPU_OUTER_ROUNDS_AND_RSS_PASS sum_peak_RSS_KiB=19992264
+T2_GMRES iterations=18 relative_residual=3.032017251610e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.003515 preprocess=6.645875 solve_cleanup=1.746688
+T2_GMRES iterations=18 relative_residual=3.032017251610e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.001529 preprocess=7.892766 solve_cleanup=1.788528
+T2_GMRES iterations=18 relative_residual=3.032017251610e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.001432 preprocess=6.612823 solve_cleanup=1.740897
+T2_GMRES iterations=18 relative_residual=3.032017251610e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.001521 preprocess=6.743235 solve_cleanup=1.766945
+T2_GMRES iterations=18 relative_residual=3.032017251610e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.001532 preprocess=6.640026 solve_cleanup=1.766744
+CHECK round 1 time : 8.394323253 s
+CHECK round 2 time : 9.683222127 s
+CHECK round 3 time : 8.355807160 s
+CHECK round 4 time : 8.512082952 s
+CHECK round 5 time : 8.408699072 s
+CHECK end to end time :             8.670765 s
+Q-Check || b - Ax || 2             =  1.643675e-10
+Q-Check || b - Ax || MAX           =  1.217768e-12
+Q-Check || b - Ax || 2 / || b || 2 =  5.875263e-07
+CPU_CONTROL_REPEAT_PASS=2
+SC26_TIMED_CPU_CONTROL_COMPLETE
