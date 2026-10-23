@@ -1,0 +1,35 @@
+{
+  "observed_remote_time": "2026-10-23T13:38:49+08:00",
+  "source": "Human-executed query; Codex read the native Jumper/MobaXterm screenshot",
+  "host": "node76",
+  "user": "travissun",
+  "scheduler_help_result": "Error: failed to get token information. Access token does not exist. Run dlogin to get a new token.",
+  "new_password_attempts": 1,
+  "PATH_query_found": [
+    "/usr/local/bin/cmake"
+  ],
+  "PATH_query_not_found": [
+    "mpicc",
+    "mpirun",
+    "7z",
+    "7za"
+  ],
+  "cmake_version_in_this_query": "Not queried",
+  "public_env_files": [
+    "set_proxy.sh"
+  ],
+  "proxy_script_bytes": 130,
+  "trust_anchor_directory_metadata": "Exists, root-owned, directory entry size 6; contents were not listed in this query",
+  "proxy_loaded": true,
+  "HEAD_target": "https://cmake.org/files/v3.24/cmake-3.24.2-linux-aarch64.tar.gz",
+  "proxy_response": "HTTP/1.1 200 Connection established; Proxy-agent: netentsec; Connection: close",
+  "origin_HEAD_success": false,
+  "curl_exit": 60,
+  "curl_error": "SSL certificate problem: self signed certificate in certificate chain",
+  "native_compute_ready": false,
+  "native_jobs_submitted_by_this_query": 0,
+  "platform_files_exported": false,
+  "later_native_screen": "After the human response, one fresh dlogin authentication failure was visible, followed by another dlogin waiting at the password prompt.",
+  "pending_password_prompt": true,
+  "credential_status": "Human reports forgotten password; applicable installed scheduler password format not established. Provider credential confirmation/reset needed."
+}

@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "job": 9270600,
+  "node": "c3n37",
+  "start": "2026-10-23T14:15:19",
+  "end": "2026-10-23T14:17:51",
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "allocated_seconds": 152,
+  "CPUs": 4,
+  "requested_memory_GiB": 16,
+  "source_identity": {
+    "parent_commit": "84fa8b60174509b0abb4409bb3fe48812fd103e4",
+    "solver_sha256": "e432e915f9a4193435a5710f512202c570796d49e4e6ef31bb8b82694cc1c612",
+    "source_manifest_sha256": "0b05a5bda03bc4d2f8045729307e94f15481b80a2ae12dc53ec7bf057ef3c25f",
+    "archive": "deliverables/SC26_T2_HIP_source_20261023.tar.gz",
+    "archive_sha256": "b777cb575305cb12a15488a761532784670d1b68d8ed139c55e55f89db4a5625",
+    "source_manifest_entries": 89,
+    "archive_members": 91,
+    "status": "PASS: exact-source HIP validation 962050 and HIP-off CPU regression 9270600"
+  },
+  "cache_sha256": "cb6a5ee6ab4d8626270ab6b7ae2467216a72d7afcde671cff94a1ab37461425e",
+  "binary_sha256": "22f6699529a1ca46dafe999daeec65fe9b306a7f24f3a81dfedd5fd37612548f",
+  "remote_checksum_matches": true,
+  "total_complete_solves": 30,
+  "max_known_solution_error": 1.249000902703e-16,
+  "max_original_float128_residual": 4.340013e-12,
+  "cases": {
+    "poisson-1": {
+      "complete_solves": 5,
+      "iterations": [
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "original_float128_residual_after_five_rounds": 1.306065e-12
+    },
+    "poisson-4": {
+      "complete_solves": 5,
+      "iterations": [
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "original_float128_residual_after_five_rounds": 4.340013e-12
+    },
+    "nonsymmetric-1": {
+      "complete_solves": 5,
+      "iterations": [
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "original_float128_residual_after_five_rounds": 3.957536e-13
+    },
+    "nonsymmetric-4": {
+      "complete_solves": 5,
+      "iterations": [
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "original_float128_residual_after_five_rounds": 3.526985e-12
+    },
+    "neumann-1": {
+      "complete_solves": 5,
+      "iterations": [
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "original_float128_residual_after_five_rounds": 1.126722e-12
+    },
+    "neumann-4": {
+      "complete_solves": 5,
+      "iterations": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "original_float128_residual_after_five_rounds": 5.420348e-13
+    }
+  },
+  "warnings": "Module lists, tar epoch timestamp and OpenMPI OpenFabrics warnings are retained across raw job/run outputs; connection locale warnings appear in cpu-final-collection.log:1-2. All six pipelines/checkers and the scheduler succeeded.",
+  "exit_scope": "Existing small-case launcher uses set -e and pipefail; six checker PASS markers and final completion marker establish successful launcher/checker exits.",
+  "evidence_archive_sha256": "72d8ef3fe91707baa36e985ab1536252d9baf97752503c3106415800504c4688"
+}

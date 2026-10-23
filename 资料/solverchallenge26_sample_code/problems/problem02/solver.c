@@ -140,13 +140,14 @@ void preprocess(struct MySolver* solver, const struct SC26_SolverInput* input)
     HYPRE_CALL(HYPRE_BoomerAMGSetCoarsenType(solver->amg, 8));
     HYPRE_CALL(HYPRE_BoomerAMGSetRAP2(solver->amg, 1));
     HYPRE_CALL(HYPRE_BoomerAMGSetKeepTranspose(solver->amg, 1));
+    HYPRE_CALL(HYPRE_BoomerAMGSetRelaxType(solver->amg, 18));
 #else
     HYPRE_CALL(HYPRE_BoomerAMGSetCoarsenType(solver->amg, 10));
+    HYPRE_CALL(HYPRE_BoomerAMGSetRelaxType(solver->amg, 6));
 #endif
     HYPRE_CALL(HYPRE_BoomerAMGSetInterpType(solver->amg, 6));
     HYPRE_CALL(HYPRE_BoomerAMGSetPMaxElmts(solver->amg, 4));
     HYPRE_CALL(HYPRE_BoomerAMGSetStrongThreshold(solver->amg, 0.25));
-    HYPRE_CALL(HYPRE_BoomerAMGSetRelaxType(solver->amg, 6));
     /* Pressure has a constant nullspace; keep the coarse solve iterative. */
     HYPRE_CALL(HYPRE_BoomerAMGSetCycleRelaxType(solver->amg, 6, 3));
     HYPRE_CALL(HYPRE_BoomerAMGSetNumSweeps(solver->amg, 1));

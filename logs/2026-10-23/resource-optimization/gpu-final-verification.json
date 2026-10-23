@@ -1,0 +1,236 @@
+{
+  "status": "PASS",
+  "job": 962050,
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "node": "f11r1n17",
+  "start": "2026-10-23T14:16:03",
+  "end": "2026-10-23T14:17:41",
+  "allocated_seconds": 98,
+  "CPUs": 16,
+  "DCUs": 1,
+  "requested_memory_GiB": 58,
+  "source_identity": {
+    "parent_commit": "84fa8b60174509b0abb4409bb3fe48812fd103e4",
+    "solver_sha256": "e432e915f9a4193435a5710f512202c570796d49e4e6ef31bb8b82694cc1c612",
+    "source_manifest_sha256": "0b05a5bda03bc4d2f8045729307e94f15481b80a2ae12dc53ec7bf057ef3c25f",
+    "archive": "deliverables/SC26_T2_HIP_source_20261023.tar.gz",
+    "archive_sha256": "b777cb575305cb12a15488a761532784670d1b68d8ed139c55e55f89db4a5625",
+    "source_manifest_entries": 89,
+    "archive_members": 91,
+    "status": "PASS: exact-source HIP validation 962050 and HIP-off CPU regression 9270600"
+  },
+  "cache_sha256": "01befd9ab7a0d9a7226ba3db571e54a22c2b778a2bf0022de6286de247a10c12",
+  "binary_sha256": "370cf41c4f15aa5e4f1d2c6af1018f9c8ec7036d0e402510ed77fecd39504822",
+  "remote_checksum_matches": true,
+  "total_complete_solves": 20,
+  "known_solution_max_error": 1.249000902703e-16,
+  "results": {
+    "small/poisson": {
+      "complete_solves": 5,
+      "iterations": [
+        14,
+        14,
+        14,
+        14,
+        14
+      ],
+      "internal_residuals": [
+        3.408649784557e-12,
+        3.408662345174e-12,
+        3.408649784557e-12,
+        3.408649784557e-12,
+        3.408649784557e-12
+      ],
+      "original_float128_residual_after_five_rounds": 3.408651e-12,
+      "driver_five_round_mean_seconds": 0.072774,
+      "callback_phase_seconds": [
+        {
+          "analyse": 0.047816,
+          "preprocess": 0.160246,
+          "solve_cleanup": 0.045587
+        },
+        {
+          "analyse": 0.000374,
+          "preprocess": 0.01726,
+          "solve_cleanup": 0.010038
+        },
+        {
+          "analyse": 0.000348,
+          "preprocess": 0.017088,
+          "solve_cleanup": 0.010087
+        },
+        {
+          "analyse": 0.000357,
+          "preprocess": 0.017113,
+          "solve_cleanup": 0.010102
+        },
+        {
+          "analyse": 0.000346,
+          "preprocess": 0.017019,
+          "solve_cleanup": 0.010041
+        }
+      ],
+      "process_peak_RSS_KiB": 577436,
+      "GPU_max_observed_phase_GiB": 0.41,
+      "GPU_phase_samples": 15,
+      "exit": 0
+    },
+    "small/nonsymmetric": {
+      "complete_solves": 5,
+      "iterations": [
+        15,
+        15,
+        15,
+        15,
+        15
+      ],
+      "internal_residuals": [
+        2.685087173688e-12,
+        2.685087173688e-12,
+        2.685087173688e-12,
+        2.685087173688e-12,
+        2.685087173688e-12
+      ],
+      "original_float128_residual_after_five_rounds": 2.685092e-12,
+      "driver_five_round_mean_seconds": 0.064706,
+      "callback_phase_seconds": [
+        {
+          "analyse": 0.042307,
+          "preprocess": 0.119566,
+          "solve_cleanup": 0.047857
+        },
+        {
+          "analyse": 0.000364,
+          "preprocess": 0.017089,
+          "solve_cleanup": 0.01102
+        },
+        {
+          "analyse": 0.000347,
+          "preprocess": 0.017116,
+          "solve_cleanup": 0.011026
+        },
+        {
+          "analyse": 0.000346,
+          "preprocess": 0.01698,
+          "solve_cleanup": 0.011028
+        },
+        {
+          "analyse": 0.000345,
+          "preprocess": 0.017003,
+          "solve_cleanup": 0.01108
+        }
+      ],
+      "process_peak_RSS_KiB": 578632,
+      "GPU_max_observed_phase_GiB": 0.41,
+      "GPU_phase_samples": 15,
+      "exit": 0
+    },
+    "small/neumann": {
+      "complete_solves": 5,
+      "iterations": [
+        15,
+        15,
+        15,
+        15,
+        15
+      ],
+      "internal_residuals": [
+        5.119009710125e-12,
+        5.119009710125e-12,
+        5.119009710125e-12,
+        5.118998336721e-12,
+        5.118998336721e-12
+      ],
+      "original_float128_residual_after_five_rounds": 5.118996e-12,
+      "driver_five_round_mean_seconds": 0.064665,
+      "callback_phase_seconds": [
+        {
+          "analyse": 0.040882,
+          "preprocess": 0.119859,
+          "solve_cleanup": 0.047652
+        },
+        {
+          "analyse": 0.000365,
+          "preprocess": 0.017243,
+          "solve_cleanup": 0.011188
+        },
+        {
+          "analyse": 0.000367,
+          "preprocess": 0.017097,
+          "solve_cleanup": 0.011165
+        },
+        {
+          "analyse": 0.000353,
+          "preprocess": 0.017063,
+          "solve_cleanup": 0.011101
+        },
+        {
+          "analyse": 0.000333,
+          "preprocess": 0.017394,
+          "solve_cleanup": 0.011207
+        }
+      ],
+      "process_peak_RSS_KiB": 577412,
+      "GPU_max_observed_phase_GiB": 0.41,
+      "GPU_phase_samples": 15,
+      "exit": 0
+    },
+    "full": {
+      "complete_solves": 5,
+      "iterations": [
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "internal_residuals": [
+        5.653737557116e-08,
+        5.653712681211e-08,
+        5.653708423609e-08,
+        5.653713766824e-08,
+        5.653705639783e-08
+      ],
+      "original_float128_residual_after_five_rounds": 5.89461e-07,
+      "driver_five_round_mean_seconds": 6.860954,
+      "callback_phase_seconds": [
+        {
+          "analyse": 0.112198,
+          "preprocess": 5.86857,
+          "solve_cleanup": 1.02303
+        },
+        {
+          "analyse": 0.046186,
+          "preprocess": 5.753565,
+          "solve_cleanup": 1.002351
+        },
+        {
+          "analyse": 0.046136,
+          "preprocess": 5.768313,
+          "solve_cleanup": 1.001719
+        },
+        {
+          "analyse": 0.045466,
+          "preprocess": 5.751275,
+          "solve_cleanup": 1.001826
+        },
+        {
+          "analyse": 0.046014,
+          "preprocess": 5.773067,
+          "solve_cleanup": 1.004419
+        }
+      ],
+      "process_peak_RSS_KiB": 5634960,
+      "GPU_max_observed_phase_GiB": 15.28,
+      "GPU_phase_samples": 15,
+      "exit": 0
+    }
+  },
+  "timing_scope": "Driver prototype-inclusive outer mean. Callback phase sums are separately scoped and are not individual outer-round times.",
+  "memory_scope": "GNU time full-process host peak; fifteen rounded GPU phase samples per case, not continuous GPU peaks.",
+  "final_accounting_source": "Human executed the exact sacct command in logs/2026-10-23/resource-optimization/scnet-962050-final-accounting.txt and pasted the single final allocation row on 23 October 2026.",
+  "final_accounting_path": "logs/2026-10-23/resource-optimization/gpu-final-962050-accounting-user.log",
+  "initial_accounting_scope": "Initial receipt in the retrieved archive was collected immediately after sbatch --wait and still reported RUNNING; the separately retained final accounting establishes COMPLETED 0:0.",
+  "evidence_archive_sha256": "5ebbe6c1f57cb9de795e8de4dca8e4206cc964812a60c950d98bc408116339d5"
+}

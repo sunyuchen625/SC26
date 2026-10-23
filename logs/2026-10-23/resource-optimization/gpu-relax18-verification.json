@@ -1,0 +1,484 @@
+{
+  "status": "PASS",
+  "job": 961898,
+  "node": "f11r1n07",
+  "start": "2026-10-23T13:41:54",
+  "end": "2026-10-23T13:45:22",
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "allocated_seconds": 208,
+  "CPUs": 16,
+  "DCUs": 1,
+  "requested_host_memory_GiB": 58,
+  "archive_sha256": "2ee31f257963cb06053ac9b140da0b73b490c2bea204467506f5562912f79302",
+  "remote_checksum_matches": true,
+  "source_change": "General AMG relaxation 6 to 18; coarse relaxation remains 6",
+  "candidate_solver_sha256": "4e08cf8c7fd6892943fffb17f393ce175a4d7714ad1ee98acf8d3584bb9854ca",
+  "candidate_manifest_sha256": "b23c27241d691aa45e2b5899df31d329b266f388b462dbeb4683ee45f0c44186",
+  "candidate_binary_sha256": "cc57db80775153d69ffb32ee4bf15f648bc3ec817862ed7fa1e1b66b5d8dfe00",
+  "baseline_binary_sha256": "7f02c33a25b0f30b80224b505e73a63a8f2dbda3f3cddd064003743fd6ea168d",
+  "manifest_entries": 89,
+  "only_one_manifest_entry_changed": true,
+  "total_complete_solves": 40,
+  "known_solution_checks": "Six checks passed on the allocated node in batch stdout; raw answer vectors remain on SCNet",
+  "known_solution_max_error": 1.249000902703e-16,
+  "speedup": 1.8707318821042294,
+  "time_reduction_percent": 46.54498543772163,
+  "results": {
+    "baseline": {
+      "small/poisson": {
+        "complete_solves": 5,
+        "gmres_iterations": [
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "gmres_residuals": [
+          5.279776821125e-12,
+          5.279773673506e-12,
+          5.279776821125e-12,
+          5.279776821125e-12,
+          5.279776821125e-12
+        ],
+        "rtol": 1e-11,
+        "original_float128_residual_after_five_rounds": 5.279773e-12,
+        "driver_five_round_mean_seconds": 0.065697,
+        "callback_phase_seconds": [
+          {
+            "analyse": 0.061272,
+            "preprocess": 0.106514,
+            "solve_cleanup": 0.058802
+          },
+          {
+            "analyse": 0.000358,
+            "preprocess": 0.016129,
+            "solve_cleanup": 0.009076
+          },
+          {
+            "analyse": 0.000343,
+            "preprocess": 0.015997,
+            "solve_cleanup": 0.009107
+          },
+          {
+            "analyse": 0.000345,
+            "preprocess": 0.015933,
+            "solve_cleanup": 0.009101
+          },
+          {
+            "analyse": 0.000349,
+            "preprocess": 0.015988,
+            "solve_cleanup": 0.009107
+          }
+        ],
+        "callback_phase_means_seconds": {
+          "analyse": 0.0125334,
+          "preprocess": 0.0341122,
+          "solve_cleanup": 0.0190386
+        },
+        "process_peak_RSS_KiB": 579952,
+        "GPU_phase_samples": 15,
+        "GPU_max_observed_phase_GiB": 0.41,
+        "process_exit": 0
+      },
+      "small/nonsymmetric": {
+        "complete_solves": 5,
+        "gmres_iterations": [
+          7,
+          7,
+          7,
+          7,
+          7
+        ],
+        "gmres_residuals": [
+          3.654722609099e-13,
+          3.654722609099e-13,
+          3.654722609099e-13,
+          3.654722609099e-13,
+          3.654722609099e-13
+        ],
+        "rtol": 1e-11,
+        "original_float128_residual_after_five_rounds": 3.654671e-13,
+        "driver_five_round_mean_seconds": 0.065703,
+        "callback_phase_seconds": [
+          {
+            "analyse": 0.065933,
+            "preprocess": 0.107493,
+            "solve_cleanup": 0.048864
+          },
+          {
+            "analyse": 0.000357,
+            "preprocess": 0.016042,
+            "solve_cleanup": 0.010289
+          },
+          {
+            "analyse": 0.000345,
+            "preprocess": 0.015884,
+            "solve_cleanup": 0.010272
+          },
+          {
+            "analyse": 0.000354,
+            "preprocess": 0.015871,
+            "solve_cleanup": 0.010274
+          },
+          {
+            "analyse": 0.000327,
+            "preprocess": 0.015862,
+            "solve_cleanup": 0.010293
+          }
+        ],
+        "callback_phase_means_seconds": {
+          "analyse": 0.013463200000000002,
+          "preprocess": 0.0342304,
+          "solve_cleanup": 0.017998399999999998
+        },
+        "process_peak_RSS_KiB": 580988,
+        "GPU_phase_samples": 15,
+        "GPU_max_observed_phase_GiB": 0.41,
+        "process_exit": 0
+      },
+      "small/neumann": {
+        "complete_solves": 5,
+        "gmres_iterations": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gmres_residuals": [
+          6.013829523942e-13,
+          6.013771043334e-13,
+          6.013771043334e-13,
+          6.013829523942e-13,
+          6.013829523942e-13
+        ],
+        "rtol": 1e-11,
+        "original_float128_residual_after_five_rounds": 6.013807e-13,
+        "driver_five_round_mean_seconds": 0.065032,
+        "callback_phase_seconds": [
+          {
+            "analyse": 0.054807,
+            "preprocess": 0.107092,
+            "solve_cleanup": 0.050429
+          },
+          {
+            "analyse": 0.000366,
+            "preprocess": 0.01614,
+            "solve_cleanup": 0.011752
+          },
+          {
+            "analyse": 0.000355,
+            "preprocess": 0.01606,
+            "solve_cleanup": 0.011794
+          },
+          {
+            "analyse": 0.000345,
+            "preprocess": 0.016067,
+            "solve_cleanup": 0.011773
+          },
+          {
+            "analyse": 0.000343,
+            "preprocess": 0.016029,
+            "solve_cleanup": 0.011753
+          }
+        ],
+        "callback_phase_means_seconds": {
+          "analyse": 0.0112432,
+          "preprocess": 0.034277600000000005,
+          "solve_cleanup": 0.019500200000000002
+        },
+        "process_peak_RSS_KiB": 578460,
+        "GPU_phase_samples": 15,
+        "GPU_max_observed_phase_GiB": 0.41,
+        "process_exit": 0
+      },
+      "full": {
+        "complete_solves": 5,
+        "gmres_iterations": [
+          13,
+          13,
+          13,
+          13,
+          13
+        ],
+        "gmres_residuals": [
+          9.188956677325e-08,
+          9.188953037105e-08,
+          9.188955320289e-08,
+          9.188951761794e-08,
+          9.1889365474e-08
+        ],
+        "rtol": 1e-07,
+        "original_float128_residual_after_five_rounds": 5.938952e-07,
+        "driver_five_round_mean_seconds": 12.739078,
+        "callback_phase_seconds": [
+          {
+            "analyse": 0.115986,
+            "preprocess": 5.812578,
+            "solve_cleanup": 6.964847
+          },
+          {
+            "analyse": 0.04495,
+            "preprocess": 5.426182,
+            "solve_cleanup": 6.989772
+          },
+          {
+            "analyse": 0.045179,
+            "preprocess": 5.774443,
+            "solve_cleanup": 6.930187
+          },
+          {
+            "analyse": 0.046219,
+            "preprocess": 5.795394,
+            "solve_cleanup": 6.929487
+          },
+          {
+            "analyse": 0.045224,
+            "preprocess": 5.776235,
+            "solve_cleanup": 6.93889
+          }
+        ],
+        "callback_phase_means_seconds": {
+          "analyse": 0.0595116,
+          "preprocess": 5.7169664,
+          "solve_cleanup": 6.9506366
+        },
+        "process_peak_RSS_KiB": 5629368,
+        "GPU_phase_samples": 15,
+        "GPU_max_observed_phase_GiB": 21.9,
+        "process_exit": 0
+      }
+    },
+    "l1jacobi": {
+      "small/poisson": {
+        "complete_solves": 5,
+        "gmres_iterations": [
+          14,
+          14,
+          14,
+          14,
+          14
+        ],
+        "gmres_residuals": [
+          3.408662345174e-12,
+          3.408662345174e-12,
+          3.408662345174e-12,
+          3.408662345174e-12,
+          3.408662345174e-12
+        ],
+        "rtol": 1e-11,
+        "original_float128_residual_after_five_rounds": 3.408662e-12,
+        "driver_five_round_mean_seconds": 0.064414,
+        "callback_phase_seconds": [
+          {
+            "analyse": 0.053887,
+            "preprocess": 0.118674,
+            "solve_cleanup": 0.044079
+          },
+          {
+            "analyse": 0.000357,
+            "preprocess": 0.01664,
+            "solve_cleanup": 0.009632
+          },
+          {
+            "analyse": 0.000352,
+            "preprocess": 0.01634,
+            "solve_cleanup": 0.009585
+          },
+          {
+            "analyse": 0.000339,
+            "preprocess": 0.016286,
+            "solve_cleanup": 0.009621
+          },
+          {
+            "analyse": 0.000335,
+            "preprocess": 0.016335,
+            "solve_cleanup": 0.009555
+          }
+        ],
+        "callback_phase_means_seconds": {
+          "analyse": 0.011054,
+          "preprocess": 0.036855,
+          "solve_cleanup": 0.0164944
+        },
+        "process_peak_RSS_KiB": 581428,
+        "GPU_phase_samples": 15,
+        "GPU_max_observed_phase_GiB": 0.41,
+        "process_exit": 0
+      },
+      "small/nonsymmetric": {
+        "complete_solves": 5,
+        "gmres_iterations": [
+          15,
+          15,
+          15,
+          15,
+          15
+        ],
+        "gmres_residuals": [
+          2.685087173688e-12,
+          2.685087173688e-12,
+          2.685087173688e-12,
+          2.685087173688e-12,
+          2.685087173688e-12
+        ],
+        "rtol": 1e-11,
+        "original_float128_residual_after_five_rounds": 2.685092e-12,
+        "driver_five_round_mean_seconds": 0.067964,
+        "callback_phase_seconds": [
+          {
+            "analyse": 0.05076,
+            "preprocess": 0.133747,
+            "solve_cleanup": 0.046551
+          },
+          {
+            "analyse": 0.000351,
+            "preprocess": 0.016366,
+            "solve_cleanup": 0.010543
+          },
+          {
+            "analyse": 0.000349,
+            "preprocess": 0.016278,
+            "solve_cleanup": 0.010576
+          },
+          {
+            "analyse": 0.000351,
+            "preprocess": 0.01627,
+            "solve_cleanup": 0.010601
+          },
+          {
+            "analyse": 0.000324,
+            "preprocess": 0.016169,
+            "solve_cleanup": 0.010534
+          }
+        ],
+        "callback_phase_means_seconds": {
+          "analyse": 0.010427,
+          "preprocess": 0.039766,
+          "solve_cleanup": 0.017761
+        },
+        "process_peak_RSS_KiB": 578888,
+        "GPU_phase_samples": 15,
+        "GPU_max_observed_phase_GiB": 0.41,
+        "process_exit": 0
+      },
+      "small/neumann": {
+        "complete_solves": 5,
+        "gmres_iterations": [
+          15,
+          15,
+          15,
+          15,
+          15
+        ],
+        "gmres_residuals": [
+          5.119009710125e-12,
+          5.119009710125e-12,
+          5.119009710125e-12,
+          5.119009710125e-12,
+          5.118998336721e-12
+        ],
+        "rtol": 1e-11,
+        "original_float128_residual_after_five_rounds": 5.118996e-12,
+        "driver_five_round_mean_seconds": 0.063333,
+        "callback_phase_seconds": [
+          {
+            "analyse": 0.04608,
+            "preprocess": 0.111281,
+            "solve_cleanup": 0.049324
+          },
+          {
+            "analyse": 0.000364,
+            "preprocess": 0.016553,
+            "solve_cleanup": 0.010665
+          },
+          {
+            "analyse": 0.000349,
+            "preprocess": 0.016421,
+            "solve_cleanup": 0.01064
+          },
+          {
+            "analyse": 0.000346,
+            "preprocess": 0.016448,
+            "solve_cleanup": 0.010721
+          },
+          {
+            "analyse": 0.000336,
+            "preprocess": 0.016393,
+            "solve_cleanup": 0.010693
+          }
+        ],
+        "callback_phase_means_seconds": {
+          "analyse": 0.009495,
+          "preprocess": 0.0354192,
+          "solve_cleanup": 0.0184086
+        },
+        "process_peak_RSS_KiB": 579224,
+        "GPU_phase_samples": 15,
+        "GPU_max_observed_phase_GiB": 0.41,
+        "process_exit": 0
+      },
+      "full": {
+        "complete_solves": 5,
+        "gmres_iterations": [
+          25,
+          25,
+          25,
+          25,
+          25
+        ],
+        "gmres_residuals": [
+          5.653705693617e-08,
+          5.653748062737e-08,
+          5.653707740124e-08,
+          5.653670682625e-08,
+          5.653717961903e-08
+        ],
+        "rtol": 1e-07,
+        "original_float128_residual_after_five_rounds": 5.89461e-07,
+        "driver_five_round_mean_seconds": 6.809676,
+        "callback_phase_seconds": [
+          {
+            "analyse": 0.109502,
+            "preprocess": 5.834134,
+            "solve_cleanup": 1.019284
+          },
+          {
+            "analyse": 0.045278,
+            "preprocess": 5.707107,
+            "solve_cleanup": 0.997036
+          },
+          {
+            "analyse": 0.045441,
+            "preprocess": 5.724935,
+            "solve_cleanup": 0.99528
+          },
+          {
+            "analyse": 0.045311,
+            "preprocess": 5.711119,
+            "solve_cleanup": 0.994184
+          },
+          {
+            "analyse": 0.045252,
+            "preprocess": 5.718698,
+            "solve_cleanup": 0.994892
+          }
+        ],
+        "callback_phase_means_seconds": {
+          "analyse": 0.0581568,
+          "preprocess": 5.7391986,
+          "solve_cleanup": 1.0001352000000001
+        },
+        "process_peak_RSS_KiB": 5628356,
+        "GPU_phase_samples": 15,
+        "GPU_max_observed_phase_GiB": 15.28,
+        "process_exit": 0
+      }
+    }
+  },
+  "timing_scope": "Driver outer mean over five complete solves; includes implementation setup/conversion/transfer/cleanup and is not formal transfer-excluded GPU timing. Callback phases are separately scoped.",
+  "memory_scope": "Full-process GNU time host RSS peak; fifteen rounded GPU phase samples per configuration, not continuous GPU peaks.",
+  "original_residual_scope": "Driver original-system in-memory float128 check after five complete rounds."
+}

@@ -1,0 +1,7 @@
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+CPU_CONTROL_BATCH_SHA256=56063dac6c43b41395c647b22dcba281a256737f8dfb833bcf5a26739c8563f2
+sbatch: Job 9269821 to start at 2031-06-27T23:17:04 using 96 processors on nodes c3n17 in partition qhn
+SC26_CPU_CONTROL_SUBMITTED=9269822
+             JOBID                     NAME    PARTITION      STATE         TIME  NODES NODELIST(REASON)
+           9269822      sc26_launch_compare          qhn    PENDING         0:00      1 (None)

@@ -1,0 +1,6 @@
+Source: scheduler invocations in the executed SSH payload cpu-submit.sh, submitted on 23 October 2026.
+Working directory and cpu_work: /data/home/sunyc/solverchallenge26/resource-optimization-20261023
+Batch SHA256: 56063dac6c43b41395c647b22dcba281a256737f8dfb833bcf5a26739c8563f2
+
+sbatch --test-only --ntasks=96 --mem=60G --chdir="$cpu_work" scripts/launch-comparison.sbatch /data/home/sunyc/solverchallenge26/execution-20261001-v19-selected 02:16 02:32 02:64 02:96
+cpu_job=$(sbatch --parsable --ntasks=96 --mem=60G --chdir="$cpu_work" scripts/launch-comparison.sbatch /data/home/sunyc/solverchallenge26/execution-20261001-v19-selected 02:16 02:32 02:64 02:96)

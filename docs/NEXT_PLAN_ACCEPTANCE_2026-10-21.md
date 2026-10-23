@@ -8,12 +8,15 @@ The CPU candidate, report and reproduction preparation pass their recorded scope
 
 [Full original T2-low S3](T2_HIP_FULL_RESULTS_2026-10-21.md) now passes numerical acceptance in job 953826. Its prototype mean is 12.833244 s versus the experimental 96-rank CPU reference 7.036402 s. CPU retention is provisional against that reference until the actual contract identifies the permitted comparison setting. Native LX2 compute, actual formal-contract compliance, formal GPU timing/eligibility and genuine teammate reproduction remain incomplete. **The frozen CPU delivery remains the provisional primary path.** Optional work must fit the unchanged 24 October eligibility, 25 October freeze and 29 October acceptance milestones.
 
+
+**23 October execution update:** the [same-allocation smoother comparison](T2_HIP_OPTIMIZATION_2026-10-23.md) passes 40 solves and improves the GPU mean from 12.739078 s to 6.809676 s. [Contemporaneous CPU controls](T2_CPU_CONTROLS_2026-10-23.md) pass all four rank settings, with 7.126864 s at 96 ranks. Final HIP-only source validation passes in job 962050 (6.860954 s), and the affected CPU regression passes in job 9270600. The initial 4.451% advantage over the fresh 96-rank mean invokes the smaller-advantage condition; available callback sums do not establish individual outer-round ranges, so S4 remains inconclusive. Formal eligibility and the 25 October freeze retain their existing deadlines.
+
 The previous **20 October GPU technical decision passed without S3/S4 completion**. The approved conditional reopening ends on 23 October. At the **21 October LX2 decision point**, authentication/toolchain/evidence readiness is insufficient: LX2 is an environment appendix by default. The inclusion opportunity below requires all readiness gates to be met promptly.
 
 | Priority | Work | Decision / completion requirement |
 | --- | --- | --- |
 | 1 | CPU delivery and genuine teammate reproduction | Continue from the accepted frozen CPU package; settle formal entry/launcher/timing terms; obtain the independent build and four full-problem checks already defined in the reproduction guide. |
-| 2 | Full GPU result and eligibility | S3 passed on 21 October. CPU retention is provisional against the 96-rank experimental reference. A contract capped at 32 ranks or fewer reopens S4 selection with formal GPU entry/timing eligibility at the 24 October gate. |
+| 2 | GPU optimization and eligibility | The 23 October HIP-only source and CPU regression pass. Apply S4 to the fastest permitted CPU setting with formal GPU entry/timing eligibility at the 24 October gate. |
 | 3 | LX2 readiness checks; conditional minimal native T2-low | Resolve authentication, inbound transfer, native dependencies and permitted evidence retention by 22 October noon. Otherwise retain the environment appendix and close main-package porting for this submission. |
 
 ## Closed work and current evidence

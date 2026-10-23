@@ -1,0 +1,150 @@
+{
+  "status": "PASS",
+  "scope": "Fresh same-allocation T2-low CPU controls; experimental configurations pending formal contract",
+  "job_id": 9269822,
+  "node": "c3n17",
+  "allocated_seconds": 448,
+  "allocated_CPUs": 96,
+  "requested_memory": "60G",
+  "binary_cache_input_hashes_match_accepted_job": 9213608,
+  "archive_sha256": "d24f7dda882460ed6f0c19851584e20f17120393285248b7a9086c608f7e3cd3",
+  "configurations": [
+    {
+      "ranks": 16,
+      "solves": 5,
+      "mean_seconds": 24.410885,
+      "original_float128_relative_residual": 5.885605e-07,
+      "conservative_rank_peak_sum_KiB": 15139556,
+      "phase_seconds": [
+        {
+          "analyse": 0.008464,
+          "prepare": 21.293304,
+          "solve_cleanup": 4.157438
+        },
+        {
+          "analyse": 0.005297,
+          "prepare": 20.014166,
+          "solve_cleanup": 4.155976
+        },
+        {
+          "analyse": 0.005273,
+          "prepare": 19.992408,
+          "solve_cleanup": 4.130216
+        },
+        {
+          "analyse": 0.004986,
+          "prepare": 20.022587,
+          "solve_cleanup": 4.141341
+        },
+        {
+          "analyse": 0.005033,
+          "prepare": 19.986305,
+          "solve_cleanup": 4.125581
+        }
+      ]
+    },
+    {
+      "ranks": 32,
+      "solves": 5,
+      "mean_seconds": 20.288075,
+      "original_float128_relative_residual": 5.89425e-07,
+      "conservative_rank_peak_sum_KiB": 16368548,
+      "phase_seconds": [
+        {
+          "analyse": 0.007938,
+          "prepare": 18.206793,
+          "solve_cleanup": 3.056107
+        },
+        {
+          "analyse": 0.003848,
+          "prepare": 16.982315,
+          "solve_cleanup": 3.064093
+        },
+        {
+          "analyse": 0.003941,
+          "prepare": 16.970689,
+          "solve_cleanup": 3.070752
+        },
+        {
+          "analyse": 0.003885,
+          "prepare": 16.970051,
+          "solve_cleanup": 3.061009
+        },
+        {
+          "analyse": 0.003738,
+          "prepare": 16.974955,
+          "solve_cleanup": 3.058478
+        }
+      ]
+    },
+    {
+      "ranks": 64,
+      "solves": 5,
+      "mean_seconds": 12.608171,
+      "original_float128_relative_residual": 5.89619e-07,
+      "conservative_rank_peak_sum_KiB": 18466992,
+      "phase_seconds": [
+        {
+          "analyse": 0.006674,
+          "prepare": 10.996334,
+          "solve_cleanup": 2.351891
+        },
+        {
+          "analyse": 0.002553,
+          "prepare": 10.08405,
+          "solve_cleanup": 2.327948
+        },
+        {
+          "analyse": 0.002539,
+          "prepare": 10.086927,
+          "solve_cleanup": 2.334229
+        },
+        {
+          "analyse": 0.002601,
+          "prepare": 10.10128,
+          "solve_cleanup": 2.333692
+        },
+        {
+          "analyse": 0.002483,
+          "prepare": 10.080963,
+          "solve_cleanup": 2.329192
+        }
+      ]
+    },
+    {
+      "ranks": 96,
+      "solves": 5,
+      "mean_seconds": 7.126864,
+      "original_float128_relative_residual": 5.875263e-07,
+      "conservative_rank_peak_sum_KiB": 20110324,
+      "phase_seconds": [
+        {
+          "analyse": 0.004453,
+          "prepare": 6.270019,
+          "solve_cleanup": 1.701413
+        },
+        {
+          "analyse": 0.001909,
+          "prepare": 5.211717,
+          "solve_cleanup": 1.713649
+        },
+        {
+          "analyse": 0.001634,
+          "prepare": 5.214022,
+          "solve_cleanup": 1.698847
+        },
+        {
+          "analyse": 0.001652,
+          "prepare": 5.199236,
+          "solve_cleanup": 1.694703
+        },
+        {
+          "analyse": 0.00164,
+          "prepare": 5.213976,
+          "solve_cleanup": 1.705851
+        }
+      ]
+    }
+  ],
+  "genuine_teammate_reproduction": false
+}

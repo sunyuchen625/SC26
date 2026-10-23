@@ -1,0 +1,2 @@
+date -Is
+sacct -n -P -X -j 962050 --format=JobIDRaw,JobName,Submit,Start,End,State,ExitCode,ElapsedRaw,AllocCPUS,ReqMem,NodeList,AllocTRES

@@ -1,6 +1,8 @@
 # SolverChallenge26 · CUDA OOM!
 
-线性解法器竞赛的 CPU 求解实现、实验脚本与基线记录。更新日期：2026-10-04。
+线性解法器竞赛的 CPU 求解实现、实验脚本与基线记录。更新日期：2026-10-23。
+
+10 月 23 日国产 GPU 平滑器对照通过 40 次求解，同一分配中的 T2 低档均时从 12.739 s 降至 6.810 s。最终 HIP 源码与 CPU 回归复验均已通过，最终 HIP 均时 6.861 s，正式平台选择仍待资格、计时合同及 S4 验收。详见[GPU 优化结果](docs/T2_HIP_OPTIMIZATION_2026-10-23.md)、[同期 CPU 对照](docs/T2_CPU_CONTROLS_2026-10-23.md)与[LX2 核查](docs/华为平台接入进度.md)。
 
 9 月归档基线中，在比赛 CPU 平台通过参考框架原始系统残差检查的结果：
 
@@ -29,7 +31,7 @@
 - [当前执行结果（English）](docs/EXECUTION_RESULTS_2026-10-02.md)
 - [Claude Opus 5.5 max 执行审计（English）](docs/reviews/CLAUDE_EXECUTION_AUDIT_2026-10-02.md)
 - [技术报告](docs/SC26技术报告_2026-10-02.docx)
-- [当前算力状态（English）](docs/COMPUTE_STATUS_2026-10-01.md)
+- [算力状态与正式合同（English）](docs/COMPUTE_STATUS_2026-10-21.md)
 - [项目计划](docs/项目背景与下一步工作方案.md)
 - [English project brief](docs/PROJECT_BRIEF.md)
 - [Claude Sonnet 5.5 max 项目审计（English）](docs/reviews/CLAUDE_AUDIT_2026-09-30.md)

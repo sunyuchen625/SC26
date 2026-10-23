@@ -1,0 +1,6 @@
+SC26_T2_HIP_source_20261023.tar.gz: OK
+SC26_CPU_FINAL_BATCH_SHA256=5a18d2fa1f72686e8b6e5a3ea0159372334be9ed5c5cafc1d098fc764701f604
+sbatch: Job 9270599 to start at 2048-01-28T21:07:18 using 4 processors on nodes c3n37 in partition qhn
+SC26_CPU_FINAL_SUBMITTED=9270600
+             JOBID                     NAME    PARTITION      STATE         TIME  NODES NODELIST(REASON)
+           9270600        sc26_t2_l1_hipoff          qhn    PENDING         0:00      1 (None)
