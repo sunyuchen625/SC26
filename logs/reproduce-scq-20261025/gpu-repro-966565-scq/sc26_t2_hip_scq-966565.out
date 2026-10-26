@@ -1,0 +1,314 @@
+OPERATOR=scq JOB=966565 NODE=f11r1n20 USER=travissun DIR=/public/home/travissun/sc26-hip-20261007/reproduce-gpu-20261024-scq
+JobId=966565 JobName=sc26_t2_hip_scq
+   UserId=travissun(424871) GroupId=ac3k88uz8y(371608) MCS_label=N/A
+   Priority=1120 Nice=0 Account=ac3k88uz8y QOS=user_travissun
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:00 TimeLimit=00:45:00 TimeMin=00:23:00
+   SubmitTime=2026-10-24T11:56:09 EligibleTime=2026-10-24T11:56:09
+   AccrueTime=2026-10-24T11:56:09
+   StartTime=2026-10-24T11:56:10 EndTime=2026-10-24T12:19:10 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-24T11:56:10 Scheduler=Main
+   Partition=hx1hdnormal AllocNode:Sid=zz-login03:2706119
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=f11r1n20
+   BatchHost=f11r1n20
+   StepMgrEnabled=Yes
+   NumNodes=1 NumCPUs=16 NumTasks=1 CPUs/Task=16 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=16,mem=58G,node=1,billing=16,gres/dcu=1
+   AllocTRES=cpu=16,mem=58G,node=1,billing=16,gres/dcu=1
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=16 MinMemoryNode=58G MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/public/home/travissun/sc26-hip-20261007/reproduce-gpu-20261024-scq/build-and-run-scq.sbatch
+   WorkDir=/public/home/travissun/sc26-hip-20261007/reproduce-gpu-20261024-scq
+   StdErr=/public/home/travissun/sc26-hip-20261007/reproduce-gpu-20261024-scq/sc26_t2_hip_scq-966565.err
+   StdIn=/dev/null
+   StdOut=/public/home/travissun/sc26-hip-20261007/reproduce-gpu-20261024-scq/sc26_t2_hip_scq-966565.out
+   GresEnforceBind=Yes
+   TresPerNode=gres/dcu:Hygon:1
+   TresPerTask=cpu=16
+   
+
+Currently Loaded Modulefiles:
+ 1) compiler/gcc/12.2.0     3) compiler/dtk/25.04.2               
+ 2) compiler/cmake/3.24.1   4) mpi/openmpi/4.1.8/gcc-12.2.0/shca  
+
+================================= System Management Interface ==================================
+================================================================================================
+HCU     Temp     AvgPwr     Perf     PwrCap     VRAM%      HCU%      Dec%      Enc%      Mode     
+0       51.0C    281.0W     auto     1000.0W    0%         0.0%      0.0%      0.0%      Normal   
+================================================================================================
+======================================== End of SMI Log ========================================
+
+  Name:                    Hygon C86 (OPN:7581B)              
+  Marketing Name:          Hygon C86 (OPN:7581B)              
+  Vendor Name:             HygonGenuine                       
+  Queue Min Size:          0(0x0)                             
+  Queue Max Size:          0(0x0)                             
+  Cacheline Size:          64(0x40)                           
+      Size:                    131359272(0x7d46228) KB            
+      Size:                    131359272(0x7d46228) KB            
+      Size:                    131359272(0x7d46228) KB            
+  Name:                    Hygon C86 (OPN:7581B)              
+  Marketing Name:          Hygon C86 (OPN:7581B)              
+  Vendor Name:             HygonGenuine                       
+  Queue Min Size:          0(0x0)                             
+  Queue Max Size:          0(0x0)                             
+  Cacheline Size:          64(0x40)                           
+      Size:                    132113768(0x7dfe568) KB            
+      Size:                    132113768(0x7dfe568) KB            
+      Size:                    132113768(0x7dfe568) KB            
+  Name:                    Hygon C86 (OPN:7581B)              
+  Marketing Name:          Hygon C86 (OPN:7581B)              
+  Vendor Name:             HygonGenuine                       
+  Queue Min Size:          0(0x0)                             
+  Queue Max Size:          0(0x0)                             
+  Cacheline Size:          64(0x40)                           
+      Size:                    132113768(0x7dfe568) KB            
+      Size:                    132113768(0x7dfe568) KB            
+      Size:                    132113768(0x7dfe568) KB            
+  Name:                    Hygon C86 (OPN:7581B)              
+  Marketing Name:          Hygon C86 (OPN:7581B)              
+  Vendor Name:             HygonGenuine                       
+  Queue Min Size:          0(0x0)                             
+  Queue Max Size:          0(0x0)                             
+  Cacheline Size:          64(0x40)                           
+      Size:                    132113768(0x7dfe568) KB            
+      Size:                    132113768(0x7dfe568) KB            
+      Size:                    132113768(0x7dfe568) KB            
+  Name:                    Hygon C86 (OPN:7581B)              
+  Marketing Name:          Hygon C86 (OPN:7581B)              
+  Vendor Name:             HygonGenuine                       
+  Queue Min Size:          0(0x0)                             
+  Queue Max Size:          0(0x0)                             
+  Cacheline Size:          64(0x40)                           
+      Size:                    132071728(0x7df4130) KB            
+      Size:                    132071728(0x7df4130) KB            
+      Size:                    132071728(0x7df4130) KB            
+  Name:                    Hygon C86 (OPN:7581B)              
+  Marketing Name:          Hygon C86 (OPN:7581B)              
+  Vendor Name:             HygonGenuine                       
+  Queue Min Size:          0(0x0)                             
+  Queue Max Size:          0(0x0)                             
+  Cacheline Size:          64(0x40)                           
+      Size:                    132110380(0x7dfd82c) KB            
+      Size:                    132110380(0x7dfd82c) KB            
+      Size:                    132110380(0x7dfd82c) KB            
+  Name:                    Hygon C86 (OPN:7581B)              
+  Marketing Name:          Hygon C86 (OPN:7581B)              
+  Vendor Name:             HygonGenuine                       
+  Queue Min Size:          0(0x0)                             
+  Queue Max Size:          0(0x0)                             
+  Cacheline Size:          64(0x40)                           
+      Size:                    132113768(0x7dfe568) KB            
+      Size:                    132113768(0x7dfe568) KB            
+      Size:                    132113768(0x7dfe568) KB            
+  Name:                    Hygon C86 (OPN:7581B)              
+  Marketing Name:          Hygon C86 (OPN:7581B)              
+  Vendor Name:             HygonGenuine                       
+  Queue Min Size:          0(0x0)                             
+  Queue Max Size:          0(0x0)                             
+  Cacheline Size:          64(0x40)                           
+      Size:                    132113768(0x7dfe568) KB            
+      Size:                    132113768(0x7dfe568) KB            
+      Size:                    132113768(0x7dfe568) KB            
+  Name:                    gfx936                             
+  Marketing Name:          BW                                 
+  Vendor Name:             C-3000                             
+  Queue Min Size:          64(0x40)                           
+  Queue Max Size:          131072(0x20000)                    
+  Cacheline Size:          64(0x40)                           
+  Wavefront Size:          64(0x40)                           
+  Workgroup Max Size:      1024(0x400)                        
+  Grid Max Size:           4294967295(0xffffffff)             
+      Size:                    67092480(0x3ffc000) KB             
+      Size:                    67092480(0x3ffc000) KB             
+      Size:                    67092480(0x3ffc000) KB             
+      Size:                    64(0x40) KB                        
+      Name:                    amdgcn-amd-amdhsa--gfx936:sramecc+:xnack-
+      Workgroup Max Size:      1024(0x400)                        
+      Grid Max Size:           4294967295(0xffffffff)             
+      FBarrier Max Size:       32                                 
+edcbf44abeee448a736cc01bfe16ac58a052a74e44a132a2d67a2f35e0080d6b  source-sha256.txt
+ea585ebaf584fa059946ba40371378a03b5404629f841e66c286eb1a8f2856f4  src/problems/problem02/solver.c
+34f19d4985ded7685eeca2f1f07e6dfec0af91c9039dba668be75a6dedf2a6d0  src/apps/MPI_iterative_solver.c
+src/CMakeLists.txt: OK
+src/CMakePresets.json: OK
+src/LICENSE: OK
+src/Makefile: OK
+src/README.md: OK
+src/apps/MPI_GPU_direct_solver.c: OK
+src/apps/MPI_GPU_iterative_solver.c: OK
+src/apps/MPI_direct_solver.c: OK
+src/apps/MPI_iterative_solver.c: OK
+src/apps/direct_solver.c: OK
+src/apps/iterative_solver.c: OK
+src/cmake/Dependencies.cmake: OK
+src/include/solverchallenge26/common_types.h: OK
+src/include/solverchallenge26/diagnostics.h: OK
+src/include/solverchallenge26/gpu_direct_solver_api.h: OK
+src/include/solverchallenge26/gpu_iterative_solver_api.h: OK
+src/include/solverchallenge26/gpu_metrics.h: OK
+src/include/solverchallenge26/matrix_market_reader.h: OK
+src/include/solverchallenge26/mpi_system_loader.h: OK
+src/include/solverchallenge26/petsc_binary_reader.h: OK
+src/include/solverchallenge26/residual_check.h: OK
+src/include/solverchallenge26/runtime_support.h: OK
+src/include/solverchallenge26/solver_api.h: OK
+src/include/solverchallenge26/solver_input.h: OK
+src/include/solverchallenge26/system_loader.h: OK
+src/problems/README.md: OK
+src/problems/cpu_baseline/CMakeLists.txt: OK
+src/problems/cpu_baseline/solver.c: OK
+src/problems/cpu_baseline/solver.h: OK
+src/problems/problem01/CMakeLists.txt: OK
+src/problems/problem01/gpu_direct_solver.cu: OK
+src/problems/problem01/gpu_iterative_solver.cu: OK
+src/problems/problem01/solver.c: OK
+src/problems/problem01/solver.h: OK
+src/problems/problem02/CMakeLists.txt: OK
+src/problems/problem02/gpu_direct_solver.cu: OK
+src/problems/problem02/gpu_iterative_solver.cu: OK
+src/problems/problem02/solver.c: OK
+src/problems/problem02/solver.h: OK
+src/problems/problem03/CMakeLists.txt: OK
+src/problems/problem03/gpu_direct_solver.cu: OK
+src/problems/problem03/gpu_iterative_solver.cu: OK
+src/problems/problem03/solver.c: OK
+src/problems/problem03/solver.h: OK
+src/problems/problem04/CMakeLists.txt: OK
+src/problems/problem04/gpu_direct_solver.cu: OK
+src/problems/problem04/gpu_iterative_solver.cu: OK
+src/problems/problem04/solver.c: OK
+src/problems/problem04/solver.h: OK
+src/problems/problem05/CMakeLists.txt: OK
+src/problems/problem05/gpu_direct_solver.cu: OK
+src/problems/problem05/gpu_iterative_solver.cu: OK
+src/problems/problem05/solver.c: OK
+src/problems/problem05/solver.h: OK
+src/problems/problem06/CMakeLists.txt: OK
+src/problems/problem06/gpu_direct_solver.cu: OK
+src/problems/problem06/gpu_iterative_solver.cu: OK
+src/problems/problem06/solver.c: OK
+src/problems/problem06/solver.h: OK
+src/problems/problem07/CMakeLists.txt: OK
+src/problems/problem07/gpu_direct_solver.cu: OK
+src/problems/problem07/gpu_iterative_solver.cu: OK
+src/problems/problem07/solver.c: OK
+src/problems/problem07/solver.h: OK
+src/problems/problem08/CMakeLists.txt: OK
+src/problems/problem08/gpu_direct_solver.cu: OK
+src/problems/problem08/gpu_iterative_solver.cu: OK
+src/problems/problem08/solver.c: OK
+src/problems/problem08/solver.h: OK
+src/problems/problem09/CMakeLists.txt: OK
+src/problems/problem09/gpu_direct_solver.cu: OK
+src/problems/problem09/gpu_iterative_solver.cu: OK
+src/problems/problem09/solver.c: OK
+src/problems/problem09/solver.h: OK
+src/problems/problem10/CMakeLists.txt: OK
+src/problems/problem10/gpu_direct_solver.cu: OK
+src/problems/problem10/gpu_iterative_solver.cu: OK
+src/problems/problem10/solver.c: OK
+src/problems/problem10/solver.h: OK
+src/src/diagnostics.c: OK
+src/src/matrix_market/highlevel.c: OK
+src/src/matrix_market/mmio.c: OK
+src/src/mpi_system_loader.c: OK
+src/src/petsc_binary_reader.c: OK
+src/src/system_loader.c: OK
+src/tests/header_include_order_mpi_first.c: OK
+src/tests/header_include_order_reader_first.c: OK
+tests/check_result.py: OK
+tests/make_small_systems.py: OK
+/public/home/travissun/sc26-hip-20261007/install-892588/lib/libHYPRE.a: OK
+/public/share/ac3k88uz8y/SolverChallenge26-TenProblems/solverchallenge26_02/solverchallenge26_02_A.dat: OK
+/public/share/ac3k88uz8y/SolverChallenge26-TenProblems/solverchallenge26_02/solverchallenge26_02_b.dat: OK
+d0d3561801829f7e376f82f9abe2280d5279c10dcbe05e15f9f4c7a52f608d9d  build/CMakeCache.txt
+8e309cee272eeaeb95cf410a5112e8657c2c6a5b8dba56fe825b68921539f273  build/bin/MPI_iterative_solver
+	linux-vdso.so.1 (0x00007ffe247e6000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007fc984e00000)
+	libquadmath.so.0 => /public/software/compiler/gcc-12.2.0/lib64/libquadmath.so.0 (0x00007fc984a00000)
+	libstdc++.so.6 => /public/software/compiler/gcc-12.2.0/lib64/libstdc++.so.6 (0x00007fc984400000)
+	librocblas.so.4 => /public/software/compiler/dtk-25.04.2/lib/librocblas.so.4 (0x00007fc956c00000)
+	librocsparse.so.1 => /public/software/compiler/dtk-25.04.2/lib/librocsparse.so.1 (0x00007fc92f000000)
+	librocrand.so.1 => /public/software/compiler/dtk-25.04.2/lib/librocrand.so.1 (0x00007fc92ca00000)
+	libgalaxyhip.so.5 => /public/software/compiler/dtk-25.04.2/lib/libgalaxyhip.so.5 (0x00007fc92bc00000)
+	libmpi.so.40 => /public/software/mpi/openmpi/openmpi-4.1.8/lib/libmpi.so.40 (0x00007fc92b800000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007fc92b400000)
+	libgcc_s.so.1 => /public/software/compiler/gcc-12.2.0/lib64/libgcc_s.so.1 (0x00007fc92b000000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007fc92ac00000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fc985200000)
+	librt.so.1 => /lib64/librt.so.1 (0x00007fc92a800000)
+	libnuma.so.1 => /lib64/libnuma.so.1 (0x00007fc92a400000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007fc92a000000)
+	libopen-rte.so.40 => /public/software/mpi/openmpi/openmpi-4.1.8/lib/libopen-rte.so.40 (0x00007fc929c00000)
+	libopen-pal.so.40 => /public/software/mpi/openmpi/openmpi-4.1.8/lib/libopen-pal.so.40 (0x00007fc929800000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x00007fc929400000)
+	libz.so.1 => /lib64/libz.so.1 (0x00007fc929000000)
+	libhwloc.so.15 => /opt/hpc/software/mpi/hwloc/2.12.0/lib/libhwloc.so.15 (0x00007fc928c00000)
+	libpciaccess.so.0 => /lib64/libpciaccess.so.0 (0x00007fc928800000)
+	libevent_core-2.1.so.6 => /lib64/libevent_core-2.1.so.6 (0x00007fc928400000)
+	libevent_pthreads-2.1.so.6 => /lib64/libevent_pthreads-2.1.so.6 (0x00007fc928000000)
+	libcrypto.so.1.1 => /lib64/libcrypto.so.1.1 (0x00007fc927a00000)
+poisson: n=385 nnz=2361
+nonsymmetric: n=385 nnz=2361
+neumann: n=385 nnz=2361
+scaled: n=385 nnz=2361
+KNOWN_SOLUTION_PASS max_abs_error=0.000000000000e+00
+OFFICIAL_RESIDUAL_PASS relative_residual=3.406180000000e-12 threshold=1.0e-10
+KNOWN_SOLUTION_PASS max_abs_error=0.000000000000e+00
+OFFICIAL_RESIDUAL_PASS relative_residual=2.226710000000e-12 threshold=1.0e-10
+KNOWN_SOLUTION_PASS max_abs_error=8.326672684689e-17
+OFFICIAL_RESIDUAL_PASS relative_residual=4.489407000000e-12 threshold=1.0e-10
+OFFICIAL_RESIDUAL_PASS relative_residual=5.896126000000e-07 threshold=1.0e-06
+T2_PREP_CALL_SECONDS assembly=0.874164638 migration_policy=0.144407268 gmres_amg_setup=1.839938020
+T2_GMRES iterations=24 relative_residual=5.809654076107e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.225147 preprocess=2.858513 solve_cleanup=0.937651
+T2_PREP_CALL_SECONDS assembly=0.874193748 migration_policy=0.143158501 gmres_amg_setup=1.758488313
+T2_GMRES iterations=24 relative_residual=5.809658805733e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.179454 preprocess=2.775843 solve_cleanup=0.905318
+T2_PREP_CALL_SECONDS assembly=0.874238469 migration_policy=0.143462385 gmres_amg_setup=1.756522176
+T2_GMRES iterations=24 relative_residual=5.809677679382e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.179636 preprocess=2.774225 solve_cleanup=0.900776
+T2_PREP_CALL_SECONDS assembly=0.874288760 migration_policy=0.143437854 gmres_amg_setup=1.756416404
+T2_GMRES iterations=24 relative_residual=5.809636844872e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.179411 preprocess=2.774145 solve_cleanup=0.901216
+T2_PREP_CALL_SECONDS assembly=0.877939608 migration_policy=0.143278413 gmres_amg_setup=1.756707628
+T2_GMRES iterations=24 relative_residual=5.809680444729e-08 rtol=1.0e-07
+T2_PHASE_SECONDS analyse=0.179915 preprocess=2.777928 solve_cleanup=0.901046
+CHECK round 1 time : 4.040780419 s
+CHECK round 2 time : 3.870947209 s
+CHECK round 3 time : 3.865038419 s
+CHECK round 4 time : 3.865082410 s
+CHECK round 5 time : 3.869141394 s
+CHECK end to end time :             3.902198 s
+Q-Check || b - Ax || 2             =  1.649511e-10
+Q-Check || b - Ax || MAX           =  8.777105e-13
+Q-Check || b - Ax || 2 / || b || 2 =  5.896126e-07
+	Command being timed: "/public/home/travissun/sc26-hip-20261007/reproduce-gpu-20261024-scq/build/bin/MPI_iterative_solver /public/share/ac3k88uz8y/SolverChallenge26-TenProblems/solverchallenge26_02/solverchallenge26_02_A.dat /public/share/ac3k88uz8y/SolverChallenge26-TenProblems/solverchallenge26_02/solverchallenge26_02_b.dat 0 0"
+	User time (seconds): 47.43
+	System time (seconds): 3.19
+	Percent of CPU this job got: 80%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:02.62
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4866080
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 528
+	Minor (reclaiming a frame) page faults: 324457
+	Voluntary context switches: 8255
+	Involuntary context switches: 799
+	Swaps: 0
+	File system inputs: 1184
+	File system outputs: 552224
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+SC26_GPU_REPRODUCTION_COMPLETE JOB=966565

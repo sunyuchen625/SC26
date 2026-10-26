@@ -1,0 +1,4 @@
+JobID|JobName|Submit|Start|End|State|ExitCode|ElapsedRaw|NCPUS|ReqMem|NodeList|AllocTRES
+966318|sc26_t2_hip_scq|2026-10-24T10:59:18|2026-10-24T10:59:19|2026-10-24T11:01:08|COMPLETED|0:0|109|16|58G|f11r1n04|billing=16,cpu=16,gres/dcu=1,mem=58G,node=1
+966318.batch|batch|2026-10-24T10:59:19|2026-10-24T10:59:19|2026-10-24T11:01:08|COMPLETED|0:0|109|16||f11r1n04|cpu=16,gres/dcu=1,mem=58G,node=1
+966318.extern|extern|2026-10-24T10:59:19|2026-10-24T10:59:19|2026-10-24T11:01:09|COMPLETED|0:0|110|16||f11r1n04|billing=16,cpu=16,gres/dcu=1,mem=58G,node=1
