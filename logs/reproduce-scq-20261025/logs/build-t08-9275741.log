@@ -1,0 +1,8 @@
+Consolidate compiler generated dependencies of target sc26_mpi_diagnostics
+Consolidate compiler generated dependencies of target sc26_io
+[ 16%] Built target sc26_mpi_diagnostics
+[ 58%] Built target sc26_io
+Consolidate compiler generated dependencies of target sc26_mpi_io
+[ 75%] Built target sc26_mpi_io
+Consolidate compiler generated dependencies of target MPI_direct_solver
+[100%] Built target MPI_direct_solver
