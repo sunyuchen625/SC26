@@ -1,0 +1,41 @@
+{
+  "effective_update": "2026-10-27T15:38:00+08:00",
+  "checked_date": "2026-10-27",
+  "official_url": "https://gitee.com/godjs/solverchallenge26_sample_code/blob/master/SolverChallenge26报告模板.docx",
+  "current_template": "资料/SolverChallenge26报告模板_2026-10-27流程更新.docx",
+  "current_template_sha256": "871c27601192316fd590b69bcd568b8fdc9b90f9600fc410e3d111c252f21dc4",
+  "prior_template": "资料/SolverChallenge26报告模板_2026-10-26官网下载.docx",
+  "prior_template_sha256": "1153b1dca64712cb983e10b5d0d9994c4c98b3d473794cd76445f9024916434b",
+  "announcement_source": {
+    "thread": "01a0d246-ce59-7b90-85ab-854b63965a46",
+    "announcement": "毛润彰27October15:38 测试流程更新, tested instructions updated",
+    "source_material": "New official DOCX downloaded by resource-check thread; both full originals retained"
+  },
+  "new_protocol": {
+    "warmups": 5,
+    "official_runs": 5,
+    "timer_start": "Immediately before run6",
+    "timer_stop": "After run10 completes",
+    "score": "1000 * official accumulated seconds / 5",
+    "score_unit": "ms",
+    "excluded": [
+      "initialization",
+      "data allocation",
+      "solver/matrix/vector handle creation and destruction",
+      "CPU-to-GPU transfer"
+    ],
+    "required_each_run": [
+      "all necessary analysis",
+      "factorization",
+      "preprocessing",
+      "solve"
+    ],
+    "previous_numerical_result_reuse_allowed": false,
+    "coordinate_preserving_conversion_excludable": true,
+    "row_column_permutations_counted": true
+  },
+  "old_timing_results": "Historical five-round experimental records only; cannot certify new-protocol scores by unit conversion",
+  "new_protocol_results_observed": 0,
+  "latest_remote_base": "c728493413bcba113a245ad2350a2784279a0df9",
+  "extension_status": "Seven-day request recommendation only; no confirmed extension in latest supplied notice; continue original deadline"
+}

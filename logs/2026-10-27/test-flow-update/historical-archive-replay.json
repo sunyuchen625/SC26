@@ -1,0 +1,653 @@
+{
+  "evidence_scope": "scq CPU jobs 9275741-9275745 and GPU job 966565; historical 966318 separately",
+  "mode": "offline_archived_evidence_replay_no_compute",
+  "cpu": {
+    "results": [
+      {
+        "job": 9275742,
+        "problem": "02",
+        "rhs": "01",
+        "metric": "relative",
+        "original_float128_residual_after_fifth_solve": 5.885605e-07,
+        "numerical_pass": true,
+        "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=5.885605000000e-07 threshold=1.0e-06",
+        "checker_error": "",
+        "job_state": [
+          "COMPLETED",
+          "0:0",
+          "00:02:49",
+          "c3n06"
+        ],
+        "job_complete": true,
+        "process_exit": 0,
+        "rank_process_exits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "sum_full_process_peak_bytes": 15605833728,
+        "memory_pass": true,
+        "framework_memory_MiB": [
+          11246.1289
+        ],
+        "phase_count": 5,
+        "phase_means_seconds": [
+          0.0081008,
+          21.742347600000002,
+          6.5483384000000004
+        ],
+        "framework_mean_seconds": 28.300503,
+        "perturbed_pivots": [],
+        "internal_convergence": [],
+        "analysis_scaling_matching": [],
+        "provenance_verified": true,
+        "execution_pass": true,
+        "engineering_pass": null,
+        "accepted": true
+      },
+      {
+        "job": 9275743,
+        "problem": "07",
+        "rhs": "01",
+        "metric": "relative",
+        "original_float128_residual_after_fifth_solve": 1.60145e-09,
+        "numerical_pass": true,
+        "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=1.601450000000e-09 threshold=1.0e-06",
+        "checker_error": "",
+        "job_state": [
+          "COMPLETED",
+          "0:0",
+          "00:03:39",
+          "c3n06"
+        ],
+        "job_complete": true,
+        "process_exit": 0,
+        "rank_process_exits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "sum_full_process_peak_bytes": 67250155520,
+        "memory_pass": true,
+        "framework_memory_MiB": [
+          44571.5898
+        ],
+        "phase_count": 5,
+        "phase_means_seconds": [
+          0.0104792,
+          4.4546456,
+          17.554605
+        ],
+        "framework_mean_seconds": 22.023256,
+        "perturbed_pivots": [],
+        "internal_convergence": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "analysis_scaling_matching": [],
+        "provenance_verified": true,
+        "execution_pass": true,
+        "engineering_pass": null,
+        "accepted": true
+      },
+      {
+        "job": 9275744,
+        "problem": "09",
+        "rhs": "01",
+        "metric": "relative",
+        "original_float128_residual_after_fifth_solve": 1.487011e-16,
+        "numerical_pass": true,
+        "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=1.487011000000e-16 threshold=1.0e-08",
+        "checker_error": "",
+        "job_state": [
+          "COMPLETED",
+          "0:0",
+          "00:06:27",
+          "c3n24"
+        ],
+        "job_complete": true,
+        "process_exit": 0,
+        "rank_process_exits": [
+          0
+        ],
+        "sum_full_process_peak_bytes": 24630075392,
+        "memory_pass": true,
+        "framework_memory_MiB": [
+          23489.0703
+        ],
+        "phase_count": 5,
+        "phase_means_seconds": [
+          62.6519928,
+          9.0497224,
+          1.5571712
+        ],
+        "framework_mean_seconds": 73.353634,
+        "perturbed_pivots": [
+          168,
+          168,
+          168,
+          168,
+          168
+        ],
+        "internal_convergence": [],
+        "analysis_scaling_matching": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "provenance_verified": true,
+        "execution_pass": true,
+        "engineering_pass": null,
+        "accepted": true
+      },
+      {
+        "job": 9275745,
+        "problem": "05",
+        "rhs": "01",
+        "metric": "relative",
+        "original_float128_residual_after_fifth_solve": 2.576043e-09,
+        "numerical_pass": true,
+        "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=2.576043000000e-09 threshold=1.0e-08",
+        "checker_error": "",
+        "job_state": [
+          "COMPLETED",
+          "0:0",
+          "00:20:01",
+          "c3n99"
+        ],
+        "job_complete": true,
+        "process_exit": 0,
+        "rank_process_exits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "sum_full_process_peak_bytes": 202786639872,
+        "memory_pass": true,
+        "framework_memory_MiB": [
+          144244.4922
+        ],
+        "phase_count": 5,
+        "phase_means_seconds": [
+          0.0033278,
+          10.3120052,
+          176.6734748
+        ],
+        "framework_mean_seconds": 186.989168,
+        "perturbed_pivots": [],
+        "internal_convergence": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "analysis_scaling_matching": [],
+        "provenance_verified": true,
+        "execution_pass": true,
+        "engineering_pass": true,
+        "accepted": true
+      }
+    ],
+    "boundaries": "Original float128 check follows solve five; rank peaks are summed and need not coincide. Pivots and internal convergence are separate diagnostics. Acceptance here does not establish official eligibility."
+  },
+  "gpu": {
+    "results": [
+      {
+        "job": 966565,
+        "problem": "02",
+        "rhs": "01",
+        "metric": "relative",
+        "original_float128_residual_after_fifth_solve": 5.896126e-07,
+        "numerical_pass": true,
+        "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=5.896126000000e-07 threshold=1.0e-06",
+        "checker_error": "",
+        "job_state": [
+          "COMPLETED",
+          "0:0",
+          "81",
+          "f11r1n20"
+        ],
+        "job_complete": true,
+        "process_exit": 0,
+        "rank_process_exits": [
+          0
+        ],
+        "sum_full_process_peak_bytes": 4982865920,
+        "memory_pass": true,
+        "framework_memory_MiB": [
+          3855.4141
+        ],
+        "phase_count": 5,
+        "phase_means_seconds": [
+          0.1887126,
+          2.7921308,
+          0.9092014
+        ],
+        "framework_mean_seconds": 3.902198,
+        "perturbed_pivots": [],
+        "internal_convergence": [],
+        "analysis_scaling_matching": [],
+        "provenance_verified": true,
+        "execution_pass": true,
+        "engineering_pass": null,
+        "accepted": true
+      },
+      {
+        "job": 966565,
+        "problem": "02",
+        "rhs": "poisson",
+        "metric": "relative",
+        "original_float128_residual_after_fifth_solve": 3.40618e-12,
+        "numerical_pass": true,
+        "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=3.406180000000e-12 threshold=1.0e-10",
+        "checker_error": "",
+        "job_state": [
+          "COMPLETED",
+          "0:0",
+          "81",
+          "f11r1n20"
+        ],
+        "job_complete": true,
+        "process_exit": 0,
+        "rank_process_exits": [
+          0
+        ],
+        "sum_full_process_peak_bytes": 590135296,
+        "memory_pass": true,
+        "framework_memory_MiB": [
+          562.7891
+        ],
+        "phase_count": 5,
+        "phase_means_seconds": [
+          0.012258999999999999,
+          0.0448434,
+          0.0183948
+        ],
+        "framework_mean_seconds": 0.075507,
+        "perturbed_pivots": [],
+        "internal_convergence": [],
+        "analysis_scaling_matching": [],
+        "provenance_verified": true,
+        "execution_pass": true,
+        "engineering_pass": null,
+        "accepted": true
+      },
+      {
+        "job": 966565,
+        "problem": "02",
+        "rhs": "nonsymmetric",
+        "metric": "relative",
+        "original_float128_residual_after_fifth_solve": 2.22671e-12,
+        "numerical_pass": true,
+        "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=2.226710000000e-12 threshold=1.0e-10",
+        "checker_error": "",
+        "job_state": [
+          "COMPLETED",
+          "0:0",
+          "81",
+          "f11r1n20"
+        ],
+        "job_complete": true,
+        "process_exit": 0,
+        "rank_process_exits": [
+          0
+        ],
+        "sum_full_process_peak_bytes": 590213120,
+        "memory_pass": true,
+        "framework_memory_MiB": [
+          562.8633
+        ],
+        "phase_count": 5,
+        "phase_means_seconds": [
+          0.010699199999999999,
+          0.0361172,
+          0.0178346
+        ],
+        "framework_mean_seconds": 0.064662,
+        "perturbed_pivots": [],
+        "internal_convergence": [],
+        "analysis_scaling_matching": [],
+        "provenance_verified": true,
+        "execution_pass": true,
+        "engineering_pass": null,
+        "accepted": true
+      },
+      {
+        "job": 966565,
+        "problem": "02",
+        "rhs": "neumann",
+        "metric": "relative",
+        "original_float128_residual_after_fifth_solve": 4.489407e-12,
+        "numerical_pass": true,
+        "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=4.489407000000e-12 threshold=1.0e-10",
+        "checker_error": "",
+        "job_state": [
+          "COMPLETED",
+          "0:0",
+          "81",
+          "f11r1n20"
+        ],
+        "job_complete": true,
+        "process_exit": 0,
+        "rank_process_exits": [
+          0
+        ],
+        "sum_full_process_peak_bytes": 593367040,
+        "memory_pass": true,
+        "framework_memory_MiB": [
+          565.8711
+        ],
+        "phase_count": 5,
+        "phase_means_seconds": [
+          0.0123746,
+          0.0363758,
+          0.0175718
+        ],
+        "framework_mean_seconds": 0.066336,
+        "perturbed_pivots": [],
+        "internal_convergence": [],
+        "analysis_scaling_matching": [],
+        "provenance_verified": true,
+        "execution_pass": true,
+        "engineering_pass": null,
+        "accepted": true
+      }
+    ],
+    "boundaries": "Original float128 check follows solve five; rank peaks are summed and need not coincide. Pivots and internal convergence are separate diagnostics. Acceptance here does not establish official eligibility."
+  },
+  "cpu_candidate": {
+    "archive_sha256": "dae96e3fa5c8dc4cf8d66469b34797a84a0f3d741d0f8f4d8b4884f16206a111",
+    "source_entries_verified": 118,
+    "source_manifest_sha256": "bf8148b56bf20d4c0249b24c8d9540c4212cec153760944f5b38b20137ee68a9"
+  },
+  "gpu_candidate": {
+    "archive_sha256": "f9482721a702b88d4e1b5e87957f59a8391215eb1938a8599bfc055e1e1c1e3a",
+    "source_entries_verified": 89,
+    "source_manifest_sha256": "edcbf44abeee448a736cc01bfe16ac58a052a74e44a132a2d67a2f35e0080d6b"
+  },
+  "cpu_raw_time_file_count": 129,
+  "cpu_known_solution_receipts": 24,
+  "gpu_known_solution_receipts": 3,
+  "gpu_build_receipt_checks": [
+    {
+      "path": "build-and-run-scq.sbatch",
+      "sha256": "e2f9fc9012378e6182eff6b0072727cba47e204b47786984ad705bce4b31c6e0",
+      "method": "local_file_hash"
+    },
+    {
+      "path": "source-sha256.txt",
+      "sha256": "edcbf44abeee448a736cc01bfe16ac58a052a74e44a132a2d67a2f35e0080d6b",
+      "method": "local_file_hash"
+    },
+    {
+      "path": "parent-commit.txt",
+      "sha256": "1804fcdb34cbfbd1ebdae5eb8530ba8054646b1bf244f9cadf470a8797f59e13",
+      "method": "local_file_hash"
+    },
+    {
+      "path": "src/problems/problem02/solver.c",
+      "sha256": "ea585ebaf584fa059946ba40371378a03b5404629f841e66c286eb1a8f2856f4",
+      "method": "candidate_member_hash"
+    },
+    {
+      "path": "src/apps/MPI_iterative_solver.c",
+      "sha256": "34f19d4985ded7685eeca2f1f07e6dfec0af91c9039dba668be75a6dedf2a6d0",
+      "method": "candidate_member_hash"
+    },
+    {
+      "path": "build/CMakeCache.txt",
+      "sha256": "d0d3561801829f7e376f82f9abe2280d5279c10dcbe05e15f9f4c7a52f608d9d",
+      "method": "local_file_hash"
+    },
+    {
+      "path": "build/bin/MPI_iterative_solver",
+      "sha256": "8e309cee272eeaeb95cf410a5112e8657c2c6a5b8dba56fe825b68921539f273",
+      "method": "remote_batch_receipt_only"
+    }
+  ],
+  "gpu_round_seconds": [
+    4.040780419,
+    3.870947209,
+    3.865038419,
+    3.86508241,
+    3.869141394
+  ],
+  "gpu_round_mean_seconds": 3.9021979702,
+  "gpu_sampled_device_used_GiB_max": 15.3,
+  "gpu_device_memory_scope": "Sampled device-wide usage, not per-process peak allocation",
+  "lx2_environment_record_paths": [
+    "logs/2026-10-14/plan-execution/lx2-environment-verification.json",
+    "logs/2026-10-21/plan-execution/lx2-readiness.json",
+    "logs/2026-10-23/resource-optimization/lx2-readiness-20261023.json",
+    "logs/2026-10-24/lx2-environment/lx2-readiness-user-transcription.json"
+  ],
+  "lx2_latest_user_transcription": {
+    "observed_interval": {
+      "start": "2026-10-24T22:01:00+08:00",
+      "end": "2026-10-24T22:14:00+08:00",
+      "precision": "minute"
+    },
+    "recorded_on": "2026-10-26",
+    "evidence_type": "captain_supplied_teammate_terminal_transcription",
+    "source": "Captain forwarded the teammate's24October observations and a verbatim dlogin success line; original five long screenshots and screen recording are retained by the teammate. Not a downloaded terminal log or fresh agent observation.",
+    "route": [
+      "Huawei Jumper web login with SMS verification",
+      "Web RDP 10.15.83.48",
+      "MobaXterm SSH travissun@152.11.26.76:22"
+    ],
+    "local_direct_ssh_available": false,
+    "host": "node76",
+    "user": "travissun",
+    "provider_password_reset_reported": true,
+    "dlogin_observed_output": "The token is obtained successfully.",
+    "ssh_and_dlogin_same_authentication": {
+      "value": true,
+      "basis": "teammate confirmation forwarded by captain"
+    },
+    "nodes": [
+      {
+        "name": "J003H1S10N05",
+        "state": "OK"
+      },
+      {
+        "name": "J003H1S10N06",
+        "state": "OK"
+      },
+      {
+        "name": "J003H1S10N07",
+        "state": "OK"
+      },
+      {
+        "name": "J003H1S10N08",
+        "state": "OK"
+      }
+    ],
+    "reported_idle_cores": 608,
+    "idle_cores_scope": "as reported in user transcription; no per-node allocation or team quota inferred",
+    "queue": {
+      "name": "challenge26",
+      "state": "OPEN,ACTIVE"
+    },
+    "native_build_jobs_submitted": 0,
+    "native_compute_jobs_submitted": 0,
+    "solver_results_available": false,
+    "generated_platform_files_exported": false,
+    "platform_transfer_policy_as_reported": "Green zone permits ingress only; generated files must not be exported",
+    "passwords_or_token_values_recorded": false,
+    "remaining_environment_dependencies": [
+      "Trusted proxy CA chain; prior curl exit 60 remains unresolved per user",
+      "Usable native aarch64 MPI/CMake/HYPRE dependencies from resource provider"
+    ],
+    "classification": "environment_appendix",
+    "boundary": "Authentication and queue observations apply to the stated 2026-10-24 interval only. They do not establish current queue capacity, build readiness, solver performance, or formal eligibility.",
+    "ssh_login_reported_success": true,
+    "scheduler_token_reported_obtained": true,
+    "commands_reported": [
+      "dlogin",
+      "dqueue --help",
+      "dsub --help",
+      "dnode",
+      "dqueue"
+    ]
+  },
+  "gpu_historical_966318": {
+    "job": 966318,
+    "evidence_scope": "archived_stdout_and_scheduler_receipts",
+    "numerical_log_check_pass": true,
+    "checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=5.938952000000e-07 threshold=1.0e-06",
+    "framework_mean_seconds": 12.783388,
+    "original_float128_relative_residual": 5.938952e-07,
+    "full_process_peak_bytes_from_stdout": 5798305792,
+    "job_state": [
+      "COMPLETED",
+      "0:0"
+    ],
+    "source_manifest_sha256_receipt": "7a5f354a82e8f5429190428f1a1c3f1381113e9eb7d4265de5b197cd906a96e9",
+    "same_source_manifest_as_966565": false,
+    "standalone_run_archive_replayed": false,
+    "boundary": "Reported source manifest differs from 966565; retain separately, not a matched repeat or complete standalone run archive."
+  },
+  "gpu_known_solution_status": "Three on-node checks passed (batch receipts); answer vectors intentionally excluded at packaging per user; elementwise replay unavailable locally, not a failed validation",
+  "archive_replay_pass": true,
+  "boundary": "Checks validate supplied logs and hash linkages, not authenticity, fresh numerical execution, or formal eligibility. Source/binary identities are separate from official acceptance."
+}

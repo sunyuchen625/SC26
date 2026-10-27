@@ -1,6 +1,8 @@
-# SC26 复现与归档修订摘要（更新：2026-10-27）
+# SC26 旧规实验与归档摘要
 
-依据队友10月26日修订交接包和现有原始记录核对；当前归档检查入口为 `scripts/audit_handoff.py`，输出见 `logs/2026-10-27/delivery-update/archive-replay.json`。本摘要中的数值对应原实测作业。
+> 历史范围：以下为15:38流程更新前的五轮实验与秒计时原件。归档回放通过不代表新5+5成绩通过；现行任务见`docs/SC26_队友交接工单_2026-10-27.md`。
+
+依据队友10月26日修订交接包和现有原始记录核对；当前归档检查入口为 `scripts/audit_handoff.py`，输出见 `logs/2026-10-27/test-flow-update/historical-archive-replay.json`。本摘要中的数值对应原实测作业。
 
 ## CPU：四项原始证据回放通过
 
@@ -42,14 +44,14 @@ T5 原始残差满足内部 ≤5e-9 条件，五轮 converged=1；T2/T7 <1e-6，
 队长转交的队友终端实测转录报告，观察区间为10/24 22:01–22:14（北京时间）：密码重置后 node76 SSH 登录及 dlogin 成功，返回 The token is obtained successfully.；dqueue/dsub 帮助已查询，公告四节点均 OK、报告 608 核空闲，challenge26 为 OPEN,ACTIVE。认证和队列状态已更新；旧环境记录保留为历史事实。转录来源及边界见 docs/LX2_ENVIRONMENT_APPENDIX_2026-10-24.md。
 LX2 尚未提交构建或计算作业，无额外作业原件。访问经 Jumper → Web RDP → MobaXterm，绿区仅允许传入、禁止生成文件外传；本次仅归档队长转交的队友转录，不要求导出平台文件，不记录明文密码。CA 证书链（此前 curl exit 60）及 aarch64 MPI/CMake/HYPRE 依赖仍待资源方解决。
 CPU 继续作为候选主线；GPU 保留为有实验复现证据的 T2 条件候选；LX2 保留环境附录。最终主结果由队长结合适用规则、最终配置和证据确认。
-最新官方模板已明确邮箱 solverchallenge@sina.com、材料布局、五次包含预热及逐轮组件构建/求解/释放要求。按 docs/DELIVERY_PLAN_2026-10-27.md 完成最终配置、官方检测接口、完整求解视频、报告与包的对齐；已有咨询只就尚未澄清的 HIP 入口/资源/内存字段更新。延期七天为建议，收到官方批准前按10月30日原截止推进。
+10月27日15:38发布的新模板要求5次完整预热＋5次连续正式运行，初始化/分配/句柄创建与释放排除，算法必要计算每次重做，成绩单位为ms。当前没有已验收的新规原件；旧秒值不换算为新成绩。邮箱与材料通道仍按现行规则执行，最小适配、实测和视频见 docs/DELIVERY_PLAN_2026-10-27.md。
 
 ## 离线回放命令
 
 在仓库根目录运行（Python 3）：
 
 ```bash
-python3 scripts/audit_handoff.py --output logs/2026-10-27/delivery-update/archive-replay.json
+python3 scripts/audit_handoff.py --output logs/2026-10-27/test-flow-update/historical-archive-replay.json
 ```
 
 此命令只读取已归档数据并运行日志检查器，不启动 MPI、编译或提交作业。

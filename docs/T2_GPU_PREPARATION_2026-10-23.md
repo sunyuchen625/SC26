@@ -1,5 +1,7 @@
 # T2-low GPU preparation and repeated timing
 
+> Historical experimental scope: the original five-round records and seconds below are retained. They are not scores under the 27 October 15:38 five-warmup/five-official-run protocol. Current measurement tasks are in the [delivery plan](DELIVERY_PLAN_2026-10-27.md).
+
 Date: 23 October 2026, Asia/Shanghai. Exact IJ diagonal/offdiagonal preallocation and HIP interpolation 18 reduce the full prototype driver mean to **3.905254 s**, reproduced at **3.907222 s** and **3.903342 s** in job **962526**. All three original-system float128 checks are **5.896126e-7**, below `1e-6`; each contains five complete solves at default internal tolerance `1e-7`, 24 GMRES iterations per round. This report describes the current GPU candidate and its experimental S4 evidence.
 
 ## Implementation and timing

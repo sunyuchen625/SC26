@@ -1,5 +1,7 @@
 # SC26 archive integration review — 27 October 2026
 
+> Historical release review: this covers the27October morning publication c728493 under the26October instructions. The formal15:38 update supersedes that timing protocol; use the [current rules](../OFFICIAL_TESTING_RULES_2026-10-27.md) and plan.
+
 **PASS for this archive integration and delivery-plan publication.** Claude Code Opus 5.5 with max effort reviewed the specified local files in English through the existing Claude Pro subscription. Codex verified the reviewer used only scoped Read/Grep requests. The [English final response](../../logs/2026-10-27/delivery-update/claude-final-response.md) and [tool/model/usage trace](../../logs/2026-10-27/delivery-update/claude-audit-verification.json) retain the review result.
 
 The repaired summary and updated plan/work order apply the latest official template's email route, package layout, videos, five trials including warmup, per-trial component lifecycle, transfer/conversion rules and official checking interfaces. A seven-day extension is a recommendation; the plan continues the original deadline until an official change. LX2 remains a dated environment appendix. Final source/interface alignment, videos, report/package agreement, captain selection and actual contest submission remain separate tasks.

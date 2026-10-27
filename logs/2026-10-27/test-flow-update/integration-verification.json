@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "effective_rules": "2026-10-27 15:38",
+  "base_commit": "c728493413bcba113a245ad2350a2784279a0df9",
+  "archive": "deliverables/SC26_队友交接资料_20261027_流程更新.zip",
+  "archive_bytes": 17606292,
+  "archive_sha256": "e04c38193953c73cad5af743253a629ca055421b5f97b084d1cefa793dcf9849",
+  "payload_files": 2488,
+  "entries": 2489,
+  "CRC_and_payload_identity": "PASS",
+  "current_document_links": "PASS",
+  "historical_solver_source_and_candidates_unchanged": true,
+  "historical_archive_replay": "CPU4/GPU4 PASS",
+  "new_protocol_measurements_verified": false,
+  "new_protocol_implementation_completed": false,
+  "new_compute_jobs": 0,
+  "deleted_superseded_paths": [
+    "docs/CAPTAIN_HANDOFF_2026-10-26.md",
+    "docs/FORMAL_ENTRY_GPU_CONTRACT_2026-10-23.md",
+    "docs/SC26_队友交接工单_2026-10-24.md",
+    "deliverables/SC26_队友交接资料_20261027.zip"
+  ]
+}
