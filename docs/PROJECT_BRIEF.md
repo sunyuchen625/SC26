@@ -1,6 +1,6 @@
 # SolverChallenge26 project brief
 
-Current protocol: **27 October 2026, after the 15:38 official test-flow update**, Asia/Shanghai. CUDA OOM! is an Ocean University of China team. Sun Yuchen coordinates the team; Zhou Junzhe and Su Chengqi are teammates. Start with the [delivery plan](DELIVERY_PLAN_2026-10-27.md), [work order](SC26_队友交接工单_2026-10-27.md) and [current rules](OFFICIAL_TESTING_RULES_2026-10-27.md).
+Current protocol: **27 October 2026, after the 15:38 official test-flow update; checked on 28 October with the official MPI-unit and sample-flow fixes**, Asia/Shanghai. CUDA OOM! is an Ocean University of China team. Sun Yuchen coordinates the team; Zhou Junzhe and Su Chengqi are teammates. Start with the [delivery plan](DELIVERY_PLAN_2026-10-27.md), [work order](SC26_队友交接工单_2026-10-27.md) and [current rules](OFFICIAL_TESTING_RULES_2026-10-27.md).
 
 ## Current formal protocol
 
@@ -8,7 +8,9 @@ The [new official template](../资料/SolverChallenge26报告模板_2026-10-27�
 
 Initialization, data allocation, solver/matrix/vector handle creation and destruction, and CPU-to-GPU transfer are excluded. Each of all ten runs must independently redo its necessary analysis, factorization, preprocessing and solve. Handle reuse is not permission to reuse numerical factors, preconditioners or an earlier solution. Coordinate-preserving storage conversion may be excluded; row/column permutations remain counted. Official correctness and memory interfaces are required.
 
-The existing driver and callback structure still implement the old five-run experiment. No compliant new 5+5 score has been observed. Merely increasing the loop bound or multiplying old seconds by 1000 is insufficient. The work order assigns the smallest boundary/lifecycle adaptation, affected small-system checks, new complete measurements and videos, final implementation reproduction and evidence validation. Numerical algorithms, input identities and dependencies need not be redesigned for this change.
+The organizer clarified that only the old MPI CPU samples labelled seconds as ms; the serial and GPU units were correct. Official master now fixes the MPI units and sample 5+5 flow. The [28 October source check](../logs/2026-10-28/mpi-unit-update/official-update.json) pins master to `7a4575f90a209c43602ddbd99c71e4f3c1dcd081` and verifies both MPI entry points. The work order first adopts the relevant official changes and rebuilds, recording the upstream commit, integration diff and final binary identity; it then validates custom HYPRE/PARDISO/HIP timing boundaries. The fixed `CHECK end to end time` already gives the final five-run mean in milliseconds: do not multiply by 1000 or divide by five again. Longer wall time due to warmups does not double the score.
+
+The team's existing driver and callback structure still implement the old five-run experiment. No compliant new 5+5 score has been observed. A unit-only error can be corrected when the original run otherwise meets the current protocol. Conversion cannot qualify an old five-run or old-boundary measurement; the historical summaries already express their values correctly in seconds and retain those values. The work order assigns the smallest remaining boundary/lifecycle adaptation, affected small-system checks, new complete measurements and videos, final implementation reproduction and evidence validation. Numerical algorithms, input identities and dependencies need not be redesigned for this change.
 
 ## Historical evidence that remains valid in its scope
 

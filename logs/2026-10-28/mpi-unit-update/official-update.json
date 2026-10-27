@@ -1,0 +1,37 @@
+{
+  "checked_date": "2026-10-28",
+  "official_master_commit": "7a4575f90a209c43602ddbd99c71e4f3c1dcd081",
+  "files": [
+    {
+      "file": "apps/MPI_direct_solver.c",
+      "url": "https://gitee.com/godjs/solverchallenge26_sample_code/raw/7a4575f90a209c43602ddbd99c71e4f3c1dcd081/apps/MPI_direct_solver.c",
+      "sha256": "f826502fa9e2fa99684dac087171487ad07dd9f9251dce968e061d6f091eaa3e",
+      "verified_lines": {
+        "warmup_and_formal_counts": "38-39",
+        "five_warmups_then_timer_then_five_formal_runs": "151-198",
+        "seconds_to_mean_ms_and_MPI_MAX": "199-204",
+        "CHECK_mean_ms_output": "283"
+      }
+    },
+    {
+      "file": "apps/MPI_iterative_solver.c",
+      "url": "https://gitee.com/godjs/solverchallenge26_sample_code/raw/7a4575f90a209c43602ddbd99c71e4f3c1dcd081/apps/MPI_iterative_solver.c",
+      "sha256": "b6fcdf5e453b787150f1ee040cb27f1b5b8d18d62e74b5d2fef3fb05e6df730f",
+      "verified_lines": {
+        "warmup_and_formal_counts": "38-39",
+        "five_warmups_then_timer_then_five_formal_runs": "151-198",
+        "seconds_to_mean_ms_and_MPI_MAX": "199-204",
+        "CHECK_mean_ms_output": "283"
+      }
+    }
+  ],
+  "source_thread": "01a0d246-ce59-7b90-85ab-854b63965a46",
+  "source_user_turn": "01a17e5e-62d4-7e30-a59c-5f52196a1c8b",
+  "announcement_date": "Not independently timestamped; supplied in the latest referenced thread turn.",
+  "organizer_notice": "Only the old MPI CPU samples (MPI_direct_solver / MPI_iterative_solver) labelled seconds as ms because multiplication by 1000 was missing. Serial and GPU units were correct. Official Gitee master now fixes MPI units and uses five untimed warmups followed by five timed official runs. CHECK end to end time is the mean of those final five runs, in milliseconds. Warmups roughly double total runtime. Old unit-only errors can be corrected by multiplying by 1000 or rerunning.",
+  "verification_method": "git ls-remote official Gitee refs/heads/master; HTTPS raw downloads pinned to that commit; inspect both MPI entry points. Browser web tool could not open the blob pages; direct HTTPS retrieval succeeded.",
+  "serial_GPU_unit_claim_source": "Organizer notice, not independently rechecked in this documentation update.",
+  "project_upstream_changes_integrated": false,
+  "new_protocol_measurements_verified": false,
+  "historical_values_changed": false
+}
