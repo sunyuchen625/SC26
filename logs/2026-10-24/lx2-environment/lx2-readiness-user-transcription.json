@@ -1,0 +1,69 @@
+{
+  "observed_interval": {
+    "start": "2026-10-24T22:01:00+08:00",
+    "end": "2026-10-24T22:14:00+08:00",
+    "precision": "minute"
+  },
+  "recorded_on": "2026-10-26",
+  "evidence_type": "captain_supplied_teammate_terminal_transcription",
+  "source": "Captain forwarded the teammate's24October observations and a verbatim dlogin success line; original five long screenshots and screen recording are retained by the teammate. Not a downloaded terminal log or fresh agent observation.",
+  "route": [
+    "Huawei Jumper web login with SMS verification",
+    "Web RDP 10.15.83.48",
+    "MobaXterm SSH travissun@152.11.26.76:22"
+  ],
+  "local_direct_ssh_available": false,
+  "host": "node76",
+  "user": "travissun",
+  "provider_password_reset_reported": true,
+  "dlogin_observed_output": "The token is obtained successfully.",
+  "ssh_and_dlogin_same_authentication": {
+    "value": true,
+    "basis": "teammate confirmation forwarded by captain"
+  },
+  "nodes": [
+    {
+      "name": "J003H1S10N05",
+      "state": "OK"
+    },
+    {
+      "name": "J003H1S10N06",
+      "state": "OK"
+    },
+    {
+      "name": "J003H1S10N07",
+      "state": "OK"
+    },
+    {
+      "name": "J003H1S10N08",
+      "state": "OK"
+    }
+  ],
+  "reported_idle_cores": 608,
+  "idle_cores_scope": "as reported in user transcription; no per-node allocation or team quota inferred",
+  "queue": {
+    "name": "challenge26",
+    "state": "OPEN,ACTIVE"
+  },
+  "native_build_jobs_submitted": 0,
+  "native_compute_jobs_submitted": 0,
+  "solver_results_available": false,
+  "generated_platform_files_exported": false,
+  "platform_transfer_policy_as_reported": "Green zone permits ingress only; generated files must not be exported",
+  "passwords_or_token_values_recorded": false,
+  "remaining_environment_dependencies": [
+    "Trusted proxy CA chain; prior curl exit 60 remains unresolved per user",
+    "Usable native aarch64 MPI/CMake/HYPRE dependencies from resource provider"
+  ],
+  "classification": "environment_appendix",
+  "boundary": "Authentication and queue observations apply to the stated 2026-10-24 interval only. They do not establish current queue capacity, build readiness, solver performance, or formal eligibility.",
+  "ssh_login_reported_success": true,
+  "scheduler_token_reported_obtained": true,
+  "commands_reported": [
+    "dlogin",
+    "dqueue --help",
+    "dsub --help",
+    "dnode",
+    "dqueue"
+  ]
+}

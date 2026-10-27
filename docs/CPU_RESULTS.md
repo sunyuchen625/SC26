@@ -1,5 +1,7 @@
 # Current CPU numerical evidence
 
+> 2026-10-26 archive update: teammate CPU jobs 9275742–9275745 replay successfully from the supplied raw files (no new CPU solves). See [the corrected reproduction summary](REPRODUCE_SCQ_2026-10-25.md). Tables below retain the original historical jobs and configurations.
+
 Updated: 24 October 2026, Asia/Shanghai. Measurements below retain their dated configurations; current performance is not inferred from mixing different jobs. The frozen CPU candidate comes from `6b7f675`, with 118 manifested source/script/test entries and final v19 manifest `bf8148b56bf20d4c0249b24c8d9540c4212cec153760944f5b38b20137ee68a9`.
 
 ## Passing full-scale configurations
@@ -67,4 +69,4 @@ The fastest recorded experimental 96-rank T2 reference is 7.036402 s. [23 Octobe
 
 T1, T3 and T2-high remain below their required accuracy. Their original logs and failed-result verdicts remain evidence of those limits. Five repeated callbacks are followed by one original-system float128 check; six-decimal answer files do not substitute for that check. MPI RSS values are conservative sums of complete-process rank peaks, rather than simultaneous node peaks.
 
-Numerical acceptance does not establish the formal launcher, timer, output parser, multi-RHS score convention or teammate reproduction. Use the [candidate settings](SUBMISSION_CANDIDATE_2026-10-03.md), [reproduction guide](REPRODUCE_CPU_2026-10-03.md) and [current work order](SC26_队友交接工单_2026-10-24.md).
+The scq four-item independent reproduction is now archived and replayed; see the [updated summary](REPRODUCE_SCQ_2026-10-25.md). Final configuration, official measurement interfaces, videos and report/package alignment follow the [current delivery plan](DELIVERY_PLAN_2026-10-27.md). Use the [candidate settings](SUBMISSION_CANDIDATE_2026-10-03.md), [reproduction guide](REPRODUCE_CPU_2026-10-03.md) and [current work order](SC26_队友交接工单_2026-10-24.md).

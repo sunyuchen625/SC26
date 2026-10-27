@@ -1,0 +1,85 @@
+{
+  "results": [
+    {
+      "job": 966565,
+      "problem": "02",
+      "rhs": "01",
+      "run": "runs-966565/full",
+      "ranks": 1,
+      "threads": 1,
+      "threshold": 1e-06,
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "81",
+        "f11r1n20"
+      ],
+      "source_manifest": "source-sha256.txt",
+      "batch_log": "sc26_t2_hip_scq-966565.out",
+      "cmake_cache": "build/CMakeCache.txt",
+      "binary_sha256": "8e309cee272eeaeb95cf410a5112e8657c2c6a5b8dba56fe825b68921539f273",
+      "cache_sha256": "d0d3561801829f7e376f82f9abe2280d5279c10dcbe05e15f9f4c7a52f608d9d"
+    },
+    {
+      "job": 966565,
+      "problem": "02",
+      "rhs": "poisson",
+      "run": "runs-966565/small/poisson",
+      "ranks": 1,
+      "threads": 1,
+      "threshold": 1e-10,
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "81",
+        "f11r1n20"
+      ],
+      "source_manifest": "source-sha256.txt",
+      "batch_log": "sc26_t2_hip_scq-966565.out",
+      "cmake_cache": "build/CMakeCache.txt",
+      "binary_sha256": "8e309cee272eeaeb95cf410a5112e8657c2c6a5b8dba56fe825b68921539f273",
+      "cache_sha256": "d0d3561801829f7e376f82f9abe2280d5279c10dcbe05e15f9f4c7a52f608d9d"
+    },
+    {
+      "job": 966565,
+      "problem": "02",
+      "rhs": "nonsymmetric",
+      "run": "runs-966565/small/nonsymmetric",
+      "ranks": 1,
+      "threads": 1,
+      "threshold": 1e-10,
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "81",
+        "f11r1n20"
+      ],
+      "source_manifest": "source-sha256.txt",
+      "batch_log": "sc26_t2_hip_scq-966565.out",
+      "cmake_cache": "build/CMakeCache.txt",
+      "binary_sha256": "8e309cee272eeaeb95cf410a5112e8657c2c6a5b8dba56fe825b68921539f273",
+      "cache_sha256": "d0d3561801829f7e376f82f9abe2280d5279c10dcbe05e15f9f4c7a52f608d9d"
+    },
+    {
+      "job": 966565,
+      "problem": "02",
+      "rhs": "neumann",
+      "run": "runs-966565/small/neumann",
+      "ranks": 1,
+      "threads": 1,
+      "threshold": 1e-10,
+      "job_state": [
+        "COMPLETED",
+        "0:0",
+        "81",
+        "f11r1n20"
+      ],
+      "source_manifest": "source-sha256.txt",
+      "batch_log": "sc26_t2_hip_scq-966565.out",
+      "cmake_cache": "build/CMakeCache.txt",
+      "binary_sha256": "8e309cee272eeaeb95cf410a5112e8657c2c6a5b8dba56fe825b68921539f273",
+      "cache_sha256": "d0d3561801829f7e376f82f9abe2280d5279c10dcbe05e15f9f4c7a52f608d9d"
+    }
+  ],
+  "boundary": "Three known-solution checks passed on-node, documented by KNOWN_SOLUTION_PASS receipts. User confirms answer_x.rhs was intentionally excluded from packaging. Small-case replay checks the archived float128 residual, not elementwise vectors. This is an archive-scope limit, not a pending collection task. Formal eligibility is not established."
+}

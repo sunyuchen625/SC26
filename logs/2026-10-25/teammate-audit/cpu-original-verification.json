@@ -1,0 +1,69 @@
+{
+  "read_only_original_collection": "cpu-original-collection.json",
+  "github_to_original_mapped_files": {
+    "source-sha256.txt": true,
+    "reproduction-runs.json": true,
+    "sc26_remediation_build-9275741.out": true,
+    "CMakeCache-t02.txt": true,
+    "sc26_remediation-9275742.out": true,
+    "solver-t02-9275742.log": true,
+    "CMakeCache-t07.txt": true,
+    "sc26_remediation-9275743.out": true,
+    "solver-t07-9275743.log": true,
+    "CMakeCache-t09.txt": true,
+    "sc26_remediation-9275744.out": true,
+    "solver-t09-9275744.log": true,
+    "CMakeCache-t05.txt": true,
+    "sc26_remediation-9275745.out": true,
+    "solver-t05-9275745.log": true
+  },
+  "all_mapped_files_identical": true,
+  "archive_metadata_replay_status": "PASS",
+  "CPU_runs": [
+    {
+      "job": 9275742,
+      "problem": "02",
+      "accepted": true,
+      "rank_records": 16,
+      "process_exit": 0,
+      "peak_bytes": 15605833728,
+      "residual": 5.885605e-07,
+      "framework_mean_seconds": 28.300503,
+      "engineering_pass": null
+    },
+    {
+      "job": 9275743,
+      "problem": "07",
+      "accepted": true,
+      "rank_records": 16,
+      "process_exit": 0,
+      "peak_bytes": 67250155520,
+      "residual": 1.60145e-09,
+      "framework_mean_seconds": 22.023256,
+      "engineering_pass": null
+    },
+    {
+      "job": 9275744,
+      "problem": "09",
+      "accepted": true,
+      "rank_records": 1,
+      "process_exit": 0,
+      "peak_bytes": 24630075392,
+      "residual": 1.487011e-16,
+      "framework_mean_seconds": 73.353634,
+      "engineering_pass": null
+    },
+    {
+      "job": 9275745,
+      "problem": "05",
+      "accepted": true,
+      "rank_records": 96,
+      "process_exit": 0,
+      "peak_bytes": 202786639872,
+      "residual": 2.576043e-09,
+      "framework_mean_seconds": 186.989168,
+      "engineering_pass": true
+    }
+  ],
+  "github_derived_report_matches_new_replay": true
+}

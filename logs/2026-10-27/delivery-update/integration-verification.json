@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "date": "2026-10-27",
+  "base_commit": "b038af9698a5a8f0576665820f81276c0b774306",
+  "archive": "deliverables/SC26_队友交接资料_20261027.zip",
+  "archive_sha256": "9165e86144886bf095d145b15dc601f78b66a7bcd7dde25229d963f514b28c2c",
+  "archive_bytes": 17583600,
+  "payload_files": 2480,
+  "CRC_and_payload_hashes": "PASS",
+  "current_document_links": "PASS",
+  "candidate_identities": {
+    "CPU": "dae96e3fa5c8dc4cf8d66469b34797a84a0f3d741d0f8f4d8b4884f16206a111",
+    "GPU": "f9482721a702b88d4e1b5e87957f59a8391215eb1938a8599bfc055e1e1c1e3a"
+  },
+  "solver_source_changed": false,
+  "new_compute_jobs": 0
+}

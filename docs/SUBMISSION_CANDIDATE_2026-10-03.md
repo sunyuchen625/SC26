@@ -1,6 +1,6 @@
 # SolverChallenge26 当前交付候选
 
-更新：2026-10-24。从当前 `main` 的[交接工单](SC26_队友交接工单_2026-10-24.md)开始；`038c0a8` 是数值实现与已发布实验的基线。
+更新：2026-10-27。从当前 `main` 的[交接工单](SC26_队友交接工单_2026-10-24.md)开始；`038c0a8` 是数值实现与已发布实验的基线。
 
 ## 候选身份
 
@@ -9,7 +9,7 @@
 | CPU 冻结候选 | [SC26_CPU_candidate_6b7f675.tar.gz](../deliverables/SC26_CPU_candidate_6b7f675.tar.gz)，`dae96e3fa5c8dc4cf8d66469b34797a84a0f3d741d0f8f4d8b4884f16206a111` | 当前正式交付主线与独立复现起点；118 项源码/脚本/测试清单对应 v19，来源 `6b7f675ecaa6949815a3a77f95467fc35f8d5bbf` |
 | HIP 准备优化候选 | [SC26_T2_HIP_preparation_20261023.tar.gz](../deliverables/SC26_T2_HIP_preparation_20261023.tar.gz)，`f9482721a702b88d4e1b5e87957f59a8391215eb1938a8599bfc055e1e1c1e3a` | 当前 T2 GPU 候选；89 项清单、91 个归档成员，包内父提交 `d09163c18ce629d65d55c0e6316b9755b7e2975d` |
 
-CPU 包与当前 [技术报告](SC26技术报告_2026-10-02.docx)身份匹配，报告 SHA256 为 `12c234efccfee7b23f75ba4191c6bef3500de1a4e6d569d7689800e812471fc4`。GPU [身份记录](../logs/2026-10-23/gpu-preparation/source-identity.json)绑定当前源码、GPU 验证及 CPU 回归。两份包在独立目录解压并分别验证清单。
+CPU 包与既有实验 [技术报告](SC26技术报告_2026-10-02.docx)身份匹配，报告 SHA256 为 `12c234efccfee7b23f75ba4191c6bef3500de1a4e6d569d7689800e812471fc4`。GPU [身份记录](../logs/2026-10-23/gpu-preparation/source-identity.json)绑定当前源码、GPU 验证及 CPU 回归。两份包在独立目录解压并分别验证清单。
 
 ## 已验收设置
 
@@ -28,6 +28,8 @@ CPU 包与当前 [技术报告](SC26技术报告_2026-10-02.docx)身份匹配，
 当前 HIP 采用 l1-Jacobi18、粗层relax6、插值18、RAP2开启、GMRES restart50和精确IJ预分配。三次五轮均时3.905254/3.907222/3.903342秒，原始残差5.896126e-7，详见[GPU结果](T2_GPU_PREPARATION_2026-10-23.md)。
 
 ## 构建与复现
+
+苏承起已完成四项CPU与GPU966565的独立复现，见[修订摘要](REPRODUCE_SCQ_2026-10-25.md)。正式报告、完整视频和最终配置按[当前交付计划](DELIVERY_PLAN_2026-10-27.md)对齐。
 
 CPU 从冻结包按[独立复现指南](REPRODUCE_CPU_2026-10-03.md)重建九个目标、24个已知解案例和四项全量检查。保留本人独立目录和真实新作业记录。
 
@@ -60,6 +62,6 @@ cmake --build build --parallel "$SLURM_CPUS_PER_TASK" --target MPI_iterative_sol
 
 ## 正式采用条件
 
-[正式合同核查与问题稿](FORMAL_ENTRY_GPU_CONTRACT_2026-10-23.md)列明提交地址、包形状、谁构建运行、MPI实现、共享文件修改、启动配置、计时字段/单位、转换和传输边界、GPU完成与计量、原始残差/输出及多右端约定。
+[提交规则与剩余接口核对](FORMAL_ENTRY_GPU_CONTRACT_2026-10-23.md)列明已明确的邮箱入口、正式包布局、五轮和组件生命周期，以及最终MPI/启动、HIP入口、设备完成、官方检测和十右端汇总的具体核对项。
 
 当前真实 HIP 实现通过 MPI C 驱动运行；独立 GPU 适配器仍是模板。约3.9秒是原型口径，不能直接减探针耗时成为正式成绩。公开规则允许外部软件包；实际接入方式、所选配置和最终包仍需资格验证与审查。正式提交和最终选型由队长确认。

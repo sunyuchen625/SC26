@@ -1,0 +1,14 @@
+{
+  "root": "/data/home/sunyc/solverchallenge26/reproduce-20261024-scq",
+  "missing": [
+    "runs/t02-9275742/rhs-01/solver.err",
+    "runs/t05-9275745/rhs-01/solver.err",
+    "runs/t07-9275743/rhs-01/solver.err",
+    "runs/t09-9275744/rhs-01/solver.err"
+  ],
+  "sha256": "9425399b14fd759af2212aa808b6a604d0ea026e60e40325589ec44087f99e5d",
+  "bytes": 69392,
+  "status": "PASS",
+  "downloaded_files": 171,
+  "collection": "Read-only SSH of existing teammate workspace; no build, solver, scheduler mutation or remote-file write"
+}

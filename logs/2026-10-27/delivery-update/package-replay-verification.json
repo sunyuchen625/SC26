@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "artifact": "deliverables/SC26_队友交接资料_20261027.zip",
+  "artifact_sha256": "9165e86144886bf095d145b15dc601f78b66a7bcd7dde25229d963f514b28c2c",
+  "fresh_extraction_archive_replay": {
+    "archive_replay_pass": true,
+    "cpu_runs": 4,
+    "gpu_runs": 4,
+    "cpu_time_files": 129
+  },
+  "regression_tests": 8,
+  "regression_test_exit": 0,
+  "scope": "Archived metadata only; no solver build or numerical job"
+}

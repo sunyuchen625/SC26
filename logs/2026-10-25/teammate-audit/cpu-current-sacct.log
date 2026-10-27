@@ -1,0 +1,8 @@
+observed_at=2026-10-25T20:40:34.761625+08:00
+login_user=sunyc host=c3ln01
+query=sacct -X -P -n -j 9275741,9275742,9275743,9275744,9275745 --format=JobIDRaw,User,Account,Partition,AllocTRES,ReqMem,Submit,Start,End,State,ExitCode,ElapsedRaw,NodeList
+9275741|sunyc|sunyc|qhn|billing=4,cpu=4,mem=16G,node=1|16G|2026-10-25T16:30:36|2026-10-25T16:30:37|2026-10-25T16:31:14|COMPLETED|0:0|37|c3n91
+9275742|sunyc|sunyc|qhn|billing=16,cpu=16,mem=60G,node=1|60G|2026-10-25T16:30:36|2026-10-25T16:31:15|2026-10-25T16:34:04|COMPLETED|0:0|169|c3n06
+9275743|sunyc|sunyc|qhn|billing=16,cpu=16,mem=75G,node=1|75G|2026-10-25T16:30:37|2026-10-25T16:31:15|2026-10-25T16:34:54|COMPLETED|0:0|219|c3n06
+9275744|sunyc|sunyc|qhn|billing=16,cpu=16,mem=95G,node=1|95G|2026-10-25T16:30:37|2026-10-25T16:31:15|2026-10-25T16:37:42|COMPLETED|0:0|387|c3n24
+9275745|sunyc|sunyc|qhn|billing=96,cpu=96,mem=450G,node=1|450G|2026-10-25T16:30:37|2026-10-25T16:33:17|2026-10-25T16:53:18|COMPLETED|0:0|1201|c3n99

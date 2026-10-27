@@ -1,0 +1,9 @@
+# SC26 archive integration review — 27 October 2026
+
+**PASS for this archive integration and delivery-plan publication.** Claude Code Opus 5.5 with max effort reviewed the specified local files in English through the existing Claude Pro subscription. Codex verified the reviewer used only scoped Read/Grep requests. The [English final response](../../logs/2026-10-27/delivery-update/claude-final-response.md) and [tool/model/usage trace](../../logs/2026-10-27/delivery-update/claude-audit-verification.json) retain the review result.
+
+The repaired summary and updated plan/work order apply the latest official template's email route, package layout, videos, five trials including warmup, per-trial component lifecycle, transfer/conversion rules and official checking interfaces. A seven-day extension is a recommendation; the plan continues the original deadline until an official change. LX2 remains a dated environment appendix. Final source/interface alignment, videos, report/package agreement, captain selection and actual contest submission remain separate tasks.
+
+CPU four-run and GPU four-record archive replay passed. Eight regression checks passed, including missing exits/timing, failed accounting, changed cache, inconsistent round times, relaxed GPU thresholds and incomplete build receipts. The new teammate ZIP passed CRC/content checks and replay/tests from a fresh extraction. Numerical solver source and both frozen candidates retain their existing identities.
+
+The release replaces the old teammate ZIP with the current 27 October bundle and publishes the integrated documentation, replay tool, evidence manifest and official-template source. Codex checks the reviewed file hashes against the Git index before committing and verifies the pushed remote commit. No new numerical job is part of this release.

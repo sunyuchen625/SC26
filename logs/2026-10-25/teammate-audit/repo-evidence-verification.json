@@ -1,0 +1,153 @@
+{
+  "review_head": "b83fe1c177728ec5c955f563b9c34e996ec60d9a",
+  "github_delta_files": 20,
+  "numerical_source_or_candidate_changes": false,
+  "uploaded_source_manifest_matches_frozen_CPU": true,
+  "known_solution_pass_count": 24,
+  "CPU_rows": [
+    {
+      "job": 9275742,
+      "problem": "02",
+      "raw_log": "logs/reproduce-scq-20261025/solver-t02-9275742.log",
+      "residual_checker_exit": 0,
+      "residual_checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=5.885605000000e-07 threshold=1.0e-06",
+      "residual": 5.885605e-07,
+      "phase_count": 5,
+      "phase_means_seconds": [
+        0.0081008,
+        21.742347600000002,
+        6.5483384000000004
+      ],
+      "framework_mean_seconds": 28.300503,
+      "internal_convergence": [],
+      "source_manifest_verified_in_batch": true,
+      "cache_hash_matches_manifest": true,
+      "binary_and_cache_hashes_in_batch": true,
+      "missing_manifest_paths": {
+        "run": "runs/t02-9275742/rhs-01",
+        "batch_log": "logs/sc26_remediation-9275742.out",
+        "cmake_cache": "build-t02/CMakeCache.txt"
+      },
+      "uploaded_solver_log_is_exact_substring_of_batch": true,
+      "original_float128_residual_after_fifth_solve": 5.885605e-07,
+      "recorded_binary_hash_in_new_build_and_run": true,
+      "recorded_cache_hash_in_new_build_and_run": true,
+      "uploaded_derived_report_peak_bytes": 15605833728,
+      "publication_missing_original_timers": true,
+      "publication_missing_original_process_exit_files": true
+    },
+    {
+      "job": 9275743,
+      "problem": "07",
+      "raw_log": "logs/reproduce-scq-20261025/solver-t07-9275743.log",
+      "residual_checker_exit": 0,
+      "residual_checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=1.601450000000e-09 threshold=1.0e-06",
+      "residual": 1.60145e-09,
+      "phase_count": 5,
+      "phase_means_seconds": [
+        0.0104792,
+        4.4546456,
+        17.554605
+      ],
+      "framework_mean_seconds": 22.023256,
+      "internal_convergence": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "source_manifest_verified_in_batch": true,
+      "cache_hash_matches_manifest": true,
+      "binary_and_cache_hashes_in_batch": true,
+      "missing_manifest_paths": {
+        "run": "runs/t07-9275743/rhs-01",
+        "batch_log": "logs/sc26_remediation-9275743.out",
+        "cmake_cache": "build-t07/CMakeCache.txt"
+      },
+      "uploaded_solver_log_is_exact_substring_of_batch": true,
+      "original_float128_residual_after_fifth_solve": 1.60145e-09,
+      "recorded_binary_hash_in_new_build_and_run": true,
+      "recorded_cache_hash_in_new_build_and_run": true,
+      "uploaded_derived_report_peak_bytes": 67250155520,
+      "publication_missing_original_timers": true,
+      "publication_missing_original_process_exit_files": true
+    },
+    {
+      "job": 9275744,
+      "problem": "09",
+      "raw_log": "logs/reproduce-scq-20261025/solver-t09-9275744.log",
+      "residual_checker_exit": 0,
+      "residual_checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=1.487011000000e-16 threshold=1.0e-08",
+      "residual": 1.487011e-16,
+      "phase_count": 5,
+      "phase_means_seconds": [
+        62.6519928,
+        9.0497224,
+        1.5571712
+      ],
+      "framework_mean_seconds": 73.353634,
+      "internal_convergence": [],
+      "source_manifest_verified_in_batch": true,
+      "cache_hash_matches_manifest": true,
+      "binary_and_cache_hashes_in_batch": true,
+      "missing_manifest_paths": {
+        "run": "runs/t09-9275744/rhs-01",
+        "batch_log": "logs/sc26_remediation-9275744.out",
+        "cmake_cache": "build-t09/CMakeCache.txt"
+      },
+      "uploaded_solver_log_is_exact_substring_of_batch": true,
+      "original_float128_residual_after_fifth_solve": 1.487011e-16,
+      "recorded_binary_hash_in_new_build_and_run": true,
+      "recorded_cache_hash_in_new_build_and_run": true,
+      "uploaded_derived_report_peak_bytes": 24630075392,
+      "publication_missing_original_timers": true,
+      "publication_missing_original_process_exit_files": true
+    },
+    {
+      "job": 9275745,
+      "problem": "05",
+      "raw_log": "logs/reproduce-scq-20261025/solver-t05-9275745.log",
+      "residual_checker_exit": 0,
+      "residual_checker_output": "OFFICIAL_RESIDUAL_PASS relative_residual=2.576043000000e-09 threshold=5.0e-09",
+      "residual": 2.576043e-09,
+      "phase_count": 5,
+      "phase_means_seconds": [
+        0.0033278,
+        10.3120052,
+        176.6734748
+      ],
+      "framework_mean_seconds": 186.989168,
+      "internal_convergence": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "source_manifest_verified_in_batch": true,
+      "cache_hash_matches_manifest": true,
+      "binary_and_cache_hashes_in_batch": true,
+      "missing_manifest_paths": {
+        "run": "runs/t05-9275745/rhs-01",
+        "batch_log": "logs/sc26_remediation-9275745.out",
+        "cmake_cache": "build-t05/CMakeCache.txt"
+      },
+      "uploaded_solver_log_is_exact_substring_of_batch": true,
+      "original_float128_residual_after_fifth_solve": 2.576043e-09,
+      "recorded_binary_hash_in_new_build_and_run": true,
+      "recorded_cache_hash_in_new_build_and_run": true,
+      "uploaded_derived_report_peak_bytes": 202786639872,
+      "publication_missing_original_timers": true,
+      "publication_missing_original_process_exit_files": true
+    }
+  ],
+  "verify_runs_replay_exit": 1,
+  "verify_runs_replay_error": "FileNotFoundError: [Errno 2] No such file or directory: '/Users/sunyuchen/Desktop/学业任务/SC26/logs/reproduce-scq-20261025/runs/t02-9275742/rhs-01/solver.log'",
+  "documented_CPU_folder_exists": false,
+  "documented_GPU_folder_exists": false,
+  "GPU_job_966565_evidence_uploaded": false,
+  "LX2_new_authentication_or_queue_raw_evidence_uploaded": false,
+  "additional_original_CPU_verification": "cpu-original-verification.json",
+  "github_check_runs_at_review_head": 0
+}

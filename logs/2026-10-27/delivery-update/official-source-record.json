@@ -1,0 +1,32 @@
+{
+  "checked_date": "2026-10-27",
+  "official_template_path": "资料/SolverChallenge26报告模板_2026-10-26官网下载.docx",
+  "official_template_sha256": "1153b1dca64712cb983e10b5d0d9994c4c98b3d473794cd76445f9024916434b",
+  "upstream_url": "https://gitee.com/godjs/solverchallenge26_sample_code/blob/master/SolverChallenge26报告模板.docx",
+  "current_rule_source": "Local official download of26October, resource thread confirms27October re-download text unchanged",
+  "resource_thread": "01a0d246-ce59-7b90-85ab-854b63965a46",
+  "teacher_reply": {
+    "observed_date": "2026-10-25",
+    "time": "11:06 Asia/Shanghai",
+    "meaning": "No unified online checking unless results are disputed; teams submit their own recorded runs"
+  },
+  "deadline_basis": {
+    "source": "27October read-only retrieval of official conference page,39,340bytes",
+    "published_wording": "30 October 24:00",
+    "timezone_status": "Not explicitly stated by that page; internal plan uses Asia/Shanghai",
+    "extension_announced": false,
+    "url": "https://solver-conference.cn/solver26/index.html?v=20261011a",
+    "html_sha256": "73b4b309a634ff9839790ac13bc5d22737a39d11bcc955f9986f72a88e33bc3f"
+  },
+  "extension_recommendation": {
+    "days": 7,
+    "conditional_date_if_original_30_October": "2026-11-06",
+    "status": "Request recommendation only; not an approved deadline"
+  },
+  "fresh_public_web_attempt": "Web tool failed; existing proxy/HTTP1.1 curl route retrieved official page successfully and retained task-submission deadline excerpt",
+  "report_results_time_column": "平均求解时间（s）",
+  "report_unit_source": "Results table in the same official DOCX body, in addition to page-one instructions",
+  "report_results_notes": [
+    "注：平均求解时间按提交注意事项中的计时规则填写，为 5 次运行（含硬件预热运行）的平均值，单位为秒。第1、2题按表中精度要求逐行填写。精度是否达标、内存使用量两栏按官方示例代码的检测流程及输出填写，达标结果后续由测试组验证。内存约束：第1题≤9GB、第9题<100GB，其余无约束；分布式内存为所有进程之和，CPU和GPU内存都要满足约束，有约束的赛题请在“内存使用量”栏写明实际使用内存。"
+  ]
+}

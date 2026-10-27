@@ -1,0 +1,592 @@
+{
+  "date": "2026-10-25",
+  "review_head": "b83fe1c177728ec5c955f563b9c34e996ec60d9a",
+  "baseline": "b9d5416139f83c4f6d3dae5779c2345477ff1453",
+  "status": "CPU independent reproduction accepted; GitHub evidence publication requires correction; GPU/LX2 new claims and formal handoff remain open",
+  "reviewer": "Claude Code Opus 5.5 / max, native Claude Pro",
+  "conversation_id": "274ca4d8-cba5-4374-8d71-543c41f8404c",
+  "rounds": [
+    {
+      "round": "audit1",
+      "session_id": "274ca4d8-cba5-4374-8d71-543c41f8404c",
+      "model": "claude-opus-5-5",
+      "configured_effort": "max",
+      "permission_mode": "plan",
+      "api_key_source": "none",
+      "tools": [
+        "Grep",
+        "Read"
+      ],
+      "tool_requests": [
+        {
+          "tool": "Read",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/review-scope.json"
+        },
+        {
+          "tool": "Read",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/brief.md"
+        },
+        {
+          "tool": "Read",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/codex.md"
+        },
+        {
+          "tool": "Read",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/codex-verification.json"
+        },
+        {
+          "tool": "Read",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/snapshot.json"
+        },
+        {
+          "tool": "Read",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/verify-runs-replay.stderr.txt"
+        },
+        {
+          "tool": "Read",
+          "path": "docs/REPRODUCE_SCQ_2026-10-25.md"
+        },
+        {
+          "tool": "Read",
+          "path": "logs/reproduce-scq-20261025/reproduction-runs.json"
+        },
+        {
+          "tool": "Read",
+          "path": "logs/reproduce-scq-20261025/verify_runs_report.json"
+        },
+        {
+          "tool": "Read",
+          "path": "logs/reproduce-scq-20261025/reproduction-sacct.log"
+        },
+        {
+          "tool": "Read",
+          "path": "scripts/verify_runs.py"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/solver-t02-9275742.log"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/solver-t07-9275743.log"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/solver-t09-9275744.log"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/solver-t05-9275745.log"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/sc26_remediation-9275742.out"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/sc26_remediation-9275745.out"
+        },
+        {
+          "tool": "Read",
+          "path": "scripts/remediation-baseline.sbatch"
+        },
+        {
+          "tool": "Read",
+          "path": "scripts/remediation-build.sbatch"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/sc26_remediation-9275742.out"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/sc26_remediation-9275744.out"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/sc26_remediation-9275745.out"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/sc26_remediation-9275743.out"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/sc26_remediation-9275742.out"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/sc26_remediation-9275742.out"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/source-sha256.txt"
+        },
+        {
+          "tool": "Read",
+          "path": "logs/reproduce-scq-20261025/rebuild-job-id.txt"
+        },
+        {
+          "tool": "Read",
+          "path": "logs/reproduce-scq-20261025/reproduction-job-ids.txt"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/sc26_remediation_build-9275741.out"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/sc26_remediation_build-9275741.out"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/sc26_remediation_build-9275741.out"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/sc26_remediation_build-9275741.out"
+        },
+        {
+          "tool": "Read",
+          "path": "docs/SC26_队友交接工单_2026-10-24.md"
+        },
+        {
+          "tool": "Grep",
+          "path": "docs/FORMAL_ENTRY_GPU_CONTRACT_2026-10-23.md"
+        },
+        {
+          "tool": "Grep",
+          "path": "README.md"
+        },
+        {
+          "tool": "Grep",
+          "path": "docs/SUBMISSION_CANDIDATE_2026-10-03.md"
+        },
+        {
+          "tool": "Grep",
+          "path": "docs/REPRODUCE_CPU_2026-10-03.md"
+        },
+        {
+          "tool": "Read",
+          "path": "docs/FORMAL_ENTRY_GPU_CONTRACT_2026-10-23.md"
+        },
+        {
+          "tool": "Read",
+          "path": "logs/2026-10-23/gpu-preparation/source-identity.json"
+        },
+        {
+          "tool": "Grep",
+          "path": "docs/T2_GPU_PREPARATION_2026-10-23.md"
+        },
+        {
+          "tool": "Read",
+          "path": "docs/T2_GPU_PREPARATION_2026-10-23.md"
+        },
+        {
+          "tool": "Grep",
+          "path": "docs/算力申请与使用方案.md"
+        },
+        {
+          "tool": "Grep",
+          "path": "docs/FORMAL_ENTRY_GPU_CONTRACT_2026-10-23.md"
+        },
+        {
+          "tool": "Read",
+          "path": "logs/2026-10-23/resource-optimization/lx2-readiness-20261023.json"
+        },
+        {
+          "tool": "Grep",
+          "path": "docs/算力申请与使用方案.md"
+        },
+        {
+          "tool": "Grep",
+          "path": "README.md"
+        },
+        {
+          "tool": "Grep",
+          "path": "README.md"
+        },
+        {
+          "tool": "Read",
+          "path": "docs/REPRODUCE_CPU_2026-10-03.md"
+        },
+        {
+          "tool": "Read",
+          "path": "logs/reproduce-scq-20261025/sc26_remediation-9275742.out"
+        },
+        {
+          "tool": "Read",
+          "path": "logs/reproduce-scq-20261025/sc26_remediation-9275742.out"
+        },
+        {
+          "tool": "Read",
+          "path": "logs/reproduce-scq-20261025/sc26_remediation-9275742.out"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/solver-t02-9275742.log"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/solver-t05-9275745.log"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/solver-t09-9275744.log"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/solver-t09-9275744.log"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/sc26_remediation-9275745.out"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/solver-t05-9275745.log"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/solver-t07-9275743.log"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/sc26_remediation-9275744.out"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/sc26_remediation-9275743.out"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/CMakeCache-t02.txt"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/source-sha256.txt"
+        },
+        {
+          "tool": "Grep",
+          "path": "docs/SUBMISSION_CANDIDATE_2026-10-03.md"
+        },
+        {
+          "tool": "Grep",
+          "path": "docs/SUBMISSION_CANDIDATE_2026-10-03.md"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/sc26_remediation-9275742.out"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/sc26_remediation_build-9275741.out"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/sc26_remediation_build-9275741.out"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/reproduce-scq-20261025/sc26_remediation_build-9275741.out"
+        }
+      ],
+      "all_targets_within_exact_local_scope": true,
+      "five_hour_usage_observations": [
+        0,
+        0.01,
+        0.02,
+        0.03,
+        0.04,
+        0.05,
+        0.06,
+        0.07,
+        0.08,
+        0.09,
+        0.1,
+        0.11
+      ],
+      "duration_ms": 535749,
+      "response_sha256": "77ce03d60a8a7d0e1fdc4eee35adda4404708ecb23afd7b22fbcffc7746d1c91"
+    },
+    {
+      "round": "audit2",
+      "session_id": "274ca4d8-cba5-4374-8d71-543c41f8404c",
+      "model": "claude-opus-5-5",
+      "configured_effort": "max",
+      "permission_mode": "plan",
+      "api_key_source": "none",
+      "tools": [
+        "Grep",
+        "Read"
+      ],
+      "tool_requests": [
+        {
+          "tool": "Read",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/audit2-scope.json"
+        },
+        {
+          "tool": "Read",
+          "path": "logs/2026-10-25/teammate-audit/cpu-original-verification.json"
+        },
+        {
+          "tool": "Read",
+          "path": "logs/2026-10-25/teammate-audit/cpu-original-collection.json"
+        },
+        {
+          "tool": "Read",
+          "path": "logs/2026-10-25/teammate-audit/cpu-current-sacct.log"
+        },
+        {
+          "tool": "Read",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/codex-delta-check.json"
+        },
+        {
+          "tool": "Read",
+          "path": "logs/2026-10-25/teammate-audit/github-snapshot.json"
+        },
+        {
+          "tool": "Read",
+          "path": "logs/2026-10-25/teammate-audit/repo-evidence-verification.json"
+        },
+        {
+          "tool": "Grep",
+          "path": "logs/2026-10-25/teammate-audit/cpu-verifier-report.json"
+        },
+        {
+          "tool": "Read",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t09-9275744/rhs-01/process.time"
+        },
+        {
+          "tool": "Read",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t09-9275744/rhs-01/process.exit"
+        },
+        {
+          "tool": "Read",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t02-9275742/rhs-01/process.exit"
+        },
+        {
+          "tool": "Read",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t07-9275743/rhs-01/process.exit"
+        },
+        {
+          "tool": "Read",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t05-9275745/rhs-01/process.exit"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t02-9275742/rhs-01/rank-0.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t02-9275742/rhs-01/rank-1.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t02-9275742/rhs-01/rank-2.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t02-9275742/rhs-01/rank-3.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t02-9275742/rhs-01/rank-4.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t02-9275742/rhs-01/rank-5.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t02-9275742/rhs-01/rank-6.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t02-9275742/rhs-01/rank-7.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t02-9275742/rhs-01/rank-8.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t02-9275742/rhs-01/rank-9.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t02-9275742/rhs-01/rank-10.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t02-9275742/rhs-01/rank-11.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t02-9275742/rhs-01/rank-12.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t02-9275742/rhs-01/rank-13.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t02-9275742/rhs-01/rank-14.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t02-9275742/rhs-01/rank-15.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t07-9275743/rhs-01/rank-0.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t07-9275743/rhs-01/rank-1.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t07-9275743/rhs-01/rank-2.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t07-9275743/rhs-01/rank-3.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t07-9275743/rhs-01/rank-4.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t07-9275743/rhs-01/rank-5.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t07-9275743/rhs-01/rank-6.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t07-9275743/rhs-01/rank-7.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t07-9275743/rhs-01/rank-8.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t07-9275743/rhs-01/rank-9.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t07-9275743/rhs-01/rank-10.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t07-9275743/rhs-01/rank-11.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t07-9275743/rhs-01/rank-12.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t07-9275743/rhs-01/rank-13.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t07-9275743/rhs-01/rank-14.time"
+        },
+        {
+          "tool": "Grep",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/runs/t07-9275743/rhs-01/rank-15.time"
+        },
+        {
+          "tool": "Read",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/logs/sc26_remediation-9275742.err"
+        },
+        {
+          "tool": "Read",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/logs/sc26_remediation-9275743.err"
+        },
+        {
+          "tool": "Read",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/logs/sc26_remediation-9275744.err"
+        },
+        {
+          "tool": "Read",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/logs/sc26_remediation-9275745.err"
+        },
+        {
+          "tool": "Read",
+          "path": ".agents/collaboration/2026-10-25-teammate-audit/cpu-original/logs/sc26_remediation_build-9275741.err"
+        },
+        {
+          "tool": "Read",
+          "path": "docs/reviews/TEAMMATE_PROGRESS_AUDIT_2026-10-25.md"
+        }
+      ],
+      "all_targets_within_exact_local_scope": true,
+      "five_hour_usage_observations": [
+        0.14,
+        0.15,
+        0.16,
+        0.17,
+        0.18,
+        0.19
+      ],
+      "duration_ms": 293667,
+      "response_sha256": "496d2d0ea39f50af2e9fb1f992ae65e0777c05161c0eaba1728cda4c0c29344b"
+    }
+  ],
+  "native_five_hour_usage_before_rounds": [
+    0.0,
+    0.14
+  ],
+  "maximum_streamed_five_hour_utilization": 0.19,
+  "pause_threshold": 0.95,
+  "threshold_reached": false,
+  "original_review_head_files_sha256": {
+    "docs/REPRODUCE_SCQ_2026-10-25.md": "8bca6aa767baef5cc489fd90424e2efd631b4f5eea4b2448c2437a80a30603a9",
+    "logs/reproduce-scq-20261025/CMakeCache-t02.txt": "e75650db1a748783b0802b955ca162e52d6a98d50b35ec6286c7d3aec42205cb",
+    "logs/reproduce-scq-20261025/CMakeCache-t05.txt": "95de8a5047030299f5e3a808dffcae025cadc6901b6640ca1a26493aa0289971",
+    "logs/reproduce-scq-20261025/CMakeCache-t07.txt": "3d111b52c2d68698db1691172634849b8b7da286c7272df493a1e02da1d11d3e",
+    "logs/reproduce-scq-20261025/CMakeCache-t09.txt": "848fced144c37e4fa04cf74f80aaba64862831437bd2d6a64f65fce0ba2ab3bd",
+    "logs/reproduce-scq-20261025/rebuild-job-id.txt": "cf898414a6d431178391f43e870d562cbeb5befd3a9fea4a71b60e737e37883d",
+    "logs/reproduce-scq-20261025/reproduction-job-ids.txt": "21c64be6abfbe6d7d0ca0972307fc5c6a59556d02e53d9dcaa9ce3fe1dcc0cf1",
+    "logs/reproduce-scq-20261025/reproduction-runs.json": "a3aa6acf9404c137a954a60e354dae5c957f7886a908e916a0509ce721aa9758",
+    "logs/reproduce-scq-20261025/reproduction-sacct.log": "5c1af0f94483d137b31664b6f7a27d1c3c45b3bb042c5bb92b65e7ae3ef5e239",
+    "logs/reproduce-scq-20261025/sc26_remediation-9275742.out": "b07bbb32bdf9007f1b797a428e5bcb349bb8f9d3b9dc595933c7632edb8b20fa",
+    "logs/reproduce-scq-20261025/sc26_remediation-9275743.out": "6b5f3b218f24eb8560ef424733c947c71127f8bb84b5bbb31e497b1c3ca4e199",
+    "logs/reproduce-scq-20261025/sc26_remediation-9275744.out": "0eb86555371878e31e9cb8ca01b2883e08661202be414f6df2fe09364b157644",
+    "logs/reproduce-scq-20261025/sc26_remediation-9275745.out": "ae3391d81a3a89972d0512cf2f16e45825753d352203e1bb4e5b707a0d186e5e",
+    "logs/reproduce-scq-20261025/sc26_remediation_build-9275741.out": "bdaee2bee66a848a806e81b4ba4248fda860d0cd43a7157e3465b965b124b1e7",
+    "logs/reproduce-scq-20261025/solver-t02-9275742.log": "fda0e6fe2796a90e90bab6c9604073aac4592a455fb72bf729674cf38e5d0f16",
+    "logs/reproduce-scq-20261025/solver-t05-9275745.log": "8c64292e25244a38016707dcb0ac46b77594a574ab8fada060d9669450baa28a",
+    "logs/reproduce-scq-20261025/solver-t07-9275743.log": "c1bce66b187a46c3de7249a4d3d76e4957cc71f5f430a6f1b5aa60899b9ea8db",
+    "logs/reproduce-scq-20261025/solver-t09-9275744.log": "3ccfd6823772354f9a5dbc7822447e9d2560ea81d6742f1e6610dbf6ff5ee3ab",
+    "logs/reproduce-scq-20261025/source-sha256.txt": "bf8148b56bf20d4c0249b24c8d9540c4212cec153760944f5b38b20137ee68a9",
+    "logs/reproduce-scq-20261025/verify_runs_report.json": "1b94eceaca6ca390b03769762e9edd933216c37472623c855d9c5f76cb1f8bc3"
+  },
+  "integrated_report": "docs/reviews/TEAMMATE_PROGRESS_AUDIT_2026-10-25.md",
+  "integrated_report_sha256": "26ca8deb04c1ff250e3861f250ab2fef1b347c60bfc7615519f9e59c6ba4e4ec",
+  "original_CPU_archive_sha256": "9425399b14fd759af2212aa808b6a604d0ea026e60e40325589ec44087f99e5d",
+  "CPU_original_replay": "PASS",
+  "new_compute_jobs": 0,
+  "reviewer_report_disposition": "Fair; exact factual corrections requested and applied by Codex",
+  "report_corrections": {
+    "reviewed_report_sha256": "3659932d0d771420f19787f4c031317406b3733a836219c975cb7f7933dc6ad8",
+    "final_report_sha256": "26ca8deb04c1ff250e3861f250ab2fef1b347c60bfc7615519f9e59c6ba4e4ec",
+    "requested_corrections_applied": [
+      "Distinguish fresh accounting timestamps from fields present in uploaded sacct",
+      "Record 25 October execution relative to 24 October target and 29 October requirement",
+      "Require final GPU source and accepted launch; captain decides departure from appendix status",
+      "Pin original archive SHA256, bytes and file count",
+      "Use fresh temporary extraction directory",
+      "Condition GPU Account/QOS advice on actual sacct evidence",
+      "Explain observed stderr warnings and expected absence of solver.err"
+    ]
+  },
+  "native_five_hour_usage_after_final_round": 0.23,
+  "maximum_observed_five_hour_utilization": 0.23
+}
