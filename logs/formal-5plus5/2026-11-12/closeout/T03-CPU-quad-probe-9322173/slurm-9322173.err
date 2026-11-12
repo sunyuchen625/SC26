@@ -1,0 +1,12 @@
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+t3_quad.c: In function 'run_phase':
+t3_quad.c:24:13: warning: passing argument 10 of 'pardiso' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   24 |             &zero, &one, parameters, &one, rhs, solution, &error);
+      |             ^~~~~
+In file included from /data/public/software/intel/oneapi/mkl/2022.0.0/include/mkl.h:28,
+                 from t3_quad.c:6:
+/data/public/software/intel/oneapi/mkl/2022.0.0/include/mkl_types.h:81:21: note: expected 'int *' but argument is of type 'const int *'
+   81 |     #define MKL_INT int
+/data/public/software/intel/oneapi/mkl/2022.0.0/include/mkl_pardiso.h:43:37: note: in expansion of macro 'MKL_INT'
+   43 |                    const MKL_INT *, MKL_INT *, const MKL_INT *, MKL_INT *,
+      |                                     ^~~~~~~

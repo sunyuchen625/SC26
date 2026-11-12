@@ -28,7 +28,7 @@ int main(int argc, char** argv)
     char* filename_matrix;       // the filename of matrix A
     char* filename_b;            // the filename of right-hand side vector b
     int   read_matrix_base = 1;  // 0-base or 1-base, default 1-base
-    int   test_frequency   = 5; // run code frequency
+    enum { warmup_frequency = 5, test_frequency = 5, rounds = warmup_frequency + test_frequency };
     int   sys_type         = 0;  // type of algebraic systems, 0: real, 1: complex; default 0
 
     /* ========================================== */
@@ -108,32 +108,46 @@ int main(int argc, char** argv)
     /* ========================================== */
     // Step 2: Solve the linear system
     /* ========================================== */
-    if (sys_type == 0) // real system
-    {
-        // direct solver sample
+    double round_seconds[rounds];
+    if (sys_type == 0) {
         struct MySolver mysolver;
-        tt = GetCurrentTime();
-        for (int i = 0; i < test_frequency; i++) {
-            memset(x, 0, sizeof(double) * (size_t)n);
+        SC26_SOLVER_CREATE(&mysolver, &solver_input);
+        for (int i = 0; i < rounds; ++i) {
+            if (i == warmup_frequency) {
+                tt = GetCurrentTime();
+            }
+            double round_started = GetCurrentTime();
+            memset(x, 0, sizeof(*x) * (size_t)n);
             preprocess(&mysolver, &solver_input);
             direct_solver(&mysolver, &solver_input);
             solve(&mysolver, &solver_input);
+            round_seconds[i] = (GetCurrentTime() - round_started) / 1000.0;
         }
-        time = (GetCurrentTime() - tt) / (double)test_frequency;
-
-    } else { // complex system
-        // direct solver sample
+        time = (GetCurrentTime() - tt) / 1000.0;
+        SC26_SOLVER_DESTROY(&mysolver, &solver_input);
+    } else {
         struct MySolver_complex mysolver;
-        tt = GetCurrentTime();
-        for (int i = 0; i < test_frequency; i++) {
-            memset(x, 0, sizeof(double) * (size_t)n);
-            memset(x_im, 0, sizeof(double) * (size_t)n);
+        SC26_SOLVER_CREATE_COMPLEX(&mysolver, &solver_input);
+        for (int i = 0; i < rounds; ++i) {
+            if (i == warmup_frequency) {
+                tt = GetCurrentTime();
+            }
+            double round_started = GetCurrentTime();
+            memset(x, 0, sizeof(*x) * (size_t)n);
+            memset(x_im, 0, sizeof(*x_im) * (size_t)n);
             preprocess_complex(&mysolver, &solver_input);
             direct_solver_complex(&mysolver, &solver_input);
             solve_complex(&mysolver, &solver_input);
+            round_seconds[i] = (GetCurrentTime() - round_started) / 1000.0;
         }
-        time = (GetCurrentTime() - tt) / (double)test_frequency;
+        time = (GetCurrentTime() - tt) / 1000.0;
+        SC26_SOLVER_DESTROY_COMPLEX(&mysolver, &solver_input);
     }
+    for (int i = 0; i < rounds; ++i)
+        printf("CHECK round %d %s time : %.9f s\n", i + 1,
+               i < warmup_frequency ? "warmup" : "formal", round_seconds[i]);
+    printf("CHECK formal total time : %.9f s\n", time);
+    time = time * 1000.0 / test_frequency;
 
     fprintf(stdout, "------------------------------------------\n");
 

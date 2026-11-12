@@ -1,0 +1,12 @@
+{"version": 2, "width": 132, "height": 30, "timestamp": 1794472807, "env": {"SHELL": "/bin/zsh", "TERM": "xterm-256color"}, "title": "SolverChallenge26 CUDA OOM! | T07-CPU-RCM"}
+[0.17939, "o", "bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\r\n"]
+[0.191115, "o", "/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\r\n"]
+[0.245912, "o", "bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\r\n"]
+[0.273798, "o", "2026-11-12 16:40:07 CST\r\n"]
+[0.283326, "o", "SC26 T07-CPU-RCM | c3ln01 | 16 MPI ranks x 1 threads | RHS 01\r\nUpstream sample and report template: 046abcb4045773feb55e4913234607c4d9887dc5\r\n+ sbatch --parsable --dependency=afterok:9321524 --job-name=sc26_T07-CPU-RCM --chdir=/data/home/sunyc/solverchallenge26/formal-20261112-t7 --nodes=1 --ntasks=16 --cpus-per-task=1 --mem=95G --time=00:45:00 ./remediation-baseline.sbatch 07 01\r\n"]
+[0.303677, "o", "Submitted Slurm job 9321531\r\n"]
+[10.510383, "o", "2026-11-12 16:40:17 CST JOB 9321531 PENDING|0:0|None assigned|00:00:00\r\n"]
+[1122.740606, "o", "2026-11-12 16:58:49 CST JOB 9321531 RUNNING|0:0|c3n73|00:00:00\r\n"]
+[1415.883834, "o", "2026-11-12 17:03:43 CST JOB 9321531 COMPLETED|0:0|c3n73|00:04:52\r\n"]
+[1418.04404, "o", "JobID|State|ExitCode|Start|End|Elapsed|NodeList|AllocTRES\r\n9321531|COMPLETED|0:0|2026-11-12T16:58:49|2026-11-12T17:03:41|00:04:52|c3n73|billing=20,cpu=20,mem=95G,node=1\r\n9321531.batch|COMPLETED|0:0|2026-11-12T16:58:49|2026-11-12T17:03:41|00:04:52|c3n73|cpu=20,mem=95G,node=1\r\n9321531.extern|COMPLETED|0:0|2026-11-12T16:58:49|2026-11-12T17:03:42|00:04:53|c3n73|billing=20,cpu=20,mem=95G,node=1\r\nSlurm stderr (last 12 lines)\r\n  Local port:              1\r\n\r\n--------------------------------------------------------------------------\r\n--------------------------------------------------------------------------\r\nWARNING: There was an error initializing an OpenFabrics device.\r\n\r\n  Local host:   c3n73\r\n  Local device: mlx5_0\r\n--------------------------------------------------------------------------\r\n[c3n73:28602] 15 more processes have sent help message help-mpi-btl-openib.txt / ib port not selected\r\n[c3n73:28602] Set MCA parameter \"orte_base_help_aggregate\" to 0 to see all help / error messages\r\n[c3n73:28602] 15 more pro"]
+[1418.044669, "o", "cesses have sent help message help-mpi-btl-openib.txt / error in device init\r\nJob 9321531 completed successfully\r\n"]

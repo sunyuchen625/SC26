@@ -1,0 +1,9 @@
+{"version": 2, "width": 144, "height": 35, "timestamp": 1794489703, "env": {"SHELL": "/bin/zsh", "TERM": "xterm-256color"}, "title": "SolverChallenge26 CUDA OOM! | T03-CPU-quad"}
+[0.158567, "o", "bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\r\n"]
+[0.174918, "o", "/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\r\n"]
+[0.227297, "o", "bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\r\n"]
+[0.23072, "o", "2026-11-12 21:21:43 CST\r\n"]
+[0.240014, "o", "SC26 | T03-CPU-quad | 1 MPI rank equivalent, 16 CPU threads | RHS 01\r\nChecker: SolverChallenge26 official 046abcb check_correctness_q_xq\r\n+ sbatch --parsable --chdir=/data/home/sunyc/solverchallenge26/formal-20261112-t3 --output=/data/home/sunyc/solverchallenge26/formal-20261112-t3/slurm-%j.out --error=/data/home/sunyc/solverchallenge26/formal-20261112-t3/slurm-%j.err ./run-t3.sbatch formal\r\n"]
+[0.282812, "o", "Submitted Slurm job 9322185\r\n"]
+[8.463557, "o", "2026-11-12 21:21:52 CST JOB 9322185 PENDING|0:0|None assigned|00:00:00\r\n"]
+[16.571468, "o", "2026-11-12 21:22:00 CST JOB 9322185 RUNNING|0:0|c3n04|00:00:03\r\n"]

@@ -1,0 +1,68 @@
+SC26_RUN problem=01 rhs=01 node=c3n87 mpi=1 threads=16
+official/LICENSE: OK
+official/include/solverchallenge26/common_types.h: OK
+official/include/solverchallenge26/diagnostics.h: OK
+official/include/solverchallenge26/gpu_direct_solver_api.h: OK
+official/include/solverchallenge26/gpu_iterative_solver_api.h: OK
+official/include/solverchallenge26/gpu_metrics.h: OK
+official/include/solverchallenge26/matrix_market_reader.h: OK
+official/include/solverchallenge26/mpi_system_loader.h: OK
+official/include/solverchallenge26/petsc_binary_reader.h: OK
+official/include/solverchallenge26/residual_check.h: OK
+official/include/solverchallenge26/runtime_support.h: OK
+official/include/solverchallenge26/solver_api.h: OK
+official/include/solverchallenge26/solver_input.h: OK
+official/include/solverchallenge26/system_loader.h: OK
+official/src/diagnostics.c: OK
+official/src/matrix_market/highlevel.c: OK
+official/src/matrix_market/mmio.c: OK
+official/src/petsc_binary_reader.c: OK
+official/src/system_loader.c: OK
+run-t1.sbatch: OK
+t1_fields.c: OK
+dd51a77479a4c55796051512f4f1045baff79407884d0371fc4504f9107ef833  t1_fields
+T1_MATRIX rows=6291456 nnz=52133888 cells=2097152
+T1_MODE anchor=16513 anchor_diag=1.84485864223e+17 row_sum=139784650337
+T1_BLOCK field=2 iterations=151 residual=5.26068e-11
+T1_MODE denominator=25440551.8416
+T1_BLOCK field=0 iterations=29 residual=3.62749e-11
+T1_BLOCK field=2 iterations=180 residual=2.78696e-09
+T1_REFINEMENT step=1 mode_delta=0.000279295296151 original_relative_residual=0.122106899196
+T1_BLOCK field=0 iterations=29 residual=3.24253e-11
+T1_BLOCK field=2 iterations=52 residual=8.94381e-11
+T1_REFINEMENT step=2 mode_delta=-8.07384369822e-10 original_relative_residual=0.122095635799
+T1_BLOCK field=0 iterations=29 residual=3.35497e-11
+T1_BLOCK field=2 iterations=6 residual=9.27783e-11
+T1_REFINEMENT step=3 mode_delta=2.19407542991e-13 original_relative_residual=0.122087394629
+T1_BLOCK field=0 iterations=29 residual=3.3567e-11
+T1_BLOCK field=2 iterations=6 residual=9.9207e-11
+T1_REFINEMENT step=4 mode_delta=2.1881714017e-13 original_relative_residual=0.122079157692
+T1_BLOCK field=0 iterations=29 residual=3.35889e-11
+T1_BLOCK field=2 iterations=35 residual=9.21189e-11
+T1_REFINEMENT step=5 mode_delta=-5.86133849912e-13 original_relative_residual=0.122070924994
+T1_BLOCK field=0 iterations=29 residual=3.36108e-11
+T1_BLOCK field=2 iterations=6 residual=9.48438e-11
+T1_REFINEMENT step=6 mode_delta=2.17647597078e-13 original_relative_residual=0.122062696483
+T1_BLOCK field=0 iterations=29 residual=3.36325e-11
+T1_BLOCK field=2 iterations=13 residual=8.95178e-11
+T1_REFINEMENT step=7 mode_delta=2.17020792668e-13 original_relative_residual=0.122054472243
+T1_BLOCK field=0 iterations=29 residual=3.36541e-11
+T1_BLOCK field=2 iterations=6 residual=9.38351e-11
+T1_REFINEMENT step=8 mode_delta=2.164844644e-13 original_relative_residual=0.122046252111
+T1_BLOCK field=0 iterations=29 residual=3.36762e-11
+T1_BLOCK field=2 iterations=35 residual=9.79715e-11
+T1_REFINEMENT step=9 mode_delta=-5.52833621564e-13 original_relative_residual=0.12203803615
+T1_BLOCK field=0 iterations=29 residual=3.36977e-11
+T1_BLOCK field=2 iterations=6 residual=9.46329e-11
+T1_REFINEMENT step=10 mode_delta=2.15331329703e-13 original_relative_residual=0.122029824404
+T1_BLOCK field=0 iterations=29 residual=3.37194e-11
+T1_BLOCK field=2 iterations=13 residual=8.34268e-11
+T1_REFINEMENT step=11 mode_delta=2.14728712718e-13 original_relative_residual=0.122021616822
+T1_BLOCK field=0 iterations=29 residual=3.3741e-11
+T1_BLOCK field=2 iterations=6 residual=9.26231e-11
+T1_REFINEMENT step=12 mode_delta=2.14183153892e-13 original_relative_residual=0.122013413396
+Total memory usage:                 3176.8359 MB
+Q-Check || b - Ax || 2             =  1.170434e+01
+Q-Check || b - Ax || MAX           =  1.672653e-01
+Q-Check || b - Ax || 2 / || b || 2 =  1.220134e-01
+CHECK round 1 warmup time : 547.072291765 s

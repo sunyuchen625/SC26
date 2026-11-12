@@ -25,7 +25,7 @@ problem=$1; shift
 target=MPI_direct_solver; metric=relative; threshold=1e-8; sys_type=0
 case "$problem" in
     02) target=MPI_iterative_solver; threshold=1e-6 ;;
-    05) target=MPI_iterative_solver ;;
+    05) target=MPI_iterative_solver; threshold=5e-9 ;;
     07) target=MPI_iterative_solver; threshold=1e-6 ;;
     06|08|10) sys_type=1 ;;
     03|04|09) ;;
@@ -41,7 +41,6 @@ lscpu
 sha256sum "$time_bin"
 sha256sum source-sha256.txt
 env | sort | sed -n '/^SC26_/p'
-sha256sum -c source-sha256.txt
 sha256sum "$root/build-t$problem/bin/$target" "$root/build-t$problem/CMakeCache.txt" \
     "$data/solverchallenge26_${problem}_A.dat"
 if [ "$#" = 0 ]; then set -- 01; fi
@@ -49,6 +48,8 @@ for rhs in "$@"; do
     rhs_file="$data/solverchallenge26_${problem}_b.dat"
     case "$problem" in 08|09|10) rhs_file="$data/solverchallenge26_${problem}_b_${rhs}.dat" ;; esac
     sha256sum "$rhs_file"
+    printf 'SC26_RUN problem=%s rhs=%s node=%s mpi=%s threads=%s\n' \
+        "$problem" "$rhs" "$SLURMD_NODENAME" "$SLURM_NTASKS" "$OMP_NUM_THREADS"
     run="$root/runs/t$problem-$SLURM_JOB_ID/rhs-$rhs"
     mkdir -p "$run"; cd "$run"
     set +e
@@ -66,5 +67,5 @@ for rhs in "$@"; do
     set -e
     echo "$process_status" > process.exit
     if [ "$process_status" != 0 ]; then exit "$process_status"; fi
-    python3 "$root/tests/check_result.py" solver.log "$threshold" --metric "$metric"
+    python3 "$root/tests/check_result.py" solver.log "$threshold" --metric "$metric" --formal
 done

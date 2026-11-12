@@ -4,4 +4,11 @@
 /* User solver API public entry point. */
 #include "solver.h"
 
+#ifndef SC26_SOLVER_CREATE
+#define SC26_SOLVER_CREATE(solver, input) ((void)0)
+#define SC26_SOLVER_DESTROY(solver, input) ((void)0)
+#define SC26_SOLVER_CREATE_COMPLEX(solver, input) ((void)0)
+#define SC26_SOLVER_DESTROY_COMPLEX(solver, input) ((void)0)
+#endif
+
 #endif

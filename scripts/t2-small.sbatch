@@ -29,6 +29,6 @@ for sample in poisson nonsymmetric neumann; do
             "$root/tests/small_systems/${sample}_b.dat" 0 0 | tee solver.log
         check_args=(solver.log 1e-10 answer_x.rhs "$root/tests/small_systems/${sample}_x.txt")
         if [ "$sample" = neumann ]; then check_args+=(constant-nullspace); fi
-        python3 "$root/tests/check_result.py" "${check_args[@]}"
+        python3 "$root/tests/check_result.py" "${check_args[@]}" --formal
     done
 done

@@ -24,6 +24,8 @@ struct PardisoState {
 #endif
 #if SC26_PROBLEM_NUMBER == 10
     double *scale;
+    int *row_order;
+    struct ComplexEntry *entries;
 #endif
     void *values, *rhs, *solution;
     double analyse_seconds, factor_seconds;
@@ -46,7 +48,8 @@ struct MySolver {
 #endif
     HYPRE_BigInt *rows;
     HYPRE_Int *row_sizes;
-    double *scale;
+    double *scale, *local_scale, *scaled_values, *scaled_rhs;
+    int *counts, *offsets;
     double tolerance, analyse_seconds, preprocess_seconds;
 #endif
 };
@@ -64,6 +67,13 @@ struct MySolver_complex {
 };
 
 #ifdef DIRECT_SOLVER
+void create_direct(struct PardisoState *state, const struct SC26_SolverInput *input,
+                   MKL_INT matrix_type);
+void destroy_direct(struct PardisoState *state, const struct SC26_SolverInput *input);
+#define SC26_SOLVER_CREATE(solver, input) create_direct(&(solver)->direct, input, 11)
+#define SC26_SOLVER_CREATE_COMPLEX(solver, input) create_direct(&(solver)->direct, input, 13)
+#define SC26_SOLVER_DESTROY(solver, input) destroy_direct(&(solver)->direct, input)
+#define SC26_SOLVER_DESTROY_COMPLEX(solver, input) SC26_SOLVER_DESTROY(solver, input)
 void preprocess(struct MySolver* solver, const struct SC26_SolverInput* input);
 void direct_solver(struct MySolver* solver, const struct SC26_SolverInput* input);
 void solve(struct MySolver* solver, const struct SC26_SolverInput* input);
@@ -73,6 +83,16 @@ void solve_complex(struct MySolver_complex* solver, const struct SC26_SolverInpu
 #endif
 
 #ifdef ITERATIVE_SOLVER
+#ifdef MPI_USE
+void create_iterative(struct MySolver* solver, const struct SC26_SolverInput* input);
+void destroy_iterative(struct MySolver* solver, const struct SC26_SolverInput* input);
+void create_iterative_complex(struct MySolver_complex* solver, const struct SC26_SolverInput* input);
+void destroy_iterative_complex(struct MySolver_complex* solver, const struct SC26_SolverInput* input);
+#define SC26_SOLVER_CREATE create_iterative
+#define SC26_SOLVER_DESTROY destroy_iterative
+#define SC26_SOLVER_CREATE_COMPLEX create_iterative_complex
+#define SC26_SOLVER_DESTROY_COMPLEX destroy_iterative_complex
+#endif
 void analyse(struct MySolver* solver, const struct SC26_SolverInput* input);
 void preprocess(struct MySolver* solver, const struct SC26_SolverInput* input);
 void iterative_solver(struct MySolver* solver, const struct SC26_SolverInput* input);

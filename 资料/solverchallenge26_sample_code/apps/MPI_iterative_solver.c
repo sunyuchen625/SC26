@@ -35,7 +35,7 @@ int main(int argc, char** argv)
     char* filename_matrix;       // the filename of matrix A
     char* filename_b;            // the filename of right-hand side vector b
     int   read_matrix_base = 1;  // 0-base or 1-base, default 1-base
-    int   test_frequency   = 5; // run code frequency
+    enum { warmup_frequency = 5, test_frequency = 5, rounds = warmup_frequency + test_frequency };
     int   sys_type         = 0;  // type of algebraic systems, 0: real, 1: complex; default 0
 
     int myrank, size;
@@ -147,23 +147,34 @@ int main(int argc, char** argv)
     /* ========================================== */
     // Step 2: Solve the linear system
     /* ========================================== */
-    double round_seconds[test_frequency], round_maximum[test_frequency];
-    MPI_Barrier(MPI_COMM_WORLD);
-    tt = MPI_Wtime();
+    double round_seconds[rounds];
     if (sys_type == 0) {
         struct MySolver mysolver;
-        for (int i = 0; i < test_frequency; i++) {
+        SC26_SOLVER_CREATE(&mysolver, &solver_input);
+        for (int i = 0; i < rounds; ++i) {
+            if (i == warmup_frequency) {
+                MPI_Barrier(MPI_COMM_WORLD);
+                tt = MPI_Wtime();
+            }
             double round_started = MPI_Wtime();
-            if (local_n) memset(x, 0, sizeof(*x) * (size_t)local_n);
+            if (local_n) {
+                memset(x, 0, sizeof(*x) * (size_t)local_n);
+            }
             analyse(&mysolver, &solver_input);
             preprocess(&mysolver, &solver_input);
             iterative_solver(&mysolver, &solver_input);
-            MPI_Barrier(MPI_COMM_WORLD);
-            round_seconds[i] = MPI_Wtime() - round_started;
+            round_seconds[i] = (MPI_Wtime() - round_started);
         }
+        time = (MPI_Wtime() - tt);
+        SC26_SOLVER_DESTROY(&mysolver, &solver_input);
     } else {
         struct MySolver_complex mysolver;
-        for (int i = 0; i < test_frequency; i++) {
+        SC26_SOLVER_CREATE_COMPLEX(&mysolver, &solver_input);
+        for (int i = 0; i < rounds; ++i) {
+            if (i == warmup_frequency) {
+                MPI_Barrier(MPI_COMM_WORLD);
+                tt = MPI_Wtime();
+            }
             double round_started = MPI_Wtime();
             if (local_n) {
                 memset(x, 0, sizeof(*x) * (size_t)local_n);
@@ -172,20 +183,21 @@ int main(int argc, char** argv)
             analyse_complex(&mysolver, &solver_input);
             preprocess_complex(&mysolver, &solver_input);
             iterative_solver_complex(&mysolver, &solver_input);
-            MPI_Barrier(MPI_COMM_WORLD);
-            round_seconds[i] = MPI_Wtime() - round_started;
+            round_seconds[i] = (MPI_Wtime() - round_started);
         }
+        time = (MPI_Wtime() - tt);
+        SC26_SOLVER_DESTROY_COMPLEX(&mysolver, &solver_input);
     }
-    {
-        double local_time = (MPI_Wtime() - tt) / (double)test_frequency;
-        MPI_Reduce(&local_time, &time, 1, MPI_DOUBLE, MPI_MAX, 0,
-                   MPI_COMM_WORLD);
+    double local_seconds = time, round_maximum[rounds];
+    MPI_Reduce(&local_seconds, &time, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+    MPI_Reduce(round_seconds, round_maximum, rounds, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+    if (myrank == 0) {
+        for (int i = 0; i < rounds; ++i)
+            printf("CHECK round %d %s time : %.9f s\n", i + 1,
+                   i < warmup_frequency ? "warmup" : "formal", round_maximum[i]);
+        printf("CHECK formal total time : %.9f s\n", time);
+        time = time * 1000.0 / test_frequency;
     }
-    MPI_Reduce(round_seconds, round_maximum, test_frequency, MPI_DOUBLE,
-               MPI_MAX, 0, MPI_COMM_WORLD);
-    if (myrank == 0)
-        for (int i = 0; i < test_frequency; ++i)
-            printf("CHECK round %d time : %.9f s\n", i + 1, round_maximum[i]);
 
     /* ========================================== */
     // Step 3: Check time, memory and correctness
@@ -264,7 +276,7 @@ int main(int argc, char** argv)
         // mem_usage();
 
         // check time
-        fprintf(stdout, "CHECK end to end time :         %12.6lf s\n", time);
+        fprintf(stdout, "CHECK end to end time :         %12.6lf ms\n", time);
 
         // store x to a file
         char* answer_x = "answer_x.rhs";

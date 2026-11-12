@@ -1,40 +1,33 @@
 # SolverChallenge26 · CUDA OOM!
 
-中国海洋大学 CUDA OOM! 队项目。**现行规则：2026-10-27 15:38流程更新版；10/28工单已纳入官方MPI单位与样板修复通知。**
+中国海洋大学 CUDA OOM! 队参赛项目仓库。材料提交截止时间为北京时间 2026 年 11 月 13 日 24:00，提交邮箱为 **solverchallenge@sina.com**。
 
-## 从这里开始
+## 当前交付物与进展
 
-1. 读[当前交付计划](docs/DELIVERY_PLAN_2026-10-27.md)和[队友工单](docs/SC26_队友交接工单_2026-10-27.md)，认领最小计时适配、新规实测/视频、报告及打包任务。
-2. 以[现行测试规则](docs/OFFICIAL_TESTING_RULES_2026-10-27.md)和[新官方模板](资料/SolverChallenge26报告模板_2026-10-27流程更新.docx)为准：五次完整预热＋五次连续正式运行；第6次前到第10次后计时，正式累计÷5，成绩填写**毫秒（ms）**。
-3. 下载[流程更新版交接包](deliverables/SC26_队友交接资料_20261027_流程更新.zip)，或直接从当前`main`读取材料。它是项目交接包，正式提交包按官方三个目录另行组装。
+1. **提交材料**：[提交包 v3](deliverables/SolverChallenge26_CUDA%20OOM!_v3.zip)包括[比赛报告](deliverables/SC26技术报告_新规实测更新_20261112.docx)、逐题源码及运行说明和作业录像。
+2. **新规 5+5 全量实测与视频**：商业 CPU 上的第 2 题低档（`1e-6`）、第 3 至第 7 题以及第 8 至第 10 题的全部右端项均已通过“5 次预热 + 5 次正式运行”及官方 float128 精度验收。实测记录见 [正式作业汇总](logs/formal-5plus5/2026-11-12/README.md)和[收尾作业](logs/formal-5plus5/2026-11-12/closeout/README.md)，导出视频位于 [SC26_求解视频_20261112](deliverables/SC26_求解视频_20261112/)。
+3. **精度进展**：T1 单次全量试验相对残差为 `1.044322e-10`，峰值内存 4.17 GB，正式作业仍在运行。T2 高档（`1e-10`）尚未达到精度门槛。
+4. **国产 GPU 与历史实验**：第 2 题海光 DCU（HIP 后端）方案已完成五轮优化对比（约 3.90 s）与独立复现，详见[历史实验摘要](docs/REPRODUCE_SCQ_2026-10-25.md)和[GPU 优化记录](docs/T2_GPU_PREPARATION_2026-10-23.md)。国产 CPU（LX2）完成了登录与队列连通性核查，受限于原生依赖与代理证书环境暂未展开编译计算，详见[LX2 环境附录](docs/LX2_ENVIRONMENT_APPENDIX_2026-10-24.md)。
 
-## 当前项目状态
+## 计时与源码入口
 
-CPU旧规已通过T2低档、T4–T7、T8–T10全右端；scq新构建、24个已知解及四项CPU独立复现有完整原件。GPU966565的全量/三个小例旧规归档通过，原均时3.902198秒、原始系统残差5.896126e-7。详见[历史实验摘要](docs/REPRODUCE_SCQ_2026-10-25.md)。
+- 正式 CPU 入口位于 `资料/solverchallenge26_sample_code/`（直接法为 `MPI_direct_solver`，迭代法为 `MPI_iterative_solver`）。T3 的混合精度入口随提交包的 T03 源码与运行说明提供。
+- 计时按[现行测试规则](docs/OFFICIAL_TESTING_RULES_2026-10-27.md)执行：句柄创建/销毁与数据准备不计时；先跑 5 次完整预热，在第 6 次前启动计时、第 10 次完成后停止计时，正式总时间 ÷ 5 换算为毫秒输出（`CHECK end to end time`）。每轮均独立执行分析、分解、预处理与求解，第 2 题右端投影、迭代法行列缩放及第 10 题行配对与均衡化均计入每轮用时。
+- 新规 5+5 实测日志使用 `tests/check_result.py --formal` 进行自动化验收。
 
-**现有求解驱动尚未完成新5+5适配；未见新规合格成绩。** 先合入官方最新样板的适用修复并重编译，再验证定制求解器边界。官方通知中的单位错误仅涉及旧MPI CPU样板；新版 `CHECK end to end time` 已是后五次平均ms，不再次换算。仅单位错误可修正，现有旧五轮记录仍须按新流程重测；历史摘要的秒值保持原样。算法、输入、依赖与原始数值证据可按范围复用，新的计时边界、十次流程、真实运行、完整视频和正式ms结果按工单取得。T1、T3、T2高档仍未达标。
+## 历史归档验证与参考文档
 
-初始化、数据分配、solver/矩阵/向量句柄创建和释放、CPU→GPU传输不计时；每次仍完整进行必要分析、分解、预处理及求解，不复用前次计算结果。坐标不变的存储转换可排除，行列置换必须计时。正确性和内存使用官方示例接口。
-
-CPU保持主线，GPU为T2条件候选；LX2保持[环境附录](docs/LX2_ENVIRONMENT_APPENDIX_2026-10-24.md)，10/24认证恢复据队长转交的队友转录，原始截图/录屏由队友保留，尚无原生构建/计算。
-
-提交邮箱仍为 **solverchallenge@sina.com**，按题准备报告、源码/脚本/Markdown及从提交到求解成功的视频。27日晚认领/适配清单，28日小例放行与实测录像，29日最终核验，争取30日12:00前由队长确认后提交。延期七天仍是建议，未获官方确认前按原截止推进。
-
-## 历史归档回放
-
-以下命令验证原五轮归档，不验收新5+5正式成绩。使用Python3.7及以上；商用CPU登录节点先加载`module load miniforge3/24.3.0`。
+以下命令用于回放检验 10 月的五轮历史归档（Python 3.7+；超算登录节点需先执行 `module load miniforge3/24.3.0`）：
 
 ```bash
 python3 scripts/audit_handoff.py --output logs/2026-10-27/test-flow-update/historical-archive-replay.json
 python3 -m unittest discover -s tests -p test_audit_handoff.py -v
 ```
 
-| 材料 | 用途 |
+| 文档 | 内容说明 |
 | --- | --- |
-| [基线候选](docs/SUBMISSION_CANDIDATE_2026-10-03.md)、[CPU历史结果](docs/CPU_RESULTS.md) | 原源码/包身份和数值证据，当前仍是适配起点 |
-| [CPU历史复现方法](docs/REPRODUCE_CPU_2026-10-03.md) | 旧冻结包的构建与五轮复现参考 |
-| [GPU历史优化](docs/T2_GPU_PREPARATION_2026-10-23.md)、[CPU历史对照](docs/T2_CPU_CONTROLS_2026-10-23.md) | 保留原秒计时和比较范围 |
-| [资源说明](docs/算力申请与使用方案.md)、[English brief](docs/PROJECT_BRIEF.md) | 当前资源证据与新任务范围 |
-| [规则原件及逐段差异](logs/2026-10-27/test-flow-update/official-source-record.json) | 15:38新规替代旧版的来源记录 |
-
-`资料/solverchallenge26_sample_code/`保留既有实现和MIT许可证；其旧驱动/运行说明不是已完成的新规入口。编译、全量数值与视频任务使用实际分配的计算节点；凭据私下交接。
+| [现行测试规则](docs/OFFICIAL_TESTING_RULES_2026-10-27.md)、[交付计划](docs/DELIVERY_PLAN_2026-10-27.md) | 官方 5+5 计时边界、提交结构与打包规范 |
+| [算力申请与使用方案](docs/算力申请与使用方案.md)、[LX2 环境附录](docs/LX2_ENVIRONMENT_APPENDIX_2026-10-24.md) | 商业 CPU、海光 DCU 与 LX2 平台环境说明 |
+| [历史基线候选](docs/SUBMISSION_CANDIDATE_2026-10-03.md)、[CPU 历史结果](docs/CPU_RESULTS.md) | 10 月基线配置、并行扩展对照与旧规数值证据 |
+| [GPU 优化记录](docs/T2_GPU_PREPARATION_2026-10-23.md)、[CPU 历史对照](docs/T2_CPU_CONTROLS_2026-10-23.md) | 第 2 题 HIP 精确预分配优化与 CPU 对比实验 |
+| [历史复现摘要](docs/REPRODUCE_SCQ_2026-10-25.md)、[规则差异记录](logs/2026-10-27/test-flow-update/official-source-record.json) | 独立复现归档与 10 月底模板更新溯源 |

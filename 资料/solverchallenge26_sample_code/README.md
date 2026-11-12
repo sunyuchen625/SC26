@@ -98,9 +98,11 @@ mpirun -np 2 ./build/bin/MPI_GPU_direct_solver data/matrix.dat data/vector.dat 0
 mpirun -np 2 ./build/bin/MPI_GPU_iterative_solver data/matrix.dat data/vector.dat 0 0
 ```
 
-The solver timing loop repeats the complete solver stage five times and reports
-the average. MPI reports the maximum average time across ranks. Memory and
-residual checks run once after the measured stage. The selected
+The CPU drivers and T2 HYPRE driver execute five full warmups and five full
+timed runs. MPI takes the maximum elapsed time across ranks for the entire
+timed interval. `CHECK formal total time` is in seconds and
+`CHECK end to end time` is the mean of the five formal runs in milliseconds.
+Memory and residual checks run once after the measured stage. The selected
 `problems/problemXX/solver.c` is the customization point
 for a submitted solver implementation, and `solver.h` contains its interface.
 Only the selected problem slot is compiled. Solver callbacks receive a
