@@ -1,0 +1,297 @@
+SC26_RUN problem=01 rhs=01 node=c3n28 mpi=1 threads=16
+929fc74c9657693611bae25124b4f845cd5de9aa5415b2559ddf870106590748  source-sha256.txt
+check-t1.py: OK
+official/LICENSE: OK
+official/include/solverchallenge26/common_types.h: OK
+official/include/solverchallenge26/diagnostics.h: OK
+official/include/solverchallenge26/gpu_direct_solver_api.h: OK
+official/include/solverchallenge26/gpu_iterative_solver_api.h: OK
+official/include/solverchallenge26/gpu_metrics.h: OK
+official/include/solverchallenge26/matrix_market_reader.h: OK
+official/include/solverchallenge26/mpi_system_loader.h: OK
+official/include/solverchallenge26/petsc_binary_reader.h: OK
+official/include/solverchallenge26/residual_check.h: OK
+official/include/solverchallenge26/runtime_support.h: OK
+official/include/solverchallenge26/solver_api.h: OK
+official/include/solverchallenge26/solver_input.h: OK
+official/include/solverchallenge26/system_loader.h: OK
+official/src/diagnostics.c: OK
+official/src/matrix_market/highlevel.c: OK
+official/src/matrix_market/mmio.c: OK
+official/src/petsc_binary_reader.c: OK
+official/src/system_loader.c: OK
+run-t1.sbatch: OK
+t1_fields.c: OK
+6ed9164fc9b1f8e90c8e5e7d4507313fc232a543d7a8dd12fd603febd3b95e74  t1_fields
+94e9eed02015090789407701907456abc1fa007d34a891a51553fbaeab9c6db0  /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_01/solverchallenge26_01_A.dat
+628e27c953b163813a741d556615f8a9d2c1ade5a7a5041d4d6eb78f51fcf4be  /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_01/solverchallenge26_01_b.dat
+T1_MATRIX rows=6291456 nnz=52133888 cells=2097152
+T1_SCHUR max_s0=0.055229319 max_s2=4525250.7 max_cross02=1806913.7 max_cross20=7.4180934e-05
+T1_MODE anchor=16513 anchor_diag=1.84485864223e+17 row_sum=415079866.511
+T1_BLOCK field=2 iterations=162 residual=4.07504e-11
+T1_MODE denominator=25440551.3625
+T1_BLOCK field=1 iterations=2 residual=2.77681e-15
+T1_BLOCK field=0 iterations=29 residual=4.92574e-11
+T1_BLOCK field=2 iterations=166 residual=5.6706e-11
+T1_BLOCK field=0 iterations=29 residual=7.42419e-11
+T1_BLOCK field=1 iterations=2 residual=1.22515e-16
+T1_FIELD_RESIDUAL 0.19051114 4.8634723e-13 0.00019430965
+T1_REFINEMENT step=0 original_relative_residual=0.190511239161
+T1_BLOCK field=1 iterations=2 residual=5.47749e-14
+T1_BLOCK field=0 iterations=28 residual=5.74696e-11
+T1_BLOCK field=2 iterations=158 residual=4.92352e-11
+T1_BLOCK field=0 iterations=29 residual=7.22419e-11
+T1_BLOCK field=1 iterations=1 residual=4.61648e-11
+T1_FGMRES step=1 estimated_relative_residual=1.7845043014e-06
+T1_BLOCK field=1 iterations=2 residual=5.84761e-16
+T1_BLOCK field=0 iterations=28 residual=6.07142e-11
+T1_BLOCK field=2 iterations=157 residual=8.10909e-11
+T1_BLOCK field=0 iterations=29 residual=4.18658e-11
+T1_BLOCK field=1 iterations=1 residual=2.95871e-11
+T1_FGMRES step=2 estimated_relative_residual=1.04432205281e-10
+T1_FIELD_RESIDUAL 1.0442099e-10 9.5488637e-18 1.5303409e-12
+T1_REFINEMENT step=1 original_relative_residual=1.04432206238e-10
+CHECK round 1 warmup time : 383.811557699 s
+T1_SCHUR max_s0=0.055229319 max_s2=4525250.7 max_cross02=1806913.7 max_cross20=7.4180934e-05
+T1_MODE anchor=16513 anchor_diag=1.84485864223e+17 row_sum=415079866.511
+T1_BLOCK field=2 iterations=162 residual=4.07504e-11
+T1_MODE denominator=25440551.3625
+T1_BLOCK field=1 iterations=2 residual=2.77681e-15
+T1_BLOCK field=0 iterations=29 residual=4.92574e-11
+T1_BLOCK field=2 iterations=166 residual=5.6706e-11
+T1_BLOCK field=0 iterations=29 residual=7.42419e-11
+T1_BLOCK field=1 iterations=2 residual=1.22515e-16
+T1_FIELD_RESIDUAL 0.19051114 4.8634723e-13 0.00019430965
+T1_REFINEMENT step=0 original_relative_residual=0.190511239161
+T1_BLOCK field=1 iterations=2 residual=5.47749e-14
+T1_BLOCK field=0 iterations=28 residual=5.74696e-11
+T1_BLOCK field=2 iterations=158 residual=4.92352e-11
+T1_BLOCK field=0 iterations=29 residual=7.22419e-11
+T1_BLOCK field=1 iterations=1 residual=4.61648e-11
+T1_FGMRES step=1 estimated_relative_residual=1.7845043014e-06
+T1_BLOCK field=1 iterations=2 residual=5.84761e-16
+T1_BLOCK field=0 iterations=28 residual=6.07142e-11
+T1_BLOCK field=2 iterations=159 residual=4.17194e-11
+T1_BLOCK field=0 iterations=29 residual=4.18658e-11
+T1_BLOCK field=1 iterations=1 residual=2.95871e-11
+T1_FGMRES step=2 estimated_relative_residual=1.04431648816e-10
+T1_FIELD_RESIDUAL 1.0442099e-10 9.548802e-18 1.4918823e-12
+T1_REFINEMENT step=1 original_relative_residual=1.04431649774e-10
+CHECK round 2 warmup time : 382.233516240 s
+T1_SCHUR max_s0=0.055229319 max_s2=4525250.7 max_cross02=1806913.7 max_cross20=7.4180934e-05
+T1_MODE anchor=16513 anchor_diag=1.84485864223e+17 row_sum=415079866.511
+T1_BLOCK field=2 iterations=162 residual=4.07504e-11
+T1_MODE denominator=25440551.3625
+T1_BLOCK field=1 iterations=2 residual=2.77681e-15
+T1_BLOCK field=0 iterations=29 residual=4.92574e-11
+T1_BLOCK field=2 iterations=166 residual=5.6706e-11
+T1_BLOCK field=0 iterations=29 residual=7.42419e-11
+T1_BLOCK field=1 iterations=2 residual=1.22515e-16
+T1_FIELD_RESIDUAL 0.19051114 4.8634723e-13 0.00019430965
+T1_REFINEMENT step=0 original_relative_residual=0.190511239161
+T1_BLOCK field=1 iterations=2 residual=5.47749e-14
+T1_BLOCK field=0 iterations=28 residual=5.74696e-11
+T1_BLOCK field=2 iterations=158 residual=4.92352e-11
+T1_BLOCK field=0 iterations=29 residual=7.22419e-11
+T1_BLOCK field=1 iterations=1 residual=4.61648e-11
+T1_FGMRES step=1 estimated_relative_residual=1.7845043014e-06
+T1_BLOCK field=1 iterations=2 residual=5.84761e-16
+T1_BLOCK field=0 iterations=28 residual=6.07142e-11
+T1_BLOCK field=2 iterations=157 residual=7.53989e-11
+T1_BLOCK field=0 iterations=29 residual=4.18658e-11
+T1_BLOCK field=1 iterations=1 residual=2.95871e-11
+T1_FGMRES step=2 estimated_relative_residual=1.04430587549e-10
+T1_FIELD_RESIDUAL 1.0442099e-10 9.5497329e-18 1.4156685e-12
+T1_REFINEMENT step=1 original_relative_residual=1.04430588452e-10
+CHECK round 3 warmup time : 379.591485301 s
+T1_SCHUR max_s0=0.055229319 max_s2=4525250.7 max_cross02=1806913.7 max_cross20=7.4180934e-05
+T1_MODE anchor=16513 anchor_diag=1.84485864223e+17 row_sum=415079866.511
+T1_BLOCK field=2 iterations=162 residual=4.07504e-11
+T1_MODE denominator=25440551.3625
+T1_BLOCK field=1 iterations=2 residual=2.77681e-15
+T1_BLOCK field=0 iterations=29 residual=4.92574e-11
+T1_BLOCK field=2 iterations=166 residual=5.6706e-11
+T1_BLOCK field=0 iterations=29 residual=7.42419e-11
+T1_BLOCK field=1 iterations=2 residual=1.22515e-16
+T1_FIELD_RESIDUAL 0.19051114 4.8634723e-13 0.00019430965
+T1_REFINEMENT step=0 original_relative_residual=0.190511239161
+T1_BLOCK field=1 iterations=2 residual=5.47749e-14
+T1_BLOCK field=0 iterations=28 residual=5.74696e-11
+T1_BLOCK field=2 iterations=158 residual=4.92352e-11
+T1_BLOCK field=0 iterations=29 residual=7.22419e-11
+T1_BLOCK field=1 iterations=1 residual=4.61648e-11
+T1_FGMRES step=1 estimated_relative_residual=1.7845043014e-06
+T1_BLOCK field=1 iterations=2 residual=5.84761e-16
+T1_BLOCK field=0 iterations=28 residual=6.07142e-11
+T1_BLOCK field=2 iterations=159 residual=3.55942e-11
+T1_BLOCK field=0 iterations=29 residual=4.18658e-11
+T1_BLOCK field=1 iterations=1 residual=2.95871e-11
+T1_FGMRES step=2 estimated_relative_residual=1.04431957335e-10
+T1_FIELD_RESIDUAL 1.0442099e-10 9.54926e-18 1.513321e-12
+T1_REFINEMENT step=1 original_relative_residual=1.04431958238e-10
+CHECK round 4 warmup time : 376.924418883 s
+T1_SCHUR max_s0=0.055229319 max_s2=4525250.7 max_cross02=1806913.7 max_cross20=7.4180934e-05
+T1_MODE anchor=16513 anchor_diag=1.84485864223e+17 row_sum=415079866.511
+T1_BLOCK field=2 iterations=162 residual=4.07504e-11
+T1_MODE denominator=25440551.3625
+T1_BLOCK field=1 iterations=2 residual=2.77681e-15
+T1_BLOCK field=0 iterations=29 residual=4.92574e-11
+T1_BLOCK field=2 iterations=166 residual=5.6706e-11
+T1_BLOCK field=0 iterations=29 residual=7.42419e-11
+T1_BLOCK field=1 iterations=2 residual=1.22515e-16
+T1_FIELD_RESIDUAL 0.19051114 4.8634723e-13 0.00019430965
+T1_REFINEMENT step=0 original_relative_residual=0.190511239161
+T1_BLOCK field=1 iterations=2 residual=5.47749e-14
+T1_BLOCK field=0 iterations=28 residual=5.74696e-11
+T1_BLOCK field=2 iterations=158 residual=4.92352e-11
+T1_BLOCK field=0 iterations=29 residual=7.22419e-11
+T1_BLOCK field=1 iterations=1 residual=4.61648e-11
+T1_FGMRES step=1 estimated_relative_residual=1.7845043014e-06
+T1_BLOCK field=1 iterations=2 residual=5.84761e-16
+T1_BLOCK field=0 iterations=28 residual=6.07142e-11
+T1_BLOCK field=2 iterations=157 residual=5.033e-11
+T1_BLOCK field=0 iterations=29 residual=4.18658e-11
+T1_BLOCK field=1 iterations=1 residual=2.95871e-11
+T1_FGMRES step=2 estimated_relative_residual=1.04432180091e-10
+T1_FIELD_RESIDUAL 1.0442099e-10 9.5488e-18 1.5286143e-12
+T1_REFINEMENT step=1 original_relative_residual=1.04432181048e-10
+CHECK round 5 warmup time : 379.789242788 s
+T1_SCHUR max_s0=0.055229319 max_s2=4525250.7 max_cross02=1806913.7 max_cross20=7.4180934e-05
+T1_MODE anchor=16513 anchor_diag=1.84485864223e+17 row_sum=415079866.511
+T1_BLOCK field=2 iterations=162 residual=4.07504e-11
+T1_MODE denominator=25440551.3625
+T1_BLOCK field=1 iterations=2 residual=2.77681e-15
+T1_BLOCK field=0 iterations=29 residual=4.92574e-11
+T1_BLOCK field=2 iterations=166 residual=5.6706e-11
+T1_BLOCK field=0 iterations=29 residual=7.42419e-11
+T1_BLOCK field=1 iterations=2 residual=1.22515e-16
+T1_FIELD_RESIDUAL 0.19051114 4.8634723e-13 0.00019430965
+T1_REFINEMENT step=0 original_relative_residual=0.190511239161
+T1_BLOCK field=1 iterations=2 residual=5.47749e-14
+T1_BLOCK field=0 iterations=28 residual=5.74696e-11
+T1_BLOCK field=2 iterations=158 residual=4.92352e-11
+T1_BLOCK field=0 iterations=29 residual=7.22419e-11
+T1_BLOCK field=1 iterations=1 residual=4.61648e-11
+T1_FGMRES step=1 estimated_relative_residual=1.7845043014e-06
+T1_BLOCK field=1 iterations=2 residual=5.84761e-16
+T1_BLOCK field=0 iterations=28 residual=6.07142e-11
+T1_BLOCK field=2 iterations=157 residual=7.98011e-11
+T1_BLOCK field=0 iterations=29 residual=4.18658e-11
+T1_BLOCK field=1 iterations=1 residual=2.95871e-11
+T1_FGMRES step=2 estimated_relative_residual=1.04431334191e-10
+T1_FIELD_RESIDUAL 1.0442099e-10 9.5492771e-18 1.469701e-12
+T1_REFINEMENT step=1 original_relative_residual=1.04431335094e-10
+CHECK round 6 formal time : 382.101253986 s
+T1_SCHUR max_s0=0.055229319 max_s2=4525250.7 max_cross02=1806913.7 max_cross20=7.4180934e-05
+T1_MODE anchor=16513 anchor_diag=1.84485864223e+17 row_sum=415079866.511
+T1_BLOCK field=2 iterations=162 residual=4.07504e-11
+T1_MODE denominator=25440551.3625
+T1_BLOCK field=1 iterations=2 residual=2.77681e-15
+T1_BLOCK field=0 iterations=29 residual=4.92574e-11
+T1_BLOCK field=2 iterations=166 residual=5.6706e-11
+T1_BLOCK field=0 iterations=29 residual=7.42419e-11
+T1_BLOCK field=1 iterations=2 residual=1.22515e-16
+T1_FIELD_RESIDUAL 0.19051114 4.8634723e-13 0.00019430965
+T1_REFINEMENT step=0 original_relative_residual=0.190511239161
+T1_BLOCK field=1 iterations=2 residual=5.47749e-14
+T1_BLOCK field=0 iterations=28 residual=5.74696e-11
+T1_BLOCK field=2 iterations=158 residual=4.92352e-11
+T1_BLOCK field=0 iterations=29 residual=7.22419e-11
+T1_BLOCK field=1 iterations=1 residual=4.61648e-11
+T1_FGMRES step=1 estimated_relative_residual=1.7845043014e-06
+T1_BLOCK field=1 iterations=2 residual=5.84761e-16
+T1_BLOCK field=0 iterations=28 residual=6.07142e-11
+T1_BLOCK field=2 iterations=158 residual=8.29949e-11
+T1_BLOCK field=0 iterations=29 residual=4.18658e-11
+T1_BLOCK field=1 iterations=1 residual=2.95871e-11
+T1_FGMRES step=2 estimated_relative_residual=1.04436173816e-10
+T1_FIELD_RESIDUAL 1.0442099e-10 9.5485888e-18 1.7806576e-12
+T1_REFINEMENT step=1 original_relative_residual=1.04436174773e-10
+CHECK round 7 formal time : 369.749027261 s
+T1_SCHUR max_s0=0.055229319 max_s2=4525250.7 max_cross02=1806913.7 max_cross20=7.4180934e-05
+T1_MODE anchor=16513 anchor_diag=1.84485864223e+17 row_sum=415079866.511
+T1_BLOCK field=2 iterations=162 residual=4.07504e-11
+T1_MODE denominator=25440551.3625
+T1_BLOCK field=1 iterations=2 residual=2.77681e-15
+T1_BLOCK field=0 iterations=29 residual=4.92574e-11
+T1_BLOCK field=2 iterations=166 residual=5.6706e-11
+T1_BLOCK field=0 iterations=29 residual=7.42419e-11
+T1_BLOCK field=1 iterations=2 residual=1.22515e-16
+T1_FIELD_RESIDUAL 0.19051114 4.8634723e-13 0.00019430965
+T1_REFINEMENT step=0 original_relative_residual=0.190511239161
+T1_BLOCK field=1 iterations=2 residual=5.47749e-14
+T1_BLOCK field=0 iterations=28 residual=5.74696e-11
+T1_BLOCK field=2 iterations=158 residual=4.92352e-11
+T1_BLOCK field=0 iterations=29 residual=7.22419e-11
+T1_BLOCK field=1 iterations=1 residual=4.61648e-11
+T1_FGMRES step=1 estimated_relative_residual=1.7845043014e-06
+T1_BLOCK field=1 iterations=2 residual=5.84761e-16
+T1_BLOCK field=0 iterations=28 residual=6.07142e-11
+T1_BLOCK field=2 iterations=157 residual=5.92617e-11
+T1_BLOCK field=0 iterations=29 residual=4.18658e-11
+T1_BLOCK field=1 iterations=1 residual=2.95871e-11
+T1_FGMRES step=2 estimated_relative_residual=1.04431529446e-10
+T1_FIELD_RESIDUAL 1.0442099e-10 9.5489795e-18 1.4835061e-12
+T1_REFINEMENT step=1 original_relative_residual=1.04431530404e-10
+CHECK round 8 formal time : 373.376981278 s
+T1_SCHUR max_s0=0.055229319 max_s2=4525250.7 max_cross02=1806913.7 max_cross20=7.4180934e-05
+T1_MODE anchor=16513 anchor_diag=1.84485864223e+17 row_sum=415079866.511
+T1_BLOCK field=2 iterations=162 residual=4.07504e-11
+T1_MODE denominator=25440551.3625
+T1_BLOCK field=1 iterations=2 residual=2.77681e-15
+T1_BLOCK field=0 iterations=29 residual=4.92574e-11
+T1_BLOCK field=2 iterations=166 residual=5.6706e-11
+T1_BLOCK field=0 iterations=29 residual=7.42419e-11
+T1_BLOCK field=1 iterations=2 residual=1.22515e-16
+T1_FIELD_RESIDUAL 0.19051114 4.8634723e-13 0.00019430965
+T1_REFINEMENT step=0 original_relative_residual=0.190511239161
+T1_BLOCK field=1 iterations=2 residual=5.47749e-14
+T1_BLOCK field=0 iterations=28 residual=5.74696e-11
+T1_BLOCK field=2 iterations=158 residual=4.92352e-11
+T1_BLOCK field=0 iterations=29 residual=7.22419e-11
+T1_BLOCK field=1 iterations=1 residual=4.61648e-11
+T1_FGMRES step=1 estimated_relative_residual=1.7845043014e-06
+T1_BLOCK field=1 iterations=2 residual=5.84761e-16
+T1_BLOCK field=0 iterations=28 residual=6.07142e-11
+T1_BLOCK field=2 iterations=158 residual=9.78965e-11
+T1_BLOCK field=0 iterations=29 residual=4.18658e-11
+T1_BLOCK field=1 iterations=1 residual=2.95871e-11
+T1_FGMRES step=2 estimated_relative_residual=1.04434999481e-10
+T1_FIELD_RESIDUAL 1.0442099e-10 9.5488104e-18 1.7104102e-12
+T1_REFINEMENT step=1 original_relative_residual=1.04435000384e-10
+CHECK round 9 formal time : 375.909633008 s
+T1_SCHUR max_s0=0.055229319 max_s2=4525250.7 max_cross02=1806913.7 max_cross20=7.4180934e-05
+T1_MODE anchor=16513 anchor_diag=1.84485864223e+17 row_sum=415079866.511
+T1_BLOCK field=2 iterations=162 residual=4.07504e-11
+T1_MODE denominator=25440551.3625
+T1_BLOCK field=1 iterations=2 residual=2.77681e-15
+T1_BLOCK field=0 iterations=29 residual=4.92574e-11
+T1_BLOCK field=2 iterations=166 residual=5.6706e-11
+T1_BLOCK field=0 iterations=29 residual=7.42419e-11
+T1_BLOCK field=1 iterations=2 residual=1.22515e-16
+T1_FIELD_RESIDUAL 0.19051114 4.8634723e-13 0.00019430965
+T1_REFINEMENT step=0 original_relative_residual=0.190511239161
+T1_BLOCK field=1 iterations=2 residual=5.47749e-14
+T1_BLOCK field=0 iterations=28 residual=5.74696e-11
+T1_BLOCK field=2 iterations=158 residual=4.92352e-11
+T1_BLOCK field=0 iterations=29 residual=7.22419e-11
+T1_BLOCK field=1 iterations=1 residual=4.61648e-11
+T1_FGMRES step=1 estimated_relative_residual=1.7845043014e-06
+T1_BLOCK field=1 iterations=2 residual=5.84761e-16
+T1_BLOCK field=0 iterations=28 residual=6.07142e-11
+T1_BLOCK field=2 iterations=157 residual=8.10909e-11
+T1_BLOCK field=0 iterations=29 residual=4.18658e-11
+T1_BLOCK field=1 iterations=1 residual=2.95871e-11
+T1_FGMRES step=2 estimated_relative_residual=1.04432205281e-10
+T1_FIELD_RESIDUAL 1.0442099e-10 9.5488637e-18 1.5303409e-12
+T1_REFINEMENT step=1 original_relative_residual=1.04432206238e-10
+CHECK round 10 formal time : 366.770758596 s
+CHECK formal total time : 1867.907694330 s
+CHECK end to end time : 373581.538866 ms
+Total memory usage:                 4094.7891 MB
+Q-Check || b - Ax || 2             =  1.001783e-08
+Q-Check || b - Ax || MAX           =  1.304934e-09
+Q-Check || b - Ax || 2 / || b || 2 =  1.044322e-10
+FORMAL_5PLUS5_PASS total_s=1867.907694330 mean_ms=373581.538866 memory_MiB=4094.7891
+OFFICIAL_RESIDUAL_PASS relative_residual=1.044322e-10 threshold=1e-4
+OFFICIAL_RESIDUAL_PASS relative_residual=1.044322e-10 threshold=1e-8

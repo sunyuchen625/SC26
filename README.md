@@ -4,14 +4,14 @@
 
 ## 当前交付物与进展
 
-1. **提交材料**：[提交包 v3](deliverables/SolverChallenge26_CUDA%20OOM!_v3.zip)包括[比赛报告](deliverables/SC26技术报告_新规实测更新_20261112.docx)、逐题源码及运行说明和作业录像。
-2. **新规 5+5 全量实测与视频**：商业 CPU 上的第 2 题低档（`1e-6`）、第 3 至第 7 题以及第 8 至第 10 题的全部右端项均已通过“5 次预热 + 5 次正式运行”及官方 float128 精度验收。实测记录见 [正式作业汇总](logs/formal-5plus5/2026-11-12/README.md)和[收尾作业](logs/formal-5plus5/2026-11-12/closeout/README.md)，导出视频位于 [SC26_求解视频_20261112](deliverables/SC26_求解视频_20261112/)。
-3. **精度进展**：T1 单次全量试验相对残差为 `1.044322e-10`，峰值内存 4.17 GB，正式作业仍在运行。T2 高档（`1e-10`）尚未达到精度门槛。
+1. **提交材料**：[提交包 v4](deliverables/SolverChallenge26_CUDA%20OOM!_v4.zip)包括[比赛报告](deliverables/SC26技术报告_新规实测更新_20261112.docx)、逐题源码及运行说明和作业录像（含 10 题共计 37 个正式右端项）。
+2. **新规 5+5 全量实测与视频**：商业 CPU 上的第 1 题两档（`1e-4`、`1e-8`，峰值内存 4.29 GB ≤ 9 GB）、第 2 题低档（`1e-6`）、第 3 至第 7 题以及第 8 至第 10 题的全部右端项均已通过“5 次预热 + 5 次正式运行”及官方 float128 精度验收。实测记录见 [正式作业汇总](logs/formal-5plus5/2026-11-12/README.md)和[收尾作业](logs/formal-5plus5/2026-11-12/closeout/README.md)，导出视频位于 [SC26_求解视频_20261112](deliverables/SC26_求解视频_20261112/)。
+3. **当前未达标项**：仅第 2 题高档（`1e-10`）尚未达到精度门槛，已在报告中据实填报。
 4. **国产 GPU 与历史实验**：第 2 题海光 DCU（HIP 后端）方案已完成五轮优化对比（约 3.90 s）与独立复现，详见[历史实验摘要](docs/REPRODUCE_SCQ_2026-10-25.md)和[GPU 优化记录](docs/T2_GPU_PREPARATION_2026-10-23.md)。国产 CPU（LX2）完成了登录与队列连通性核查，受限于原生依赖与代理证书环境暂未展开编译计算，详见[LX2 环境附录](docs/LX2_ENVIRONMENT_APPENDIX_2026-10-24.md)。
 
 ## 计时与源码入口
 
-- 正式 CPU 入口位于 `资料/solverchallenge26_sample_code/`（直接法为 `MPI_direct_solver`，迭代法为 `MPI_iterative_solver`）。T3 的混合精度入口随提交包的 T03 源码与运行说明提供。
+- 正式 CPU 入口位于 `资料/solverchallenge26_sample_code/`（直接法为 `MPI_direct_solver`，迭代法为 `MPI_iterative_solver`）。T1（场分块 Schur + FGMRES）和 T3（双精度 PARDISO + `binary128` 精化）入口随提交包对应题目的源码目录及运行说明提供。
 - 计时按[现行测试规则](docs/OFFICIAL_TESTING_RULES_2026-10-27.md)执行：句柄创建/销毁与数据准备不计时；先跑 5 次完整预热，在第 6 次前启动计时、第 10 次完成后停止计时，正式总时间 ÷ 5 换算为毫秒输出（`CHECK end to end time`）。每轮均独立执行分析、分解、预处理与求解，第 2 题右端投影、迭代法行列缩放及第 10 题行配对与均衡化均计入每轮用时。
 - 新规 5+5 实测日志使用 `tests/check_result.py --formal` 进行自动化验收。
 
