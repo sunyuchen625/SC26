@@ -1,0 +1,23 @@
+	Command being timed: "stdbuf -oL /data/home/sunyc/solverchallenge26/formal-20261113-t1-openmp/t1_fields /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_01/solverchallenge26_01_A.dat /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_01/solverchallenge26_01_b.dat --probe"
+	User time (seconds): 1403.58
+	System time (seconds): 31.95
+	Percent of CPU this job got: 1292%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:51.10
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4814048
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 2664501
+	Voluntary context switches: 14446
+	Involuntary context switches: 12378
+	Swaps: 0
+	File system inputs: 1370344
+	File system outputs: 88
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,18 @@
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              c3n06
+  Local adapter:           mlx5_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   c3n06
+  Local device: mlx5_0
+--------------------------------------------------------------------------

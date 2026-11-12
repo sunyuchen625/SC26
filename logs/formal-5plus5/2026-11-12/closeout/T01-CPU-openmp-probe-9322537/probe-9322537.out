@@ -1,0 +1,48 @@
+SC26_RUN problem=01 rhs=01 node=c3n06 mpi=1 threads=16
+HYPRE_ENABLE_MPI:BOOL=ON
+HYPRE_ENABLE_OPENMP:BOOL=ON
+523da7b2783acbc5ef8b7c92642ca8513e4fa3a430ae5bfe743398f9ef86fc95  /data/home/sunyc/solverchallenge26/formal-20261113-t1-openmp/hypre-openmp/lib64/libHYPRE.a
+7f1fd340242d1056fd8f1523db93885307bcd7ddd89bd63f57c92b6051ab1c6e  t1_fields
+T1_MATRIX rows=6291456 nnz=52133888 cells=2097152
+T1_SCHUR max_s0=0.055229319 max_s2=4525250.7 max_cross02=1806913.7 max_cross20=7.4180934e-05
+T1_MODE anchor=16513 anchor_diag=1.84485864223e+17 row_sum=415079866.511
+T1_BLOCK field=2 iterations=180 residual=2.30313e-08
+T1_MODE denominator=25440447.399
+T1_BLOCK field=1 iterations=3 residual=2.46644e-14
+T1_BLOCK field=0 iterations=36 residual=5.55309e-11
+T1_BLOCK field=2 iterations=180 residual=1.23506e-08
+T1_BLOCK field=0 iterations=37 residual=3.9493e-11
+T1_BLOCK field=1 iterations=2 residual=4.70981e-12
+T1_FIELD_RESIDUAL 0.19051137 1.7258856e-10 0.032376354
+T1_REFINEMENT step=0 original_relative_residual=0.19324287493
+T1_BLOCK field=1 iterations=3 residual=1.54745e-12
+T1_BLOCK field=0 iterations=35 residual=7.59419e-11
+T1_BLOCK field=2 iterations=180 residual=6.67063e-06
+T1_BLOCK field=0 iterations=37 residual=3.74431e-11
+T1_BLOCK field=1 iterations=2 residual=5.94537e-14
+T1_FGMRES step=1 estimated_relative_residual=0.000366329120449
+T1_BLOCK field=1 iterations=3 residual=1.54371e-12
+T1_BLOCK field=0 iterations=35 residual=7.22359e-11
+T1_BLOCK field=2 iterations=180 residual=0.0014543
+T1_BLOCK field=0 iterations=37 residual=3.53421e-11
+T1_BLOCK field=1 iterations=2 residual=5.82932e-14
+T1_FGMRES step=2 estimated_relative_residual=2.188710842e-05
+T1_BLOCK field=1 iterations=3 residual=1.54729e-12
+T1_BLOCK field=0 iterations=35 residual=5.98476e-11
+T1_BLOCK field=2 iterations=180 residual=4.06091e-06
+T1_BLOCK field=0 iterations=36 residual=9.73569e-11
+T1_BLOCK field=1 iterations=2 residual=5.55585e-14
+T1_FGMRES step=3 estimated_relative_residual=6.3083235575e-09
+T1_BLOCK field=1 iterations=3 residual=1.54746e-12
+T1_BLOCK field=0 iterations=35 residual=7.71e-11
+T1_BLOCK field=2 iterations=180 residual=0.000222514
+T1_BLOCK field=0 iterations=37 residual=3.79213e-11
+T1_BLOCK field=1 iterations=2 residual=5.99927e-14
+T1_FGMRES step=4 estimated_relative_residual=9.26225078761e-11
+T1_FIELD_RESIDUAL 2.864045e-12 7.5526991e-21 9.2578217e-11
+T1_REFINEMENT step=1 original_relative_residual=9.26225078367e-11
+Total memory usage:                 4509.3203 MB
+Q-Check || b - Ax || 2             =  8.884968e-09
+Q-Check || b - Ax || MAX           =  3.829800e-09
+Q-Check || b - Ax || 2 / || b || 2 =  9.262251e-11
+CHECK round 1 warmup time : 102.200300734 s

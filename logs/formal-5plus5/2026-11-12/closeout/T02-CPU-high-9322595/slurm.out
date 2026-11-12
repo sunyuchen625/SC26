@@ -1,0 +1,42 @@
+SC26_RUN problem=02 rhs=01 grade=high node=c3n77 mpi=96 threads=1
+5039121720a7edcbd1ad26c13295bf5380a14fbafb5407adccb438e7f808300e  source-sha256.txt
+0a511a7b67febbbf30c210d2d939a5093626038c5684c382e22f524e2bf755cb  t2_quad
+38b938ccd82b81d8f49930ce051288a08a9a38852b659434066e5e9889fd6b43  /data/home/sunyc/solverchallenge26/deps/hypre/lib64/libHYPRE.a
+poisson: n=385 nnz=2361
+nonsymmetric: n=385 nnz=2361
+neumann: n=385 nnz=2361
+scaled: n=385 nnz=2361
+FORMAL_5PLUS5_PASS total_s=0.022974486 mean_ms=4.594897 memory_MiB=16.2031
+OFFICIAL_RESIDUAL_PASS relative_residual=1.040250000000e-12 threshold=1.0e-10
+T2_SMOKE_PASS official_quad_checker=check_correctness_q_xq
+ea9373832008d1b0928d46053de923b872b1fed73f9b0f31aef43d8f6aec24d1  /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_02/solverchallenge26_02_A.dat
+3dc7f3a0e52b088e21ab1b540b37583db2828eca8385ed2a963e34789615a46e  /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_02/solverchallenge26_02_b.dat
+T2_BINARY128_FGMRES rows=19637808 mpi=96 restart=72 cycles=3
+T02_FGMRES_DONE round=1 original_relative_residual=5.748190416805e-12
+T02_FGMRES_DONE round=2 original_relative_residual=5.748190416805e-12
+T02_FGMRES_DONE round=3 original_relative_residual=5.748190416805e-12
+T02_FGMRES_DONE round=4 original_relative_residual=5.748190416805e-12
+T02_FGMRES_DONE round=5 original_relative_residual=5.748190416805e-12
+T02_FGMRES_DONE round=6 original_relative_residual=5.748190416805e-12
+T02_FGMRES_DONE round=7 original_relative_residual=5.748190416805e-12
+T02_FGMRES_DONE round=8 original_relative_residual=5.748190416805e-12
+T02_FGMRES_DONE round=9 original_relative_residual=5.748190416805e-12
+T02_FGMRES_DONE round=10 original_relative_residual=5.748190416805e-12
+CHECK round 1 warmup time : 57.186687996 s
+CHECK round 2 warmup time : 55.224181705 s
+CHECK round 3 warmup time : 55.084960821 s
+CHECK round 4 warmup time : 55.204713608 s
+CHECK round 5 warmup time : 55.293336181 s
+CHECK round 6 formal time : 55.268517070 s
+CHECK round 7 formal time : 55.277857316 s
+CHECK round 8 formal time : 54.943843917 s
+CHECK round 9 formal time : 55.023127747 s
+CHECK round 10 formal time : 55.026733956 s
+CHECK formal total time : 275.528033233 s
+CHECK end to end time : 55105.606647 ms
+Total memory usage:                 37132.7305 MB
+Q-Check || b - Ax || 2             =  1.608125e-15
+Q-Check || b - Ax || MAX           =  2.333603e-16
+Q-Check || b - Ax || 2 / || b || 2 =  5.748190e-12
+FORMAL_5PLUS5_PASS total_s=275.528033233 mean_ms=55105.606647 memory_MiB=37132.7305
+OFFICIAL_RESIDUAL_PASS relative_residual=5.748190000000e-12 threshold=1.0e-10

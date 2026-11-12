@@ -1,0 +1,27 @@
+T2_BINARY128_FGMRES rows=385 mpi=2 restart=30 cycles=2
+T02_FGMRES_DONE round=1 original_relative_residual=1.040250273018e-12
+T02_FGMRES_DONE round=2 original_relative_residual=1.040250273018e-12
+T02_FGMRES_DONE round=3 original_relative_residual=1.040250273018e-12
+T02_FGMRES_DONE round=4 original_relative_residual=1.040250273018e-12
+T02_FGMRES_DONE round=5 original_relative_residual=1.040250273018e-12
+T02_FGMRES_DONE round=6 original_relative_residual=1.040250273018e-12
+T02_FGMRES_DONE round=7 original_relative_residual=1.040250273018e-12
+T02_FGMRES_DONE round=8 original_relative_residual=1.040250273018e-12
+T02_FGMRES_DONE round=9 original_relative_residual=1.040250273018e-12
+T02_FGMRES_DONE round=10 original_relative_residual=1.040250273018e-12
+CHECK round 1 warmup time : 0.174526260 s
+CHECK round 2 warmup time : 0.011586161 s
+CHECK round 3 warmup time : 0.007612525 s
+CHECK round 4 warmup time : 0.006363258 s
+CHECK round 5 warmup time : 0.004856125 s
+CHECK round 6 formal time : 0.004801619 s
+CHECK round 7 formal time : 0.004539231 s
+CHECK round 8 formal time : 0.004544380 s
+CHECK round 9 formal time : 0.004546276 s
+CHECK round 10 formal time : 0.004542949 s
+CHECK formal total time : 0.022974486 s
+CHECK end to end time : 4.594897 ms
+Total memory usage:                 16.2031 MB
+Q-Check || b - Ax || 2             =  2.030782e-10
+Q-Check || b - Ax || MAX           =  4.747297e-11
+Q-Check || b - Ax || 2 / || b || 2 =  1.040250e-12

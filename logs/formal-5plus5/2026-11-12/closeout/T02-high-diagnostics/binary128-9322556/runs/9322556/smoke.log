@@ -1,0 +1,15 @@
+T2_BINARY128_FGMRES rows=385 mpi=2 restart=30 cycles=2
+T2_FGMRES cycle=1 step=1 estimated_relative_residual=1.865163751731e-02
+T2_FGMRES cycle=1 step=2 estimated_relative_residual=7.046648344101e-04
+T2_FGMRES cycle=1 step=3 estimated_relative_residual=2.802366929012e-05
+T2_FGMRES cycle=1 step=4 estimated_relative_residual=1.098209456271e-06
+T2_FGMRES cycle=1 step=5 estimated_relative_residual=3.994829075916e-08
+T2_FGMRES cycle=1 step=6 estimated_relative_residual=1.181849024938e-09
+T2_FGMRES cycle=1 step=7 estimated_relative_residual=3.595528297489e-11
+T2_FGMRES cycle=1 step=8 estimated_relative_residual=1.040250273018e-12
+T2_TRUE_RESIDUAL cycle=1 relative=1.040250273018e-12
+T2_SOLUTION norm=3.924283374070e+01 time_seconds=0.982122
+Total memory usage:                 15.7383 MB
+Q-Check || b - Ax || 2             =  2.030782e-10
+Q-Check || b - Ax || MAX           =  4.747297e-11
+Q-Check || b - Ax || 2 / || b || 2 =  1.040250e-12

@@ -4,16 +4,16 @@
 
 ## 当前交付物与进展
 
-1. **提交材料**：[提交包 v4](deliverables/SolverChallenge26_CUDA%20OOM!_v4.zip)包括[比赛报告](deliverables/SC26技术报告_新规实测更新_20261112.docx)、逐题源码及运行说明和作业录像（含 10 题共计 37 个正式右端项）。
-2. **新规 5+5 全量实测与视频**：商业 CPU 上的第 1 题两档（`1e-4`、`1e-8`，峰值内存 4.29 GB ≤ 9 GB）、第 2 题低档（`1e-6`）、第 3 至第 7 题以及第 8 至第 10 题的全部右端项均已通过“5 次预热 + 5 次正式运行”及官方 float128 精度验收。实测记录见 [正式作业汇总](logs/formal-5plus5/2026-11-12/README.md)和[收尾作业](logs/formal-5plus5/2026-11-12/closeout/README.md)，导出视频位于 [SC26_求解视频_20261112](deliverables/SC26_求解视频_20261112/)。
-3. **当前未达标项**：仅第 2 题高档（`1e-10`）尚未达到精度门槛，已在报告中据实填报。
+1. **提交材料**：[提交包 v7](deliverables/SolverChallenge26_CUDA%20OOM!_v7.zip)包括[比赛报告](deliverables/SC26技术报告_新规实测更新_20261112.docx)、逐题源码及运行说明和 12 份作业录像，覆盖 10 题、37 个不同右端项。
+2. **新规 5+5 全量实测与视频**：商业 CPU 上第 1、2 题的两档精度及第 3 至第 10 题的全部右端项均已通过 5 次预热、5 次正式运行和官方 float128 精度验收。第 1 题峰值内存为 5.32 GB，第 9 题为 24.64 GB，均满足各自上限。实测记录见[正式作业汇总](logs/formal-5plus5/2026-11-12/README.md)和[收尾作业](logs/formal-5plus5/2026-11-12/closeout/README.md)。
+3. **第 2 题高档**：96 个 MPI 进程在原始系统上运行 binary128 FGMRES，使用双精度 BoomerAMG 右预处理。正式作业 `9322595` 平均 55,105.61 ms，官方相对残差 `5.748190e-12`，峰值内存 38.94 GB。[原始日志](logs/formal-5plus5/2026-11-12/closeout/T02-CPU-high-9322595/solver.log) · [连续录像](deliverables/SC26_求解视频_20261112/T02-CPU-high-9322595.mp4)
 4. **国产 GPU 与历史实验**：第 2 题海光 DCU（HIP 后端）方案已完成五轮优化对比（约 3.90 s）与独立复现，详见[历史实验摘要](docs/REPRODUCE_SCQ_2026-10-25.md)和[GPU 优化记录](docs/T2_GPU_PREPARATION_2026-10-23.md)。国产 CPU（LX2）完成了登录与队列连通性核查，受限于原生依赖与代理证书环境暂未展开编译计算，详见[LX2 环境附录](docs/LX2_ENVIRONMENT_APPENDIX_2026-10-24.md)。
 
 ## 计时与源码入口
 
-- 正式 CPU 入口位于 `资料/solverchallenge26_sample_code/`（直接法为 `MPI_direct_solver`，迭代法为 `MPI_iterative_solver`）。T1（场分块 Schur + FGMRES）和 T3（双精度 PARDISO + `binary128` 精化）入口随提交包对应题目的源码目录及运行说明提供。
-- 计时按[现行测试规则](docs/OFFICIAL_TESTING_RULES_2026-10-27.md)执行：句柄创建/销毁与数据准备不计时；先跑 5 次完整预热，在第 6 次前启动计时、第 10 次完成后停止计时，正式总时间 ÷ 5 换算为毫秒输出（`CHECK end to end time`）。每轮均独立执行分析、分解、预处理与求解，第 2 题右端投影、迭代法行列缩放及第 10 题行配对与均衡化均计入每轮用时。
-- 新规 5+5 实测日志使用 `tests/check_result.py --formal` 进行自动化验收。
+- 通用 CPU 入口位于 `资料/solverchallenge26_sample_code/`（直接法为 `MPI_direct_solver`，迭代法为 `MPI_iterative_solver`）。T1 的场分块 Schur + FGMRES、T2 高档的 binary128 FGMRES 以及 T3 的双精度 PARDISO + binary128 精化入口随对应题目的源码和运行说明提供。
+- 计时按[现行测试规则](docs/OFFICIAL_TESTING_RULES_2026-10-27.md)执行。句柄创建与销毁及数据读入在计时区间外。先跑 5 次完整预热，从第 6 次开始连续计时至第 10 次完成，正式总时间除以 5 后换算为毫秒输出（`CHECK end to end time`）。每轮均独立执行分析、分解、预处理与求解，第 2 题低档右端投影、高档 halo 索引与 AMG 层次重建、迭代法行列缩放及第 10 题行配对与均衡化均计入每轮用时。
+- 各题的运行说明提供对应的 5+5 日志验收命令。第 2 题高档使用其源码目录内的 `tests/check_result.py --formal`。
 
 ## 历史归档验证与参考文档
 

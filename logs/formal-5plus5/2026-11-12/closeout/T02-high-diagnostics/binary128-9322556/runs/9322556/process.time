@@ -1,0 +1,23 @@
+	Command being timed: "mpirun -np 96 --bind-to core stdbuf -oL /data/home/sunyc/solverchallenge26/formal-20261113-t2-binary128/t2_quad /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_02/solverchallenge26_02_A.dat /data/home/maorz/SolverChallenge26-TenProblems/solverchallenge26_02/solverchallenge26_02_b.dat 72 3"
+	User time (seconds): 10544.61
+	System time (seconds): 826.44
+	Percent of CPU this job got: 5315%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:33.92
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2402864
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 9
+	Minor (reclaiming a frame) page faults: 4397142
+	Voluntary context switches: 9995649
+	Involuntary context switches: 84498
+	Swaps: 0
+	File system inputs: 2746280
+	File system outputs: 18032
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

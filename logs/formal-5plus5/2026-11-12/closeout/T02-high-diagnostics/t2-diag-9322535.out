@@ -1,0 +1,55 @@
+src/src/matrix_market/highlevel.c: In function 'mmio_allinone':
+src/src/matrix_market/highlevel.c:95:54: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+   95 |     MAT_PTR_TYPE* csrRowPtr_counter = (MAT_PTR_TYPE*)malloc((m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+      |                                                      ^~~~~~
+src/src/matrix_market/highlevel.c:2:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+    1 | #include "solverchallenge26/matrix_market_reader.h"
+  +++ |+#include <stdlib.h>
+    2 | 
+src/src/matrix_market/highlevel.c:95:54: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+   95 |     MAT_PTR_TYPE* csrRowPtr_counter = (MAT_PTR_TYPE*)malloc((m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+      |                                                      ^~~~~~
+src/src/matrix_market/highlevel.c:95:54: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+src/src/matrix_market/highlevel.c:96:5: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+   96 |     memset(csrRowPtr_counter, 0, (m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+      |     ^~~~~~
+src/src/matrix_market/highlevel.c:2:1: note: include '<string.h>' or provide a declaration of 'memset'
+    1 | #include "solverchallenge26/matrix_market_reader.h"
+  +++ |+#include <string.h>
+    2 | 
+src/src/matrix_market/highlevel.c:96:5: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+   96 |     memset(csrRowPtr_counter, 0, (m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+      |     ^~~~~~
+src/src/matrix_market/highlevel.c:96:5: note: include '<string.h>' or provide a declaration of 'memset'
+src/src/matrix_market/highlevel.c:150:5: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  150 |     memcpy(csrRowPtr_alias, csrRowPtr_counter, (m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+      |     ^~~~~~
+src/src/matrix_market/highlevel.c:150:5: note: include '<string.h>' or provide a declaration of 'memcpy'
+src/src/matrix_market/highlevel.c:150:5: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+src/src/matrix_market/highlevel.c:150:5: note: include '<string.h>' or provide a declaration of 'memcpy'
+src/src/matrix_market/highlevel.c:191:5: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  191 |     free(csrColIdx_tmp);
+      |     ^~~~
+src/src/matrix_market/highlevel.c:191:5: note: include '<stdlib.h>' or provide a declaration of 'free'
+src/src/matrix_market/highlevel.c:191:5: warning: incompatible implicit declaration of built-in function 'free' [-Wbuiltin-declaration-mismatch]
+src/src/matrix_market/highlevel.c:191:5: note: include '<stdlib.h>' or provide a declaration of 'free'
+src/src/matrix_market/highlevel.c: In function 'mmio_allinone_complex':
+src/src/matrix_market/highlevel.c:244:54: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+  244 |     MAT_PTR_TYPE* csrRowPtr_counter = (MAT_PTR_TYPE*)malloc((m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+      |                                                      ^~~~~~
+src/src/matrix_market/highlevel.c:244:54: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+src/src/matrix_market/highlevel.c:245:5: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  245 |     memset(csrRowPtr_counter, 0, (m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+      |     ^~~~~~
+src/src/matrix_market/highlevel.c:245:5: note: include '<string.h>' or provide a declaration of 'memset'
+src/src/matrix_market/highlevel.c:302:5: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  302 |     memcpy(csrRowPtr_alias, csrRowPtr_counter, (m_tmp + 1) * sizeof(MAT_PTR_TYPE));
+      |     ^~~~~~
+src/src/matrix_market/highlevel.c:302:5: note: include '<string.h>' or provide a declaration of 'memcpy'
+src/src/matrix_market/highlevel.c:391:5: warning: incompatible implicit declaration of built-in function 'free' [-Wbuiltin-declaration-mismatch]
+  391 |     free(csrColIdx_tmp);
+      |     ^~~~
+src/src/matrix_market/highlevel.c:391:5: note: include '<stdlib.h>' or provide a declaration of 'free'
+m=19637808 n=19637808 nnz=97535322 sym=0 zero_diag=0 min_diag=3.675515e-13 max_diag=1.145123e-05
+||A||_F=6.429612e-04 ||A*1||_2=6.936538e-19 max|A*1|=4.955143e-20 ||A^T*1||_2=6.936424e-19 max|A^T*1|=4.955143e-20
+||b||_2=2.797618713785e-04 sum(b)=7.274167062570e-07 mean(b)=3.704164468137e-14 |sum(b)|/(sqrt(n)*||b||_2)=5.867434388781e-07

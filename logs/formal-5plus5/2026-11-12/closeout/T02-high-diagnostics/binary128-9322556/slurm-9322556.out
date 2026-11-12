@@ -1,0 +1,64 @@
+SC26_RUN problem=02 rhs=01 node=c3n16 mpi=96 threads=1
+1bcc87b4ba86fb3b412d3154d33bbded5c7f74697a12319556df68b00f514819  source-sha256.txt
+d9a84b484d71c189de101d24bb02d5a87bdc64f6b8719b30d16908a40b6d5a9c  t2_quad
+38b938ccd82b81d8f49930ce051288a08a9a38852b659434066e5e9889fd6b43  /data/home/sunyc/solverchallenge26/deps/hypre/lib64/libHYPRE.a
+poisson: n=385 nnz=2361
+nonsymmetric: n=385 nnz=2361
+neumann: n=385 nnz=2361
+scaled: n=385 nnz=2361
+T2_SMOKE_PASS official_quad_checker=check_correctness_q_xq
+T2_BINARY128_FGMRES rows=19637808 mpi=96 restart=72 cycles=3
+T2_FGMRES cycle=1 step=1 estimated_relative_residual=6.593323722270e-01
+T2_FGMRES cycle=1 step=2 estimated_relative_residual=6.232719861876e-01
+T2_FGMRES cycle=1 step=3 estimated_relative_residual=3.213703072190e-01
+T2_FGMRES cycle=1 step=4 estimated_relative_residual=1.402250569583e-01
+T2_FGMRES cycle=1 step=5 estimated_relative_residual=4.119750641917e-02
+T2_FGMRES cycle=1 step=6 estimated_relative_residual=1.114633342350e-02
+T2_FGMRES cycle=1 step=7 estimated_relative_residual=3.354203044371e-03
+T2_FGMRES cycle=1 step=8 estimated_relative_residual=1.307718153724e-03
+T2_FGMRES cycle=1 step=9 estimated_relative_residual=5.855380148545e-04
+T2_FGMRES cycle=1 step=10 estimated_relative_residual=2.238677669300e-04
+T2_FGMRES cycle=1 step=11 estimated_relative_residual=8.199484864695e-05
+T2_FGMRES cycle=1 step=12 estimated_relative_residual=3.402020836663e-05
+T2_FGMRES cycle=1 step=13 estimated_relative_residual=1.235415353297e-05
+T2_FGMRES cycle=1 step=14 estimated_relative_residual=4.970684671989e-06
+T2_FGMRES cycle=1 step=15 estimated_relative_residual=3.646554830552e-06
+T2_FGMRES cycle=1 step=16 estimated_relative_residual=3.497849719092e-06
+T2_FGMRES cycle=1 step=17 estimated_relative_residual=3.476811611578e-06
+T2_FGMRES cycle=1 step=18 estimated_relative_residual=3.472232008792e-06
+T2_FGMRES cycle=1 step=19 estimated_relative_residual=3.469930178204e-06
+T2_FGMRES cycle=1 step=20 estimated_relative_residual=3.467723300182e-06
+T2_FGMRES cycle=1 step=21 estimated_relative_residual=3.466971786638e-06
+T2_FGMRES cycle=1 step=22 estimated_relative_residual=3.466306486262e-06
+T2_FGMRES cycle=1 step=23 estimated_relative_residual=3.465320801076e-06
+T2_FGMRES cycle=1 step=24 estimated_relative_residual=3.464141024472e-06
+T2_FGMRES cycle=1 step=25 estimated_relative_residual=3.463340343482e-06
+T2_FGMRES cycle=1 step=26 estimated_relative_residual=3.462942366357e-06
+T2_FGMRES cycle=1 step=27 estimated_relative_residual=3.462669285877e-06
+T2_FGMRES cycle=1 step=28 estimated_relative_residual=3.462578578327e-06
+T2_FGMRES cycle=1 step=29 estimated_relative_residual=3.462575806761e-06
+T2_FGMRES cycle=1 step=30 estimated_relative_residual=3.462564692298e-06
+T2_FGMRES cycle=1 step=31 estimated_relative_residual=3.462564655115e-06
+T2_FGMRES cycle=1 step=32 estimated_relative_residual=3.462523624916e-06
+T2_FGMRES cycle=1 step=33 estimated_relative_residual=3.462195886404e-06
+T2_FGMRES cycle=1 step=34 estimated_relative_residual=3.460390310209e-06
+T2_FGMRES cycle=1 step=35 estimated_relative_residual=3.438539505245e-06
+T2_FGMRES cycle=1 step=36 estimated_relative_residual=3.161554582658e-06
+T2_FGMRES cycle=1 step=37 estimated_relative_residual=1.878812127486e-06
+T2_FGMRES cycle=1 step=38 estimated_relative_residual=6.553291601447e-07
+T2_FGMRES cycle=1 step=39 estimated_relative_residual=2.089159944117e-07
+T2_FGMRES cycle=1 step=40 estimated_relative_residual=7.069137295043e-08
+T2_FGMRES cycle=1 step=41 estimated_relative_residual=2.424912324140e-08
+T2_FGMRES cycle=1 step=42 estimated_relative_residual=7.119808355021e-09
+T2_FGMRES cycle=1 step=43 estimated_relative_residual=2.119778071544e-09
+T2_FGMRES cycle=1 step=44 estimated_relative_residual=6.849046321299e-10
+T2_FGMRES cycle=1 step=45 estimated_relative_residual=2.405704890078e-10
+T2_FGMRES cycle=1 step=46 estimated_relative_residual=7.362014276042e-11
+T2_FGMRES cycle=1 step=47 estimated_relative_residual=2.058736160377e-11
+T2_FGMRES cycle=1 step=48 estimated_relative_residual=5.748190416803e-12
+T2_TRUE_RESIDUAL cycle=1 relative=5.748190416805e-12
+T2_SOLUTION norm=3.700476506957e+15 time_seconds=49.274556
+Total memory usage:                 34986.0508 MB
+Q-Check || b - Ax || 2             =  1.608125e-15
+Q-Check || b - Ax || MAX           =  2.333603e-16
+Q-Check || b - Ax || 2 / || b || 2 =  5.748190e-12
