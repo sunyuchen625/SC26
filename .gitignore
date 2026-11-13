@@ -25,3 +25,4 @@ opencode.json
 /资料/资源申请/国产CPU资源申请提交凭证_*.jpg
 !/logs/**/*.log
 !/logs/**/*.out
+/logs/formal-5plus5/2026-11-13-v9/**/answer_x.rhs
