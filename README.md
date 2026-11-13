@@ -4,10 +4,10 @@
 
 ## 当前交付物与进展
 
-1. **提交材料**：[提交包 v7](deliverables/SolverChallenge26_CUDA%20OOM!_v7.zip)包括[比赛报告](deliverables/SC26技术报告_新规实测更新_20261112.docx)、逐题源码及运行说明和 12 份作业录像，覆盖 10 题、37 个不同右端项。
+1. **提交材料**：[提交包 v8](deliverables/SolverChallenge26_CUDA%20OOM!_v8.zip)包括[比赛报告](deliverables/SC26技术报告_v8.docx)、逐题源码及运行说明和 12 份作业录像，覆盖 10 题、37 个不同右端项。
 2. **新规 5+5 全量实测与视频**：商业 CPU 上第 1、2 题的两档精度及第 3 至第 10 题的全部右端项均已通过 5 次预热、5 次正式运行和官方 float128 精度验收。第 1 题峰值内存为 5.32 GB，第 9 题为 24.64 GB，均满足各自上限。实测记录见[正式作业汇总](logs/formal-5plus5/2026-11-12/README.md)和[收尾作业](logs/formal-5plus5/2026-11-12/closeout/README.md)。
 3. **第 2 题高档**：96 个 MPI 进程在原始系统上运行 binary128 FGMRES，使用双精度 BoomerAMG 右预处理。正式作业 `9322595` 平均 55,105.61 ms，官方相对残差 `5.748190e-12`，峰值内存 38.94 GB。[原始日志](logs/formal-5plus5/2026-11-12/closeout/T02-CPU-high-9322595/solver.log) · [连续录像](deliverables/SC26_求解视频_20261112/T02-CPU-high-9322595.mp4)
-4. **国产 GPU 与历史实验**：第 2 题海光 DCU（HIP 后端）方案已完成五轮优化对比（约 3.90 s）与独立复现，详见[历史实验摘要](docs/REPRODUCE_SCQ_2026-10-25.md)和[GPU 优化记录](docs/T2_GPU_PREPARATION_2026-10-23.md)。国产 CPU（LX2）完成了登录与队列连通性核查，受限于原生依赖与代理证书环境暂未展开编译计算，详见[LX2 环境附录](docs/LX2_ENVIRONMENT_APPENDIX_2026-10-24.md)。
+4. **国产 GPU 与历史实验**：第 2 题海光 DCU（HIP 后端）方案已完成五轮优化对比（约 3.90 s）与独立复现，详见[历史实验摘要](docs/REPRODUCE_SCQ_2026-10-25.md)和[GPU 优化记录](docs/T2_GPU_PREPARATION_2026-10-23.md)。国产 CPU（LX2）完成了登录与队列连通性核查，因节点缺少原生依赖与代理证书配置，未展开编译和计算，详见[LX2 环境附录](docs/LX2_ENVIRONMENT_APPENDIX_2026-10-24.md)。
 
 ## 计时与源码入口
 

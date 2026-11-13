@@ -1,0 +1,2 @@
+cpu-bind=MASK - c3n40, task  0  0 [36086]: mask 0xffff00000000 set
+srun: error: eio_handle_mainloop: Abandoning IO 60 secs after job shutdown initiated
